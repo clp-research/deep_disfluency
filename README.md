@@ -1,4 +1,4 @@
-# deep_disfluency
+# Deep Learning Incremental Disfluency Detection
 
 Deep Learning systems for training and testing disfluency detection and related tasks on speech data.
 
