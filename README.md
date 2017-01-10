@@ -22,9 +22,7 @@ Learning Methods for Spoken Language Understanding
 
 http://www.iro.umontreal.ca/~lisa/pointeurs/RNNSpokenLanguage2013.pdf
 
-=============
-Set up
-=============
+## Set up ##
 
 To run the code here you need to have Python 2.7 installed, and also `pip` for installing the dependencies. (Also Ipython should be installed, preferrably, if you want to run notebooks).
 
