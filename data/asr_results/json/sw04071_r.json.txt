@@ -1,0 +1,4340 @@
+{
+    "result_index": 0, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.992, 
+                    "timestamps": [
+                        [
+                            "I", 
+                            11.56, 
+                            11.7
+                        ], 
+                        [
+                            "agree", 
+                            11.7, 
+                            12.29
+                        ]
+                    ], 
+                    "transcript": "I agree ", 
+                    "word_confidence": [
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "agree", 
+                            0.9906282526757451
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 1, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.88, 
+                    "timestamps": [
+                        [
+                            "I", 
+                            12.87, 
+                            13.0
+                        ], 
+                        [
+                            "think", 
+                            13.0, 
+                            13.24
+                        ], 
+                        [
+                            "taxes", 
+                            13.24, 
+                            13.63
+                        ], 
+                        [
+                            "are", 
+                            13.63, 
+                            13.71
+                        ], 
+                        [
+                            "high", 
+                            13.71, 
+                            14.12
+                        ]
+                    ], 
+                    "transcript": "I think taxes are high ", 
+                    "word_confidence": [
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "think", 
+                            1.0
+                        ], 
+                        [
+                            "taxes", 
+                            0.6794603373957778
+                        ], 
+                        [
+                            "are", 
+                            0.8246764473466666
+                        ], 
+                        [
+                            "high", 
+                            0.9726598412066692
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "I think Texas or high "
+                }, 
+                {
+                    "transcript": "I think Texas are high "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 2, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            21.02, 
+                            21.43
+                        ], 
+                        [
+                            "yes", 
+                            21.47, 
+                            22.11
+                        ], 
+                        [
+                            "uhhuh", 
+                            22.25, 
+                            22.69
+                        ]
+                    ], 
+                    "transcript": "%HESITATION yes uhhuh "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 2, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.728, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            21.02, 
+                            21.43
+                        ], 
+                        [
+                            "yes", 
+                            21.47, 
+                            22.11
+                        ], 
+                        [
+                            "huh", 
+                            22.26, 
+                            22.77
+                        ]
+                    ], 
+                    "transcript": "%HESITATION yes huh ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.8472384124290111
+                        ], 
+                        [
+                            "yes", 
+                            0.9941755293742343
+                        ], 
+                        [
+                            "huh", 
+                            0.29929379556651153
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION yes uhhuh "
+                }, 
+                {
+                    "transcript": "%HESITATION yes oma "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 3, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.234, 
+                    "timestamps": [
+                        [
+                            "huh", 
+                            32.5, 
+                            32.99
+                        ]
+                    ], 
+                    "transcript": "huh ", 
+                    "word_confidence": [
+                        [
+                            "huh", 
+                            0.23414072776930644
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION "
+                }, 
+                {
+                    "transcript": "oh "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 4, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.528, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            53.35, 
+                            53.82
+                        ]
+                    ], 
+                    "transcript": "%HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.5279022916388052
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "oh "
+                }, 
+                {
+                    "transcript": "wow "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 5, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.989, 
+                    "timestamps": [
+                        [
+                            "right", 
+                            64.4, 
+                            65.19
+                        ]
+                    ], 
+                    "transcript": "right ", 
+                    "word_confidence": [
+                        [
+                            "right", 
+                            0.9894465956101274
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "write "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 6, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            66.14, 
+                            66.45
+                        ], 
+                        [
+                            "I", 
+                            66.45, 
+                            66.8
+                        ], 
+                        [
+                            "I", 
+                            66.97, 
+                            67.12
+                        ], 
+                        [
+                            "agree", 
+                            67.12, 
+                            67.78
+                        ]
+                    ], 
+                    "transcript": "yeah I I agree "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 6, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            66.14, 
+                            66.45
+                        ], 
+                        [
+                            "I", 
+                            66.45, 
+                            66.8
+                        ], 
+                        [
+                            "I", 
+                            66.97, 
+                            67.12
+                        ], 
+                        [
+                            "agree", 
+                            67.12, 
+                            67.64
+                        ], 
+                        [
+                            "and", 
+                            67.64, 
+                            67.95
+                        ], 
+                        [
+                            "then", 
+                            67.95, 
+                            68.08
+                        ], 
+                        [
+                            "%HESITATION", 
+                            68.08, 
+                            68.51
+                        ], 
+                        [
+                            "think", 
+                            68.88, 
+                            69.07
+                        ], 
+                        [
+                            "this", 
+                            69.07, 
+                            69.39
+                        ], 
+                        [
+                            "at", 
+                            69.39, 
+                            69.49
+                        ], 
+                        [
+                            "that", 
+                            69.49, 
+                            69.74
+                        ], 
+                        [
+                            "time", 
+                            69.74, 
+                            69.89
+                        ]
+                    ], 
+                    "transcript": "yeah I I agree and then %HESITATION think this at that time "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 6, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.745, 
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            66.14, 
+                            66.45
+                        ], 
+                        [
+                            "I", 
+                            66.45, 
+                            66.8
+                        ], 
+                        [
+                            "I", 
+                            66.97, 
+                            67.12
+                        ], 
+                        [
+                            "agree", 
+                            67.12, 
+                            67.64
+                        ], 
+                        [
+                            "and", 
+                            67.64, 
+                            67.95
+                        ], 
+                        [
+                            "then", 
+                            67.95, 
+                            68.08
+                        ], 
+                        [
+                            "%HESITATION", 
+                            68.08, 
+                            68.51
+                        ], 
+                        [
+                            "think", 
+                            68.88, 
+                            69.07
+                        ], 
+                        [
+                            "this", 
+                            69.07, 
+                            69.39
+                        ], 
+                        [
+                            "at", 
+                            69.39, 
+                            69.49
+                        ], 
+                        [
+                            "that", 
+                            69.49, 
+                            69.74
+                        ], 
+                        [
+                            "time", 
+                            69.74, 
+                            70.01
+                        ], 
+                        [
+                            "of", 
+                            70.01, 
+                            70.2
+                        ], 
+                        [
+                            "year", 
+                            70.2, 
+                            70.41
+                        ], 
+                        [
+                            "we", 
+                            70.41, 
+                            70.73
+                        ], 
+                        [
+                            "usually", 
+                            70.76, 
+                            71.13
+                        ], 
+                        [
+                            "start", 
+                            71.13, 
+                            71.49
+                        ], 
+                        [
+                            "getting", 
+                            71.49, 
+                            71.81
+                        ]
+                    ], 
+                    "transcript": "yeah I I agree and then %HESITATION think this at that time of year we usually start getting ", 
+                    "word_confidence": [
+                        [
+                            "yeah", 
+                            1.0
+                        ], 
+                        [
+                            "I", 
+                            0.8739225137572382
+                        ], 
+                        [
+                            "I", 
+                            0.9351580206085681
+                        ], 
+                        [
+                            "agree", 
+                            1.0
+                        ], 
+                        [
+                            "and", 
+                            0.7737056701362504
+                        ], 
+                        [
+                            "then", 
+                            0.8371500816001038
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.5292336527926845
+                        ], 
+                        [
+                            "think", 
+                            0.4320062197272888
+                        ], 
+                        [
+                            "this", 
+                            0.8983075972662649
+                        ], 
+                        [
+                            "at", 
+                            0.3920371946758237
+                        ], 
+                        [
+                            "that", 
+                            0.48967014170225887
+                        ], 
+                        [
+                            "time", 
+                            0.9856907452964431
+                        ], 
+                        [
+                            "of", 
+                            0.5441035332066829
+                        ], 
+                        [
+                            "year", 
+                            0.9233481598811982
+                        ], 
+                        [
+                            "we", 
+                            0.16846627646417156
+                        ], 
+                        [
+                            "usually", 
+                            0.3696011626807294
+                        ], 
+                        [
+                            "start", 
+                            0.9452390655152946
+                        ], 
+                        [
+                            "getting", 
+                            1.0
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "yeah I I agree and then %HESITATION think this at that time of year where you start getting "
+                }, 
+                {
+                    "transcript": "yeah I I agree and then %HESITATION think this at that time a yearly you start getting "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 7, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 1.0, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            72.43, 
+                            72.85
+                        ]
+                    ], 
+                    "transcript": "%HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            1.0
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "um "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 8, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "well", 
+                            73.08, 
+                            73.59
+                        ], 
+                        [
+                            "if", 
+                            73.62, 
+                            73.93
+                        ], 
+                        [
+                            "you", 
+                            73.93, 
+                            74.09
+                        ], 
+                        [
+                            "do", 
+                            74.09, 
+                            74.28
+                        ], 
+                        [
+                            "get", 
+                            74.28, 
+                            74.49
+                        ], 
+                        [
+                            "money", 
+                            74.49, 
+                            74.71
+                        ], 
+                        [
+                            "back", 
+                            74.71, 
+                            74.97
+                        ]
+                    ], 
+                    "transcript": "well if you do get money back "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 8, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.945, 
+                    "timestamps": [
+                        [
+                            "well", 
+                            73.08, 
+                            73.59
+                        ], 
+                        [
+                            "if", 
+                            73.62, 
+                            73.93
+                        ], 
+                        [
+                            "you", 
+                            73.93, 
+                            74.09
+                        ], 
+                        [
+                            "do", 
+                            74.09, 
+                            74.28
+                        ], 
+                        [
+                            "get", 
+                            74.28, 
+                            74.49
+                        ], 
+                        [
+                            "money", 
+                            74.49, 
+                            74.71
+                        ], 
+                        [
+                            "back", 
+                            74.71, 
+                            74.99
+                        ], 
+                        [
+                            "from", 
+                            74.99, 
+                            75.35
+                        ]
+                    ], 
+                    "transcript": "well if you do get money back from ", 
+                    "word_confidence": [
+                        [
+                            "well", 
+                            0.8465553985065214
+                        ], 
+                        [
+                            "if", 
+                            1.0
+                        ], 
+                        [
+                            "you", 
+                            1.0
+                        ], 
+                        [
+                            "do", 
+                            1.0
+                        ], 
+                        [
+                            "get", 
+                            1.0
+                        ], 
+                        [
+                            "money", 
+                            0.8029561125067353
+                        ], 
+                        [
+                            "back", 
+                            0.9929627183038253
+                        ], 
+                        [
+                            "from", 
+                            1.0
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "well if you do get money back from the "
+                }, 
+                {
+                    "transcript": "well if you do get my name back from "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 9, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "like", 
+                            76.22, 
+                            76.45
+                        ], 
+                        [
+                            "jobs", 
+                            76.53, 
+                            76.88
+                        ], 
+                        [
+                            "like", 
+                            76.88, 
+                            77.12
+                        ], 
+                        [
+                            "I'm", 
+                            77.29, 
+                            77.5
+                        ], 
+                        [
+                            "still", 
+                            77.5, 
+                            77.78
+                        ], 
+                        [
+                            "a", 
+                            77.78, 
+                            77.91
+                        ]
+                    ], 
+                    "transcript": "like jobs like I'm still a "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 9, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "like", 
+                            76.22, 
+                            76.45
+                        ], 
+                        [
+                            "jobs", 
+                            76.53, 
+                            76.88
+                        ], 
+                        [
+                            "like", 
+                            76.88, 
+                            77.12
+                        ], 
+                        [
+                            "I'm", 
+                            77.29, 
+                            77.5
+                        ], 
+                        [
+                            "still", 
+                            77.5, 
+                            77.78
+                        ], 
+                        [
+                            "a", 
+                            77.78, 
+                            77.88
+                        ], 
+                        [
+                            "student", 
+                            77.88, 
+                            78.45
+                        ], 
+                        [
+                            "so", 
+                            78.45, 
+                            78.8
+                        ], 
+                        [
+                            "%HESITATION", 
+                            79.04, 
+                            79.36
+                        ], 
+                        [
+                            "and", 
+                            79.39, 
+                            79.61
+                        ], 
+                        [
+                            "he", 
+                            79.61, 
+                            79.69
+                        ], 
+                        [
+                            "worked", 
+                            79.69, 
+                            79.93
+                        ]
+                    ], 
+                    "transcript": "like jobs like I'm still a student so %HESITATION and he worked "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 9, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.906, 
+                    "timestamps": [
+                        [
+                            "like", 
+                            76.22, 
+                            76.45
+                        ], 
+                        [
+                            "jobs", 
+                            76.53, 
+                            76.88
+                        ], 
+                        [
+                            "like", 
+                            76.88, 
+                            77.12
+                        ], 
+                        [
+                            "I'm", 
+                            77.29, 
+                            77.5
+                        ], 
+                        [
+                            "still", 
+                            77.5, 
+                            77.78
+                        ], 
+                        [
+                            "a", 
+                            77.78, 
+                            77.88
+                        ], 
+                        [
+                            "student", 
+                            77.88, 
+                            78.45
+                        ], 
+                        [
+                            "so", 
+                            78.45, 
+                            78.8
+                        ], 
+                        [
+                            "%HESITATION", 
+                            79.04, 
+                            79.36
+                        ], 
+                        [
+                            "any", 
+                            79.39, 
+                            79.68
+                        ], 
+                        [
+                            "work", 
+                            79.68, 
+                            79.89
+                        ], 
+                        [
+                            "part", 
+                            79.89, 
+                            80.13
+                        ], 
+                        [
+                            "time", 
+                            80.13, 
+                            80.62
+                        ], 
+                        [
+                            "so", 
+                            80.65, 
+                            80.83
+                        ], 
+                        [
+                            "I", 
+                            80.83, 
+                            80.98
+                        ], 
+                        [
+                            "I", 
+                            80.98, 
+                            81.07
+                        ], 
+                        [
+                            "get", 
+                            81.07, 
+                            81.28
+                        ], 
+                        [
+                            "a", 
+                            81.28, 
+                            81.34
+                        ], 
+                        [
+                            "check", 
+                            81.34, 
+                            81.67
+                        ], 
+                        [
+                            "back", 
+                            81.67, 
+                            82.13
+                        ]
+                    ], 
+                    "transcript": "like jobs like I'm still a student so %HESITATION any work part time so I I get a check back ", 
+                    "word_confidence": [
+                        [
+                            "like", 
+                            0.82220495407928
+                        ], 
+                        [
+                            "jobs", 
+                            0.8712352723950398
+                        ], 
+                        [
+                            "like", 
+                            0.9999999999999892
+                        ], 
+                        [
+                            "I'm", 
+                            0.9999999999999709
+                        ], 
+                        [
+                            "still", 
+                            0.9999999999999772
+                        ], 
+                        [
+                            "a", 
+                            0.9999999999999709
+                        ], 
+                        [
+                            "student", 
+                            0.9999999999999671
+                        ], 
+                        [
+                            "so", 
+                            0.9904566231579846
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.9882551330867513
+                        ], 
+                        [
+                            "any", 
+                            0.19840137998001497
+                        ], 
+                        [
+                            "work", 
+                            0.438190645876113
+                        ], 
+                        [
+                            "part", 
+                            0.981729234939272
+                        ], 
+                        [
+                            "time", 
+                            0.976134922855328
+                        ], 
+                        [
+                            "so", 
+                            0.8231610284789858
+                        ], 
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "I", 
+                            0.9426736963012341
+                        ], 
+                        [
+                            "get", 
+                            1.0
+                        ], 
+                        [
+                            "a", 
+                            1.0
+                        ], 
+                        [
+                            "check", 
+                            0.999999999999992
+                        ], 
+                        [
+                            "back", 
+                            0.9899597920293077
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "like jobs like I'm still a student so %HESITATION I mean work part time so I I get a check back "
+                }, 
+                {
+                    "transcript": "like jobs like I'm still a student so %HESITATION Anne work part time so I I get a check back "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 10, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 1.0, 
+                    "timestamps": [
+                        [
+                            "from", 
+                            82.62, 
+                            83.01
+                        ]
+                    ], 
+                    "transcript": "from ", 
+                    "word_confidence": [
+                        [
+                            "from", 
+                            1.0
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 11, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.968, 
+                    "timestamps": [
+                        [
+                            "from", 
+                            83.4, 
+                            83.68
+                        ], 
+                        [
+                            "Texas", 
+                            83.68, 
+                            84.67
+                        ], 
+                        [
+                            "but", 
+                            84.73, 
+                            85.04
+                        ]
+                    ], 
+                    "transcript": "from Texas but ", 
+                    "word_confidence": [
+                        [
+                            "from", 
+                            0.9238413621412158
+                        ], 
+                        [
+                            "Texas", 
+                            0.9767200955867488
+                        ], 
+                        [
+                            "but", 
+                            0.98184154196419
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "from Texas **** "
+                }, 
+                {
+                    "transcript": "some Texas but "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 12, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.921, 
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            86.17, 
+                            86.72
+                        ], 
+                        [
+                            "it", 
+                            86.99, 
+                            87.11
+                        ], 
+                        [
+                            "is", 
+                            87.11, 
+                            87.41
+                        ], 
+                        [
+                            "but", 
+                            87.41, 
+                            87.92
+                        ]
+                    ], 
+                    "transcript": "yeah it is but ", 
+                    "word_confidence": [
+                        [
+                            "yeah", 
+                            0.9999999999999346
+                        ], 
+                        [
+                            "it", 
+                            0.7474323010243333
+                        ], 
+                        [
+                            "is", 
+                            0.7337037701265818
+                        ], 
+                        [
+                            "but", 
+                            0.9873116750784018
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "yeah but "
+                }, 
+                {
+                    "transcript": "yeah it is but I "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 13, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.846, 
+                    "timestamps": [
+                        [
+                            "it's", 
+                            88.8, 
+                            88.98
+                        ], 
+                        [
+                            "not", 
+                            88.98, 
+                            89.22
+                        ], 
+                        [
+                            "much", 
+                            89.22, 
+                            89.68
+                        ]
+                    ], 
+                    "transcript": "it's not much ", 
+                    "word_confidence": [
+                        [
+                            "it's", 
+                            0.5291591289957118
+                        ], 
+                        [
+                            "not", 
+                            0.8083728908894923
+                        ], 
+                        [
+                            "much", 
+                            0.9900334525091002
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "is not much "
+                }, 
+                {
+                    "transcript": "isn't that much "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 14, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.993, 
+                    "timestamps": [
+                        [
+                            "no", 
+                            97.09, 
+                            97.73
+                        ]
+                    ], 
+                    "transcript": "no ", 
+                    "word_confidence": [
+                        [
+                            "no", 
+                            0.9933584655766996
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "know "
+                }, 
+                {
+                    "transcript": "No "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 15, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.989, 
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            111.27, 
+                            111.77
+                        ]
+                    ], 
+                    "transcript": "yeah ", 
+                    "word_confidence": [
+                        [
+                            "yeah", 
+                            0.9888106227126143
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 16, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.988, 
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            112.43, 
+                            113.03
+                        ]
+                    ], 
+                    "transcript": "yeah ", 
+                    "word_confidence": [
+                        [
+                            "yeah", 
+                            0.9876822464454879
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 17, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.985, 
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            119.53, 
+                            120.03
+                        ], 
+                        [
+                            "there", 
+                            120.03, 
+                            120.23
+                        ], 
+                        [
+                            "you", 
+                            120.23, 
+                            120.32
+                        ], 
+                        [
+                            "go", 
+                            120.32, 
+                            120.63
+                        ]
+                    ], 
+                    "transcript": "yeah there you go ", 
+                    "word_confidence": [
+                        [
+                            "yeah", 
+                            1.0
+                        ], 
+                        [
+                            "there", 
+                            0.9750246628765444
+                        ], 
+                        [
+                            "you", 
+                            1.0
+                        ], 
+                        [
+                            "go", 
+                            0.9630418165078511
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 18, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.988, 
+                    "timestamps": [
+                        [
+                            "right", 
+                            138.77, 
+                            139.43
+                        ]
+                    ], 
+                    "transcript": "right ", 
+                    "word_confidence": [
+                        [
+                            "right", 
+                            0.9883923764702846
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "write "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 19, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.991, 
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            139.97, 
+                            140.55
+                        ]
+                    ], 
+                    "transcript": "yeah ", 
+                    "word_confidence": [
+                        [
+                            "yeah", 
+                            0.9908385312486487
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 20, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            141.17, 
+                            141.26
+                        ], 
+                        [
+                            "don't", 
+                            141.26, 
+                            141.45
+                        ], 
+                        [
+                            "know", 
+                            141.45, 
+                            141.55
+                        ], 
+                        [
+                            "I", 
+                            141.55, 
+                            141.62
+                        ], 
+                        [
+                            "don't", 
+                            141.62, 
+                            141.85
+                        ], 
+                        [
+                            "doesn't", 
+                            142.05, 
+                            142.42
+                        ], 
+                        [
+                            "seem", 
+                            142.42, 
+                            142.58
+                        ], 
+                        [
+                            "like", 
+                            142.58, 
+                            142.76
+                        ], 
+                        [
+                            "they're", 
+                            142.76, 
+                            142.91
+                        ]
+                    ], 
+                    "transcript": "I don't know I don't doesn't seem like they're "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 20, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            141.17, 
+                            141.26
+                        ], 
+                        [
+                            "don't", 
+                            141.26, 
+                            141.45
+                        ], 
+                        [
+                            "know", 
+                            141.45, 
+                            141.55
+                        ], 
+                        [
+                            "I", 
+                            141.55, 
+                            141.62
+                        ], 
+                        [
+                            "don't", 
+                            141.62, 
+                            141.85
+                        ], 
+                        [
+                            "doesn't", 
+                            142.05, 
+                            142.42
+                        ], 
+                        [
+                            "seem", 
+                            142.42, 
+                            142.58
+                        ], 
+                        [
+                            "like", 
+                            142.58, 
+                            142.76
+                        ], 
+                        [
+                            "they're", 
+                            142.76, 
+                            142.92
+                        ], 
+                        [
+                            "doing", 
+                            142.92, 
+                            143.21
+                        ], 
+                        [
+                            "much", 
+                            143.21, 
+                            143.45
+                        ], 
+                        [
+                            "with", 
+                            143.45, 
+                            143.65
+                        ], 
+                        [
+                            "it", 
+                            143.65, 
+                            143.77
+                        ], 
+                        [
+                            "neither", 
+                            143.77, 
+                            144.03
+                        ], 
+                        [
+                            "I", 
+                            144.03, 
+                            144.07
+                        ], 
+                        [
+                            "mean", 
+                            144.07, 
+                            144.38
+                        ], 
+                        [
+                            "there's", 
+                            144.41, 
+                            144.66
+                        ]
+                    ], 
+                    "transcript": "I don't know I don't doesn't seem like they're doing much with it neither I mean there's "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 20, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            141.17, 
+                            141.26
+                        ], 
+                        [
+                            "don't", 
+                            141.26, 
+                            141.45
+                        ], 
+                        [
+                            "know", 
+                            141.45, 
+                            141.55
+                        ], 
+                        [
+                            "I", 
+                            141.55, 
+                            141.62
+                        ], 
+                        [
+                            "don't", 
+                            141.62, 
+                            141.85
+                        ], 
+                        [
+                            "doesn't", 
+                            142.05, 
+                            142.42
+                        ], 
+                        [
+                            "seem", 
+                            142.42, 
+                            142.58
+                        ], 
+                        [
+                            "like", 
+                            142.58, 
+                            142.76
+                        ], 
+                        [
+                            "they're", 
+                            142.76, 
+                            142.92
+                        ], 
+                        [
+                            "doing", 
+                            142.92, 
+                            143.21
+                        ], 
+                        [
+                            "much", 
+                            143.21, 
+                            143.45
+                        ], 
+                        [
+                            "with", 
+                            143.45, 
+                            143.65
+                        ], 
+                        [
+                            "it", 
+                            143.65, 
+                            143.77
+                        ], 
+                        [
+                            "neither", 
+                            143.77, 
+                            144.03
+                        ], 
+                        [
+                            "I", 
+                            144.03, 
+                            144.07
+                        ], 
+                        [
+                            "mean", 
+                            144.07, 
+                            144.38
+                        ], 
+                        [
+                            "there's", 
+                            144.41, 
+                            144.63
+                        ], 
+                        [
+                            "plans", 
+                            144.63, 
+                            145.13
+                        ], 
+                        [
+                            "there", 
+                            145.13, 
+                            145.38
+                        ], 
+                        [
+                            "and", 
+                            145.38, 
+                            145.61
+                        ], 
+                        [
+                            "now", 
+                            145.8, 
+                            146.04
+                        ], 
+                        [
+                            "with", 
+                            146.04, 
+                            146.2
+                        ], 
+                        [
+                            "the", 
+                            146.2, 
+                            146.31
+                        ], 
+                        [
+                            "voting", 
+                            146.31, 
+                            146.8
+                        ], 
+                        [
+                            "in", 
+                            146.8, 
+                            146.91
+                        ]
+                    ], 
+                    "transcript": "I don't know I don't doesn't seem like they're doing much with it neither I mean there's plans there and now with the voting in "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 20, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            141.17, 
+                            141.26
+                        ], 
+                        [
+                            "don't", 
+                            141.26, 
+                            141.45
+                        ], 
+                        [
+                            "know", 
+                            141.45, 
+                            141.55
+                        ], 
+                        [
+                            "I", 
+                            141.55, 
+                            141.62
+                        ], 
+                        [
+                            "don't", 
+                            141.62, 
+                            141.85
+                        ], 
+                        [
+                            "doesn't", 
+                            142.05, 
+                            142.42
+                        ], 
+                        [
+                            "seem", 
+                            142.42, 
+                            142.58
+                        ], 
+                        [
+                            "like", 
+                            142.58, 
+                            142.76
+                        ], 
+                        [
+                            "they're", 
+                            142.76, 
+                            142.92
+                        ], 
+                        [
+                            "doing", 
+                            142.92, 
+                            143.21
+                        ], 
+                        [
+                            "much", 
+                            143.21, 
+                            143.45
+                        ], 
+                        [
+                            "with", 
+                            143.45, 
+                            143.65
+                        ], 
+                        [
+                            "it", 
+                            143.65, 
+                            143.77
+                        ], 
+                        [
+                            "neither", 
+                            143.77, 
+                            144.03
+                        ], 
+                        [
+                            "I", 
+                            144.03, 
+                            144.07
+                        ], 
+                        [
+                            "mean", 
+                            144.07, 
+                            144.38
+                        ], 
+                        [
+                            "there's", 
+                            144.41, 
+                            144.63
+                        ], 
+                        [
+                            "plans", 
+                            144.63, 
+                            145.13
+                        ], 
+                        [
+                            "there", 
+                            145.13, 
+                            145.38
+                        ], 
+                        [
+                            "and", 
+                            145.38, 
+                            145.61
+                        ], 
+                        [
+                            "now", 
+                            145.8, 
+                            146.04
+                        ], 
+                        [
+                            "with", 
+                            146.04, 
+                            146.2
+                        ], 
+                        [
+                            "the", 
+                            146.2, 
+                            146.31
+                        ], 
+                        [
+                            "voting", 
+                            146.31, 
+                            146.8
+                        ], 
+                        [
+                            "and", 
+                            146.8, 
+                            147.02
+                        ], 
+                        [
+                            "and", 
+                            147.05, 
+                            147.43
+                        ], 
+                        [
+                            "people", 
+                            147.49, 
+                            147.94
+                        ], 
+                        [
+                            "you", 
+                            148.18, 
+                            148.31
+                        ], 
+                        [
+                            "know", 
+                            148.31, 
+                            148.55
+                        ], 
+                        [
+                            "getting", 
+                            148.71, 
+                            148.91
+                        ]
+                    ], 
+                    "transcript": "I don't know I don't doesn't seem like they're doing much with it neither I mean there's plans there and now with the voting and and people you know getting "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 20, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.949, 
+                    "timestamps": [
+                        [
+                            "I", 
+                            141.17, 
+                            141.26
+                        ], 
+                        [
+                            "don't", 
+                            141.26, 
+                            141.45
+                        ], 
+                        [
+                            "know", 
+                            141.45, 
+                            141.55
+                        ], 
+                        [
+                            "I", 
+                            141.55, 
+                            141.62
+                        ], 
+                        [
+                            "don't", 
+                            141.62, 
+                            141.85
+                        ], 
+                        [
+                            "doesn't", 
+                            142.05, 
+                            142.42
+                        ], 
+                        [
+                            "seem", 
+                            142.42, 
+                            142.58
+                        ], 
+                        [
+                            "like", 
+                            142.58, 
+                            142.76
+                        ], 
+                        [
+                            "they're", 
+                            142.76, 
+                            142.92
+                        ], 
+                        [
+                            "doing", 
+                            142.92, 
+                            143.21
+                        ], 
+                        [
+                            "much", 
+                            143.21, 
+                            143.45
+                        ], 
+                        [
+                            "with", 
+                            143.45, 
+                            143.65
+                        ], 
+                        [
+                            "it", 
+                            143.65, 
+                            143.77
+                        ], 
+                        [
+                            "neither", 
+                            143.77, 
+                            144.03
+                        ], 
+                        [
+                            "I", 
+                            144.03, 
+                            144.07
+                        ], 
+                        [
+                            "mean", 
+                            144.07, 
+                            144.38
+                        ], 
+                        [
+                            "there's", 
+                            144.41, 
+                            144.63
+                        ], 
+                        [
+                            "plans", 
+                            144.63, 
+                            145.13
+                        ], 
+                        [
+                            "there", 
+                            145.13, 
+                            145.38
+                        ], 
+                        [
+                            "and", 
+                            145.38, 
+                            145.61
+                        ], 
+                        [
+                            "now", 
+                            145.8, 
+                            146.04
+                        ], 
+                        [
+                            "with", 
+                            146.04, 
+                            146.2
+                        ], 
+                        [
+                            "the", 
+                            146.2, 
+                            146.31
+                        ], 
+                        [
+                            "voting", 
+                            146.31, 
+                            146.8
+                        ], 
+                        [
+                            "and", 
+                            146.8, 
+                            147.02
+                        ], 
+                        [
+                            "and", 
+                            147.05, 
+                            147.43
+                        ], 
+                        [
+                            "people", 
+                            147.49, 
+                            147.94
+                        ], 
+                        [
+                            "you", 
+                            148.18, 
+                            148.31
+                        ], 
+                        [
+                            "know", 
+                            148.31, 
+                            148.55
+                        ], 
+                        [
+                            "getting", 
+                            148.71, 
+                            148.95
+                        ], 
+                        [
+                            "into", 
+                            148.95, 
+                            149.29
+                        ], 
+                        [
+                            "Senate", 
+                            149.48, 
+                            149.89
+                        ], 
+                        [
+                            "and", 
+                            149.89, 
+                            150.11
+                        ]
+                    ], 
+                    "transcript": "I don't know I don't doesn't seem like they're doing much with it neither I mean there's plans there and now with the voting and and people you know getting into Senate and ", 
+                    "word_confidence": [
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "don't", 
+                            1.0
+                        ], 
+                        [
+                            "know", 
+                            0.709205268131572
+                        ], 
+                        [
+                            "I", 
+                            0.9316132982531654
+                        ], 
+                        [
+                            "don't", 
+                            1.0
+                        ], 
+                        [
+                            "doesn't", 
+                            1.0
+                        ], 
+                        [
+                            "seem", 
+                            1.0
+                        ], 
+                        [
+                            "like", 
+                            1.0
+                        ], 
+                        [
+                            "they're", 
+                            0.830452234594748
+                        ], 
+                        [
+                            "doing", 
+                            1.0
+                        ], 
+                        [
+                            "much", 
+                            1.0
+                        ], 
+                        [
+                            "with", 
+                            1.0
+                        ], 
+                        [
+                            "it", 
+                            0.9999999999999912
+                        ], 
+                        [
+                            "neither", 
+                            0.8133376262969455
+                        ], 
+                        [
+                            "I", 
+                            0.8067062106051297
+                        ], 
+                        [
+                            "mean", 
+                            1.0
+                        ], 
+                        [
+                            "there's", 
+                            0.980769528050022
+                        ], 
+                        [
+                            "plans", 
+                            1.0
+                        ], 
+                        [
+                            "there", 
+                            1.0
+                        ], 
+                        [
+                            "and", 
+                            0.9999999999999941
+                        ], 
+                        [
+                            "now", 
+                            0.9999999999999932
+                        ], 
+                        [
+                            "with", 
+                            0.9999999999999912
+                        ], 
+                        [
+                            "the", 
+                            1.0
+                        ], 
+                        [
+                            "voting", 
+                            1.0
+                        ], 
+                        [
+                            "and", 
+                            0.5718979340112043
+                        ], 
+                        [
+                            "and", 
+                            1.0
+                        ], 
+                        [
+                            "people", 
+                            0.9968683720142989
+                        ], 
+                        [
+                            "you", 
+                            1.0
+                        ], 
+                        [
+                            "know", 
+                            0.9762502514277874
+                        ], 
+                        [
+                            "getting", 
+                            1.0
+                        ], 
+                        [
+                            "into", 
+                            0.48274419947209635
+                        ], 
+                        [
+                            "Senate", 
+                            0.9876517720765631
+                        ], 
+                        [
+                            "and", 
+                            1.0
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "I don't know I don't doesn't seem like they're doing much with it neither I mean there's plans there and now with the voting in and people you know getting into Senate and "
+                }, 
+                {
+                    "transcript": "I don't I don't doesn't seem like they're doing much with it neither I mean there's plans there and now with the voting and and people you know getting into Senate and "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 21, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "government", 
+                            150.4, 
+                            150.86
+                        ], 
+                        [
+                            "and", 
+                            150.86, 
+                            150.95
+                        ], 
+                        [
+                            "stuff", 
+                            150.95, 
+                            151.19
+                        ], 
+                        [
+                            "and", 
+                            151.19, 
+                            151.45
+                        ], 
+                        [
+                            "they", 
+                            151.65, 
+                            151.75
+                        ], 
+                        [
+                            "have", 
+                            151.75, 
+                            151.89
+                        ], 
+                        [
+                            "nice", 
+                            151.89, 
+                            152.15
+                        ]
+                    ], 
+                    "transcript": "government and stuff and they have nice "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 21, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.895, 
+                    "timestamps": [
+                        [
+                            "government", 
+                            150.4, 
+                            150.86
+                        ], 
+                        [
+                            "and", 
+                            150.86, 
+                            150.95
+                        ], 
+                        [
+                            "stuff", 
+                            150.95, 
+                            151.19
+                        ], 
+                        [
+                            "and", 
+                            151.19, 
+                            151.45
+                        ], 
+                        [
+                            "they", 
+                            151.65, 
+                            151.75
+                        ], 
+                        [
+                            "have", 
+                            151.75, 
+                            151.89
+                        ], 
+                        [
+                            "nice", 
+                            151.89, 
+                            152.16
+                        ], 
+                        [
+                            "plans", 
+                            152.16, 
+                            152.78
+                        ], 
+                        [
+                            "and", 
+                            152.78, 
+                            153.07
+                        ]
+                    ], 
+                    "transcript": "government and stuff and they have nice plans and ", 
+                    "word_confidence": [
+                        [
+                            "government", 
+                            0.9999999999999908
+                        ], 
+                        [
+                            "and", 
+                            0.4631678678258736
+                        ], 
+                        [
+                            "stuff", 
+                            0.7217412819152611
+                        ], 
+                        [
+                            "and", 
+                            0.9056250759840415
+                        ], 
+                        [
+                            "they", 
+                            0.9999999999999905
+                        ], 
+                        [
+                            "have", 
+                            0.9999999999999994
+                        ], 
+                        [
+                            "nice", 
+                            0.9999999999999971
+                        ], 
+                        [
+                            "plans", 
+                            0.9988670848761064
+                        ], 
+                        [
+                            "and", 
+                            0.5894248917605303
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "government stuff and they have nice plans and "
+                }, 
+                {
+                    "transcript": "government stuck and they have nice plans and "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 22, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            153.5, 
+                            153.96
+                        ], 
+                        [
+                            "but", 
+                            154.21, 
+                            154.63
+                        ]
+                    ], 
+                    "transcript": "%HESITATION but "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 22, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            153.5, 
+                            153.96
+                        ], 
+                        [
+                            "but", 
+                            154.21, 
+                            154.63
+                        ], 
+                        [
+                            "they", 
+                            155.28, 
+                            155.4
+                        ], 
+                        [
+                            "always", 
+                            155.4, 
+                            155.83
+                        ], 
+                        [
+                            "work", 
+                            155.83, 
+                            156.28
+                        ], 
+                        [
+                            "and", 
+                            156.28, 
+                            156.4
+                        ], 
+                        [
+                            "then", 
+                            156.4, 
+                            156.71
+                        ], 
+                        [
+                            "you", 
+                            156.76, 
+                            156.92
+                        ], 
+                        [
+                            "know", 
+                            156.92, 
+                            157.02
+                        ], 
+                        [
+                            "they", 
+                            157.02, 
+                            157.13
+                        ], 
+                        [
+                            "try", 
+                            157.13, 
+                            157.29
+                        ]
+                    ], 
+                    "transcript": "%HESITATION but they always work and then you know they try "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 22, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            153.5, 
+                            153.96
+                        ], 
+                        [
+                            "but", 
+                            154.21, 
+                            154.63
+                        ], 
+                        [
+                            "they", 
+                            155.28, 
+                            155.4
+                        ], 
+                        [
+                            "always", 
+                            155.4, 
+                            155.83
+                        ], 
+                        [
+                            "work", 
+                            155.83, 
+                            156.28
+                        ], 
+                        [
+                            "and", 
+                            156.28, 
+                            156.4
+                        ], 
+                        [
+                            "then", 
+                            156.4, 
+                            156.71
+                        ], 
+                        [
+                            "you", 
+                            156.76, 
+                            156.92
+                        ], 
+                        [
+                            "know", 
+                            156.92, 
+                            157.02
+                        ], 
+                        [
+                            "they", 
+                            157.02, 
+                            157.13
+                        ], 
+                        [
+                            "try", 
+                            157.13, 
+                            157.32
+                        ], 
+                        [
+                            "to", 
+                            157.32, 
+                            157.43
+                        ], 
+                        [
+                            "raise", 
+                            157.43, 
+                            157.66
+                        ], 
+                        [
+                            "taxes", 
+                            157.66, 
+                            158.17
+                        ], 
+                        [
+                            "more", 
+                            158.17, 
+                            158.57
+                        ], 
+                        [
+                            "and", 
+                            158.57, 
+                            158.78
+                        ], 
+                        [
+                            "I", 
+                            159.02, 
+                            159.11
+                        ], 
+                        [
+                            "don't", 
+                            159.11, 
+                            159.29
+                        ]
+                    ], 
+                    "transcript": "%HESITATION but they always work and then you know they try to raise taxes more and I don't "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 22, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            153.5, 
+                            153.96
+                        ], 
+                        [
+                            "but", 
+                            154.21, 
+                            154.63
+                        ], 
+                        [
+                            "they", 
+                            155.28, 
+                            155.4
+                        ], 
+                        [
+                            "always", 
+                            155.4, 
+                            155.83
+                        ], 
+                        [
+                            "work", 
+                            155.83, 
+                            156.28
+                        ], 
+                        [
+                            "and", 
+                            156.28, 
+                            156.4
+                        ], 
+                        [
+                            "then", 
+                            156.4, 
+                            156.71
+                        ], 
+                        [
+                            "you", 
+                            156.76, 
+                            156.92
+                        ], 
+                        [
+                            "know", 
+                            156.92, 
+                            157.02
+                        ], 
+                        [
+                            "they", 
+                            157.02, 
+                            157.13
+                        ], 
+                        [
+                            "try", 
+                            157.13, 
+                            157.32
+                        ], 
+                        [
+                            "to", 
+                            157.32, 
+                            157.43
+                        ], 
+                        [
+                            "raise", 
+                            157.43, 
+                            157.66
+                        ], 
+                        [
+                            "taxes", 
+                            157.66, 
+                            158.17
+                        ], 
+                        [
+                            "more", 
+                            158.17, 
+                            158.57
+                        ], 
+                        [
+                            "and", 
+                            158.57, 
+                            158.78
+                        ], 
+                        [
+                            "I", 
+                            159.02, 
+                            159.11
+                        ], 
+                        [
+                            "don't", 
+                            159.11, 
+                            159.26
+                        ], 
+                        [
+                            "know", 
+                            159.26, 
+                            159.32
+                        ], 
+                        [
+                            "what", 
+                            159.32, 
+                            159.48
+                        ], 
+                        [
+                            "happens", 
+                            159.48, 
+                            159.96
+                        ], 
+                        [
+                            "with", 
+                            159.96, 
+                            160.22
+                        ], 
+                        [
+                            "money", 
+                            160.67, 
+                            160.99
+                        ], 
+                        [
+                            "because", 
+                            160.99, 
+                            161.29
+                        ]
+                    ], 
+                    "transcript": "%HESITATION but they always work and then you know they try to raise taxes more and I don't know what happens with money because "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 22, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            153.5, 
+                            153.96
+                        ], 
+                        [
+                            "but", 
+                            154.21, 
+                            154.63
+                        ], 
+                        [
+                            "they", 
+                            155.28, 
+                            155.4
+                        ], 
+                        [
+                            "always", 
+                            155.4, 
+                            155.83
+                        ], 
+                        [
+                            "work", 
+                            155.83, 
+                            156.28
+                        ], 
+                        [
+                            "and", 
+                            156.28, 
+                            156.4
+                        ], 
+                        [
+                            "then", 
+                            156.4, 
+                            156.71
+                        ], 
+                        [
+                            "you", 
+                            156.76, 
+                            156.92
+                        ], 
+                        [
+                            "know", 
+                            156.92, 
+                            157.02
+                        ], 
+                        [
+                            "they", 
+                            157.02, 
+                            157.13
+                        ], 
+                        [
+                            "try", 
+                            157.13, 
+                            157.32
+                        ], 
+                        [
+                            "to", 
+                            157.32, 
+                            157.43
+                        ], 
+                        [
+                            "raise", 
+                            157.43, 
+                            157.66
+                        ], 
+                        [
+                            "taxes", 
+                            157.66, 
+                            158.17
+                        ], 
+                        [
+                            "more", 
+                            158.17, 
+                            158.57
+                        ], 
+                        [
+                            "and", 
+                            158.57, 
+                            158.78
+                        ], 
+                        [
+                            "I", 
+                            159.02, 
+                            159.11
+                        ], 
+                        [
+                            "don't", 
+                            159.11, 
+                            159.26
+                        ], 
+                        [
+                            "know", 
+                            159.26, 
+                            159.32
+                        ], 
+                        [
+                            "what", 
+                            159.32, 
+                            159.48
+                        ], 
+                        [
+                            "happens", 
+                            159.48, 
+                            159.96
+                        ], 
+                        [
+                            "with", 
+                            159.96, 
+                            160.22
+                        ], 
+                        [
+                            "money", 
+                            160.67, 
+                            160.99
+                        ], 
+                        [
+                            "because", 
+                            160.99, 
+                            161.45
+                        ], 
+                        [
+                            "if", 
+                            161.69, 
+                            161.84
+                        ], 
+                        [
+                            "their", 
+                            161.84, 
+                            161.99
+                        ], 
+                        [
+                            "plans", 
+                            161.99, 
+                            162.39
+                        ], 
+                        [
+                            "don't", 
+                            162.39, 
+                            162.62
+                        ], 
+                        [
+                            "work", 
+                            162.62, 
+                            162.92
+                        ], 
+                        [
+                            "you", 
+                            162.92, 
+                            163.01
+                        ], 
+                        [
+                            "know", 
+                            163.01, 
+                            163.16
+                        ], 
+                        [
+                            "and", 
+                            163.16, 
+                            163.29
+                        ]
+                    ], 
+                    "transcript": "%HESITATION but they always work and then you know they try to raise taxes more and I don't know what happens with money because if their plans don't work you know and "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 22, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.878, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            153.5, 
+                            153.96
+                        ], 
+                        [
+                            "but", 
+                            154.21, 
+                            154.63
+                        ], 
+                        [
+                            "they", 
+                            155.28, 
+                            155.4
+                        ], 
+                        [
+                            "always", 
+                            155.4, 
+                            155.83
+                        ], 
+                        [
+                            "work", 
+                            155.83, 
+                            156.28
+                        ], 
+                        [
+                            "and", 
+                            156.28, 
+                            156.4
+                        ], 
+                        [
+                            "then", 
+                            156.4, 
+                            156.71
+                        ], 
+                        [
+                            "you", 
+                            156.76, 
+                            156.92
+                        ], 
+                        [
+                            "know", 
+                            156.92, 
+                            157.02
+                        ], 
+                        [
+                            "they", 
+                            157.02, 
+                            157.13
+                        ], 
+                        [
+                            "try", 
+                            157.13, 
+                            157.32
+                        ], 
+                        [
+                            "to", 
+                            157.32, 
+                            157.43
+                        ], 
+                        [
+                            "raise", 
+                            157.43, 
+                            157.66
+                        ], 
+                        [
+                            "taxes", 
+                            157.66, 
+                            158.17
+                        ], 
+                        [
+                            "more", 
+                            158.17, 
+                            158.57
+                        ], 
+                        [
+                            "and", 
+                            158.57, 
+                            158.78
+                        ], 
+                        [
+                            "I", 
+                            159.02, 
+                            159.11
+                        ], 
+                        [
+                            "don't", 
+                            159.11, 
+                            159.26
+                        ], 
+                        [
+                            "know", 
+                            159.26, 
+                            159.32
+                        ], 
+                        [
+                            "what", 
+                            159.32, 
+                            159.48
+                        ], 
+                        [
+                            "happens", 
+                            159.48, 
+                            159.96
+                        ], 
+                        [
+                            "with", 
+                            159.96, 
+                            160.22
+                        ], 
+                        [
+                            "money", 
+                            160.67, 
+                            160.99
+                        ], 
+                        [
+                            "because", 
+                            160.99, 
+                            161.45
+                        ], 
+                        [
+                            "if", 
+                            161.69, 
+                            161.84
+                        ], 
+                        [
+                            "their", 
+                            161.84, 
+                            161.99
+                        ], 
+                        [
+                            "plans", 
+                            161.99, 
+                            162.39
+                        ], 
+                        [
+                            "don't", 
+                            162.39, 
+                            162.62
+                        ], 
+                        [
+                            "work", 
+                            162.62, 
+                            162.92
+                        ], 
+                        [
+                            "you", 
+                            162.92, 
+                            163.01
+                        ], 
+                        [
+                            "know", 
+                            163.01, 
+                            163.16
+                        ], 
+                        [
+                            "and", 
+                            163.16, 
+                            163.35
+                        ], 
+                        [
+                            "that", 
+                            163.35, 
+                            163.5
+                        ], 
+                        [
+                            "taxes", 
+                            163.5, 
+                            163.91
+                        ], 
+                        [
+                            "get", 
+                            163.91, 
+                            164.1
+                        ], 
+                        [
+                            "raised", 
+                            164.1, 
+                            164.62
+                        ]
+                    ], 
+                    "transcript": "%HESITATION but they always work and then you know they try to raise taxes more and I don't know what happens with money because if their plans don't work you know and that taxes get raised ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            1.0
+                        ], 
+                        [
+                            "but", 
+                            1.0
+                        ], 
+                        [
+                            "they", 
+                            0.7748547130336717
+                        ], 
+                        [
+                            "always", 
+                            0.8192460503662676
+                        ], 
+                        [
+                            "work", 
+                            1.0
+                        ], 
+                        [
+                            "and", 
+                            1.0
+                        ], 
+                        [
+                            "then", 
+                            1.0
+                        ], 
+                        [
+                            "you", 
+                            1.0
+                        ], 
+                        [
+                            "know", 
+                            1.0
+                        ], 
+                        [
+                            "they", 
+                            1.0
+                        ], 
+                        [
+                            "try", 
+                            0.7037067245802876
+                        ], 
+                        [
+                            "to", 
+                            0.8653212384456812
+                        ], 
+                        [
+                            "raise", 
+                            1.0
+                        ], 
+                        [
+                            "taxes", 
+                            0.9067902533971814
+                        ], 
+                        [
+                            "more", 
+                            0.7665046323128981
+                        ], 
+                        [
+                            "and", 
+                            0.9533097201545546
+                        ], 
+                        [
+                            "I", 
+                            0.8718906233818889
+                        ], 
+                        [
+                            "don't", 
+                            1.0
+                        ], 
+                        [
+                            "know", 
+                            1.0
+                        ], 
+                        [
+                            "what", 
+                            0.8648314351962041
+                        ], 
+                        [
+                            "happens", 
+                            0.5714832406804096
+                        ], 
+                        [
+                            "with", 
+                            0.7244625141065588
+                        ], 
+                        [
+                            "money", 
+                            0.9591020553128751
+                        ], 
+                        [
+                            "because", 
+                            1.0
+                        ], 
+                        [
+                            "if", 
+                            1.0
+                        ], 
+                        [
+                            "their", 
+                            1.0
+                        ], 
+                        [
+                            "plans", 
+                            1.0
+                        ], 
+                        [
+                            "don't", 
+                            1.0
+                        ], 
+                        [
+                            "work", 
+                            0.7544451036442863
+                        ], 
+                        [
+                            "you", 
+                            0.5875729023667146
+                        ], 
+                        [
+                            "know", 
+                            0.5875729023666986
+                        ], 
+                        [
+                            "and", 
+                            0.4462769836403662
+                        ], 
+                        [
+                            "that", 
+                            0.5237933067673219
+                        ], 
+                        [
+                            "taxes", 
+                            0.6990040911065231
+                        ], 
+                        [
+                            "get", 
+                            1.0
+                        ], 
+                        [
+                            "raised", 
+                            0.9886609317067798
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION but they always work and then you know they try to raise taxes more and I don't know what happens with money because if their plans don't work you know and the taxes get raised "
+                }, 
+                {
+                    "transcript": "%HESITATION but they always work and then you know they try to raise taxes more and I don't know what happened was that money because if their plans don't work you know and that taxes get raised "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 23, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            165.62, 
+                            165.71
+                        ], 
+                        [
+                            "don't", 
+                            165.71, 
+                            165.89
+                        ], 
+                        [
+                            "know", 
+                            165.89, 
+                            166.28
+                        ], 
+                        [
+                            "I", 
+                            166.31, 
+                            166.43
+                        ], 
+                        [
+                            "met", 
+                            166.43, 
+                            166.79
+                        ], 
+                        [
+                            "you", 
+                            166.88, 
+                            167.09
+                        ], 
+                        [
+                            "really", 
+                            167.09, 
+                            167.35
+                        ]
+                    ], 
+                    "transcript": "I don't know I met you really "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 23, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.832, 
+                    "timestamps": [
+                        [
+                            "I", 
+                            165.62, 
+                            165.71
+                        ], 
+                        [
+                            "don't", 
+                            165.71, 
+                            165.89
+                        ], 
+                        [
+                            "know", 
+                            165.89, 
+                            166.28
+                        ], 
+                        [
+                            "I", 
+                            166.31, 
+                            166.43
+                        ], 
+                        [
+                            "met", 
+                            166.43, 
+                            166.79
+                        ], 
+                        [
+                            "you", 
+                            166.88, 
+                            167.02
+                        ], 
+                        [
+                            "know", 
+                            167.02, 
+                            167.1
+                        ], 
+                        [
+                            "really", 
+                            167.1, 
+                            167.35
+                        ], 
+                        [
+                            "into", 
+                            167.35, 
+                            167.6
+                        ], 
+                        [
+                            "politics", 
+                            167.6, 
+                            168.38
+                        ], 
+                        [
+                            "that", 
+                            168.38, 
+                            168.67
+                        ]
+                    ], 
+                    "transcript": "I don't know I met you know really into politics that ", 
+                    "word_confidence": [
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "don't", 
+                            1.0
+                        ], 
+                        [
+                            "know", 
+                            0.988045241153154
+                        ], 
+                        [
+                            "I", 
+                            0.8192084288088816
+                        ], 
+                        [
+                            "met", 
+                            0.8192084288088824
+                        ], 
+                        [
+                            "you", 
+                            0.6281065659470074
+                        ], 
+                        [
+                            "know", 
+                            0.2750397362340458
+                        ], 
+                        [
+                            "really", 
+                            0.999999999999978
+                        ], 
+                        [
+                            "into", 
+                            0.8028691078835982
+                        ], 
+                        [
+                            "politics", 
+                            0.9924180426108845
+                        ], 
+                        [
+                            "that", 
+                            0.19097857610129368
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "I don't know I met you know really into politics at "
+                }, 
+                {
+                    "transcript": "I don't know I met you really into politics that "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 24, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.995, 
+                    "timestamps": [
+                        [
+                            "really", 
+                            169.11, 
+                            169.34
+                        ], 
+                        [
+                            "understand", 
+                            169.34, 
+                            169.91
+                        ], 
+                        [
+                            "it", 
+                            169.91, 
+                            170.01
+                        ], 
+                        [
+                            "but", 
+                            170.01, 
+                            170.32
+                        ]
+                    ], 
+                    "transcript": "really understand it but ", 
+                    "word_confidence": [
+                        [
+                            "really", 
+                            1.0
+                        ], 
+                        [
+                            "understand", 
+                            1.0
+                        ], 
+                        [
+                            "it", 
+                            1.0
+                        ], 
+                        [
+                            "but", 
+                            0.98060561247305
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 25, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.932, 
+                    "timestamps": [
+                        [
+                            "it's", 
+                            171.04, 
+                            171.27
+                        ], 
+                        [
+                            "just", 
+                            171.27, 
+                            171.5
+                        ]
+                    ], 
+                    "transcript": "it's just ", 
+                    "word_confidence": [
+                        [
+                            "it's", 
+                            0.863184678481052
+                        ], 
+                        [
+                            "just", 
+                            1.0
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "its just "
+                }, 
+                {
+                    "transcript": "is just "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 26, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.413, 
+                    "timestamps": [
+                        [
+                            "you", 
+                            172.76, 
+                            172.89
+                        ], 
+                        [
+                            "know", 
+                            172.89, 
+                            173.07
+                        ]
+                    ], 
+                    "transcript": "you know ", 
+                    "word_confidence": [
+                        [
+                            "you", 
+                            0.37824263221695487
+                        ], 
+                        [
+                            "know", 
+                            0.43872046557743116
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "no "
+                }, 
+                {
+                    "transcript": "yeah "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 27, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.995, 
+                    "timestamps": [
+                        [
+                            "right", 
+                            186.73, 
+                            187.32
+                        ]
+                    ], 
+                    "transcript": "right ", 
+                    "word_confidence": [
+                        [
+                            "right", 
+                            0.9947157256880116
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "write "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 28, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.998, 
+                    "timestamps": [
+                        [
+                            "right", 
+                            220.86, 
+                            221.45
+                        ]
+                    ], 
+                    "transcript": "right ", 
+                    "word_confidence": [
+                        [
+                            "right", 
+                            0.9977668636068374
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "right O. "
+                }, 
+                {
+                    "transcript": "right %HESITATION "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 29, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.84, 
+                    "timestamps": [
+                        [
+                            "yes", 
+                            228.28, 
+                            228.79
+                        ], 
+                        [
+                            "there", 
+                            228.79, 
+                            228.94
+                        ], 
+                        [
+                            "could", 
+                            228.94, 
+                            229.12
+                        ], 
+                        [
+                            "be", 
+                            229.12, 
+                            229.25
+                        ], 
+                        [
+                            "nice", 
+                            229.25, 
+                            229.9
+                        ]
+                    ], 
+                    "transcript": "yes there could be nice ", 
+                    "word_confidence": [
+                        [
+                            "yes", 
+                            0.7112724554251348
+                        ], 
+                        [
+                            "there", 
+                            0.6043505113726948
+                        ], 
+                        [
+                            "could", 
+                            0.7834976563022047
+                        ], 
+                        [
+                            "be", 
+                            0.9436487826219321
+                        ], 
+                        [
+                            "nice", 
+                            0.989615350340999
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "yes there could be a nice "
+                }, 
+                {
+                    "transcript": "yeah there could be nice "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 30, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.988, 
+                    "timestamps": [
+                        [
+                            "right", 
+                            244.39, 
+                            245.02
+                        ]
+                    ], 
+                    "transcript": "right ", 
+                    "word_confidence": [
+                        [
+                            "right", 
+                            0.9877061632065783
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "write "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 31, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.946, 
+                    "timestamps": [
+                        [
+                            "and", 
+                            246.08, 
+                            246.44
+                        ]
+                    ], 
+                    "transcript": "and ", 
+                    "word_confidence": [
+                        [
+                            "and", 
+                            0.9464945785609008
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "and I "
+                }, 
+                {
+                    "transcript": "and it "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 32, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.77, 
+                    "timestamps": [
+                        [
+                            "right", 
+                            258.03, 
+                            258.64
+                        ]
+                    ], 
+                    "transcript": "right ", 
+                    "word_confidence": [
+                        [
+                            "right", 
+                            0.7700976492851194
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "great "
+                }, 
+                {
+                    "transcript": "write "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 33, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.0, 
+                    "timestamps": [], 
+                    "transcript": "no "
+                }, 
+                {
+                    "transcript": "%HESITATION "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 34, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            261.78, 
+                            262.17
+                        ], 
+                        [
+                            "isn't", 
+                            262.17, 
+                            262.63
+                        ], 
+                        [
+                            "that", 
+                            262.99, 
+                            263.2
+                        ], 
+                        [
+                            "much", 
+                            263.2, 
+                            263.43
+                        ]
+                    ], 
+                    "transcript": "yeah isn't that much "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 34, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            261.78, 
+                            262.17
+                        ], 
+                        [
+                            "isn't", 
+                            262.17, 
+                            262.63
+                        ], 
+                        [
+                            "that", 
+                            262.99, 
+                            263.2
+                        ], 
+                        [
+                            "much", 
+                            263.2, 
+                            263.45
+                        ], 
+                        [
+                            "out", 
+                            263.45, 
+                            263.64
+                        ], 
+                        [
+                            "there", 
+                            263.64, 
+                            263.79
+                        ], 
+                        [
+                            "that's", 
+                            263.79, 
+                            264.03
+                        ], 
+                        [
+                            "fair", 
+                            264.03, 
+                            264.47
+                        ], 
+                        [
+                            "that's", 
+                            264.5, 
+                            264.66
+                        ], 
+                        [
+                            "for", 
+                            264.66, 
+                            264.82
+                        ], 
+                        [
+                            "sure", 
+                            264.82, 
+                            265.26
+                        ]
+                    ], 
+                    "transcript": "yeah isn't that much out there that's fair that's for sure "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 34, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.785, 
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            261.78, 
+                            262.17
+                        ], 
+                        [
+                            "isn't", 
+                            262.17, 
+                            262.63
+                        ], 
+                        [
+                            "that", 
+                            262.99, 
+                            263.2
+                        ], 
+                        [
+                            "much", 
+                            263.2, 
+                            263.45
+                        ], 
+                        [
+                            "out", 
+                            263.45, 
+                            263.64
+                        ], 
+                        [
+                            "there", 
+                            263.64, 
+                            263.79
+                        ], 
+                        [
+                            "that's", 
+                            263.79, 
+                            264.03
+                        ], 
+                        [
+                            "fair", 
+                            264.03, 
+                            264.47
+                        ], 
+                        [
+                            "that's", 
+                            264.5, 
+                            264.66
+                        ], 
+                        [
+                            "for", 
+                            264.66, 
+                            264.82
+                        ], 
+                        [
+                            "sure", 
+                            264.82, 
+                            265.26
+                        ]
+                    ], 
+                    "transcript": "yeah isn't that much out there that's fair that's for sure ", 
+                    "word_confidence": [
+                        [
+                            "yeah", 
+                            0.9953718483658048
+                        ], 
+                        [
+                            "isn't", 
+                            0.3109345323353555
+                        ], 
+                        [
+                            "that", 
+                            0.04996641097064093
+                        ], 
+                        [
+                            "much", 
+                            0.999999999999931
+                        ], 
+                        [
+                            "out", 
+                            0.9999999999999316
+                        ], 
+                        [
+                            "there", 
+                            0.9999999999999322
+                        ], 
+                        [
+                            "that's", 
+                            0.999999999999935
+                        ], 
+                        [
+                            "fair", 
+                            0.765803139973956
+                        ], 
+                        [
+                            "that's", 
+                            0.7439005094126918
+                        ], 
+                        [
+                            "for", 
+                            0.9999999999999649
+                        ], 
+                        [
+                            "sure", 
+                            0.9929039807493296
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "yeah it is and not much out there that's fair that's for sure "
+                }, 
+                {
+                    "transcript": "yeah it isn't not much out there that's fair that's for sure "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 35, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.687, 
+                    "timestamps": [
+                        [
+                            "I", 
+                            266.72, 
+                            266.92
+                        ], 
+                        [
+                            "agree", 
+                            267.06, 
+                            267.51
+                        ], 
+                        [
+                            "to", 
+                            267.51, 
+                            267.63
+                        ], 
+                        [
+                            "that", 
+                            267.63, 
+                            268.12
+                        ]
+                    ], 
+                    "transcript": "I agree to that ", 
+                    "word_confidence": [
+                        [
+                            "I", 
+                            0.5561879342230717
+                        ], 
+                        [
+                            "agree", 
+                            0.38794034859098464
+                        ], 
+                        [
+                            "to", 
+                            0.7894801804313754
+                        ], 
+                        [
+                            "that", 
+                            0.989546426270149
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "I agree that "
+                }, 
+                {
+                    "transcript": "I agreed to that "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 36, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.161, 
+                    "timestamps": [
+                        [
+                            "I'm", 
+                            273.5, 
+                            273.88
+                        ]
+                    ], 
+                    "transcript": "I'm ", 
+                    "word_confidence": [
+                        [
+                            "I'm", 
+                            0.16090778892909305
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION "
+                }, 
+                {
+                    "transcript": "okay "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 37, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.24, 
+                    "timestamps": [
+                        [
+                            "I'm", 
+                            276.6, 
+                            276.95
+                        ]
+                    ], 
+                    "transcript": "I'm ", 
+                    "word_confidence": [
+                        [
+                            "I'm", 
+                            0.2403152735613172
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "no "
+                }, 
+                {
+                    "transcript": "when "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 38, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.963, 
+                    "timestamps": [
+                        [
+                            "no", 
+                            277.05, 
+                            277.71
+                        ], 
+                        [
+                            "I", 
+                            277.71, 
+                            278.14
+                        ]
+                    ], 
+                    "transcript": "no I ", 
+                    "word_confidence": [
+                        [
+                            "no", 
+                            0.9542572083902382
+                        ], 
+                        [
+                            "I", 
+                            0.9763286383394848
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "know I "
+                }, 
+                {
+                    "transcript": "you know I "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 39, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.995, 
+                    "timestamps": [
+                        [
+                            "I", 
+                            278.52, 
+                            278.61
+                        ], 
+                        [
+                            "have", 
+                            278.61, 
+                            278.77
+                        ], 
+                        [
+                            "no", 
+                            278.77, 
+                            278.93
+                        ], 
+                        [
+                            "idea", 
+                            278.93, 
+                            279.36
+                        ], 
+                        [
+                            "I", 
+                            279.36, 
+                            279.43
+                        ], 
+                        [
+                            "just", 
+                            279.43, 
+                            279.73
+                        ]
+                    ], 
+                    "transcript": "I have no idea I just ", 
+                    "word_confidence": [
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "have", 
+                            1.0
+                        ], 
+                        [
+                            "no", 
+                            1.0
+                        ], 
+                        [
+                            "idea", 
+                            1.0
+                        ], 
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "just", 
+                            0.9817381120579222
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 40, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.934, 
+                    "timestamps": [
+                        [
+                            "my", 
+                            280.43, 
+                            280.58
+                        ], 
+                        [
+                            "dad", 
+                            280.58, 
+                            280.96
+                        ], 
+                        [
+                            "does", 
+                            280.96, 
+                            281.24
+                        ], 
+                        [
+                            "for", 
+                            281.52, 
+                            281.86
+                        ], 
+                        [
+                            "me", 
+                            281.89, 
+                            282.11
+                        ]
+                    ], 
+                    "transcript": "my dad does for me ", 
+                    "word_confidence": [
+                        [
+                            "my", 
+                            0.9999999999999839
+                        ], 
+                        [
+                            "dad", 
+                            0.9999999999999837
+                        ], 
+                        [
+                            "does", 
+                            0.9439966669750064
+                        ], 
+                        [
+                            "for", 
+                            0.9008158567672819
+                        ], 
+                        [
+                            "me", 
+                            0.8120880229661953
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "my dad does "
+                }, 
+                {
+                    "transcript": "my dad does it for me "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 41, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.415, 
+                    "timestamps": [
+                        [
+                            "it's", 
+                            283.68, 
+                            283.85
+                        ], 
+                        [
+                            "a", 
+                            284.17, 
+                            284.64
+                        ]
+                    ], 
+                    "transcript": "it's a ", 
+                    "word_confidence": [
+                        [
+                            "it's", 
+                            0.3317253349380737
+                        ], 
+                        [
+                            "a", 
+                            0.4452545779074139
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "a "
+                }, 
+                {
+                    "transcript": "I "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}

@@ -1,0 +1,5266 @@
+{
+    "result_index": 0, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.0, 
+                    "timestamps": [], 
+                    "transcript": "uhhuh "
+                }, 
+                {
+                    "transcript": "the "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 1, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.862, 
+                    "timestamps": [
+                        [
+                            "well", 
+                            28.29, 
+                            28.7
+                        ], 
+                        [
+                            "I'm", 
+                            28.7, 
+                            29.04
+                        ], 
+                        [
+                            "%HESITATION", 
+                            29.04, 
+                            29.29
+                        ]
+                    ], 
+                    "transcript": "well I'm %HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "well", 
+                            1.0
+                        ], 
+                        [
+                            "I'm", 
+                            1.0
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.44966379339328033
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "well I'm a "
+                }, 
+                {
+                    "transcript": "well I'm "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 2, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            31.78, 
+                            31.93
+                        ], 
+                        [
+                            "I", 
+                            31.93, 
+                            32.23
+                        ], 
+                        [
+                            "was", 
+                            32.23, 
+                            32.46
+                        ], 
+                        [
+                            "just", 
+                            32.46, 
+                            32.83
+                        ], 
+                        [
+                            "%HESITATION", 
+                            32.83, 
+                            33.1
+                        ], 
+                        [
+                            "in", 
+                            33.1, 
+                            33.33
+                        ], 
+                        [
+                            "high", 
+                            33.33, 
+                            33.5
+                        ]
+                    ], 
+                    "transcript": "I I was just %HESITATION in high "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 2, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            31.78, 
+                            31.93
+                        ], 
+                        [
+                            "I", 
+                            31.93, 
+                            32.23
+                        ], 
+                        [
+                            "was", 
+                            32.23, 
+                            32.46
+                        ], 
+                        [
+                            "just", 
+                            32.46, 
+                            32.83
+                        ], 
+                        [
+                            "%HESITATION", 
+                            32.83, 
+                            33.1
+                        ], 
+                        [
+                            "in", 
+                            33.1, 
+                            33.33
+                        ], 
+                        [
+                            "high", 
+                            33.33, 
+                            33.5
+                        ], 
+                        [
+                            "school", 
+                            33.5, 
+                            33.89
+                        ], 
+                        [
+                            "I", 
+                            34.16, 
+                            34.26
+                        ], 
+                        [
+                            "guess", 
+                            34.26, 
+                            34.54
+                        ], 
+                        [
+                            "one", 
+                            34.54, 
+                            34.69
+                        ], 
+                        [
+                            "that", 
+                            34.69, 
+                            34.89
+                        ], 
+                        [
+                            "went", 
+                            35.1, 
+                            35.5
+                        ]
+                    ], 
+                    "transcript": "I I was just %HESITATION in high school I guess one that went "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 2, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.852, 
+                    "timestamps": [
+                        [
+                            "I", 
+                            31.78, 
+                            31.93
+                        ], 
+                        [
+                            "I", 
+                            31.93, 
+                            32.23
+                        ], 
+                        [
+                            "was", 
+                            32.23, 
+                            32.46
+                        ], 
+                        [
+                            "just", 
+                            32.46, 
+                            32.83
+                        ], 
+                        [
+                            "%HESITATION", 
+                            32.83, 
+                            33.1
+                        ], 
+                        [
+                            "in", 
+                            33.1, 
+                            33.33
+                        ], 
+                        [
+                            "high", 
+                            33.33, 
+                            33.5
+                        ], 
+                        [
+                            "school", 
+                            33.5, 
+                            33.89
+                        ], 
+                        [
+                            "I", 
+                            34.16, 
+                            34.26
+                        ], 
+                        [
+                            "guess", 
+                            34.26, 
+                            34.54
+                        ], 
+                        [
+                            "when", 
+                            34.54, 
+                            34.71
+                        ], 
+                        [
+                            "it", 
+                            34.71, 
+                            34.88
+                        ], 
+                        [
+                            "when", 
+                            35.1, 
+                            35.36
+                        ], 
+                        [
+                            "it", 
+                            35.36, 
+                            35.5
+                        ], 
+                        [
+                            "ended", 
+                            35.5, 
+                            35.91
+                        ]
+                    ], 
+                    "transcript": "I I was just %HESITATION in high school I guess when it when it ended ", 
+                    "word_confidence": [
+                        [
+                            "I", 
+                            0.9999999999999925
+                        ], 
+                        [
+                            "I", 
+                            0.9847449746536838
+                        ], 
+                        [
+                            "was", 
+                            0.9999999999999653
+                        ], 
+                        [
+                            "just", 
+                            0.9999999999999671
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.9999999999999674
+                        ], 
+                        [
+                            "in", 
+                            0.9999999999999348
+                        ], 
+                        [
+                            "high", 
+                            0.9999999999999671
+                        ], 
+                        [
+                            "school", 
+                            0.9890226116130112
+                        ], 
+                        [
+                            "I", 
+                            0.9999999999999483
+                        ], 
+                        [
+                            "guess", 
+                            0.9999999999999573
+                        ], 
+                        [
+                            "when", 
+                            0.5086570522688019
+                        ], 
+                        [
+                            "it", 
+                            0.4598127669306229
+                        ], 
+                        [
+                            "when", 
+                            0.4971514038205733
+                        ], 
+                        [
+                            "it", 
+                            0.49715140382057843
+                        ], 
+                        [
+                            "ended", 
+                            0.6255451627531513
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "I I was just %HESITATION in high school I guess one that went into "
+                }, 
+                {
+                    "transcript": "I I was just %HESITATION in high school I guess one that went into it "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 3, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.839, 
+                    "timestamps": [
+                        [
+                            "and", 
+                            36.57, 
+                            36.78
+                        ], 
+                        [
+                            "that", 
+                            36.78, 
+                            36.93
+                        ], 
+                        [
+                            "being", 
+                            36.93, 
+                            37.33
+                        ], 
+                        [
+                            "I", 
+                            37.45, 
+                            37.58
+                        ], 
+                        [
+                            "was", 
+                            37.58, 
+                            37.75
+                        ], 
+                        [
+                            "in", 
+                            37.75, 
+                            37.83
+                        ], 
+                        [
+                            "the", 
+                            37.83, 
+                            37.91
+                        ], 
+                        [
+                            "last", 
+                            37.91, 
+                            38.31
+                        ]
+                    ], 
+                    "transcript": "and that being I was in the last ", 
+                    "word_confidence": [
+                        [
+                            "and", 
+                            0.8698350219601684
+                        ], 
+                        [
+                            "that", 
+                            0.42029952159122536
+                        ], 
+                        [
+                            "being", 
+                            0.9393701711599084
+                        ], 
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "was", 
+                            1.0
+                        ], 
+                        [
+                            "in", 
+                            1.0
+                        ], 
+                        [
+                            "the", 
+                            0.585664245276711
+                        ], 
+                        [
+                            "last", 
+                            0.7791891030413314
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "and it being I was in the last "
+                }, 
+                {
+                    "transcript": "you know that being I was in the last "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 4, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.993, 
+                    "timestamps": [
+                        [
+                            "last", 
+                            38.76, 
+                            39.23
+                        ], 
+                        [
+                            "lottery", 
+                            39.44, 
+                            40.06
+                        ]
+                    ], 
+                    "transcript": "last lottery ", 
+                    "word_confidence": [
+                        [
+                            "last", 
+                            1.0
+                        ], 
+                        [
+                            "lottery", 
+                            0.9872840642258457
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 5, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.957, 
+                    "timestamps": [
+                        [
+                            "and", 
+                            40.68, 
+                            40.86
+                        ], 
+                        [
+                            "I", 
+                            40.86, 
+                            40.93
+                        ], 
+                        [
+                            "was", 
+                            40.93, 
+                            41.05
+                        ], 
+                        [
+                            "glad", 
+                            41.05, 
+                            41.29
+                        ], 
+                        [
+                            "it", 
+                            41.29, 
+                            41.35
+                        ], 
+                        [
+                            "was", 
+                            41.35, 
+                            41.47
+                        ], 
+                        [
+                            "over", 
+                            41.47, 
+                            41.71
+                        ], 
+                        [
+                            "by", 
+                            41.71, 
+                            41.84
+                        ], 
+                        [
+                            "then", 
+                            41.84, 
+                            42.08
+                        ]
+                    ], 
+                    "transcript": "and I was glad it was over by then ", 
+                    "word_confidence": [
+                        [
+                            "and", 
+                            0.9895934365483944
+                        ], 
+                        [
+                            "I", 
+                            0.7723155813854757
+                        ], 
+                        [
+                            "was", 
+                            0.7184938794049048
+                        ], 
+                        [
+                            "glad", 
+                            0.9765411566170997
+                        ], 
+                        [
+                            "it", 
+                            1.0
+                        ], 
+                        [
+                            "was", 
+                            1.0
+                        ], 
+                        [
+                            "over", 
+                            1.0
+                        ], 
+                        [
+                            "by", 
+                            1.0
+                        ], 
+                        [
+                            "then", 
+                            0.9853402863254943
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "and are glad it was over by then "
+                }, 
+                {
+                    "transcript": "and I are glad it was over by then "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 6, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I've", 
+                            42.79, 
+                            43.0
+                        ], 
+                        [
+                            "never", 
+                            43.0, 
+                            43.3
+                        ], 
+                        [
+                            "really", 
+                            43.3, 
+                            43.53
+                        ], 
+                        [
+                            "totally", 
+                            43.53, 
+                            43.82
+                        ], 
+                        [
+                            "understood", 
+                            43.82, 
+                            44.45
+                        ]
+                    ], 
+                    "transcript": "I've never really totally understood "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 6, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I've", 
+                            42.79, 
+                            43.0
+                        ], 
+                        [
+                            "never", 
+                            43.0, 
+                            43.3
+                        ], 
+                        [
+                            "really", 
+                            43.3, 
+                            43.53
+                        ], 
+                        [
+                            "totally", 
+                            43.53, 
+                            43.82
+                        ], 
+                        [
+                            "understood", 
+                            43.82, 
+                            44.44
+                        ], 
+                        [
+                            "what", 
+                            44.82, 
+                            45.16
+                        ], 
+                        [
+                            "our", 
+                            45.16, 
+                            45.28
+                        ], 
+                        [
+                            "purpose", 
+                            45.28, 
+                            45.65
+                        ], 
+                        [
+                            "was", 
+                            45.65, 
+                            46.04
+                        ], 
+                        [
+                            "over", 
+                            46.07, 
+                            46.48
+                        ]
+                    ], 
+                    "transcript": "I've never really totally understood what our purpose was over "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 6, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.997, 
+                    "timestamps": [
+                        [
+                            "I've", 
+                            42.79, 
+                            43.0
+                        ], 
+                        [
+                            "never", 
+                            43.0, 
+                            43.3
+                        ], 
+                        [
+                            "really", 
+                            43.3, 
+                            43.53
+                        ], 
+                        [
+                            "totally", 
+                            43.53, 
+                            43.82
+                        ], 
+                        [
+                            "understood", 
+                            43.82, 
+                            44.44
+                        ], 
+                        [
+                            "what", 
+                            44.82, 
+                            45.16
+                        ], 
+                        [
+                            "our", 
+                            45.16, 
+                            45.28
+                        ], 
+                        [
+                            "purpose", 
+                            45.28, 
+                            45.65
+                        ], 
+                        [
+                            "was", 
+                            45.65, 
+                            46.04
+                        ], 
+                        [
+                            "over", 
+                            46.07, 
+                            46.46
+                        ], 
+                        [
+                            "there", 
+                            46.46, 
+                            46.66
+                        ], 
+                        [
+                            "just", 
+                            46.66, 
+                            46.88
+                        ], 
+                        [
+                            "because", 
+                            46.88, 
+                            47.57
+                        ]
+                    ], 
+                    "transcript": "I've never really totally understood what our purpose was over there just because ", 
+                    "word_confidence": [
+                        [
+                            "I've", 
+                            1.0
+                        ], 
+                        [
+                            "never", 
+                            1.0
+                        ], 
+                        [
+                            "really", 
+                            0.9999999999999672
+                        ], 
+                        [
+                            "totally", 
+                            0.9999999999999674
+                        ], 
+                        [
+                            "understood", 
+                            0.9961448198605637
+                        ], 
+                        [
+                            "what", 
+                            0.9999999999999853
+                        ], 
+                        [
+                            "our", 
+                            0.9999999999999845
+                        ], 
+                        [
+                            "purpose", 
+                            0.9999999999999908
+                        ], 
+                        [
+                            "was", 
+                            0.9892586460422793
+                        ], 
+                        [
+                            "over", 
+                            0.9999999999999841
+                        ], 
+                        [
+                            "there", 
+                            0.9999999999999953
+                        ], 
+                        [
+                            "just", 
+                            1.0
+                        ], 
+                        [
+                            "because", 
+                            0.988853731707291
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "I've never really totally understood what our purpose was over their just because "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 7, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "you", 
+                            48.55, 
+                            48.64
+                        ], 
+                        [
+                            "know", 
+                            48.64, 
+                            48.91
+                        ], 
+                        [
+                            "we", 
+                            49.11, 
+                            49.3
+                        ], 
+                        [
+                            "didn't", 
+                            49.3, 
+                            49.64
+                        ], 
+                        [
+                            "really", 
+                            49.64, 
+                            50.03
+                        ]
+                    ], 
+                    "transcript": "you know we didn't really "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 7, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.988, 
+                    "timestamps": [
+                        [
+                            "you", 
+                            48.55, 
+                            48.64
+                        ], 
+                        [
+                            "know", 
+                            48.64, 
+                            48.91
+                        ], 
+                        [
+                            "we", 
+                            49.11, 
+                            49.3
+                        ], 
+                        [
+                            "didn't", 
+                            49.3, 
+                            49.64
+                        ], 
+                        [
+                            "really", 
+                            49.64, 
+                            50.03
+                        ], 
+                        [
+                            "do", 
+                            50.44, 
+                            50.59
+                        ], 
+                        [
+                            "anything", 
+                            50.59, 
+                            50.97
+                        ]
+                    ], 
+                    "transcript": "you know we didn't really do anything ", 
+                    "word_confidence": [
+                        [
+                            "you", 
+                            1.0
+                        ], 
+                        [
+                            "know", 
+                            0.9314194523369971
+                        ], 
+                        [
+                            "we", 
+                            0.9999999999999855
+                        ], 
+                        [
+                            "didn't", 
+                            1.0
+                        ], 
+                        [
+                            "really", 
+                            0.9999999999999946
+                        ], 
+                        [
+                            "do", 
+                            1.0
+                        ], 
+                        [
+                            "anything", 
+                            0.9917762907894181
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 8, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.706, 
+                    "timestamps": [
+                        [
+                            "when", 
+                            52.07, 
+                            52.23
+                        ], 
+                        [
+                            "we", 
+                            52.23, 
+                            52.35
+                        ], 
+                        [
+                            "went", 
+                            52.35, 
+                            52.55
+                        ], 
+                        [
+                            "over", 
+                            52.55, 
+                            52.76
+                        ], 
+                        [
+                            "a", 
+                            52.76, 
+                            52.86
+                        ], 
+                        [
+                            "symphonic", 
+                            52.86, 
+                            53.39
+                        ]
+                    ], 
+                    "transcript": "when we went over a symphonic ", 
+                    "word_confidence": [
+                        [
+                            "when", 
+                            0.6167918832820506
+                        ], 
+                        [
+                            "we", 
+                            0.9499449881340074
+                        ], 
+                        [
+                            "went", 
+                            0.9999999999999977
+                        ], 
+                        [
+                            "over", 
+                            0.999999999999997
+                        ], 
+                        [
+                            "a", 
+                            0.8694149148537285
+                        ], 
+                        [
+                            "symphonic", 
+                            0.41859457086697743
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "when we went over a simplex "
+                }, 
+                {
+                    "transcript": "when we went over a simply "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 9, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.621, 
+                    "timestamps": [
+                        [
+                            "you", 
+                            54.52, 
+                            54.61
+                        ], 
+                        [
+                            "know", 
+                            54.61, 
+                            54.74
+                        ], 
+                        [
+                            "it", 
+                            54.74, 
+                            54.98
+                        ], 
+                        [
+                            "%HESITATION", 
+                            55.01, 
+                            55.52
+                        ]
+                    ], 
+                    "transcript": "you know it %HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "you", 
+                            0.9440654207115331
+                        ], 
+                        [
+                            "know", 
+                            0.7646609575646129
+                        ], 
+                        [
+                            "it", 
+                            0.28467583901237603
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.6865095075050028
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "you know we %HESITATION "
+                }, 
+                {
+                    "transcript": "you know it I'm "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 10, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "those", 
+                            57.15, 
+                            57.55
+                        ], 
+                        [
+                            "people", 
+                            57.55, 
+                            57.83
+                        ], 
+                        [
+                            "that", 
+                            57.83, 
+                            57.96
+                        ], 
+                        [
+                            "I", 
+                            57.96, 
+                            58.03
+                        ], 
+                        [
+                            "know", 
+                            58.03, 
+                            58.44
+                        ], 
+                        [
+                            "I'm", 
+                            58.76, 
+                            58.94
+                        ]
+                    ], 
+                    "transcript": "those people that I know I'm "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 10, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.903, 
+                    "timestamps": [
+                        [
+                            "those", 
+                            57.15, 
+                            57.55
+                        ], 
+                        [
+                            "people", 
+                            57.55, 
+                            57.83
+                        ], 
+                        [
+                            "that", 
+                            57.83, 
+                            57.96
+                        ], 
+                        [
+                            "I", 
+                            57.96, 
+                            58.03
+                        ], 
+                        [
+                            "know", 
+                            58.03, 
+                            58.44
+                        ], 
+                        [
+                            "I", 
+                            58.77, 
+                            58.9
+                        ], 
+                        [
+                            "worked", 
+                            58.9, 
+                            59.16
+                        ], 
+                        [
+                            "with", 
+                            59.16, 
+                            59.28
+                        ], 
+                        [
+                            "several", 
+                            59.28, 
+                            59.64
+                        ], 
+                        [
+                            "that", 
+                            59.64, 
+                            59.77
+                        ], 
+                        [
+                            "were", 
+                            59.77, 
+                            59.9
+                        ], 
+                        [
+                            "over", 
+                            59.9, 
+                            60.15
+                        ], 
+                        [
+                            "there", 
+                            60.15, 
+                            60.38
+                        ], 
+                        [
+                            "and", 
+                            60.38, 
+                            60.63
+                        ]
+                    ], 
+                    "transcript": "those people that I know I worked with several that were over there and ", 
+                    "word_confidence": [
+                        [
+                            "those", 
+                            0.9999999999999671
+                        ], 
+                        [
+                            "people", 
+                            0.9999999999999348
+                        ], 
+                        [
+                            "that", 
+                            0.9999999999999344
+                        ], 
+                        [
+                            "I", 
+                            0.9999999999999345
+                        ], 
+                        [
+                            "know", 
+                            0.783881316760588
+                        ], 
+                        [
+                            "I", 
+                            0.9999999999999788
+                        ], 
+                        [
+                            "worked", 
+                            0.7448588695405439
+                        ], 
+                        [
+                            "with", 
+                            0.9999999999999803
+                        ], 
+                        [
+                            "several", 
+                            0.9999999999999791
+                        ], 
+                        [
+                            "that", 
+                            0.9999999999999781
+                        ], 
+                        [
+                            "were", 
+                            0.8627637213568533
+                        ], 
+                        [
+                            "over", 
+                            0.9957189973553721
+                        ], 
+                        [
+                            "there", 
+                            0.9999999999999758
+                        ], 
+                        [
+                            "and", 
+                            0.4782432289213094
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "those people that I know all I worked with several that were over there and "
+                }, 
+                {
+                    "transcript": "those people that I know I worked with several that were over there "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 11, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.94, 
+                    "timestamps": [
+                        [
+                            "for", 
+                            61.99, 
+                            62.29
+                        ], 
+                        [
+                            "some", 
+                            62.29, 
+                            62.51
+                        ], 
+                        [
+                            "of", 
+                            62.51, 
+                            62.65
+                        ], 
+                        [
+                            "them", 
+                            62.65, 
+                            62.86
+                        ], 
+                        [
+                            "it", 
+                            62.86, 
+                            63.02
+                        ], 
+                        [
+                            "was", 
+                            63.02, 
+                            63.26
+                        ]
+                    ], 
+                    "transcript": "for some of them it was ", 
+                    "word_confidence": [
+                        [
+                            "for", 
+                            0.999999999999996
+                        ], 
+                        [
+                            "some", 
+                            0.999999999999996
+                        ], 
+                        [
+                            "of", 
+                            0.9999999999999917
+                        ], 
+                        [
+                            "them", 
+                            0.9865704166983603
+                        ], 
+                        [
+                            "it", 
+                            0.5450464104441298
+                        ], 
+                        [
+                            "was", 
+                            0.9999999999999956
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "for some of them that was "
+                }, 
+                {
+                    "transcript": "for some of them I was "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 12, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.737, 
+                    "timestamps": [
+                        [
+                            "just", 
+                            64.16, 
+                            64.37
+                        ], 
+                        [
+                            "kind", 
+                            64.37, 
+                            64.51
+                        ], 
+                        [
+                            "of", 
+                            64.51, 
+                            64.83
+                        ]
+                    ], 
+                    "transcript": "just kind of ", 
+                    "word_confidence": [
+                        [
+                            "just", 
+                            0.6119203194155228
+                        ], 
+                        [
+                            "kind", 
+                            0.9999999999999872
+                        ], 
+                        [
+                            "of", 
+                            0.7032869525037433
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "just kind of a "
+                }, 
+                {
+                    "transcript": "this kind of "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 13, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I'll", 
+                            65.38, 
+                            65.78
+                        ], 
+                        [
+                            "not", 
+                            65.78, 
+                            66.02
+                        ], 
+                        [
+                            "so", 
+                            66.02, 
+                            66.09
+                        ], 
+                        [
+                            "much", 
+                            66.09, 
+                            66.26
+                        ], 
+                        [
+                            "a", 
+                            66.26, 
+                            66.32
+                        ], 
+                        [
+                            "holiday", 
+                            66.32, 
+                            66.73
+                        ], 
+                        [
+                            "I", 
+                            66.73, 
+                            66.84
+                        ], 
+                        [
+                            "guess", 
+                            66.84, 
+                            67.03
+                        ], 
+                        [
+                            "I", 
+                            67.03, 
+                            67.06
+                        ]
+                    ], 
+                    "transcript": "I'll not so much a holiday I guess I "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 13, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.899, 
+                    "timestamps": [
+                        [
+                            "I'll", 
+                            65.38, 
+                            65.78
+                        ], 
+                        [
+                            "not", 
+                            65.78, 
+                            66.02
+                        ], 
+                        [
+                            "so", 
+                            66.02, 
+                            66.09
+                        ], 
+                        [
+                            "much", 
+                            66.09, 
+                            66.26
+                        ], 
+                        [
+                            "a", 
+                            66.26, 
+                            66.32
+                        ], 
+                        [
+                            "holiday", 
+                            66.32, 
+                            66.73
+                        ], 
+                        [
+                            "I", 
+                            66.73, 
+                            66.84
+                        ], 
+                        [
+                            "guess", 
+                            66.84, 
+                            67.01
+                        ], 
+                        [
+                            "that's", 
+                            67.01, 
+                            67.19
+                        ], 
+                        [
+                            "how", 
+                            67.19, 
+                            67.31
+                        ], 
+                        [
+                            "they", 
+                            67.31, 
+                            67.59
+                        ], 
+                        [
+                            "tend", 
+                            67.77, 
+                            68.06
+                        ], 
+                        [
+                            "to", 
+                            68.06, 
+                            68.14
+                        ], 
+                        [
+                            "talk", 
+                            68.14, 
+                            68.47
+                        ], 
+                        [
+                            "about", 
+                            68.47, 
+                            68.78
+                        ], 
+                        [
+                            "it", 
+                            68.78, 
+                            69.0
+                        ]
+                    ], 
+                    "transcript": "I'll not so much a holiday I guess that's how they tend to talk about it ", 
+                    "word_confidence": [
+                        [
+                            "I'll", 
+                            0.42692748723001434
+                        ], 
+                        [
+                            "not", 
+                            0.5786012173686633
+                        ], 
+                        [
+                            "so", 
+                            0.8833615103520023
+                        ], 
+                        [
+                            "much", 
+                            0.9999999999999231
+                        ], 
+                        [
+                            "a", 
+                            0.9999999999999414
+                        ], 
+                        [
+                            "holiday", 
+                            0.9999999999999546
+                        ], 
+                        [
+                            "I", 
+                            0.9999999999999344
+                        ], 
+                        [
+                            "guess", 
+                            0.9999999999999346
+                        ], 
+                        [
+                            "that's", 
+                            0.9999999999999508
+                        ], 
+                        [
+                            "how", 
+                            0.9999999999999344
+                        ], 
+                        [
+                            "they", 
+                            0.9999999999999348
+                        ], 
+                        [
+                            "tend", 
+                            0.9999999999999569
+                        ], 
+                        [
+                            "to", 
+                            0.999999999999953
+                        ], 
+                        [
+                            "talk", 
+                            0.9999999999999466
+                        ], 
+                        [
+                            "about", 
+                            0.9999999999999715
+                        ], 
+                        [
+                            "it", 
+                            0.9592731354707996
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "I don't know so much a holiday I guess that's how they tend to talk about it "
+                }, 
+                {
+                    "transcript": "I don't not so much a holiday I guess that's how they tend to talk about it "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 14, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "but", 
+                            69.67, 
+                            70.11
+                        ], 
+                        [
+                            "that", 
+                            70.11, 
+                            70.28
+                        ], 
+                        [
+                            "they", 
+                            70.28, 
+                            70.4
+                        ], 
+                        [
+                            "just", 
+                            70.4, 
+                            70.83
+                        ], 
+                        [
+                            "kind", 
+                            70.98, 
+                            71.16
+                        ], 
+                        [
+                            "of", 
+                            71.16, 
+                            71.24
+                        ], 
+                        [
+                            "lived", 
+                            71.24, 
+                            71.5
+                        ]
+                    ], 
+                    "transcript": "but that they just kind of lived "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 14, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.908, 
+                    "timestamps": [
+                        [
+                            "but", 
+                            69.67, 
+                            70.11
+                        ], 
+                        [
+                            "that", 
+                            70.11, 
+                            70.28
+                        ], 
+                        [
+                            "they", 
+                            70.28, 
+                            70.4
+                        ], 
+                        [
+                            "just", 
+                            70.4, 
+                            70.83
+                        ], 
+                        [
+                            "kind", 
+                            70.98, 
+                            71.16
+                        ], 
+                        [
+                            "of", 
+                            71.16, 
+                            71.24
+                        ], 
+                        [
+                            "lived", 
+                            71.24, 
+                            71.45
+                        ], 
+                        [
+                            "out", 
+                            71.45, 
+                            71.63
+                        ], 
+                        [
+                            "in", 
+                            71.63, 
+                            71.71
+                        ], 
+                        [
+                            "the", 
+                            71.71, 
+                            71.83
+                        ], 
+                        [
+                            "words", 
+                            71.83, 
+                            72.18
+                        ], 
+                        [
+                            "and", 
+                            72.18, 
+                            72.41
+                        ]
+                    ], 
+                    "transcript": "but that they just kind of lived out in the words and ", 
+                    "word_confidence": [
+                        [
+                            "but", 
+                            1.0
+                        ], 
+                        [
+                            "that", 
+                            0.9999999999999837
+                        ], 
+                        [
+                            "they", 
+                            1.0
+                        ], 
+                        [
+                            "just", 
+                            1.0
+                        ], 
+                        [
+                            "kind", 
+                            1.0
+                        ], 
+                        [
+                            "of", 
+                            1.0
+                        ], 
+                        [
+                            "lived", 
+                            0.8325950268012564
+                        ], 
+                        [
+                            "out", 
+                            1.0
+                        ], 
+                        [
+                            "in", 
+                            1.0
+                        ], 
+                        [
+                            "the", 
+                            1.0
+                        ], 
+                        [
+                            "words", 
+                            0.5442600030348843
+                        ], 
+                        [
+                            "and", 
+                            0.8100545251077719
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "but that they just kind of lived out in the woods and "
+                }, 
+                {
+                    "transcript": "but that they just kind of lived out in the words in "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 15, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "every", 
+                            73.29, 
+                            73.54
+                        ], 
+                        [
+                            "now", 
+                            73.54, 
+                            73.71
+                        ], 
+                        [
+                            "and", 
+                            73.71, 
+                            73.8
+                        ], 
+                        [
+                            "then", 
+                            73.8, 
+                            73.92
+                        ], 
+                        [
+                            "they'd", 
+                            73.92, 
+                            74.09
+                        ], 
+                        [
+                            "grown", 
+                            74.09, 
+                            74.36
+                        ], 
+                        [
+                            "ship", 
+                            74.36, 
+                            74.6
+                        ], 
+                        [
+                            "there", 
+                            74.6, 
+                            74.84
+                        ], 
+                        [
+                            "are", 
+                            74.84, 
+                            74.98
+                        ]
+                    ], 
+                    "transcript": "every now and then they'd grown ship there are "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 15, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.866, 
+                    "timestamps": [
+                        [
+                            "every", 
+                            73.29, 
+                            73.54
+                        ], 
+                        [
+                            "now", 
+                            73.54, 
+                            73.71
+                        ], 
+                        [
+                            "and", 
+                            73.71, 
+                            73.8
+                        ], 
+                        [
+                            "then", 
+                            73.8, 
+                            73.92
+                        ], 
+                        [
+                            "they'd", 
+                            73.92, 
+                            74.09
+                        ], 
+                        [
+                            "go", 
+                            74.09, 
+                            74.25
+                        ], 
+                        [
+                            "and", 
+                            74.25, 
+                            74.41
+                        ], 
+                        [
+                            "shoot", 
+                            74.41, 
+                            74.6
+                        ], 
+                        [
+                            "their", 
+                            74.6, 
+                            74.8
+                        ], 
+                        [
+                            "rifles", 
+                            74.8, 
+                            75.29
+                        ], 
+                        [
+                            "and", 
+                            75.29, 
+                            75.42
+                        ], 
+                        [
+                            "then", 
+                            75.42, 
+                            75.54
+                        ], 
+                        [
+                            "they'd", 
+                            75.54, 
+                            75.69
+                        ], 
+                        [
+                            "come", 
+                            75.69, 
+                            75.86
+                        ], 
+                        [
+                            "back", 
+                            75.86, 
+                            76.19
+                        ], 
+                        [
+                            "and", 
+                            76.19, 
+                            76.39
+                        ], 
+                        [
+                            "you", 
+                            76.63, 
+                            76.72
+                        ], 
+                        [
+                            "know", 
+                            76.72, 
+                            76.92
+                        ]
+                    ], 
+                    "transcript": "every now and then they'd go and shoot their rifles and then they'd come back and you know ", 
+                    "word_confidence": [
+                        [
+                            "every", 
+                            1.0
+                        ], 
+                        [
+                            "now", 
+                            1.0
+                        ], 
+                        [
+                            "and", 
+                            1.0
+                        ], 
+                        [
+                            "then", 
+                            0.999999999999997
+                        ], 
+                        [
+                            "they'd", 
+                            0.5484973988045428
+                        ], 
+                        [
+                            "go", 
+                            0.4041809207634304
+                        ], 
+                        [
+                            "and", 
+                            0.3806425410137384
+                        ], 
+                        [
+                            "shoot", 
+                            0.7811886322581443
+                        ], 
+                        [
+                            "their", 
+                            0.9999999999999801
+                        ], 
+                        [
+                            "rifles", 
+                            0.9999999999999802
+                        ], 
+                        [
+                            "and", 
+                            0.9999999999999704
+                        ], 
+                        [
+                            "then", 
+                            0.9999999999999675
+                        ], 
+                        [
+                            "they'd", 
+                            0.5392771909152644
+                        ], 
+                        [
+                            "come", 
+                            0.9999999999999559
+                        ], 
+                        [
+                            "back", 
+                            0.9999999999999565
+                        ], 
+                        [
+                            "and", 
+                            0.6577869793986564
+                        ], 
+                        [
+                            "you", 
+                            0.9959945372846197
+                        ], 
+                        [
+                            "know", 
+                            0.9800263628790793
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "every now and then they'd go and shoot their rifles and then they come back and you know "
+                }, 
+                {
+                    "transcript": "every now and then they'd grown shoot their rifles and then they'd come back and you know "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 16, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "but", 
+                            77.85, 
+                            78.0
+                        ], 
+                        [
+                            "that", 
+                            78.0, 
+                            78.12
+                        ], 
+                        [
+                            "they", 
+                            78.12, 
+                            78.22
+                        ], 
+                        [
+                            "weren't", 
+                            78.22, 
+                            78.44
+                        ], 
+                        [
+                            "really", 
+                            78.44, 
+                            78.63
+                        ], 
+                        [
+                            "allowed", 
+                            78.63, 
+                            78.92
+                        ], 
+                        [
+                            "to", 
+                            78.92, 
+                            79.03
+                        ], 
+                        [
+                            "do", 
+                            79.03, 
+                            79.15
+                        ], 
+                        [
+                            "anything", 
+                            79.15, 
+                            79.56
+                        ]
+                    ], 
+                    "transcript": "but that they weren't really allowed to do anything "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 16, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.901, 
+                    "timestamps": [
+                        [
+                            "but", 
+                            77.85, 
+                            78.0
+                        ], 
+                        [
+                            "that", 
+                            78.0, 
+                            78.12
+                        ], 
+                        [
+                            "they", 
+                            78.12, 
+                            78.22
+                        ], 
+                        [
+                            "weren't", 
+                            78.22, 
+                            78.44
+                        ], 
+                        [
+                            "really", 
+                            78.44, 
+                            78.63
+                        ], 
+                        [
+                            "allowed", 
+                            78.63, 
+                            78.92
+                        ], 
+                        [
+                            "to", 
+                            78.92, 
+                            79.03
+                        ], 
+                        [
+                            "do", 
+                            79.03, 
+                            79.15
+                        ], 
+                        [
+                            "anything", 
+                            79.15, 
+                            79.62
+                        ]
+                    ], 
+                    "transcript": "but that they weren't really allowed to do anything ", 
+                    "word_confidence": [
+                        [
+                            "but", 
+                            0.3879193972129305
+                        ], 
+                        [
+                            "that", 
+                            0.3525142425069061
+                        ], 
+                        [
+                            "they", 
+                            1.0
+                        ], 
+                        [
+                            "weren't", 
+                            0.9999999999999978
+                        ], 
+                        [
+                            "really", 
+                            0.9999999999999901
+                        ], 
+                        [
+                            "allowed", 
+                            1.0
+                        ], 
+                        [
+                            "to", 
+                            1.0
+                        ], 
+                        [
+                            "do", 
+                            1.0
+                        ], 
+                        [
+                            "anything", 
+                            0.9886993560374925
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "whether they weren't really allowed to do anything "
+                }, 
+                {
+                    "transcript": "but they weren't really allowed to do anything "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 17, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.624, 
+                    "timestamps": [
+                        [
+                            "I", 
+                            80.44, 
+                            80.71
+                        ]
+                    ], 
+                    "transcript": "I ", 
+                    "word_confidence": [
+                        [
+                            "I", 
+                            0.6240469733757721
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "right "
+                }, 
+                {
+                    "transcript": "my "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 18, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.0, 
+                    "timestamps": [], 
+                    "transcript": "yeah "
+                }, 
+                {
+                    "transcript": "no "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 19, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.871, 
+                    "timestamps": [
+                        [
+                            "to", 
+                            83.28, 
+                            83.4
+                        ], 
+                        [
+                            "me", 
+                            83.4, 
+                            83.54
+                        ], 
+                        [
+                            "it", 
+                            83.54, 
+                            83.66
+                        ], 
+                        [
+                            "seems", 
+                            83.66, 
+                            83.89
+                        ], 
+                        [
+                            "like", 
+                            83.89, 
+                            84.05
+                        ], 
+                        [
+                            "we", 
+                            84.05, 
+                            84.14
+                        ], 
+                        [
+                            "only", 
+                            84.14, 
+                            84.33
+                        ], 
+                        [
+                            "went", 
+                            84.33, 
+                            84.52
+                        ], 
+                        [
+                            "halfway", 
+                            84.52, 
+                            85.04
+                        ]
+                    ], 
+                    "transcript": "to me it seems like we only went halfway ", 
+                    "word_confidence": [
+                        [
+                            "to", 
+                            1.0
+                        ], 
+                        [
+                            "me", 
+                            1.0
+                        ], 
+                        [
+                            "it", 
+                            0.7647777691967851
+                        ], 
+                        [
+                            "seems", 
+                            0.8441644523835419
+                        ], 
+                        [
+                            "like", 
+                            1.0
+                        ], 
+                        [
+                            "we", 
+                            1.0
+                        ], 
+                        [
+                            "only", 
+                            1.0
+                        ], 
+                        [
+                            "went", 
+                            1.0
+                        ], 
+                        [
+                            "halfway", 
+                            0.68771494385512
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "to me it seems like we only went half way "
+                }, 
+                {
+                    "transcript": "to me this seems like we only went halfway "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 20, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.675, 
+                    "timestamps": [
+                        [
+                            "if", 
+                            86.08, 
+                            86.26
+                        ], 
+                        [
+                            "even", 
+                            86.26, 
+                            86.5
+                        ], 
+                        [
+                            "halfway", 
+                            86.5, 
+                            86.96
+                        ]
+                    ], 
+                    "transcript": "if even halfway ", 
+                    "word_confidence": [
+                        [
+                            "if", 
+                            0.6165478732975329
+                        ], 
+                        [
+                            "even", 
+                            0.9918121941193924
+                        ], 
+                        [
+                            "halfway", 
+                            0.5321180386091561
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "if even half way "
+                }, 
+                {
+                    "transcript": "heck even halfway "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 21, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.34, 
+                    "timestamps": [
+                        [
+                            "yes", 
+                            124.91, 
+                            125.19
+                        ]
+                    ], 
+                    "transcript": "yes ", 
+                    "word_confidence": [
+                        [
+                            "yes", 
+                            0.3404543281067724
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "that's "
+                }, 
+                {
+                    "transcript": "S. "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 22, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.526, 
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            205.22, 
+                            205.47
+                        ]
+                    ], 
+                    "transcript": "yeah ", 
+                    "word_confidence": [
+                        [
+                            "yeah", 
+                            0.5257908372693908
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "now "
+                }, 
+                {
+                    "transcript": "yes "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 23, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "well", 
+                            206.66, 
+                            206.92
+                        ], 
+                        [
+                            "I", 
+                            206.92, 
+                            207.02
+                        ], 
+                        [
+                            "I", 
+                            207.02, 
+                            207.24
+                        ], 
+                        [
+                            "I", 
+                            207.33, 
+                            207.43
+                        ], 
+                        [
+                            "think", 
+                            207.43, 
+                            207.69
+                        ], 
+                        [
+                            "we", 
+                            207.69, 
+                            207.78
+                        ], 
+                        [
+                            "did", 
+                            207.78, 
+                            208.19
+                        ], 
+                        [
+                            "a", 
+                            208.24, 
+                            208.44
+                        ]
+                    ], 
+                    "transcript": "well I I I think we did a "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 23, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "well", 
+                            206.66, 
+                            206.92
+                        ], 
+                        [
+                            "I", 
+                            206.92, 
+                            207.02
+                        ], 
+                        [
+                            "I", 
+                            207.02, 
+                            207.24
+                        ], 
+                        [
+                            "I", 
+                            207.33, 
+                            207.43
+                        ], 
+                        [
+                            "think", 
+                            207.43, 
+                            207.69
+                        ], 
+                        [
+                            "we", 
+                            207.69, 
+                            207.78
+                        ], 
+                        [
+                            "did", 
+                            207.78, 
+                            208.19
+                        ], 
+                        [
+                            "I", 
+                            208.24, 
+                            208.37
+                        ], 
+                        [
+                            "think", 
+                            208.37, 
+                            208.59
+                        ], 
+                        [
+                            "we", 
+                            208.59, 
+                            208.7
+                        ], 
+                        [
+                            "did", 
+                            208.7, 
+                            208.88
+                        ], 
+                        [
+                            "learn", 
+                            208.88, 
+                            209.08
+                        ], 
+                        [
+                            "some", 
+                            209.08, 
+                            209.34
+                        ], 
+                        [
+                            "lessons", 
+                            209.34, 
+                            209.73
+                        ], 
+                        [
+                            "that", 
+                            209.73, 
+                            209.84
+                        ], 
+                        [
+                            "we", 
+                            209.84, 
+                            210.0
+                        ], 
+                        [
+                            "weren't", 
+                            210.0, 
+                            210.44
+                        ]
+                    ], 
+                    "transcript": "well I I I think we did I think we did learn some lessons that we weren't "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 23, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.922, 
+                    "timestamps": [
+                        [
+                            "well", 
+                            206.66, 
+                            206.92
+                        ], 
+                        [
+                            "I", 
+                            206.92, 
+                            207.02
+                        ], 
+                        [
+                            "I", 
+                            207.02, 
+                            207.24
+                        ], 
+                        [
+                            "I", 
+                            207.33, 
+                            207.43
+                        ], 
+                        [
+                            "think", 
+                            207.43, 
+                            207.69
+                        ], 
+                        [
+                            "we", 
+                            207.69, 
+                            207.78
+                        ], 
+                        [
+                            "did", 
+                            207.78, 
+                            208.19
+                        ], 
+                        [
+                            "I", 
+                            208.24, 
+                            208.37
+                        ], 
+                        [
+                            "think", 
+                            208.37, 
+                            208.59
+                        ], 
+                        [
+                            "we", 
+                            208.59, 
+                            208.7
+                        ], 
+                        [
+                            "did", 
+                            208.7, 
+                            208.88
+                        ], 
+                        [
+                            "learn", 
+                            208.88, 
+                            209.08
+                        ], 
+                        [
+                            "some", 
+                            209.08, 
+                            209.34
+                        ], 
+                        [
+                            "lessons", 
+                            209.34, 
+                            209.73
+                        ], 
+                        [
+                            "that", 
+                            209.73, 
+                            209.84
+                        ], 
+                        [
+                            "we", 
+                            209.84, 
+                            210.0
+                        ], 
+                        [
+                            "weren't", 
+                            210.0, 
+                            210.48
+                        ], 
+                        [
+                            "%HESITATION", 
+                            210.48, 
+                            210.79
+                        ]
+                    ], 
+                    "transcript": "well I I I think we did I think we did learn some lessons that we weren't %HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "well", 
+                            0.9999999999999674
+                        ], 
+                        [
+                            "I", 
+                            0.9999999999999579
+                        ], 
+                        [
+                            "I", 
+                            0.9999999999999517
+                        ], 
+                        [
+                            "I", 
+                            0.7210810740288899
+                        ], 
+                        [
+                            "think", 
+                            0.9999999999999397
+                        ], 
+                        [
+                            "we", 
+                            0.9999999999999238
+                        ], 
+                        [
+                            "did", 
+                            0.977720477585809
+                        ], 
+                        [
+                            "I", 
+                            0.9999999999999362
+                        ], 
+                        [
+                            "think", 
+                            0.9999999999999386
+                        ], 
+                        [
+                            "we", 
+                            0.9999999999999585
+                        ], 
+                        [
+                            "did", 
+                            0.999999999999951
+                        ], 
+                        [
+                            "learn", 
+                            0.9999999999999674
+                        ], 
+                        [
+                            "some", 
+                            0.9999999999999674
+                        ], 
+                        [
+                            "lessons", 
+                            0.999999999999967
+                        ], 
+                        [
+                            "that", 
+                            0.9999999999999839
+                        ], 
+                        [
+                            "we", 
+                            1.0
+                        ], 
+                        [
+                            "weren't", 
+                            0.9508597791613239
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.19719810404098526
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "well I I I think we did I think we did learn some lessons that we weren't to "
+                }, 
+                {
+                    "transcript": "well I I I think we did I think we did learn some lessons that we weren't "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 24, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.992, 
+                    "timestamps": [
+                        [
+                            "we", 
+                            211.55, 
+                            211.85
+                        ], 
+                        [
+                            "weren't", 
+                            211.85, 
+                            212.07
+                        ], 
+                        [
+                            "prepared", 
+                            212.07, 
+                            212.69
+                        ], 
+                        [
+                            "for", 
+                            212.69, 
+                            213.24
+                        ]
+                    ], 
+                    "transcript": "we weren't prepared for ", 
+                    "word_confidence": [
+                        [
+                            "we", 
+                            0.9999999999999833
+                        ], 
+                        [
+                            "weren't", 
+                            0.9999999999999836
+                        ], 
+                        [
+                            "prepared", 
+                            0.9999999999999919
+                        ], 
+                        [
+                            "for", 
+                            0.9766218410680413
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 25, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            214.49, 
+                            214.74
+                        ], 
+                        [
+                            "guess", 
+                            214.74, 
+                            215.01
+                        ], 
+                        [
+                            "the", 
+                            215.01, 
+                            215.12
+                        ], 
+                        [
+                            "best", 
+                            215.12, 
+                            215.38
+                        ], 
+                        [
+                            "word", 
+                            215.38, 
+                            215.55
+                        ], 
+                        [
+                            "is", 
+                            215.55, 
+                            215.64
+                        ], 
+                        [
+                            "the", 
+                            215.64, 
+                            215.74
+                        ], 
+                        [
+                            "atrocities", 
+                            215.74, 
+                            216.29
+                        ]
+                    ], 
+                    "transcript": "I guess the best word is the atrocities "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 25, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.944, 
+                    "timestamps": [
+                        [
+                            "I", 
+                            214.49, 
+                            214.74
+                        ], 
+                        [
+                            "guess", 
+                            214.74, 
+                            215.01
+                        ], 
+                        [
+                            "the", 
+                            215.01, 
+                            215.12
+                        ], 
+                        [
+                            "best", 
+                            215.12, 
+                            215.38
+                        ], 
+                        [
+                            "word", 
+                            215.38, 
+                            215.55
+                        ], 
+                        [
+                            "is", 
+                            215.55, 
+                            215.64
+                        ], 
+                        [
+                            "the", 
+                            215.64, 
+                            215.74
+                        ], 
+                        [
+                            "atrocities", 
+                            215.74, 
+                            216.39
+                        ], 
+                        [
+                            "of", 
+                            216.39, 
+                            216.52
+                        ], 
+                        [
+                            "war", 
+                            216.52, 
+                            216.92
+                        ]
+                    ], 
+                    "transcript": "I guess the best word is the atrocities of war ", 
+                    "word_confidence": [
+                        [
+                            "I", 
+                            0.7942164527707563
+                        ], 
+                        [
+                            "guess", 
+                            0.981716716386658
+                        ], 
+                        [
+                            "the", 
+                            1.0
+                        ], 
+                        [
+                            "best", 
+                            0.9659136019791814
+                        ], 
+                        [
+                            "word", 
+                            0.8126916535490505
+                        ], 
+                        [
+                            "is", 
+                            0.6517464256676658
+                        ], 
+                        [
+                            "the", 
+                            1.0
+                        ], 
+                        [
+                            "atrocities", 
+                            1.0
+                        ], 
+                        [
+                            "of", 
+                            1.0
+                        ], 
+                        [
+                            "war", 
+                            0.9791316734235268
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "and I guess the best word is the atrocities of war "
+                }, 
+                {
+                    "transcript": "I guess the best sort of the atrocities of war "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 26, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            217.7, 
+                            218.08
+                        ], 
+                        [
+                            "mean", 
+                            218.43, 
+                            218.68
+                        ], 
+                        [
+                            "the", 
+                            218.68, 
+                            218.78
+                        ], 
+                        [
+                            "other", 
+                            218.78, 
+                            219.02
+                        ], 
+                        [
+                            "wars", 
+                            219.02, 
+                            219.49
+                        ]
+                    ], 
+                    "transcript": "I mean the other wars "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 26, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            217.7, 
+                            218.08
+                        ], 
+                        [
+                            "mean", 
+                            218.43, 
+                            218.68
+                        ], 
+                        [
+                            "the", 
+                            218.68, 
+                            218.78
+                        ], 
+                        [
+                            "other", 
+                            218.78, 
+                            219.02
+                        ], 
+                        [
+                            "wars", 
+                            219.02, 
+                            219.41
+                        ], 
+                        [
+                            "seemed", 
+                            219.41, 
+                            219.65
+                        ], 
+                        [
+                            "like", 
+                            219.65, 
+                            219.81
+                        ], 
+                        [
+                            "a", 
+                            219.81, 
+                            219.86
+                        ], 
+                        [
+                            "valiant", 
+                            219.86, 
+                            220.31
+                        ], 
+                        [
+                            "war", 
+                            220.31, 
+                            220.79
+                        ], 
+                        [
+                            "I", 
+                            221.04, 
+                            221.14
+                        ], 
+                        [
+                            "mean", 
+                            221.14, 
+                            221.28
+                        ], 
+                        [
+                            "this", 
+                            221.28, 
+                            221.5
+                        ]
+                    ], 
+                    "transcript": "I mean the other wars seemed like a valiant war I mean this "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 26, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            217.7, 
+                            218.08
+                        ], 
+                        [
+                            "mean", 
+                            218.43, 
+                            218.68
+                        ], 
+                        [
+                            "the", 
+                            218.68, 
+                            218.78
+                        ], 
+                        [
+                            "other", 
+                            218.78, 
+                            219.02
+                        ], 
+                        [
+                            "wars", 
+                            219.02, 
+                            219.41
+                        ], 
+                        [
+                            "seemed", 
+                            219.41, 
+                            219.65
+                        ], 
+                        [
+                            "like", 
+                            219.65, 
+                            219.81
+                        ], 
+                        [
+                            "a", 
+                            219.81, 
+                            219.86
+                        ], 
+                        [
+                            "valiant", 
+                            219.86, 
+                            220.31
+                        ], 
+                        [
+                            "war", 
+                            220.31, 
+                            220.79
+                        ], 
+                        [
+                            "I", 
+                            221.04, 
+                            221.14
+                        ], 
+                        [
+                            "mean", 
+                            221.14, 
+                            221.28
+                        ], 
+                        [
+                            "they", 
+                            221.28, 
+                            221.4
+                        ], 
+                        [
+                            "you", 
+                            221.53, 
+                            221.7
+                        ], 
+                        [
+                            "know", 
+                            221.7, 
+                            221.8
+                        ], 
+                        [
+                            "they", 
+                            221.8, 
+                            221.92
+                        ], 
+                        [
+                            "seemed", 
+                            221.92, 
+                            222.15
+                        ], 
+                        [
+                            "like", 
+                            222.15, 
+                            222.29
+                        ], 
+                        [
+                            "a", 
+                            222.29, 
+                            222.35
+                        ], 
+                        [
+                            "valiant", 
+                            222.35, 
+                            222.76
+                        ], 
+                        [
+                            "thing", 
+                            222.76, 
+                            223.05
+                        ], 
+                        [
+                            "you", 
+                            223.05, 
+                            223.14
+                        ], 
+                        [
+                            "knew", 
+                            223.14, 
+                            223.5
+                        ]
+                    ], 
+                    "transcript": "I mean the other wars seemed like a valiant war I mean they you know they seemed like a valiant thing you knew "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 26, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.89, 
+                    "timestamps": [
+                        [
+                            "I", 
+                            217.7, 
+                            218.08
+                        ], 
+                        [
+                            "mean", 
+                            218.43, 
+                            218.68
+                        ], 
+                        [
+                            "the", 
+                            218.68, 
+                            218.78
+                        ], 
+                        [
+                            "other", 
+                            218.78, 
+                            219.02
+                        ], 
+                        [
+                            "wars", 
+                            219.02, 
+                            219.41
+                        ], 
+                        [
+                            "seemed", 
+                            219.41, 
+                            219.65
+                        ], 
+                        [
+                            "like", 
+                            219.65, 
+                            219.81
+                        ], 
+                        [
+                            "a", 
+                            219.81, 
+                            219.86
+                        ], 
+                        [
+                            "valiant", 
+                            219.86, 
+                            220.31
+                        ], 
+                        [
+                            "war", 
+                            220.31, 
+                            220.79
+                        ], 
+                        [
+                            "I", 
+                            221.04, 
+                            221.14
+                        ], 
+                        [
+                            "mean", 
+                            221.14, 
+                            221.28
+                        ], 
+                        [
+                            "they", 
+                            221.28, 
+                            221.4
+                        ], 
+                        [
+                            "you", 
+                            221.53, 
+                            221.7
+                        ], 
+                        [
+                            "know", 
+                            221.7, 
+                            221.8
+                        ], 
+                        [
+                            "they", 
+                            221.8, 
+                            221.92
+                        ], 
+                        [
+                            "seemed", 
+                            221.92, 
+                            222.15
+                        ], 
+                        [
+                            "like", 
+                            222.15, 
+                            222.29
+                        ], 
+                        [
+                            "a", 
+                            222.29, 
+                            222.35
+                        ], 
+                        [
+                            "valiant", 
+                            222.35, 
+                            222.76
+                        ], 
+                        [
+                            "thing", 
+                            222.76, 
+                            223.05
+                        ], 
+                        [
+                            "you", 
+                            223.05, 
+                            223.14
+                        ], 
+                        [
+                            "knew", 
+                            223.14, 
+                            223.54
+                        ]
+                    ], 
+                    "transcript": "I mean the other wars seemed like a valiant war I mean they you know they seemed like a valiant thing you knew ", 
+                    "word_confidence": [
+                        [
+                            "I", 
+                            0.4468256497611265
+                        ], 
+                        [
+                            "mean", 
+                            0.7122254907780885
+                        ], 
+                        [
+                            "the", 
+                            1.0
+                        ], 
+                        [
+                            "other", 
+                            1.0
+                        ], 
+                        [
+                            "wars", 
+                            1.0
+                        ], 
+                        [
+                            "seemed", 
+                            1.0
+                        ], 
+                        [
+                            "like", 
+                            1.0
+                        ], 
+                        [
+                            "a", 
+                            1.0
+                        ], 
+                        [
+                            "valiant", 
+                            1.0
+                        ], 
+                        [
+                            "war", 
+                            0.9940850675870085
+                        ], 
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "mean", 
+                            1.0
+                        ], 
+                        [
+                            "they", 
+                            0.12891036708691123
+                        ], 
+                        [
+                            "you", 
+                            0.9173809658126337
+                        ], 
+                        [
+                            "know", 
+                            1.0
+                        ], 
+                        [
+                            "they", 
+                            0.8800752085563647
+                        ], 
+                        [
+                            "seemed", 
+                            0.6231886315059676
+                        ], 
+                        [
+                            "like", 
+                            1.0
+                        ], 
+                        [
+                            "a", 
+                            1.0
+                        ], 
+                        [
+                            "valiant", 
+                            1.0
+                        ], 
+                        [
+                            "thing", 
+                            1.0
+                        ], 
+                        [
+                            "you", 
+                            0.6595291599890052
+                        ], 
+                        [
+                            "knew", 
+                            0.9307183223399942
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "I mean the other wars seemed like a valiant war I mean that you know they seemed like a valiant thing you knew "
+                }, 
+                {
+                    "transcript": "I mean the other wars seemed like a valiant war I mean this you know they seemed like a valiant thing you knew "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 27, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "you", 
+                            224.04, 
+                            224.15
+                        ], 
+                        [
+                            "knew", 
+                            224.15, 
+                            224.27
+                        ], 
+                        [
+                            "who", 
+                            224.27, 
+                            224.41
+                        ], 
+                        [
+                            "was", 
+                            224.41, 
+                            224.55
+                        ], 
+                        [
+                            "good", 
+                            224.55, 
+                            224.85
+                        ], 
+                        [
+                            "you", 
+                            224.85, 
+                            224.93
+                        ], 
+                        [
+                            "knew", 
+                            224.93, 
+                            225.06
+                        ], 
+                        [
+                            "who", 
+                            225.06, 
+                            225.24
+                        ], 
+                        [
+                            "was", 
+                            225.24, 
+                            225.41
+                        ], 
+                        [
+                            "bad", 
+                            225.41, 
+                            225.71
+                        ]
+                    ], 
+                    "transcript": "you knew who was good you knew who was bad "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 27, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "you", 
+                            224.04, 
+                            224.15
+                        ], 
+                        [
+                            "knew", 
+                            224.15, 
+                            224.27
+                        ], 
+                        [
+                            "who", 
+                            224.27, 
+                            224.41
+                        ], 
+                        [
+                            "was", 
+                            224.41, 
+                            224.55
+                        ], 
+                        [
+                            "good", 
+                            224.55, 
+                            224.85
+                        ], 
+                        [
+                            "you", 
+                            224.85, 
+                            224.93
+                        ], 
+                        [
+                            "knew", 
+                            224.93, 
+                            225.06
+                        ], 
+                        [
+                            "who", 
+                            225.06, 
+                            225.24
+                        ], 
+                        [
+                            "was", 
+                            225.24, 
+                            225.41
+                        ], 
+                        [
+                            "bad", 
+                            225.41, 
+                            225.86
+                        ], 
+                        [
+                            "and", 
+                            226.22, 
+                            226.68
+                        ], 
+                        [
+                            "it", 
+                            226.68, 
+                            226.76
+                        ], 
+                        [
+                            "was", 
+                            226.76, 
+                            226.9
+                        ], 
+                        [
+                            "a", 
+                            226.9, 
+                            227.14
+                        ], 
+                        [
+                            "it", 
+                            227.17, 
+                            227.36
+                        ], 
+                        [
+                            "was", 
+                            227.36, 
+                            227.5
+                        ], 
+                        [
+                            "a", 
+                            227.5, 
+                            227.58
+                        ], 
+                        [
+                            "true", 
+                            227.58, 
+                            227.71
+                        ]
+                    ], 
+                    "transcript": "you knew who was good you knew who was bad and it was a it was a true "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 27, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.868, 
+                    "timestamps": [
+                        [
+                            "you", 
+                            224.04, 
+                            224.15
+                        ], 
+                        [
+                            "knew", 
+                            224.15, 
+                            224.27
+                        ], 
+                        [
+                            "who", 
+                            224.27, 
+                            224.41
+                        ], 
+                        [
+                            "was", 
+                            224.41, 
+                            224.55
+                        ], 
+                        [
+                            "good", 
+                            224.55, 
+                            224.85
+                        ], 
+                        [
+                            "you", 
+                            224.85, 
+                            224.93
+                        ], 
+                        [
+                            "knew", 
+                            224.93, 
+                            225.06
+                        ], 
+                        [
+                            "who", 
+                            225.06, 
+                            225.24
+                        ], 
+                        [
+                            "was", 
+                            225.24, 
+                            225.41
+                        ], 
+                        [
+                            "bad", 
+                            225.41, 
+                            225.86
+                        ], 
+                        [
+                            "and", 
+                            226.22, 
+                            226.68
+                        ], 
+                        [
+                            "it", 
+                            226.68, 
+                            226.76
+                        ], 
+                        [
+                            "was", 
+                            226.76, 
+                            226.9
+                        ], 
+                        [
+                            "a", 
+                            226.9, 
+                            227.14
+                        ], 
+                        [
+                            "it", 
+                            227.17, 
+                            227.36
+                        ], 
+                        [
+                            "was", 
+                            227.36, 
+                            227.5
+                        ], 
+                        [
+                            "a", 
+                            227.5, 
+                            227.58
+                        ], 
+                        [
+                            "traditional", 
+                            227.58, 
+                            228.35
+                        ]
+                    ], 
+                    "transcript": "you knew who was good you knew who was bad and it was a it was a traditional ", 
+                    "word_confidence": [
+                        [
+                            "you", 
+                            0.685230804378659
+                        ], 
+                        [
+                            "knew", 
+                            0.7430869316380672
+                        ], 
+                        [
+                            "who", 
+                            0.9432840820374665
+                        ], 
+                        [
+                            "was", 
+                            0.37400081684393405
+                        ], 
+                        [
+                            "good", 
+                            0.5676199980970961
+                        ], 
+                        [
+                            "you", 
+                            0.7497358668999268
+                        ], 
+                        [
+                            "knew", 
+                            0.4458313195505174
+                        ], 
+                        [
+                            "who", 
+                            0.7016314013557133
+                        ], 
+                        [
+                            "was", 
+                            0.8531919783771003
+                        ], 
+                        [
+                            "bad", 
+                            0.9934205097199594
+                        ], 
+                        [
+                            "and", 
+                            0.990661578016974
+                        ], 
+                        [
+                            "it", 
+                            0.7852162943911339
+                        ], 
+                        [
+                            "was", 
+                            0.9999999999999593
+                        ], 
+                        [
+                            "a", 
+                            0.9884559499499534
+                        ], 
+                        [
+                            "it", 
+                            0.9999999999999677
+                        ], 
+                        [
+                            "was", 
+                            0.9839370268388148
+                        ], 
+                        [
+                            "a", 
+                            0.7751183757436558
+                        ], 
+                        [
+                            "traditional", 
+                            0.9897327414497199
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "you know who is good you knew who was bad and it was a it was a traditional "
+                }, 
+                {
+                    "transcript": "you know who was good you knew who was bad and it was a it was a traditional "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 28, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "the", 
+                            229.24, 
+                            229.44
+                        ], 
+                        [
+                            "traditional", 
+                            229.44, 
+                            229.98
+                        ], 
+                        [
+                            "battle", 
+                            229.98, 
+                            230.69
+                        ]
+                    ], 
+                    "transcript": "the traditional battle "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 28, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.998, 
+                    "timestamps": [
+                        [
+                            "the", 
+                            229.24, 
+                            229.44
+                        ], 
+                        [
+                            "traditional", 
+                            229.44, 
+                            229.98
+                        ], 
+                        [
+                            "battle", 
+                            229.98, 
+                            230.69
+                        ], 
+                        [
+                            "of", 
+                            230.83, 
+                            231.21
+                        ], 
+                        [
+                            "kind", 
+                            231.51, 
+                            231.72
+                        ], 
+                        [
+                            "of", 
+                            231.72, 
+                            231.81
+                        ], 
+                        [
+                            "good", 
+                            231.81, 
+                            231.99
+                        ], 
+                        [
+                            "versus", 
+                            231.99, 
+                            232.33
+                        ], 
+                        [
+                            "evil", 
+                            232.33, 
+                            232.64
+                        ], 
+                        [
+                            "if", 
+                            232.64, 
+                            232.77
+                        ], 
+                        [
+                            "you", 
+                            232.77, 
+                            232.97
+                        ]
+                    ], 
+                    "transcript": "the traditional battle of kind of good versus evil if you ", 
+                    "word_confidence": [
+                        [
+                            "the", 
+                            0.9999999999999348
+                        ], 
+                        [
+                            "traditional", 
+                            0.9999999999999019
+                        ], 
+                        [
+                            "battle", 
+                            0.9924868803920713
+                        ], 
+                        [
+                            "of", 
+                            0.9999999999999333
+                        ], 
+                        [
+                            "kind", 
+                            0.9999999999999599
+                        ], 
+                        [
+                            "of", 
+                            0.999999999999954
+                        ], 
+                        [
+                            "good", 
+                            0.9999999999999682
+                        ], 
+                        [
+                            "versus", 
+                            1.0
+                        ], 
+                        [
+                            "evil", 
+                            1.0
+                        ], 
+                        [
+                            "if", 
+                            1.0
+                        ], 
+                        [
+                            "you", 
+                            0.9999999999999959
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 29, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "you", 
+                            233.7, 
+                            233.92
+                        ], 
+                        [
+                            "know", 
+                            233.92, 
+                            234.25
+                        ], 
+                        [
+                            "whichever", 
+                            234.44, 
+                            234.81
+                        ], 
+                        [
+                            "way", 
+                            234.81, 
+                            234.98
+                        ], 
+                        [
+                            "it", 
+                            234.98, 
+                            235.07
+                        ], 
+                        [
+                            "is", 
+                            235.07, 
+                            235.27
+                        ], 
+                        [
+                            "by", 
+                            235.27, 
+                            235.35
+                        ]
+                    ], 
+                    "transcript": "you know whichever way it is by "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 29, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "you", 
+                            233.7, 
+                            233.92
+                        ], 
+                        [
+                            "know", 
+                            233.92, 
+                            234.25
+                        ], 
+                        [
+                            "whichever", 
+                            234.44, 
+                            234.81
+                        ], 
+                        [
+                            "way", 
+                            234.81, 
+                            234.98
+                        ], 
+                        [
+                            "it", 
+                            234.98, 
+                            235.07
+                        ], 
+                        [
+                            "is", 
+                            235.07, 
+                            235.27
+                        ], 
+                        [
+                            "but", 
+                            235.27, 
+                            235.39
+                        ], 
+                        [
+                            "in", 
+                            235.39, 
+                            235.54
+                        ], 
+                        [
+                            "in", 
+                            235.57, 
+                            236.09
+                        ], 
+                        [
+                            "in", 
+                            236.22, 
+                            236.36
+                        ], 
+                        [
+                            "the", 
+                            236.36, 
+                            236.44
+                        ], 
+                        [
+                            "Vietnam", 
+                            236.44, 
+                            236.82
+                        ], 
+                        [
+                            "War", 
+                            236.82, 
+                            237.04
+                        ], 
+                        [
+                            "seems", 
+                            237.04, 
+                            237.35
+                        ]
+                    ], 
+                    "transcript": "you know whichever way it is but in in in the Vietnam War seems "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 29, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.899, 
+                    "timestamps": [
+                        [
+                            "you", 
+                            233.7, 
+                            233.92
+                        ], 
+                        [
+                            "know", 
+                            233.92, 
+                            234.25
+                        ], 
+                        [
+                            "whichever", 
+                            234.44, 
+                            234.81
+                        ], 
+                        [
+                            "way", 
+                            234.81, 
+                            234.98
+                        ], 
+                        [
+                            "it", 
+                            234.98, 
+                            235.07
+                        ], 
+                        [
+                            "is", 
+                            235.07, 
+                            235.27
+                        ], 
+                        [
+                            "but", 
+                            235.27, 
+                            235.39
+                        ], 
+                        [
+                            "in", 
+                            235.39, 
+                            235.54
+                        ], 
+                        [
+                            "in", 
+                            235.57, 
+                            236.09
+                        ], 
+                        [
+                            "in", 
+                            236.22, 
+                            236.36
+                        ], 
+                        [
+                            "the", 
+                            236.36, 
+                            236.44
+                        ], 
+                        [
+                            "Vietnam", 
+                            236.44, 
+                            236.82
+                        ], 
+                        [
+                            "War", 
+                            236.82, 
+                            237.04
+                        ], 
+                        [
+                            "seems", 
+                            237.04, 
+                            237.29
+                        ], 
+                        [
+                            "like", 
+                            237.29, 
+                            237.48
+                        ], 
+                        [
+                            "it", 
+                            237.48, 
+                            237.6
+                        ], 
+                        [
+                            "was", 
+                            237.6, 
+                            237.95
+                        ]
+                    ], 
+                    "transcript": "you know whichever way it is but in in in the Vietnam War seems like it was ", 
+                    "word_confidence": [
+                        [
+                            "you", 
+                            0.7568029321805003
+                        ], 
+                        [
+                            "know", 
+                            0.8801966293153498
+                        ], 
+                        [
+                            "whichever", 
+                            0.417818134623114
+                        ], 
+                        [
+                            "way", 
+                            1.0
+                        ], 
+                        [
+                            "it", 
+                            1.0
+                        ], 
+                        [
+                            "is", 
+                            1.0
+                        ], 
+                        [
+                            "but", 
+                            1.0
+                        ], 
+                        [
+                            "in", 
+                            0.9924705111271533
+                        ], 
+                        [
+                            "in", 
+                            0.9958022105533298
+                        ], 
+                        [
+                            "in", 
+                            1.0
+                        ], 
+                        [
+                            "the", 
+                            1.0
+                        ], 
+                        [
+                            "Vietnam", 
+                            0.9940401614567042
+                        ], 
+                        [
+                            "War", 
+                            0.8024245657118954
+                        ], 
+                        [
+                            "seems", 
+                            0.9479253422798299
+                        ], 
+                        [
+                            "like", 
+                            1.0
+                        ], 
+                        [
+                            "it", 
+                            0.9925132475255971
+                        ], 
+                        [
+                            "was", 
+                            0.934469005666139
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "you know which ever way it is but in in in the Vietnam War seems like it was "
+                }, 
+                {
+                    "transcript": "you know whichever way it is but in in in the Vietnam War it seems like it was "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 30, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "the", 
+                            238.94, 
+                            239.24
+                        ], 
+                        [
+                            "sides", 
+                            239.24, 
+                            239.68
+                        ], 
+                        [
+                            "in", 
+                            239.68, 
+                            239.8
+                        ], 
+                        [
+                            "the", 
+                            239.8, 
+                            239.91
+                        ], 
+                        [
+                            "line", 
+                            239.91, 
+                            240.18
+                        ]
+                    ], 
+                    "transcript": "the sides in the line "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 30, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "the", 
+                            238.94, 
+                            239.24
+                        ], 
+                        [
+                            "sides", 
+                            239.24, 
+                            239.68
+                        ], 
+                        [
+                            "and", 
+                            239.68, 
+                            239.82
+                        ], 
+                        [
+                            "the", 
+                            239.82, 
+                            239.91
+                        ], 
+                        [
+                            "lines", 
+                            239.91, 
+                            240.28
+                        ], 
+                        [
+                            "that", 
+                            240.28, 
+                            240.39
+                        ], 
+                        [
+                            "were", 
+                            240.39, 
+                            240.51
+                        ], 
+                        [
+                            "drawn", 
+                            240.51, 
+                            240.87
+                        ], 
+                        [
+                            "or", 
+                            240.87, 
+                            241.01
+                        ], 
+                        [
+                            "all", 
+                            241.01, 
+                            241.17
+                        ], 
+                        [
+                            "confused", 
+                            241.17, 
+                            241.71
+                        ], 
+                        [
+                            "as", 
+                            241.71, 
+                            241.8
+                        ], 
+                        [
+                            "to", 
+                            241.8, 
+                            241.93
+                        ], 
+                        [
+                            "who's", 
+                            241.93, 
+                            242.18
+                        ]
+                    ], 
+                    "transcript": "the sides and the lines that were drawn or all confused as to who's "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 30, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.786, 
+                    "timestamps": [
+                        [
+                            "the", 
+                            238.94, 
+                            239.24
+                        ], 
+                        [
+                            "sides", 
+                            239.24, 
+                            239.68
+                        ], 
+                        [
+                            "and", 
+                            239.68, 
+                            239.82
+                        ], 
+                        [
+                            "the", 
+                            239.82, 
+                            239.91
+                        ], 
+                        [
+                            "lines", 
+                            239.91, 
+                            240.28
+                        ], 
+                        [
+                            "that", 
+                            240.28, 
+                            240.39
+                        ], 
+                        [
+                            "were", 
+                            240.39, 
+                            240.51
+                        ], 
+                        [
+                            "drawn", 
+                            240.51, 
+                            240.87
+                        ], 
+                        [
+                            "or", 
+                            240.87, 
+                            241.01
+                        ], 
+                        [
+                            "all", 
+                            241.01, 
+                            241.17
+                        ], 
+                        [
+                            "confused", 
+                            241.17, 
+                            241.71
+                        ], 
+                        [
+                            "as", 
+                            241.71, 
+                            241.8
+                        ], 
+                        [
+                            "to", 
+                            241.8, 
+                            241.93
+                        ], 
+                        [
+                            "who's", 
+                            241.93, 
+                            242.14
+                        ], 
+                        [
+                            "good", 
+                            242.14, 
+                            242.37
+                        ], 
+                        [
+                            "and", 
+                            242.37, 
+                            242.49
+                        ], 
+                        [
+                            "who's", 
+                            242.49, 
+                            242.72
+                        ], 
+                        [
+                            "bad", 
+                            242.72, 
+                            243.05
+                        ], 
+                        [
+                            "and", 
+                            243.05, 
+                            243.26
+                        ]
+                    ], 
+                    "transcript": "the sides and the lines that were drawn or all confused as to who's good and who's bad and ", 
+                    "word_confidence": [
+                        [
+                            "the", 
+                            0.8789296821183565
+                        ], 
+                        [
+                            "sides", 
+                            0.5897987155874672
+                        ], 
+                        [
+                            "and", 
+                            0.6117854504303296
+                        ], 
+                        [
+                            "the", 
+                            0.9999999999999429
+                        ], 
+                        [
+                            "lines", 
+                            0.9999999999999392
+                        ], 
+                        [
+                            "that", 
+                            0.9999999999999397
+                        ], 
+                        [
+                            "were", 
+                            0.9999999999999344
+                        ], 
+                        [
+                            "drawn", 
+                            0.9999999999999578
+                        ], 
+                        [
+                            "or", 
+                            0.5971714564104947
+                        ], 
+                        [
+                            "all", 
+                            0.9890639864166515
+                        ], 
+                        [
+                            "confused", 
+                            0.10895786593387566
+                        ], 
+                        [
+                            "as", 
+                            0.5332582941601144
+                        ], 
+                        [
+                            "to", 
+                            0.4572659760544785
+                        ], 
+                        [
+                            "who's", 
+                            0.9999999999999767
+                        ], 
+                        [
+                            "good", 
+                            0.9999999999999842
+                        ], 
+                        [
+                            "and", 
+                            0.9999999999999853
+                        ], 
+                        [
+                            "who's", 
+                            1.0
+                        ], 
+                        [
+                            "bad", 
+                            1.0
+                        ], 
+                        [
+                            "and", 
+                            1.0
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "the sides in the lines that were drawn or all confused as to who's good and who's bad and "
+                }, 
+                {
+                    "transcript": "the sides and the lines that were drawn or all computers as to who's good and who's bad and "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 31, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.91, 
+                    "timestamps": [
+                        [
+                            "and", 
+                            244.41, 
+                            244.96
+                        ], 
+                        [
+                            "%HESITATION", 
+                            244.96, 
+                            245.33
+                        ]
+                    ], 
+                    "transcript": "and %HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "and", 
+                            0.9894186228160528
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.7916568037992497
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "and the "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 32, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "you", 
+                            246.35, 
+                            246.52
+                        ], 
+                        [
+                            "know", 
+                            246.52, 
+                            246.64
+                        ], 
+                        [
+                            "the", 
+                            246.64, 
+                            246.76
+                        ], 
+                        [
+                            "even", 
+                            246.9, 
+                            247.37
+                        ], 
+                        [
+                            "as", 
+                            247.82, 
+                            247.97
+                        ], 
+                        [
+                            "he", 
+                            247.97, 
+                            248.04
+                        ]
+                    ], 
+                    "transcript": "you know the even as he "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 32, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.969, 
+                    "timestamps": [
+                        [
+                            "you", 
+                            246.35, 
+                            246.52
+                        ], 
+                        [
+                            "know", 
+                            246.52, 
+                            246.64
+                        ], 
+                        [
+                            "the", 
+                            246.64, 
+                            246.76
+                        ], 
+                        [
+                            "even", 
+                            246.9, 
+                            247.37
+                        ], 
+                        [
+                            "seems", 
+                            247.85, 
+                            248.14
+                        ], 
+                        [
+                            "like", 
+                            248.14, 
+                            248.3
+                        ], 
+                        [
+                            "even", 
+                            248.3, 
+                            248.52
+                        ], 
+                        [
+                            "the", 
+                            248.52, 
+                            248.61
+                        ], 
+                        [
+                            "people", 
+                            248.61, 
+                            249.45
+                        ]
+                    ], 
+                    "transcript": "you know the even seems like even the people ", 
+                    "word_confidence": [
+                        [
+                            "you", 
+                            0.9999999999999346
+                        ], 
+                        [
+                            "know", 
+                            0.9999999999999344
+                        ], 
+                        [
+                            "the", 
+                            0.9999999999999675
+                        ], 
+                        [
+                            "even", 
+                            0.9999999999999628
+                        ], 
+                        [
+                            "seems", 
+                            0.7845336704295824
+                        ], 
+                        [
+                            "like", 
+                            0.9999999999999756
+                        ], 
+                        [
+                            "even", 
+                            0.9999999999999651
+                        ], 
+                        [
+                            "the", 
+                            0.9999999999999919
+                        ], 
+                        [
+                            "people", 
+                            0.9829535322351052
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "you know the even has seems like even the people "
+                }, 
+                {
+                    "transcript": "you know the even as seems like even the people "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 33, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.617, 
+                    "timestamps": [
+                        [
+                            "and", 
+                            249.94, 
+                            250.17
+                        ], 
+                        [
+                            "I", 
+                            250.17, 
+                            250.2
+                        ], 
+                        [
+                            "have", 
+                            250.2, 
+                            250.47
+                        ], 
+                        [
+                            "the", 
+                            250.68, 
+                            251.1
+                        ]
+                    ], 
+                    "transcript": "and I have the ", 
+                    "word_confidence": [
+                        [
+                            "and", 
+                            0.35502710259521797
+                        ], 
+                        [
+                            "I", 
+                            0.6463883900040197
+                        ], 
+                        [
+                            "have", 
+                            0.5604595690936066
+                        ], 
+                        [
+                            "the", 
+                            0.7950533633629506
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "and I had the "
+                }, 
+                {
+                    "transcript": "you know I have the "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 34, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "south", 
+                            251.62, 
+                            251.96
+                        ], 
+                        [
+                            "Vietnamese", 
+                            251.96, 
+                            252.59
+                        ], 
+                        [
+                            "north", 
+                            252.59, 
+                            252.89
+                        ], 
+                        [
+                            "Vietnamese", 
+                            252.89, 
+                            253.4
+                        ]
+                    ], 
+                    "transcript": "south Vietnamese north Vietnamese "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 34, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.974, 
+                    "timestamps": [
+                        [
+                            "south", 
+                            251.62, 
+                            251.96
+                        ], 
+                        [
+                            "Vietnamese", 
+                            251.96, 
+                            252.59
+                        ], 
+                        [
+                            "north", 
+                            252.59, 
+                            252.89
+                        ], 
+                        [
+                            "Vietnamese", 
+                            252.89, 
+                            253.52
+                        ], 
+                        [
+                            "and", 
+                            253.52, 
+                            253.75
+                        ]
+                    ], 
+                    "transcript": "south Vietnamese north Vietnamese and ", 
+                    "word_confidence": [
+                        [
+                            "south", 
+                            0.9999999999999867
+                        ], 
+                        [
+                            "Vietnamese", 
+                            0.9719688763151376
+                        ], 
+                        [
+                            "north", 
+                            0.8722950335101847
+                        ], 
+                        [
+                            "Vietnamese", 
+                            0.9999999999999954
+                        ], 
+                        [
+                            "and", 
+                            0.9999999999999905
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "south Vietnamese and north Vietnamese and "
+                }, 
+                {
+                    "transcript": "south Vietnamese in north Vietnamese and "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 35, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "course", 
+                            254.73, 
+                            255.05
+                        ], 
+                        [
+                            "the", 
+                            255.05, 
+                            255.21
+                        ], 
+                        [
+                            "Laotians", 
+                            255.21, 
+                            255.72
+                        ], 
+                        [
+                            "and", 
+                            255.72, 
+                            255.84
+                        ], 
+                        [
+                            "the", 
+                            255.84, 
+                            255.94
+                        ], 
+                        [
+                            "Cambodians", 
+                            255.94, 
+                            256.5
+                        ]
+                    ], 
+                    "transcript": "course the Laotians and the Cambodians "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 35, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.959, 
+                    "timestamps": [
+                        [
+                            "course", 
+                            254.73, 
+                            255.05
+                        ], 
+                        [
+                            "the", 
+                            255.05, 
+                            255.21
+                        ], 
+                        [
+                            "Laotians", 
+                            255.21, 
+                            255.72
+                        ], 
+                        [
+                            "and", 
+                            255.72, 
+                            255.84
+                        ], 
+                        [
+                            "the", 
+                            255.84, 
+                            255.94
+                        ], 
+                        [
+                            "Cambodians", 
+                            255.94, 
+                            256.58
+                        ], 
+                        [
+                            "weren't", 
+                            256.58, 
+                            256.84
+                        ], 
+                        [
+                            "even", 
+                            256.84, 
+                            257.05
+                        ], 
+                        [
+                            "supposed", 
+                            257.05, 
+                            257.34
+                        ], 
+                        [
+                            "to", 
+                            257.34, 
+                            257.42
+                        ], 
+                        [
+                            "be", 
+                            257.42, 
+                            257.51
+                        ], 
+                        [
+                            "involved", 
+                            257.51, 
+                            258.05
+                        ], 
+                        [
+                            "with", 
+                            258.05, 
+                            258.16
+                        ], 
+                        [
+                            "it", 
+                            258.16, 
+                            258.31
+                        ]
+                    ], 
+                    "transcript": "course the Laotians and the Cambodians weren't even supposed to be involved with it ", 
+                    "word_confidence": [
+                        [
+                            "course", 
+                            1.0
+                        ], 
+                        [
+                            "the", 
+                            1.0
+                        ], 
+                        [
+                            "Laotians", 
+                            1.0
+                        ], 
+                        [
+                            "and", 
+                            1.0
+                        ], 
+                        [
+                            "the", 
+                            1.0
+                        ], 
+                        [
+                            "Cambodians", 
+                            0.999999999999984
+                        ], 
+                        [
+                            "weren't", 
+                            0.9999999999999835
+                        ], 
+                        [
+                            "even", 
+                            0.9999999999999836
+                        ], 
+                        [
+                            "supposed", 
+                            1.0
+                        ], 
+                        [
+                            "to", 
+                            0.9999999999999754
+                        ], 
+                        [
+                            "be", 
+                            0.9999999999999919
+                        ], 
+                        [
+                            "involved", 
+                            0.9999999999999845
+                        ], 
+                        [
+                            "with", 
+                            0.4447728683035836
+                        ], 
+                        [
+                            "it", 
+                            0.432459741158894
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "course the Laotians and the Cambodians weren't even supposed to be involved in that "
+                }, 
+                {
+                    "transcript": "course the Laotians and the Cambodians weren't even supposed to be involved but "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 36, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.648, 
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            283.02, 
+                            283.37
+                        ]
+                    ], 
+                    "transcript": "yeah ", 
+                    "word_confidence": [
+                        [
+                            "yeah", 
+                            0.6478934038859093
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "yes "
+                }, 
+                {
+                    "transcript": "yeah I "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 37, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.977, 
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            284.32, 
+                            284.73
+                        ]
+                    ], 
+                    "transcript": "yeah ", 
+                    "word_confidence": [
+                        [
+                            "yeah", 
+                            0.9770589921773889
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 38, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.982, 
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            292.19, 
+                            292.63
+                        ]
+                    ], 
+                    "transcript": "yeah ", 
+                    "word_confidence": [
+                        [
+                            "yeah", 
+                            0.9818573039783665
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}

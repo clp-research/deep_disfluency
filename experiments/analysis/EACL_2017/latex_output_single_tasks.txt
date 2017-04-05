@@ -1,0 +1,30 @@
+\begin{tabular}{llllllll}
+\toprule
+                  System (eval. method) & TTD\$\_\{rps\}\$ (word) & TTD\$\_\{rps\}\$ (time in s) & TTD\$\_\{e\}\$ (word) & TTD\$\_\{e\}\$ (time in s) & TTD\$\_\{tto\}\$ (word) & TTD\$\_\{tto\}\$ (time in s) &     EO \\
+\midrule
+  LSTM (TTO only) (timing) (transcript) &                nan &                     nan &              nan &                   nan &              0.368 &                   2.025 &   3.72 \\
+          LSTM (disf only) (transcript) &              1.000 &                   0.235 &            0.111 &                 0.294 &                nan &                     nan &   0.71 \\
+ LSTM (TTO only) (timing) (ASR results) &                  - &                     nan &                - &                   nan &                  - &                   3.330 &  12.09 \\
+         LSTM (disf only) (ASR results) &                  - &                   0.221 &                - &                 0.773 &                  - &                     nan &  17.37 \\
+  LSTM (TTO only) (timing) (transcript) &                nan &                     nan &              nan &                   nan &              0.394 &                   1.991 &   4.45 \\
+          LSTM (disf only) (transcript) &              1.000 &                   0.232 &            0.086 &                 0.277 &                nan &                     nan &   0.55 \\
+ LSTM (TTO only) (timing) (ASR results) &                  - &                     nan &                - &                   nan &                  - &                   3.808 &  12.51 \\
+         LSTM (disf only) (ASR results) &                  - &                   0.195 &                - &                 0.718 &                  - &                     nan &  17.01 \\
+\bottomrule
+\end{tabular}
+
+
+\begin{tabular}{lllllllllll}
+\toprule
+                  System (eval. method) & \$F\_\{rm\}\$ (per word) & \$F\_\{rps\}\$ (per word) & \$F\_\{rps\}\$ (per 10s window) & \$F\_\{e\}\$ (per word) & \$F\_\{e\}\$ (per 10s window) & \$F\_\{TTO\}\$ (per word) & \$F\_\{TTO\}\$ (per 10s window) & NIST SU (word) & DSER (word) & \$rps\$ per utterance per speaker correlation \\
+\midrule
+  LSTM (TTO only) (timing) (transcript) &               0.000 &                0.000 &                      0.000 &              0.000 &                    0.000 &                0.683 &                      0.639 &          51.87 &       62.25 &                                         nan \\
+          LSTM (disf only) (transcript) &               0.000 &                0.762 &                      0.799 &              0.929 &                    0.908 &                0.000 &                      0.000 &         100.00 &      100.00 &                                         nan \\
+ LSTM (TTO only) (timing) (ASR results) &                   - &                    - &                      0.000 &                  - &                    0.000 &                    - &                      0.656 &              - &           - &                                         nan \\
+         LSTM (disf only) (ASR results) &                   - &                    - &                      0.608 &                  - &                    0.791 &                    - &                      0.000 &              - &           - &                                         nan \\
+  LSTM (TTO only) (timing) (transcript) &               0.000 &                0.000 &                      0.000 &              0.000 &                    0.000 &                0.727 &                      0.679 &          46.17 &       57.00 &                                         nan \\
+          LSTM (disf only) (transcript) &               0.000 &                0.711 &                      0.760 &              0.912 &                    0.886 &                0.000 &                      0.000 &         100.00 &      100.00 &                                         nan \\
+ LSTM (TTO only) (timing) (ASR results) &                   - &                    - &                      0.000 &                  - &                    0.000 &                    - &                      0.657 &              - &           - &                                         nan \\
+         LSTM (disf only) (ASR results) &                   - &                    - &                      0.531 &                  - &                    0.721 &                    - &                      0.000 &              - &           - &                                         nan \\
+\bottomrule
+\end{tabular}

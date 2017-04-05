@@ -1,0 +1,5759 @@
+{
+    "result_index": 0, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "okay", 
+                            0.13, 
+                            0.51
+                        ], 
+                        [
+                            "well", 
+                            0.51, 
+                            0.86
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.86, 
+                            1.32
+                        ], 
+                        [
+                            "let", 
+                            1.49, 
+                            1.75
+                        ], 
+                        [
+                            "used", 
+                            1.75, 
+                            1.93
+                        ]
+                    ], 
+                    "transcript": "okay well %HESITATION let used "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 0, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.943, 
+                    "timestamps": [
+                        [
+                            "okay", 
+                            0.13, 
+                            0.51
+                        ], 
+                        [
+                            "well", 
+                            0.51, 
+                            0.86
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.86, 
+                            1.32
+                        ], 
+                        [
+                            "I'll", 
+                            1.51, 
+                            1.62
+                        ], 
+                        [
+                            "let", 
+                            1.62, 
+                            1.75
+                        ], 
+                        [
+                            "you", 
+                            1.75, 
+                            1.86
+                        ], 
+                        [
+                            "start", 
+                            1.86, 
+                            2.2
+                        ], 
+                        [
+                            "I", 
+                            2.2, 
+                            2.28
+                        ], 
+                        [
+                            "guess", 
+                            2.28, 
+                            2.63
+                        ]
+                    ], 
+                    "transcript": "okay well %HESITATION I'll let you start I guess ", 
+                    "word_confidence": [
+                        [
+                            "okay", 
+                            1.0
+                        ], 
+                        [
+                            "well", 
+                            1.0
+                        ], 
+                        [
+                            "%HESITATION", 
+                            1.0
+                        ], 
+                        [
+                            "I'll", 
+                            0.3437477934626063
+                        ], 
+                        [
+                            "let", 
+                            0.6841862375141082
+                        ], 
+                        [
+                            "you", 
+                            0.989751614213016
+                        ], 
+                        [
+                            "start", 
+                            0.9686087589586596
+                        ], 
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "guess", 
+                            0.9808041566349844
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "okay well %HESITATION let you start I guess "
+                }, 
+                {
+                    "transcript": "okay well um I'll let you start I guess "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 1, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.0, 
+                    "timestamps": [], 
+                    "transcript": "I'm "
+                }, 
+                {
+                    "transcript": "the "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 2, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            28.22, 
+                            28.7
+                        ], 
+                        [
+                            "no", 
+                            28.7, 
+                            29.07
+                        ], 
+                        [
+                            "I", 
+                            29.07, 
+                            29.18
+                        ], 
+                        [
+                            "mean", 
+                            29.18, 
+                            29.35
+                        ], 
+                        [
+                            "I'm", 
+                            29.35, 
+                            29.44
+                        ], 
+                        [
+                            "not", 
+                            29.44, 
+                            29.74
+                        ]
+                    ], 
+                    "transcript": "%HESITATION no I mean I'm not "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 2, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            28.22, 
+                            28.7
+                        ], 
+                        [
+                            "no", 
+                            28.7, 
+                            29.07
+                        ], 
+                        [
+                            "I", 
+                            29.07, 
+                            29.18
+                        ], 
+                        [
+                            "mean", 
+                            29.18, 
+                            29.35
+                        ], 
+                        [
+                            "I'm", 
+                            29.35, 
+                            29.44
+                        ], 
+                        [
+                            "not", 
+                            29.44, 
+                            29.74
+                        ], 
+                        [
+                            "my", 
+                            30.02, 
+                            30.22
+                        ], 
+                        [
+                            "employer", 
+                            30.22, 
+                            30.59
+                        ], 
+                        [
+                            "does", 
+                            30.59, 
+                            30.74
+                        ], 
+                        [
+                            "not", 
+                            30.74, 
+                            30.99
+                        ], 
+                        [
+                            "do", 
+                            30.99, 
+                            31.12
+                        ], 
+                        [
+                            "that", 
+                            31.12, 
+                            31.54
+                        ], 
+                        [
+                            "%HESITATION", 
+                            31.57, 
+                            31.89
+                        ]
+                    ], 
+                    "transcript": "%HESITATION no I mean I'm not my employer does not do that %HESITATION "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 2, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.997, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            28.22, 
+                            28.7
+                        ], 
+                        [
+                            "no", 
+                            28.7, 
+                            29.07
+                        ], 
+                        [
+                            "I", 
+                            29.07, 
+                            29.18
+                        ], 
+                        [
+                            "mean", 
+                            29.18, 
+                            29.35
+                        ], 
+                        [
+                            "I'm", 
+                            29.35, 
+                            29.44
+                        ], 
+                        [
+                            "not", 
+                            29.44, 
+                            29.74
+                        ], 
+                        [
+                            "my", 
+                            30.02, 
+                            30.22
+                        ], 
+                        [
+                            "employer", 
+                            30.22, 
+                            30.59
+                        ], 
+                        [
+                            "does", 
+                            30.59, 
+                            30.74
+                        ], 
+                        [
+                            "not", 
+                            30.74, 
+                            30.99
+                        ], 
+                        [
+                            "do", 
+                            30.99, 
+                            31.12
+                        ], 
+                        [
+                            "that", 
+                            31.12, 
+                            31.54
+                        ], 
+                        [
+                            "%HESITATION", 
+                            31.57, 
+                            32.27
+                        ], 
+                        [
+                            "although", 
+                            32.42, 
+                            32.91
+                        ], 
+                        [
+                            "%HESITATION", 
+                            32.91, 
+                            33.44
+                        ]
+                    ], 
+                    "transcript": "%HESITATION no I mean I'm not my employer does not do that %HESITATION although %HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            1.0
+                        ], 
+                        [
+                            "no", 
+                            1.0
+                        ], 
+                        [
+                            "I", 
+                            0.9999999999999983
+                        ], 
+                        [
+                            "mean", 
+                            1.0
+                        ], 
+                        [
+                            "I'm", 
+                            1.0
+                        ], 
+                        [
+                            "not", 
+                            0.9912067634213942
+                        ], 
+                        [
+                            "my", 
+                            1.0
+                        ], 
+                        [
+                            "employer", 
+                            1.0
+                        ], 
+                        [
+                            "does", 
+                            1.0
+                        ], 
+                        [
+                            "not", 
+                            1.0
+                        ], 
+                        [
+                            "do", 
+                            1.0
+                        ], 
+                        [
+                            "that", 
+                            0.9826324573901963
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.9955707946660736
+                        ], 
+                        [
+                            "although", 
+                            1.0
+                        ], 
+                        [
+                            "%HESITATION", 
+                            1.0
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION know I mean I'm not my employer does not do that %HESITATION although %HESITATION "
+                }, 
+                {
+                    "transcript": "%HESITATION no I mean I'm not my employer does not do that um although %HESITATION "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 3, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.948, 
+                    "timestamps": [
+                        [
+                            "I", 
+                            34.68, 
+                            34.91
+                        ], 
+                        [
+                            "had", 
+                            34.91, 
+                            35.0
+                        ], 
+                        [
+                            "an", 
+                            35.0, 
+                            35.07
+                        ], 
+                        [
+                            "ex", 
+                            35.07, 
+                            35.26
+                        ], 
+                        [
+                            "employer", 
+                            35.26, 
+                            35.72
+                        ], 
+                        [
+                            "that", 
+                            35.72, 
+                            36.08
+                        ], 
+                        [
+                            "%HESITATION", 
+                            36.08, 
+                            36.41
+                        ]
+                    ], 
+                    "transcript": "I had an ex employer that %HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "I", 
+                            0.6112529436954106
+                        ], 
+                        [
+                            "had", 
+                            1.0
+                        ], 
+                        [
+                            "an", 
+                            1.0
+                        ], 
+                        [
+                            "ex", 
+                            1.0
+                        ], 
+                        [
+                            "employer", 
+                            0.999999999999992
+                        ], 
+                        [
+                            "that", 
+                            0.9999999999999919
+                        ], 
+                        [
+                            "%HESITATION", 
+                            1.0
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "had an ex employer that %HESITATION "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 4, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "the", 
+                            36.84, 
+                            36.97
+                        ], 
+                        [
+                            "previous", 
+                            36.97, 
+                            37.24
+                        ], 
+                        [
+                            "job", 
+                            37.24, 
+                            37.41
+                        ], 
+                        [
+                            "I", 
+                            37.41, 
+                            37.44
+                        ], 
+                        [
+                            "used", 
+                            37.44, 
+                            37.62
+                        ], 
+                        [
+                            "to", 
+                            37.62, 
+                            37.72
+                        ], 
+                        [
+                            "have", 
+                            37.72, 
+                            38.26
+                        ], 
+                        [
+                            "a", 
+                            38.46, 
+                            38.63
+                        ]
+                    ], 
+                    "transcript": "the previous job I used to have a "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 4, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.827, 
+                    "timestamps": [
+                        [
+                            "the", 
+                            36.84, 
+                            36.97
+                        ], 
+                        [
+                            "previous", 
+                            36.97, 
+                            37.24
+                        ], 
+                        [
+                            "job", 
+                            37.24, 
+                            37.41
+                        ], 
+                        [
+                            "I", 
+                            37.41, 
+                            37.44
+                        ], 
+                        [
+                            "used", 
+                            37.44, 
+                            37.62
+                        ], 
+                        [
+                            "to", 
+                            37.62, 
+                            37.72
+                        ], 
+                        [
+                            "have", 
+                            37.72, 
+                            38.26
+                        ], 
+                        [
+                            "%HESITATION", 
+                            38.46, 
+                            38.94
+                        ], 
+                        [
+                            "they", 
+                            38.99, 
+                            39.37
+                        ]
+                    ], 
+                    "transcript": "the previous job I used to have %HESITATION they ", 
+                    "word_confidence": [
+                        [
+                            "the", 
+                            0.5406885967736609
+                        ], 
+                        [
+                            "previous", 
+                            0.7788580871227153
+                        ], 
+                        [
+                            "job", 
+                            0.5103681922306849
+                        ], 
+                        [
+                            "I", 
+                            0.24718849459590952
+                        ], 
+                        [
+                            "used", 
+                            0.911569200110988
+                        ], 
+                        [
+                            "to", 
+                            1.0
+                        ], 
+                        [
+                            "have", 
+                            0.989522616614572
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.9681007721596698
+                        ], 
+                        [
+                            "they", 
+                            0.6529808583024119
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "previous job I used to have %HESITATION they "
+                }, 
+                {
+                    "transcript": "the previous job used to have %HESITATION they "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 5, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "after", 
+                            39.86, 
+                            40.2
+                        ], 
+                        [
+                            "a", 
+                            40.2, 
+                            40.47
+                        ], 
+                        [
+                            "I", 
+                            40.79, 
+                            40.89
+                        ], 
+                        [
+                            "guess", 
+                            40.89, 
+                            41.06
+                        ], 
+                        [
+                            "a", 
+                            41.06, 
+                            41.09
+                        ], 
+                        [
+                            "few", 
+                            41.09, 
+                            41.22
+                        ], 
+                        [
+                            "years", 
+                            41.22, 
+                            41.39
+                        ], 
+                        [
+                            "at", 
+                            41.39, 
+                            41.54
+                        ]
+                    ], 
+                    "transcript": "after a I guess a few years at "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 5, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "after", 
+                            39.86, 
+                            40.2
+                        ], 
+                        [
+                            "a", 
+                            40.2, 
+                            40.47
+                        ], 
+                        [
+                            "I", 
+                            40.79, 
+                            40.89
+                        ], 
+                        [
+                            "guess", 
+                            40.89, 
+                            41.06
+                        ], 
+                        [
+                            "a", 
+                            41.06, 
+                            41.09
+                        ], 
+                        [
+                            "few", 
+                            41.09, 
+                            41.22
+                        ], 
+                        [
+                            "years", 
+                            41.22, 
+                            41.39
+                        ], 
+                        [
+                            "after", 
+                            41.39, 
+                            41.61
+                        ], 
+                        [
+                            "I'd", 
+                            41.61, 
+                            41.76
+                        ], 
+                        [
+                            "started", 
+                            41.76, 
+                            42.04
+                        ], 
+                        [
+                            "with", 
+                            42.04, 
+                            42.18
+                        ], 
+                        [
+                            "them", 
+                            42.18, 
+                            42.46
+                        ], 
+                        [
+                            "they", 
+                            42.46, 
+                            42.62
+                        ], 
+                        [
+                            "made", 
+                            42.62, 
+                            42.85
+                        ], 
+                        [
+                            "it", 
+                            42.85, 
+                            42.99
+                        ], 
+                        [
+                            "a", 
+                            43.06, 
+                            43.44
+                        ]
+                    ], 
+                    "transcript": "after a I guess a few years after I'd started with them they made it a "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 5, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.918, 
+                    "timestamps": [
+                        [
+                            "after", 
+                            39.86, 
+                            40.2
+                        ], 
+                        [
+                            "a", 
+                            40.2, 
+                            40.47
+                        ], 
+                        [
+                            "I", 
+                            40.79, 
+                            40.89
+                        ], 
+                        [
+                            "guess", 
+                            40.89, 
+                            41.06
+                        ], 
+                        [
+                            "a", 
+                            41.06, 
+                            41.09
+                        ], 
+                        [
+                            "few", 
+                            41.09, 
+                            41.22
+                        ], 
+                        [
+                            "years", 
+                            41.22, 
+                            41.39
+                        ], 
+                        [
+                            "after", 
+                            41.39, 
+                            41.61
+                        ], 
+                        [
+                            "I'd", 
+                            41.61, 
+                            41.76
+                        ], 
+                        [
+                            "started", 
+                            41.76, 
+                            42.04
+                        ], 
+                        [
+                            "with", 
+                            42.04, 
+                            42.18
+                        ], 
+                        [
+                            "them", 
+                            42.18, 
+                            42.46
+                        ], 
+                        [
+                            "they", 
+                            42.46, 
+                            42.62
+                        ], 
+                        [
+                            "made", 
+                            42.62, 
+                            42.85
+                        ], 
+                        [
+                            "it", 
+                            42.85, 
+                            42.99
+                        ], 
+                        [
+                            "a", 
+                            43.06, 
+                            43.31
+                        ], 
+                        [
+                            "condition", 
+                            43.31, 
+                            43.71
+                        ], 
+                        [
+                            "of", 
+                            43.71, 
+                            43.78
+                        ], 
+                        [
+                            "employment", 
+                            43.78, 
+                            44.26
+                        ], 
+                        [
+                            "that", 
+                            44.26, 
+                            44.41
+                        ], 
+                        [
+                            "you", 
+                            44.41, 
+                            44.5
+                        ], 
+                        [
+                            "pass", 
+                            44.5, 
+                            44.76
+                        ], 
+                        [
+                            "a", 
+                            44.76, 
+                            44.81
+                        ], 
+                        [
+                            "drug", 
+                            44.81, 
+                            45.06
+                        ], 
+                        [
+                            "test", 
+                            45.06, 
+                            45.41
+                        ]
+                    ], 
+                    "transcript": "after a I guess a few years after I'd started with them they made it a condition of employment that you pass a drug test ", 
+                    "word_confidence": [
+                        [
+                            "after", 
+                            0.9999999999999528
+                        ], 
+                        [
+                            "a", 
+                            0.5467202644482676
+                        ], 
+                        [
+                            "I", 
+                            0.9897423374571701
+                        ], 
+                        [
+                            "guess", 
+                            0.9945685942452185
+                        ], 
+                        [
+                            "a", 
+                            0.48600933478735825
+                        ], 
+                        [
+                            "few", 
+                            0.5608816541671563
+                        ], 
+                        [
+                            "years", 
+                            0.9999999999999704
+                        ], 
+                        [
+                            "after", 
+                            0.9999999999999545
+                        ], 
+                        [
+                            "I'd", 
+                            0.751024684502299
+                        ], 
+                        [
+                            "started", 
+                            0.9999999999999657
+                        ], 
+                        [
+                            "with", 
+                            0.9999999999999521
+                        ], 
+                        [
+                            "them", 
+                            0.5644439543025221
+                        ], 
+                        [
+                            "they", 
+                            0.9373593922086128
+                        ], 
+                        [
+                            "made", 
+                            0.9999999999999563
+                        ], 
+                        [
+                            "it", 
+                            0.7592100186028121
+                        ], 
+                        [
+                            "a", 
+                            0.9999999999999716
+                        ], 
+                        [
+                            "condition", 
+                            0.9999999999999615
+                        ], 
+                        [
+                            "of", 
+                            0.999999999999961
+                        ], 
+                        [
+                            "employment", 
+                            0.9853024280337391
+                        ], 
+                        [
+                            "that", 
+                            0.9999999999999774
+                        ], 
+                        [
+                            "you", 
+                            0.9999999999999528
+                        ], 
+                        [
+                            "pass", 
+                            0.9935511280394854
+                        ], 
+                        [
+                            "a", 
+                            0.8323293290284031
+                        ], 
+                        [
+                            "drug", 
+                            0.9999999999999535
+                        ], 
+                        [
+                            "test", 
+                            0.9775738341968321
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "after I guess a few years after I'd started with them they made it a condition of employment that you pass a drug test "
+                }, 
+                {
+                    "transcript": "after I guess two years after I'd started with them they made it a condition of employment that you pass a drug test "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 6, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            46.3, 
+                            46.68
+                        ], 
+                        [
+                            "I", 
+                            47.02, 
+                            47.48
+                        ], 
+                        [
+                            "don't", 
+                            47.48, 
+                            47.61
+                        ], 
+                        [
+                            "know", 
+                            47.61, 
+                            47.67
+                        ], 
+                        [
+                            "must", 
+                            47.67, 
+                            47.91
+                        ]
+                    ], 
+                    "transcript": "%HESITATION I don't know must "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 6, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.989, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            46.3, 
+                            46.68
+                        ], 
+                        [
+                            "I", 
+                            47.02, 
+                            47.48
+                        ], 
+                        [
+                            "don't", 
+                            47.48, 
+                            47.61
+                        ], 
+                        [
+                            "know", 
+                            47.61, 
+                            47.67
+                        ], 
+                        [
+                            "my", 
+                            47.67, 
+                            47.82
+                        ], 
+                        [
+                            "feeling", 
+                            47.82, 
+                            48.13
+                        ], 
+                        [
+                            "is", 
+                            48.13, 
+                            48.26
+                        ], 
+                        [
+                            "that", 
+                            48.26, 
+                            48.51
+                        ]
+                    ], 
+                    "transcript": "%HESITATION I don't know my feeling is that ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.9999999999999837
+                        ], 
+                        [
+                            "I", 
+                            0.9537158157839597
+                        ], 
+                        [
+                            "don't", 
+                            0.9999999999999899
+                        ], 
+                        [
+                            "know", 
+                            0.9999999999999881
+                        ], 
+                        [
+                            "my", 
+                            0.9999999999999916
+                        ], 
+                        [
+                            "feeling", 
+                            0.9999999999999921
+                        ], 
+                        [
+                            "is", 
+                            0.9999999999999917
+                        ], 
+                        [
+                            "that", 
+                            0.9999999999999793
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION I I don't know my feeling is that "
+                }, 
+                {
+                    "transcript": "%HESITATION I. I don't know my feeling is that "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 7, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "certain", 
+                            49.42, 
+                            49.79
+                        ], 
+                        [
+                            "jobs", 
+                            49.79, 
+                            50.33
+                        ], 
+                        [
+                            "that", 
+                            50.33, 
+                            50.56
+                        ], 
+                        [
+                            "were", 
+                            50.67, 
+                            50.9
+                        ]
+                    ], 
+                    "transcript": "certain jobs that were "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 7, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "certain", 
+                            49.42, 
+                            49.79
+                        ], 
+                        [
+                            "jobs", 
+                            49.79, 
+                            50.33
+                        ], 
+                        [
+                            "that", 
+                            50.33, 
+                            50.56
+                        ], 
+                        [
+                            "when", 
+                            50.67, 
+                            50.9
+                        ], 
+                        [
+                            "I", 
+                            50.9, 
+                            50.94
+                        ], 
+                        [
+                            "was", 
+                            50.94, 
+                            51.05
+                        ], 
+                        [
+                            "or", 
+                            51.05, 
+                            51.16
+                        ], 
+                        [
+                            "so", 
+                            51.16, 
+                            51.61
+                        ], 
+                        [
+                            "media", 
+                            51.64, 
+                            51.99
+                        ], 
+                        [
+                            "threat", 
+                            52.32, 
+                            52.65
+                        ], 
+                        [
+                            "to", 
+                            52.65, 
+                            52.9
+                        ]
+                    ], 
+                    "transcript": "certain jobs that when I was or so media threat to "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 7, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "certain", 
+                            49.42, 
+                            49.79
+                        ], 
+                        [
+                            "jobs", 
+                            49.79, 
+                            50.33
+                        ], 
+                        [
+                            "that", 
+                            50.33, 
+                            50.56
+                        ], 
+                        [
+                            "when", 
+                            50.67, 
+                            50.9
+                        ], 
+                        [
+                            "I", 
+                            50.9, 
+                            50.94
+                        ], 
+                        [
+                            "was", 
+                            50.94, 
+                            51.05
+                        ], 
+                        [
+                            "or", 
+                            51.05, 
+                            51.16
+                        ], 
+                        [
+                            "so", 
+                            51.16, 
+                            51.61
+                        ], 
+                        [
+                            "media", 
+                            51.64, 
+                            51.99
+                        ], 
+                        [
+                            "threat", 
+                            52.32, 
+                            52.65
+                        ], 
+                        [
+                            "to", 
+                            52.65, 
+                            52.91
+                        ], 
+                        [
+                            "life", 
+                            52.91, 
+                            53.2
+                        ], 
+                        [
+                            "and", 
+                            53.2, 
+                            53.34
+                        ], 
+                        [
+                            "limb", 
+                            53.34, 
+                            53.76
+                        ], 
+                        [
+                            "%HESITATION", 
+                            54.05, 
+                            54.58
+                        ]
+                    ], 
+                    "transcript": "certain jobs that when I was or so media threat to life and limb %HESITATION "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 7, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "certain", 
+                            49.42, 
+                            49.79
+                        ], 
+                        [
+                            "jobs", 
+                            49.79, 
+                            50.33
+                        ], 
+                        [
+                            "that", 
+                            50.33, 
+                            50.56
+                        ], 
+                        [
+                            "when", 
+                            50.67, 
+                            50.9
+                        ], 
+                        [
+                            "I", 
+                            50.9, 
+                            50.94
+                        ], 
+                        [
+                            "was", 
+                            50.94, 
+                            51.05
+                        ], 
+                        [
+                            "or", 
+                            51.05, 
+                            51.16
+                        ], 
+                        [
+                            "so", 
+                            51.16, 
+                            51.61
+                        ], 
+                        [
+                            "media", 
+                            51.64, 
+                            51.99
+                        ], 
+                        [
+                            "threat", 
+                            52.32, 
+                            52.65
+                        ], 
+                        [
+                            "to", 
+                            52.65, 
+                            52.91
+                        ], 
+                        [
+                            "life", 
+                            52.91, 
+                            53.2
+                        ], 
+                        [
+                            "and", 
+                            53.2, 
+                            53.34
+                        ], 
+                        [
+                            "limb", 
+                            53.34, 
+                            53.76
+                        ], 
+                        [
+                            "%HESITATION", 
+                            54.05, 
+                            54.58
+                        ], 
+                        [
+                            "if", 
+                            54.87, 
+                            55.04
+                        ], 
+                        [
+                            "should", 
+                            55.04, 
+                            55.24
+                        ], 
+                        [
+                            "somebody", 
+                            55.24, 
+                            55.53
+                        ], 
+                        [
+                            "be", 
+                            55.53, 
+                            55.65
+                        ], 
+                        [
+                            "under", 
+                            55.65, 
+                            55.87
+                        ], 
+                        [
+                            "the", 
+                            55.87, 
+                            55.95
+                        ], 
+                        [
+                            "influence", 
+                            55.95, 
+                            56.29
+                        ], 
+                        [
+                            "of", 
+                            56.29, 
+                            56.36
+                        ], 
+                        [
+                            "drugs", 
+                            56.36, 
+                            56.87
+                        ]
+                    ], 
+                    "transcript": "certain jobs that when I was or so media threat to life and limb %HESITATION if should somebody be under the influence of drugs "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 7, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "certain", 
+                            49.42, 
+                            49.79
+                        ], 
+                        [
+                            "jobs", 
+                            49.79, 
+                            50.33
+                        ], 
+                        [
+                            "that", 
+                            50.33, 
+                            50.56
+                        ], 
+                        [
+                            "when", 
+                            50.67, 
+                            50.9
+                        ], 
+                        [
+                            "I", 
+                            50.9, 
+                            50.94
+                        ], 
+                        [
+                            "was", 
+                            50.94, 
+                            51.05
+                        ], 
+                        [
+                            "or", 
+                            51.05, 
+                            51.16
+                        ], 
+                        [
+                            "so", 
+                            51.16, 
+                            51.61
+                        ], 
+                        [
+                            "media", 
+                            51.64, 
+                            51.99
+                        ], 
+                        [
+                            "threat", 
+                            52.32, 
+                            52.65
+                        ], 
+                        [
+                            "to", 
+                            52.65, 
+                            52.91
+                        ], 
+                        [
+                            "life", 
+                            52.91, 
+                            53.2
+                        ], 
+                        [
+                            "and", 
+                            53.2, 
+                            53.34
+                        ], 
+                        [
+                            "limb", 
+                            53.34, 
+                            53.76
+                        ], 
+                        [
+                            "%HESITATION", 
+                            54.05, 
+                            54.58
+                        ], 
+                        [
+                            "if", 
+                            54.87, 
+                            55.04
+                        ], 
+                        [
+                            "should", 
+                            55.04, 
+                            55.24
+                        ], 
+                        [
+                            "somebody", 
+                            55.24, 
+                            55.53
+                        ], 
+                        [
+                            "be", 
+                            55.53, 
+                            55.65
+                        ], 
+                        [
+                            "under", 
+                            55.65, 
+                            55.87
+                        ], 
+                        [
+                            "the", 
+                            55.87, 
+                            55.95
+                        ], 
+                        [
+                            "influence", 
+                            55.95, 
+                            56.29
+                        ], 
+                        [
+                            "of", 
+                            56.29, 
+                            56.36
+                        ], 
+                        [
+                            "drugs", 
+                            56.36, 
+                            56.92
+                        ], 
+                        [
+                            "I'd", 
+                            57.39, 
+                            57.78
+                        ], 
+                        [
+                            "be", 
+                            57.78, 
+                            57.85
+                        ], 
+                        [
+                            "willing", 
+                            57.85, 
+                            58.03
+                        ], 
+                        [
+                            "to", 
+                            58.03, 
+                            58.11
+                        ], 
+                        [
+                            "support", 
+                            58.11, 
+                            58.42
+                        ], 
+                        [
+                            "that", 
+                            58.42, 
+                            58.62
+                        ], 
+                        [
+                            "from", 
+                            58.62, 
+                            58.82
+                        ]
+                    ], 
+                    "transcript": "certain jobs that when I was or so media threat to life and limb %HESITATION if should somebody be under the influence of drugs I'd be willing to support that from "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 7, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.835, 
+                    "timestamps": [
+                        [
+                            "certain", 
+                            49.42, 
+                            49.79
+                        ], 
+                        [
+                            "jobs", 
+                            49.79, 
+                            50.33
+                        ], 
+                        [
+                            "that", 
+                            50.33, 
+                            50.56
+                        ], 
+                        [
+                            "whatever", 
+                            50.67, 
+                            50.98
+                        ], 
+                        [
+                            "is", 
+                            50.98, 
+                            51.42
+                        ], 
+                        [
+                            "needed", 
+                            51.65, 
+                            52.02
+                        ], 
+                        [
+                            "threat", 
+                            52.32, 
+                            52.65
+                        ], 
+                        [
+                            "to", 
+                            52.65, 
+                            52.91
+                        ], 
+                        [
+                            "life", 
+                            52.91, 
+                            53.2
+                        ], 
+                        [
+                            "and", 
+                            53.2, 
+                            53.34
+                        ], 
+                        [
+                            "limb", 
+                            53.34, 
+                            53.76
+                        ], 
+                        [
+                            "%HESITATION", 
+                            54.05, 
+                            54.58
+                        ], 
+                        [
+                            "if", 
+                            54.87, 
+                            55.04
+                        ], 
+                        [
+                            "should", 
+                            55.04, 
+                            55.24
+                        ], 
+                        [
+                            "somebody", 
+                            55.24, 
+                            55.53
+                        ], 
+                        [
+                            "be", 
+                            55.53, 
+                            55.65
+                        ], 
+                        [
+                            "under", 
+                            55.65, 
+                            55.87
+                        ], 
+                        [
+                            "the", 
+                            55.87, 
+                            55.95
+                        ], 
+                        [
+                            "influence", 
+                            55.95, 
+                            56.29
+                        ], 
+                        [
+                            "of", 
+                            56.29, 
+                            56.36
+                        ], 
+                        [
+                            "drugs", 
+                            56.36, 
+                            56.92
+                        ], 
+                        [
+                            "I'd", 
+                            57.39, 
+                            57.78
+                        ], 
+                        [
+                            "be", 
+                            57.78, 
+                            57.85
+                        ], 
+                        [
+                            "willing", 
+                            57.85, 
+                            58.03
+                        ], 
+                        [
+                            "to", 
+                            58.03, 
+                            58.11
+                        ], 
+                        [
+                            "support", 
+                            58.11, 
+                            58.42
+                        ], 
+                        [
+                            "that", 
+                            58.42, 
+                            58.62
+                        ], 
+                        [
+                            "for", 
+                            58.62, 
+                            58.74
+                        ], 
+                        [
+                            "example", 
+                            58.74, 
+                            59.24
+                        ], 
+                        [
+                            "%HESITATION", 
+                            59.24, 
+                            59.58
+                        ]
+                    ], 
+                    "transcript": "certain jobs that whatever is needed threat to life and limb %HESITATION if should somebody be under the influence of drugs I'd be willing to support that for example %HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "certain", 
+                            0.9338591800978182
+                        ], 
+                        [
+                            "jobs", 
+                            0.9893993666050799
+                        ], 
+                        [
+                            "that", 
+                            0.9999999999998588
+                        ], 
+                        [
+                            "whatever", 
+                            0.02969059312872217
+                        ], 
+                        [
+                            "is", 
+                            0.04061193442529274
+                        ], 
+                        [
+                            "needed", 
+                            0.2936107480820175
+                        ], 
+                        [
+                            "threat", 
+                            0.8593306444287986
+                        ], 
+                        [
+                            "to", 
+                            0.9545602927382937
+                        ], 
+                        [
+                            "life", 
+                            0.9999999999999438
+                        ], 
+                        [
+                            "and", 
+                            0.9999999999999822
+                        ], 
+                        [
+                            "limb", 
+                            0.9905641740819048
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.9999999999999122
+                        ], 
+                        [
+                            "if", 
+                            0.9999999999998849
+                        ], 
+                        [
+                            "should", 
+                            0.999999999999876
+                        ], 
+                        [
+                            "somebody", 
+                            0.9999999999998643
+                        ], 
+                        [
+                            "be", 
+                            0.999999999999869
+                        ], 
+                        [
+                            "under", 
+                            0.9999999999999016
+                        ], 
+                        [
+                            "the", 
+                            0.9999999999998692
+                        ], 
+                        [
+                            "influence", 
+                            0.9999999999998692
+                        ], 
+                        [
+                            "of", 
+                            0.9999999999998692
+                        ], 
+                        [
+                            "drugs", 
+                            0.9940213780887649
+                        ], 
+                        [
+                            "I'd", 
+                            0.6955486028117617
+                        ], 
+                        [
+                            "be", 
+                            0.9395661050528606
+                        ], 
+                        [
+                            "willing", 
+                            0.6702160444676637
+                        ], 
+                        [
+                            "to", 
+                            0.9211964989983177
+                        ], 
+                        [
+                            "support", 
+                            0.9641084979136991
+                        ], 
+                        [
+                            "that", 
+                            0.9999999999998958
+                        ], 
+                        [
+                            "for", 
+                            0.9999999999999575
+                        ], 
+                        [
+                            "example", 
+                            0.9999999999999757
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.657763546833896
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION certain jobs that whatever is needed threat to life and limb %HESITATION if should somebody be under the influence of drugs I'd be willing to support that for example %HESITATION "
+                }, 
+                {
+                    "transcript": "certain jobs that whatever is needed threat to life and limb %HESITATION if should somebody be under the influence of drugs I I'd be willing to support that for example %HESITATION "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 8, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.979, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            60.88, 
+                            61.36
+                        ], 
+                        [
+                            "well", 
+                            61.36, 
+                            61.83
+                        ]
+                    ], 
+                    "transcript": "%HESITATION well ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.975468367892128
+                        ], 
+                        [
+                            "well", 
+                            0.9833225053007592
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 9, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.991, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            62.39, 
+                            63.0
+                        ]
+                    ], 
+                    "transcript": "%HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.9910166440957303
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "um "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 10, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            63.77, 
+                            64.32
+                        ], 
+                        [
+                            "train", 
+                            64.35, 
+                            64.88
+                        ], 
+                        [
+                            "engineers", 
+                            64.92, 
+                            65.45
+                        ]
+                    ], 
+                    "transcript": "%HESITATION train engineers "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 10, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            63.77, 
+                            64.32
+                        ], 
+                        [
+                            "train", 
+                            64.35, 
+                            64.88
+                        ], 
+                        [
+                            "engineers", 
+                            64.92, 
+                            65.63
+                        ], 
+                        [
+                            "because", 
+                            65.66, 
+                            65.93
+                        ], 
+                        [
+                            "you", 
+                            66.15, 
+                            66.27
+                        ], 
+                        [
+                            "know", 
+                            66.27, 
+                            66.54
+                        ], 
+                        [
+                            "%HESITATION", 
+                            66.57, 
+                            66.85
+                        ], 
+                        [
+                            "like", 
+                            66.85, 
+                            67.09
+                        ], 
+                        [
+                            "there", 
+                            67.17, 
+                            67.29
+                        ], 
+                        [
+                            "was", 
+                            67.29, 
+                            67.38
+                        ], 
+                        [
+                            "a", 
+                            67.38, 
+                            67.45
+                        ]
+                    ], 
+                    "transcript": "%HESITATION train engineers because you know %HESITATION like there was a "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 10, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            63.77, 
+                            64.32
+                        ], 
+                        [
+                            "train", 
+                            64.35, 
+                            64.88
+                        ], 
+                        [
+                            "engineers", 
+                            64.92, 
+                            65.63
+                        ], 
+                        [
+                            "because", 
+                            65.66, 
+                            65.93
+                        ], 
+                        [
+                            "you", 
+                            66.15, 
+                            66.27
+                        ], 
+                        [
+                            "know", 
+                            66.27, 
+                            66.54
+                        ], 
+                        [
+                            "%HESITATION", 
+                            66.57, 
+                            66.85
+                        ], 
+                        [
+                            "like", 
+                            66.85, 
+                            67.09
+                        ], 
+                        [
+                            "there", 
+                            67.17, 
+                            67.29
+                        ], 
+                        [
+                            "was", 
+                            67.29, 
+                            67.38
+                        ], 
+                        [
+                            "is", 
+                            67.38, 
+                            67.66
+                        ], 
+                        [
+                            "it", 
+                            67.66, 
+                            67.92
+                        ], 
+                        [
+                            "several", 
+                            67.92, 
+                            68.16
+                        ], 
+                        [
+                            "years", 
+                            68.16, 
+                            68.33
+                        ], 
+                        [
+                            "ago", 
+                            68.33, 
+                            68.53
+                        ], 
+                        [
+                            "weren't", 
+                            68.53, 
+                            68.76
+                        ], 
+                        [
+                            "Amtrak", 
+                            68.76, 
+                            69.2
+                        ], 
+                        [
+                            "engine", 
+                            69.2, 
+                            69.41
+                        ]
+                    ], 
+                    "transcript": "%HESITATION train engineers because you know %HESITATION like there was is it several years ago weren't Amtrak engine "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 10, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.836, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            63.77, 
+                            64.32
+                        ], 
+                        [
+                            "train", 
+                            64.35, 
+                            64.88
+                        ], 
+                        [
+                            "engineers", 
+                            64.92, 
+                            65.63
+                        ], 
+                        [
+                            "because", 
+                            65.66, 
+                            65.93
+                        ], 
+                        [
+                            "you", 
+                            66.15, 
+                            66.27
+                        ], 
+                        [
+                            "know", 
+                            66.27, 
+                            66.54
+                        ], 
+                        [
+                            "%HESITATION", 
+                            66.57, 
+                            66.85
+                        ], 
+                        [
+                            "like", 
+                            66.85, 
+                            67.09
+                        ], 
+                        [
+                            "there", 
+                            67.17, 
+                            67.29
+                        ], 
+                        [
+                            "was", 
+                            67.29, 
+                            67.38
+                        ], 
+                        [
+                            "isn't", 
+                            67.38, 
+                            67.92
+                        ], 
+                        [
+                            "several", 
+                            67.92, 
+                            68.16
+                        ], 
+                        [
+                            "years", 
+                            68.16, 
+                            68.33
+                        ], 
+                        [
+                            "ago", 
+                            68.33, 
+                            68.53
+                        ], 
+                        [
+                            "weren't", 
+                            68.53, 
+                            68.76
+                        ], 
+                        [
+                            "Amtrak", 
+                            68.76, 
+                            69.2
+                        ], 
+                        [
+                            "engineer", 
+                            69.2, 
+                            69.62
+                        ], 
+                        [
+                            "would", 
+                            69.62, 
+                            69.82
+                        ]
+                    ], 
+                    "transcript": "%HESITATION train engineers because you know %HESITATION like there was isn't several years ago weren't Amtrak engineer would ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            1.0
+                        ], 
+                        [
+                            "train", 
+                            0.9074747453331709
+                        ], 
+                        [
+                            "engineers", 
+                            0.9844990557672917
+                        ], 
+                        [
+                            "because", 
+                            0.7540100525707619
+                        ], 
+                        [
+                            "you", 
+                            1.0
+                        ], 
+                        [
+                            "know", 
+                            0.9616631639883408
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.3252930397182139
+                        ], 
+                        [
+                            "like", 
+                            0.8433160864695082
+                        ], 
+                        [
+                            "there", 
+                            0.5089561845775624
+                        ], 
+                        [
+                            "was", 
+                            0.6582368412280867
+                        ], 
+                        [
+                            "isn't", 
+                            0.5190549510322712
+                        ], 
+                        [
+                            "several", 
+                            1.0
+                        ], 
+                        [
+                            "years", 
+                            0.9679896475926886
+                        ], 
+                        [
+                            "ago", 
+                            1.0
+                        ], 
+                        [
+                            "weren't", 
+                            0.1613984269647246
+                        ], 
+                        [
+                            "Amtrak", 
+                            0.9972942764226178
+                        ], 
+                        [
+                            "engineer", 
+                            0.9884712874510009
+                        ], 
+                        [
+                            "would", 
+                            0.9718648296698685
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION train engineers because it you know %HESITATION like there was isn't several years ago weren't Amtrak engineer would "
+                }, 
+                {
+                    "transcript": "%HESITATION train engineers because you know %HESITATION like there was is it several years ago weren't Amtrak engineer would "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 11, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.453, 
+                    "timestamps": [
+                        [
+                            "crash", 
+                            70.77, 
+                            71.2
+                        ], 
+                        [
+                            "and", 
+                            71.2, 
+                            71.47
+                        ]
+                    ], 
+                    "transcript": "crash and ", 
+                    "word_confidence": [
+                        [
+                            "crash", 
+                            0.3556817855753465
+                        ], 
+                        [
+                            "and", 
+                            0.6069050684509376
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "you know crash and "
+                }, 
+                {
+                    "transcript": "no crash and "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 12, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "kill", 
+                            72.04, 
+                            72.27
+                        ], 
+                        [
+                            "some", 
+                            72.27, 
+                            72.4
+                        ], 
+                        [
+                            "people", 
+                            72.4, 
+                            72.66
+                        ], 
+                        [
+                            "because", 
+                            72.66, 
+                            72.84
+                        ], 
+                        [
+                            "he", 
+                            72.84, 
+                            72.94
+                        ], 
+                        [
+                            "was", 
+                            72.94, 
+                            73.23
+                        ], 
+                        [
+                            "%HESITATION", 
+                            73.23, 
+                            73.37
+                        ], 
+                        [
+                            "supposing", 
+                            73.37, 
+                            73.72
+                        ]
+                    ], 
+                    "transcript": "kill some people because he was %HESITATION supposing "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 12, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.672, 
+                    "timestamps": [
+                        [
+                            "kill", 
+                            72.04, 
+                            72.27
+                        ], 
+                        [
+                            "some", 
+                            72.27, 
+                            72.4
+                        ], 
+                        [
+                            "people", 
+                            72.4, 
+                            72.66
+                        ], 
+                        [
+                            "because", 
+                            72.66, 
+                            72.84
+                        ], 
+                        [
+                            "he", 
+                            72.84, 
+                            72.94
+                        ], 
+                        [
+                            "was", 
+                            72.94, 
+                            73.23
+                        ], 
+                        [
+                            "%HESITATION", 
+                            73.23, 
+                            73.37
+                        ], 
+                        [
+                            "smoking", 
+                            73.37, 
+                            73.71
+                        ], 
+                        [
+                            "marijuana", 
+                            73.71, 
+                            74.16
+                        ], 
+                        [
+                            "and", 
+                            74.16, 
+                            74.46
+                        ]
+                    ], 
+                    "transcript": "kill some people because he was %HESITATION smoking marijuana and ", 
+                    "word_confidence": [
+                        [
+                            "kill", 
+                            0.6595150383112053
+                        ], 
+                        [
+                            "some", 
+                            0.9214265473025571
+                        ], 
+                        [
+                            "people", 
+                            0.9999999999999793
+                        ], 
+                        [
+                            "because", 
+                            0.7474541591135806
+                        ], 
+                        [
+                            "he", 
+                            0.9999999999999662
+                        ], 
+                        [
+                            "was", 
+                            0.9822393724498487
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.697314238951541
+                        ], 
+                        [
+                            "smoking", 
+                            0.42053584693925683
+                        ], 
+                        [
+                            "marijuana", 
+                            0.4875674284544712
+                        ], 
+                        [
+                            "and", 
+                            0.38830969002188886
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "kill some people because he was smoking marijuana and "
+                }, 
+                {
+                    "transcript": "kill some people because he was %HESITATION smokes marijuana and "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 13, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            75.04, 
+                            75.27
+                        ], 
+                        [
+                            "guess", 
+                            75.27, 
+                            75.45
+                        ], 
+                        [
+                            "air", 
+                            75.45, 
+                            75.58
+                        ], 
+                        [
+                            "traffic", 
+                            75.58, 
+                            75.91
+                        ], 
+                        [
+                            "controllers", 
+                            75.91, 
+                            76.5
+                        ], 
+                        [
+                            "I", 
+                            76.5, 
+                            76.64
+                        ]
+                    ], 
+                    "transcript": "I guess air traffic controllers I "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 13, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.964, 
+                    "timestamps": [
+                        [
+                            "I", 
+                            75.04, 
+                            75.27
+                        ], 
+                        [
+                            "guess", 
+                            75.27, 
+                            75.45
+                        ], 
+                        [
+                            "air", 
+                            75.45, 
+                            75.58
+                        ], 
+                        [
+                            "traffic", 
+                            75.58, 
+                            75.91
+                        ], 
+                        [
+                            "controllers", 
+                            75.91, 
+                            76.5
+                        ], 
+                        [
+                            "I", 
+                            76.5, 
+                            76.56
+                        ], 
+                        [
+                            "wouldn't", 
+                            76.56, 
+                            76.78
+                        ], 
+                        [
+                            "want", 
+                            76.78, 
+                            76.91
+                        ], 
+                        [
+                            "them", 
+                            76.91, 
+                            77.05
+                        ], 
+                        [
+                            "to", 
+                            77.05, 
+                            77.14
+                        ], 
+                        [
+                            "be", 
+                            77.14, 
+                            77.42
+                        ]
+                    ], 
+                    "transcript": "I guess air traffic controllers I wouldn't want them to be ", 
+                    "word_confidence": [
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "guess", 
+                            1.0
+                        ], 
+                        [
+                            "air", 
+                            0.9632863673780097
+                        ], 
+                        [
+                            "traffic", 
+                            1.0
+                        ], 
+                        [
+                            "controllers", 
+                            1.0
+                        ], 
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "wouldn't", 
+                            0.8102055778685154
+                        ], 
+                        [
+                            "want", 
+                            0.8160791462972088
+                        ], 
+                        [
+                            "them", 
+                            0.9261512438307964
+                        ], 
+                        [
+                            "to", 
+                            1.0
+                        ], 
+                        [
+                            "be", 
+                            0.9785669630041707
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "I guess air traffic controllers I wouldn't let them to be "
+                }, 
+                {
+                    "transcript": "I guess air traffic controllers I wouldn't want him to be "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 14, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.308, 
+                    "timestamps": [
+                        [
+                            "the", 
+                            78.01, 
+                            78.09
+                        ], 
+                        [
+                            "trucks", 
+                            78.09, 
+                            78.68
+                        ]
+                    ], 
+                    "transcript": "the trucks ", 
+                    "word_confidence": [
+                        [
+                            "the", 
+                            0.09759257701699686
+                        ], 
+                        [
+                            "trucks", 
+                            0.3364764474496323
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "central hugs "
+                }, 
+                {
+                    "transcript": "central hooks "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 15, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.915, 
+                    "timestamps": [
+                        [
+                            "and", 
+                            79.27, 
+                            79.92
+                        ], 
+                        [
+                            "err", 
+                            80.06, 
+                            80.25
+                        ], 
+                        [
+                            "plane", 
+                            80.25, 
+                            80.45
+                        ], 
+                        [
+                            "pilots", 
+                            80.45, 
+                            81.08
+                        ]
+                    ], 
+                    "transcript": "and err plane pilots ", 
+                    "word_confidence": [
+                        [
+                            "and", 
+                            0.9999999999999836
+                        ], 
+                        [
+                            "err", 
+                            0.8155742968651233
+                        ], 
+                        [
+                            "plane", 
+                            0.4902926158467059
+                        ], 
+                        [
+                            "pilots", 
+                            0.9927517123078454
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "and ere playing pilots "
+                }, 
+                {
+                    "transcript": "and ere plane pilots "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 16, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.809, 
+                    "timestamps": [
+                        [
+                            "but", 
+                            81.52, 
+                            81.75
+                        ], 
+                        [
+                            "we're", 
+                            81.75, 
+                            81.91
+                        ], 
+                        [
+                            "it's", 
+                            81.91, 
+                            82.05
+                        ], 
+                        [
+                            "not", 
+                            82.05, 
+                            82.41
+                        ]
+                    ], 
+                    "transcript": "but we're it's not ", 
+                    "word_confidence": [
+                        [
+                            "but", 
+                            0.9423383136073484
+                        ], 
+                        [
+                            "we're", 
+                            0.33689060648453434
+                        ], 
+                        [
+                            "it's", 
+                            0.6752761628473211
+                        ], 
+                        [
+                            "not", 
+                            0.9854423124192516
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "but words not "
+                }, 
+                {
+                    "transcript": "but where it's not "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 17, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.821, 
+                    "timestamps": [
+                        [
+                            "necessary", 
+                            83.01, 
+                            83.78
+                        ]
+                    ], 
+                    "transcript": "necessary ", 
+                    "word_confidence": [
+                        [
+                            "necessary", 
+                            0.82143460538777
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "necessarily "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 18, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            85.02, 
+                            85.29
+                        ], 
+                        [
+                            "in", 
+                            85.29, 
+                            85.43
+                        ], 
+                        [
+                            "that", 
+                            85.43, 
+                            85.61
+                        ], 
+                        [
+                            "regard", 
+                            85.61, 
+                            86.01
+                        ], 
+                        [
+                            "with", 
+                            86.01, 
+                            86.15
+                        ], 
+                        [
+                            "is", 
+                            86.15, 
+                            86.28
+                        ], 
+                        [
+                            "not", 
+                            86.28, 
+                            86.54
+                        ], 
+                        [
+                            "in", 
+                            86.54, 
+                            86.65
+                        ], 
+                        [
+                            "a", 
+                            86.65, 
+                            86.73
+                        ]
+                    ], 
+                    "transcript": "%HESITATION in that regard with is not in a "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 18, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            85.02, 
+                            85.29
+                        ], 
+                        [
+                            "in", 
+                            85.29, 
+                            85.43
+                        ], 
+                        [
+                            "that", 
+                            85.43, 
+                            85.61
+                        ], 
+                        [
+                            "regard", 
+                            85.61, 
+                            86.01
+                        ], 
+                        [
+                            "with", 
+                            86.01, 
+                            86.15
+                        ], 
+                        [
+                            "is", 
+                            86.15, 
+                            86.28
+                        ], 
+                        [
+                            "not", 
+                            86.28, 
+                            86.55
+                        ], 
+                        [
+                            "an", 
+                            86.55, 
+                            86.65
+                        ], 
+                        [
+                            "immediate", 
+                            86.65, 
+                            86.98
+                        ], 
+                        [
+                            "threat", 
+                            86.98, 
+                            87.26
+                        ], 
+                        [
+                            "to", 
+                            87.26, 
+                            87.35
+                        ], 
+                        [
+                            "life", 
+                            87.35, 
+                            87.61
+                        ], 
+                        [
+                            "and", 
+                            87.61, 
+                            87.74
+                        ], 
+                        [
+                            "limb", 
+                            87.74, 
+                            87.98
+                        ], 
+                        [
+                            "or", 
+                            87.98, 
+                            88.08
+                        ], 
+                        [
+                            "property", 
+                            88.08, 
+                            88.69
+                        ]
+                    ], 
+                    "transcript": "%HESITATION in that regard with is not an immediate threat to life and limb or property "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 18, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.921, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            85.02, 
+                            85.29
+                        ], 
+                        [
+                            "in", 
+                            85.29, 
+                            85.43
+                        ], 
+                        [
+                            "that", 
+                            85.43, 
+                            85.61
+                        ], 
+                        [
+                            "regard", 
+                            85.61, 
+                            86.01
+                        ], 
+                        [
+                            "with", 
+                            86.01, 
+                            86.15
+                        ], 
+                        [
+                            "is", 
+                            86.15, 
+                            86.28
+                        ], 
+                        [
+                            "not", 
+                            86.28, 
+                            86.55
+                        ], 
+                        [
+                            "an", 
+                            86.55, 
+                            86.65
+                        ], 
+                        [
+                            "immediate", 
+                            86.65, 
+                            86.98
+                        ], 
+                        [
+                            "threat", 
+                            86.98, 
+                            87.26
+                        ], 
+                        [
+                            "to", 
+                            87.26, 
+                            87.35
+                        ], 
+                        [
+                            "life", 
+                            87.35, 
+                            87.61
+                        ], 
+                        [
+                            "and", 
+                            87.61, 
+                            87.74
+                        ], 
+                        [
+                            "limb", 
+                            87.74, 
+                            87.98
+                        ], 
+                        [
+                            "or", 
+                            87.98, 
+                            88.08
+                        ], 
+                        [
+                            "property", 
+                            88.08, 
+                            88.69
+                        ]
+                    ], 
+                    "transcript": "%HESITATION in that regard with is not an immediate threat to life and limb or property ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.5360549730319734
+                        ], 
+                        [
+                            "in", 
+                            1.0
+                        ], 
+                        [
+                            "that", 
+                            1.0
+                        ], 
+                        [
+                            "regard", 
+                            1.0
+                        ], 
+                        [
+                            "with", 
+                            0.28254349956866603
+                        ], 
+                        [
+                            "is", 
+                            0.5433808869869069
+                        ], 
+                        [
+                            "not", 
+                            1.0
+                        ], 
+                        [
+                            "an", 
+                            1.0
+                        ], 
+                        [
+                            "immediate", 
+                            1.0
+                        ], 
+                        [
+                            "threat", 
+                            1.0
+                        ], 
+                        [
+                            "to", 
+                            1.0
+                        ], 
+                        [
+                            "life", 
+                            1.0
+                        ], 
+                        [
+                            "and", 
+                            1.0
+                        ], 
+                        [
+                            "limb", 
+                            1.0
+                        ], 
+                        [
+                            "or", 
+                            1.0
+                        ], 
+                        [
+                            "property", 
+                            0.9915418340618689
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "in that regard with is not an immediate threat to life and limb or property "
+                }, 
+                {
+                    "transcript": "%HESITATION in that regard where there's not an immediate threat to life and limb or property "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 19, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.772, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            89.37, 
+                            89.77
+                        ], 
+                        [
+                            "I", 
+                            89.8, 
+                            90.2
+                        ]
+                    ], 
+                    "transcript": "%HESITATION I ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.8097861058935392
+                        ], 
+                        [
+                            "I", 
+                            0.7346040429723344
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION I I just "
+                }, 
+                {
+                    "transcript": "%HESITATION I just "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 20, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            90.79, 
+                            90.9
+                        ], 
+                        [
+                            "would", 
+                            90.9, 
+                            91.03
+                        ], 
+                        [
+                            "seriously", 
+                            91.03, 
+                            91.4
+                        ], 
+                        [
+                            "question", 
+                            91.4, 
+                            91.81
+                        ], 
+                        [
+                            "it", 
+                            91.81, 
+                            91.97
+                        ]
+                    ], 
+                    "transcript": "I would seriously question it "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 20, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.828, 
+                    "timestamps": [
+                        [
+                            "I", 
+                            90.79, 
+                            90.9
+                        ], 
+                        [
+                            "would", 
+                            90.9, 
+                            91.03
+                        ], 
+                        [
+                            "seriously", 
+                            91.03, 
+                            91.4
+                        ], 
+                        [
+                            "question", 
+                            91.4, 
+                            91.81
+                        ], 
+                        [
+                            "it", 
+                            91.81, 
+                            91.97
+                        ], 
+                        [
+                            "%HESITATION", 
+                            92.39, 
+                            92.64
+                        ]
+                    ], 
+                    "transcript": "I would seriously question it %HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "I", 
+                            0.999999999999771
+                        ], 
+                        [
+                            "would", 
+                            0.999999999999771
+                        ], 
+                        [
+                            "seriously", 
+                            0.9999999999997711
+                        ], 
+                        [
+                            "question", 
+                            0.9913519729151792
+                        ], 
+                        [
+                            "it", 
+                            0.7391201391724395
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.19777487265958496
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "I would seriously question it "
+                }, 
+                {
+                    "transcript": "I would seriously question that %HESITATION "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 21, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.829, 
+                    "timestamps": [
+                        [
+                            "so", 
+                            93.88, 
+                            94.14
+                        ]
+                    ], 
+                    "transcript": "so ", 
+                    "word_confidence": [
+                        [
+                            "so", 
+                            0.8290702127215485
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 22, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "so", 
+                            134.91, 
+                            135.18
+                        ], 
+                        [
+                            "it's", 
+                            135.18, 
+                            135.29
+                        ], 
+                        [
+                            "the", 
+                            135.29, 
+                            135.38
+                        ], 
+                        [
+                            "government", 
+                            135.38, 
+                            135.8
+                        ], 
+                        [
+                            "that's", 
+                            135.8, 
+                            135.95
+                        ], 
+                        [
+                            "mandating", 
+                            135.95, 
+                            136.36
+                        ], 
+                        [
+                            "a", 
+                            136.36, 
+                            136.45
+                        ], 
+                        [
+                            "dish", 
+                            136.45, 
+                            136.7
+                        ]
+                    ], 
+                    "transcript": "so it's the government that's mandating a dish "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 22, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.963, 
+                    "timestamps": [
+                        [
+                            "so", 
+                            134.91, 
+                            135.18
+                        ], 
+                        [
+                            "it's", 
+                            135.18, 
+                            135.29
+                        ], 
+                        [
+                            "the", 
+                            135.29, 
+                            135.38
+                        ], 
+                        [
+                            "government", 
+                            135.38, 
+                            135.8
+                        ], 
+                        [
+                            "that's", 
+                            135.8, 
+                            135.95
+                        ], 
+                        [
+                            "mandating", 
+                            135.95, 
+                            136.36
+                        ], 
+                        [
+                            "it", 
+                            136.36, 
+                            136.48
+                        ], 
+                        [
+                            "to", 
+                            136.48, 
+                            136.57
+                        ], 
+                        [
+                            "a", 
+                            136.57, 
+                            136.6
+                        ], 
+                        [
+                            "certain", 
+                            136.6, 
+                            136.84
+                        ], 
+                        [
+                            "extent", 
+                            136.84, 
+                            137.26
+                        ]
+                    ], 
+                    "transcript": "so it's the government that's mandating it to a certain extent ", 
+                    "word_confidence": [
+                        [
+                            "so", 
+                            0.9999999999999962
+                        ], 
+                        [
+                            "it's", 
+                            0.6834017157478227
+                        ], 
+                        [
+                            "the", 
+                            0.8178501901142541
+                        ], 
+                        [
+                            "government", 
+                            0.9816381409943477
+                        ], 
+                        [
+                            "that's", 
+                            0.9816381409943458
+                        ], 
+                        [
+                            "mandating", 
+                            1.0
+                        ], 
+                        [
+                            "it", 
+                            0.9479550055522387
+                        ], 
+                        [
+                            "to", 
+                            1.0
+                        ], 
+                        [
+                            "a", 
+                            0.6417577304225529
+                        ], 
+                        [
+                            "certain", 
+                            0.9912571998159573
+                        ], 
+                        [
+                            "extent", 
+                            0.9850278114355753
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "so is the government that's mandating it to a certain extent "
+                }, 
+                {
+                    "transcript": "so it's the government that's mandating it to certain extent "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 23, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.752, 
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            163.64, 
+                            163.98
+                        ]
+                    ], 
+                    "transcript": "yeah ", 
+                    "word_confidence": [
+                        [
+                            "yeah", 
+                            0.7516335494754154
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "yes "
+                }, 
+                {
+                    "transcript": "yeah I "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 24, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 1.0, 
+                    "timestamps": [
+                        [
+                            "well", 
+                            165.87, 
+                            166.28
+                        ]
+                    ], 
+                    "transcript": "well ", 
+                    "word_confidence": [
+                        [
+                            "well", 
+                            0.999999999999967
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "well it "
+                }, 
+                {
+                    "transcript": "well it's "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 25, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.984, 
+                    "timestamps": [
+                        [
+                            "huh", 
+                            179.9, 
+                            180.36
+                        ]
+                    ], 
+                    "transcript": "huh ", 
+                    "word_confidence": [
+                        [
+                            "huh", 
+                            0.9840100159369394
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 26, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.79, 
+                    "timestamps": [
+                        [
+                            "right", 
+                            193.3, 
+                            193.68
+                        ], 
+                        [
+                            "in", 
+                            193.68, 
+                            193.96
+                        ]
+                    ], 
+                    "transcript": "right in ", 
+                    "word_confidence": [
+                        [
+                            "right", 
+                            0.9999999999999986
+                        ], 
+                        [
+                            "in", 
+                            0.5060792453302625
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "right and "
+                }, 
+                {
+                    "transcript": "write and "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 27, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 1.0, 
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            208.35, 
+                            208.74
+                        ], 
+                        [
+                            "yeah", 
+                            208.77, 
+                            208.96
+                        ], 
+                        [
+                            "I", 
+                            208.96, 
+                            209.0
+                        ], 
+                        [
+                            "agree", 
+                            209.0, 
+                            209.3
+                        ], 
+                        [
+                            "I", 
+                            209.3, 
+                            209.36
+                        ], 
+                        [
+                            "mean", 
+                            209.36, 
+                            209.54
+                        ], 
+                        [
+                            "it's", 
+                            209.54, 
+                            209.83
+                        ]
+                    ], 
+                    "transcript": "yeah yeah I agree I mean it's ", 
+                    "word_confidence": [
+                        [
+                            "yeah", 
+                            1.0
+                        ], 
+                        [
+                            "yeah", 
+                            1.0
+                        ], 
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "agree", 
+                            1.0
+                        ], 
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "mean", 
+                            1.0
+                        ], 
+                        [
+                            "it's", 
+                            1.0
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "yeah yeah I agree I mean its "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 28, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.755, 
+                    "timestamps": [
+                        [
+                            "well", 
+                            210.37, 
+                            210.63
+                        ], 
+                        [
+                            "there's", 
+                            210.63, 
+                            210.76
+                        ], 
+                        [
+                            "also", 
+                            210.76, 
+                            211.08
+                        ], 
+                        [
+                            "the", 
+                            211.08, 
+                            211.21
+                        ], 
+                        [
+                            "issue", 
+                            211.21, 
+                            211.57
+                        ], 
+                        [
+                            "of", 
+                            211.57, 
+                            211.81
+                        ], 
+                        [
+                            "%HESITATION", 
+                            211.81, 
+                            212.18
+                        ]
+                    ], 
+                    "transcript": "well there's also the issue of %HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "well", 
+                            0.4314114354719664
+                        ], 
+                        [
+                            "there's", 
+                            0.18281444518051307
+                        ], 
+                        [
+                            "also", 
+                            1.0
+                        ], 
+                        [
+                            "the", 
+                            0.6781967828108215
+                        ], 
+                        [
+                            "issue", 
+                            1.0
+                        ], 
+                        [
+                            "of", 
+                            1.0
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.6025554769988761
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "was also the issue of %HESITATION "
+                }, 
+                {
+                    "transcript": "what is also the issue of %HESITATION "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 29, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            212.86, 
+                            213.39
+                        ], 
+                        [
+                            "here", 
+                            213.39, 
+                            213.79
+                        ], 
+                        [
+                            "we", 
+                            213.97, 
+                            214.06
+                        ], 
+                        [
+                            "were", 
+                            214.06, 
+                            214.14
+                        ], 
+                        [
+                            "in", 
+                            214.14, 
+                            214.23
+                        ]
+                    ], 
+                    "transcript": "%HESITATION here we were in "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 29, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            212.85, 
+                            213.44
+                        ], 
+                        [
+                            "hear", 
+                            213.44, 
+                            213.79
+                        ], 
+                        [
+                            "that", 
+                            213.83, 
+                            213.97
+                        ], 
+                        [
+                            "we", 
+                            213.97, 
+                            214.06
+                        ], 
+                        [
+                            "were", 
+                            214.06, 
+                            214.14
+                        ], 
+                        [
+                            "hearing", 
+                            214.14, 
+                            214.36
+                        ], 
+                        [
+                            "a", 
+                            214.36, 
+                            214.42
+                        ], 
+                        [
+                            "year", 
+                            214.42, 
+                            214.56
+                        ], 
+                        [
+                            "or", 
+                            214.56, 
+                            214.63
+                        ], 
+                        [
+                            "so", 
+                            214.63, 
+                            214.81
+                        ], 
+                        [
+                            "ago", 
+                            214.81, 
+                            215.13
+                        ], 
+                        [
+                            "that", 
+                            215.13, 
+                            215.4
+                        ], 
+                        [
+                            "%HESITATION", 
+                            215.4, 
+                            215.69
+                        ], 
+                        [
+                            "a", 
+                            215.87, 
+                            215.95
+                        ], 
+                        [
+                            "lot", 
+                            215.95, 
+                            216.17
+                        ], 
+                        [
+                            "of", 
+                            216.17, 
+                            216.23
+                        ]
+                    ], 
+                    "transcript": "I hear that we were hearing a year or so ago that %HESITATION a lot of "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 29, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            212.85, 
+                            213.44
+                        ], 
+                        [
+                            "hear", 
+                            213.44, 
+                            213.79
+                        ], 
+                        [
+                            "that", 
+                            213.83, 
+                            213.97
+                        ], 
+                        [
+                            "we", 
+                            213.97, 
+                            214.06
+                        ], 
+                        [
+                            "were", 
+                            214.06, 
+                            214.14
+                        ], 
+                        [
+                            "hearing", 
+                            214.14, 
+                            214.36
+                        ], 
+                        [
+                            "a", 
+                            214.36, 
+                            214.42
+                        ], 
+                        [
+                            "year", 
+                            214.42, 
+                            214.56
+                        ], 
+                        [
+                            "or", 
+                            214.56, 
+                            214.63
+                        ], 
+                        [
+                            "so", 
+                            214.63, 
+                            214.81
+                        ], 
+                        [
+                            "ago", 
+                            214.81, 
+                            215.13
+                        ], 
+                        [
+                            "that", 
+                            215.13, 
+                            215.4
+                        ], 
+                        [
+                            "%HESITATION", 
+                            215.4, 
+                            215.69
+                        ], 
+                        [
+                            "a", 
+                            215.87, 
+                            215.95
+                        ], 
+                        [
+                            "lot", 
+                            215.95, 
+                            216.17
+                        ], 
+                        [
+                            "of", 
+                            216.17, 
+                            216.44
+                        ], 
+                        [
+                            "it", 
+                            216.73, 
+                            216.8
+                        ], 
+                        [
+                            "was", 
+                            216.8, 
+                            216.89
+                        ], 
+                        [
+                            "a", 
+                            216.89, 
+                            216.94
+                        ], 
+                        [
+                            "high", 
+                            216.94, 
+                            217.25
+                        ], 
+                        [
+                            "error", 
+                            217.25, 
+                            217.57
+                        ], 
+                        [
+                            "rate", 
+                            217.57, 
+                            217.89
+                        ], 
+                        [
+                            "in", 
+                            218.05, 
+                            218.23
+                        ]
+                    ], 
+                    "transcript": "I hear that we were hearing a year or so ago that %HESITATION a lot of it was a high error rate in "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 29, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            212.85, 
+                            213.44
+                        ], 
+                        [
+                            "hear", 
+                            213.44, 
+                            213.79
+                        ], 
+                        [
+                            "that", 
+                            213.83, 
+                            213.97
+                        ], 
+                        [
+                            "we", 
+                            213.97, 
+                            214.06
+                        ], 
+                        [
+                            "were", 
+                            214.06, 
+                            214.14
+                        ], 
+                        [
+                            "hearing", 
+                            214.14, 
+                            214.36
+                        ], 
+                        [
+                            "a", 
+                            214.36, 
+                            214.42
+                        ], 
+                        [
+                            "year", 
+                            214.42, 
+                            214.56
+                        ], 
+                        [
+                            "or", 
+                            214.56, 
+                            214.63
+                        ], 
+                        [
+                            "so", 
+                            214.63, 
+                            214.81
+                        ], 
+                        [
+                            "ago", 
+                            214.81, 
+                            215.13
+                        ], 
+                        [
+                            "that", 
+                            215.13, 
+                            215.4
+                        ], 
+                        [
+                            "%HESITATION", 
+                            215.4, 
+                            215.69
+                        ], 
+                        [
+                            "a", 
+                            215.87, 
+                            215.95
+                        ], 
+                        [
+                            "lot", 
+                            215.95, 
+                            216.17
+                        ], 
+                        [
+                            "of", 
+                            216.17, 
+                            216.44
+                        ], 
+                        [
+                            "it", 
+                            216.73, 
+                            216.8
+                        ], 
+                        [
+                            "was", 
+                            216.8, 
+                            216.89
+                        ], 
+                        [
+                            "a", 
+                            216.89, 
+                            216.94
+                        ], 
+                        [
+                            "high", 
+                            216.94, 
+                            217.25
+                        ], 
+                        [
+                            "error", 
+                            217.25, 
+                            217.57
+                        ], 
+                        [
+                            "rate", 
+                            217.57, 
+                            217.89
+                        ], 
+                        [
+                            "in", 
+                            218.05, 
+                            218.22
+                        ], 
+                        [
+                            "the", 
+                            218.22, 
+                            218.3
+                        ], 
+                        [
+                            "analysis", 
+                            218.3, 
+                            218.86
+                        ], 
+                        [
+                            "of", 
+                            218.86, 
+                            219.01
+                        ], 
+                        [
+                            "drug", 
+                            219.01, 
+                            219.24
+                        ], 
+                        [
+                            "results", 
+                            219.24, 
+                            219.8
+                        ]
+                    ], 
+                    "transcript": "I hear that we were hearing a year or so ago that %HESITATION a lot of it was a high error rate in the analysis of drug results "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 29, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            212.85, 
+                            213.44
+                        ], 
+                        [
+                            "hear", 
+                            213.44, 
+                            213.79
+                        ], 
+                        [
+                            "that", 
+                            213.83, 
+                            213.97
+                        ], 
+                        [
+                            "we", 
+                            213.97, 
+                            214.06
+                        ], 
+                        [
+                            "were", 
+                            214.06, 
+                            214.14
+                        ], 
+                        [
+                            "hearing", 
+                            214.14, 
+                            214.36
+                        ], 
+                        [
+                            "a", 
+                            214.36, 
+                            214.42
+                        ], 
+                        [
+                            "year", 
+                            214.42, 
+                            214.56
+                        ], 
+                        [
+                            "or", 
+                            214.56, 
+                            214.63
+                        ], 
+                        [
+                            "so", 
+                            214.63, 
+                            214.81
+                        ], 
+                        [
+                            "ago", 
+                            214.81, 
+                            215.13
+                        ], 
+                        [
+                            "that", 
+                            215.13, 
+                            215.4
+                        ], 
+                        [
+                            "%HESITATION", 
+                            215.4, 
+                            215.69
+                        ], 
+                        [
+                            "a", 
+                            215.87, 
+                            215.95
+                        ], 
+                        [
+                            "lot", 
+                            215.95, 
+                            216.17
+                        ], 
+                        [
+                            "of", 
+                            216.17, 
+                            216.44
+                        ], 
+                        [
+                            "it", 
+                            216.73, 
+                            216.8
+                        ], 
+                        [
+                            "was", 
+                            216.8, 
+                            216.89
+                        ], 
+                        [
+                            "a", 
+                            216.89, 
+                            216.94
+                        ], 
+                        [
+                            "high", 
+                            216.94, 
+                            217.25
+                        ], 
+                        [
+                            "error", 
+                            217.25, 
+                            217.57
+                        ], 
+                        [
+                            "rate", 
+                            217.57, 
+                            217.89
+                        ], 
+                        [
+                            "in", 
+                            218.05, 
+                            218.22
+                        ], 
+                        [
+                            "the", 
+                            218.22, 
+                            218.3
+                        ], 
+                        [
+                            "analysis", 
+                            218.3, 
+                            218.86
+                        ], 
+                        [
+                            "of", 
+                            218.86, 
+                            219.01
+                        ], 
+                        [
+                            "drug", 
+                            219.01, 
+                            219.24
+                        ], 
+                        [
+                            "results", 
+                            219.24, 
+                            219.8
+                        ], 
+                        [
+                            "or", 
+                            220.2, 
+                            220.58
+                        ], 
+                        [
+                            "I", 
+                            220.72, 
+                            220.83
+                        ], 
+                        [
+                            "shouldn't", 
+                            220.83, 
+                            221.14
+                        ], 
+                        [
+                            "say", 
+                            221.14, 
+                            221.24
+                        ], 
+                        [
+                            "high", 
+                            221.24, 
+                            221.52
+                        ], 
+                        [
+                            "I", 
+                            221.52, 
+                            221.58
+                        ], 
+                        [
+                            "mean", 
+                            221.58, 
+                            221.8
+                        ]
+                    ], 
+                    "transcript": "I hear that we were hearing a year or so ago that %HESITATION a lot of it was a high error rate in the analysis of drug results or I shouldn't say high I mean "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 29, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.928, 
+                    "timestamps": [
+                        [
+                            "I", 
+                            212.85, 
+                            213.44
+                        ], 
+                        [
+                            "hear", 
+                            213.44, 
+                            213.79
+                        ], 
+                        [
+                            "that", 
+                            213.83, 
+                            213.97
+                        ], 
+                        [
+                            "we", 
+                            213.97, 
+                            214.06
+                        ], 
+                        [
+                            "were", 
+                            214.06, 
+                            214.14
+                        ], 
+                        [
+                            "hearing", 
+                            214.14, 
+                            214.36
+                        ], 
+                        [
+                            "a", 
+                            214.36, 
+                            214.42
+                        ], 
+                        [
+                            "year", 
+                            214.42, 
+                            214.56
+                        ], 
+                        [
+                            "or", 
+                            214.56, 
+                            214.63
+                        ], 
+                        [
+                            "so", 
+                            214.63, 
+                            214.81
+                        ], 
+                        [
+                            "ago", 
+                            214.81, 
+                            215.13
+                        ], 
+                        [
+                            "that", 
+                            215.13, 
+                            215.4
+                        ], 
+                        [
+                            "%HESITATION", 
+                            215.4, 
+                            215.69
+                        ], 
+                        [
+                            "a", 
+                            215.87, 
+                            215.95
+                        ], 
+                        [
+                            "lot", 
+                            215.95, 
+                            216.17
+                        ], 
+                        [
+                            "of", 
+                            216.17, 
+                            216.44
+                        ], 
+                        [
+                            "it", 
+                            216.73, 
+                            216.8
+                        ], 
+                        [
+                            "was", 
+                            216.8, 
+                            216.89
+                        ], 
+                        [
+                            "a", 
+                            216.89, 
+                            216.94
+                        ], 
+                        [
+                            "high", 
+                            216.94, 
+                            217.25
+                        ], 
+                        [
+                            "error", 
+                            217.25, 
+                            217.57
+                        ], 
+                        [
+                            "rate", 
+                            217.57, 
+                            217.89
+                        ], 
+                        [
+                            "in", 
+                            218.05, 
+                            218.22
+                        ], 
+                        [
+                            "the", 
+                            218.22, 
+                            218.3
+                        ], 
+                        [
+                            "analysis", 
+                            218.3, 
+                            218.86
+                        ], 
+                        [
+                            "of", 
+                            218.86, 
+                            219.01
+                        ], 
+                        [
+                            "drug", 
+                            219.01, 
+                            219.24
+                        ], 
+                        [
+                            "results", 
+                            219.24, 
+                            219.8
+                        ], 
+                        [
+                            "or", 
+                            220.2, 
+                            220.58
+                        ], 
+                        [
+                            "I", 
+                            220.72, 
+                            220.83
+                        ], 
+                        [
+                            "shouldn't", 
+                            220.83, 
+                            221.14
+                        ], 
+                        [
+                            "say", 
+                            221.14, 
+                            221.24
+                        ], 
+                        [
+                            "high", 
+                            221.24, 
+                            221.52
+                        ], 
+                        [
+                            "I", 
+                            221.52, 
+                            221.58
+                        ], 
+                        [
+                            "mean", 
+                            221.58, 
+                            221.8
+                        ], 
+                        [
+                            "several", 
+                            222.28, 
+                            222.64
+                        ], 
+                        [
+                            "percent", 
+                            222.64, 
+                            223.09
+                        ]
+                    ], 
+                    "transcript": "I hear that we were hearing a year or so ago that %HESITATION a lot of it was a high error rate in the analysis of drug results or I shouldn't say high I mean several percent ", 
+                    "word_confidence": [
+                        [
+                            "I", 
+                            0.6297929819295264
+                        ], 
+                        [
+                            "hear", 
+                            0.99300204292839
+                        ], 
+                        [
+                            "that", 
+                            0.2886302996188087
+                        ], 
+                        [
+                            "we", 
+                            0.8925539037265945
+                        ], 
+                        [
+                            "were", 
+                            0.9445690148447394
+                        ], 
+                        [
+                            "hearing", 
+                            1.0
+                        ], 
+                        [
+                            "a", 
+                            1.0
+                        ], 
+                        [
+                            "year", 
+                            1.0
+                        ], 
+                        [
+                            "or", 
+                            1.0
+                        ], 
+                        [
+                            "so", 
+                            0.97240482375388
+                        ], 
+                        [
+                            "ago", 
+                            1.0
+                        ], 
+                        [
+                            "that", 
+                            1.0
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.9911189079334551
+                        ], 
+                        [
+                            "a", 
+                            0.521396897717758
+                        ], 
+                        [
+                            "lot", 
+                            0.9430580073154409
+                        ], 
+                        [
+                            "of", 
+                            1.0
+                        ], 
+                        [
+                            "it", 
+                            0.5303731420145547
+                        ], 
+                        [
+                            "was", 
+                            1.0
+                        ], 
+                        [
+                            "a", 
+                            1.0
+                        ], 
+                        [
+                            "high", 
+                            1.0
+                        ], 
+                        [
+                            "error", 
+                            1.0
+                        ], 
+                        [
+                            "rate", 
+                            1.0
+                        ], 
+                        [
+                            "in", 
+                            1.0
+                        ], 
+                        [
+                            "the", 
+                            1.0
+                        ], 
+                        [
+                            "analysis", 
+                            1.0
+                        ], 
+                        [
+                            "of", 
+                            1.0
+                        ], 
+                        [
+                            "drug", 
+                            1.0
+                        ], 
+                        [
+                            "results", 
+                            0.9898372757159465
+                        ], 
+                        [
+                            "or", 
+                            0.7435263543479318
+                        ], 
+                        [
+                            "I", 
+                            0.9795314467524535
+                        ], 
+                        [
+                            "shouldn't", 
+                            0.7949553504096005
+                        ], 
+                        [
+                            "say", 
+                            1.0
+                        ], 
+                        [
+                            "high", 
+                            1.0
+                        ], 
+                        [
+                            "I", 
+                            0.7308877178853224
+                        ], 
+                        [
+                            "mean", 
+                            1.0
+                        ], 
+                        [
+                            "several", 
+                            1.0
+                        ], 
+                        [
+                            "percent", 
+                            0.9873348552901997
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION here we were hearing a year or so ago that %HESITATION a lot of it was a high error rate in the analysis of drug results or I shouldn't say high I mean several percent "
+                }, 
+                {
+                    "transcript": "I hear that we were hearing a year or so ago that %HESITATION a lot of it was a high error rate in the analysis of drug results or or I shouldn't say high I mean several percent "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 30, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.838, 
+                    "timestamps": [
+                        [
+                            "kind", 
+                            246.71, 
+                            246.86
+                        ], 
+                        [
+                            "of", 
+                            246.86, 
+                            246.92
+                        ], 
+                        [
+                            "a", 
+                            246.92, 
+                            246.98
+                        ], 
+                        [
+                            "coarse", 
+                            246.98, 
+                            247.32
+                        ], 
+                        [
+                            "kind", 
+                            247.32, 
+                            247.52
+                        ], 
+                        [
+                            "of", 
+                            247.52, 
+                            247.62
+                        ], 
+                        [
+                            "test", 
+                            247.62, 
+                            248.03
+                        ]
+                    ], 
+                    "transcript": "kind of a coarse kind of test ", 
+                    "word_confidence": [
+                        [
+                            "kind", 
+                            1.0
+                        ], 
+                        [
+                            "of", 
+                            1.0
+                        ], 
+                        [
+                            "a", 
+                            0.8745369290581532
+                        ], 
+                        [
+                            "coarse", 
+                            0.9963099096782029
+                        ], 
+                        [
+                            "kind", 
+                            1.0
+                        ], 
+                        [
+                            "of", 
+                            1.0
+                        ], 
+                        [
+                            "test", 
+                            0.5003357032810097
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "kind of a coarse kind of tests "
+                }, 
+                {
+                    "transcript": "kind of a coarse kind of Tess "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 31, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.89, 
+                    "timestamps": [
+                        [
+                            "is", 
+                            258.79, 
+                            258.88
+                        ], 
+                        [
+                            "that", 
+                            258.88, 
+                            259.04
+                        ], 
+                        [
+                            "done", 
+                            259.04, 
+                            259.35
+                        ]
+                    ], 
+                    "transcript": "is that done ", 
+                    "word_confidence": [
+                        [
+                            "is", 
+                            0.9122680357961419
+                        ], 
+                        [
+                            "that", 
+                            0.9999999999999951
+                        ], 
+                        [
+                            "done", 
+                            0.8260273064299697
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "is that done a "
+                }, 
+                {
+                    "transcript": "is that done on "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 32, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.987, 
+                    "timestamps": [
+                        [
+                            "right", 
+                            260.41, 
+                            260.79
+                        ]
+                    ], 
+                    "transcript": "right ", 
+                    "word_confidence": [
+                        [
+                            "right", 
+                            0.9873095046053485
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "write "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 33, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.93, 
+                    "timestamps": [
+                        [
+                            "let", 
+                            265.76, 
+                            266.11
+                        ], 
+                        [
+                            "me", 
+                            266.11, 
+                            266.19
+                        ], 
+                        [
+                            "ask", 
+                            266.19, 
+                            266.36
+                        ], 
+                        [
+                            "you", 
+                            266.36, 
+                            266.43
+                        ], 
+                        [
+                            "this", 
+                            266.43, 
+                            266.7
+                        ], 
+                        [
+                            "%HESITATION", 
+                            266.7, 
+                            267.1
+                        ]
+                    ], 
+                    "transcript": "let me ask you this %HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "let", 
+                            0.7804385814061945
+                        ], 
+                        [
+                            "me", 
+                            0.9999999999999842
+                        ], 
+                        [
+                            "ask", 
+                            0.9999999999999883
+                        ], 
+                        [
+                            "you", 
+                            0.9999999999999919
+                        ], 
+                        [
+                            "this", 
+                            0.9908137461773444
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.9640459703283255
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "let me ask you this um "
+                }, 
+                {
+                    "transcript": "well let me ask you this %HESITATION "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 34, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "at", 
+                            268.64, 
+                            268.77
+                        ], 
+                        [
+                            "the", 
+                            268.77, 
+                            268.84
+                        ], 
+                        [
+                            "time", 
+                            268.84, 
+                            269.1
+                        ], 
+                        [
+                            "you", 
+                            269.1, 
+                            269.22
+                        ], 
+                        [
+                            "hire", 
+                            269.22, 
+                            269.37
+                        ]
+                    ], 
+                    "transcript": "at the time you hire "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 34, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "at", 
+                            268.64, 
+                            268.77
+                        ], 
+                        [
+                            "the", 
+                            268.77, 
+                            268.84
+                        ], 
+                        [
+                            "time", 
+                            268.84, 
+                            269.1
+                        ], 
+                        [
+                            "you", 
+                            269.1, 
+                            269.22
+                        ], 
+                        [
+                            "hired", 
+                            269.22, 
+                            269.46
+                        ], 
+                        [
+                            "over", 
+                            269.46, 
+                            269.63
+                        ], 
+                        [
+                            "this", 
+                            269.63, 
+                            269.77
+                        ], 
+                        [
+                            "company", 
+                            269.77, 
+                            270.33
+                        ], 
+                        [
+                            "was", 
+                            270.55, 
+                            270.74
+                        ], 
+                        [
+                            "that", 
+                            270.74, 
+                            270.9
+                        ], 
+                        [
+                            "prior", 
+                            270.9, 
+                            271.28
+                        ], 
+                        [
+                            "to", 
+                            271.28, 
+                            271.37
+                        ]
+                    ], 
+                    "transcript": "at the time you hired over this company was that prior to "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 34, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.914, 
+                    "timestamps": [
+                        [
+                            "at", 
+                            268.64, 
+                            268.77
+                        ], 
+                        [
+                            "the", 
+                            268.77, 
+                            268.84
+                        ], 
+                        [
+                            "time", 
+                            268.84, 
+                            269.1
+                        ], 
+                        [
+                            "you", 
+                            269.1, 
+                            269.22
+                        ], 
+                        [
+                            "hired", 
+                            269.22, 
+                            269.46
+                        ], 
+                        [
+                            "over", 
+                            269.46, 
+                            269.63
+                        ], 
+                        [
+                            "this", 
+                            269.63, 
+                            269.77
+                        ], 
+                        [
+                            "company", 
+                            269.77, 
+                            270.33
+                        ], 
+                        [
+                            "was", 
+                            270.55, 
+                            270.74
+                        ], 
+                        [
+                            "that", 
+                            270.74, 
+                            270.9
+                        ], 
+                        [
+                            "prior", 
+                            270.9, 
+                            271.27
+                        ], 
+                        [
+                            "to", 
+                            271.27, 
+                            271.72
+                        ], 
+                        [
+                            "any", 
+                            271.8, 
+                            272.13
+                        ]
+                    ], 
+                    "transcript": "at the time you hired over this company was that prior to any ", 
+                    "word_confidence": [
+                        [
+                            "at", 
+                            0.999999999999862
+                        ], 
+                        [
+                            "the", 
+                            0.9999999999998692
+                        ], 
+                        [
+                            "time", 
+                            0.9999999999998691
+                        ], 
+                        [
+                            "you", 
+                            0.9999999999999022
+                        ], 
+                        [
+                            "hired", 
+                            0.5541819185777431
+                        ], 
+                        [
+                            "over", 
+                            0.512606766767518
+                        ], 
+                        [
+                            "this", 
+                            0.7209383420026919
+                        ], 
+                        [
+                            "company", 
+                            0.990767079539884
+                        ], 
+                        [
+                            "was", 
+                            0.8287184634008762
+                        ], 
+                        [
+                            "that", 
+                            0.9999999999999911
+                        ], 
+                        [
+                            "prior", 
+                            1.0
+                        ], 
+                        [
+                            "to", 
+                            1.0
+                        ], 
+                        [
+                            "any", 
+                            0.981398506603374
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "at the time you heard over this company was that prior to any "
+                }, 
+                {
+                    "transcript": "at the time you hired on with this company was that prior to any "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 35, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "okay", 
+                            275.46, 
+                            275.7
+                        ], 
+                        [
+                            "so", 
+                            275.7, 
+                            275.83
+                        ], 
+                        [
+                            "that", 
+                            275.83, 
+                            276.3
+                        ], 
+                        [
+                            "this", 
+                            276.78, 
+                            277.12
+                        ], 
+                        [
+                            "is", 
+                            277.12, 
+                            277.2
+                        ]
+                    ], 
+                    "transcript": "okay so that this is "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 35, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "okay", 
+                            275.46, 
+                            275.7
+                        ], 
+                        [
+                            "so", 
+                            275.7, 
+                            275.83
+                        ], 
+                        [
+                            "that", 
+                            275.83, 
+                            276.08
+                        ], 
+                        [
+                            "the", 
+                            276.11, 
+                            276.31
+                        ], 
+                        [
+                            "this", 
+                            276.78, 
+                            277.12
+                        ], 
+                        [
+                            "is", 
+                            277.12, 
+                            277.22
+                        ], 
+                        [
+                            "obviously", 
+                            277.22, 
+                            277.52
+                        ], 
+                        [
+                            "not", 
+                            277.52, 
+                            277.66
+                        ], 
+                        [
+                            "a", 
+                            277.66, 
+                            277.71
+                        ], 
+                        [
+                            "condition", 
+                            277.71, 
+                            278.05
+                        ], 
+                        [
+                            "of", 
+                            278.05, 
+                            278.11
+                        ], 
+                        [
+                            "employment", 
+                            278.11, 
+                            278.59
+                        ], 
+                        [
+                            "that", 
+                            278.59, 
+                            278.74
+                        ], 
+                        [
+                            "you", 
+                            278.74, 
+                            278.87
+                        ], 
+                        [
+                            "should", 
+                            278.87, 
+                            279.11
+                        ]
+                    ], 
+                    "transcript": "okay so that the this is obviously not a condition of employment that you should "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 35, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.98, 
+                    "timestamps": [
+                        [
+                            "okay", 
+                            275.46, 
+                            275.7
+                        ], 
+                        [
+                            "so", 
+                            275.7, 
+                            275.83
+                        ], 
+                        [
+                            "that", 
+                            275.83, 
+                            276.08
+                        ], 
+                        [
+                            "the", 
+                            276.11, 
+                            276.31
+                        ], 
+                        [
+                            "this", 
+                            276.78, 
+                            277.12
+                        ], 
+                        [
+                            "is", 
+                            277.12, 
+                            277.22
+                        ], 
+                        [
+                            "obviously", 
+                            277.22, 
+                            277.52
+                        ], 
+                        [
+                            "not", 
+                            277.52, 
+                            277.66
+                        ], 
+                        [
+                            "a", 
+                            277.66, 
+                            277.71
+                        ], 
+                        [
+                            "condition", 
+                            277.71, 
+                            278.05
+                        ], 
+                        [
+                            "of", 
+                            278.05, 
+                            278.11
+                        ], 
+                        [
+                            "employment", 
+                            278.11, 
+                            278.59
+                        ], 
+                        [
+                            "that", 
+                            278.59, 
+                            278.74
+                        ], 
+                        [
+                            "you", 
+                            278.74, 
+                            278.89
+                        ], 
+                        [
+                            "subject", 
+                            278.89, 
+                            279.24
+                        ], 
+                        [
+                            "yourself", 
+                            279.24, 
+                            279.53
+                        ], 
+                        [
+                            "to", 
+                            279.53, 
+                            279.62
+                        ], 
+                        [
+                            "this", 
+                            279.62, 
+                            279.94
+                        ]
+                    ], 
+                    "transcript": "okay so that the this is obviously not a condition of employment that you subject yourself to this ", 
+                    "word_confidence": [
+                        [
+                            "okay", 
+                            1.0
+                        ], 
+                        [
+                            "so", 
+                            1.0
+                        ], 
+                        [
+                            "that", 
+                            1.0
+                        ], 
+                        [
+                            "the", 
+                            0.6151379647578553
+                        ], 
+                        [
+                            "this", 
+                            1.0
+                        ], 
+                        [
+                            "is", 
+                            1.0
+                        ], 
+                        [
+                            "obviously", 
+                            1.0
+                        ], 
+                        [
+                            "not", 
+                            1.0
+                        ], 
+                        [
+                            "a", 
+                            1.0
+                        ], 
+                        [
+                            "condition", 
+                            1.0
+                        ], 
+                        [
+                            "of", 
+                            1.0
+                        ], 
+                        [
+                            "employment", 
+                            1.0
+                        ], 
+                        [
+                            "that", 
+                            1.0
+                        ], 
+                        [
+                            "you", 
+                            1.0
+                        ], 
+                        [
+                            "subject", 
+                            1.0
+                        ], 
+                        [
+                            "yourself", 
+                            1.0
+                        ], 
+                        [
+                            "to", 
+                            1.0
+                        ], 
+                        [
+                            "this", 
+                            0.99171040400283
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "okay so that this is obviously not a condition of employment that you subject yourself to this "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}

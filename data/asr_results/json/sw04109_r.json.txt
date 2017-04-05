@@ -1,0 +1,4248 @@
+{
+    "result_index": 0, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.994, 
+                    "timestamps": [
+                        [
+                            "okay", 
+                            4.25, 
+                            4.81
+                        ]
+                    ], 
+                    "transcript": "okay ", 
+                    "word_confidence": [
+                        [
+                            "okay", 
+                            0.9938092333996128
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 1, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "okay", 
+                            7.83, 
+                            8.09
+                        ], 
+                        [
+                            "we", 
+                            8.09, 
+                            8.22
+                        ], 
+                        [
+                            "can", 
+                            8.22, 
+                            8.35
+                        ], 
+                        [
+                            "start", 
+                            8.35, 
+                            8.62
+                        ], 
+                        [
+                            "off", 
+                            8.62, 
+                            8.78
+                        ], 
+                        [
+                            "there", 
+                            8.78, 
+                            9.0
+                        ], 
+                        [
+                            "let's", 
+                            9.0, 
+                            9.19
+                        ], 
+                        [
+                            "just", 
+                            9.19, 
+                            9.36
+                        ], 
+                        [
+                            "gets", 
+                            9.36, 
+                            9.55
+                        ]
+                    ], 
+                    "transcript": "okay we can start off there let's just gets "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 1, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "okay", 
+                            7.83, 
+                            8.09
+                        ], 
+                        [
+                            "we", 
+                            8.09, 
+                            8.22
+                        ], 
+                        [
+                            "can", 
+                            8.22, 
+                            8.35
+                        ], 
+                        [
+                            "start", 
+                            8.35, 
+                            8.62
+                        ], 
+                        [
+                            "off", 
+                            8.62, 
+                            8.78
+                        ], 
+                        [
+                            "there", 
+                            8.78, 
+                            9.0
+                        ], 
+                        [
+                            "let's", 
+                            9.0, 
+                            9.19
+                        ], 
+                        [
+                            "just", 
+                            9.19, 
+                            9.36
+                        ], 
+                        [
+                            "get", 
+                            9.36, 
+                            9.52
+                        ], 
+                        [
+                            "started", 
+                            9.52, 
+                            9.98
+                        ], 
+                        [
+                            "I", 
+                            10.27, 
+                            10.36
+                        ], 
+                        [
+                            "don't", 
+                            10.36, 
+                            10.52
+                        ], 
+                        [
+                            "want", 
+                            10.52, 
+                            10.67
+                        ], 
+                        [
+                            "to", 
+                            10.67, 
+                            10.76
+                        ], 
+                        [
+                            "you", 
+                            10.86, 
+                            11.01
+                        ], 
+                        [
+                            "know", 
+                            11.01, 
+                            11.26
+                        ], 
+                        [
+                            "I", 
+                            11.29, 
+                            11.52
+                        ]
+                    ], 
+                    "transcript": "okay we can start off there let's just get started I don't want to you know I "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 1, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "okay", 
+                            7.83, 
+                            8.09
+                        ], 
+                        [
+                            "we", 
+                            8.09, 
+                            8.22
+                        ], 
+                        [
+                            "can", 
+                            8.22, 
+                            8.35
+                        ], 
+                        [
+                            "start", 
+                            8.35, 
+                            8.62
+                        ], 
+                        [
+                            "off", 
+                            8.62, 
+                            8.78
+                        ], 
+                        [
+                            "there", 
+                            8.78, 
+                            9.0
+                        ], 
+                        [
+                            "let's", 
+                            9.0, 
+                            9.19
+                        ], 
+                        [
+                            "just", 
+                            9.19, 
+                            9.36
+                        ], 
+                        [
+                            "get", 
+                            9.36, 
+                            9.52
+                        ], 
+                        [
+                            "started", 
+                            9.52, 
+                            9.98
+                        ], 
+                        [
+                            "I", 
+                            10.27, 
+                            10.36
+                        ], 
+                        [
+                            "don't", 
+                            10.36, 
+                            10.52
+                        ], 
+                        [
+                            "want", 
+                            10.52, 
+                            10.67
+                        ], 
+                        [
+                            "to", 
+                            10.67, 
+                            10.76
+                        ], 
+                        [
+                            "you", 
+                            10.86, 
+                            11.01
+                        ], 
+                        [
+                            "know", 
+                            11.01, 
+                            11.26
+                        ], 
+                        [
+                            "I", 
+                            11.29, 
+                            11.56
+                        ], 
+                        [
+                            "talk", 
+                            11.59, 
+                            11.85
+                        ], 
+                        [
+                            "about", 
+                            11.85, 
+                            12.09
+                        ], 
+                        [
+                            "it", 
+                            12.09, 
+                            12.16
+                        ], 
+                        [
+                            "now", 
+                            12.16, 
+                            12.38
+                        ], 
+                        [
+                            "and", 
+                            12.38, 
+                            12.48
+                        ], 
+                        [
+                            "then", 
+                            12.48, 
+                            12.59
+                        ], 
+                        [
+                            "be", 
+                            12.59, 
+                            12.72
+                        ], 
+                        [
+                            "bored", 
+                            12.72, 
+                            13.06
+                        ], 
+                        [
+                            "when", 
+                            13.06, 
+                            13.18
+                        ], 
+                        [
+                            "we", 
+                            13.18, 
+                            13.29
+                        ], 
+                        [
+                            "get", 
+                            13.29, 
+                            13.47
+                        ], 
+                        [
+                            "to", 
+                            13.47, 
+                            13.55
+                        ]
+                    ], 
+                    "transcript": "okay we can start off there let's just get started I don't want to you know I talk about it now and then be bored when we get to "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 1, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.943, 
+                    "timestamps": [
+                        [
+                            "okay", 
+                            7.83, 
+                            8.09
+                        ], 
+                        [
+                            "we", 
+                            8.09, 
+                            8.22
+                        ], 
+                        [
+                            "can", 
+                            8.22, 
+                            8.35
+                        ], 
+                        [
+                            "start", 
+                            8.35, 
+                            8.62
+                        ], 
+                        [
+                            "off", 
+                            8.62, 
+                            8.78
+                        ], 
+                        [
+                            "there", 
+                            8.78, 
+                            9.0
+                        ], 
+                        [
+                            "let's", 
+                            9.0, 
+                            9.19
+                        ], 
+                        [
+                            "just", 
+                            9.19, 
+                            9.36
+                        ], 
+                        [
+                            "get", 
+                            9.36, 
+                            9.52
+                        ], 
+                        [
+                            "started", 
+                            9.52, 
+                            9.98
+                        ], 
+                        [
+                            "I", 
+                            10.27, 
+                            10.36
+                        ], 
+                        [
+                            "don't", 
+                            10.36, 
+                            10.52
+                        ], 
+                        [
+                            "want", 
+                            10.52, 
+                            10.67
+                        ], 
+                        [
+                            "to", 
+                            10.67, 
+                            10.76
+                        ], 
+                        [
+                            "you", 
+                            10.86, 
+                            11.01
+                        ], 
+                        [
+                            "know", 
+                            11.01, 
+                            11.26
+                        ], 
+                        [
+                            "I", 
+                            11.29, 
+                            11.56
+                        ], 
+                        [
+                            "talk", 
+                            11.59, 
+                            11.85
+                        ], 
+                        [
+                            "about", 
+                            11.85, 
+                            12.09
+                        ], 
+                        [
+                            "it", 
+                            12.09, 
+                            12.16
+                        ], 
+                        [
+                            "now", 
+                            12.16, 
+                            12.38
+                        ], 
+                        [
+                            "and", 
+                            12.38, 
+                            12.48
+                        ], 
+                        [
+                            "then", 
+                            12.48, 
+                            12.59
+                        ], 
+                        [
+                            "be", 
+                            12.59, 
+                            12.72
+                        ], 
+                        [
+                            "bored", 
+                            12.72, 
+                            13.06
+                        ], 
+                        [
+                            "when", 
+                            13.06, 
+                            13.18
+                        ], 
+                        [
+                            "we", 
+                            13.18, 
+                            13.29
+                        ], 
+                        [
+                            "get", 
+                            13.29, 
+                            13.47
+                        ], 
+                        [
+                            "to", 
+                            13.47, 
+                            13.59
+                        ], 
+                        [
+                            "it", 
+                            13.59, 
+                            13.79
+                        ]
+                    ], 
+                    "transcript": "okay we can start off there let's just get started I don't want to you know I talk about it now and then be bored when we get to it ", 
+                    "word_confidence": [
+                        [
+                            "okay", 
+                            1.0
+                        ], 
+                        [
+                            "we", 
+                            1.0
+                        ], 
+                        [
+                            "can", 
+                            1.0
+                        ], 
+                        [
+                            "start", 
+                            1.0
+                        ], 
+                        [
+                            "off", 
+                            1.0
+                        ], 
+                        [
+                            "there", 
+                            1.0
+                        ], 
+                        [
+                            "let's", 
+                            1.0
+                        ], 
+                        [
+                            "just", 
+                            1.0
+                        ], 
+                        [
+                            "get", 
+                            0.9999999999999944
+                        ], 
+                        [
+                            "started", 
+                            0.9865205988247175
+                        ], 
+                        [
+                            "I", 
+                            0.7292438040634456
+                        ], 
+                        [
+                            "don't", 
+                            1.0
+                        ], 
+                        [
+                            "want", 
+                            0.862696803153172
+                        ], 
+                        [
+                            "to", 
+                            0.7704459395500525
+                        ], 
+                        [
+                            "you", 
+                            0.8308246388203926
+                        ], 
+                        [
+                            "know", 
+                            0.9780215831472613
+                        ], 
+                        [
+                            "I", 
+                            0.6683419081998594
+                        ], 
+                        [
+                            "talk", 
+                            0.836189577031771
+                        ], 
+                        [
+                            "about", 
+                            1.0
+                        ], 
+                        [
+                            "it", 
+                            0.9999999999999912
+                        ], 
+                        [
+                            "now", 
+                            0.9999999999999784
+                        ], 
+                        [
+                            "and", 
+                            0.9999999999999913
+                        ], 
+                        [
+                            "then", 
+                            0.8391391844407312
+                        ], 
+                        [
+                            "be", 
+                            0.9214082798906144
+                        ], 
+                        [
+                            "bored", 
+                            0.9999999999999358
+                        ], 
+                        [
+                            "when", 
+                            0.7342846252870939
+                        ], 
+                        [
+                            "we", 
+                            0.9880869598437372
+                        ], 
+                        [
+                            "get", 
+                            0.9722669881164507
+                        ], 
+                        [
+                            "to", 
+                            0.999999999999936
+                        ], 
+                        [
+                            "it", 
+                            0.9475910978478763
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "okay we can start off there let's just get started don't want to you know I talk about it now and then be bored when we get to it "
+                }, 
+                {
+                    "transcript": "okay we can start off there let's just get started I don't want to go you know I talk about it now and then be bored when we get to it "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 2, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.978, 
+                    "timestamps": [
+                        [
+                            "right", 
+                            15.5, 
+                            15.91
+                        ]
+                    ], 
+                    "transcript": "right ", 
+                    "word_confidence": [
+                        [
+                            "right", 
+                            0.9775451627777245
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "write "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 3, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.698, 
+                    "timestamps": [
+                        [
+                            "yep", 
+                            17.3, 
+                            17.59
+                        ]
+                    ], 
+                    "transcript": "yep ", 
+                    "word_confidence": [
+                        [
+                            "yep", 
+                            0.6982989192697184
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "yeah "
+                }, 
+                {
+                    "transcript": "yet "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 4, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "so", 
+                            20.09, 
+                            20.32
+                        ], 
+                        [
+                            "so", 
+                            20.56, 
+                            20.87
+                        ], 
+                        [
+                            "you", 
+                            20.87, 
+                            21.06
+                        ], 
+                        [
+                            "think", 
+                            21.06, 
+                            21.36
+                        ], 
+                        [
+                            "%HESITATION", 
+                            21.36, 
+                            21.79
+                        ]
+                    ], 
+                    "transcript": "so so you think %HESITATION "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 4, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "so", 
+                            20.09, 
+                            20.32
+                        ], 
+                        [
+                            "so", 
+                            20.56, 
+                            20.87
+                        ], 
+                        [
+                            "you", 
+                            20.87, 
+                            21.06
+                        ], 
+                        [
+                            "think", 
+                            21.06, 
+                            21.36
+                        ], 
+                        [
+                            "%HESITATION", 
+                            21.36, 
+                            21.86
+                        ], 
+                        [
+                            "I", 
+                            22.15, 
+                            22.41
+                        ], 
+                        [
+                            "I", 
+                            22.49, 
+                            22.65
+                        ], 
+                        [
+                            "think", 
+                            22.65, 
+                            22.83
+                        ], 
+                        [
+                            "it", 
+                            22.83, 
+                            22.92
+                        ], 
+                        [
+                            "is", 
+                            22.92, 
+                            23.03
+                        ], 
+                        [
+                            "a", 
+                            23.03, 
+                            23.07
+                        ], 
+                        [
+                            "short", 
+                            23.07, 
+                            23.4
+                        ], 
+                        [
+                            "work", 
+                            23.4, 
+                            23.65
+                        ], 
+                        [
+                            "week", 
+                            23.65, 
+                            23.82
+                        ]
+                    ], 
+                    "transcript": "so so you think %HESITATION I I think it is a short work week "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 4, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "so", 
+                            20.09, 
+                            20.32
+                        ], 
+                        [
+                            "so", 
+                            20.56, 
+                            20.87
+                        ], 
+                        [
+                            "you", 
+                            20.87, 
+                            21.06
+                        ], 
+                        [
+                            "think", 
+                            21.06, 
+                            21.36
+                        ], 
+                        [
+                            "%HESITATION", 
+                            21.36, 
+                            21.86
+                        ], 
+                        [
+                            "I", 
+                            22.15, 
+                            22.41
+                        ], 
+                        [
+                            "I", 
+                            22.49, 
+                            22.65
+                        ], 
+                        [
+                            "think", 
+                            22.65, 
+                            22.83
+                        ], 
+                        [
+                            "it", 
+                            22.83, 
+                            22.92
+                        ], 
+                        [
+                            "is", 
+                            22.92, 
+                            23.03
+                        ], 
+                        [
+                            "a", 
+                            23.03, 
+                            23.07
+                        ], 
+                        [
+                            "short", 
+                            23.07, 
+                            23.4
+                        ], 
+                        [
+                            "work", 
+                            23.4, 
+                            23.65
+                        ], 
+                        [
+                            "week", 
+                            23.65, 
+                            23.88
+                        ], 
+                        [
+                            "is", 
+                            23.88, 
+                            23.99
+                        ], 
+                        [
+                            "real", 
+                            23.99, 
+                            24.19
+                        ], 
+                        [
+                            "nice", 
+                            24.19, 
+                            24.62
+                        ], 
+                        [
+                            "%HESITATION", 
+                            24.62, 
+                            24.83
+                        ], 
+                        [
+                            "I", 
+                            24.83, 
+                            25.02
+                        ], 
+                        [
+                            "have", 
+                            25.02, 
+                            25.15
+                        ], 
+                        [
+                            "a", 
+                            25.15, 
+                            25.21
+                        ], 
+                        [
+                            "thirty", 
+                            25.21, 
+                            25.51
+                        ], 
+                        [
+                            "seven", 
+                            25.51, 
+                            25.82
+                        ]
+                    ], 
+                    "transcript": "so so you think %HESITATION I I think it is a short work week is real nice %HESITATION I have a thirty seven "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 4, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.94, 
+                    "timestamps": [
+                        [
+                            "so", 
+                            20.09, 
+                            20.32
+                        ], 
+                        [
+                            "so", 
+                            20.56, 
+                            20.87
+                        ], 
+                        [
+                            "you", 
+                            20.87, 
+                            21.06
+                        ], 
+                        [
+                            "think", 
+                            21.06, 
+                            21.36
+                        ], 
+                        [
+                            "%HESITATION", 
+                            21.36, 
+                            21.86
+                        ], 
+                        [
+                            "I", 
+                            22.15, 
+                            22.41
+                        ], 
+                        [
+                            "I", 
+                            22.49, 
+                            22.65
+                        ], 
+                        [
+                            "think", 
+                            22.65, 
+                            22.83
+                        ], 
+                        [
+                            "it", 
+                            22.83, 
+                            22.92
+                        ], 
+                        [
+                            "is", 
+                            22.92, 
+                            23.03
+                        ], 
+                        [
+                            "a", 
+                            23.03, 
+                            23.07
+                        ], 
+                        [
+                            "short", 
+                            23.07, 
+                            23.4
+                        ], 
+                        [
+                            "work", 
+                            23.4, 
+                            23.65
+                        ], 
+                        [
+                            "week", 
+                            23.65, 
+                            23.88
+                        ], 
+                        [
+                            "is", 
+                            23.88, 
+                            23.99
+                        ], 
+                        [
+                            "real", 
+                            23.99, 
+                            24.19
+                        ], 
+                        [
+                            "nice", 
+                            24.19, 
+                            24.62
+                        ], 
+                        [
+                            "%HESITATION", 
+                            24.62, 
+                            24.83
+                        ], 
+                        [
+                            "I", 
+                            24.83, 
+                            25.02
+                        ], 
+                        [
+                            "have", 
+                            25.02, 
+                            25.15
+                        ], 
+                        [
+                            "a", 
+                            25.15, 
+                            25.21
+                        ], 
+                        [
+                            "thirty", 
+                            25.21, 
+                            25.51
+                        ], 
+                        [
+                            "seven", 
+                            25.51, 
+                            25.86
+                        ], 
+                        [
+                            "hour", 
+                            25.86, 
+                            26.1
+                        ], 
+                        [
+                            "work", 
+                            26.1, 
+                            26.36
+                        ], 
+                        [
+                            "week", 
+                            26.36, 
+                            26.62
+                        ], 
+                        [
+                            "how", 
+                            26.62, 
+                            26.74
+                        ], 
+                        [
+                            "bout", 
+                            26.74, 
+                            26.95
+                        ], 
+                        [
+                            "you", 
+                            26.95, 
+                            27.26
+                        ]
+                    ], 
+                    "transcript": "so so you think %HESITATION I I think it is a short work week is real nice %HESITATION I have a thirty seven hour work week how bout you ", 
+                    "word_confidence": [
+                        [
+                            "so", 
+                            0.9857402856872919
+                        ], 
+                        [
+                            "so", 
+                            1.0
+                        ], 
+                        [
+                            "you", 
+                            1.0
+                        ], 
+                        [
+                            "think", 
+                            1.0
+                        ], 
+                        [
+                            "%HESITATION", 
+                            1.0
+                        ], 
+                        [
+                            "I", 
+                            0.7251655181548604
+                        ], 
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "think", 
+                            0.962504524531698
+                        ], 
+                        [
+                            "it", 
+                            0.8071631947712297
+                        ], 
+                        [
+                            "is", 
+                            1.0
+                        ], 
+                        [
+                            "a", 
+                            0.6891979391407882
+                        ], 
+                        [
+                            "short", 
+                            0.9340722901207994
+                        ], 
+                        [
+                            "work", 
+                            1.0
+                        ], 
+                        [
+                            "week", 
+                            1.0
+                        ], 
+                        [
+                            "is", 
+                            1.0
+                        ], 
+                        [
+                            "real", 
+                            1.0
+                        ], 
+                        [
+                            "nice", 
+                            0.9501292157933883
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.18699622947966957
+                        ], 
+                        [
+                            "I", 
+                            0.9448506911768245
+                        ], 
+                        [
+                            "have", 
+                            0.9999999999999661
+                        ], 
+                        [
+                            "a", 
+                            0.999999999999969
+                        ], 
+                        [
+                            "thirty", 
+                            1.0
+                        ], 
+                        [
+                            "seven", 
+                            0.9999999999999838
+                        ], 
+                        [
+                            "hour", 
+                            0.9999999999999835
+                        ], 
+                        [
+                            "work", 
+                            0.9999999999999835
+                        ], 
+                        [
+                            "week", 
+                            1.0
+                        ], 
+                        [
+                            "how", 
+                            0.9806278791509572
+                        ], 
+                        [
+                            "bout", 
+                            0.767534549811114
+                        ], 
+                        [
+                            "you", 
+                            0.9821562308332057
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "so so you think %HESITATION I I think it is a short work week is real nice I I have a thirty seven hour work week how bout you "
+                }, 
+                {
+                    "transcript": "so so you think %HESITATION I think it is a short work week is real nice %HESITATION I have a thirty seven hour work week how bout you "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 5, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.583, 
+                    "timestamps": [
+                        [
+                            "huh", 
+                            34.4, 
+                            34.82
+                        ]
+                    ], 
+                    "transcript": "huh ", 
+                    "word_confidence": [
+                        [
+                            "huh", 
+                            0.5831863024491845
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "uhhuh "
+                }, 
+                {
+                    "transcript": "uhuh "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 6, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.53, 
+                    "timestamps": [
+                        [
+                            "uhhuh", 
+                            48.77, 
+                            49.14
+                        ]
+                    ], 
+                    "transcript": "uhhuh ", 
+                    "word_confidence": [
+                        [
+                            "uhhuh", 
+                            0.5297135528377293
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "huh "
+                }, 
+                {
+                    "transcript": "uhuh "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 7, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.987, 
+                    "timestamps": [
+                        [
+                            "right", 
+                            56.58, 
+                            56.93
+                        ]
+                    ], 
+                    "transcript": "right ", 
+                    "word_confidence": [
+                        [
+                            "right", 
+                            0.9872125745505717
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "write "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 8, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            78.49, 
+                            78.91
+                        ], 
+                        [
+                            "it", 
+                            79.1, 
+                            79.18
+                        ], 
+                        [
+                            "all", 
+                            79.18, 
+                            79.32
+                        ], 
+                        [
+                            "makes", 
+                            79.32, 
+                            79.55
+                        ], 
+                        [
+                            "sense", 
+                            79.55, 
+                            79.81
+                        ], 
+                        [
+                            "to", 
+                            79.81, 
+                            79.91
+                        ], 
+                        [
+                            "me", 
+                            79.91, 
+                            80.21
+                        ]
+                    ], 
+                    "transcript": "yeah it all makes sense to me "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 8, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            78.49, 
+                            78.91
+                        ], 
+                        [
+                            "it", 
+                            79.1, 
+                            79.18
+                        ], 
+                        [
+                            "all", 
+                            79.18, 
+                            79.32
+                        ], 
+                        [
+                            "makes", 
+                            79.32, 
+                            79.55
+                        ], 
+                        [
+                            "sense", 
+                            79.55, 
+                            79.81
+                        ], 
+                        [
+                            "to", 
+                            79.81, 
+                            79.91
+                        ], 
+                        [
+                            "me", 
+                            79.91, 
+                            80.25
+                        ], 
+                        [
+                            "although", 
+                            80.25, 
+                            80.87
+                        ], 
+                        [
+                            "there", 
+                            80.92, 
+                            81.11
+                        ], 
+                        [
+                            "may", 
+                            81.11, 
+                            81.3
+                        ], 
+                        [
+                            "be", 
+                            81.3, 
+                            81.42
+                        ], 
+                        [
+                            "more", 
+                            81.42, 
+                            81.71
+                        ], 
+                        [
+                            "crime", 
+                            81.71, 
+                            82.18
+                        ]
+                    ], 
+                    "transcript": "yeah it all makes sense to me although there may be more crime "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 8, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            78.49, 
+                            78.91
+                        ], 
+                        [
+                            "it", 
+                            79.1, 
+                            79.18
+                        ], 
+                        [
+                            "all", 
+                            79.18, 
+                            79.32
+                        ], 
+                        [
+                            "makes", 
+                            79.32, 
+                            79.55
+                        ], 
+                        [
+                            "sense", 
+                            79.55, 
+                            79.81
+                        ], 
+                        [
+                            "to", 
+                            79.81, 
+                            79.91
+                        ], 
+                        [
+                            "me", 
+                            79.91, 
+                            80.25
+                        ], 
+                        [
+                            "although", 
+                            80.25, 
+                            80.87
+                        ], 
+                        [
+                            "there", 
+                            80.92, 
+                            81.11
+                        ], 
+                        [
+                            "may", 
+                            81.11, 
+                            81.3
+                        ], 
+                        [
+                            "be", 
+                            81.3, 
+                            81.42
+                        ], 
+                        [
+                            "more", 
+                            81.42, 
+                            81.71
+                        ], 
+                        [
+                            "crime", 
+                            81.71, 
+                            82.27
+                        ], 
+                        [
+                            "I", 
+                            82.4, 
+                            82.53
+                        ], 
+                        [
+                            "mean", 
+                            82.53, 
+                            82.79
+                        ], 
+                        [
+                            "if", 
+                            82.79, 
+                            82.91
+                        ], 
+                        [
+                            "people", 
+                            82.91, 
+                            83.37
+                        ], 
+                        [
+                            "have", 
+                            83.37, 
+                            83.74
+                        ], 
+                        [
+                            "more", 
+                            83.77, 
+                            84.08
+                        ]
+                    ], 
+                    "transcript": "yeah it all makes sense to me although there may be more crime I mean if people have more "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 8, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.936, 
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            78.49, 
+                            78.91
+                        ], 
+                        [
+                            "it", 
+                            79.1, 
+                            79.18
+                        ], 
+                        [
+                            "all", 
+                            79.18, 
+                            79.32
+                        ], 
+                        [
+                            "makes", 
+                            79.32, 
+                            79.55
+                        ], 
+                        [
+                            "sense", 
+                            79.55, 
+                            79.81
+                        ], 
+                        [
+                            "to", 
+                            79.81, 
+                            79.91
+                        ], 
+                        [
+                            "me", 
+                            79.91, 
+                            80.25
+                        ], 
+                        [
+                            "although", 
+                            80.25, 
+                            80.87
+                        ], 
+                        [
+                            "there", 
+                            80.92, 
+                            81.11
+                        ], 
+                        [
+                            "may", 
+                            81.11, 
+                            81.3
+                        ], 
+                        [
+                            "be", 
+                            81.3, 
+                            81.42
+                        ], 
+                        [
+                            "more", 
+                            81.42, 
+                            81.71
+                        ], 
+                        [
+                            "crime", 
+                            81.71, 
+                            82.27
+                        ], 
+                        [
+                            "I", 
+                            82.4, 
+                            82.53
+                        ], 
+                        [
+                            "mean", 
+                            82.53, 
+                            82.79
+                        ], 
+                        [
+                            "if", 
+                            82.79, 
+                            82.91
+                        ], 
+                        [
+                            "people", 
+                            82.91, 
+                            83.37
+                        ], 
+                        [
+                            "have", 
+                            83.37, 
+                            83.74
+                        ], 
+                        [
+                            "more", 
+                            83.77, 
+                            83.99
+                        ], 
+                        [
+                            "leisure", 
+                            83.99, 
+                            84.32
+                        ], 
+                        [
+                            "time", 
+                            84.32, 
+                            84.86
+                        ], 
+                        [
+                            "it's", 
+                            85.0, 
+                            85.12
+                        ], 
+                        [
+                            "not", 
+                            85.12, 
+                            85.35
+                        ], 
+                        [
+                            "clear", 
+                            85.35, 
+                            85.82
+                        ]
+                    ], 
+                    "transcript": "yeah it all makes sense to me although there may be more crime I mean if people have more leisure time it's not clear ", 
+                    "word_confidence": [
+                        [
+                            "yeah", 
+                            0.9899145163587814
+                        ], 
+                        [
+                            "it", 
+                            0.40254258903459533
+                        ], 
+                        [
+                            "all", 
+                            0.8997589808497152
+                        ], 
+                        [
+                            "makes", 
+                            0.47285314969892633
+                        ], 
+                        [
+                            "sense", 
+                            0.9999999999999252
+                        ], 
+                        [
+                            "to", 
+                            0.9999999999999574
+                        ], 
+                        [
+                            "me", 
+                            0.9999999999999569
+                        ], 
+                        [
+                            "although", 
+                            0.9999999999999348
+                        ], 
+                        [
+                            "there", 
+                            0.554756168306834
+                        ], 
+                        [
+                            "may", 
+                            0.6596100570511333
+                        ], 
+                        [
+                            "be", 
+                            0.6596100570511547
+                        ], 
+                        [
+                            "more", 
+                            0.9999999999998983
+                        ], 
+                        [
+                            "crime", 
+                            0.9911879431225491
+                        ], 
+                        [
+                            "I", 
+                            0.9999999999999117
+                        ], 
+                        [
+                            "mean", 
+                            0.9999999999999035
+                        ], 
+                        [
+                            "if", 
+                            0.9999999999999111
+                        ], 
+                        [
+                            "people", 
+                            0.9999999999999016
+                        ], 
+                        [
+                            "have", 
+                            0.9999999999999347
+                        ], 
+                        [
+                            "more", 
+                            0.9999999999999182
+                        ], 
+                        [
+                            "leisure", 
+                            0.9999999999999345
+                        ], 
+                        [
+                            "time", 
+                            0.9936825269329519
+                        ], 
+                        [
+                            "it's", 
+                            0.9261076807311178
+                        ], 
+                        [
+                            "not", 
+                            0.9516094309480768
+                        ], 
+                        [
+                            "clear", 
+                            0.9336667641366866
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "yeah all make sense to me although there may be more crime I mean if people have more leisure time it's not clear "
+                }, 
+                {
+                    "transcript": "yeah it all make sense to me although there may be more crime I mean if people have more leisure time it's not clear "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 9, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.318, 
+                    "timestamps": [
+                        [
+                            "and", 
+                            86.33, 
+                            86.45
+                        ], 
+                        [
+                            "that", 
+                            86.45, 
+                            86.63
+                        ]
+                    ], 
+                    "transcript": "and that ", 
+                    "word_confidence": [
+                        [
+                            "and", 
+                            0.3315068747769327
+                        ], 
+                        [
+                            "that", 
+                            0.3088358237114807
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "the next "
+                }, 
+                {
+                    "transcript": "next "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 10, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.982, 
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            89.84, 
+                            90.28
+                        ]
+                    ], 
+                    "transcript": "yeah ", 
+                    "word_confidence": [
+                        [
+                            "yeah", 
+                            0.9821675414011292
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 11, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.252, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            101.44, 
+                            101.79
+                        ]
+                    ], 
+                    "transcript": "%HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.25176913573002574
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "all right "
+                }, 
+                {
+                    "transcript": "huh "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 12, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.989, 
+                    "timestamps": [
+                        [
+                            "right", 
+                            129.0, 
+                            129.35
+                        ]
+                    ], 
+                    "transcript": "right ", 
+                    "word_confidence": [
+                        [
+                            "right", 
+                            0.9887060342075474
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "write "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 13, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.0, 
+                    "timestamps": [], 
+                    "transcript": "in "
+                }, 
+                {
+                    "transcript": "and "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 14, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.982, 
+                    "timestamps": [
+                        [
+                            "right", 
+                            149.72, 
+                            150.14
+                        ]
+                    ], 
+                    "transcript": "right ", 
+                    "word_confidence": [
+                        [
+                            "right", 
+                            0.981856588821331
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "write "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 15, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.99, 
+                    "timestamps": [
+                        [
+                            "so", 
+                            152.65, 
+                            153.2
+                        ]
+                    ], 
+                    "transcript": "so ", 
+                    "word_confidence": [
+                        [
+                            "so", 
+                            0.9899407102998506
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 16, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.987, 
+                    "timestamps": [
+                        [
+                            "right", 
+                            158.88, 
+                            159.23
+                        ]
+                    ], 
+                    "transcript": "right ", 
+                    "word_confidence": [
+                        [
+                            "right", 
+                            0.986858842453995
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "write "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 17, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.921, 
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            165.87, 
+                            166.24
+                        ]
+                    ], 
+                    "transcript": "yeah ", 
+                    "word_confidence": [
+                        [
+                            "yeah", 
+                            0.9213107624187318
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "yes "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 18, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.986, 
+                    "timestamps": [
+                        [
+                            "right", 
+                            178.93, 
+                            179.26
+                        ]
+                    ], 
+                    "transcript": "right ", 
+                    "word_confidence": [
+                        [
+                            "right", 
+                            0.9857544670098101
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "write "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 19, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.0, 
+                    "timestamps": [], 
+                    "transcript": "sure "
+                }, 
+                {
+                    "transcript": "for "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 20, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.989, 
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            202.69, 
+                            203.11
+                        ]
+                    ], 
+                    "transcript": "yeah ", 
+                    "word_confidence": [
+                        [
+                            "yeah", 
+                            0.9889409129348481
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "yeah that "
+                }, 
+                {
+                    "transcript": "yeah but "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 21, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "well", 
+                            205.88, 
+                            206.06
+                        ], 
+                        [
+                            "I", 
+                            206.06, 
+                            206.18
+                        ], 
+                        [
+                            "do", 
+                            206.18, 
+                            206.36
+                        ], 
+                        [
+                            "work", 
+                            206.36, 
+                            206.59
+                        ], 
+                        [
+                            "%HESITATION", 
+                            206.62, 
+                            206.83
+                        ], 
+                        [
+                            "researching", 
+                            206.83, 
+                            207.45
+                        ]
+                    ], 
+                    "transcript": "well I do work %HESITATION researching "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 21, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "well", 
+                            205.88, 
+                            206.06
+                        ], 
+                        [
+                            "I", 
+                            206.06, 
+                            206.18
+                        ], 
+                        [
+                            "do", 
+                            206.18, 
+                            206.36
+                        ], 
+                        [
+                            "work", 
+                            206.36, 
+                            206.59
+                        ], 
+                        [
+                            "%HESITATION", 
+                            206.62, 
+                            206.83
+                        ], 
+                        [
+                            "research", 
+                            206.83, 
+                            207.35
+                        ], 
+                        [
+                            "in", 
+                            207.35, 
+                            207.46
+                        ], 
+                        [
+                            "computer", 
+                            207.46, 
+                            207.84
+                        ], 
+                        [
+                            "science", 
+                            207.84, 
+                            208.35
+                        ], 
+                        [
+                            "and", 
+                            208.35, 
+                            208.63
+                        ], 
+                        [
+                            "I", 
+                            208.66, 
+                            208.85
+                        ], 
+                        [
+                            "just", 
+                            208.85, 
+                            209.04
+                        ], 
+                        [
+                            "been", 
+                            209.04, 
+                            209.16
+                        ], 
+                        [
+                            "doing", 
+                            209.16, 
+                            209.38
+                        ], 
+                        [
+                            "that", 
+                            209.38, 
+                            209.58
+                        ]
+                    ], 
+                    "transcript": "well I do work %HESITATION research in computer science and I just been doing that "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 21, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.916, 
+                    "timestamps": [
+                        [
+                            "well", 
+                            205.88, 
+                            206.06
+                        ], 
+                        [
+                            "I", 
+                            206.06, 
+                            206.18
+                        ], 
+                        [
+                            "do", 
+                            206.18, 
+                            206.36
+                        ], 
+                        [
+                            "work", 
+                            206.36, 
+                            206.59
+                        ], 
+                        [
+                            "%HESITATION", 
+                            206.62, 
+                            206.83
+                        ], 
+                        [
+                            "research", 
+                            206.83, 
+                            207.35
+                        ], 
+                        [
+                            "in", 
+                            207.35, 
+                            207.46
+                        ], 
+                        [
+                            "computer", 
+                            207.46, 
+                            207.84
+                        ], 
+                        [
+                            "science", 
+                            207.84, 
+                            208.35
+                        ], 
+                        [
+                            "and", 
+                            208.35, 
+                            208.63
+                        ], 
+                        [
+                            "I", 
+                            208.66, 
+                            208.85
+                        ], 
+                        [
+                            "just", 
+                            208.85, 
+                            209.04
+                        ], 
+                        [
+                            "been", 
+                            209.04, 
+                            209.16
+                        ], 
+                        [
+                            "doing", 
+                            209.16, 
+                            209.38
+                        ], 
+                        [
+                            "that", 
+                            209.38, 
+                            209.58
+                        ], 
+                        [
+                            "for", 
+                            209.58, 
+                            209.69
+                        ], 
+                        [
+                            "a", 
+                            209.69, 
+                            209.74
+                        ], 
+                        [
+                            "few", 
+                            209.74, 
+                            209.93
+                        ], 
+                        [
+                            "years", 
+                            209.93, 
+                            210.24
+                        ], 
+                        [
+                            "now", 
+                            210.24, 
+                            210.49
+                        ], 
+                        [
+                            "so", 
+                            210.49, 
+                            210.92
+                        ]
+                    ], 
+                    "transcript": "well I do work %HESITATION research in computer science and I just been doing that for a few years now so ", 
+                    "word_confidence": [
+                        [
+                            "well", 
+                            1.0
+                        ], 
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "do", 
+                            0.9999999999999347
+                        ], 
+                        [
+                            "work", 
+                            0.3488993648065322
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.6188413923783584
+                        ], 
+                        [
+                            "research", 
+                            0.8163726271421164
+                        ], 
+                        [
+                            "in", 
+                            0.7256499640784516
+                        ], 
+                        [
+                            "computer", 
+                            0.992828273209804
+                        ], 
+                        [
+                            "science", 
+                            0.9999999999999281
+                        ], 
+                        [
+                            "and", 
+                            0.9999999999999282
+                        ], 
+                        [
+                            "I", 
+                            0.955152208772641
+                        ], 
+                        [
+                            "just", 
+                            0.8126682958022391
+                        ], 
+                        [
+                            "been", 
+                            0.9999999999999539
+                        ], 
+                        [
+                            "doing", 
+                            0.9999999999999546
+                        ], 
+                        [
+                            "that", 
+                            0.9999999999999758
+                        ], 
+                        [
+                            "for", 
+                            1.0
+                        ], 
+                        [
+                            "a", 
+                            0.9999999999999837
+                        ], 
+                        [
+                            "few", 
+                            0.9999999999999836
+                        ], 
+                        [
+                            "years", 
+                            0.9999999999999674
+                        ], 
+                        [
+                            "now", 
+                            0.9999999999999547
+                        ], 
+                        [
+                            "so", 
+                            0.9610384930710026
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "well I do were %HESITATION research in computer science and I just been doing that for a few years now so "
+                }, 
+                {
+                    "transcript": "well I do worry %HESITATION research in computer science and I just been doing that for a few years now so "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 22, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 1.0, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            211.61, 
+                            212.08
+                        ]
+                    ], 
+                    "transcript": "%HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            1.0
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 23, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 1.0, 
+                    "timestamps": [
+                        [
+                            "I", 
+                            213.11, 
+                            213.82
+                        ]
+                    ], 
+                    "transcript": "I ", 
+                    "word_confidence": [
+                        [
+                            "I", 
+                            0.9999999999999913
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 24, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "my", 
+                            214.24, 
+                            214.54
+                        ], 
+                        [
+                            "job", 
+                            214.54, 
+                            214.82
+                        ], 
+                        [
+                            "has", 
+                            214.82, 
+                            215.07
+                        ], 
+                        [
+                            "most", 
+                            215.07, 
+                            215.37
+                        ], 
+                        [
+                            "of", 
+                            215.37, 
+                            215.43
+                        ], 
+                        [
+                            "the", 
+                            215.43, 
+                            215.49
+                        ], 
+                        [
+                            "benefits", 
+                            215.49, 
+                            215.94
+                        ], 
+                        [
+                            "of", 
+                            215.94, 
+                            216.03
+                        ]
+                    ], 
+                    "transcript": "my job has most of the benefits of "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 24, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.935, 
+                    "timestamps": [
+                        [
+                            "my", 
+                            214.24, 
+                            214.54
+                        ], 
+                        [
+                            "job", 
+                            214.54, 
+                            214.82
+                        ], 
+                        [
+                            "has", 
+                            214.82, 
+                            215.07
+                        ], 
+                        [
+                            "most", 
+                            215.07, 
+                            215.37
+                        ], 
+                        [
+                            "of", 
+                            215.37, 
+                            215.43
+                        ], 
+                        [
+                            "the", 
+                            215.43, 
+                            215.49
+                        ], 
+                        [
+                            "benefits", 
+                            215.49, 
+                            215.94
+                        ], 
+                        [
+                            "of", 
+                            215.94, 
+                            216.11
+                        ], 
+                        [
+                            "one", 
+                            216.11, 
+                            216.46
+                        ], 
+                        [
+                            "%HESITATION", 
+                            216.49, 
+                            216.95
+                        ]
+                    ], 
+                    "transcript": "my job has most of the benefits of one %HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "my", 
+                            0.9999999999999674
+                        ], 
+                        [
+                            "job", 
+                            0.999999999999961
+                        ], 
+                        [
+                            "has", 
+                            0.999999999999961
+                        ], 
+                        [
+                            "most", 
+                            0.9999999999999675
+                        ], 
+                        [
+                            "of", 
+                            0.9999999999999672
+                        ], 
+                        [
+                            "the", 
+                            0.9999999999999672
+                        ], 
+                        [
+                            "benefits", 
+                            0.999999999999963
+                        ], 
+                        [
+                            "of", 
+                            0.5684747773002422
+                        ], 
+                        [
+                            "one", 
+                            0.9668276895041785
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.8038602979191145
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "my job has most of the benefits are one %HESITATION "
+                }, 
+                {
+                    "transcript": "my job has most of the benefits of one um "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 25, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "what", 
+                            217.83, 
+                            218.05
+                        ], 
+                        [
+                            "I", 
+                            218.05, 
+                            218.14
+                        ], 
+                        [
+                            "really", 
+                            218.14, 
+                            218.47
+                        ], 
+                        [
+                            "like", 
+                            218.47, 
+                            218.77
+                        ], 
+                        [
+                            "is", 
+                            218.77, 
+                            219.22
+                        ], 
+                        [
+                            "I", 
+                            219.28, 
+                            219.37
+                        ], 
+                        [
+                            "like", 
+                            219.37, 
+                            219.57
+                        ]
+                    ], 
+                    "transcript": "what I really like is I like "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 25, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "what", 
+                            217.83, 
+                            218.05
+                        ], 
+                        [
+                            "I", 
+                            218.05, 
+                            218.14
+                        ], 
+                        [
+                            "really", 
+                            218.14, 
+                            218.47
+                        ], 
+                        [
+                            "like", 
+                            218.47, 
+                            218.77
+                        ], 
+                        [
+                            "is", 
+                            218.77, 
+                            219.22
+                        ], 
+                        [
+                            "I", 
+                            219.28, 
+                            219.37
+                        ], 
+                        [
+                            "like", 
+                            219.37, 
+                            219.6
+                        ], 
+                        [
+                            "being", 
+                            219.6, 
+                            220.14
+                        ], 
+                        [
+                            "like", 
+                            220.22, 
+                            220.52
+                        ], 
+                        [
+                            "they", 
+                            220.59, 
+                            220.76
+                        ], 
+                        [
+                            "sent", 
+                            220.76, 
+                            221.01
+                        ], 
+                        [
+                            "me", 
+                            221.01, 
+                            221.1
+                        ], 
+                        [
+                            "to", 
+                            221.1, 
+                            221.21
+                        ], 
+                        [
+                            "calm", 
+                            221.21, 
+                            221.47
+                        ]
+                    ], 
+                    "transcript": "what I really like is I like being like they sent me to calm "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 25, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "what", 
+                            217.83, 
+                            218.05
+                        ], 
+                        [
+                            "I", 
+                            218.05, 
+                            218.14
+                        ], 
+                        [
+                            "really", 
+                            218.14, 
+                            218.47
+                        ], 
+                        [
+                            "like", 
+                            218.47, 
+                            218.77
+                        ], 
+                        [
+                            "is", 
+                            218.77, 
+                            219.22
+                        ], 
+                        [
+                            "I", 
+                            219.28, 
+                            219.37
+                        ], 
+                        [
+                            "like", 
+                            219.37, 
+                            219.6
+                        ], 
+                        [
+                            "being", 
+                            219.6, 
+                            220.14
+                        ], 
+                        [
+                            "like", 
+                            220.22, 
+                            220.52
+                        ], 
+                        [
+                            "they", 
+                            220.59, 
+                            220.76
+                        ], 
+                        [
+                            "send", 
+                            220.76, 
+                            221.01
+                        ], 
+                        [
+                            "me", 
+                            221.01, 
+                            221.1
+                        ], 
+                        [
+                            "to", 
+                            221.1, 
+                            221.21
+                        ], 
+                        [
+                            "conferences", 
+                            221.21, 
+                            221.85
+                        ], 
+                        [
+                            "for", 
+                            221.85, 
+                            221.99
+                        ], 
+                        [
+                            "instance", 
+                            221.99, 
+                            222.43
+                        ], 
+                        [
+                            "but", 
+                            222.43, 
+                            222.81
+                        ], 
+                        [
+                            "probably", 
+                            223.1, 
+                            223.43
+                        ], 
+                        [
+                            "not", 
+                            223.43, 
+                            223.57
+                        ]
+                    ], 
+                    "transcript": "what I really like is I like being like they send me to conferences for instance but probably not "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 25, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.979, 
+                    "timestamps": [
+                        [
+                            "what", 
+                            217.83, 
+                            218.05
+                        ], 
+                        [
+                            "I", 
+                            218.05, 
+                            218.14
+                        ], 
+                        [
+                            "really", 
+                            218.14, 
+                            218.47
+                        ], 
+                        [
+                            "like", 
+                            218.47, 
+                            218.77
+                        ], 
+                        [
+                            "is", 
+                            218.77, 
+                            219.22
+                        ], 
+                        [
+                            "I", 
+                            219.28, 
+                            219.37
+                        ], 
+                        [
+                            "like", 
+                            219.37, 
+                            219.6
+                        ], 
+                        [
+                            "being", 
+                            219.6, 
+                            220.14
+                        ], 
+                        [
+                            "like", 
+                            220.22, 
+                            220.52
+                        ], 
+                        [
+                            "they", 
+                            220.59, 
+                            220.76
+                        ], 
+                        [
+                            "send", 
+                            220.76, 
+                            221.01
+                        ], 
+                        [
+                            "me", 
+                            221.01, 
+                            221.1
+                        ], 
+                        [
+                            "to", 
+                            221.1, 
+                            221.21
+                        ], 
+                        [
+                            "conferences", 
+                            221.21, 
+                            221.85
+                        ], 
+                        [
+                            "for", 
+                            221.85, 
+                            221.99
+                        ], 
+                        [
+                            "instance", 
+                            221.99, 
+                            222.43
+                        ], 
+                        [
+                            "but", 
+                            222.43, 
+                            222.81
+                        ], 
+                        [
+                            "probably", 
+                            223.1, 
+                            223.43
+                        ], 
+                        [
+                            "not", 
+                            223.43, 
+                            223.68
+                        ], 
+                        [
+                            "as", 
+                            223.68, 
+                            223.78
+                        ], 
+                        [
+                            "much", 
+                            223.78, 
+                            224.01
+                        ], 
+                        [
+                            "as", 
+                            224.01, 
+                            224.12
+                        ], 
+                        [
+                            "I'd", 
+                            224.12, 
+                            224.31
+                        ], 
+                        [
+                            "like", 
+                            224.31, 
+                            224.78
+                        ]
+                    ], 
+                    "transcript": "what I really like is I like being like they send me to conferences for instance but probably not as much as I'd like ", 
+                    "word_confidence": [
+                        [
+                            "what", 
+                            0.9999999999998616
+                        ], 
+                        [
+                            "I", 
+                            0.9999999999998617
+                        ], 
+                        [
+                            "really", 
+                            0.9999999999998036
+                        ], 
+                        [
+                            "like", 
+                            0.999999999999869
+                        ], 
+                        [
+                            "is", 
+                            0.9502687524646162
+                        ], 
+                        [
+                            "I", 
+                            0.5234939081267717
+                        ], 
+                        [
+                            "like", 
+                            0.9907391448000731
+                        ], 
+                        [
+                            "being", 
+                            0.9999999999998944
+                        ], 
+                        [
+                            "like", 
+                            0.9999999999998713
+                        ], 
+                        [
+                            "they", 
+                            0.9999999999998903
+                        ], 
+                        [
+                            "send", 
+                            0.752798037894521
+                        ], 
+                        [
+                            "me", 
+                            0.999999999999879
+                        ], 
+                        [
+                            "to", 
+                            0.9999999999998714
+                        ], 
+                        [
+                            "conferences", 
+                            0.9999999999998715
+                        ], 
+                        [
+                            "for", 
+                            0.9999999999998689
+                        ], 
+                        [
+                            "instance", 
+                            0.9999999999998695
+                        ], 
+                        [
+                            "but", 
+                            0.9999999999998527
+                        ], 
+                        [
+                            "probably", 
+                            0.9999999999999019
+                        ], 
+                        [
+                            "not", 
+                            0.9999999999999016
+                        ], 
+                        [
+                            "as", 
+                            0.9999999999999181
+                        ], 
+                        [
+                            "much", 
+                            0.9999999999999263
+                        ], 
+                        [
+                            "as", 
+                            0.9999999999999509
+                        ], 
+                        [
+                            "I'd", 
+                            0.9999999999999508
+                        ], 
+                        [
+                            "like", 
+                            0.9867229519627234
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "what I really like is like being like they send me to conferences for instance but probably not as much as I'd like "
+                }, 
+                {
+                    "transcript": "what I really like is I like being like they sent me to conferences for instance but probably not as much as I'd like "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 26, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 1.0, 
+                    "timestamps": [
+                        [
+                            "but", 
+                            225.12, 
+                            225.48
+                        ], 
+                        [
+                            "%HESITATION", 
+                            225.48, 
+                            225.89
+                        ]
+                    ], 
+                    "transcript": "but %HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "but", 
+                            1.0
+                        ], 
+                        [
+                            "%HESITATION", 
+                            1.0
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 27, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "you", 
+                            226.31, 
+                            226.4
+                        ], 
+                        [
+                            "know", 
+                            226.4, 
+                            226.66
+                        ], 
+                        [
+                            "that's", 
+                            226.73, 
+                            226.97
+                        ], 
+                        [
+                            "just", 
+                            226.97, 
+                            227.21
+                        ], 
+                        [
+                            "nice", 
+                            227.21, 
+                            227.51
+                        ], 
+                        [
+                            "being", 
+                            227.51, 
+                            227.92
+                        ]
+                    ], 
+                    "transcript": "you know that's just nice being "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 27, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "you", 
+                            226.31, 
+                            226.4
+                        ], 
+                        [
+                            "know", 
+                            226.4, 
+                            226.66
+                        ], 
+                        [
+                            "that's", 
+                            226.73, 
+                            226.97
+                        ], 
+                        [
+                            "just", 
+                            226.97, 
+                            227.21
+                        ], 
+                        [
+                            "nice", 
+                            227.21, 
+                            227.51
+                        ], 
+                        [
+                            "being", 
+                            227.51, 
+                            227.91
+                        ], 
+                        [
+                            "you", 
+                            227.91, 
+                            228.03
+                        ], 
+                        [
+                            "know", 
+                            228.03, 
+                            228.35
+                        ], 
+                        [
+                            "having", 
+                            228.6, 
+                            228.91
+                        ], 
+                        [
+                            "a", 
+                            228.91, 
+                            229.0
+                        ], 
+                        [
+                            "company", 
+                            229.0, 
+                            229.37
+                        ], 
+                        [
+                            "being", 
+                            229.37, 
+                            229.63
+                        ], 
+                        [
+                            "able", 
+                            229.63, 
+                            229.8
+                        ], 
+                        [
+                            "to", 
+                            229.8, 
+                            229.88
+                        ], 
+                        [
+                            "give", 
+                            229.88, 
+                            230.05
+                        ]
+                    ], 
+                    "transcript": "you know that's just nice being you know having a company being able to give "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 27, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.957, 
+                    "timestamps": [
+                        [
+                            "you", 
+                            226.31, 
+                            226.4
+                        ], 
+                        [
+                            "know", 
+                            226.4, 
+                            226.66
+                        ], 
+                        [
+                            "that's", 
+                            226.73, 
+                            226.97
+                        ], 
+                        [
+                            "just", 
+                            226.97, 
+                            227.21
+                        ], 
+                        [
+                            "nice", 
+                            227.21, 
+                            227.51
+                        ], 
+                        [
+                            "being", 
+                            227.51, 
+                            227.91
+                        ], 
+                        [
+                            "you", 
+                            227.91, 
+                            228.03
+                        ], 
+                        [
+                            "know", 
+                            228.03, 
+                            228.35
+                        ], 
+                        [
+                            "having", 
+                            228.6, 
+                            228.91
+                        ], 
+                        [
+                            "a", 
+                            228.91, 
+                            229.0
+                        ], 
+                        [
+                            "company", 
+                            229.0, 
+                            229.37
+                        ], 
+                        [
+                            "being", 
+                            229.37, 
+                            229.63
+                        ], 
+                        [
+                            "able", 
+                            229.63, 
+                            229.8
+                        ], 
+                        [
+                            "to", 
+                            229.8, 
+                            229.88
+                        ], 
+                        [
+                            "give", 
+                            229.88, 
+                            230.04
+                        ], 
+                        [
+                            "you", 
+                            230.04, 
+                            230.13
+                        ], 
+                        [
+                            "time", 
+                            230.13, 
+                            230.43
+                        ], 
+                        [
+                            "to", 
+                            230.43, 
+                            230.51
+                        ], 
+                        [
+                            "do", 
+                            230.51, 
+                            230.64
+                        ], 
+                        [
+                            "that", 
+                            230.64, 
+                            230.87
+                        ], 
+                        [
+                            "sort", 
+                            230.87, 
+                            231.07
+                        ], 
+                        [
+                            "of", 
+                            231.07, 
+                            231.15
+                        ], 
+                        [
+                            "thing", 
+                            231.15, 
+                            231.38
+                        ], 
+                        [
+                            "and", 
+                            231.38, 
+                            231.67
+                        ], 
+                        [
+                            "sort", 
+                            231.67, 
+                            232.09
+                        ]
+                    ], 
+                    "transcript": "you know that's just nice being you know having a company being able to give you time to do that sort of thing and sort ", 
+                    "word_confidence": [
+                        [
+                            "you", 
+                            1.0
+                        ], 
+                        [
+                            "know", 
+                            1.0
+                        ], 
+                        [
+                            "that's", 
+                            1.0
+                        ], 
+                        [
+                            "just", 
+                            1.0
+                        ], 
+                        [
+                            "nice", 
+                            1.0
+                        ], 
+                        [
+                            "being", 
+                            1.0
+                        ], 
+                        [
+                            "you", 
+                            0.9999999999999675
+                        ], 
+                        [
+                            "know", 
+                            0.9896680849524491
+                        ], 
+                        [
+                            "having", 
+                            0.894220451749471
+                        ], 
+                        [
+                            "a", 
+                            0.5240497035064475
+                        ], 
+                        [
+                            "company", 
+                            0.9999999999999447
+                        ], 
+                        [
+                            "being", 
+                            0.9999999999999374
+                        ], 
+                        [
+                            "able", 
+                            0.999999999999941
+                        ], 
+                        [
+                            "to", 
+                            0.9999999999999345
+                        ], 
+                        [
+                            "give", 
+                            0.9623043365295323
+                        ], 
+                        [
+                            "you", 
+                            0.6141349169721182
+                        ], 
+                        [
+                            "time", 
+                            0.9939058918519963
+                        ], 
+                        [
+                            "to", 
+                            0.9999999999999342
+                        ], 
+                        [
+                            "do", 
+                            0.9999999999999415
+                        ], 
+                        [
+                            "that", 
+                            0.9999999999999348
+                        ], 
+                        [
+                            "sort", 
+                            0.9999999999999348
+                        ], 
+                        [
+                            "of", 
+                            0.9999999999999672
+                        ], 
+                        [
+                            "thing", 
+                            0.9999999999999889
+                        ], 
+                        [
+                            "and", 
+                            0.980365333281872
+                        ], 
+                        [
+                            "sort", 
+                            0.746121873968878
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "you know that's just nice being you know having the company being able to give you time to do that sort of thing and sort "
+                }, 
+                {
+                    "transcript": "you know that's just nice being you know having a company being able to give you time to do that sort of thing and sorted "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 28, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            232.59, 
+                            232.8
+                        ], 
+                        [
+                            "they", 
+                            232.8, 
+                            232.94
+                        ], 
+                        [
+                            "also", 
+                            232.94, 
+                            233.54
+                        ], 
+                        [
+                            "a", 
+                            233.83, 
+                            233.96
+                        ], 
+                        [
+                            "really", 
+                            233.96, 
+                            234.27
+                        ]
+                    ], 
+                    "transcript": "%HESITATION they also a really "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 28, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.853, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            232.59, 
+                            232.8
+                        ], 
+                        [
+                            "they", 
+                            232.8, 
+                            232.94
+                        ], 
+                        [
+                            "also", 
+                            232.94, 
+                            233.54
+                        ], 
+                        [
+                            "a", 
+                            233.83, 
+                            233.96
+                        ], 
+                        [
+                            "really", 
+                            233.96, 
+                            234.23
+                        ], 
+                        [
+                            "important", 
+                            234.23, 
+                            234.61
+                        ], 
+                        [
+                            "thing", 
+                            234.61, 
+                            234.75
+                        ], 
+                        [
+                            "to", 
+                            234.75, 
+                            234.84
+                        ], 
+                        [
+                            "me", 
+                            234.84, 
+                            235.03
+                        ], 
+                        [
+                            "is", 
+                            235.03, 
+                            235.2
+                        ], 
+                        [
+                            "when", 
+                            235.2, 
+                            235.34
+                        ], 
+                        [
+                            "they", 
+                            235.34, 
+                            235.6
+                        ], 
+                        [
+                            "are", 
+                            235.6, 
+                            235.98
+                        ]
+                    ], 
+                    "transcript": "%HESITATION they also a really important thing to me is when they are ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.6039023243377107
+                        ], 
+                        [
+                            "they", 
+                            0.9151219266437867
+                        ], 
+                        [
+                            "also", 
+                            0.9960925664936242
+                        ], 
+                        [
+                            "a", 
+                            0.8110820479521922
+                        ], 
+                        [
+                            "really", 
+                            0.9999999999999645
+                        ], 
+                        [
+                            "important", 
+                            0.9999999999999708
+                        ], 
+                        [
+                            "thing", 
+                            0.9999999999999719
+                        ], 
+                        [
+                            "to", 
+                            0.9999999999999672
+                        ], 
+                        [
+                            "me", 
+                            0.9999999999999508
+                        ], 
+                        [
+                            "is", 
+                            0.9999999999999756
+                        ], 
+                        [
+                            "when", 
+                            0.9999999999999752
+                        ], 
+                        [
+                            "they", 
+                            0.658378260853312
+                        ], 
+                        [
+                            "are", 
+                            0.3537352564405419
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION they also a really important thing to me is when they %HESITATION "
+                }, 
+                {
+                    "transcript": "are they also a really important thing to me is when they are "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 29, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "they", 
+                            236.96, 
+                            237.1
+                        ], 
+                        [
+                            "pay", 
+                            237.1, 
+                            237.35
+                        ], 
+                        [
+                            "for", 
+                            237.35, 
+                            237.68
+                        ], 
+                        [
+                            "continuing", 
+                            237.68, 
+                            238.28
+                        ], 
+                        [
+                            "a", 
+                            238.28, 
+                            238.39
+                        ]
+                    ], 
+                    "transcript": "they pay for continuing a "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 29, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.985, 
+                    "timestamps": [
+                        [
+                            "they", 
+                            236.96, 
+                            237.1
+                        ], 
+                        [
+                            "pay", 
+                            237.1, 
+                            237.35
+                        ], 
+                        [
+                            "for", 
+                            237.35, 
+                            237.68
+                        ], 
+                        [
+                            "continuing", 
+                            237.68, 
+                            238.28
+                        ], 
+                        [
+                            "education", 
+                            238.28, 
+                            239.13
+                        ]
+                    ], 
+                    "transcript": "they pay for continuing education ", 
+                    "word_confidence": [
+                        [
+                            "they", 
+                            0.9999999999999839
+                        ], 
+                        [
+                            "pay", 
+                            1.0
+                        ], 
+                        [
+                            "for", 
+                            0.9671051765330613
+                        ], 
+                        [
+                            "continuing", 
+                            0.976530929655907
+                        ], 
+                        [
+                            "education", 
+                            0.9907440252814871
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "they pay for a continuing education "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 30, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "like", 
+                            239.48, 
+                            239.89
+                        ], 
+                        [
+                            "I", 
+                            239.95, 
+                            240.17
+                        ], 
+                        [
+                            "I", 
+                            240.17, 
+                            240.36
+                        ], 
+                        [
+                            "get", 
+                            240.36, 
+                            240.58
+                        ], 
+                        [
+                            "night", 
+                            240.58, 
+                            240.83
+                        ], 
+                        [
+                            "courses", 
+                            240.83, 
+                            241.22
+                        ]
+                    ], 
+                    "transcript": "like I I get night courses "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 30, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "like", 
+                            239.48, 
+                            239.89
+                        ], 
+                        [
+                            "I", 
+                            239.95, 
+                            240.17
+                        ], 
+                        [
+                            "I", 
+                            240.17, 
+                            240.36
+                        ], 
+                        [
+                            "get", 
+                            240.36, 
+                            240.58
+                        ], 
+                        [
+                            "night", 
+                            240.58, 
+                            240.83
+                        ], 
+                        [
+                            "courses", 
+                            240.83, 
+                            241.28
+                        ], 
+                        [
+                            "that", 
+                            241.28, 
+                            241.47
+                        ], 
+                        [
+                            "they're", 
+                            241.47, 
+                            241.82
+                        ], 
+                        [
+                            "they'll", 
+                            242.05, 
+                            242.2
+                        ], 
+                        [
+                            "cover", 
+                            242.2, 
+                            242.56
+                        ], 
+                        [
+                            "right", 
+                            242.56, 
+                            242.8
+                        ], 
+                        [
+                            "now", 
+                            242.8, 
+                            243.09
+                        ], 
+                        [
+                            "and", 
+                            243.09, 
+                            243.22
+                        ]
+                    ], 
+                    "transcript": "like I I get night courses that they're they'll cover right now and "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 30, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.987, 
+                    "timestamps": [
+                        [
+                            "like", 
+                            239.48, 
+                            239.89
+                        ], 
+                        [
+                            "I", 
+                            239.95, 
+                            240.17
+                        ], 
+                        [
+                            "I", 
+                            240.17, 
+                            240.36
+                        ], 
+                        [
+                            "get", 
+                            240.36, 
+                            240.58
+                        ], 
+                        [
+                            "night", 
+                            240.58, 
+                            240.83
+                        ], 
+                        [
+                            "courses", 
+                            240.83, 
+                            241.28
+                        ], 
+                        [
+                            "that", 
+                            241.28, 
+                            241.47
+                        ], 
+                        [
+                            "they're", 
+                            241.47, 
+                            241.82
+                        ], 
+                        [
+                            "they'll", 
+                            242.05, 
+                            242.2
+                        ], 
+                        [
+                            "cover", 
+                            242.2, 
+                            242.56
+                        ], 
+                        [
+                            "right", 
+                            242.56, 
+                            242.8
+                        ], 
+                        [
+                            "now", 
+                            242.8, 
+                            243.09
+                        ], 
+                        [
+                            "and", 
+                            243.09, 
+                            243.21
+                        ], 
+                        [
+                            "that's", 
+                            243.21, 
+                            243.43
+                        ], 
+                        [
+                            "really", 
+                            243.43, 
+                            243.7
+                        ], 
+                        [
+                            "good", 
+                            243.7, 
+                            244.06
+                        ]
+                    ], 
+                    "transcript": "like I I get night courses that they're they'll cover right now and that's really good ", 
+                    "word_confidence": [
+                        [
+                            "like", 
+                            0.9999999999998693
+                        ], 
+                        [
+                            "I", 
+                            0.9999999999998826
+                        ], 
+                        [
+                            "I", 
+                            0.9999999999998831
+                        ], 
+                        [
+                            "get", 
+                            0.9999999999998838
+                        ], 
+                        [
+                            "night", 
+                            0.9999999999998822
+                        ], 
+                        [
+                            "courses", 
+                            0.9999999999998695
+                        ], 
+                        [
+                            "that", 
+                            0.9999999999998691
+                        ], 
+                        [
+                            "they're", 
+                            0.910076733367291
+                        ], 
+                        [
+                            "they'll", 
+                            0.9000741135837083
+                        ], 
+                        [
+                            "cover", 
+                            0.9848493513131409
+                        ], 
+                        [
+                            "right", 
+                            0.9999999999998911
+                        ], 
+                        [
+                            "now", 
+                            0.9999999999998996
+                        ], 
+                        [
+                            "and", 
+                            0.9999999999999182
+                        ], 
+                        [
+                            "that's", 
+                            0.9999999999999264
+                        ], 
+                        [
+                            "really", 
+                            0.9999999999999429
+                        ], 
+                        [
+                            "good", 
+                            0.9859031672813052
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "like I get night courses that they're they'll cover right now and that's really good "
+                }, 
+                {
+                    "transcript": "like I I I get night courses that they're they'll cover right now and that's really good "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 31, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.989, 
+                    "timestamps": [
+                        [
+                            "right", 
+                            248.42, 
+                            248.76
+                        ]
+                    ], 
+                    "transcript": "right ", 
+                    "word_confidence": [
+                        [
+                            "right", 
+                            0.9889799962712712
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "write "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 32, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.0, 
+                    "timestamps": [], 
+                    "transcript": "no "
+                }, 
+                {
+                    "transcript": "yeah "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 33, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.974, 
+                    "timestamps": [
+                        [
+                            "right", 
+                            295.02, 
+                            295.39
+                        ]
+                    ], 
+                    "transcript": "right ", 
+                    "word_confidence": [
+                        [
+                            "right", 
+                            0.9738947240253716
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "write "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}

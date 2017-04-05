@@ -1,0 +1,63 @@
+digraph G {
+
+            c_f_c -> c_f_c;
+            c_f_c -> c_e_c;
+            c_f_c -> c_rps_c;
+            c_f_c -> c_f_t;
+            c_f_c -> c_e_t;
+            c_f_c -> c_rps_t;
+            
+            c_e_c -> c_f_c;
+            c_e_c -> c_e_c;
+            c_e_c -> c_rps_c;
+            c_e_c -> c_f_t;
+            c_e_c -> c_e_t;
+            c_e_c -> c_rps_t;
+            
+            c_rps_c -> c_f_c;
+            c_rps_c -> c_e_c;
+            c_rps_c -> c_rps_c;
+            c_rps_c -> c_f_t;
+            c_rps_c -> c_e_t;
+            c_rps_c -> c_rps_t;
+            
+            t_f_c -> c_f_c;
+            t_f_c -> c_e_c;
+            t_f_c -> c_rps_c;
+            t_f_c -> c_f_t;
+            t_f_c -> c_e_t;
+            t_f_c -> c_rps_t;
+            
+            t_e_c -> c_f_c;
+            t_e_c -> c_e_c;
+            t_e_c -> c_rps_c;
+            t_e_c -> c_f_t;
+            t_e_c -> c_e_t;
+            t_e_c -> c_rps_t; 
+            
+            t_f_t -> t_f_c;
+            t_f_t -> t_e_c;
+            t_f_t -> t_f_t;
+            t_f_t -> t_e_t;
+            
+            t_e_t -> t_f_c;
+            t_e_t -> t_e_c;
+            t_e_t -> t_f_t;
+            t_e_t -> t_e_t;
+            
+            c_f_t -> t_f_c;
+            c_f_t -> t_e_c;
+            c_f_t -> t_f_t;
+            c_f_t -> t_e_t;
+            
+            c_e_t -> t_f_c;
+            c_e_t -> t_e_c;
+            c_e_t -> t_f_t;
+            c_e_t -> t_e_t;
+            
+            c_rps_t -> t_f_c;
+            c_rps_t -> t_e_c;
+            c_rps_t -> t_f_t;
+            c_rps_t -> t_e_t;
+            
+        }

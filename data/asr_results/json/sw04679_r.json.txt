@@ -1,0 +1,4926 @@
+{
+    "result_index": 0, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.0, 
+                    "timestamps": [], 
+                    "transcript": "that's "
+                }, 
+                {
+                    "transcript": "it's "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 1, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.96, 
+                    "timestamps": [
+                        [
+                            "okay", 
+                            1.12, 
+                            1.72
+                        ]
+                    ], 
+                    "transcript": "okay ", 
+                    "word_confidence": [
+                        [
+                            "okay", 
+                            0.9599872523724869
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "okay you "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 2, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "well", 
+                            2.25, 
+                            2.58
+                        ], 
+                        [
+                            "I", 
+                            2.58, 
+                            2.68
+                        ], 
+                        [
+                            "think", 
+                            2.68, 
+                            2.94
+                        ], 
+                        [
+                            "the", 
+                            2.94, 
+                            3.02
+                        ], 
+                        [
+                            "court", 
+                            3.02, 
+                            3.37
+                        ], 
+                        [
+                            "systems", 
+                            3.37, 
+                            3.96
+                        ]
+                    ], 
+                    "transcript": "well I think the court systems "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 2, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "well", 
+                            2.25, 
+                            2.58
+                        ], 
+                        [
+                            "I", 
+                            2.58, 
+                            2.68
+                        ], 
+                        [
+                            "think", 
+                            2.68, 
+                            2.94
+                        ], 
+                        [
+                            "the", 
+                            2.94, 
+                            3.02
+                        ], 
+                        [
+                            "court", 
+                            3.02, 
+                            3.37
+                        ], 
+                        [
+                            "systems", 
+                            3.37, 
+                            4.0
+                        ], 
+                        [
+                            "could", 
+                            4.18, 
+                            4.45
+                        ], 
+                        [
+                            "stand", 
+                            4.45, 
+                            4.77
+                        ], 
+                        [
+                            "some", 
+                            4.77, 
+                            4.91
+                        ], 
+                        [
+                            "improvement", 
+                            4.91, 
+                            5.81
+                        ]
+                    ], 
+                    "transcript": "well I think the court systems could stand some improvement "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 2, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.999, 
+                    "timestamps": [
+                        [
+                            "well", 
+                            2.25, 
+                            2.58
+                        ], 
+                        [
+                            "I", 
+                            2.58, 
+                            2.68
+                        ], 
+                        [
+                            "think", 
+                            2.68, 
+                            2.94
+                        ], 
+                        [
+                            "the", 
+                            2.94, 
+                            3.02
+                        ], 
+                        [
+                            "court", 
+                            3.02, 
+                            3.37
+                        ], 
+                        [
+                            "systems", 
+                            3.37, 
+                            4.0
+                        ], 
+                        [
+                            "could", 
+                            4.18, 
+                            4.45
+                        ], 
+                        [
+                            "stand", 
+                            4.45, 
+                            4.77
+                        ], 
+                        [
+                            "some", 
+                            4.77, 
+                            4.91
+                        ], 
+                        [
+                            "improvement", 
+                            4.91, 
+                            5.81
+                        ], 
+                        [
+                            "%HESITATION", 
+                            5.95, 
+                            6.59
+                        ]
+                    ], 
+                    "transcript": "well I think the court systems could stand some improvement %HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "well", 
+                            1.0
+                        ], 
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "think", 
+                            1.0
+                        ], 
+                        [
+                            "the", 
+                            1.0
+                        ], 
+                        [
+                            "court", 
+                            1.0
+                        ], 
+                        [
+                            "systems", 
+                            0.9955670207042538
+                        ], 
+                        [
+                            "could", 
+                            1.0
+                        ], 
+                        [
+                            "stand", 
+                            1.0
+                        ], 
+                        [
+                            "some", 
+                            1.0
+                        ], 
+                        [
+                            "improvement", 
+                            0.9972762581305321
+                        ], 
+                        [
+                            "%HESITATION", 
+                            1.0
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 3, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "trial", 
+                            7.46, 
+                            7.85
+                        ], 
+                        [
+                            "by", 
+                            7.85, 
+                            8.02
+                        ], 
+                        [
+                            "jury", 
+                            8.02, 
+                            8.46
+                        ], 
+                        [
+                            "is", 
+                            8.46, 
+                            8.63
+                        ], 
+                        [
+                            "good", 
+                            8.63, 
+                            9.23
+                        ]
+                    ], 
+                    "transcript": "trial by jury is good "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 3, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.904, 
+                    "timestamps": [
+                        [
+                            "trial", 
+                            7.46, 
+                            7.85
+                        ], 
+                        [
+                            "by", 
+                            7.85, 
+                            8.02
+                        ], 
+                        [
+                            "jury", 
+                            8.02, 
+                            8.46
+                        ], 
+                        [
+                            "is", 
+                            8.46, 
+                            8.63
+                        ], 
+                        [
+                            "good", 
+                            8.63, 
+                            9.27
+                        ], 
+                        [
+                            "but", 
+                            9.4, 
+                            9.55
+                        ], 
+                        [
+                            "a", 
+                            9.55, 
+                            9.62
+                        ], 
+                        [
+                            "lot", 
+                            9.62, 
+                            9.88
+                        ], 
+                        [
+                            "of", 
+                            9.88, 
+                            9.95
+                        ], 
+                        [
+                            "time", 
+                            9.95, 
+                            10.56
+                        ], 
+                        [
+                            "it", 
+                            10.56, 
+                            10.94
+                        ]
+                    ], 
+                    "transcript": "trial by jury is good but a lot of time it ", 
+                    "word_confidence": [
+                        [
+                            "trial", 
+                            1.0
+                        ], 
+                        [
+                            "by", 
+                            1.0
+                        ], 
+                        [
+                            "jury", 
+                            1.0
+                        ], 
+                        [
+                            "is", 
+                            0.8027589566851208
+                        ], 
+                        [
+                            "good", 
+                            0.9901407625750691
+                        ], 
+                        [
+                            "but", 
+                            0.3898004341230739
+                        ], 
+                        [
+                            "a", 
+                            0.7123534654173987
+                        ], 
+                        [
+                            "lot", 
+                            0.8187151552195705
+                        ], 
+                        [
+                            "of", 
+                            0.9999999999999953
+                        ], 
+                        [
+                            "time", 
+                            0.9986646947897724
+                        ], 
+                        [
+                            "it", 
+                            0.6770688001298814
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "trial by jury is good put a lot of time it "
+                }, 
+                {
+                    "transcript": "trial by jury is good but a lot of time in it "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 4, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.871, 
+                    "timestamps": [
+                        [
+                            "you", 
+                            11.97, 
+                            12.05
+                        ], 
+                        [
+                            "know", 
+                            12.05, 
+                            12.24
+                        ], 
+                        [
+                            "a", 
+                            12.24, 
+                            12.33
+                        ], 
+                        [
+                            "lot", 
+                            12.33, 
+                            12.53
+                        ], 
+                        [
+                            "of", 
+                            12.53, 
+                            12.61
+                        ], 
+                        [
+                            "cases", 
+                            12.61, 
+                            13.33
+                        ]
+                    ], 
+                    "transcript": "you know a lot of cases ", 
+                    "word_confidence": [
+                        [
+                            "you", 
+                            0.3312106778352333
+                        ], 
+                        [
+                            "know", 
+                            0.40319739619871464
+                        ], 
+                        [
+                            "a", 
+                            0.9999999999999785
+                        ], 
+                        [
+                            "lot", 
+                            0.9999999999999745
+                        ], 
+                        [
+                            "of", 
+                            0.9999999999999815
+                        ], 
+                        [
+                            "cases", 
+                            0.9886173775686841
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "now a lot of cases "
+                }, 
+                {
+                    "transcript": "a lot of cases "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 5, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            14.15, 
+                            14.8
+                        ], 
+                        [
+                            "is", 
+                            15.03, 
+                            15.22
+                        ], 
+                        [
+                            "certain", 
+                            15.22, 
+                            15.72
+                        ]
+                    ], 
+                    "transcript": "%HESITATION is certain "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 5, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.977, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            14.15, 
+                            14.8
+                        ], 
+                        [
+                            "is", 
+                            15.03, 
+                            15.22
+                        ], 
+                        [
+                            "circumstantial", 
+                            15.22, 
+                            16.23
+                        ], 
+                        [
+                            "evidence", 
+                            16.23, 
+                            16.89
+                        ], 
+                        [
+                            "that", 
+                            16.89, 
+                            17.28
+                        ]
+                    ], 
+                    "transcript": "%HESITATION is circumstantial evidence that ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            1.0
+                        ], 
+                        [
+                            "is", 
+                            0.6771591508551754
+                        ], 
+                        [
+                            "circumstantial", 
+                            0.9999999999999933
+                        ], 
+                        [
+                            "evidence", 
+                            0.9999999999999972
+                        ], 
+                        [
+                            "that", 
+                            0.9855301993612321
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION it's circumstantial evidence that "
+                }, 
+                {
+                    "transcript": "%HESITATION its circumstantial evidence that "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 6, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.9, 
+                    "timestamps": [
+                        [
+                            "it's", 
+                            18.08, 
+                            18.26
+                        ], 
+                        [
+                            "convicts", 
+                            18.26, 
+                            18.83
+                        ], 
+                        [
+                            "a", 
+                            18.83, 
+                            18.9
+                        ], 
+                        [
+                            "person", 
+                            18.9, 
+                            19.56
+                        ]
+                    ], 
+                    "transcript": "it's convicts a person ", 
+                    "word_confidence": [
+                        [
+                            "it's", 
+                            0.4833792491649296
+                        ], 
+                        [
+                            "convicts", 
+                            0.9749267557140515
+                        ], 
+                        [
+                            "a", 
+                            0.5866087853473131
+                        ], 
+                        [
+                            "person", 
+                            0.982754202050902
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "yeah it's convicts a person "
+                }, 
+                {
+                    "transcript": "dates convicts a person "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 7, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "which", 
+                            20.22, 
+                            20.43
+                        ], 
+                        [
+                            "I", 
+                            20.43, 
+                            20.56
+                        ], 
+                        [
+                            "don't", 
+                            20.56, 
+                            20.87
+                        ], 
+                        [
+                            "think", 
+                            20.87, 
+                            21.21
+                        ], 
+                        [
+                            "is", 
+                            21.21, 
+                            21.38
+                        ], 
+                        [
+                            "all", 
+                            21.38, 
+                            21.62
+                        ], 
+                        [
+                            "the", 
+                            21.62, 
+                            21.81
+                        ], 
+                        [
+                            "time", 
+                            21.81, 
+                            21.97
+                        ]
+                    ], 
+                    "transcript": "which I don't think is all the time "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 7, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.954, 
+                    "timestamps": [
+                        [
+                            "which", 
+                            20.22, 
+                            20.43
+                        ], 
+                        [
+                            "I", 
+                            20.43, 
+                            20.56
+                        ], 
+                        [
+                            "don't", 
+                            20.56, 
+                            20.87
+                        ], 
+                        [
+                            "think", 
+                            20.87, 
+                            21.21
+                        ], 
+                        [
+                            "is", 
+                            21.21, 
+                            21.38
+                        ], 
+                        [
+                            "all", 
+                            21.38, 
+                            21.62
+                        ], 
+                        [
+                            "the", 
+                            21.62, 
+                            21.81
+                        ], 
+                        [
+                            "time", 
+                            21.81, 
+                            22.18
+                        ], 
+                        [
+                            "good", 
+                            22.18, 
+                            22.6
+                        ], 
+                        [
+                            "because", 
+                            22.6, 
+                            23.18
+                        ]
+                    ], 
+                    "transcript": "which I don't think is all the time good because ", 
+                    "word_confidence": [
+                        [
+                            "which", 
+                            1.0
+                        ], 
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "don't", 
+                            1.0
+                        ], 
+                        [
+                            "think", 
+                            0.9935063867296037
+                        ], 
+                        [
+                            "is", 
+                            0.6339856227935765
+                        ], 
+                        [
+                            "all", 
+                            0.9999999999999823
+                        ], 
+                        [
+                            "the", 
+                            0.7028028471803092
+                        ], 
+                        [
+                            "time", 
+                            0.9999999999999882
+                        ], 
+                        [
+                            "good", 
+                            0.9800426059052774
+                        ], 
+                        [
+                            "because", 
+                            0.990579747392568
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "which I don't think is all of the time good because "
+                }, 
+                {
+                    "transcript": "which I don't think it's all the time good because "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 8, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "sometimes", 
+                            23.74, 
+                            24.4
+                        ], 
+                        [
+                            "it's", 
+                            24.4, 
+                            24.52
+                        ], 
+                        [
+                            "hard", 
+                            24.52, 
+                            24.81
+                        ], 
+                        [
+                            "to", 
+                            24.81, 
+                            24.9
+                        ], 
+                        [
+                            "get", 
+                            24.9, 
+                            25.07
+                        ], 
+                        [
+                            "all", 
+                            25.07, 
+                            25.27
+                        ], 
+                        [
+                            "the", 
+                            25.27, 
+                            25.47
+                        ]
+                    ], 
+                    "transcript": "sometimes it's hard to get all the "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 8, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "sometimes", 
+                            23.74, 
+                            24.4
+                        ], 
+                        [
+                            "it's", 
+                            24.4, 
+                            24.52
+                        ], 
+                        [
+                            "hard", 
+                            24.52, 
+                            24.81
+                        ], 
+                        [
+                            "to", 
+                            24.81, 
+                            24.9
+                        ], 
+                        [
+                            "get", 
+                            24.9, 
+                            25.07
+                        ], 
+                        [
+                            "all", 
+                            25.07, 
+                            25.27
+                        ], 
+                        [
+                            "the", 
+                            25.27, 
+                            25.34
+                        ], 
+                        [
+                            "facts", 
+                            25.34, 
+                            25.98
+                        ], 
+                        [
+                            "and", 
+                            26.12, 
+                            26.32
+                        ], 
+                        [
+                            "improve", 
+                            26.32, 
+                            26.83
+                        ], 
+                        [
+                            "person", 
+                            26.83, 
+                            27.3
+                        ], 
+                        [
+                            "in", 
+                            27.3, 
+                            27.47
+                        ]
+                    ], 
+                    "transcript": "sometimes it's hard to get all the facts and improve person in "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 8, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.746, 
+                    "timestamps": [
+                        [
+                            "sometimes", 
+                            23.74, 
+                            24.4
+                        ], 
+                        [
+                            "it's", 
+                            24.4, 
+                            24.52
+                        ], 
+                        [
+                            "hard", 
+                            24.52, 
+                            24.81
+                        ], 
+                        [
+                            "to", 
+                            24.81, 
+                            24.9
+                        ], 
+                        [
+                            "get", 
+                            24.9, 
+                            25.07
+                        ], 
+                        [
+                            "all", 
+                            25.07, 
+                            25.27
+                        ], 
+                        [
+                            "the", 
+                            25.27, 
+                            25.34
+                        ], 
+                        [
+                            "facts", 
+                            25.34, 
+                            25.98
+                        ], 
+                        [
+                            "and", 
+                            26.12, 
+                            26.32
+                        ], 
+                        [
+                            "improve", 
+                            26.32, 
+                            26.83
+                        ], 
+                        [
+                            "person", 
+                            26.83, 
+                            27.3
+                        ], 
+                        [
+                            "in", 
+                            27.3, 
+                            27.54
+                        ], 
+                        [
+                            "sin", 
+                            27.54, 
+                            27.9
+                        ]
+                    ], 
+                    "transcript": "sometimes it's hard to get all the facts and improve person in sin ", 
+                    "word_confidence": [
+                        [
+                            "sometimes", 
+                            0.8733126597672964
+                        ], 
+                        [
+                            "it's", 
+                            0.6570743507972284
+                        ], 
+                        [
+                            "hard", 
+                            0.9814205345131393
+                        ], 
+                        [
+                            "to", 
+                            0.9999999999999909
+                        ], 
+                        [
+                            "get", 
+                            0.9999999999999981
+                        ], 
+                        [
+                            "all", 
+                            1.0
+                        ], 
+                        [
+                            "the", 
+                            0.9999999999999672
+                        ], 
+                        [
+                            "facts", 
+                            0.9924630623013818
+                        ], 
+                        [
+                            "and", 
+                            0.6924905396052734
+                        ], 
+                        [
+                            "improve", 
+                            0.24373308312083186
+                        ], 
+                        [
+                            "person", 
+                            0.9812160083702043
+                        ], 
+                        [
+                            "in", 
+                            0.37784432762324954
+                        ], 
+                        [
+                            "sin", 
+                            0.22291393712301247
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "sometimes it's hard to get all the facts and improve person ends and "
+                }, 
+                {
+                    "transcript": "sometimes it's hard to get all the facts and improve person innocent "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 9, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            29.02, 
+                            29.19
+                        ], 
+                        [
+                            "mean", 
+                            29.19, 
+                            29.41
+                        ], 
+                        [
+                            "Prue", 
+                            29.41, 
+                            29.74
+                        ], 
+                        [
+                            "person", 
+                            29.74, 
+                            30.22
+                        ], 
+                        [
+                            "guilty", 
+                            30.22, 
+                            30.74
+                        ]
+                    ], 
+                    "transcript": "I mean Prue person guilty "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 9, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            29.02, 
+                            29.19
+                        ], 
+                        [
+                            "mean", 
+                            29.19, 
+                            29.41
+                        ], 
+                        [
+                            "Prue", 
+                            29.41, 
+                            29.74
+                        ], 
+                        [
+                            "person", 
+                            29.74, 
+                            30.22
+                        ], 
+                        [
+                            "guilty", 
+                            30.22, 
+                            30.97
+                        ], 
+                        [
+                            "if", 
+                            31.24, 
+                            31.74
+                        ], 
+                        [
+                            "you", 
+                            31.95, 
+                            32.24
+                        ], 
+                        [
+                            "don't", 
+                            32.24, 
+                            32.52
+                        ], 
+                        [
+                            "really", 
+                            32.52, 
+                            32.74
+                        ]
+                    ], 
+                    "transcript": "I mean Prue person guilty if you don't really "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 9, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            29.02, 
+                            29.19
+                        ], 
+                        [
+                            "mean", 
+                            29.19, 
+                            29.41
+                        ], 
+                        [
+                            "Prue", 
+                            29.41, 
+                            29.74
+                        ], 
+                        [
+                            "person", 
+                            29.74, 
+                            30.22
+                        ], 
+                        [
+                            "guilty", 
+                            30.22, 
+                            30.97
+                        ], 
+                        [
+                            "if", 
+                            31.24, 
+                            31.74
+                        ], 
+                        [
+                            "you", 
+                            31.95, 
+                            32.24
+                        ], 
+                        [
+                            "don't", 
+                            32.24, 
+                            32.52
+                        ], 
+                        [
+                            "really", 
+                            32.52, 
+                            32.82
+                        ], 
+                        [
+                            "know", 
+                            32.82, 
+                            33.14
+                        ], 
+                        [
+                            "or", 
+                            33.14, 
+                            33.53
+                        ], 
+                        [
+                            "you", 
+                            33.53, 
+                            33.72
+                        ], 
+                        [
+                            "don't", 
+                            33.72, 
+                            33.98
+                        ], 
+                        [
+                            "really", 
+                            33.98, 
+                            34.23
+                        ], 
+                        [
+                            "have", 
+                            34.23, 
+                            34.43
+                        ], 
+                        [
+                            "a", 
+                            34.43, 
+                            34.56
+                        ]
+                    ], 
+                    "transcript": "I mean Prue person guilty if you don't really know or you don't really have a "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 9, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.873, 
+                    "timestamps": [
+                        [
+                            "I", 
+                            29.02, 
+                            29.19
+                        ], 
+                        [
+                            "mean", 
+                            29.19, 
+                            29.41
+                        ], 
+                        [
+                            "Prue", 
+                            29.41, 
+                            29.74
+                        ], 
+                        [
+                            "person", 
+                            29.74, 
+                            30.22
+                        ], 
+                        [
+                            "guilty", 
+                            30.22, 
+                            30.97
+                        ], 
+                        [
+                            "if", 
+                            31.24, 
+                            31.74
+                        ], 
+                        [
+                            "you", 
+                            31.95, 
+                            32.24
+                        ], 
+                        [
+                            "don't", 
+                            32.24, 
+                            32.52
+                        ], 
+                        [
+                            "really", 
+                            32.52, 
+                            32.82
+                        ], 
+                        [
+                            "know", 
+                            32.82, 
+                            33.14
+                        ], 
+                        [
+                            "or", 
+                            33.14, 
+                            33.53
+                        ], 
+                        [
+                            "you", 
+                            33.53, 
+                            33.72
+                        ], 
+                        [
+                            "don't", 
+                            33.72, 
+                            33.98
+                        ], 
+                        [
+                            "really", 
+                            33.98, 
+                            34.23
+                        ], 
+                        [
+                            "have", 
+                            34.23, 
+                            34.43
+                        ], 
+                        [
+                            "a", 
+                            34.43, 
+                            34.49
+                        ], 
+                        [
+                            "eyewitness", 
+                            34.49, 
+                            35.4
+                        ]
+                    ], 
+                    "transcript": "I mean Prue person guilty if you don't really know or you don't really have a eyewitness ", 
+                    "word_confidence": [
+                        [
+                            "I", 
+                            0.9999999999999346
+                        ], 
+                        [
+                            "mean", 
+                            0.9999999999998995
+                        ], 
+                        [
+                            "Prue", 
+                            0.301769066616927
+                        ], 
+                        [
+                            "person", 
+                            0.9016999137547009
+                        ], 
+                        [
+                            "guilty", 
+                            0.9965954955678638
+                        ], 
+                        [
+                            "if", 
+                            0.999999999999933
+                        ], 
+                        [
+                            "you", 
+                            0.9999999999999458
+                        ], 
+                        [
+                            "don't", 
+                            0.9999999999999513
+                        ], 
+                        [
+                            "really", 
+                            0.9999999999999675
+                        ], 
+                        [
+                            "know", 
+                            0.9999999999999675
+                        ], 
+                        [
+                            "or", 
+                            0.9999999999999508
+                        ], 
+                        [
+                            "you", 
+                            0.9999999999999836
+                        ], 
+                        [
+                            "don't", 
+                            0.9999999999999835
+                        ], 
+                        [
+                            "really", 
+                            1.0
+                        ], 
+                        [
+                            "have", 
+                            1.0
+                        ], 
+                        [
+                            "a", 
+                            0.9265410667244535
+                        ], 
+                        [
+                            "eyewitness", 
+                            0.48733276648715484
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "I mean prove person guilty if you don't really know or you don't really have a eyewitness "
+                }, 
+                {
+                    "transcript": "I mean proof person guilty if you don't really know or you don't really have a eyewitness "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 10, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "and", 
+                            36.07, 
+                            36.31
+                        ], 
+                        [
+                            "how", 
+                            36.31, 
+                            36.56
+                        ], 
+                        [
+                            "can", 
+                            36.56, 
+                            36.94
+                        ], 
+                        [
+                            "you", 
+                            36.94, 
+                            37.31
+                        ], 
+                        [
+                            "convicts", 
+                            37.34, 
+                            37.86
+                        ]
+                    ], 
+                    "transcript": "and how can you convicts "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 10, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.999, 
+                    "timestamps": [
+                        [
+                            "and", 
+                            36.07, 
+                            36.31
+                        ], 
+                        [
+                            "how", 
+                            36.31, 
+                            36.56
+                        ], 
+                        [
+                            "can", 
+                            36.56, 
+                            36.94
+                        ], 
+                        [
+                            "you", 
+                            36.94, 
+                            37.31
+                        ], 
+                        [
+                            "convict", 
+                            37.34, 
+                            37.77
+                        ], 
+                        [
+                            "somebody", 
+                            37.77, 
+                            38.27
+                        ], 
+                        [
+                            "on", 
+                            38.27, 
+                            38.73
+                        ], 
+                        [
+                            "circumstantial", 
+                            38.73, 
+                            39.52
+                        ], 
+                        [
+                            "evidence", 
+                            39.52, 
+                            40.3
+                        ]
+                    ], 
+                    "transcript": "and how can you convict somebody on circumstantial evidence ", 
+                    "word_confidence": [
+                        [
+                            "and", 
+                            1.0
+                        ], 
+                        [
+                            "how", 
+                            1.0
+                        ], 
+                        [
+                            "can", 
+                            1.0
+                        ], 
+                        [
+                            "you", 
+                            1.0
+                        ], 
+                        [
+                            "convict", 
+                            1.0
+                        ], 
+                        [
+                            "somebody", 
+                            1.0
+                        ], 
+                        [
+                            "on", 
+                            1.0
+                        ], 
+                        [
+                            "circumstantial", 
+                            1.0
+                        ], 
+                        [
+                            "evidence", 
+                            0.9930837232265716
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 11, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.964, 
+                    "timestamps": [
+                        [
+                            "is", 
+                            40.78, 
+                            40.88
+                        ], 
+                        [
+                            "beyond", 
+                            40.88, 
+                            41.36
+                        ], 
+                        [
+                            "me", 
+                            41.36, 
+                            41.64
+                        ], 
+                        [
+                            "I", 
+                            41.64, 
+                            41.71
+                        ], 
+                        [
+                            "don't", 
+                            41.71, 
+                            41.94
+                        ], 
+                        [
+                            "know", 
+                            41.94, 
+                            42.33
+                        ]
+                    ], 
+                    "transcript": "is beyond me I don't know ", 
+                    "word_confidence": [
+                        [
+                            "is", 
+                            0.5654182900583152
+                        ], 
+                        [
+                            "beyond", 
+                            0.9870117588039308
+                        ], 
+                        [
+                            "me", 
+                            0.9999999999999882
+                        ], 
+                        [
+                            "I", 
+                            0.9999999999999877
+                        ], 
+                        [
+                            "don't", 
+                            0.9999999999999879
+                        ], 
+                        [
+                            "know", 
+                            0.9824548239018878
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "it's beyond me I don't know "
+                }, 
+                {
+                    "transcript": "just beyond me I don't know "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 12, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.971, 
+                    "timestamps": [
+                        [
+                            "I", 
+                            52.1, 
+                            52.25
+                        ], 
+                        [
+                            "think", 
+                            52.25, 
+                            52.53
+                        ], 
+                        [
+                            "so", 
+                            52.53, 
+                            53.01
+                        ]
+                    ], 
+                    "transcript": "I think so ", 
+                    "word_confidence": [
+                        [
+                            "I", 
+                            0.9999999999999839
+                        ], 
+                        [
+                            "think", 
+                            0.9999999999999833
+                        ], 
+                        [
+                            "so", 
+                            0.9445868297377995
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "I think self "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 13, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.991, 
+                    "timestamps": [
+                        [
+                            "right", 
+                            70.34, 
+                            70.97
+                        ]
+                    ], 
+                    "transcript": "right ", 
+                    "word_confidence": [
+                        [
+                            "right", 
+                            0.9905601198174291
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "write "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 14, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.967, 
+                    "timestamps": [
+                        [
+                            "uhhuh", 
+                            77.74, 
+                            78.17
+                        ]
+                    ], 
+                    "transcript": "uhhuh ", 
+                    "word_confidence": [
+                        [
+                            "uhhuh", 
+                            0.9673882595418054
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 15, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "do", 
+                            91.43, 
+                            91.5
+                        ], 
+                        [
+                            "you", 
+                            91.5, 
+                            91.6
+                        ], 
+                        [
+                            "think", 
+                            91.6, 
+                            91.87
+                        ], 
+                        [
+                            "you've", 
+                            91.87, 
+                            92.05
+                        ], 
+                        [
+                            "heard", 
+                            92.05, 
+                            92.41
+                        ], 
+                        [
+                            "a", 
+                            92.41, 
+                            92.46
+                        ], 
+                        [
+                            "jury", 
+                            92.46, 
+                            92.96
+                        ]
+                    ], 
+                    "transcript": "do you think you've heard a jury "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 15, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.823, 
+                    "timestamps": [
+                        [
+                            "do", 
+                            91.43, 
+                            91.5
+                        ], 
+                        [
+                            "you", 
+                            91.5, 
+                            91.6
+                        ], 
+                        [
+                            "think", 
+                            91.6, 
+                            91.87
+                        ], 
+                        [
+                            "you've", 
+                            91.87, 
+                            92.05
+                        ], 
+                        [
+                            "heard", 
+                            92.05, 
+                            92.41
+                        ], 
+                        [
+                            "a", 
+                            92.41, 
+                            92.46
+                        ], 
+                        [
+                            "jury", 
+                            92.46, 
+                            92.96
+                        ], 
+                        [
+                            "you", 
+                            93.32, 
+                            93.42
+                        ], 
+                        [
+                            "think", 
+                            93.42, 
+                            93.64
+                        ], 
+                        [
+                            "your", 
+                            93.64, 
+                            93.75
+                        ], 
+                        [
+                            "chances", 
+                            93.75, 
+                            94.27
+                        ], 
+                        [
+                            "are", 
+                            94.27, 
+                            94.37
+                        ], 
+                        [
+                            "better", 
+                            94.37, 
+                            94.9
+                        ]
+                    ], 
+                    "transcript": "do you think you've heard a jury you think your chances are better ", 
+                    "word_confidence": [
+                        [
+                            "do", 
+                            0.5428646911680888
+                        ], 
+                        [
+                            "you", 
+                            0.9036648104467933
+                        ], 
+                        [
+                            "think", 
+                            0.8833700100414811
+                        ], 
+                        [
+                            "you've", 
+                            0.8654551343654316
+                        ], 
+                        [
+                            "heard", 
+                            0.472607688425884
+                        ], 
+                        [
+                            "a", 
+                            0.21925162913446852
+                        ], 
+                        [
+                            "jury", 
+                            0.6884281661526583
+                        ], 
+                        [
+                            "you", 
+                            0.924681818617741
+                        ], 
+                        [
+                            "think", 
+                            0.9542486644525102
+                        ], 
+                        [
+                            "your", 
+                            0.6144053602028305
+                        ], 
+                        [
+                            "chances", 
+                            0.9952000859720156
+                        ], 
+                        [
+                            "are", 
+                            0.9999999999999941
+                        ], 
+                        [
+                            "better", 
+                            0.9915996117803918
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "do you think you've heard the jury you think your chances are better "
+                }, 
+                {
+                    "transcript": "you think you've heard a jury you think your chances are better "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 16, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.963, 
+                    "timestamps": [
+                        [
+                            "well", 
+                            111.24, 
+                            111.55
+                        ], 
+                        [
+                            "that's", 
+                            111.55, 
+                            111.72
+                        ], 
+                        [
+                            "true", 
+                            111.72, 
+                            112.23
+                        ]
+                    ], 
+                    "transcript": "well that's true ", 
+                    "word_confidence": [
+                        [
+                            "well", 
+                            1.0
+                        ], 
+                        [
+                            "that's", 
+                            0.8380399365923733
+                        ], 
+                        [
+                            "true", 
+                            0.9828855058897928
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "well it's true "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 17, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.986, 
+                    "timestamps": [
+                        [
+                            "uhhuh", 
+                            137.9, 
+                            138.46
+                        ]
+                    ], 
+                    "transcript": "uhhuh ", 
+                    "word_confidence": [
+                        [
+                            "uhhuh", 
+                            0.9856614455183249
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 18, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "well", 
+                            143.77, 
+                            144.27
+                        ], 
+                        [
+                            "sometime", 
+                            144.47, 
+                            145.2
+                        ], 
+                        [
+                            "this", 
+                            145.2, 
+                            145.54
+                        ]
+                    ], 
+                    "transcript": "well sometime this "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 18, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "well", 
+                            143.77, 
+                            144.27
+                        ], 
+                        [
+                            "sometime", 
+                            144.47, 
+                            145.2
+                        ], 
+                        [
+                            "this", 
+                            145.2, 
+                            145.47
+                        ], 
+                        [
+                            "and", 
+                            145.47, 
+                            145.63
+                        ], 
+                        [
+                            "this", 
+                            145.63, 
+                            145.8
+                        ], 
+                        [
+                            "and", 
+                            145.8, 
+                            146.0
+                        ], 
+                        [
+                            "still", 
+                            146.0, 
+                            146.35
+                        ], 
+                        [
+                            "is", 
+                            146.35, 
+                            146.53
+                        ], 
+                        [
+                            "not", 
+                            146.53, 
+                            146.84
+                        ], 
+                        [
+                            "fair", 
+                            146.84, 
+                            147.49
+                        ]
+                    ], 
+                    "transcript": "well sometime this and this and still is not fair "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 18, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.861, 
+                    "timestamps": [
+                        [
+                            "well", 
+                            143.77, 
+                            144.27
+                        ], 
+                        [
+                            "sometime", 
+                            144.47, 
+                            145.2
+                        ], 
+                        [
+                            "this", 
+                            145.2, 
+                            145.47
+                        ], 
+                        [
+                            "and", 
+                            145.47, 
+                            145.63
+                        ], 
+                        [
+                            "this", 
+                            145.63, 
+                            145.8
+                        ], 
+                        [
+                            "and", 
+                            145.8, 
+                            146.0
+                        ], 
+                        [
+                            "still", 
+                            146.0, 
+                            146.35
+                        ], 
+                        [
+                            "is", 
+                            146.35, 
+                            146.53
+                        ], 
+                        [
+                            "not", 
+                            146.53, 
+                            146.84
+                        ], 
+                        [
+                            "fair", 
+                            146.84, 
+                            147.49
+                        ]
+                    ], 
+                    "transcript": "well sometime this and this and still is not fair ", 
+                    "word_confidence": [
+                        [
+                            "well", 
+                            1.0
+                        ], 
+                        [
+                            "sometime", 
+                            0.8486199295239841
+                        ], 
+                        [
+                            "this", 
+                            0.7341853339896987
+                        ], 
+                        [
+                            "and", 
+                            0.2995889038421891
+                        ], 
+                        [
+                            "this", 
+                            0.8762901108463096
+                        ], 
+                        [
+                            "and", 
+                            0.7143889557938863
+                        ], 
+                        [
+                            "still", 
+                            0.6859558308043867
+                        ], 
+                        [
+                            "is", 
+                            1.0
+                        ], 
+                        [
+                            "not", 
+                            1.0
+                        ], 
+                        [
+                            "fair", 
+                            0.9908709460324903
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "well this is sometime this and this and still is not fair "
+                }, 
+                {
+                    "transcript": "well sometimes they send this and still is not fair "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 19, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            148.17, 
+                            148.27
+                        ], 
+                        [
+                            "mean", 
+                            148.27, 
+                            148.82
+                        ], 
+                        [
+                            "even", 
+                            148.82, 
+                            149.27
+                        ], 
+                        [
+                            "if", 
+                            149.27, 
+                            149.64
+                        ]
+                    ], 
+                    "transcript": "I mean even if "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 19, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            148.17, 
+                            148.27
+                        ], 
+                        [
+                            "mean", 
+                            148.27, 
+                            148.82
+                        ], 
+                        [
+                            "even", 
+                            148.82, 
+                            149.27
+                        ], 
+                        [
+                            "if", 
+                            149.27, 
+                            149.64
+                        ], 
+                        [
+                            "well", 
+                            149.86, 
+                            150.13
+                        ], 
+                        [
+                            "the", 
+                            150.13, 
+                            150.27
+                        ], 
+                        [
+                            "jury", 
+                            150.27, 
+                            150.7
+                        ], 
+                        [
+                            "I", 
+                            150.7, 
+                            150.8
+                        ], 
+                        [
+                            "guess", 
+                            150.8, 
+                            151.05
+                        ], 
+                        [
+                            "they", 
+                            151.05, 
+                            151.17
+                        ], 
+                        [
+                            "do", 
+                            151.17, 
+                            151.41
+                        ], 
+                        [
+                            "decide", 
+                            151.41, 
+                            151.88
+                        ]
+                    ], 
+                    "transcript": "I mean even if well the jury I guess they do decide "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 19, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.861, 
+                    "timestamps": [
+                        [
+                            "I", 
+                            148.17, 
+                            148.27
+                        ], 
+                        [
+                            "mean", 
+                            148.27, 
+                            148.82
+                        ], 
+                        [
+                            "even", 
+                            148.82, 
+                            149.27
+                        ], 
+                        [
+                            "if", 
+                            149.27, 
+                            149.64
+                        ], 
+                        [
+                            "well", 
+                            149.86, 
+                            150.13
+                        ], 
+                        [
+                            "the", 
+                            150.13, 
+                            150.27
+                        ], 
+                        [
+                            "jury", 
+                            150.27, 
+                            150.7
+                        ], 
+                        [
+                            "I", 
+                            150.7, 
+                            150.8
+                        ], 
+                        [
+                            "guess", 
+                            150.8, 
+                            151.05
+                        ], 
+                        [
+                            "they", 
+                            151.05, 
+                            151.17
+                        ], 
+                        [
+                            "do", 
+                            151.17, 
+                            151.41
+                        ], 
+                        [
+                            "decide", 
+                            151.41, 
+                            152.05
+                        ], 
+                        [
+                            "that", 
+                            152.05, 
+                            152.37
+                        ], 
+                        [
+                            "but", 
+                            152.37, 
+                            152.68
+                        ]
+                    ], 
+                    "transcript": "I mean even if well the jury I guess they do decide that but ", 
+                    "word_confidence": [
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "mean", 
+                            1.0
+                        ], 
+                        [
+                            "even", 
+                            1.0
+                        ], 
+                        [
+                            "if", 
+                            1.0
+                        ], 
+                        [
+                            "well", 
+                            0.22317117795303756
+                        ], 
+                        [
+                            "the", 
+                            0.22317117795303745
+                        ], 
+                        [
+                            "jury", 
+                            1.0
+                        ], 
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "guess", 
+                            0.9958680254653892
+                        ], 
+                        [
+                            "they", 
+                            0.9123779855382127
+                        ], 
+                        [
+                            "do", 
+                            0.892180681559489
+                        ], 
+                        [
+                            "decide", 
+                            0.751339496069316
+                        ], 
+                        [
+                            "that", 
+                            0.7609737540464241
+                        ], 
+                        [
+                            "but", 
+                            0.9793539009706139
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "I mean even if whether jury I guess they do decide that but "
+                }, 
+                {
+                    "transcript": "I mean even if weather jury I guess they do decide that but "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 20, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "but", 
+                            153.31, 
+                            153.44
+                        ], 
+                        [
+                            "I'm", 
+                            153.44, 
+                            153.55
+                        ], 
+                        [
+                            "like", 
+                            153.55, 
+                            153.84
+                        ], 
+                        [
+                            "you", 
+                            153.84, 
+                            154.01
+                        ], 
+                        [
+                            "in", 
+                            154.01, 
+                            154.1
+                        ], 
+                        [
+                            "a", 
+                            154.1, 
+                            154.15
+                        ], 
+                        [
+                            "case", 
+                            154.15, 
+                            154.58
+                        ], 
+                        [
+                            "like", 
+                            154.58, 
+                            154.84
+                        ], 
+                        [
+                            "that", 
+                            154.84, 
+                            155.09
+                        ]
+                    ], 
+                    "transcript": "but I'm like you in a case like that "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 20, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.849, 
+                    "timestamps": [
+                        [
+                            "but", 
+                            153.31, 
+                            153.44
+                        ], 
+                        [
+                            "I'm", 
+                            153.44, 
+                            153.55
+                        ], 
+                        [
+                            "like", 
+                            153.55, 
+                            153.84
+                        ], 
+                        [
+                            "you", 
+                            153.84, 
+                            154.01
+                        ], 
+                        [
+                            "in", 
+                            154.01, 
+                            154.1
+                        ], 
+                        [
+                            "a", 
+                            154.1, 
+                            154.15
+                        ], 
+                        [
+                            "case", 
+                            154.15, 
+                            154.58
+                        ], 
+                        [
+                            "like", 
+                            154.58, 
+                            154.84
+                        ], 
+                        [
+                            "that", 
+                            154.84, 
+                            155.23
+                        ], 
+                        [
+                            "most", 
+                            155.23, 
+                            155.63
+                        ], 
+                        [
+                            "time", 
+                            155.63, 
+                            155.98
+                        ], 
+                        [
+                            "is", 
+                            155.98, 
+                            156.33
+                        ]
+                    ], 
+                    "transcript": "but I'm like you in a case like that most time is ", 
+                    "word_confidence": [
+                        [
+                            "but", 
+                            0.5989402397796414
+                        ], 
+                        [
+                            "I'm", 
+                            0.30977058222609477
+                        ], 
+                        [
+                            "like", 
+                            0.8434835819097415
+                        ], 
+                        [
+                            "you", 
+                            0.526680950643789
+                        ], 
+                        [
+                            "in", 
+                            0.9023853635060985
+                        ], 
+                        [
+                            "a", 
+                            0.9609541454024704
+                        ], 
+                        [
+                            "case", 
+                            1.0
+                        ], 
+                        [
+                            "like", 
+                            1.0
+                        ], 
+                        [
+                            "that", 
+                            0.96604119346966
+                        ], 
+                        [
+                            "most", 
+                            1.0
+                        ], 
+                        [
+                            "time", 
+                            1.0
+                        ], 
+                        [
+                            "is", 
+                            0.4884344947196019
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "but I'm like in a case like that most time is "
+                }, 
+                {
+                    "transcript": "but unlike in a case like that most time is "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 21, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            157.11, 
+                            157.28
+                        ], 
+                        [
+                            "don't", 
+                            157.28, 
+                            157.48
+                        ], 
+                        [
+                            "know", 
+                            157.48, 
+                            157.58
+                        ], 
+                        [
+                            "my", 
+                            157.58, 
+                            157.77
+                        ], 
+                        [
+                            "own", 
+                            157.77, 
+                            158.04
+                        ], 
+                        [
+                            "to", 
+                            158.04, 
+                            158.47
+                        ], 
+                        [
+                            "to", 
+                            158.5, 
+                            158.87
+                        ]
+                    ], 
+                    "transcript": "I don't know my own to to "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 21, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.897, 
+                    "timestamps": [
+                        [
+                            "I", 
+                            157.11, 
+                            157.28
+                        ], 
+                        [
+                            "don't", 
+                            157.28, 
+                            157.48
+                        ], 
+                        [
+                            "know", 
+                            157.48, 
+                            157.58
+                        ], 
+                        [
+                            "my", 
+                            157.58, 
+                            157.77
+                        ], 
+                        [
+                            "own", 
+                            157.77, 
+                            158.04
+                        ], 
+                        [
+                            "to", 
+                            158.04, 
+                            158.47
+                        ], 
+                        [
+                            "to", 
+                            158.5, 
+                            158.92
+                        ], 
+                        [
+                            "%HESITATION", 
+                            158.92, 
+                            159.41
+                        ], 
+                        [
+                            "%HESITATION", 
+                            159.49, 
+                            160.18
+                        ]
+                    ], 
+                    "transcript": "I don't know my own to to %HESITATION %HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "don't", 
+                            1.0
+                        ], 
+                        [
+                            "know", 
+                            1.0
+                        ], 
+                        [
+                            "my", 
+                            0.6499560353497028
+                        ], 
+                        [
+                            "own", 
+                            0.8596099631860924
+                        ], 
+                        [
+                            "to", 
+                            0.8361637379969068
+                        ], 
+                        [
+                            "to", 
+                            0.9852990054035905
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.7466958182203308
+                        ], 
+                        [
+                            "%HESITATION", 
+                            1.0
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "I don't know my own too to %HESITATION %HESITATION "
+                }, 
+                {
+                    "transcript": "I don't know my own due to %HESITATION %HESITATION "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 22, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "conservative", 
+                            161.56, 
+                            162.29
+                        ], 
+                        [
+                            "when", 
+                            162.29, 
+                            162.44
+                        ], 
+                        [
+                            "it", 
+                            162.44, 
+                            162.52
+                        ], 
+                        [
+                            "come", 
+                            162.52, 
+                            162.8
+                        ], 
+                        [
+                            "to", 
+                            162.8, 
+                            162.96
+                        ], 
+                        [
+                            "that", 
+                            162.96, 
+                            163.17
+                        ]
+                    ], 
+                    "transcript": "conservative when it come to that "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 22, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "conservative", 
+                            161.56, 
+                            162.29
+                        ], 
+                        [
+                            "when", 
+                            162.29, 
+                            162.44
+                        ], 
+                        [
+                            "it", 
+                            162.44, 
+                            162.52
+                        ], 
+                        [
+                            "come", 
+                            162.52, 
+                            162.8
+                        ], 
+                        [
+                            "to", 
+                            162.8, 
+                            162.96
+                        ], 
+                        [
+                            "that", 
+                            162.96, 
+                            163.35
+                        ], 
+                        [
+                            "this", 
+                            163.4, 
+                            163.77
+                        ], 
+                        [
+                            "sentence", 
+                            163.77, 
+                            164.19
+                        ], 
+                        [
+                            "and", 
+                            164.19, 
+                            164.42
+                        ], 
+                        [
+                            "is", 
+                            164.42, 
+                            164.75
+                        ], 
+                        [
+                            "really", 
+                            164.78, 
+                            165.17
+                        ]
+                    ], 
+                    "transcript": "conservative when it come to that this sentence and is really "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 22, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.848, 
+                    "timestamps": [
+                        [
+                            "conservative", 
+                            161.56, 
+                            162.29
+                        ], 
+                        [
+                            "when", 
+                            162.29, 
+                            162.44
+                        ], 
+                        [
+                            "it", 
+                            162.44, 
+                            162.52
+                        ], 
+                        [
+                            "come", 
+                            162.52, 
+                            162.8
+                        ], 
+                        [
+                            "to", 
+                            162.8, 
+                            162.96
+                        ], 
+                        [
+                            "that", 
+                            162.96, 
+                            163.35
+                        ], 
+                        [
+                            "this", 
+                            163.4, 
+                            163.77
+                        ], 
+                        [
+                            "sentence", 
+                            163.77, 
+                            164.19
+                        ], 
+                        [
+                            "and", 
+                            164.19, 
+                            164.42
+                        ], 
+                        [
+                            "is", 
+                            164.42, 
+                            164.75
+                        ], 
+                        [
+                            "really", 
+                            164.78, 
+                            165.14
+                        ], 
+                        [
+                            "light", 
+                            165.24, 
+                            165.87
+                        ]
+                    ], 
+                    "transcript": "conservative when it come to that this sentence and is really light ", 
+                    "word_confidence": [
+                        [
+                            "conservative", 
+                            0.9999999999998359
+                        ], 
+                        [
+                            "when", 
+                            0.9999999999998365
+                        ], 
+                        [
+                            "it", 
+                            0.9999999999998365
+                        ], 
+                        [
+                            "come", 
+                            0.7471421977033994
+                        ], 
+                        [
+                            "to", 
+                            0.9367855494257352
+                        ], 
+                        [
+                            "that", 
+                            0.9829208367906304
+                        ], 
+                        [
+                            "this", 
+                            0.3394466881282323
+                        ], 
+                        [
+                            "sentence", 
+                            0.8665247466175294
+                        ], 
+                        [
+                            "and", 
+                            0.9432652893652625
+                        ], 
+                        [
+                            "is", 
+                            0.7429692115437139
+                        ], 
+                        [
+                            "really", 
+                            0.6272937272566974
+                        ], 
+                        [
+                            "light", 
+                            0.9888891819481048
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "conservative when it come to that the sentence and is really light "
+                }, 
+                {
+                    "transcript": "conservative when it come to that sentence and is really light "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 23, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "compared", 
+                            166.55, 
+                            167.06
+                        ], 
+                        [
+                            "to", 
+                            167.06, 
+                            167.17
+                        ], 
+                        [
+                            "what", 
+                            167.17, 
+                            167.45
+                        ], 
+                        [
+                            "I", 
+                            167.45, 
+                            167.54
+                        ], 
+                        [
+                            "think", 
+                            167.54, 
+                            167.81
+                        ], 
+                        [
+                            "they", 
+                            167.81, 
+                            167.92
+                        ], 
+                        [
+                            "should", 
+                            167.92, 
+                            168.26
+                        ], 
+                        [
+                            "be", 
+                            168.26, 
+                            168.32
+                        ]
+                    ], 
+                    "transcript": "compared to what I think they should be "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 23, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.907, 
+                    "timestamps": [
+                        [
+                            "compared", 
+                            166.55, 
+                            167.06
+                        ], 
+                        [
+                            "to", 
+                            167.06, 
+                            167.17
+                        ], 
+                        [
+                            "what", 
+                            167.17, 
+                            167.45
+                        ], 
+                        [
+                            "I", 
+                            167.45, 
+                            167.54
+                        ], 
+                        [
+                            "think", 
+                            167.54, 
+                            167.81
+                        ], 
+                        [
+                            "they", 
+                            167.81, 
+                            167.92
+                        ], 
+                        [
+                            "should", 
+                            167.92, 
+                            168.26
+                        ], 
+                        [
+                            "be", 
+                            168.26, 
+                            168.36
+                        ], 
+                        [
+                            "in", 
+                            168.36, 
+                            168.46
+                        ], 
+                        [
+                            "a", 
+                            168.46, 
+                            168.57
+                        ], 
+                        [
+                            "lot", 
+                            168.57, 
+                            168.77
+                        ], 
+                        [
+                            "of", 
+                            168.77, 
+                            168.84
+                        ], 
+                        [
+                            "cases", 
+                            168.84, 
+                            169.57
+                        ]
+                    ], 
+                    "transcript": "compared to what I think they should be in a lot of cases ", 
+                    "word_confidence": [
+                        [
+                            "compared", 
+                            0.5825434373881772
+                        ], 
+                        [
+                            "to", 
+                            1.0
+                        ], 
+                        [
+                            "what", 
+                            1.0
+                        ], 
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "think", 
+                            1.0
+                        ], 
+                        [
+                            "they", 
+                            1.0
+                        ], 
+                        [
+                            "should", 
+                            1.0
+                        ], 
+                        [
+                            "be", 
+                            1.0
+                        ], 
+                        [
+                            "in", 
+                            0.7020349035770989
+                        ], 
+                        [
+                            "a", 
+                            0.7303631360085205
+                        ], 
+                        [
+                            "lot", 
+                            1.0
+                        ], 
+                        [
+                            "of", 
+                            0.9999999999999992
+                        ], 
+                        [
+                            "cases", 
+                            0.9903640408058343
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "compare to what I think they should be in a lot of cases "
+                }, 
+                {
+                    "transcript": "compared to what I think they should be a lot of cases "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 24, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.985, 
+                    "timestamps": [
+                        [
+                            "you", 
+                            170.44, 
+                            170.63
+                        ], 
+                        [
+                            "know", 
+                            170.63, 
+                            171.03
+                        ]
+                    ], 
+                    "transcript": "you know ", 
+                    "word_confidence": [
+                        [
+                            "you", 
+                            0.9999999999999959
+                        ], 
+                        [
+                            "know", 
+                            0.9776150732245206
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 25, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 1.0, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            171.28, 
+                            171.78
+                        ]
+                    ], 
+                    "transcript": "%HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            1.0
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 26, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.991, 
+                    "timestamps": [
+                        [
+                            "right", 
+                            183.67, 
+                            184.39
+                        ]
+                    ], 
+                    "transcript": "right ", 
+                    "word_confidence": [
+                        [
+                            "right", 
+                            0.9910069362966732
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "write "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 27, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.986, 
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            201.05, 
+                            201.6
+                        ]
+                    ], 
+                    "transcript": "yeah ", 
+                    "word_confidence": [
+                        [
+                            "yeah", 
+                            0.9856047124298863
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 28, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.991, 
+                    "timestamps": [
+                        [
+                            "right", 
+                            213.7, 
+                            214.26
+                        ]
+                    ], 
+                    "transcript": "right ", 
+                    "word_confidence": [
+                        [
+                            "right", 
+                            0.9914988968740185
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "write "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 29, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.174, 
+                    "timestamps": [
+                        [
+                            "all", 
+                            230.33, 
+                            230.56
+                        ], 
+                        [
+                            "roads", 
+                            230.56, 
+                            230.94
+                        ]
+                    ], 
+                    "transcript": "all roads ", 
+                    "word_confidence": [
+                        [
+                            "all", 
+                            0.38062728975691973
+                        ], 
+                        [
+                            "roads", 
+                            0.0483576956445016
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION wrote "
+                }, 
+                {
+                    "transcript": "all wrote "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 30, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.627, 
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            232.19, 
+                            232.61
+                        ], 
+                        [
+                            "that's", 
+                            232.81, 
+                            233.21
+                        ]
+                    ], 
+                    "transcript": "yeah that's ", 
+                    "word_confidence": [
+                        [
+                            "yeah", 
+                            0.9915754101701731
+                        ], 
+                        [
+                            "that's", 
+                            0.24321294714136976
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "yeah ice "
+                }, 
+                {
+                    "transcript": "yeah this "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 31, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.964, 
+                    "timestamps": [
+                        [
+                            "that's", 
+                            233.65, 
+                            233.83
+                        ], 
+                        [
+                            "not", 
+                            233.83, 
+                            234.02
+                        ], 
+                        [
+                            "a", 
+                            234.02, 
+                            234.09
+                        ], 
+                        [
+                            "bad", 
+                            234.09, 
+                            234.41
+                        ], 
+                        [
+                            "system", 
+                            234.41, 
+                            234.95
+                        ]
+                    ], 
+                    "transcript": "that's not a bad system ", 
+                    "word_confidence": [
+                        [
+                            "that's", 
+                            0.7797388157893916
+                        ], 
+                        [
+                            "not", 
+                            1.0
+                        ], 
+                        [
+                            "a", 
+                            0.9857602861985546
+                        ], 
+                        [
+                            "bad", 
+                            0.9995550089437059
+                        ], 
+                        [
+                            "system", 
+                            0.9889424006322324
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "it's not a bad system "
+                }, 
+                {
+                    "transcript": "that's not bad system "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 32, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "but", 
+                            236.1, 
+                            236.37
+                        ], 
+                        [
+                            "I", 
+                            236.37, 
+                            236.74
+                        ], 
+                        [
+                            "do", 
+                            236.74, 
+                            236.94
+                        ], 
+                        [
+                            "think", 
+                            236.94, 
+                            237.23
+                        ], 
+                        [
+                            "it", 
+                            237.23, 
+                            237.33
+                        ], 
+                        [
+                            "need", 
+                            237.33, 
+                            237.52
+                        ], 
+                        [
+                            "to", 
+                            237.52, 
+                            237.6
+                        ], 
+                        [
+                            "be", 
+                            237.6, 
+                            237.84
+                        ]
+                    ], 
+                    "transcript": "but I do think it need to be "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 32, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.868, 
+                    "timestamps": [
+                        [
+                            "but", 
+                            236.1, 
+                            236.37
+                        ], 
+                        [
+                            "I", 
+                            236.37, 
+                            236.74
+                        ], 
+                        [
+                            "do", 
+                            236.74, 
+                            236.94
+                        ], 
+                        [
+                            "think", 
+                            236.94, 
+                            237.23
+                        ], 
+                        [
+                            "it", 
+                            237.23, 
+                            237.33
+                        ], 
+                        [
+                            "need", 
+                            237.33, 
+                            237.52
+                        ], 
+                        [
+                            "to", 
+                            237.52, 
+                            237.6
+                        ], 
+                        [
+                            "be", 
+                            237.6, 
+                            237.73
+                        ], 
+                        [
+                            "shaken", 
+                            237.73, 
+                            238.2
+                        ], 
+                        [
+                            "up", 
+                            238.2, 
+                            238.43
+                        ], 
+                        [
+                            "a", 
+                            238.43, 
+                            238.49
+                        ], 
+                        [
+                            "little", 
+                            238.49, 
+                            238.74
+                        ], 
+                        [
+                            "bit", 
+                            238.74, 
+                            239.1
+                        ], 
+                        [
+                            "but", 
+                            239.13, 
+                            239.51
+                        ]
+                    ], 
+                    "transcript": "but I do think it need to be shaken up a little bit but ", 
+                    "word_confidence": [
+                        [
+                            "but", 
+                            0.5674082303237088
+                        ], 
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "do", 
+                            1.0
+                        ], 
+                        [
+                            "think", 
+                            0.8948615750104875
+                        ], 
+                        [
+                            "it", 
+                            0.6028546606426588
+                        ], 
+                        [
+                            "need", 
+                            0.7495945494590085
+                        ], 
+                        [
+                            "to", 
+                            1.0
+                        ], 
+                        [
+                            "be", 
+                            1.0
+                        ], 
+                        [
+                            "shaken", 
+                            0.7736343177555216
+                        ], 
+                        [
+                            "up", 
+                            0.5953850831413916
+                        ], 
+                        [
+                            "a", 
+                            0.9344400401580478
+                        ], 
+                        [
+                            "little", 
+                            1.0
+                        ], 
+                        [
+                            "bit", 
+                            0.9884208713285864
+                        ], 
+                        [
+                            "but", 
+                            0.9887830689457251
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "but I do think you need to be shaken up a little bit but "
+                }, 
+                {
+                    "transcript": "but I do think it needs to be shaken up a little bit but "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 33, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "the", 
+                            240.03, 
+                            240.14
+                        ], 
+                        [
+                            "thing", 
+                            240.14, 
+                            240.39
+                        ], 
+                        [
+                            "is", 
+                            240.39, 
+                            240.72
+                        ], 
+                        [
+                            "to", 
+                            240.72, 
+                            241.0
+                        ], 
+                        [
+                            "maybe", 
+                            241.0, 
+                            241.41
+                        ], 
+                        [
+                            "it", 
+                            241.41, 
+                            241.53
+                        ], 
+                        [
+                            "in", 
+                            241.53, 
+                            241.67
+                        ], 
+                        [
+                            "a", 
+                            241.67, 
+                            241.7
+                        ]
+                    ], 
+                    "transcript": "the thing is to maybe it in a "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 33, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.791, 
+                    "timestamps": [
+                        [
+                            "the", 
+                            240.03, 
+                            240.14
+                        ], 
+                        [
+                            "thing", 
+                            240.14, 
+                            240.39
+                        ], 
+                        [
+                            "is", 
+                            240.39, 
+                            240.72
+                        ], 
+                        [
+                            "to", 
+                            240.72, 
+                            241.0
+                        ], 
+                        [
+                            "maybe", 
+                            241.0, 
+                            241.41
+                        ], 
+                        [
+                            "it", 
+                            241.41, 
+                            241.53
+                        ], 
+                        [
+                            "in", 
+                            241.53, 
+                            241.68
+                        ], 
+                        [
+                            "a", 
+                            241.68, 
+                            241.97
+                        ], 
+                        [
+                            "more", 
+                            242.13, 
+                            242.59
+                        ], 
+                        [
+                            "via", 
+                            242.59, 
+                            243.19
+                        ]
+                    ], 
+                    "transcript": "the thing is to maybe it in a more via ", 
+                    "word_confidence": [
+                        [
+                            "the", 
+                            0.48013259074798936
+                        ], 
+                        [
+                            "thing", 
+                            0.9574981186239314
+                        ], 
+                        [
+                            "is", 
+                            1.0
+                        ], 
+                        [
+                            "to", 
+                            1.0
+                        ], 
+                        [
+                            "maybe", 
+                            0.9903655718234695
+                        ], 
+                        [
+                            "it", 
+                            0.3713278457812319
+                        ], 
+                        [
+                            "in", 
+                            0.6812673922962507
+                        ], 
+                        [
+                            "a", 
+                            0.5419865609971495
+                        ], 
+                        [
+                            "more", 
+                            0.9973577787928573
+                        ], 
+                        [
+                            "via", 
+                            0.5027341011356478
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "the thing is too maybe it in a more via "
+                }, 
+                {
+                    "transcript": "the thing is to maybe in a more via "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 34, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            244.23, 
+                            244.37
+                        ], 
+                        [
+                            "don't", 
+                            244.37, 
+                            244.56
+                        ], 
+                        [
+                            "know", 
+                            244.56, 
+                            244.63
+                        ], 
+                        [
+                            "more", 
+                            244.63, 
+                            244.99
+                        ], 
+                        [
+                            "of", 
+                            244.99, 
+                            245.1
+                        ], 
+                        [
+                            "export", 
+                            245.1, 
+                            245.73
+                        ], 
+                        [
+                            "tie", 
+                            245.73, 
+                            246.01
+                        ]
+                    ], 
+                    "transcript": "I don't know more of export tie "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 34, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.882, 
+                    "timestamps": [
+                        [
+                            "I", 
+                            244.23, 
+                            244.37
+                        ], 
+                        [
+                            "don't", 
+                            244.37, 
+                            244.56
+                        ], 
+                        [
+                            "know", 
+                            244.56, 
+                            244.63
+                        ], 
+                        [
+                            "more", 
+                            244.63, 
+                            244.99
+                        ], 
+                        [
+                            "of", 
+                            244.99, 
+                            245.1
+                        ], 
+                        [
+                            "export", 
+                            245.1, 
+                            245.73
+                        ], 
+                        [
+                            "types", 
+                            245.73, 
+                            246.46
+                        ]
+                    ], 
+                    "transcript": "I don't know more of export types ", 
+                    "word_confidence": [
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "don't", 
+                            0.9999999999999836
+                        ], 
+                        [
+                            "know", 
+                            1.0
+                        ], 
+                        [
+                            "more", 
+                            1.0
+                        ], 
+                        [
+                            "of", 
+                            1.0
+                        ], 
+                        [
+                            "export", 
+                            1.0
+                        ], 
+                        [
+                            "types", 
+                            0.6410359225539249
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "I don't know more of export tights "
+                }, 
+                {
+                    "transcript": "I don't know more of export typed "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 35, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "to", 
+                            246.95, 
+                            247.42
+                        ], 
+                        [
+                            "to", 
+                            247.51, 
+                            247.7
+                        ], 
+                        [
+                            "be", 
+                            247.7, 
+                            247.9
+                        ], 
+                        [
+                            "on", 
+                            247.9, 
+                            248.15
+                        ], 
+                        [
+                            "some", 
+                            248.15, 
+                            248.37
+                        ], 
+                        [
+                            "nature", 
+                            248.37, 
+                            248.76
+                        ]
+                    ], 
+                    "transcript": "to to be on some nature "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 35, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.843, 
+                    "timestamps": [
+                        [
+                            "to", 
+                            246.95, 
+                            247.42
+                        ], 
+                        [
+                            "to", 
+                            247.51, 
+                            247.7
+                        ], 
+                        [
+                            "be", 
+                            247.7, 
+                            247.9
+                        ], 
+                        [
+                            "on", 
+                            247.9, 
+                            248.15
+                        ], 
+                        [
+                            "some", 
+                            248.15, 
+                            248.34
+                        ], 
+                        [
+                            "of", 
+                            248.34, 
+                            248.43
+                        ], 
+                        [
+                            "these", 
+                            248.43, 
+                            248.6
+                        ], 
+                        [
+                            "jury", 
+                            248.6, 
+                            248.98
+                        ], 
+                        [
+                            "cases", 
+                            248.98, 
+                            249.56
+                        ], 
+                        [
+                            "because", 
+                            249.56, 
+                            250.27
+                        ]
+                    ], 
+                    "transcript": "to to be on some of these jury cases because ", 
+                    "word_confidence": [
+                        [
+                            "to", 
+                            1.0
+                        ], 
+                        [
+                            "to", 
+                            1.0
+                        ], 
+                        [
+                            "be", 
+                            1.0
+                        ], 
+                        [
+                            "on", 
+                            0.80100850203389
+                        ], 
+                        [
+                            "some", 
+                            0.19719273257963726
+                        ], 
+                        [
+                            "of", 
+                            0.14844499609891829
+                        ], 
+                        [
+                            "these", 
+                            0.06807983223745878
+                        ], 
+                        [
+                            "jury", 
+                            1.0
+                        ], 
+                        [
+                            "cases", 
+                            0.9180396234527588
+                        ], 
+                        [
+                            "because", 
+                            0.968455118340055
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "to to be on Sony jury cases because "
+                }, 
+                {
+                    "transcript": "two to be on some of these jury cases because "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 36, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "most", 
+                            250.74, 
+                            251.08
+                        ], 
+                        [
+                            "time", 
+                            251.08, 
+                            251.36
+                        ], 
+                        [
+                            "you", 
+                            251.36, 
+                            251.55
+                        ], 
+                        [
+                            "just", 
+                            251.55, 
+                            251.77
+                        ], 
+                        [
+                            "pick", 
+                            251.77, 
+                            252.1
+                        ]
+                    ], 
+                    "transcript": "most time you just pick "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 36, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.776, 
+                    "timestamps": [
+                        [
+                            "most", 
+                            250.74, 
+                            251.08
+                        ], 
+                        [
+                            "time", 
+                            251.08, 
+                            251.36
+                        ], 
+                        [
+                            "you", 
+                            251.36, 
+                            251.55
+                        ], 
+                        [
+                            "just", 
+                            251.55, 
+                            251.77
+                        ], 
+                        [
+                            "pick", 
+                            251.77, 
+                            252.1
+                        ], 
+                        [
+                            "you", 
+                            252.37, 
+                            252.54
+                        ], 
+                        [
+                            "know", 
+                            252.54, 
+                            252.99
+                        ], 
+                        [
+                            "Joe", 
+                            253.02, 
+                            253.27
+                        ], 
+                        [
+                            "blow", 
+                            253.27, 
+                            253.65
+                        ], 
+                        [
+                            "whoever", 
+                            253.65, 
+                            254.39
+                        ]
+                    ], 
+                    "transcript": "most time you just pick you know Joe blow whoever ", 
+                    "word_confidence": [
+                        [
+                            "most", 
+                            1.0
+                        ], 
+                        [
+                            "time", 
+                            0.6625793501432453
+                        ], 
+                        [
+                            "you", 
+                            0.7304928903316364
+                        ], 
+                        [
+                            "just", 
+                            1.0
+                        ], 
+                        [
+                            "pick", 
+                            0.6839798602401732
+                        ], 
+                        [
+                            "you", 
+                            1.0
+                        ], 
+                        [
+                            "know", 
+                            0.9912805549403862
+                        ], 
+                        [
+                            "Joe", 
+                            1.0
+                        ], 
+                        [
+                            "blow", 
+                            1.0
+                        ], 
+                        [
+                            "whoever", 
+                            0.33099173823963157
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "most time you just pick you know Joe blow who ever "
+                }, 
+                {
+                    "transcript": "most times you just pick you know Joe blow whoever "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 37, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "and", 
+                            255.18, 
+                            255.77
+                        ], 
+                        [
+                            "%HESITATION", 
+                            255.8, 
+                            256.2
+                        ], 
+                        [
+                            "good", 
+                            256.2, 
+                            256.45
+                        ], 
+                        [
+                            "citizen", 
+                            256.45, 
+                            256.92
+                        ]
+                    ], 
+                    "transcript": "and %HESITATION good citizen "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 37, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.903, 
+                    "timestamps": [
+                        [
+                            "and", 
+                            255.18, 
+                            255.77
+                        ], 
+                        [
+                            "%HESITATION", 
+                            255.8, 
+                            256.2
+                        ], 
+                        [
+                            "good", 
+                            256.2, 
+                            256.45
+                        ], 
+                        [
+                            "citizen", 
+                            256.45, 
+                            256.99
+                        ], 
+                        [
+                            "or", 
+                            256.99, 
+                            257.07
+                        ], 
+                        [
+                            "whoever", 
+                            257.07, 
+                            257.81
+                        ], 
+                        [
+                            "and", 
+                            258.01, 
+                            258.53
+                        ], 
+                        [
+                            "call", 
+                            258.53, 
+                            258.84
+                        ], 
+                        [
+                            "them", 
+                            258.84, 
+                            259.08
+                        ], 
+                        [
+                            "again", 
+                            259.08, 
+                            259.49
+                        ]
+                    ], 
+                    "transcript": "and %HESITATION good citizen or whoever and call them again ", 
+                    "word_confidence": [
+                        [
+                            "and", 
+                            1.0
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.9951354305597191
+                        ], 
+                        [
+                            "good", 
+                            1.0
+                        ], 
+                        [
+                            "citizen", 
+                            0.9975028865569704
+                        ], 
+                        [
+                            "or", 
+                            0.7413358678551945
+                        ], 
+                        [
+                            "whoever", 
+                            0.9951117247515353
+                        ], 
+                        [
+                            "and", 
+                            1.0
+                        ], 
+                        [
+                            "call", 
+                            0.8246724968357668
+                        ], 
+                        [
+                            "them", 
+                            0.7897650876628785
+                        ], 
+                        [
+                            "again", 
+                            0.3555183841481624
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "and %HESITATION good citizen or whoever and call them in "
+                }, 
+                {
+                    "transcript": "and %HESITATION good citizen or whoever and call them yet "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 38, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.996, 
+                    "timestamps": [
+                        [
+                            "exactly", 
+                            261.62, 
+                            262.55
+                        ]
+                    ], 
+                    "transcript": "exactly ", 
+                    "word_confidence": [
+                        [
+                            "exactly", 
+                            0.9960821395612842
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "do exactly "
+                }, 
+                {
+                    "transcript": "who exactly "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 39, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.99, 
+                    "timestamps": [
+                        [
+                            "right", 
+                            267.37, 
+                            267.95
+                        ], 
+                        [
+                            "exactly", 
+                            267.98, 
+                            268.84
+                        ]
+                    ], 
+                    "transcript": "right exactly ", 
+                    "word_confidence": [
+                        [
+                            "right", 
+                            0.9886962320992296
+                        ], 
+                        [
+                            "exactly", 
+                            0.990131585959969
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "right right exactly "
+                }, 
+                {
+                    "transcript": "it right exactly "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 40, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.991, 
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            270.64, 
+                            271.16
+                        ]
+                    ], 
+                    "transcript": "yeah ", 
+                    "word_confidence": [
+                        [
+                            "yeah", 
+                            0.9908635481695431
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 41, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.0, 
+                    "timestamps": [], 
+                    "transcript": "it's "
+                }, 
+                {
+                    "transcript": "yes "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 42, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.989, 
+                    "timestamps": [
+                        [
+                            "uhhuh", 
+                            279.16, 
+                            279.74
+                        ]
+                    ], 
+                    "transcript": "uhhuh ", 
+                    "word_confidence": [
+                        [
+                            "uhhuh", 
+                            0.9890140996183916
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 43, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "put", 
+                            282.91, 
+                            283.16
+                        ], 
+                        [
+                            "a", 
+                            283.16, 
+                            283.22
+                        ], 
+                        [
+                            "putting", 
+                            283.22, 
+                            283.5
+                        ], 
+                        [
+                            "on", 
+                            283.5, 
+                            283.69
+                        ], 
+                        [
+                            "a", 
+                            283.69, 
+                            283.72
+                        ], 
+                        [
+                            "act", 
+                            283.72, 
+                            284.26
+                        ], 
+                        [
+                            "or", 
+                            284.26, 
+                            284.36
+                        ], 
+                        [
+                            "whatever", 
+                            284.36, 
+                            284.7
+                        ]
+                    ], 
+                    "transcript": "put a putting on a act or whatever "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 43, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.859, 
+                    "timestamps": [
+                        [
+                            "put", 
+                            282.91, 
+                            283.16
+                        ], 
+                        [
+                            "a", 
+                            283.16, 
+                            283.22
+                        ], 
+                        [
+                            "putting", 
+                            283.22, 
+                            283.5
+                        ], 
+                        [
+                            "on", 
+                            283.5, 
+                            283.69
+                        ], 
+                        [
+                            "a", 
+                            283.69, 
+                            283.72
+                        ], 
+                        [
+                            "act", 
+                            283.72, 
+                            284.26
+                        ], 
+                        [
+                            "or", 
+                            284.26, 
+                            284.36
+                        ], 
+                        [
+                            "whatever", 
+                            284.36, 
+                            285.02
+                        ]
+                    ], 
+                    "transcript": "put a putting on a act or whatever ", 
+                    "word_confidence": [
+                        [
+                            "put", 
+                            0.9286505290077689
+                        ], 
+                        [
+                            "a", 
+                            0.34120868512810226
+                        ], 
+                        [
+                            "putting", 
+                            0.5524057052233807
+                        ], 
+                        [
+                            "on", 
+                            0.638403044502252
+                        ], 
+                        [
+                            "a", 
+                            0.545692158290906
+                        ], 
+                        [
+                            "act", 
+                            0.9831312349306389
+                        ], 
+                        [
+                            "or", 
+                            0.8343389500045333
+                        ], 
+                        [
+                            "whatever", 
+                            0.9910102889905241
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "put or putting on a act or whatever "
+                }, 
+                {
+                    "transcript": "put her putting on a act or whatever "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 44, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.796, 
+                    "timestamps": [
+                        [
+                            "uhhuh", 
+                            287.85, 
+                            288.58
+                        ]
+                    ], 
+                    "transcript": "uhhuh ", 
+                    "word_confidence": [
+                        [
+                            "uhhuh", 
+                            0.7962287647741165
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "from "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 45, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            289.11, 
+                            289.36
+                        ], 
+                        [
+                            "exactly", 
+                            289.88, 
+                            290.71
+                        ]
+                    ], 
+                    "transcript": "yeah exactly "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 45, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.996, 
+                    "timestamps": [
+                        [
+                            "exactly", 
+                            289.88, 
+                            290.76
+                        ], 
+                        [
+                            "exactly", 
+                            290.99, 
+                            291.69
+                        ]
+                    ], 
+                    "transcript": "exactly exactly ", 
+                    "word_confidence": [
+                        [
+                            "exactly", 
+                            0.9999999999999972
+                        ], 
+                        [
+                            "exactly", 
+                            0.9905029460507336
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "right exactly exactly "
+                }, 
+                {
+                    "transcript": "yeah exactly exactly "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}
