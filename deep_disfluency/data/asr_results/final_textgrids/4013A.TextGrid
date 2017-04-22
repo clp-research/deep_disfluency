@@ -1,0 +1,5144 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 298.8
+tiers? <exists>
+size = 2
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "Hyp"
+		xmin = 0.0
+		xmax = 298.8
+		intervals: size = 587
+		intervals [1]:
+			xmin = 0.0
+			xmax = 0.26
+			text = ""
+		intervals [2]:
+			xmin = 0.26
+			xmax = 0.99
+			text = "okay"
+		intervals [3]:
+			xmin = 0.99
+			xmax = 1.07
+			text = ""
+		intervals [4]:
+			xmin = 1.07
+			xmax = 1.25
+			text = "they"
+		intervals [5]:
+			xmin = 1.25
+			xmax = 1.61
+			text = "have"
+		intervals [6]:
+			xmin = 1.61
+			xmax = 1.64
+			text = ""
+		intervals [7]:
+			xmin = 1.64
+			xmax = 1.99
+			text = "$unc$eight"
+		intervals [8]:
+			xmin = 1.99
+			xmax = 2.0
+			text = ""
+		intervals [9]:
+			xmin = 2.0
+			xmax = 2.66
+			text = "children"
+		intervals [10]:
+			xmin = 2.66
+			xmax = 3.04
+			text = ""
+		intervals [11]:
+			xmin = 3.04
+			xmax = 3.4
+			text = "uh"
+		intervals [12]:
+			xmin = 3.4
+			xmax = 3.43
+			text = ""
+		intervals [13]:
+			xmin = 3.43
+			xmax = 3.64
+			text = "what"
+		intervals [14]:
+			xmin = 3.64
+			xmax = 3.9
+			text = "type"
+		intervals [15]:
+			xmin = 3.9
+			xmax = 4.06
+			text = "of"
+		intervals [16]:
+			xmin = 4.06
+			xmax = 4.4
+			text = "things"
+		intervals [17]:
+			xmin = 4.4
+			xmax = 4.56
+			text = "do"
+		intervals [18]:
+			xmin = 4.56
+			xmax = 4.75
+			text = "you"
+		intervals [19]:
+			xmin = 4.75
+			xmax = 5.3
+			text = "do"
+		intervals [20]:
+			xmin = 5.3
+			xmax = 5.4
+			text = ""
+		intervals [21]:
+			xmin = 5.4
+			xmax = 5.75
+			text = "as"
+		intervals [22]:
+			xmin = 5.75
+			xmax = 5.86
+			text = "a"
+		intervals [23]:
+			xmin = 5.86
+			xmax = 6.52
+			text = "family"
+		intervals [24]:
+			xmin = 6.52
+			xmax = 6.55
+			text = ""
+		intervals [25]:
+			xmin = 6.55
+			xmax = 6.7
+			text = "to"
+		intervals [26]:
+			xmin = 6.7
+			xmax = 6.98
+			text = "spend"
+		intervals [27]:
+			xmin = 6.98
+			xmax = 7.18
+			text = "time"
+		intervals [28]:
+			xmin = 7.18
+			xmax = 7.73
+			text = "together"
+		intervals [29]:
+			xmin = 7.73
+			xmax = 27.81
+			text = ""
+		intervals [30]:
+			xmin = 27.81
+			xmax = 28.3
+			text = "<unk>"
+		intervals [31]:
+			xmin = 28.3
+			xmax = 29.85
+			text = ""
+		intervals [32]:
+			xmin = 29.85
+			xmax = 30.19
+			text = "yeah"
+		intervals [33]:
+			xmin = 30.19
+			xmax = 30.33
+			text = "we"
+		intervals [34]:
+			xmin = 30.33
+			xmax = 30.64
+			text = "dial"
+		intervals [35]:
+			xmin = 30.64
+			xmax = 30.89
+			text = "that"
+		intervals [36]:
+			xmin = 30.89
+			xmax = 31.41
+			text = "goes"
+		intervals [37]:
+			xmin = 31.41
+			xmax = 32.06
+			text = ""
+		intervals [38]:
+			xmin = 32.06
+			xmax = 32.67
+			text = "uh"
+		intervals [39]:
+			xmin = 32.67
+			xmax = 33.27
+			text = ""
+		intervals [40]:
+			xmin = 33.27
+			xmax = 33.53
+			text = "lots"
+		intervals [41]:
+			xmin = 33.53
+			xmax = 33.62
+			text = "of"
+		intervals [42]:
+			xmin = 33.62
+			xmax = 33.92
+			text = "kids"
+		intervals [43]:
+			xmin = 33.92
+			xmax = 33.98
+			text = "who"
+		intervals [44]:
+			xmin = 33.98
+			xmax = 34.19
+			text = "dont"
+		intervals [45]:
+			xmin = 34.19
+			xmax = 34.36
+			text = "have"
+		intervals [46]:
+			xmin = 34.36
+			xmax = 34.64
+			text = "lots"
+		intervals [47]:
+			xmin = 34.64
+			xmax = 34.73
+			text = "of"
+		intervals [48]:
+			xmin = 34.73
+			xmax = 34.9
+			text = "money"
+		intervals [49]:
+			xmin = 34.9
+			xmax = 34.94
+			text = ""
+		intervals [50]:
+			xmin = 34.94
+			xmax = 35.15
+			text = "for"
+		intervals [51]:
+			xmin = 35.15
+			xmax = 36.09
+			text = "recreation"
+		intervals [52]:
+			xmin = 36.09
+			xmax = 36.91
+			text = ""
+		intervals [53]:
+			xmin = 36.91
+			xmax = 37.15
+			text = "well"
+		intervals [54]:
+			xmin = 37.15
+			xmax = 37.56
+			text = "thats"
+		intervals [55]:
+			xmin = 37.56
+			xmax = 38.26
+			text = "fun"
+		intervals [56]:
+			xmin = 38.26
+			xmax = 38.75
+			text = "so"
+		intervals [57]:
+			xmin = 38.75
+			xmax = 39.23
+			text = ""
+		intervals [58]:
+			xmin = 39.23
+			xmax = 39.73
+			text = "uh"
+		intervals [59]:
+			xmin = 39.73
+			xmax = 41.47
+			text = ""
+		intervals [60]:
+			xmin = 41.47
+			xmax = 42.07
+			text = "see"
+		intervals [61]:
+			xmin = 42.07
+			xmax = 42.72
+			text = ""
+		intervals [62]:
+			xmin = 42.72
+			xmax = 42.88
+			text = "i"
+		intervals [63]:
+			xmin = 42.88
+			xmax = 43.2
+			text = "met"
+		intervals [64]:
+			xmin = 43.2
+			xmax = 43.23
+			text = ""
+		intervals [65]:
+			xmin = 43.23
+			xmax = 43.45
+			text = "some"
+		intervals [66]:
+			xmin = 43.45
+			xmax = 43.56
+			text = "of"
+		intervals [67]:
+			xmin = 43.56
+			xmax = 43.66
+			text = "the"
+		intervals [68]:
+			xmin = 43.66
+			xmax = 43.97
+			text = "things"
+		intervals [69]:
+			xmin = 43.97
+			xmax = 44.13
+			text = "we"
+		intervals [70]:
+			xmin = 44.13
+			xmax = 44.29
+			text = "do"
+		intervals [71]:
+			xmin = 44.29
+			xmax = 44.3
+			text = ""
+		intervals [72]:
+			xmin = 44.3
+			xmax = 44.83
+			text = "together"
+		intervals [73]:
+			xmin = 44.83
+			xmax = 45.0
+			text = "as"
+		intervals [74]:
+			xmin = 45.0
+			xmax = 45.07
+			text = "a"
+		intervals [75]:
+			xmin = 45.07
+			xmax = 45.47
+			text = "family"
+		intervals [76]:
+			xmin = 45.47
+			xmax = 45.61
+			text = "we"
+		intervals [77]:
+			xmin = 45.61
+			xmax = 45.87
+			text = "like"
+		intervals [78]:
+			xmin = 45.87
+			xmax = 46.01
+			text = "to"
+		intervals [79]:
+			xmin = 46.01
+			xmax = 46.41
+			text = "play"
+		intervals [80]:
+			xmin = 46.41
+			xmax = 46.98
+			text = ""
+		intervals [81]:
+			xmin = 46.98
+			xmax = 47.36
+			text = "games"
+		intervals [82]:
+			xmin = 47.36
+			xmax = 47.44
+			text = "a"
+		intervals [83]:
+			xmin = 47.44
+			xmax = 47.85
+			text = "lot"
+		intervals [84]:
+			xmin = 47.85
+			xmax = 47.88
+			text = ""
+		intervals [85]:
+			xmin = 47.88
+			xmax = 48.33
+			text = "and"
+		intervals [86]:
+			xmin = 48.33
+			xmax = 48.76
+			text = ""
+		intervals [87]:
+			xmin = 48.76
+			xmax = 49.03
+			text = "you"
+		intervals [88]:
+			xmin = 49.03
+			xmax = 49.17
+			text = "may"
+		intervals [89]:
+			xmin = 49.17
+			xmax = 49.37
+			text = "think"
+		intervals [90]:
+			xmin = 49.37
+			xmax = 49.52
+			text = "this"
+		intervals [91]:
+			xmin = 49.52
+			xmax = 49.64
+			text = "is"
+		intervals [92]:
+			xmin = 49.64
+			xmax = 49.89
+			text = "funny"
+		intervals [93]:
+			xmin = 49.89
+			xmax = 50.06
+			text = "but"
+		intervals [94]:
+			xmin = 50.06
+			xmax = 50.19
+			text = "$unc$one"
+		intervals [95]:
+			xmin = 50.19
+			xmax = 50.28
+			text = "of"
+		intervals [96]:
+			xmin = 50.28
+			xmax = 50.42
+			text = "our"
+		intervals [97]:
+			xmin = 50.42
+			xmax = 50.65
+			text = "fun"
+		intervals [98]:
+			xmin = 50.65
+			xmax = 50.85
+			text = ""
+		intervals [99]:
+			xmin = 50.85
+			xmax = 51.27
+			text = "games"
+		intervals [100]:
+			xmin = 51.27
+			xmax = 51.43
+			text = "we"
+		intervals [101]:
+			xmin = 51.43
+			xmax = 51.61
+			text = "like"
+		intervals [102]:
+			xmin = 51.61
+			xmax = 51.71
+			text = "to"
+		intervals [103]:
+			xmin = 51.71
+			xmax = 51.87
+			text = "play"
+		intervals [104]:
+			xmin = 51.87
+			xmax = 52.23
+			text = "together"
+		intervals [105]:
+			xmin = 52.23
+			xmax = 52.32
+			text = "is"
+		intervals [106]:
+			xmin = 52.32
+			xmax = 52.56
+			text = "hide"
+		intervals [107]:
+			xmin = 52.56
+			xmax = 52.57
+			text = ""
+		intervals [108]:
+			xmin = 52.57
+			xmax = 52.74
+			text = "and"
+		intervals [109]:
+			xmin = 52.74
+			xmax = 53.26
+			text = "<unk>"
+		intervals [110]:
+			xmin = 53.26
+			xmax = 53.29
+			text = ""
+		intervals [111]:
+			xmin = 53.29
+			xmax = 53.6
+			text = "and"
+		intervals [112]:
+			xmin = 53.6
+			xmax = 54.83
+			text = ""
+		intervals [113]:
+			xmin = 54.83
+			xmax = 55.02
+			text = "we"
+		intervals [114]:
+			xmin = 55.02
+			xmax = 55.34
+			text = "just"
+		intervals [115]:
+			xmin = 55.34
+			xmax = 55.57
+			text = "have"
+		intervals [116]:
+			xmin = 55.57
+			xmax = 55.6
+			text = ""
+		intervals [117]:
+			xmin = 55.6
+			xmax = 55.71
+			text = "a"
+		intervals [118]:
+			xmin = 55.71
+			xmax = 55.99
+			text = ""
+		intervals [119]:
+			xmin = 55.99
+			xmax = 56.28
+			text = "play"
+		intervals [120]:
+			xmin = 56.28
+			xmax = 56.67
+			text = "behind"
+		intervals [121]:
+			xmin = 56.67
+			xmax = 57.24
+			text = "<unk>"
+		intervals [122]:
+			xmin = 57.24
+			xmax = 57.72
+			text = "starts"
+		intervals [123]:
+			xmin = 57.72
+			xmax = 57.81
+			text = ""
+		intervals [124]:
+			xmin = 57.81
+			xmax = 57.95
+			text = "in"
+		intervals [125]:
+			xmin = 57.95
+			xmax = 58.09
+			text = "our"
+		intervals [126]:
+			xmin = 58.09
+			xmax = 58.46
+			text = "house"
+		intervals [127]:
+			xmin = 58.46
+			xmax = 58.78
+			text = ""
+		intervals [128]:
+			xmin = 58.78
+			xmax = 59.02
+			text = "and"
+		intervals [129]:
+			xmin = 59.02
+			xmax = 59.22
+			text = "that"
+		intervals [130]:
+			xmin = 59.22
+			xmax = 59.38
+			text = "is"
+		intervals [131]:
+			xmin = 59.38
+			xmax = 59.41
+			text = ""
+		intervals [132]:
+			xmin = 59.41
+			xmax = 59.55
+			text = "so"
+		intervals [133]:
+			xmin = 59.55
+			xmax = 59.88
+			text = "fun"
+		intervals [134]:
+			xmin = 59.88
+			xmax = 60.02
+			text = "the"
+		intervals [135]:
+			xmin = 60.02
+			xmax = 60.32
+			text = "kids"
+		intervals [136]:
+			xmin = 60.32
+			xmax = 60.51
+			text = "just"
+		intervals [137]:
+			xmin = 60.51
+			xmax = 60.55
+			text = ""
+		intervals [138]:
+			xmin = 60.55
+			xmax = 60.7
+			text = "get"
+		intervals [139]:
+			xmin = 60.7
+			xmax = 60.87
+			text = "a"
+		intervals [140]:
+			xmin = 60.87
+			xmax = 60.95
+			text = ""
+		intervals [141]:
+			xmin = 60.95
+			xmax = 61.28
+			text = "crack"
+		intervals [142]:
+			xmin = 61.28
+			xmax = 61.52
+			text = "at"
+		intervals [143]:
+			xmin = 61.52
+			xmax = 61.81
+			text = "that"
+		intervals [144]:
+			xmin = 61.81
+			xmax = 63.14
+			text = ""
+		intervals [145]:
+			xmin = 63.14
+			xmax = 63.64
+			text = "uh"
+		intervals [146]:
+			xmin = 63.64
+			xmax = 64.01
+			text = ""
+		intervals [147]:
+			xmin = 64.01
+			xmax = 64.2
+			text = "we"
+		intervals [148]:
+			xmin = 64.2
+			xmax = 64.49
+			text = "like"
+		intervals [149]:
+			xmin = 64.49
+			xmax = 64.63
+			text = "we"
+		intervals [150]:
+			xmin = 64.63
+			xmax = 64.76
+			text = "do"
+		intervals [151]:
+			xmin = 64.76
+			xmax = 64.87
+			text = "like"
+		intervals [152]:
+			xmin = 64.87
+			xmax = 64.94
+			text = ""
+		intervals [153]:
+			xmin = 64.94
+			xmax = 65.04
+			text = "to"
+		intervals [154]:
+			xmin = 65.04
+			xmax = 65.15
+			text = "go"
+		intervals [155]:
+			xmin = 65.15
+			xmax = 65.28
+			text = "to"
+		intervals [156]:
+			xmin = 65.28
+			xmax = 65.37
+			text = "the"
+		intervals [157]:
+			xmin = 65.37
+			xmax = 65.65
+			text = "park"
+		intervals [158]:
+			xmin = 65.65
+			xmax = 65.82
+			text = "to"
+		intervals [159]:
+			xmin = 65.82
+			xmax = 66.18
+			text = "you"
+		intervals [160]:
+			xmin = 66.18
+			xmax = 66.4
+			text = ""
+		intervals [161]:
+			xmin = 66.4
+			xmax = 66.73
+			text = "like"
+		intervals [162]:
+			xmin = 66.73
+			xmax = 67.01
+			text = "your"
+		intervals [163]:
+			xmin = 67.01
+			xmax = 67.77
+			text = "family"
+		intervals [164]:
+			xmin = 67.77
+			xmax = 67.8
+			text = ""
+		intervals [165]:
+			xmin = 67.8
+			xmax = 68.22
+			text = "uh"
+		intervals [166]:
+			xmin = 68.22
+			xmax = 69.29
+			text = ""
+		intervals [167]:
+			xmin = 69.29
+			xmax = 69.67
+			text = "we"
+		intervals [168]:
+			xmin = 69.67
+			xmax = 70.33
+			text = ""
+		intervals [169]:
+			xmin = 70.33
+			xmax = 70.61
+			text = "dont"
+		intervals [170]:
+			xmin = 70.61
+			xmax = 70.77
+			text = "do"
+		intervals [171]:
+			xmin = 70.77
+			xmax = 70.83
+			text = "a"
+		intervals [172]:
+			xmin = 70.83
+			xmax = 71.06
+			text = "lot"
+		intervals [173]:
+			xmin = 71.06
+			xmax = 71.15
+			text = "of"
+		intervals [174]:
+			xmin = 71.15
+			xmax = 71.88
+			text = "vacationing"
+		intervals [175]:
+			xmin = 71.88
+			xmax = 72.09
+			text = "have"
+		intervals [176]:
+			xmin = 72.09
+			xmax = 72.38
+			text = "you"
+		intervals [177]:
+			xmin = 72.38
+			xmax = 72.41
+			text = ""
+		intervals [178]:
+			xmin = 72.41
+			xmax = 72.76
+			text = "taken"
+		intervals [179]:
+			xmin = 72.76
+			xmax = 72.82
+			text = "a"
+		intervals [180]:
+			xmin = 72.82
+			xmax = 72.98
+			text = "lot"
+		intervals [181]:
+			xmin = 72.98
+			xmax = 73.05
+			text = "of"
+		intervals [182]:
+			xmin = 73.05
+			xmax = 73.69
+			text = "vacations"
+		intervals [183]:
+			xmin = 73.69
+			xmax = 73.91
+			text = "to"
+		intervals [184]:
+			xmin = 73.91
+			xmax = 74.23
+			text = ""
+		intervals [185]:
+			xmin = 74.23
+			xmax = 74.64
+			text = "or"
+		intervals [186]:
+			xmin = 74.64
+			xmax = 77.63
+			text = ""
+		intervals [187]:
+			xmin = 77.63
+			xmax = 78.33
+			text = "<unk>"
+		intervals [188]:
+			xmin = 78.33
+			xmax = 78.39
+			text = ""
+		intervals [189]:
+			xmin = 78.39
+			xmax = 78.55
+			text = "and"
+		intervals [190]:
+			xmin = 78.55
+			xmax = 78.77
+			text = "weird"
+		intervals [191]:
+			xmin = 78.77
+			xmax = 80.9
+			text = ""
+		intervals [192]:
+			xmin = 80.9
+			xmax = 81.67
+			text = "uh"
+		intervals [193]:
+			xmin = 81.67
+			xmax = 83.7
+			text = ""
+		intervals [194]:
+			xmin = 83.7
+			xmax = 84.01
+			text = "uh"
+		intervals [195]:
+			xmin = 84.01
+			xmax = 84.29
+			text = "now"
+		intervals [196]:
+			xmin = 84.29
+			xmax = 84.46
+			text = "where"
+		intervals [197]:
+			xmin = 84.46
+			xmax = 84.58
+			text = "do"
+		intervals [198]:
+			xmin = 84.58
+			xmax = 84.74
+			text = "they"
+		intervals [199]:
+			xmin = 84.74
+			xmax = 85.08
+			text = "live"
+		intervals [200]:
+			xmin = 85.08
+			xmax = 86.05
+			text = ""
+		intervals [201]:
+			xmin = 86.05
+			xmax = 86.75
+			text = "uh"
+		intervals [202]:
+			xmin = 86.75
+			xmax = 86.88
+			text = ""
+		intervals [203]:
+			xmin = 86.88
+			xmax = 87.04
+			text = "so"
+		intervals [204]:
+			xmin = 87.04
+			xmax = 87.43
+			text = "thats"
+		intervals [205]:
+			xmin = 87.43
+			xmax = 87.55
+			text = "a"
+		intervals [206]:
+			xmin = 87.55
+			xmax = 87.76
+			text = ""
+		intervals [207]:
+			xmin = 87.76
+			xmax = 87.89
+			text = "of"
+		intervals [208]:
+			xmin = 87.89
+			xmax = 87.99
+			text = "a"
+		intervals [209]:
+			xmin = 87.99
+			xmax = 88.31
+			text = "drive"
+		intervals [210]:
+			xmin = 88.31
+			xmax = 88.47
+			text = "for"
+		intervals [211]:
+			xmin = 88.47
+			xmax = 88.63
+			text = "you"
+		intervals [212]:
+			xmin = 88.63
+			xmax = 88.99
+			text = "then"
+		intervals [213]:
+			xmin = 88.99
+			xmax = 90.06
+			text = ""
+		intervals [214]:
+			xmin = 90.06
+			xmax = 90.52
+			text = "uh"
+		intervals [215]:
+			xmin = 90.52
+			xmax = 90.65
+			text = ""
+		intervals [216]:
+			xmin = 90.65
+			xmax = 90.9
+			text = "that"
+		intervals [217]:
+			xmin = 90.9
+			xmax = 91.03
+			text = "you"
+		intervals [218]:
+			xmin = 91.03
+			xmax = 91.23
+			text = "like"
+		intervals [219]:
+			xmin = 91.23
+			xmax = 91.32
+			text = "to"
+		intervals [220]:
+			xmin = 91.32
+			xmax = 91.43
+			text = "go"
+		intervals [221]:
+			xmin = 91.43
+			xmax = 91.61
+			text = "there"
+		intervals [222]:
+			xmin = 91.61
+			xmax = 91.77
+			text = "for"
+		intervals [223]:
+			xmin = 91.77
+			xmax = 91.91
+			text = "the"
+		intervals [224]:
+			xmin = 91.91
+			xmax = 92.57
+			text = "holidays"
+		intervals [225]:
+			xmin = 92.57
+			xmax = 92.84
+			text = "and"
+		intervals [226]:
+			xmin = 92.84
+			xmax = 101.67
+			text = ""
+		intervals [227]:
+			xmin = 101.67
+			xmax = 102.21
+			text = "uh"
+		intervals [228]:
+			xmin = 102.21
+			xmax = 103.48
+			text = ""
+		intervals [229]:
+			xmin = 103.48
+			xmax = 103.85
+			text = "whether"
+		intervals [230]:
+			xmin = 103.85
+			xmax = 104.03
+			text = "the"
+		intervals [231]:
+			xmin = 104.03
+			xmax = 104.37
+			text = "ages"
+		intervals [232]:
+			xmin = 104.37
+			xmax = 104.51
+			text = "of"
+		intervals [233]:
+			xmin = 104.51
+			xmax = 104.62
+			text = "your"
+		intervals [234]:
+			xmin = 104.62
+			xmax = 104.93
+			text = "kids"
+		intervals [235]:
+			xmin = 104.93
+			xmax = 105.14
+			text = "then"
+		intervals [236]:
+			xmin = 105.14
+			xmax = 107.15
+			text = ""
+		intervals [237]:
+			xmin = 107.15
+			xmax = 108.04
+			text = "oh"
+		intervals [238]:
+			xmin = 108.04
+			xmax = 108.07
+			text = ""
+		intervals [239]:
+			xmin = 108.07
+			xmax = 108.72
+			text = "yes"
+		intervals [240]:
+			xmin = 108.72
+			xmax = 109.25
+			text = ""
+		intervals [241]:
+			xmin = 109.25
+			xmax = 109.45
+			text = "so"
+		intervals [242]:
+			xmin = 109.45
+			xmax = 109.57
+			text = "you"
+		intervals [243]:
+			xmin = 109.57
+			xmax = 109.75
+			text = "have"
+		intervals [244]:
+			xmin = 109.75
+			xmax = 110.06
+			text = "some"
+		intervals [245]:
+			xmin = 110.06
+			xmax = 110.3
+			text = "in"
+		intervals [246]:
+			xmin = 110.3
+			xmax = 110.4
+			text = "the"
+		intervals [247]:
+			xmin = 110.4
+			xmax = 110.85
+			text = "nest"
+		intervals [248]:
+			xmin = 110.85
+			xmax = 111.02
+			text = "and"
+		intervals [249]:
+			xmin = 111.02
+			xmax = 111.03
+			text = ""
+		intervals [250]:
+			xmin = 111.03
+			xmax = 111.29
+			text = "some"
+		intervals [251]:
+			xmin = 111.29
+			xmax = 111.7
+			text = "out"
+		intervals [252]:
+			xmin = 111.7
+			xmax = 112.13
+			text = "some"
+		intervals [253]:
+			xmin = 112.13
+			xmax = 114.58
+			text = ""
+		intervals [254]:
+			xmin = 114.58
+			xmax = 114.82
+			text = "we"
+		intervals [255]:
+			xmin = 114.82
+			xmax = 115.24
+			text = "have"
+		intervals [256]:
+			xmin = 115.24
+			xmax = 115.4
+			text = ""
+		intervals [257]:
+			xmin = 115.4
+			xmax = 115.74
+			text = "ours"
+		intervals [258]:
+			xmin = 115.74
+			xmax = 116.07
+			text = "start"
+		intervals [259]:
+			xmin = 116.07
+			xmax = 116.08
+			text = ""
+		intervals [260]:
+			xmin = 116.08
+			xmax = 116.24
+			text = "at"
+		intervals [261]:
+			xmin = 116.24
+			xmax = 116.81
+			text = "$unc$twelve"
+		intervals [262]:
+			xmin = 116.81
+			xmax = 117.01
+			text = "and"
+		intervals [263]:
+			xmin = 117.01
+			xmax = 117.18
+			text = "then"
+		intervals [264]:
+			xmin = 117.18
+			xmax = 117.31
+			text = "they"
+		intervals [265]:
+			xmin = 117.31
+			xmax = 117.47
+			text = "go"
+		intervals [266]:
+			xmin = 117.47
+			xmax = 117.78
+			text = "down"
+		intervals [267]:
+			xmin = 117.78
+			xmax = 117.94
+			text = "to"
+		intervals [268]:
+			xmin = 117.94
+			xmax = 118.28
+			text = "$unc$four"
+		intervals [269]:
+			xmin = 118.28
+			xmax = 119.23
+			text = ""
+		intervals [270]:
+			xmin = 119.23
+			xmax = 119.59
+			text = "so"
+		intervals [271]:
+			xmin = 119.59
+			xmax = 124.94
+			text = ""
+		intervals [272]:
+			xmin = 124.94
+			xmax = 125.09
+			text = "i"
+		intervals [273]:
+			xmin = 125.09
+			xmax = 125.95
+			text = "bet"
+		intervals [274]:
+			xmin = 125.95
+			xmax = 132.81
+			text = ""
+		intervals [275]:
+			xmin = 132.81
+			xmax = 133.48
+			text = "yes"
+		intervals [276]:
+			xmin = 133.48
+			xmax = 136.19
+			text = ""
+		intervals [277]:
+			xmin = 136.19
+			xmax = 136.78
+			text = "yes"
+		intervals [278]:
+			xmin = 136.78
+			xmax = 137.58
+			text = ""
+		intervals [279]:
+			xmin = 137.58
+			xmax = 137.73
+			text = "and"
+		intervals [280]:
+			xmin = 137.73
+			xmax = 137.92
+			text = "then"
+		intervals [281]:
+			xmin = 137.92
+			xmax = 138.06
+			text = "if"
+		intervals [282]:
+			xmin = 138.06
+			xmax = 138.17
+			text = "you"
+		intervals [283]:
+			xmin = 138.17
+			xmax = 138.39
+			text = "want"
+		intervals [284]:
+			xmin = 138.39
+			xmax = 138.48
+			text = "to"
+		intervals [285]:
+			xmin = 138.48
+			xmax = 138.74
+			text = "play"
+		intervals [286]:
+			xmin = 138.74
+			xmax = 139.14
+			text = "something"
+		intervals [287]:
+			xmin = 139.14
+			xmax = 139.3
+			text = "on"
+		intervals [288]:
+			xmin = 139.3
+			xmax = 139.39
+			text = "the"
+		intervals [289]:
+			xmin = 139.39
+			xmax = 139.61
+			text = "little"
+		intervals [290]:
+			xmin = 139.61
+			xmax = 139.94
+			text = "kids"
+		intervals [291]:
+			xmin = 139.94
+			xmax = 140.29
+			text = "level"
+		intervals [292]:
+			xmin = 140.29
+			xmax = 140.45
+			text = "then"
+		intervals [293]:
+			xmin = 140.45
+			xmax = 140.56
+			text = "the"
+		intervals [294]:
+			xmin = 140.56
+			xmax = 140.8
+			text = "older"
+		intervals [295]:
+			xmin = 140.8
+			xmax = 141.17
+			text = ""
+		intervals [296]:
+			xmin = 141.17
+			xmax = 141.39
+			text = "get"
+		intervals [297]:
+			xmin = 141.39
+			xmax = 141.56
+			text = "real"
+		intervals [298]:
+			xmin = 141.56
+			xmax = 142.01
+			text = "bored"
+		intervals [299]:
+			xmin = 142.01
+			xmax = 142.25
+			text = "and"
+		intervals [300]:
+			xmin = 142.25
+			xmax = 143.0
+			text = ""
+		intervals [301]:
+			xmin = 143.0
+			xmax = 143.09
+			text = "and"
+		intervals [302]:
+			xmin = 143.09
+			xmax = 143.18
+			text = "they"
+		intervals [303]:
+			xmin = 143.18
+			xmax = 143.44
+			text = "want"
+		intervals [304]:
+			xmin = 143.44
+			xmax = 143.82
+			text = "to"
+		intervals [305]:
+			xmin = 143.82
+			xmax = 144.44
+			text = ""
+		intervals [306]:
+			xmin = 144.44
+			xmax = 144.74
+			text = "do"
+		intervals [307]:
+			xmin = 144.74
+			xmax = 145.25
+			text = "something"
+		intervals [308]:
+			xmin = 145.25
+			xmax = 145.66
+			text = "else"
+		intervals [309]:
+			xmin = 145.66
+			xmax = 146.09
+			text = "so"
+		intervals [310]:
+			xmin = 146.09
+			xmax = 146.12
+			text = ""
+		intervals [311]:
+			xmin = 146.12
+			xmax = 146.31
+			text = "yeah"
+		intervals [312]:
+			xmin = 146.31
+			xmax = 146.57
+			text = "i"
+		intervals [313]:
+			xmin = 146.57
+			xmax = 147.01
+			text = "can"
+		intervals [314]:
+			xmin = 147.01
+			xmax = 147.1
+			text = ""
+		intervals [315]:
+			xmin = 147.1
+			xmax = 147.21
+			text = "i"
+		intervals [316]:
+			xmin = 147.21
+			xmax = 147.44
+			text = "can"
+		intervals [317]:
+			xmin = 147.44
+			xmax = 147.83
+			text = "relate"
+		intervals [318]:
+			xmin = 147.83
+			xmax = 147.86
+			text = ""
+		intervals [319]:
+			xmin = 147.86
+			xmax = 148.01
+			text = "to"
+		intervals [320]:
+			xmin = 148.01
+			xmax = 148.55
+			text = "that"
+		intervals [321]:
+			xmin = 148.55
+			xmax = 149.54
+			text = ""
+		intervals [322]:
+			xmin = 149.54
+			xmax = 149.91
+			text = "uh"
+		intervals [323]:
+			xmin = 149.91
+			xmax = 150.17
+			text = ""
+		intervals [324]:
+			xmin = 150.17
+			xmax = 150.29
+			text = "do"
+		intervals [325]:
+			xmin = 150.29
+			xmax = 150.4
+			text = "you"
+		intervals [326]:
+			xmin = 150.4
+			xmax = 150.72
+			text = "feel"
+		intervals [327]:
+			xmin = 150.72
+			xmax = 150.95
+			text = "that"
+		intervals [328]:
+			xmin = 150.95
+			xmax = 150.98
+			text = ""
+		intervals [329]:
+			xmin = 150.98
+			xmax = 151.36
+			text = "the"
+		intervals [330]:
+			xmin = 151.36
+			xmax = 151.56
+			text = ""
+		intervals [331]:
+			xmin = 151.56
+			xmax = 152.03
+			text = "current"
+		intervals [332]:
+			xmin = 152.03
+			xmax = 152.61
+			text = "trend"
+		intervals [333]:
+			xmin = 152.61
+			xmax = 153.06
+			text = "in"
+		intervals [334]:
+			xmin = 153.06
+			xmax = 153.4
+			text = ""
+		intervals [335]:
+			xmin = 153.4
+			xmax = 154.3
+			text = "families"
+		intervals [336]:
+			xmin = 154.3
+			xmax = 155.34
+			text = ""
+		intervals [337]:
+			xmin = 155.34
+			xmax = 155.67
+			text = "spending"
+		intervals [338]:
+			xmin = 155.67
+			xmax = 155.9
+			text = "time"
+		intervals [339]:
+			xmin = 155.9
+			xmax = 156.35
+			text = "together"
+		intervals [340]:
+			xmin = 156.35
+			xmax = 156.55
+			text = "is"
+		intervals [341]:
+			xmin = 156.55
+			xmax = 156.62
+			text = "a"
+		intervals [342]:
+			xmin = 156.62
+			xmax = 157.09
+			text = "positive"
+		intervals [343]:
+			xmin = 157.09
+			xmax = 157.1
+			text = ""
+		intervals [344]:
+			xmin = 157.1
+			xmax = 157.29
+			text = "$unc$one"
+		intervals [345]:
+			xmin = 157.29
+			xmax = 157.4
+			text = "or"
+		intervals [346]:
+			xmin = 157.4
+			xmax = 157.45
+			text = "a"
+		intervals [347]:
+			xmin = 157.45
+			xmax = 157.94
+			text = "negative"
+		intervals [348]:
+			xmin = 157.94
+			xmax = 158.24
+			text = "$unc$one"
+		intervals [349]:
+			xmin = 158.24
+			xmax = 168.04
+			text = ""
+		intervals [350]:
+			xmin = 168.04
+			xmax = 168.41
+			text = "hello"
+		intervals [351]:
+			xmin = 168.41
+			xmax = 184.59
+			text = ""
+		intervals [352]:
+			xmin = 184.59
+			xmax = 185.2
+			text = "<unk>"
+		intervals [353]:
+			xmin = 185.2
+			xmax = 188.01
+			text = ""
+		intervals [354]:
+			xmin = 188.01
+			xmax = 188.11
+			text = "its"
+		intervals [355]:
+			xmin = 188.11
+			xmax = 188.78
+			text = "good"
+		intervals [356]:
+			xmin = 188.78
+			xmax = 191.63
+			text = ""
+		intervals [357]:
+			xmin = 191.63
+			xmax = 192.25
+			text = "okay"
+		intervals [358]:
+			xmin = 192.25
+			xmax = 199.45
+			text = ""
+		intervals [359]:
+			xmin = 199.45
+			xmax = 199.56
+			text = "i"
+		intervals [360]:
+			xmin = 199.56
+			xmax = 199.83
+			text = "think"
+		intervals [361]:
+			xmin = 199.83
+			xmax = 200.31
+			text = "so"
+		intervals [362]:
+			xmin = 200.31
+			xmax = 200.35
+			text = ""
+		intervals [363]:
+			xmin = 200.35
+			xmax = 200.87
+			text = "and"
+		intervals [364]:
+			xmin = 200.87
+			xmax = 201.13
+			text = ""
+		intervals [365]:
+			xmin = 201.13
+			xmax = 201.25
+			text = "i"
+		intervals [366]:
+			xmin = 201.25
+			xmax = 201.57
+			text = "feel"
+		intervals [367]:
+			xmin = 201.57
+			xmax = 201.99
+			text = "like"
+		intervals [368]:
+			xmin = 201.99
+			xmax = 202.03
+			text = ""
+		intervals [369]:
+			xmin = 202.03
+			xmax = 202.16
+			text = "you"
+		intervals [370]:
+			xmin = 202.16
+			xmax = 202.31
+			text = "know"
+		intervals [371]:
+			xmin = 202.31
+			xmax = 202.49
+			text = "like"
+		intervals [372]:
+			xmin = 202.49
+			xmax = 202.85
+			text = "present"
+		intervals [373]:
+			xmin = 202.85
+			xmax = 203.13
+			text = "best"
+		intervals [374]:
+			xmin = 203.13
+			xmax = 203.19
+			text = ""
+		intervals [375]:
+			xmin = 203.19
+			xmax = 203.91
+			text = "<unk>"
+		intervals [376]:
+			xmin = 203.91
+			xmax = 204.26
+			text = ""
+		intervals [377]:
+			xmin = 204.26
+			xmax = 205.09
+			text = "mentioned"
+		intervals [378]:
+			xmin = 205.09
+			xmax = 205.16
+			text = ""
+		intervals [379]:
+			xmin = 205.16
+			xmax = 205.45
+			text = "quite"
+		intervals [380]:
+			xmin = 205.45
+			xmax = 205.76
+			text = "often"
+		intervals [381]:
+			xmin = 205.76
+			xmax = 205.98
+			text = "that"
+		intervals [382]:
+			xmin = 205.98
+			xmax = 206.01
+			text = ""
+		intervals [383]:
+			xmin = 206.01
+			xmax = 206.25
+			text = "we"
+		intervals [384]:
+			xmin = 206.25
+			xmax = 206.34
+			text = "are"
+		intervals [385]:
+			xmin = 206.34
+			xmax = 206.67
+			text = "trying"
+		intervals [386]:
+			xmin = 206.67
+			xmax = 206.84
+			text = "to"
+		intervals [387]:
+			xmin = 206.84
+			xmax = 206.95
+			text = ""
+		intervals [388]:
+			xmin = 206.95
+			xmax = 207.33
+			text = "become"
+		intervals [389]:
+			xmin = 207.33
+			xmax = 207.39
+			text = "a"
+		intervals [390]:
+			xmin = 207.39
+			xmax = 207.75
+			text = "<unk>"
+		intervals [391]:
+			xmin = 207.75
+			xmax = 207.88
+			text = "and"
+		intervals [392]:
+			xmin = 207.88
+			xmax = 208.16
+			text = "<unk>"
+		intervals [393]:
+			xmin = 208.16
+			xmax = 208.55
+			text = "nation"
+		intervals [394]:
+			xmin = 208.55
+			xmax = 208.68
+			text = "in"
+		intervals [395]:
+			xmin = 208.68
+			xmax = 208.86
+			text = "it"
+		intervals [396]:
+			xmin = 208.86
+			xmax = 209.37
+			text = ""
+		intervals [397]:
+			xmin = 209.37
+			xmax = 209.62
+			text = "does"
+		intervals [398]:
+			xmin = 209.62
+			xmax = 210.0
+			text = "begin"
+		intervals [399]:
+			xmin = 210.0
+			xmax = 210.22
+			text = "with"
+		intervals [400]:
+			xmin = 210.22
+			xmax = 210.34
+			text = "the"
+		intervals [401]:
+			xmin = 210.34
+			xmax = 210.88
+			text = "families"
+		intervals [402]:
+			xmin = 210.88
+			xmax = 211.09
+			text = "that"
+		intervals [403]:
+			xmin = 211.09
+			xmax = 211.62
+			text = "home"
+		intervals [404]:
+			xmin = 211.62
+			xmax = 212.41
+			text = ""
+		intervals [405]:
+			xmin = 212.41
+			xmax = 212.9
+			text = "and"
+		intervals [406]:
+			xmin = 212.9
+			xmax = 213.04
+			text = ""
+		intervals [407]:
+			xmin = 213.04
+			xmax = 213.23
+			text = "so"
+		intervals [408]:
+			xmin = 213.23
+			xmax = 213.36
+			text = "i"
+		intervals [409]:
+			xmin = 213.36
+			xmax = 213.57
+			text = ""
+		intervals [410]:
+			xmin = 213.57
+			xmax = 213.74
+			text = "am"
+		intervals [411]:
+			xmin = 213.74
+			xmax = 213.82
+			text = "a"
+		intervals [412]:
+			xmin = 213.82
+			xmax = 214.1
+			text = ""
+		intervals [413]:
+			xmin = 214.1
+			xmax = 214.43
+			text = "believer"
+		intervals [414]:
+			xmin = 214.43
+			xmax = 214.54
+			text = "in"
+		intervals [415]:
+			xmin = 214.54
+			xmax = 214.95
+			text = "that"
+		intervals [416]:
+			xmin = 214.95
+			xmax = 214.98
+			text = ""
+		intervals [417]:
+			xmin = 214.98
+			xmax = 215.56
+			text = "to"
+		intervals [418]:
+			xmin = 215.56
+			xmax = 222.1
+			text = ""
+		intervals [419]:
+			xmin = 222.1
+			xmax = 222.83
+			text = "yes"
+		intervals [420]:
+			xmin = 222.83
+			xmax = 223.01
+			text = ""
+		intervals [421]:
+			xmin = 223.01
+			xmax = 223.51
+			text = "thats"
+		intervals [422]:
+			xmin = 223.51
+			xmax = 223.84
+			text = ""
+		intervals [423]:
+			xmin = 223.84
+			xmax = 224.01
+			text = "its"
+		intervals [424]:
+			xmin = 224.01
+			xmax = 224.43
+			text = "true"
+		intervals [425]:
+			xmin = 224.43
+			xmax = 224.47
+			text = ""
+		intervals [426]:
+			xmin = 224.47
+			xmax = 224.72
+			text = "we"
+		intervals [427]:
+			xmin = 224.72
+			xmax = 224.96
+			text = "see"
+		intervals [428]:
+			xmin = 224.96
+			xmax = 225.22
+			text = "that"
+		intervals [429]:
+			xmin = 225.22
+			xmax = 225.31
+			text = "a"
+		intervals [430]:
+			xmin = 225.31
+			xmax = 225.55
+			text = ""
+		intervals [431]:
+			xmin = 225.55
+			xmax = 225.73
+			text = "out"
+		intervals [432]:
+			xmin = 225.73
+			xmax = 225.96
+			text = "here"
+		intervals [433]:
+			xmin = 225.96
+			xmax = 226.05
+			text = "in"
+		intervals [434]:
+			xmin = 226.05
+			xmax = 226.47
+			text = "$unc$utah"
+		intervals [435]:
+			xmin = 226.47
+			xmax = 226.79
+			text = "and"
+		intervals [436]:
+			xmin = 226.79
+			xmax = 227.79
+			text = ""
+		intervals [437]:
+			xmin = 227.79
+			xmax = 228.22
+			text = "uh"
+		intervals [438]:
+			xmin = 228.22
+			xmax = 228.46
+			text = ""
+		intervals [439]:
+			xmin = 228.46
+			xmax = 228.62
+			text = "so"
+		intervals [440]:
+			xmin = 228.62
+			xmax = 229.41
+			text = "hopefully"
+		intervals [441]:
+			xmin = 229.41
+			xmax = 229.71
+			text = ""
+		intervals [442]:
+			xmin = 229.71
+			xmax = 230.02
+			text = "hopefully"
+		intervals [443]:
+			xmin = 230.02
+			xmax = 230.16
+			text = "its"
+		intervals [444]:
+			xmin = 230.16
+			xmax = 230.32
+			text = "going"
+		intervals [445]:
+			xmin = 230.32
+			xmax = 230.42
+			text = "to"
+		intervals [446]:
+			xmin = 230.42
+			xmax = 230.93
+			text = "spread"
+		intervals [447]:
+			xmin = 230.93
+			xmax = 231.37
+			text = "huh"
+		intervals [448]:
+			xmin = 231.37
+			xmax = 236.03
+			text = ""
+		intervals [449]:
+			xmin = 236.03
+			xmax = 236.66
+			text = "uh"
+		intervals [450]:
+			xmin = 236.66
+			xmax = 237.15
+			text = ""
+		intervals [451]:
+			xmin = 237.15
+			xmax = 237.53
+			text = "uh"
+		intervals [452]:
+			xmin = 237.53
+			xmax = 237.56
+			text = ""
+		intervals [453]:
+			xmin = 237.56
+			xmax = 237.7
+			text = "do"
+		intervals [454]:
+			xmin = 237.7
+			xmax = 237.81
+			text = "you"
+		intervals [455]:
+			xmin = 237.81
+			xmax = 238.04
+			text = "have"
+		intervals [456]:
+			xmin = 238.04
+			xmax = 238.39
+			text = "a"
+		intervals [457]:
+			xmin = 238.39
+			xmax = 238.5
+			text = ""
+		intervals [458]:
+			xmin = 238.5
+			xmax = 238.85
+			text = "lot"
+		intervals [459]:
+			xmin = 238.85
+			xmax = 239.05
+			text = "of"
+		intervals [460]:
+			xmin = 239.05
+			xmax = 239.11
+			text = ""
+		intervals [461]:
+			xmin = 239.11
+			xmax = 239.49
+			text = "large"
+		intervals [462]:
+			xmin = 239.49
+			xmax = 239.64
+			text = "for"
+		intervals [463]:
+			xmin = 239.64
+			xmax = 239.98
+			text = ""
+		intervals [464]:
+			xmin = 239.98
+			xmax = 240.13
+			text = "out"
+		intervals [465]:
+			xmin = 240.13
+			xmax = 240.25
+			text = "there"
+		intervals [466]:
+			xmin = 240.25
+			xmax = 240.34
+			text = "in"
+		intervals [467]:
+			xmin = 240.34
+			xmax = 241.02
+			text = "$unc$texas"
+		intervals [468]:
+			xmin = 241.02
+			xmax = 241.31
+			text = "or"
+		intervals [469]:
+			xmin = 241.31
+			xmax = 242.71
+			text = ""
+		intervals [470]:
+			xmin = 242.71
+			xmax = 243.1
+			text = "very"
+		intervals [471]:
+			xmin = 243.1
+			xmax = 243.6
+			text = "few"
+		intervals [472]:
+			xmin = 243.6
+			xmax = 243.63
+			text = ""
+		intervals [473]:
+			xmin = 243.63
+			xmax = 243.78
+			text = "you"
+		intervals [474]:
+			xmin = 243.78
+			xmax = 244.0
+			text = "feel"
+		intervals [475]:
+			xmin = 244.0
+			xmax = 244.23
+			text = "like"
+		intervals [476]:
+			xmin = 244.23
+			xmax = 244.34
+			text = "youre"
+		intervals [477]:
+			xmin = 244.34
+			xmax = 244.46
+			text = "in"
+		intervals [478]:
+			xmin = 244.46
+			xmax = 244.56
+			text = "the"
+		intervals [479]:
+			xmin = 244.56
+			xmax = 245.24
+			text = "minority"
+		intervals [480]:
+			xmin = 245.24
+			xmax = 249.16
+			text = ""
+		intervals [481]:
+			xmin = 249.16
+			xmax = 249.37
+			text = "oh"
+		intervals [482]:
+			xmin = 249.37
+			xmax = 249.75
+			text = "dear"
+		intervals [483]:
+			xmin = 249.75
+			xmax = 251.19
+			text = ""
+		intervals [484]:
+			xmin = 251.19
+			xmax = 251.73
+			text = "uh"
+		intervals [485]:
+			xmin = 251.73
+			xmax = 252.5
+			text = ""
+		intervals [486]:
+			xmin = 252.5
+			xmax = 252.73
+			text = "out"
+		intervals [487]:
+			xmin = 252.73
+			xmax = 252.91
+			text = "here"
+		intervals [488]:
+			xmin = 252.91
+			xmax = 252.99
+			text = "in"
+		intervals [489]:
+			xmin = 252.99
+			xmax = 253.5
+			text = "$unc$utah"
+		intervals [490]:
+			xmin = 253.5
+			xmax = 254.0
+			text = "<unk>"
+		intervals [491]:
+			xmin = 254.0
+			xmax = 254.41
+			text = "about"
+		intervals [492]:
+			xmin = 254.41
+			xmax = 254.75
+			text = "the"
+		intervals [493]:
+			xmin = 254.75
+			xmax = 255.49
+			text = ""
+		intervals [494]:
+			xmin = 255.49
+			xmax = 255.68
+			text = "the"
+		intervals [495]:
+			xmin = 255.68
+			xmax = 256.36
+			text = "average"
+		intervals [496]:
+			xmin = 256.36
+			xmax = 256.91
+			text = "yep"
+		intervals [497]:
+			xmin = 256.91
+			xmax = 259.38
+			text = ""
+		intervals [498]:
+			xmin = 259.38
+			xmax = 259.81
+			text = "uh"
+		intervals [499]:
+			xmin = 259.81
+			xmax = 261.4
+			text = ""
+		intervals [500]:
+			xmin = 261.4
+			xmax = 261.91
+			text = "<unk>"
+		intervals [501]:
+			xmin = 261.91
+			xmax = 264.18
+			text = ""
+		intervals [502]:
+			xmin = 264.18
+			xmax = 265.05
+			text = "uh"
+		intervals [503]:
+			xmin = 265.05
+			xmax = 268.44
+			text = ""
+		intervals [504]:
+			xmin = 268.44
+			xmax = 269.06
+			text = "hello"
+		intervals [505]:
+			xmin = 269.06
+			xmax = 270.22
+			text = ""
+		intervals [506]:
+			xmin = 270.22
+			xmax = 270.55
+			text = "so"
+		intervals [507]:
+			xmin = 270.55
+			xmax = 270.58
+			text = ""
+		intervals [508]:
+			xmin = 270.58
+			xmax = 270.74
+			text = "i"
+		intervals [509]:
+			xmin = 270.74
+			xmax = 271.05
+			text = "have"
+		intervals [510]:
+			xmin = 271.05
+			xmax = 271.29
+			text = "some"
+		intervals [511]:
+			xmin = 271.29
+			xmax = 271.8
+			text = "relatives"
+		intervals [512]:
+			xmin = 271.8
+			xmax = 271.96
+			text = "out"
+		intervals [513]:
+			xmin = 271.96
+			xmax = 271.97
+			text = ""
+		intervals [514]:
+			xmin = 271.97
+			xmax = 272.08
+			text = "there"
+		intervals [515]:
+			xmin = 272.08
+			xmax = 272.15
+			text = "in"
+		intervals [516]:
+			xmin = 272.15
+			xmax = 272.63
+			text = "$unc$texas"
+		intervals [517]:
+			xmin = 272.63
+			xmax = 272.74
+			text = "in"
+		intervals [518]:
+			xmin = 272.74
+			xmax = 272.95
+			text = "fact"
+		intervals [519]:
+			xmin = 272.95
+			xmax = 273.05
+			text = "my"
+		intervals [520]:
+			xmin = 273.05
+			xmax = 273.4
+			text = "moms"
+		intervals [521]:
+			xmin = 273.4
+			xmax = 273.57
+			text = "out"
+		intervals [522]:
+			xmin = 273.57
+			xmax = 273.71
+			text = "there"
+		intervals [523]:
+			xmin = 273.71
+			xmax = 273.81
+			text = "in"
+		intervals [524]:
+			xmin = 273.81
+			xmax = 274.32
+			text = "$unc$texas"
+		intervals [525]:
+			xmin = 274.32
+			xmax = 274.51
+			text = "right"
+		intervals [526]:
+			xmin = 274.51
+			xmax = 274.88
+			text = "now"
+		intervals [527]:
+			xmin = 274.88
+			xmax = 274.93
+			text = ""
+		intervals [528]:
+			xmin = 274.93
+			xmax = 275.07
+			text = "in"
+		intervals [529]:
+			xmin = 275.07
+			xmax = 275.52
+			text = "$unc$dallas"
+		intervals [530]:
+			xmin = 275.52
+			xmax = 276.06
+			text = "spending"
+		intervals [531]:
+			xmin = 276.06
+			xmax = 276.26
+			text = "a"
+		intervals [532]:
+			xmin = 276.26
+			xmax = 277.27
+			text = ""
+		intervals [533]:
+			xmin = 277.27
+			xmax = 277.66
+			text = "months"
+		intervals [534]:
+			xmin = 277.66
+			xmax = 277.94
+			text = "with"
+		intervals [535]:
+			xmin = 277.94
+			xmax = 278.28
+			text = "her"
+		intervals [536]:
+			xmin = 278.28
+			xmax = 278.76
+			text = ""
+		intervals [537]:
+			xmin = 278.76
+			xmax = 279.4
+			text = "cousins"
+		intervals [538]:
+			xmin = 279.4
+			xmax = 279.59
+			text = "on"
+		intervals [539]:
+			xmin = 279.59
+			xmax = 279.78
+			text = "their"
+		intervals [540]:
+			xmin = 279.78
+			xmax = 280.31
+			text = "ranch"
+		intervals [541]:
+			xmin = 280.31
+			xmax = 280.59
+			text = "and"
+		intervals [542]:
+			xmin = 280.59
+			xmax = 281.73
+			text = ""
+		intervals [543]:
+			xmin = 281.73
+			xmax = 282.45
+			text = "well"
+		intervals [544]:
+			xmin = 282.45
+			xmax = 282.48
+			text = ""
+		intervals [545]:
+			xmin = 282.48
+			xmax = 283.16
+			text = "uh"
+		intervals [546]:
+			xmin = 283.16
+			xmax = 284.52
+			text = ""
+		intervals [547]:
+			xmin = 284.52
+			xmax = 284.66
+			text = "im"
+		intervals [548]:
+			xmin = 284.66
+			xmax = 285.04
+			text = "trying"
+		intervals [549]:
+			xmin = 285.04
+			xmax = 285.11
+			text = ""
+		intervals [550]:
+			xmin = 285.11
+			xmax = 285.71
+			text = "<unk>"
+		intervals [551]:
+			xmin = 285.71
+			xmax = 287.29
+			text = ""
+		intervals [552]:
+			xmin = 287.29
+			xmax = 287.53
+			text = "it"
+		intervals [553]:
+			xmin = 287.53
+			xmax = 287.56
+			text = ""
+		intervals [554]:
+			xmin = 287.56
+			xmax = 287.75
+			text = "is"
+		intervals [555]:
+			xmin = 287.75
+			xmax = 287.96
+			text = "that"
+		intervals [556]:
+			xmin = 287.96
+			xmax = 288.25
+			text = "close"
+		intervals [557]:
+			xmin = 288.25
+			xmax = 288.39
+			text = "to"
+		intervals [558]:
+			xmin = 288.39
+			xmax = 288.94
+			text = "$unc$dallas"
+		intervals [559]:
+			xmin = 288.94
+			xmax = 290.0
+			text = ""
+		intervals [560]:
+			xmin = 290.0
+			xmax = 290.35
+			text = "uh"
+		intervals [561]:
+			xmin = 290.35
+			xmax = 291.05
+			text = ""
+		intervals [562]:
+			xmin = 291.05
+			xmax = 291.36
+			text = "$unc$jeff"
+		intervals [563]:
+			xmin = 291.36
+			xmax = 291.89
+			text = ""
+		intervals [564]:
+			xmin = 291.89
+			xmax = 292.4
+			text = "its"
+		intervals [565]:
+			xmin = 292.4
+			xmax = 292.47
+			text = ""
+		intervals [566]:
+			xmin = 292.47
+			xmax = 292.76
+			text = "i"
+		intervals [567]:
+			xmin = 292.76
+			xmax = 292.81
+			text = ""
+		intervals [568]:
+			xmin = 292.81
+			xmax = 293.27
+			text = "guess"
+		intervals [569]:
+			xmin = 293.27
+			xmax = 293.6
+			text = "its"
+		intervals [570]:
+			xmin = 293.6
+			xmax = 294.07
+			text = ""
+		intervals [571]:
+			xmin = 294.07
+			xmax = 294.35
+			text = "out"
+		intervals [572]:
+			xmin = 294.35
+			xmax = 294.38
+			text = ""
+		intervals [573]:
+			xmin = 294.38
+			xmax = 294.84
+			text = "there"
+		intervals [574]:
+			xmin = 294.84
+			xmax = 295.23
+			text = ""
+		intervals [575]:
+			xmin = 295.23
+			xmax = 295.56
+			text = "clear"
+		intervals [576]:
+			xmin = 295.56
+			xmax = 295.88
+			text = "out"
+		intervals [577]:
+			xmin = 295.88
+			xmax = 296.07
+			text = "they"
+		intervals [578]:
+			xmin = 296.07
+			xmax = 296.33
+			text = "have"
+		intervals [579]:
+			xmin = 296.33
+			xmax = 296.53
+			text = "a"
+		intervals [580]:
+			xmin = 296.53
+			xmax = 296.64
+			text = ""
+		intervals [581]:
+			xmin = 296.64
+			xmax = 297.05
+			text = "ranch"
+		intervals [582]:
+			xmin = 297.05
+			xmax = 297.36
+			text = "as"
+		intervals [583]:
+			xmin = 297.36
+			xmax = 297.53
+			text = ""
+		intervals [584]:
+			xmin = 297.53
+			xmax = 297.71
+			text = "$unc$five"
+		intervals [585]:
+			xmin = 297.71
+			xmax = 297.98
+			text = "$unc$hundred"
+		intervals [586]:
+			xmin = 297.98
+			xmax = 298.45
+			text = "acres"
+		intervals [587]:
+			xmin = 298.45
+			xmax = 298.8
+			text = "and"
+	item [2]:
+		class = "IntervalTier"
+		name = "Ref"
+		xmin = 0.0
+		xmax = 298.8
+		intervals: size = 694
+		intervals [1]:
+			xmin = 0.0
+			xmax = 0.59
+			text = ""
+		intervals [2]:
+			xmin = 0.59
+			xmax = 0.89
+			text = "okay"
+		intervals [3]:
+			xmin = 0.89
+			xmax = 0.91
+			text = ""
+		intervals [4]:
+			xmin = 0.91
+			xmax = 1.21
+			text = "so"
+		intervals [5]:
+			xmin = 1.21
+			xmax = 1.32
+			text = "you"
+		intervals [6]:
+			xmin = 1.32
+			xmax = 1.62
+			text = "have"
+		intervals [7]:
+			xmin = 1.62
+			xmax = 1.67
+			text = ""
+		intervals [8]:
+			xmin = 1.67
+			xmax = 1.97
+			text = "$unc$eight"
+		intervals [9]:
+			xmin = 1.97
+			xmax = 2.34
+			text = ""
+		intervals [10]:
+			xmin = 2.34
+			xmax = 2.64
+			text = "children"
+		intervals [11]:
+			xmin = 2.64
+			xmax = 3.05
+			text = ""
+		intervals [12]:
+			xmin = 3.05
+			xmax = 3.35
+			text = "um"
+		intervals [13]:
+			xmin = 3.35
+			xmax = 3.65
+			text = "what"
+		intervals [14]:
+			xmin = 3.65
+			xmax = 3.9
+			text = "type"
+		intervals [15]:
+			xmin = 3.9
+			xmax = 4.1
+			text = "of"
+		intervals [16]:
+			xmin = 4.1
+			xmax = 4.13
+			text = ""
+		intervals [17]:
+			xmin = 4.13
+			xmax = 4.43
+			text = "things"
+		intervals [18]:
+			xmin = 4.43
+			xmax = 4.54
+			text = "do"
+		intervals [19]:
+			xmin = 4.54
+			xmax = 4.81
+			text = "you"
+		intervals [20]:
+			xmin = 4.81
+			xmax = 4.96
+			text = ""
+		intervals [21]:
+			xmin = 4.96
+			xmax = 5.26
+			text = "do"
+		intervals [22]:
+			xmin = 5.26
+			xmax = 5.44
+			text = ""
+		intervals [23]:
+			xmin = 5.44
+			xmax = 5.74
+			text = "as"
+		intervals [24]:
+			xmin = 5.74
+			xmax = 5.85
+			text = "a"
+		intervals [25]:
+			xmin = 5.85
+			xmax = 6.18
+			text = ""
+		intervals [26]:
+			xmin = 6.18
+			xmax = 6.48
+			text = "family"
+		intervals [27]:
+			xmin = 6.48
+			xmax = 6.71
+			text = "to"
+		intervals [28]:
+			xmin = 6.71
+			xmax = 6.99
+			text = "spend"
+		intervals [29]:
+			xmin = 6.99
+			xmax = 7.18
+			text = "time"
+		intervals [30]:
+			xmin = 7.18
+			xmax = 7.43
+			text = ""
+		intervals [31]:
+			xmin = 7.43
+			xmax = 7.73
+			text = "together"
+		intervals [32]:
+			xmin = 7.73
+			xmax = 22.45
+			text = ""
+		intervals [33]:
+			xmin = 22.45
+			xmax = 22.75
+			text = "uh-huh"
+		intervals [34]:
+			xmin = 22.75
+			xmax = 24.03
+			text = ""
+		intervals [35]:
+			xmin = 24.03
+			xmax = 24.33
+			text = "uh-huh"
+		intervals [36]:
+			xmin = 24.33
+			xmax = 28.0
+			text = ""
+		intervals [37]:
+			xmin = 28.0
+			xmax = 28.3
+			text = "uh-huh"
+		intervals [38]:
+			xmin = 28.3
+			xmax = 29.89
+			text = ""
+		intervals [39]:
+			xmin = 29.89
+			xmax = 30.19
+			text = "yeah"
+		intervals [40]:
+			xmin = 30.19
+			xmax = 30.33
+			text = "we"
+		intervals [41]:
+			xmin = 30.33
+			xmax = 30.45
+			text = "know"
+		intervals [42]:
+			xmin = 30.45
+			xmax = 30.62
+			text = "how"
+		intervals [43]:
+			xmin = 30.62
+			xmax = 30.89
+			text = "that"
+		intervals [44]:
+			xmin = 30.89
+			xmax = 31.07
+			text = ""
+		intervals [45]:
+			xmin = 31.07
+			xmax = 31.37
+			text = "goes"
+		intervals [46]:
+			xmin = 31.37
+			xmax = 32.35
+			text = ""
+		intervals [47]:
+			xmin = 32.35
+			xmax = 32.65
+			text = "uh"
+		intervals [48]:
+			xmin = 32.65
+			xmax = 32.98
+			text = ""
+		intervals [49]:
+			xmin = 32.98
+			xmax = 33.28
+			text = "with"
+		intervals [50]:
+			xmin = 33.28
+			xmax = 33.52
+			text = "lots"
+		intervals [51]:
+			xmin = 33.52
+			xmax = 33.6
+			text = "of"
+		intervals [52]:
+			xmin = 33.6
+			xmax = 33.61
+			text = ""
+		intervals [53]:
+			xmin = 33.61
+			xmax = 33.91
+			text = "kids"
+		intervals [54]:
+			xmin = 33.91
+			xmax = 33.98
+			text = "you"
+		intervals [55]:
+			xmin = 33.98
+			xmax = 34.18
+			text = "dont"
+		intervals [56]:
+			xmin = 34.18
+			xmax = 34.36
+			text = "have"
+		intervals [57]:
+			xmin = 34.36
+			xmax = 34.64
+			text = "lots"
+		intervals [58]:
+			xmin = 34.64
+			xmax = 34.72
+			text = "of"
+		intervals [59]:
+			xmin = 34.72
+			xmax = 34.99
+			text = "money"
+		intervals [60]:
+			xmin = 34.99
+			xmax = 35.19
+			text = "for"
+		intervals [61]:
+			xmin = 35.19
+			xmax = 35.85
+			text = ""
+		intervals [62]:
+			xmin = 35.85
+			xmax = 36.15
+			text = "recreation"
+		intervals [63]:
+			xmin = 36.15
+			xmax = 36.85
+			text = ""
+		intervals [64]:
+			xmin = 36.85
+			xmax = 37.15
+			text = "well"
+		intervals [65]:
+			xmin = 37.15
+			xmax = 37.19
+			text = ""
+		intervals [66]:
+			xmin = 37.19
+			xmax = 37.49
+			text = "thats"
+		intervals [67]:
+			xmin = 37.49
+			xmax = 38.01
+			text = ""
+		intervals [68]:
+			xmin = 38.01
+			xmax = 38.31
+			text = "fun"
+		intervals [69]:
+			xmin = 38.31
+			xmax = 38.38
+			text = ""
+		intervals [70]:
+			xmin = 38.38
+			xmax = 38.68
+			text = "so"
+		intervals [71]:
+			xmin = 38.68
+			xmax = 39.38
+			text = ""
+		intervals [72]:
+			xmin = 39.38
+			xmax = 39.68
+			text = "um"
+		intervals [73]:
+			xmin = 39.68
+			xmax = 41.27
+			text = ""
+		intervals [74]:
+			xmin = 41.27
+			xmax = 41.57
+			text = "lets"
+		intervals [75]:
+			xmin = 41.57
+			xmax = 41.8
+			text = ""
+		intervals [76]:
+			xmin = 41.8
+			xmax = 42.1
+			text = "see"
+		intervals [77]:
+			xmin = 42.1
+			xmax = 42.87
+			text = ""
+		intervals [78]:
+			xmin = 42.87
+			xmax = 43.17
+			text = "uh"
+		intervals [79]:
+			xmin = 43.17
+			xmax = 43.44
+			text = "some"
+		intervals [80]:
+			xmin = 43.44
+			xmax = 43.56
+			text = "of"
+		intervals [81]:
+			xmin = 43.56
+			xmax = 43.64
+			text = "the"
+		intervals [82]:
+			xmin = 43.64
+			xmax = 43.67
+			text = ""
+		intervals [83]:
+			xmin = 43.67
+			xmax = 43.97
+			text = "things"
+		intervals [84]:
+			xmin = 43.97
+			xmax = 44.12
+			text = "we"
+		intervals [85]:
+			xmin = 44.12
+			xmax = 44.28
+			text = "do"
+		intervals [86]:
+			xmin = 44.28
+			xmax = 44.52
+			text = ""
+		intervals [87]:
+			xmin = 44.52
+			xmax = 44.82
+			text = "together"
+		intervals [88]:
+			xmin = 44.82
+			xmax = 44.99
+			text = "as"
+		intervals [89]:
+			xmin = 44.99
+			xmax = 45.13
+			text = "a"
+		intervals [90]:
+			xmin = 45.13
+			xmax = 45.17
+			text = ""
+		intervals [91]:
+			xmin = 45.17
+			xmax = 45.47
+			text = "family"
+		intervals [92]:
+			xmin = 45.47
+			xmax = 45.63
+			text = "we"
+		intervals [93]:
+			xmin = 45.63
+			xmax = 45.83
+			text = "like"
+		intervals [94]:
+			xmin = 45.83
+			xmax = 46.01
+			text = "to"
+		intervals [95]:
+			xmin = 46.01
+			xmax = 46.06
+			text = ""
+		intervals [96]:
+			xmin = 46.06
+			xmax = 46.36
+			text = "play"
+		intervals [97]:
+			xmin = 46.36
+			xmax = 47.05
+			text = ""
+		intervals [98]:
+			xmin = 47.05
+			xmax = 47.35
+			text = "games"
+		intervals [99]:
+			xmin = 47.35
+			xmax = 47.44
+			text = "a"
+		intervals [100]:
+			xmin = 47.44
+			xmax = 47.58
+			text = ""
+		intervals [101]:
+			xmin = 47.58
+			xmax = 47.88
+			text = "lot"
+		intervals [102]:
+			xmin = 47.88
+			xmax = 48.03
+			text = ""
+		intervals [103]:
+			xmin = 48.03
+			xmax = 48.33
+			text = "and"
+		intervals [104]:
+			xmin = 48.33
+			xmax = 48.72
+			text = ""
+		intervals [105]:
+			xmin = 48.72
+			xmax = 49.02
+			text = "you"
+		intervals [106]:
+			xmin = 49.02
+			xmax = 49.19
+			text = "may"
+		intervals [107]:
+			xmin = 49.19
+			xmax = 49.36
+			text = "think"
+		intervals [108]:
+			xmin = 49.36
+			xmax = 49.52
+			text = "this"
+		intervals [109]:
+			xmin = 49.52
+			xmax = 49.63
+			text = "is"
+		intervals [110]:
+			xmin = 49.63
+			xmax = 49.89
+			text = "funny"
+		intervals [111]:
+			xmin = 49.89
+			xmax = 50.06
+			text = "but"
+		intervals [112]:
+			xmin = 50.06
+			xmax = 50.19
+			text = "$unc$one"
+		intervals [113]:
+			xmin = 50.19
+			xmax = 50.28
+			text = "of"
+		intervals [114]:
+			xmin = 50.28
+			xmax = 50.44
+			text = "our"
+		intervals [115]:
+			xmin = 50.44
+			xmax = 50.53
+			text = ""
+		intervals [116]:
+			xmin = 50.53
+			xmax = 50.83
+			text = "funnest"
+		intervals [117]:
+			xmin = 50.83
+			xmax = 50.97
+			text = ""
+		intervals [118]:
+			xmin = 50.97
+			xmax = 51.27
+			text = "games"
+		intervals [119]:
+			xmin = 51.27
+			xmax = 51.43
+			text = "we"
+		intervals [120]:
+			xmin = 51.43
+			xmax = 51.59
+			text = "like"
+		intervals [121]:
+			xmin = 51.59
+			xmax = 51.68
+			text = "to"
+		intervals [122]:
+			xmin = 51.68
+			xmax = 51.87
+			text = "play"
+		intervals [123]:
+			xmin = 51.87
+			xmax = 51.92
+			text = ""
+		intervals [124]:
+			xmin = 51.92
+			xmax = 52.22
+			text = "together"
+		intervals [125]:
+			xmin = 52.22
+			xmax = 52.38
+			text = "is"
+		intervals [126]:
+			xmin = 52.38
+			xmax = 52.56
+			text = "hide"
+		intervals [127]:
+			xmin = 52.56
+			xmax = 52.74
+			text = "and"
+		intervals [128]:
+			xmin = 52.74
+			xmax = 53.04
+			text = "seek"
+		intervals [129]:
+			xmin = 53.04
+			xmax = 53.62
+			text = ""
+		intervals [130]:
+			xmin = 53.62
+			xmax = 53.92
+			text = "and"
+		intervals [131]:
+			xmin = 53.92
+			xmax = 54.72
+			text = ""
+		intervals [132]:
+			xmin = 54.72
+			xmax = 55.02
+			text = "we"
+		intervals [133]:
+			xmin = 55.02
+			xmax = 55.29
+			text = "just"
+		intervals [134]:
+			xmin = 55.29
+			xmax = 55.3
+			text = ""
+		intervals [135]:
+			xmin = 55.3
+			xmax = 55.6
+			text = "have"
+		intervals [136]:
+			xmin = 55.6
+			xmax = 55.73
+			text = "a"
+		intervals [137]:
+			xmin = 55.73
+			xmax = 55.78
+			text = ""
+		intervals [138]:
+			xmin = 55.78
+			xmax = 56.08
+			text = "hoot"
+		intervals [139]:
+			xmin = 56.08
+			xmax = 56.35
+			text = "playing"
+		intervals [140]:
+			xmin = 56.35
+			xmax = 56.51
+			text = "hide"
+		intervals [141]:
+			xmin = 56.51
+			xmax = 56.67
+			text = "and"
+		intervals [142]:
+			xmin = 56.67
+			xmax = 56.91
+			text = "seek"
+		intervals [143]:
+			xmin = 56.91
+			xmax = 57.06
+			text = "when"
+		intervals [144]:
+			xmin = 57.06
+			xmax = 57.29
+			text = "its"
+		intervals [145]:
+			xmin = 57.29
+			xmax = 57.37
+			text = ""
+		intervals [146]:
+			xmin = 57.37
+			xmax = 57.67
+			text = "dark"
+		intervals [147]:
+			xmin = 57.67
+			xmax = 57.97
+			text = "in"
+		intervals [148]:
+			xmin = 57.97
+			xmax = 58.14
+			text = "our"
+		intervals [149]:
+			xmin = 58.14
+			xmax = 58.41
+			text = "house"
+		intervals [150]:
+			xmin = 58.41
+			xmax = 58.7
+			text = ""
+		intervals [151]:
+			xmin = 58.7
+			xmax = 59.0
+			text = "and"
+		intervals [152]:
+			xmin = 59.0
+			xmax = 59.21
+			text = "that"
+		intervals [153]:
+			xmin = 59.21
+			xmax = 59.42
+			text = "is"
+		intervals [154]:
+			xmin = 59.42
+			xmax = 59.57
+			text = "so"
+		intervals [155]:
+			xmin = 59.57
+			xmax = 59.63
+			text = ""
+		intervals [156]:
+			xmin = 59.63
+			xmax = 59.93
+			text = "fun"
+		intervals [157]:
+			xmin = 59.93
+			xmax = 59.99
+			text = "the"
+		intervals [158]:
+			xmin = 59.99
+			xmax = 60.29
+			text = "kids"
+		intervals [159]:
+			xmin = 60.29
+			xmax = 60.53
+			text = "just"
+		intervals [160]:
+			xmin = 60.53
+			xmax = 60.78
+			text = "get"
+		intervals [161]:
+			xmin = 60.78
+			xmax = 60.87
+			text = "a"
+		intervals [162]:
+			xmin = 60.87
+			xmax = 61.01
+			text = ""
+		intervals [163]:
+			xmin = 61.01
+			xmax = 61.31
+			text = "crack"
+		intervals [164]:
+			xmin = 61.31
+			xmax = 61.4
+			text = "out"
+		intervals [165]:
+			xmin = 61.4
+			xmax = 61.51
+			text = "of"
+		intervals [166]:
+			xmin = 61.51
+			xmax = 61.78
+			text = "that"
+		intervals [167]:
+			xmin = 61.78
+			xmax = 63.29
+			text = ""
+		intervals [168]:
+			xmin = 63.29
+			xmax = 63.59
+			text = "um"
+		intervals [169]:
+			xmin = 63.59
+			xmax = 63.9
+			text = ""
+		intervals [170]:
+			xmin = 63.9
+			xmax = 64.2
+			text = "we"
+		intervals [171]:
+			xmin = 64.2
+			xmax = 64.48
+			text = "like"
+		intervals [172]:
+			xmin = 64.48
+			xmax = 64.62
+			text = "we"
+		intervals [173]:
+			xmin = 64.62
+			xmax = 64.77
+			text = "do"
+		intervals [174]:
+			xmin = 64.77
+			xmax = 64.93
+			text = "like"
+		intervals [175]:
+			xmin = 64.93
+			xmax = 65.03
+			text = "to"
+		intervals [176]:
+			xmin = 65.03
+			xmax = 65.15
+			text = "go"
+		intervals [177]:
+			xmin = 65.15
+			xmax = 65.28
+			text = "to"
+		intervals [178]:
+			xmin = 65.28
+			xmax = 65.34
+			text = "the"
+		intervals [179]:
+			xmin = 65.34
+			xmax = 65.64
+			text = "park"
+		intervals [180]:
+			xmin = 65.64
+			xmax = 65.82
+			text = "too"
+		intervals [181]:
+			xmin = 65.82
+			xmax = 66.01
+			text = "you"
+		intervals [182]:
+			xmin = 66.01
+			xmax = 66.14
+			text = "uh"
+		intervals [183]:
+			xmin = 66.14
+			xmax = 66.38
+			text = ""
+		intervals [184]:
+			xmin = 66.38
+			xmax = 66.68
+			text = "like"
+		intervals [185]:
+			xmin = 66.68
+			xmax = 66.81
+			text = ""
+		intervals [186]:
+			xmin = 66.81
+			xmax = 67.11
+			text = "your"
+		intervals [187]:
+			xmin = 67.11
+			xmax = 67.5
+			text = ""
+		intervals [188]:
+			xmin = 67.5
+			xmax = 67.8
+			text = "family"
+		intervals [189]:
+			xmin = 67.8
+			xmax = 67.92
+			text = ""
+		intervals [190]:
+			xmin = 67.92
+			xmax = 68.22
+			text = "um"
+		intervals [191]:
+			xmin = 68.22
+			xmax = 69.41
+			text = ""
+		intervals [192]:
+			xmin = 69.41
+			xmax = 69.71
+			text = "we"
+		intervals [193]:
+			xmin = 69.71
+			xmax = 70.31
+			text = ""
+		intervals [194]:
+			xmin = 70.31
+			xmax = 70.61
+			text = "dont"
+		intervals [195]:
+			xmin = 70.61
+			xmax = 70.77
+			text = "do"
+		intervals [196]:
+			xmin = 70.77
+			xmax = 70.85
+			text = "a"
+		intervals [197]:
+			xmin = 70.85
+			xmax = 71.05
+			text = "lot"
+		intervals [198]:
+			xmin = 71.05
+			xmax = 71.15
+			text = "of"
+		intervals [199]:
+			xmin = 71.15
+			xmax = 71.59
+			text = ""
+		intervals [200]:
+			xmin = 71.59
+			xmax = 71.89
+			text = "vacationing"
+		intervals [201]:
+			xmin = 71.89
+			xmax = 72.09
+			text = "have"
+		intervals [202]:
+			xmin = 72.09
+			xmax = 72.36
+			text = "you"
+		intervals [203]:
+			xmin = 72.36
+			xmax = 72.48
+			text = ""
+		intervals [204]:
+			xmin = 72.48
+			xmax = 72.78
+			text = "taken"
+		intervals [205]:
+			xmin = 72.78
+			xmax = 72.81
+			text = "a"
+		intervals [206]:
+			xmin = 72.81
+			xmax = 72.96
+			text = "lot"
+		intervals [207]:
+			xmin = 72.96
+			xmax = 73.05
+			text = "of"
+		intervals [208]:
+			xmin = 73.05
+			xmax = 73.39
+			text = ""
+		intervals [209]:
+			xmin = 73.39
+			xmax = 73.69
+			text = "vacations"
+		intervals [210]:
+			xmin = 73.69
+			xmax = 74.01
+			text = ""
+		intervals [211]:
+			xmin = 74.01
+			xmax = 74.31
+			text = "together"
+		intervals [212]:
+			xmin = 74.31
+			xmax = 74.4
+			text = ""
+		intervals [213]:
+			xmin = 74.4
+			xmax = 74.7
+			text = "or"
+		intervals [214]:
+			xmin = 74.7
+			xmax = 78.0
+			text = ""
+		intervals [215]:
+			xmin = 78.0
+			xmax = 78.3
+			text = "uh-huh"
+		intervals [216]:
+			xmin = 78.3
+			xmax = 78.55
+			text = "and"
+		intervals [217]:
+			xmin = 78.55
+			xmax = 78.69
+			text = "whe-"
+		intervals [218]:
+			xmin = 78.69
+			xmax = 81.38
+			text = ""
+		intervals [219]:
+			xmin = 81.38
+			xmax = 81.68
+			text = "oh"
+		intervals [220]:
+			xmin = 81.68
+			xmax = 83.67
+			text = ""
+		intervals [221]:
+			xmin = 83.67
+			xmax = 83.97
+			text = "oh"
+		intervals [222]:
+			xmin = 83.97
+			xmax = 83.99
+			text = ""
+		intervals [223]:
+			xmin = 83.99
+			xmax = 84.29
+			text = "now"
+		intervals [224]:
+			xmin = 84.29
+			xmax = 84.45
+			text = "where"
+		intervals [225]:
+			xmin = 84.45
+			xmax = 84.61
+			text = "do"
+		intervals [226]:
+			xmin = 84.61
+			xmax = 84.81
+			text = "they"
+		intervals [227]:
+			xmin = 84.81
+			xmax = 85.06
+			text = "live"
+		intervals [228]:
+			xmin = 85.06
+			xmax = 86.4
+			text = ""
+		intervals [229]:
+			xmin = 86.4
+			xmax = 86.7
+			text = "oh"
+		intervals [230]:
+			xmin = 86.7
+			xmax = 86.81
+			text = ""
+		intervals [231]:
+			xmin = 86.81
+			xmax = 87.11
+			text = "so"
+		intervals [232]:
+			xmin = 87.11
+			xmax = 87.4
+			text = "thats"
+		intervals [233]:
+			xmin = 87.4
+			xmax = 87.58
+			text = "a"
+		intervals [234]:
+			xmin = 87.58
+			xmax = 87.75
+			text = "bit"
+		intervals [235]:
+			xmin = 87.75
+			xmax = 87.89
+			text = "of"
+		intervals [236]:
+			xmin = 87.89
+			xmax = 87.98
+			text = "a"
+		intervals [237]:
+			xmin = 87.98
+			xmax = 88.05
+			text = ""
+		intervals [238]:
+			xmin = 88.05
+			xmax = 88.35
+			text = "drive"
+		intervals [239]:
+			xmin = 88.35
+			xmax = 88.46
+			text = "for"
+		intervals [240]:
+			xmin = 88.46
+			xmax = 88.63
+			text = "you"
+		intervals [241]:
+			xmin = 88.63
+			xmax = 88.67
+			text = ""
+		intervals [242]:
+			xmin = 88.67
+			xmax = 88.97
+			text = "there"
+		intervals [243]:
+			xmin = 88.97
+			xmax = 90.21
+			text = ""
+		intervals [244]:
+			xmin = 90.21
+			xmax = 90.51
+			text = "oh"
+		intervals [245]:
+			xmin = 90.51
+			xmax = 90.58
+			text = ""
+		intervals [246]:
+			xmin = 90.58
+			xmax = 90.88
+			text = "so"
+		intervals [247]:
+			xmin = 90.88
+			xmax = 91.02
+			text = "you"
+		intervals [248]:
+			xmin = 91.02
+			xmax = 91.21
+			text = "like"
+		intervals [249]:
+			xmin = 91.21
+			xmax = 91.3
+			text = "to"
+		intervals [250]:
+			xmin = 91.3
+			xmax = 91.43
+			text = "go"
+		intervals [251]:
+			xmin = 91.43
+			xmax = 91.61
+			text = "there"
+		intervals [252]:
+			xmin = 91.61
+			xmax = 91.8
+			text = "for"
+		intervals [253]:
+			xmin = 91.8
+			xmax = 91.92
+			text = "the"
+		intervals [254]:
+			xmin = 91.92
+			xmax = 92.26
+			text = ""
+		intervals [255]:
+			xmin = 92.26
+			xmax = 92.56
+			text = "holidays"
+		intervals [256]:
+			xmin = 92.56
+			xmax = 92.83
+			text = "and"
+		intervals [257]:
+			xmin = 92.83
+			xmax = 98.45
+			text = ""
+		intervals [258]:
+			xmin = 98.45
+			xmax = 98.75
+			text = "uh-huh"
+		intervals [259]:
+			xmin = 98.75
+			xmax = 101.95
+			text = ""
+		intervals [260]:
+			xmin = 101.95
+			xmax = 102.25
+			text = "oh"
+		intervals [261]:
+			xmin = 102.25
+			xmax = 102.42
+			text = ""
+		intervals [262]:
+			xmin = 102.42
+			xmax = 102.72
+			text = "uh-huh"
+		intervals [263]:
+			xmin = 102.72
+			xmax = 103.25
+			text = ""
+		intervals [264]:
+			xmin = 103.25
+			xmax = 103.55
+			text = "uh"
+		intervals [265]:
+			xmin = 103.55
+			xmax = 103.75
+			text = "what"
+		intervals [266]:
+			xmin = 103.75
+			xmax = 103.88
+			text = "are"
+		intervals [267]:
+			xmin = 103.88
+			xmax = 104.05
+			text = "the"
+		intervals [268]:
+			xmin = 104.05
+			xmax = 104.07
+			text = ""
+		intervals [269]:
+			xmin = 104.07
+			xmax = 104.37
+			text = "ages"
+		intervals [270]:
+			xmin = 104.37
+			xmax = 104.5
+			text = "of"
+		intervals [271]:
+			xmin = 104.5
+			xmax = 104.63
+			text = "your"
+		intervals [272]:
+			xmin = 104.63
+			xmax = 104.92
+			text = "kids"
+		intervals [273]:
+			xmin = 104.92
+			xmax = 105.13
+			text = "then"
+		intervals [274]:
+			xmin = 105.13
+			xmax = 107.81
+			text = ""
+		intervals [275]:
+			xmin = 107.81
+			xmax = 108.11
+			text = "oh"
+		intervals [276]:
+			xmin = 108.11
+			xmax = 108.5
+			text = ""
+		intervals [277]:
+			xmin = 108.5
+			xmax = 108.8
+			text = "yeah"
+		intervals [278]:
+			xmin = 108.8
+			xmax = 109.12
+			text = ""
+		intervals [279]:
+			xmin = 109.12
+			xmax = 109.42
+			text = "so"
+		intervals [280]:
+			xmin = 109.42
+			xmax = 109.53
+			text = "you"
+		intervals [281]:
+			xmin = 109.53
+			xmax = 109.79
+			text = "have"
+		intervals [282]:
+			xmin = 109.79
+			xmax = 110.09
+			text = "some"
+		intervals [283]:
+			xmin = 110.09
+			xmax = 110.31
+			text = "in"
+		intervals [284]:
+			xmin = 110.31
+			xmax = 110.38
+			text = "the"
+		intervals [285]:
+			xmin = 110.38
+			xmax = 110.54
+			text = ""
+		intervals [286]:
+			xmin = 110.54
+			xmax = 110.84
+			text = "nest"
+		intervals [287]:
+			xmin = 110.84
+			xmax = 111.03
+			text = "and"
+		intervals [288]:
+			xmin = 111.03
+			xmax = 111.28
+			text = "some"
+		intervals [289]:
+			xmin = 111.28
+			xmax = 111.34
+			text = ""
+		intervals [290]:
+			xmin = 111.34
+			xmax = 111.64
+			text = "out"
+		intervals [291]:
+			xmin = 111.64
+			xmax = 111.86
+			text = ""
+		intervals [292]:
+			xmin = 111.86
+			xmax = 112.16
+			text = "huh"
+		intervals [293]:
+			xmin = 112.16
+			xmax = 114.56
+			text = ""
+		intervals [294]:
+			xmin = 114.56
+			xmax = 114.86
+			text = "we"
+		intervals [295]:
+			xmin = 114.86
+			xmax = 114.9
+			text = ""
+		intervals [296]:
+			xmin = 114.9
+			xmax = 115.2
+			text = "have"
+		intervals [297]:
+			xmin = 115.2
+			xmax = 115.43
+			text = ""
+		intervals [298]:
+			xmin = 115.43
+			xmax = 115.73
+			text = "ours"
+		intervals [299]:
+			xmin = 115.73
+			xmax = 115.75
+			text = ""
+		intervals [300]:
+			xmin = 115.75
+			xmax = 116.05
+			text = "start"
+		intervals [301]:
+			xmin = 116.05
+			xmax = 116.25
+			text = "at"
+		intervals [302]:
+			xmin = 116.25
+			xmax = 116.5
+			text = ""
+		intervals [303]:
+			xmin = 116.5
+			xmax = 116.8
+			text = "$unc$twelve"
+		intervals [304]:
+			xmin = 116.8
+			xmax = 117.01
+			text = "and"
+		intervals [305]:
+			xmin = 117.01
+			xmax = 117.18
+			text = "then"
+		intervals [306]:
+			xmin = 117.18
+			xmax = 117.31
+			text = "they"
+		intervals [307]:
+			xmin = 117.31
+			xmax = 117.47
+			text = "go"
+		intervals [308]:
+			xmin = 117.47
+			xmax = 117.75
+			text = "down"
+		intervals [309]:
+			xmin = 117.75
+			xmax = 117.93
+			text = "to"
+		intervals [310]:
+			xmin = 117.93
+			xmax = 118.26
+			text = ""
+		intervals [311]:
+			xmin = 118.26
+			xmax = 118.56
+			text = "$unc$four"
+		intervals [312]:
+			xmin = 118.56
+			xmax = 124.86
+			text = ""
+		intervals [313]:
+			xmin = 124.86
+			xmax = 125.16
+			text = "i"
+		intervals [314]:
+			xmin = 125.16
+			xmax = 125.45
+			text = ""
+		intervals [315]:
+			xmin = 125.45
+			xmax = 125.75
+			text = "bet"
+		intervals [316]:
+			xmin = 125.75
+			xmax = 126.58
+			text = ""
+		intervals [317]:
+			xmin = 126.58
+			xmax = 126.88
+			text = "yeah"
+		intervals [318]:
+			xmin = 126.88
+			xmax = 131.49
+			text = ""
+		intervals [319]:
+			xmin = 131.49
+			xmax = 131.79
+			text = "uh-huh"
+		intervals [320]:
+			xmin = 131.79
+			xmax = 133.01
+			text = ""
+		intervals [321]:
+			xmin = 133.01
+			xmax = 133.31
+			text = "yes"
+		intervals [322]:
+			xmin = 133.31
+			xmax = 133.83
+			text = ""
+		intervals [323]:
+			xmin = 133.83
+			xmax = 134.13
+			text = "uh-huh"
+		intervals [324]:
+			xmin = 134.13
+			xmax = 136.74
+			text = ""
+		intervals [325]:
+			xmin = 136.74
+			xmax = 137.04
+			text = "yes"
+		intervals [326]:
+			xmin = 137.04
+			xmax = 137.41
+			text = ""
+		intervals [327]:
+			xmin = 137.41
+			xmax = 137.71
+			text = "and"
+		intervals [328]:
+			xmin = 137.71
+			xmax = 137.9
+			text = "then"
+		intervals [329]:
+			xmin = 137.9
+			xmax = 138.05
+			text = "if"
+		intervals [330]:
+			xmin = 138.05
+			xmax = 138.16
+			text = "you"
+		intervals [331]:
+			xmin = 138.16
+			xmax = 138.39
+			text = "want"
+		intervals [332]:
+			xmin = 138.39
+			xmax = 138.48
+			text = "to"
+		intervals [333]:
+			xmin = 138.48
+			xmax = 138.76
+			text = "play"
+		intervals [334]:
+			xmin = 138.76
+			xmax = 138.87
+			text = ""
+		intervals [335]:
+			xmin = 138.87
+			xmax = 139.17
+			text = "something"
+		intervals [336]:
+			xmin = 139.17
+			xmax = 139.29
+			text = "on"
+		intervals [337]:
+			xmin = 139.29
+			xmax = 139.38
+			text = "the"
+		intervals [338]:
+			xmin = 139.38
+			xmax = 139.6
+			text = "little"
+		intervals [339]:
+			xmin = 139.6
+			xmax = 139.63
+			text = ""
+		intervals [340]:
+			xmin = 139.63
+			xmax = 139.93
+			text = "kids"
+		intervals [341]:
+			xmin = 139.93
+			xmax = 139.99
+			text = ""
+		intervals [342]:
+			xmin = 139.99
+			xmax = 140.29
+			text = "level"
+		intervals [343]:
+			xmin = 140.29
+			xmax = 140.45
+			text = "then"
+		intervals [344]:
+			xmin = 140.45
+			xmax = 140.6
+			text = "the"
+		intervals [345]:
+			xmin = 140.6
+			xmax = 140.79
+			text = "older"
+		intervals [346]:
+			xmin = 140.79
+			xmax = 140.87
+			text = ""
+		intervals [347]:
+			xmin = 140.87
+			xmax = 141.17
+			text = "kids"
+		intervals [348]:
+			xmin = 141.17
+			xmax = 141.39
+			text = "get"
+		intervals [349]:
+			xmin = 141.39
+			xmax = 141.56
+			text = "real"
+		intervals [350]:
+			xmin = 141.56
+			xmax = 141.7
+			text = ""
+		intervals [351]:
+			xmin = 141.7
+			xmax = 142.0
+			text = "bored"
+		intervals [352]:
+			xmin = 142.0
+			xmax = 142.26
+			text = "and"
+		intervals [353]:
+			xmin = 142.26
+			xmax = 142.89
+			text = ""
+		intervals [354]:
+			xmin = 142.89
+			xmax = 143.19
+			text = "they"
+		intervals [355]:
+			xmin = 143.19
+			xmax = 143.46
+			text = "want"
+		intervals [356]:
+			xmin = 143.46
+			xmax = 143.55
+			text = ""
+		intervals [357]:
+			xmin = 143.55
+			xmax = 143.85
+			text = "to"
+		intervals [358]:
+			xmin = 143.85
+			xmax = 144.5
+			text = ""
+		intervals [359]:
+			xmin = 144.5
+			xmax = 144.8
+			text = "do"
+		intervals [360]:
+			xmin = 144.8
+			xmax = 144.99
+			text = ""
+		intervals [361]:
+			xmin = 144.99
+			xmax = 145.29
+			text = "something"
+		intervals [362]:
+			xmin = 145.29
+			xmax = 145.42
+			text = ""
+		intervals [363]:
+			xmin = 145.42
+			xmax = 145.72
+			text = "else"
+		intervals [364]:
+			xmin = 145.72
+			xmax = 145.85
+			text = ""
+		intervals [365]:
+			xmin = 145.85
+			xmax = 146.15
+			text = "so"
+		intervals [366]:
+			xmin = 146.15
+			xmax = 146.45
+			text = "yeah"
+		intervals [367]:
+			xmin = 146.45
+			xmax = 146.6
+			text = "i"
+		intervals [368]:
+			xmin = 146.6
+			xmax = 146.65
+			text = ""
+		intervals [369]:
+			xmin = 146.65
+			xmax = 146.95
+			text = "can"
+		intervals [370]:
+			xmin = 146.95
+			xmax = 147.25
+			text = "i"
+		intervals [371]:
+			xmin = 147.25
+			xmax = 147.45
+			text = "can"
+		intervals [372]:
+			xmin = 147.45
+			xmax = 147.57
+			text = ""
+		intervals [373]:
+			xmin = 147.57
+			xmax = 147.87
+			text = "relate"
+		intervals [374]:
+			xmin = 147.87
+			xmax = 148.02
+			text = "to"
+		intervals [375]:
+			xmin = 148.02
+			xmax = 148.28
+			text = ""
+		intervals [376]:
+			xmin = 148.28
+			xmax = 148.58
+			text = "that"
+		intervals [377]:
+			xmin = 148.58
+			xmax = 149.59
+			text = ""
+		intervals [378]:
+			xmin = 149.59
+			xmax = 149.89
+			text = "um"
+		intervals [379]:
+			xmin = 149.89
+			xmax = 149.98
+			text = ""
+		intervals [380]:
+			xmin = 149.98
+			xmax = 150.28
+			text = "do"
+		intervals [381]:
+			xmin = 150.28
+			xmax = 150.48
+			text = "you"
+		intervals [382]:
+			xmin = 150.48
+			xmax = 150.71
+			text = "feel"
+		intervals [383]:
+			xmin = 150.71
+			xmax = 151.0
+			text = "that"
+		intervals [384]:
+			xmin = 151.0
+			xmax = 151.05
+			text = ""
+		intervals [385]:
+			xmin = 151.05
+			xmax = 151.35
+			text = "the"
+		intervals [386]:
+			xmin = 151.35
+			xmax = 151.73
+			text = ""
+		intervals [387]:
+			xmin = 151.73
+			xmax = 152.03
+			text = "current"
+		intervals [388]:
+			xmin = 152.03
+			xmax = 152.36
+			text = ""
+		intervals [389]:
+			xmin = 152.36
+			xmax = 152.66
+			text = "trend"
+		intervals [390]:
+			xmin = 152.66
+			xmax = 152.69
+			text = ""
+		intervals [391]:
+			xmin = 152.69
+			xmax = 152.99
+			text = "in"
+		intervals [392]:
+			xmin = 152.99
+			xmax = 154.03
+			text = ""
+		intervals [393]:
+			xmin = 154.03
+			xmax = 154.33
+			text = "families"
+		intervals [394]:
+			xmin = 154.33
+			xmax = 155.38
+			text = ""
+		intervals [395]:
+			xmin = 155.38
+			xmax = 155.68
+			text = "spending"
+		intervals [396]:
+			xmin = 155.68
+			xmax = 155.9
+			text = "time"
+		intervals [397]:
+			xmin = 155.9
+			xmax = 156.05
+			text = ""
+		intervals [398]:
+			xmin = 156.05
+			xmax = 156.35
+			text = "together"
+		intervals [399]:
+			xmin = 156.35
+			xmax = 156.55
+			text = "is"
+		intervals [400]:
+			xmin = 156.55
+			xmax = 156.61
+			text = "a"
+		intervals [401]:
+			xmin = 156.61
+			xmax = 156.81
+			text = ""
+		intervals [402]:
+			xmin = 156.81
+			xmax = 157.11
+			text = "positive"
+		intervals [403]:
+			xmin = 157.11
+			xmax = 157.35
+			text = "$unc$one"
+		intervals [404]:
+			xmin = 157.35
+			xmax = 157.41
+			text = "or"
+		intervals [405]:
+			xmin = 157.41
+			xmax = 157.45
+			text = "a"
+		intervals [406]:
+			xmin = 157.45
+			xmax = 157.58
+			text = ""
+		intervals [407]:
+			xmin = 157.58
+			xmax = 157.88
+			text = "negative"
+		intervals [408]:
+			xmin = 157.88
+			xmax = 157.92
+			text = ""
+		intervals [409]:
+			xmin = 157.92
+			xmax = 158.22
+			text = "$unc$one"
+		intervals [410]:
+			xmin = 158.22
+			xmax = 160.63
+			text = ""
+		intervals [411]:
+			xmin = 160.63
+			xmax = 160.93
+			text = "uh-huh"
+		intervals [412]:
+			xmin = 160.93
+			xmax = 168.25
+			text = ""
+		intervals [413]:
+			xmin = 168.25
+			xmax = 168.55
+			text = "uh-huh"
+		intervals [414]:
+			xmin = 168.55
+			xmax = 169.33
+			text = ""
+		intervals [415]:
+			xmin = 169.33
+			xmax = 169.63
+			text = "uh-huh"
+		intervals [416]:
+			xmin = 169.63
+			xmax = 180.98
+			text = ""
+		intervals [417]:
+			xmin = 180.98
+			xmax = 181.28
+			text = "uh-huh"
+		intervals [418]:
+			xmin = 181.28
+			xmax = 184.95
+			text = ""
+		intervals [419]:
+			xmin = 184.95
+			xmax = 185.25
+			text = "uh-huh"
+		intervals [420]:
+			xmin = 185.25
+			xmax = 187.83
+			text = ""
+		intervals [421]:
+			xmin = 187.83
+			xmax = 188.13
+			text = "thats"
+		intervals [422]:
+			xmin = 188.13
+			xmax = 188.56
+			text = ""
+		intervals [423]:
+			xmin = 188.56
+			xmax = 188.86
+			text = "good"
+		intervals [424]:
+			xmin = 188.86
+			xmax = 191.57
+			text = ""
+		intervals [425]:
+			xmin = 191.57
+			xmax = 191.87
+			text = "oh"
+		intervals [426]:
+			xmin = 191.87
+			xmax = 192.2
+			text = ""
+		intervals [427]:
+			xmin = 192.2
+			xmax = 192.5
+			text = "good"
+		intervals [428]:
+			xmin = 192.5
+			xmax = 196.03
+			text = ""
+		intervals [429]:
+			xmin = 196.03
+			xmax = 196.33
+			text = "uh-huh"
+		intervals [430]:
+			xmin = 196.33
+			xmax = 199.32
+			text = ""
+		intervals [431]:
+			xmin = 199.32
+			xmax = 199.62
+			text = "i"
+		intervals [432]:
+			xmin = 199.62
+			xmax = 199.83
+			text = "think"
+		intervals [433]:
+			xmin = 199.83
+			xmax = 199.93
+			text = ""
+		intervals [434]:
+			xmin = 199.93
+			xmax = 200.23
+			text = "so"
+		intervals [435]:
+			xmin = 200.23
+			xmax = 200.56
+			text = ""
+		intervals [436]:
+			xmin = 200.56
+			xmax = 200.86
+			text = "and"
+		intervals [437]:
+			xmin = 200.86
+			xmax = 201.03
+			text = ""
+		intervals [438]:
+			xmin = 201.03
+			xmax = 201.33
+			text = "i"
+		intervals [439]:
+			xmin = 201.33
+			xmax = 201.59
+			text = "feel"
+		intervals [440]:
+			xmin = 201.59
+			xmax = 201.63
+			text = ""
+		intervals [441]:
+			xmin = 201.63
+			xmax = 201.93
+			text = "like"
+		intervals [442]:
+			xmin = 201.93
+			xmax = 202.16
+			text = "you"
+		intervals [443]:
+			xmin = 202.16
+			xmax = 202.31
+			text = "know"
+		intervals [444]:
+			xmin = 202.31
+			xmax = 202.49
+			text = "like"
+		intervals [445]:
+			xmin = 202.49
+			xmax = 202.58
+			text = ""
+		intervals [446]:
+			xmin = 202.58
+			xmax = 202.88
+			text = "$unc$president"
+		intervals [447]:
+			xmin = 202.88
+			xmax = 202.92
+			text = ""
+		intervals [448]:
+			xmin = 202.92
+			xmax = 203.22
+			text = "$unc$bush"
+		intervals [449]:
+			xmin = 203.22
+			xmax = 203.23
+			text = ""
+		intervals [450]:
+			xmin = 203.23
+			xmax = 203.53
+			text = "$unc$bush"
+		intervals [451]:
+			xmin = 203.53
+			xmax = 203.68
+			text = "has"
+		intervals [452]:
+			xmin = 203.68
+			xmax = 204.9
+			text = ""
+		intervals [453]:
+			xmin = 204.9
+			xmax = 205.2
+			text = "mentioned"
+		intervals [454]:
+			xmin = 205.2
+			xmax = 205.46
+			text = "quite"
+		intervals [455]:
+			xmin = 205.46
+			xmax = 205.47
+			text = ""
+		intervals [456]:
+			xmin = 205.47
+			xmax = 205.77
+			text = "often"
+		intervals [457]:
+			xmin = 205.77
+			xmax = 205.95
+			text = "that"
+		intervals [458]:
+			xmin = 205.95
+			xmax = 205.97
+			text = ""
+		intervals [459]:
+			xmin = 205.97
+			xmax = 206.27
+			text = "we"
+		intervals [460]:
+			xmin = 206.27
+			xmax = 206.33
+			text = "are"
+		intervals [461]:
+			xmin = 206.33
+			xmax = 206.37
+			text = ""
+		intervals [462]:
+			xmin = 206.37
+			xmax = 206.67
+			text = "trying"
+		intervals [463]:
+			xmin = 206.67
+			xmax = 206.82
+			text = "to"
+		intervals [464]:
+			xmin = 206.82
+			xmax = 207.03
+			text = ""
+		intervals [465]:
+			xmin = 207.03
+			xmax = 207.33
+			text = "become"
+		intervals [466]:
+			xmin = 207.33
+			xmax = 207.38
+			text = "a"
+		intervals [467]:
+			xmin = 207.38
+			xmax = 207.45
+			text = ""
+		intervals [468]:
+			xmin = 207.45
+			xmax = 207.75
+			text = "kinder"
+		intervals [469]:
+			xmin = 207.75
+			xmax = 207.87
+			text = "and"
+		intervals [470]:
+			xmin = 207.87
+			xmax = 208.15
+			text = "gentler"
+		intervals [471]:
+			xmin = 208.15
+			xmax = 208.24
+			text = ""
+		intervals [472]:
+			xmin = 208.24
+			xmax = 208.54
+			text = "nation"
+		intervals [473]:
+			xmin = 208.54
+			xmax = 208.65
+			text = "and"
+		intervals [474]:
+			xmin = 208.65
+			xmax = 208.82
+			text = "it"
+		intervals [475]:
+			xmin = 208.82
+			xmax = 209.33
+			text = ""
+		intervals [476]:
+			xmin = 209.33
+			xmax = 209.63
+			text = "does"
+		intervals [477]:
+			xmin = 209.63
+			xmax = 209.7
+			text = ""
+		intervals [478]:
+			xmin = 209.7
+			xmax = 210.0
+			text = "begin"
+		intervals [479]:
+			xmin = 210.0
+			xmax = 210.24
+			text = "with"
+		intervals [480]:
+			xmin = 210.24
+			xmax = 210.32
+			text = "the"
+		intervals [481]:
+			xmin = 210.32
+			xmax = 210.6
+			text = ""
+		intervals [482]:
+			xmin = 210.6
+			xmax = 210.9
+			text = "families"
+		intervals [483]:
+			xmin = 210.9
+			xmax = 211.09
+			text = "at"
+		intervals [484]:
+			xmin = 211.09
+			xmax = 211.3
+			text = ""
+		intervals [485]:
+			xmin = 211.3
+			xmax = 211.6
+			text = "home"
+		intervals [486]:
+			xmin = 211.6
+			xmax = 212.59
+			text = ""
+		intervals [487]:
+			xmin = 212.59
+			xmax = 212.89
+			text = "and"
+		intervals [488]:
+			xmin = 212.89
+			xmax = 212.91
+			text = ""
+		intervals [489]:
+			xmin = 212.91
+			xmax = 213.21
+			text = "so"
+		intervals [490]:
+			xmin = 213.21
+			xmax = 213.35
+			text = "i"
+		intervals [491]:
+			xmin = 213.35
+			xmax = 213.44
+			text = ""
+		intervals [492]:
+			xmin = 213.44
+			xmax = 213.74
+			text = "im"
+		intervals [493]:
+			xmin = 213.74
+			xmax = 213.82
+			text = "a"
+		intervals [494]:
+			xmin = 213.82
+			xmax = 214.12
+			text = "firm"
+		intervals [495]:
+			xmin = 214.12
+			xmax = 214.41
+			text = "believer"
+		intervals [496]:
+			xmin = 214.41
+			xmax = 214.54
+			text = "in"
+		intervals [497]:
+			xmin = 214.54
+			xmax = 214.68
+			text = ""
+		intervals [498]:
+			xmin = 214.68
+			xmax = 214.98
+			text = "that"
+		intervals [499]:
+			xmin = 214.98
+			xmax = 215.2
+			text = ""
+		intervals [500]:
+			xmin = 215.2
+			xmax = 215.5
+			text = "too"
+		intervals [501]:
+			xmin = 215.5
+			xmax = 222.37
+			text = ""
+		intervals [502]:
+			xmin = 222.37
+			xmax = 222.67
+			text = "yes"
+		intervals [503]:
+			xmin = 222.67
+			xmax = 223.04
+			text = ""
+		intervals [504]:
+			xmin = 223.04
+			xmax = 223.34
+			text = "thats"
+		intervals [505]:
+			xmin = 223.34
+			xmax = 223.7
+			text = ""
+		intervals [506]:
+			xmin = 223.7
+			xmax = 224.0
+			text = "thats"
+		intervals [507]:
+			xmin = 224.0
+			xmax = 224.2
+			text = "true"
+		intervals [508]:
+			xmin = 224.2
+			xmax = 224.45
+			text = "well"
+		intervals [509]:
+			xmin = 224.45
+			xmax = 224.5
+			text = ""
+		intervals [510]:
+			xmin = 224.5
+			xmax = 224.8
+			text = "we"
+		intervals [511]:
+			xmin = 224.8
+			xmax = 224.96
+			text = "see"
+		intervals [512]:
+			xmin = 224.96
+			xmax = 225.23
+			text = "that"
+		intervals [513]:
+			xmin = 225.23
+			xmax = 225.34
+			text = "a"
+		intervals [514]:
+			xmin = 225.34
+			xmax = 225.54
+			text = "lot"
+		intervals [515]:
+			xmin = 225.54
+			xmax = 225.73
+			text = "out"
+		intervals [516]:
+			xmin = 225.73
+			xmax = 225.95
+			text = "here"
+		intervals [517]:
+			xmin = 225.95
+			xmax = 226.06
+			text = "in"
+		intervals [518]:
+			xmin = 226.06
+			xmax = 226.18
+			text = ""
+		intervals [519]:
+			xmin = 226.18
+			xmax = 226.48
+			text = "$unc$utah"
+		intervals [520]:
+			xmin = 226.48
+			xmax = 226.77
+			text = "and"
+		intervals [521]:
+			xmin = 226.77
+			xmax = 227.84
+			text = ""
+		intervals [522]:
+			xmin = 227.84
+			xmax = 228.14
+			text = "um"
+		intervals [523]:
+			xmin = 228.14
+			xmax = 229.1
+			text = ""
+		intervals [524]:
+			xmin = 229.1
+			xmax = 229.4
+			text = "hopefully"
+		intervals [525]:
+			xmin = 229.4
+			xmax = 229.71
+			text = ""
+		intervals [526]:
+			xmin = 229.71
+			xmax = 230.01
+			text = "hopefully"
+		intervals [527]:
+			xmin = 230.01
+			xmax = 230.17
+			text = "its"
+		intervals [528]:
+			xmin = 230.17
+			xmax = 230.31
+			text = "going"
+		intervals [529]:
+			xmin = 230.31
+			xmax = 230.43
+			text = "to"
+		intervals [530]:
+			xmin = 230.43
+			xmax = 230.61
+			text = ""
+		intervals [531]:
+			xmin = 230.61
+			xmax = 230.91
+			text = "spread"
+		intervals [532]:
+			xmin = 230.91
+			xmax = 231.03
+			text = ""
+		intervals [533]:
+			xmin = 231.03
+			xmax = 231.33
+			text = "huh"
+		intervals [534]:
+			xmin = 231.33
+			xmax = 236.37
+			text = ""
+		intervals [535]:
+			xmin = 236.37
+			xmax = 236.67
+			text = "oh"
+		intervals [536]:
+			xmin = 236.67
+			xmax = 237.27
+			text = ""
+		intervals [537]:
+			xmin = 237.27
+			xmax = 237.57
+			text = "um"
+		intervals [538]:
+			xmin = 237.57
+			xmax = 237.69
+			text = "do"
+		intervals [539]:
+			xmin = 237.69
+			xmax = 237.8
+			text = "you"
+		intervals [540]:
+			xmin = 237.8
+			xmax = 238.02
+			text = "have"
+		intervals [541]:
+			xmin = 238.02
+			xmax = 238.03
+			text = ""
+		intervals [542]:
+			xmin = 238.03
+			xmax = 238.33
+			text = "a"
+		intervals [543]:
+			xmin = 238.33
+			xmax = 238.54
+			text = ""
+		intervals [544]:
+			xmin = 238.54
+			xmax = 238.84
+			text = "lot"
+		intervals [545]:
+			xmin = 238.84
+			xmax = 239.06
+			text = "of"
+		intervals [546]:
+			xmin = 239.06
+			xmax = 239.18
+			text = ""
+		intervals [547]:
+			xmin = 239.18
+			xmax = 239.48
+			text = "large"
+		intervals [548]:
+			xmin = 239.48
+			xmax = 239.67
+			text = ""
+		intervals [549]:
+			xmin = 239.67
+			xmax = 239.97
+			text = "families"
+		intervals [550]:
+			xmin = 239.97
+			xmax = 240.12
+			text = "out"
+		intervals [551]:
+			xmin = 240.12
+			xmax = 240.24
+			text = "there"
+		intervals [552]:
+			xmin = 240.24
+			xmax = 240.35
+			text = "in"
+		intervals [553]:
+			xmin = 240.35
+			xmax = 240.71
+			text = ""
+		intervals [554]:
+			xmin = 240.71
+			xmax = 241.01
+			text = "$unc$texas"
+		intervals [555]:
+			xmin = 241.01
+			xmax = 241.3
+			text = "or"
+		intervals [556]:
+			xmin = 241.3
+			xmax = 242.79
+			text = ""
+		intervals [557]:
+			xmin = 242.79
+			xmax = 243.09
+			text = "very"
+		intervals [558]:
+			xmin = 243.09
+			xmax = 243.35
+			text = ""
+		intervals [559]:
+			xmin = 243.35
+			xmax = 243.65
+			text = "few"
+		intervals [560]:
+			xmin = 243.65
+			xmax = 243.84
+			text = "you"
+		intervals [561]:
+			xmin = 243.84
+			xmax = 244.0
+			text = "feel"
+		intervals [562]:
+			xmin = 244.0
+			xmax = 244.24
+			text = "like"
+		intervals [563]:
+			xmin = 244.24
+			xmax = 244.34
+			text = "youre"
+		intervals [564]:
+			xmin = 244.34
+			xmax = 244.46
+			text = "in"
+		intervals [565]:
+			xmin = 244.46
+			xmax = 244.54
+			text = "the"
+		intervals [566]:
+			xmin = 244.54
+			xmax = 244.91
+			text = ""
+		intervals [567]:
+			xmin = 244.91
+			xmax = 245.21
+			text = "minority"
+		intervals [568]:
+			xmin = 245.21
+			xmax = 249.09
+			text = ""
+		intervals [569]:
+			xmin = 249.09
+			xmax = 249.39
+			text = "oh"
+		intervals [570]:
+			xmin = 249.39
+			xmax = 249.59
+			text = "dear"
+		intervals [571]:
+			xmin = 249.59
+			xmax = 252.3
+			text = ""
+		intervals [572]:
+			xmin = 252.3
+			xmax = 252.6
+			text = "well"
+		intervals [573]:
+			xmin = 252.6
+			xmax = 252.72
+			text = "out"
+		intervals [574]:
+			xmin = 252.72
+			xmax = 252.9
+			text = "here"
+		intervals [575]:
+			xmin = 252.9
+			xmax = 252.97
+			text = "in"
+		intervals [576]:
+			xmin = 252.97
+			xmax = 253.3
+			text = ""
+		intervals [577]:
+			xmin = 253.3
+			xmax = 253.6
+			text = "$unc$utah"
+		intervals [578]:
+			xmin = 253.6
+			xmax = 253.88
+			text = "$unc$five"
+		intervals [579]:
+			xmin = 253.88
+			xmax = 254.0
+			text = "is"
+		intervals [580]:
+			xmin = 254.0
+			xmax = 254.12
+			text = ""
+		intervals [581]:
+			xmin = 254.12
+			xmax = 254.42
+			text = "about"
+		intervals [582]:
+			xmin = 254.42
+			xmax = 254.7
+			text = "the"
+		intervals [583]:
+			xmin = 254.7
+			xmax = 255.33
+			text = ""
+		intervals [584]:
+			xmin = 255.33
+			xmax = 255.63
+			text = "the"
+		intervals [585]:
+			xmin = 255.63
+			xmax = 256.05
+			text = ""
+		intervals [586]:
+			xmin = 256.05
+			xmax = 256.35
+			text = "average"
+		intervals [587]:
+			xmin = 256.35
+			xmax = 256.94
+			text = ""
+		intervals [588]:
+			xmin = 256.94
+			xmax = 257.24
+			text = "yeah"
+		intervals [589]:
+			xmin = 257.24
+			xmax = 259.58
+			text = ""
+		intervals [590]:
+			xmin = 259.58
+			xmax = 259.88
+			text = "oh"
+		intervals [591]:
+			xmin = 259.88
+			xmax = 261.6
+			text = ""
+		intervals [592]:
+			xmin = 261.6
+			xmax = 261.9
+			text = "uh-huh"
+		intervals [593]:
+			xmin = 261.9
+			xmax = 264.75
+			text = ""
+		intervals [594]:
+			xmin = 264.75
+			xmax = 265.05
+			text = "oh"
+		intervals [595]:
+			xmin = 265.05
+			xmax = 268.7
+			text = ""
+		intervals [596]:
+			xmin = 268.7
+			xmax = 269.0
+			text = "oh"
+		intervals [597]:
+			xmin = 269.0
+			xmax = 270.24
+			text = ""
+		intervals [598]:
+			xmin = 270.24
+			xmax = 270.54
+			text = "oh"
+		intervals [599]:
+			xmin = 270.54
+			xmax = 270.72
+			text = "i"
+		intervals [600]:
+			xmin = 270.72
+			xmax = 270.73
+			text = ""
+		intervals [601]:
+			xmin = 270.73
+			xmax = 271.03
+			text = "have"
+		intervals [602]:
+			xmin = 271.03
+			xmax = 271.31
+			text = "some"
+		intervals [603]:
+			xmin = 271.31
+			xmax = 271.5
+			text = ""
+		intervals [604]:
+			xmin = 271.5
+			xmax = 271.8
+			text = "relatives"
+		intervals [605]:
+			xmin = 271.8
+			xmax = 271.96
+			text = "out"
+		intervals [606]:
+			xmin = 271.96
+			xmax = 272.07
+			text = "there"
+		intervals [607]:
+			xmin = 272.07
+			xmax = 272.14
+			text = "in"
+		intervals [608]:
+			xmin = 272.14
+			xmax = 272.32
+			text = ""
+		intervals [609]:
+			xmin = 272.32
+			xmax = 272.62
+			text = "$unc$texas"
+		intervals [610]:
+			xmin = 272.62
+			xmax = 272.75
+			text = "in"
+		intervals [611]:
+			xmin = 272.75
+			xmax = 272.94
+			text = "fact"
+		intervals [612]:
+			xmin = 272.94
+			xmax = 273.04
+			text = "my"
+		intervals [613]:
+			xmin = 273.04
+			xmax = 273.09
+			text = ""
+		intervals [614]:
+			xmin = 273.09
+			xmax = 273.39
+			text = "moms"
+		intervals [615]:
+			xmin = 273.39
+			xmax = 273.56
+			text = "out"
+		intervals [616]:
+			xmin = 273.56
+			xmax = 273.7
+			text = "there"
+		intervals [617]:
+			xmin = 273.7
+			xmax = 273.81
+			text = "in"
+		intervals [618]:
+			xmin = 273.81
+			xmax = 274.04
+			text = ""
+		intervals [619]:
+			xmin = 274.04
+			xmax = 274.34
+			text = "$unc$texas"
+		intervals [620]:
+			xmin = 274.34
+			xmax = 274.49
+			text = "right"
+		intervals [621]:
+			xmin = 274.49
+			xmax = 274.55
+			text = ""
+		intervals [622]:
+			xmin = 274.55
+			xmax = 274.85
+			text = "now"
+		intervals [623]:
+			xmin = 274.85
+			xmax = 275.09
+			text = "in"
+		intervals [624]:
+			xmin = 275.09
+			xmax = 275.28
+			text = ""
+		intervals [625]:
+			xmin = 275.28
+			xmax = 275.58
+			text = "$unc$dallas"
+		intervals [626]:
+			xmin = 275.58
+			xmax = 275.78
+			text = ""
+		intervals [627]:
+			xmin = 275.78
+			xmax = 276.08
+			text = "spending"
+		intervals [628]:
+			xmin = 276.08
+			xmax = 276.3
+			text = "a"
+		intervals [629]:
+			xmin = 276.3
+			xmax = 277.35
+			text = ""
+		intervals [630]:
+			xmin = 277.35
+			xmax = 277.65
+			text = "month"
+		intervals [631]:
+			xmin = 277.65
+			xmax = 277.95
+			text = "with"
+		intervals [632]:
+			xmin = 277.95
+			xmax = 278.01
+			text = ""
+		intervals [633]:
+			xmin = 278.01
+			xmax = 278.31
+			text = "her"
+		intervals [634]:
+			xmin = 278.31
+			xmax = 279.1
+			text = ""
+		intervals [635]:
+			xmin = 279.1
+			xmax = 279.4
+			text = "cousins"
+		intervals [636]:
+			xmin = 279.4
+			xmax = 279.59
+			text = "on"
+		intervals [637]:
+			xmin = 279.59
+			xmax = 279.78
+			text = "their"
+		intervals [638]:
+			xmin = 279.78
+			xmax = 280.01
+			text = ""
+		intervals [639]:
+			xmin = 280.01
+			xmax = 280.31
+			text = "ranch"
+		intervals [640]:
+			xmin = 280.31
+			xmax = 280.58
+			text = "and"
+		intervals [641]:
+			xmin = 280.58
+			xmax = 282.17
+			text = ""
+		intervals [642]:
+			xmin = 282.17
+			xmax = 282.47
+			text = "well"
+		intervals [643]:
+			xmin = 282.47
+			xmax = 282.66
+			text = ""
+		intervals [644]:
+			xmin = 282.66
+			xmax = 282.96
+			text = "uh"
+		intervals [645]:
+			xmin = 282.96
+			xmax = 284.19
+			text = ""
+		intervals [646]:
+			xmin = 284.19
+			xmax = 284.49
+			text = "no"
+		intervals [647]:
+			xmin = 284.49
+			xmax = 284.68
+			text = "im"
+		intervals [648]:
+			xmin = 284.68
+			xmax = 284.69
+			text = ""
+		intervals [649]:
+			xmin = 284.69
+			xmax = 284.99
+			text = "trying"
+		intervals [650]:
+			xmin = 284.99
+			xmax = 285.44
+			text = ""
+		intervals [651]:
+			xmin = 285.44
+			xmax = 285.74
+			text = "$unc$aberdeen"
+		intervals [652]:
+			xmin = 285.74
+			xmax = 287.16
+			text = ""
+		intervals [653]:
+			xmin = 287.16
+			xmax = 287.46
+			text = "is"
+		intervals [654]:
+			xmin = 287.46
+			xmax = 287.75
+			text = "is"
+		intervals [655]:
+			xmin = 287.75
+			xmax = 287.96
+			text = "that"
+		intervals [656]:
+			xmin = 287.96
+			xmax = 288.24
+			text = "close"
+		intervals [657]:
+			xmin = 288.24
+			xmax = 288.38
+			text = "to"
+		intervals [658]:
+			xmin = 288.38
+			xmax = 288.64
+			text = ""
+		intervals [659]:
+			xmin = 288.64
+			xmax = 288.94
+			text = "$unc$dallas"
+		intervals [660]:
+			xmin = 288.94
+			xmax = 290.07
+			text = ""
+		intervals [661]:
+			xmin = 290.07
+			xmax = 290.37
+			text = "oh"
+		intervals [662]:
+			xmin = 290.37
+			xmax = 290.86
+			text = ""
+		intervals [663]:
+			xmin = 290.86
+			xmax = 291.16
+			text = "dont"
+		intervals [664]:
+			xmin = 291.16
+			xmax = 291.39
+			text = "you"
+		intervals [665]:
+			xmin = 291.39
+			xmax = 291.85
+			text = ""
+		intervals [666]:
+			xmin = 291.85
+			xmax = 292.15
+			text = "its"
+		intervals [667]:
+			xmin = 292.15
+			xmax = 292.44
+			text = ""
+		intervals [668]:
+			xmin = 292.44
+			xmax = 292.74
+			text = "i"
+		intervals [669]:
+			xmin = 292.74
+			xmax = 292.97
+			text = ""
+		intervals [670]:
+			xmin = 292.97
+			xmax = 293.27
+			text = "guess"
+		intervals [671]:
+			xmin = 293.27
+			xmax = 293.31
+			text = ""
+		intervals [672]:
+			xmin = 293.31
+			xmax = 293.61
+			text = "its"
+		intervals [673]:
+			xmin = 293.61
+			xmax = 294.09
+			text = ""
+		intervals [674]:
+			xmin = 294.09
+			xmax = 294.39
+			text = "out"
+		intervals [675]:
+			xmin = 294.39
+			xmax = 294.5
+			text = ""
+		intervals [676]:
+			xmin = 294.5
+			xmax = 294.8
+			text = "there"
+		intervals [677]:
+			xmin = 294.8
+			xmax = 295.26
+			text = ""
+		intervals [678]:
+			xmin = 295.26
+			xmax = 295.56
+			text = "clear"
+		intervals [679]:
+			xmin = 295.56
+			xmax = 295.57
+			text = ""
+		intervals [680]:
+			xmin = 295.57
+			xmax = 295.87
+			text = "out"
+		intervals [681]:
+			xmin = 295.87
+			xmax = 296.09
+			text = "they"
+		intervals [682]:
+			xmin = 296.09
+			xmax = 296.34
+			text = "have"
+		intervals [683]:
+			xmin = 296.34
+			xmax = 296.5
+			text = "a"
+		intervals [684]:
+			xmin = 296.5
+			xmax = 296.79
+			text = ""
+		intervals [685]:
+			xmin = 296.79
+			xmax = 297.09
+			text = "ranch"
+		intervals [686]:
+			xmin = 297.09
+			xmax = 297.15
+			text = "that"
+		intervals [687]:
+			xmin = 297.15
+			xmax = 297.34
+			text = "has"
+		intervals [688]:
+			xmin = 297.34
+			xmax = 297.52
+			text = "like"
+		intervals [689]:
+			xmin = 297.52
+			xmax = 297.72
+			text = "$unc$five"
+		intervals [690]:
+			xmin = 297.72
+			xmax = 297.98
+			text = "$unc$hundred"
+		intervals [691]:
+			xmin = 297.98
+			xmax = 298.14
+			text = ""
+		intervals [692]:
+			xmin = 298.14
+			xmax = 298.44
+			text = "acres"
+		intervals [693]:
+			xmin = 298.44
+			xmax = 298.71
+			text = "and"
+		intervals [694]:
+			xmin = 298.71
+			xmax = 298.8
+			text = ""

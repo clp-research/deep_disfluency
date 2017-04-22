@@ -16,5 +16,11 @@
 *.classpath
 *.project
 *.pydevproject
-/deep_disf_detection/data/audio/*
+/deep_disfluency/data/audio/*
 *.prefs
+/deep_disfluency/data/raw_data/swda/*
+/deep_disfluency/data/raw_data/swbd_alignments/*
+/deep_disfluency/data/raw_data/swda_tree_pos_maps/*
+/deep_disfluency/data/disfluency_detection/vectors/*
+*error_log.text
+

@@ -1,0 +1,5737 @@
+{
+    "result_index": 0, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.95, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            1.24, 
+                            1.56
+                        ], 
+                        [
+                            "do", 
+                            1.56, 
+                            1.7
+                        ], 
+                        [
+                            "you", 
+                            1.7, 
+                            1.8
+                        ], 
+                        [
+                            "have", 
+                            1.8, 
+                            2.0
+                        ], 
+                        [
+                            "children", 
+                            2.0, 
+                            2.45
+                        ], 
+                        [
+                            "in", 
+                            2.58, 
+                            2.68
+                        ], 
+                        [
+                            "school", 
+                            2.68, 
+                            2.97
+                        ]
+                    ], 
+                    "transcript": "%HESITATION do you have children in school ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.9999999999999675
+                        ], 
+                        [
+                            "do", 
+                            0.9999999999999839
+                        ], 
+                        [
+                            "you", 
+                            0.9999999999999838
+                        ], 
+                        [
+                            "have", 
+                            0.9999999999999835
+                        ], 
+                        [
+                            "children", 
+                            0.994129999941874
+                        ], 
+                        [
+                            "in", 
+                            0.7118009837290471
+                        ], 
+                        [
+                            "school", 
+                            0.831462369772048
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION do you have children in schools "
+                }, 
+                {
+                    "transcript": "%HESITATION do you have children and school "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 1, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.984, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            3.46, 
+                            4.02
+                        ]
+                    ], 
+                    "transcript": "%HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.9839549816104131
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "um "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 2, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            4.57, 
+                            4.85
+                        ], 
+                        [
+                            "have", 
+                            4.85, 
+                            5.17
+                        ], 
+                        [
+                            "two", 
+                            5.17, 
+                            5.57
+                        ], 
+                        [
+                            "that", 
+                            5.57, 
+                            5.73
+                        ], 
+                        [
+                            "are", 
+                            5.73, 
+                            6.0
+                        ], 
+                        [
+                            "up", 
+                            6.0, 
+                            6.31
+                        ]
+                    ], 
+                    "transcript": "I have two that are up "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 2, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            4.57, 
+                            4.85
+                        ], 
+                        [
+                            "have", 
+                            4.85, 
+                            5.17
+                        ], 
+                        [
+                            "two", 
+                            5.17, 
+                            5.57
+                        ], 
+                        [
+                            "that", 
+                            5.57, 
+                            5.73
+                        ], 
+                        [
+                            "are", 
+                            5.73, 
+                            6.08
+                        ], 
+                        [
+                            "%HESITATION", 
+                            6.11, 
+                            6.54
+                        ], 
+                        [
+                            "now", 
+                            6.77, 
+                            7.08
+                        ], 
+                        [
+                            "just", 
+                            7.08, 
+                            7.25
+                        ], 
+                        [
+                            "about", 
+                            7.25, 
+                            7.42
+                        ], 
+                        [
+                            "ready", 
+                            7.42, 
+                            7.56
+                        ], 
+                        [
+                            "to", 
+                            7.56, 
+                            7.64
+                        ], 
+                        [
+                            "graduate", 
+                            7.64, 
+                            7.99
+                        ], 
+                        [
+                            "and", 
+                            7.99, 
+                            8.12
+                        ], 
+                        [
+                            "call", 
+                            8.12, 
+                            8.31
+                        ]
+                    ], 
+                    "transcript": "I have two that are %HESITATION now just about ready to graduate and call "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 2, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            4.57, 
+                            4.85
+                        ], 
+                        [
+                            "have", 
+                            4.85, 
+                            5.17
+                        ], 
+                        [
+                            "two", 
+                            5.17, 
+                            5.57
+                        ], 
+                        [
+                            "that", 
+                            5.57, 
+                            5.73
+                        ], 
+                        [
+                            "are", 
+                            5.73, 
+                            6.08
+                        ], 
+                        [
+                            "%HESITATION", 
+                            6.11, 
+                            6.54
+                        ], 
+                        [
+                            "now", 
+                            6.77, 
+                            7.08
+                        ], 
+                        [
+                            "just", 
+                            7.08, 
+                            7.27
+                        ], 
+                        [
+                            "got", 
+                            7.27, 
+                            7.42
+                        ], 
+                        [
+                            "rated", 
+                            7.42, 
+                            7.65
+                        ], 
+                        [
+                            "graduating", 
+                            7.65, 
+                            8.08
+                        ], 
+                        [
+                            "college", 
+                            8.08, 
+                            8.47
+                        ], 
+                        [
+                            "mail", 
+                            8.47, 
+                            8.73
+                        ], 
+                        [
+                            "sent", 
+                            8.73, 
+                            8.96
+                        ], 
+                        [
+                            "to", 
+                            8.96, 
+                            9.18
+                        ], 
+                        [
+                            "that", 
+                            9.18, 
+                            9.3
+                        ], 
+                        [
+                            "are", 
+                            9.3, 
+                            9.37
+                        ], 
+                        [
+                            "just", 
+                            9.37, 
+                            9.65
+                        ], 
+                        [
+                            "entering", 
+                            9.65, 
+                            10.23
+                        ]
+                    ], 
+                    "transcript": "I have two that are %HESITATION now just got rated graduating college mail sent to that are just entering "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 2, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.801, 
+                    "timestamps": [
+                        [
+                            "I", 
+                            4.57, 
+                            4.85
+                        ], 
+                        [
+                            "have", 
+                            4.85, 
+                            5.17
+                        ], 
+                        [
+                            "two", 
+                            5.17, 
+                            5.57
+                        ], 
+                        [
+                            "that", 
+                            5.57, 
+                            5.73
+                        ], 
+                        [
+                            "are", 
+                            5.73, 
+                            6.08
+                        ], 
+                        [
+                            "%HESITATION", 
+                            6.11, 
+                            6.54
+                        ], 
+                        [
+                            "now", 
+                            6.77, 
+                            7.08
+                        ], 
+                        [
+                            "just", 
+                            7.08, 
+                            7.27
+                        ], 
+                        [
+                            "got", 
+                            7.27, 
+                            7.42
+                        ], 
+                        [
+                            "rated", 
+                            7.42, 
+                            7.65
+                        ], 
+                        [
+                            "graduating", 
+                            7.65, 
+                            8.08
+                        ], 
+                        [
+                            "college", 
+                            8.08, 
+                            8.47
+                        ], 
+                        [
+                            "mail", 
+                            8.47, 
+                            8.73
+                        ], 
+                        [
+                            "sent", 
+                            8.73, 
+                            8.96
+                        ], 
+                        [
+                            "to", 
+                            8.96, 
+                            9.18
+                        ], 
+                        [
+                            "that", 
+                            9.18, 
+                            9.3
+                        ], 
+                        [
+                            "are", 
+                            9.3, 
+                            9.37
+                        ], 
+                        [
+                            "just", 
+                            9.37, 
+                            9.65
+                        ], 
+                        [
+                            "entering", 
+                            9.65, 
+                            10.23
+                        ], 
+                        [
+                            "school", 
+                            10.3, 
+                            10.82
+                        ]
+                    ], 
+                    "transcript": "I have two that are %HESITATION now just got rated graduating college mail sent to that are just entering school ", 
+                    "word_confidence": [
+                        [
+                            "I", 
+                            0.9999999999998861
+                        ], 
+                        [
+                            "have", 
+                            0.9999999999999349
+                        ], 
+                        [
+                            "two", 
+                            0.9999999999999337
+                        ], 
+                        [
+                            "that", 
+                            0.9999999999999338
+                        ], 
+                        [
+                            "are", 
+                            0.9426595182495943
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.8014082690477154
+                        ], 
+                        [
+                            "now", 
+                            0.9959668654657634
+                        ], 
+                        [
+                            "just", 
+                            0.8631498349141962
+                        ], 
+                        [
+                            "got", 
+                            0.4008411940503321
+                        ], 
+                        [
+                            "rated", 
+                            0.24691292981834714
+                        ], 
+                        [
+                            "graduating", 
+                            0.3651828108543476
+                        ], 
+                        [
+                            "college", 
+                            0.9786816998590808
+                        ], 
+                        [
+                            "mail", 
+                            0.13689494474094385
+                        ], 
+                        [
+                            "sent", 
+                            0.36305590505307234
+                        ], 
+                        [
+                            "to", 
+                            0.9999999999998755
+                        ], 
+                        [
+                            "that", 
+                            0.34992053744502366
+                        ], 
+                        [
+                            "are", 
+                            0.3499205374450428
+                        ], 
+                        [
+                            "just", 
+                            0.9999999999998875
+                        ], 
+                        [
+                            "entering", 
+                            0.9998644388450243
+                        ], 
+                        [
+                            "school", 
+                            0.9896456290514971
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "I have two that are %HESITATION now just got rated graduating college mail sent to their just entering school "
+                }, 
+                {
+                    "transcript": "I have two that are %HESITATION now just got rated graduating college males have to that are just entering school "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 3, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.914, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            12.74, 
+                            13.19
+                        ], 
+                        [
+                            "well", 
+                            13.27, 
+                            13.69
+                        ]
+                    ], 
+                    "transcript": "%HESITATION well ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.9999999999999829
+                        ], 
+                        [
+                            "well", 
+                            0.8212866844936975
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION twelve "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 4, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            15.07, 
+                            15.24
+                        ], 
+                        [
+                            "think", 
+                            15.24, 
+                            15.53
+                        ], 
+                        [
+                            "they're", 
+                            15.53, 
+                            15.66
+                        ], 
+                        [
+                            "just", 
+                            15.66, 
+                            15.89
+                        ], 
+                        [
+                            "pushing", 
+                            15.89, 
+                            16.31
+                        ], 
+                        [
+                            "them", 
+                            16.31, 
+                            16.58
+                        ]
+                    ], 
+                    "transcript": "I think they're just pushing them "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 4, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.934, 
+                    "timestamps": [
+                        [
+                            "I", 
+                            15.07, 
+                            15.24
+                        ], 
+                        [
+                            "think", 
+                            15.24, 
+                            15.53
+                        ], 
+                        [
+                            "they're", 
+                            15.53, 
+                            15.66
+                        ], 
+                        [
+                            "just", 
+                            15.66, 
+                            15.89
+                        ], 
+                        [
+                            "pushing", 
+                            15.89, 
+                            16.31
+                        ], 
+                        [
+                            "them", 
+                            16.31, 
+                            16.58
+                        ], 
+                        [
+                            "much", 
+                            16.79, 
+                            17.11
+                        ], 
+                        [
+                            "entirely", 
+                            17.17, 
+                            17.73
+                        ], 
+                        [
+                            "too", 
+                            17.73, 
+                            17.9
+                        ], 
+                        [
+                            "fast", 
+                            17.9, 
+                            18.33
+                        ]
+                    ], 
+                    "transcript": "I think they're just pushing them much entirely too fast ", 
+                    "word_confidence": [
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "think", 
+                            1.0
+                        ], 
+                        [
+                            "they're", 
+                            0.6819094488336389
+                        ], 
+                        [
+                            "just", 
+                            1.0
+                        ], 
+                        [
+                            "pushing", 
+                            0.9999999999999942
+                        ], 
+                        [
+                            "them", 
+                            0.9116352429755459
+                        ], 
+                        [
+                            "much", 
+                            0.6157265529554276
+                        ], 
+                        [
+                            "entirely", 
+                            0.991253252100168
+                        ], 
+                        [
+                            "too", 
+                            1.0
+                        ], 
+                        [
+                            "fast", 
+                            0.9877326218885949
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "I think they're just pushing them much entirely to fast "
+                }, 
+                {
+                    "transcript": "I think they were just pushing them much entirely too fast "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 5, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            19.8, 
+                            20.43
+                        ], 
+                        [
+                            "well", 
+                            20.46, 
+                            20.78
+                        ], 
+                        [
+                            "it", 
+                            20.78, 
+                            20.89
+                        ], 
+                        [
+                            "seems", 
+                            20.89, 
+                            21.16
+                        ], 
+                        [
+                            "to", 
+                            21.16, 
+                            21.27
+                        ], 
+                        [
+                            "me", 
+                            21.27, 
+                            21.48
+                        ], 
+                        [
+                            "that", 
+                            21.48, 
+                            21.58
+                        ]
+                    ], 
+                    "transcript": "%HESITATION well it seems to me that "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 5, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            19.8, 
+                            20.43
+                        ], 
+                        [
+                            "well", 
+                            20.46, 
+                            20.78
+                        ], 
+                        [
+                            "it", 
+                            20.78, 
+                            20.89
+                        ], 
+                        [
+                            "seems", 
+                            20.89, 
+                            21.16
+                        ], 
+                        [
+                            "to", 
+                            21.16, 
+                            21.27
+                        ], 
+                        [
+                            "me", 
+                            21.27, 
+                            21.48
+                        ], 
+                        [
+                            "that", 
+                            21.48, 
+                            21.6
+                        ], 
+                        [
+                            "kindergarten", 
+                            21.6, 
+                            22.46
+                        ], 
+                        [
+                            "is", 
+                            22.49, 
+                            22.75
+                        ], 
+                        [
+                            "now", 
+                            22.75, 
+                            23.12
+                        ], 
+                        [
+                            "the", 
+                            23.12, 
+                            23.39
+                        ]
+                    ], 
+                    "transcript": "%HESITATION well it seems to me that kindergarten is now the "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 5, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            19.8, 
+                            20.43
+                        ], 
+                        [
+                            "well", 
+                            20.46, 
+                            20.78
+                        ], 
+                        [
+                            "it", 
+                            20.78, 
+                            20.89
+                        ], 
+                        [
+                            "seems", 
+                            20.89, 
+                            21.16
+                        ], 
+                        [
+                            "to", 
+                            21.16, 
+                            21.27
+                        ], 
+                        [
+                            "me", 
+                            21.27, 
+                            21.48
+                        ], 
+                        [
+                            "that", 
+                            21.48, 
+                            21.6
+                        ], 
+                        [
+                            "kindergarten", 
+                            21.6, 
+                            22.46
+                        ], 
+                        [
+                            "is", 
+                            22.49, 
+                            22.75
+                        ], 
+                        [
+                            "now", 
+                            22.75, 
+                            23.12
+                        ], 
+                        [
+                            "the", 
+                            23.12, 
+                            23.28
+                        ], 
+                        [
+                            "equivalent", 
+                            23.28, 
+                            23.75
+                        ], 
+                        [
+                            "of", 
+                            23.75, 
+                            23.81
+                        ], 
+                        [
+                            "first", 
+                            23.81, 
+                            24.16
+                        ], 
+                        [
+                            "grade", 
+                            24.16, 
+                            24.63
+                        ], 
+                        [
+                            "my", 
+                            24.8, 
+                            25.01
+                        ], 
+                        [
+                            "son", 
+                            25.01, 
+                            25.36
+                        ], 
+                        [
+                            "leaves", 
+                            25.36, 
+                            25.58
+                        ]
+                    ], 
+                    "transcript": "%HESITATION well it seems to me that kindergarten is now the equivalent of first grade my son leaves "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 5, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            19.8, 
+                            20.43
+                        ], 
+                        [
+                            "well", 
+                            20.46, 
+                            20.78
+                        ], 
+                        [
+                            "it", 
+                            20.78, 
+                            20.89
+                        ], 
+                        [
+                            "seems", 
+                            20.89, 
+                            21.16
+                        ], 
+                        [
+                            "to", 
+                            21.16, 
+                            21.27
+                        ], 
+                        [
+                            "me", 
+                            21.27, 
+                            21.48
+                        ], 
+                        [
+                            "that", 
+                            21.48, 
+                            21.6
+                        ], 
+                        [
+                            "kindergarten", 
+                            21.6, 
+                            22.46
+                        ], 
+                        [
+                            "is", 
+                            22.49, 
+                            22.75
+                        ], 
+                        [
+                            "now", 
+                            22.75, 
+                            23.12
+                        ], 
+                        [
+                            "the", 
+                            23.12, 
+                            23.28
+                        ], 
+                        [
+                            "equivalent", 
+                            23.28, 
+                            23.75
+                        ], 
+                        [
+                            "of", 
+                            23.75, 
+                            23.81
+                        ], 
+                        [
+                            "first", 
+                            23.81, 
+                            24.16
+                        ], 
+                        [
+                            "grade", 
+                            24.16, 
+                            24.63
+                        ], 
+                        [
+                            "my", 
+                            24.8, 
+                            25.01
+                        ], 
+                        [
+                            "son", 
+                            25.01, 
+                            25.36
+                        ], 
+                        [
+                            "leaves", 
+                            25.36, 
+                            25.58
+                        ], 
+                        [
+                            "the", 
+                            25.58, 
+                            25.66
+                        ], 
+                        [
+                            "house", 
+                            25.66, 
+                            25.89
+                        ], 
+                        [
+                            "at", 
+                            25.89, 
+                            26.01
+                        ], 
+                        [
+                            "seven", 
+                            26.01, 
+                            26.27
+                        ], 
+                        [
+                            "thirty", 
+                            26.27, 
+                            26.58
+                        ], 
+                        [
+                            "and", 
+                            26.58, 
+                            26.71
+                        ], 
+                        [
+                            "doesn't", 
+                            26.71, 
+                            26.97
+                        ], 
+                        [
+                            "get", 
+                            26.97, 
+                            27.1
+                        ], 
+                        [
+                            "home", 
+                            27.1, 
+                            27.3
+                        ], 
+                        [
+                            "until", 
+                            27.3, 
+                            27.58
+                        ]
+                    ], 
+                    "transcript": "%HESITATION well it seems to me that kindergarten is now the equivalent of first grade my son leaves the house at seven thirty and doesn't get home until "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 5, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.992, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            19.8, 
+                            20.43
+                        ], 
+                        [
+                            "well", 
+                            20.46, 
+                            20.78
+                        ], 
+                        [
+                            "it", 
+                            20.78, 
+                            20.89
+                        ], 
+                        [
+                            "seems", 
+                            20.89, 
+                            21.16
+                        ], 
+                        [
+                            "to", 
+                            21.16, 
+                            21.27
+                        ], 
+                        [
+                            "me", 
+                            21.27, 
+                            21.48
+                        ], 
+                        [
+                            "that", 
+                            21.48, 
+                            21.6
+                        ], 
+                        [
+                            "kindergarten", 
+                            21.6, 
+                            22.46
+                        ], 
+                        [
+                            "is", 
+                            22.49, 
+                            22.75
+                        ], 
+                        [
+                            "now", 
+                            22.75, 
+                            23.12
+                        ], 
+                        [
+                            "the", 
+                            23.12, 
+                            23.28
+                        ], 
+                        [
+                            "equivalent", 
+                            23.28, 
+                            23.75
+                        ], 
+                        [
+                            "of", 
+                            23.75, 
+                            23.81
+                        ], 
+                        [
+                            "first", 
+                            23.81, 
+                            24.16
+                        ], 
+                        [
+                            "grade", 
+                            24.16, 
+                            24.63
+                        ], 
+                        [
+                            "my", 
+                            24.8, 
+                            25.01
+                        ], 
+                        [
+                            "son", 
+                            25.01, 
+                            25.36
+                        ], 
+                        [
+                            "leaves", 
+                            25.36, 
+                            25.58
+                        ], 
+                        [
+                            "the", 
+                            25.58, 
+                            25.66
+                        ], 
+                        [
+                            "house", 
+                            25.66, 
+                            25.89
+                        ], 
+                        [
+                            "at", 
+                            25.89, 
+                            26.01
+                        ], 
+                        [
+                            "seven", 
+                            26.01, 
+                            26.27
+                        ], 
+                        [
+                            "thirty", 
+                            26.27, 
+                            26.58
+                        ], 
+                        [
+                            "and", 
+                            26.58, 
+                            26.71
+                        ], 
+                        [
+                            "doesn't", 
+                            26.71, 
+                            26.97
+                        ], 
+                        [
+                            "get", 
+                            26.97, 
+                            27.1
+                        ], 
+                        [
+                            "home", 
+                            27.1, 
+                            27.3
+                        ], 
+                        [
+                            "until", 
+                            27.3, 
+                            27.62
+                        ], 
+                        [
+                            "three", 
+                            27.62, 
+                            27.84
+                        ], 
+                        [
+                            "o'clock", 
+                            27.84, 
+                            28.52
+                        ]
+                    ], 
+                    "transcript": "%HESITATION well it seems to me that kindergarten is now the equivalent of first grade my son leaves the house at seven thirty and doesn't get home until three o'clock ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.9999999999999571
+                        ], 
+                        [
+                            "well", 
+                            0.959206917132349
+                        ], 
+                        [
+                            "it", 
+                            0.999999999999942
+                        ], 
+                        [
+                            "seems", 
+                            0.9999999999999217
+                        ], 
+                        [
+                            "to", 
+                            0.9999999999999344
+                        ], 
+                        [
+                            "me", 
+                            0.9999999999998691
+                        ], 
+                        [
+                            "that", 
+                            0.9999999999999344
+                        ], 
+                        [
+                            "kindergarten", 
+                            0.9999999999998693
+                        ], 
+                        [
+                            "is", 
+                            0.9999999999997902
+                        ], 
+                        [
+                            "now", 
+                            0.9999999999998556
+                        ], 
+                        [
+                            "the", 
+                            0.9999999999998557
+                        ], 
+                        [
+                            "equivalent", 
+                            0.9999999999998033
+                        ], 
+                        [
+                            "of", 
+                            0.9999999999998037
+                        ], 
+                        [
+                            "first", 
+                            0.9999999999998035
+                        ], 
+                        [
+                            "grade", 
+                            0.9954047820700609
+                        ], 
+                        [
+                            "my", 
+                            0.9999999999998818
+                        ], 
+                        [
+                            "son", 
+                            0.9999999999998704
+                        ], 
+                        [
+                            "leaves", 
+                            0.999999999999896
+                        ], 
+                        [
+                            "the", 
+                            0.9999999999999021
+                        ], 
+                        [
+                            "house", 
+                            0.9999999999999016
+                        ], 
+                        [
+                            "at", 
+                            0.9999999999999022
+                        ], 
+                        [
+                            "seven", 
+                            0.9999999999999016
+                        ], 
+                        [
+                            "thirty", 
+                            0.9888709334553841
+                        ], 
+                        [
+                            "and", 
+                            0.6549989371187673
+                        ], 
+                        [
+                            "doesn't", 
+                            0.9999999999999327
+                        ], 
+                        [
+                            "get", 
+                            0.999999999999922
+                        ], 
+                        [
+                            "home", 
+                            0.9999999999999162
+                        ], 
+                        [
+                            "until", 
+                            0.9999999999999182
+                        ], 
+                        [
+                            "three", 
+                            0.9999999999999182
+                        ], 
+                        [
+                            "o'clock", 
+                            0.9920624774303193
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION well it seems to me that kindergarten is now the equivalent of first grade my son leaves the house at seven thirty in doesn't get home until three o'clock "
+                }, 
+                {
+                    "transcript": "um well it seems to me that kindergarten is now the equivalent of first grade my son leaves the house at seven thirty and doesn't get home until three o'clock "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 6, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.968, 
+                    "timestamps": [
+                        [
+                            "I", 
+                            29.26, 
+                            29.38
+                        ], 
+                        [
+                            "think", 
+                            29.38, 
+                            29.56
+                        ], 
+                        [
+                            "that", 
+                            29.56, 
+                            29.72
+                        ], 
+                        [
+                            "such", 
+                            29.72, 
+                            29.89
+                        ], 
+                        [
+                            "a", 
+                            29.89, 
+                            29.96
+                        ], 
+                        [
+                            "long", 
+                            29.96, 
+                            30.25
+                        ], 
+                        [
+                            "day", 
+                            30.25, 
+                            30.56
+                        ], 
+                        [
+                            "for", 
+                            30.56, 
+                            31.01
+                        ]
+                    ], 
+                    "transcript": "I think that such a long day for ", 
+                    "word_confidence": [
+                        [
+                            "I", 
+                            0.9999999999999839
+                        ], 
+                        [
+                            "think", 
+                            1.0
+                        ], 
+                        [
+                            "that", 
+                            0.6528598026740158
+                        ], 
+                        [
+                            "such", 
+                            1.0
+                        ], 
+                        [
+                            "a", 
+                            1.0
+                        ], 
+                        [
+                            "long", 
+                            1.0
+                        ], 
+                        [
+                            "day", 
+                            1.0
+                        ], 
+                        [
+                            "for", 
+                            0.9999999999999989
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "I think that's such a long day for "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 7, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.649, 
+                    "timestamps": [
+                        [
+                            "kindergarten", 
+                            31.28, 
+                            32.04
+                        ]
+                    ], 
+                    "transcript": "kindergarten ", 
+                    "word_confidence": [
+                        [
+                            "kindergarten", 
+                            0.64934392396684
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "kindergarteners "
+                }, 
+                {
+                    "transcript": "kindergartners "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 8, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "and", 
+                            33.44, 
+                            33.89
+                        ], 
+                        [
+                            "I", 
+                            33.89, 
+                            34.09
+                        ], 
+                        [
+                            "have", 
+                            34.09, 
+                            34.26
+                        ], 
+                        [
+                            "a", 
+                            34.26, 
+                            34.33
+                        ], 
+                        [
+                            "preschooler", 
+                            34.33, 
+                            35.15
+                        ]
+                    ], 
+                    "transcript": "and I have a preschooler "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 8, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.774, 
+                    "timestamps": [
+                        [
+                            "and", 
+                            33.44, 
+                            33.89
+                        ], 
+                        [
+                            "I", 
+                            33.89, 
+                            34.09
+                        ], 
+                        [
+                            "have", 
+                            34.09, 
+                            34.26
+                        ], 
+                        [
+                            "a", 
+                            34.26, 
+                            34.33
+                        ], 
+                        [
+                            "preschooler", 
+                            34.33, 
+                            35.22
+                        ]
+                    ], 
+                    "transcript": "and I have a preschooler ", 
+                    "word_confidence": [
+                        [
+                            "and", 
+                            0.9485809737972998
+                        ], 
+                        [
+                            "I", 
+                            0.6585712357895767
+                        ], 
+                        [
+                            "have", 
+                            0.9999999999999775
+                        ], 
+                        [
+                            "a", 
+                            0.9999999999999778
+                        ], 
+                        [
+                            "preschooler", 
+                            0.6515322123022577
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "and %HESITATION I have a preschooler "
+                }, 
+                {
+                    "transcript": "and the I have a preschooler "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 9, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            35.66, 
+                            36.24
+                        ], 
+                        [
+                            "I", 
+                            36.59, 
+                            36.69
+                        ], 
+                        [
+                            "was", 
+                            36.69, 
+                            36.84
+                        ], 
+                        [
+                            "told", 
+                            36.84, 
+                            37.07
+                        ], 
+                        [
+                            "by", 
+                            37.07, 
+                            37.19
+                        ], 
+                        [
+                            "her", 
+                            37.19, 
+                            37.4
+                        ]
+                    ], 
+                    "transcript": "%HESITATION I was told by her "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 9, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            35.66, 
+                            36.24
+                        ], 
+                        [
+                            "I", 
+                            36.59, 
+                            36.69
+                        ], 
+                        [
+                            "was", 
+                            36.69, 
+                            36.84
+                        ], 
+                        [
+                            "told", 
+                            36.84, 
+                            37.07
+                        ], 
+                        [
+                            "by", 
+                            37.07, 
+                            37.19
+                        ], 
+                        [
+                            "her", 
+                            37.19, 
+                            37.33
+                        ], 
+                        [
+                            "preschool", 
+                            37.33, 
+                            37.74
+                        ], 
+                        [
+                            "teacher", 
+                            37.74, 
+                            38.02
+                        ], 
+                        [
+                            "that", 
+                            38.02, 
+                            38.18
+                        ], 
+                        [
+                            "she", 
+                            38.18, 
+                            38.35
+                        ], 
+                        [
+                            "thought", 
+                            38.35, 
+                            38.64
+                        ], 
+                        [
+                            "maybe", 
+                            38.64, 
+                            38.88
+                        ], 
+                        [
+                            "she", 
+                            38.88, 
+                            39.02
+                        ], 
+                        [
+                            "was", 
+                            39.02, 
+                            39.18
+                        ], 
+                        [
+                            "too", 
+                            39.18, 
+                            39.4
+                        ]
+                    ], 
+                    "transcript": "%HESITATION I was told by her preschool teacher that she thought maybe she was too "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 9, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            35.66, 
+                            36.24
+                        ], 
+                        [
+                            "I", 
+                            36.59, 
+                            36.69
+                        ], 
+                        [
+                            "was", 
+                            36.69, 
+                            36.84
+                        ], 
+                        [
+                            "told", 
+                            36.84, 
+                            37.07
+                        ], 
+                        [
+                            "by", 
+                            37.07, 
+                            37.19
+                        ], 
+                        [
+                            "her", 
+                            37.19, 
+                            37.33
+                        ], 
+                        [
+                            "preschool", 
+                            37.33, 
+                            37.74
+                        ], 
+                        [
+                            "teacher", 
+                            37.74, 
+                            38.02
+                        ], 
+                        [
+                            "that", 
+                            38.02, 
+                            38.18
+                        ], 
+                        [
+                            "she", 
+                            38.18, 
+                            38.35
+                        ], 
+                        [
+                            "thought", 
+                            38.35, 
+                            38.64
+                        ], 
+                        [
+                            "maybe", 
+                            38.64, 
+                            38.88
+                        ], 
+                        [
+                            "she", 
+                            38.88, 
+                            39.02
+                        ], 
+                        [
+                            "was", 
+                            39.02, 
+                            39.18
+                        ], 
+                        [
+                            "to", 
+                            39.18, 
+                            39.39
+                        ], 
+                        [
+                            "immature", 
+                            39.39, 
+                            40.06
+                        ], 
+                        [
+                            "for", 
+                            40.06, 
+                            40.21
+                        ], 
+                        [
+                            "kindergarten", 
+                            40.21, 
+                            40.94
+                        ], 
+                        [
+                            "and", 
+                            41.01, 
+                            41.19
+                        ], 
+                        [
+                            "I", 
+                            41.19, 
+                            41.26
+                        ], 
+                        [
+                            "thought", 
+                            41.26, 
+                            41.4
+                        ]
+                    ], 
+                    "transcript": "%HESITATION I was told by her preschool teacher that she thought maybe she was to immature for kindergarten and I thought "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 9, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            35.66, 
+                            36.24
+                        ], 
+                        [
+                            "I", 
+                            36.59, 
+                            36.69
+                        ], 
+                        [
+                            "was", 
+                            36.69, 
+                            36.84
+                        ], 
+                        [
+                            "told", 
+                            36.84, 
+                            37.07
+                        ], 
+                        [
+                            "by", 
+                            37.07, 
+                            37.19
+                        ], 
+                        [
+                            "her", 
+                            37.19, 
+                            37.33
+                        ], 
+                        [
+                            "preschool", 
+                            37.33, 
+                            37.74
+                        ], 
+                        [
+                            "teacher", 
+                            37.74, 
+                            38.02
+                        ], 
+                        [
+                            "that", 
+                            38.02, 
+                            38.18
+                        ], 
+                        [
+                            "she", 
+                            38.18, 
+                            38.35
+                        ], 
+                        [
+                            "thought", 
+                            38.35, 
+                            38.64
+                        ], 
+                        [
+                            "maybe", 
+                            38.64, 
+                            38.88
+                        ], 
+                        [
+                            "she", 
+                            38.88, 
+                            39.02
+                        ], 
+                        [
+                            "was", 
+                            39.02, 
+                            39.18
+                        ], 
+                        [
+                            "to", 
+                            39.18, 
+                            39.39
+                        ], 
+                        [
+                            "immature", 
+                            39.39, 
+                            40.06
+                        ], 
+                        [
+                            "for", 
+                            40.06, 
+                            40.21
+                        ], 
+                        [
+                            "kindergarten", 
+                            40.21, 
+                            40.94
+                        ], 
+                        [
+                            "and", 
+                            41.01, 
+                            41.19
+                        ], 
+                        [
+                            "I", 
+                            41.19, 
+                            41.26
+                        ], 
+                        [
+                            "thought", 
+                            41.26, 
+                            41.67
+                        ], 
+                        [
+                            "well", 
+                            41.74, 
+                            42.2
+                        ], 
+                        [
+                            "how", 
+                            42.2, 
+                            42.53
+                        ], 
+                        [
+                            "mature", 
+                            42.53, 
+                            43.07
+                        ], 
+                        [
+                            "do", 
+                            43.07, 
+                            43.18
+                        ], 
+                        [
+                            "you", 
+                            43.18, 
+                            43.39
+                        ]
+                    ], 
+                    "transcript": "%HESITATION I was told by her preschool teacher that she thought maybe she was to immature for kindergarten and I thought well how mature do you "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 9, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.997, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            35.66, 
+                            36.24
+                        ], 
+                        [
+                            "I", 
+                            36.59, 
+                            36.69
+                        ], 
+                        [
+                            "was", 
+                            36.69, 
+                            36.84
+                        ], 
+                        [
+                            "told", 
+                            36.84, 
+                            37.07
+                        ], 
+                        [
+                            "by", 
+                            37.07, 
+                            37.19
+                        ], 
+                        [
+                            "her", 
+                            37.19, 
+                            37.33
+                        ], 
+                        [
+                            "preschool", 
+                            37.33, 
+                            37.74
+                        ], 
+                        [
+                            "teacher", 
+                            37.74, 
+                            38.02
+                        ], 
+                        [
+                            "that", 
+                            38.02, 
+                            38.18
+                        ], 
+                        [
+                            "she", 
+                            38.18, 
+                            38.35
+                        ], 
+                        [
+                            "thought", 
+                            38.35, 
+                            38.64
+                        ], 
+                        [
+                            "maybe", 
+                            38.64, 
+                            38.88
+                        ], 
+                        [
+                            "she", 
+                            38.88, 
+                            39.02
+                        ], 
+                        [
+                            "was", 
+                            39.02, 
+                            39.18
+                        ], 
+                        [
+                            "to", 
+                            39.18, 
+                            39.39
+                        ], 
+                        [
+                            "immature", 
+                            39.39, 
+                            40.06
+                        ], 
+                        [
+                            "for", 
+                            40.06, 
+                            40.21
+                        ], 
+                        [
+                            "kindergarten", 
+                            40.21, 
+                            40.94
+                        ], 
+                        [
+                            "and", 
+                            41.01, 
+                            41.19
+                        ], 
+                        [
+                            "I", 
+                            41.19, 
+                            41.26
+                        ], 
+                        [
+                            "thought", 
+                            41.26, 
+                            41.67
+                        ], 
+                        [
+                            "well", 
+                            41.74, 
+                            42.2
+                        ], 
+                        [
+                            "how", 
+                            42.2, 
+                            42.53
+                        ], 
+                        [
+                            "mature", 
+                            42.53, 
+                            43.07
+                        ], 
+                        [
+                            "do", 
+                            43.07, 
+                            43.18
+                        ], 
+                        [
+                            "you", 
+                            43.18, 
+                            43.29
+                        ], 
+                        [
+                            "have", 
+                            43.29, 
+                            43.52
+                        ], 
+                        [
+                            "to", 
+                            43.52, 
+                            43.65
+                        ], 
+                        [
+                            "be", 
+                            43.65, 
+                            44.03
+                        ]
+                    ], 
+                    "transcript": "%HESITATION I was told by her preschool teacher that she thought maybe she was to immature for kindergarten and I thought well how mature do you have to be ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.9902655839546243
+                        ], 
+                        [
+                            "I", 
+                            0.9999999999999492
+                        ], 
+                        [
+                            "was", 
+                            0.9361047332795708
+                        ], 
+                        [
+                            "told", 
+                            0.9999999999999585
+                        ], 
+                        [
+                            "by", 
+                            0.9999999999999344
+                        ], 
+                        [
+                            "her", 
+                            1.0
+                        ], 
+                        [
+                            "preschool", 
+                            0.9999999999999347
+                        ], 
+                        [
+                            "teacher", 
+                            0.9999999999999349
+                        ], 
+                        [
+                            "that", 
+                            0.9999999999999344
+                        ], 
+                        [
+                            "she", 
+                            1.0
+                        ], 
+                        [
+                            "thought", 
+                            0.9999999999999348
+                        ], 
+                        [
+                            "maybe", 
+                            0.9999999999999348
+                        ], 
+                        [
+                            "she", 
+                            0.9999999999999344
+                        ], 
+                        [
+                            "was", 
+                            0.9999999999999344
+                        ], 
+                        [
+                            "to", 
+                            1.0
+                        ], 
+                        [
+                            "immature", 
+                            0.9999999999999489
+                        ], 
+                        [
+                            "for", 
+                            0.9999999999999488
+                        ], 
+                        [
+                            "kindergarten", 
+                            0.9959649131464147
+                        ], 
+                        [
+                            "and", 
+                            0.9999999999999102
+                        ], 
+                        [
+                            "I", 
+                            0.9999999999999075
+                        ], 
+                        [
+                            "thought", 
+                            0.9999999999999074
+                        ], 
+                        [
+                            "well", 
+                            0.9999999999999839
+                        ], 
+                        [
+                            "how", 
+                            0.9999999999999837
+                        ], 
+                        [
+                            "mature", 
+                            0.9999999999999508
+                        ], 
+                        [
+                            "do", 
+                            0.9999999999999839
+                        ], 
+                        [
+                            "you", 
+                            1.0
+                        ], 
+                        [
+                            "have", 
+                            0.9999999999999755
+                        ], 
+                        [
+                            "to", 
+                            0.9999999999999508
+                        ], 
+                        [
+                            "be", 
+                            0.9861345263214284
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION I was told by her preschool teacher that she thought maybe she was too immature for kindergarten and I thought well how mature do you have to be "
+                }, 
+                {
+                    "transcript": "%HESITATION I was told by her preschool teacher that she thought maybe she was to immature for kindergarten and I thought well how mature do you have to be a "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 10, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "and", 
+                            46.94, 
+                            47.37
+                        ], 
+                        [
+                            "that", 
+                            47.37, 
+                            47.57
+                        ], 
+                        [
+                            "there", 
+                            47.57, 
+                            47.71
+                        ], 
+                        [
+                            "is", 
+                            47.71, 
+                            47.89
+                        ], 
+                        [
+                            "a", 
+                            47.89, 
+                            47.99
+                        ], 
+                        [
+                            "do", 
+                            48.02, 
+                            48.14
+                        ], 
+                        [
+                            "you", 
+                            48.14, 
+                            48.24
+                        ], 
+                        [
+                            "have", 
+                            48.24, 
+                            48.38
+                        ]
+                    ], 
+                    "transcript": "and that there is a do you have "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 10, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.947, 
+                    "timestamps": [
+                        [
+                            "and", 
+                            46.94, 
+                            47.37
+                        ], 
+                        [
+                            "that", 
+                            47.37, 
+                            47.57
+                        ], 
+                        [
+                            "there", 
+                            47.57, 
+                            47.71
+                        ], 
+                        [
+                            "is", 
+                            47.71, 
+                            47.89
+                        ], 
+                        [
+                            "a", 
+                            47.89, 
+                            47.99
+                        ], 
+                        [
+                            "do", 
+                            48.02, 
+                            48.14
+                        ], 
+                        [
+                            "you", 
+                            48.14, 
+                            48.24
+                        ], 
+                        [
+                            "have", 
+                            48.24, 
+                            48.48
+                        ], 
+                        [
+                            "the", 
+                            48.48, 
+                            48.58
+                        ], 
+                        [
+                            "standardized", 
+                            48.58, 
+                            49.21
+                        ], 
+                        [
+                            "testing", 
+                            49.21, 
+                            49.64
+                        ], 
+                        [
+                            "now", 
+                            49.64, 
+                            50.08
+                        ]
+                    ], 
+                    "transcript": "and that there is a do you have the standardized testing now ", 
+                    "word_confidence": [
+                        [
+                            "and", 
+                            1.0
+                        ], 
+                        [
+                            "that", 
+                            0.38101897832140963
+                        ], 
+                        [
+                            "there", 
+                            0.9337896505977877
+                        ], 
+                        [
+                            "is", 
+                            0.9542675389460551
+                        ], 
+                        [
+                            "a", 
+                            0.9332538567608928
+                        ], 
+                        [
+                            "do", 
+                            0.9662003606588251
+                        ], 
+                        [
+                            "you", 
+                            0.945683790588672
+                        ], 
+                        [
+                            "have", 
+                            0.9999999999999676
+                        ], 
+                        [
+                            "the", 
+                            0.9999999999999674
+                        ], 
+                        [
+                            "standardized", 
+                            0.9999999999999758
+                        ], 
+                        [
+                            "testing", 
+                            0.9999999999999715
+                        ], 
+                        [
+                            "now", 
+                            0.9832882810743802
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "and %HESITATION there is a do you have the standardized testing now "
+                }, 
+                {
+                    "transcript": "and up there is a do you have the standardized testing now "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 11, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.982, 
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            56.81, 
+                            57.19
+                        ]
+                    ], 
+                    "transcript": "yeah ", 
+                    "word_confidence": [
+                        [
+                            "yeah", 
+                            0.9816436376912877
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 12, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.743, 
+                    "timestamps": [
+                        [
+                            "no", 
+                            62.03, 
+                            62.51
+                        ]
+                    ], 
+                    "transcript": "no ", 
+                    "word_confidence": [
+                        [
+                            "no", 
+                            0.7427465263119829
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "now "
+                }, 
+                {
+                    "transcript": "know "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 13, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.578, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            73.35, 
+                            73.77
+                        ]
+                    ], 
+                    "transcript": "%HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.578191617583459
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "oh "
+                }, 
+                {
+                    "transcript": "O. "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 14, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.866, 
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            75.87, 
+                            76.25
+                        ]
+                    ], 
+                    "transcript": "yeah ", 
+                    "word_confidence": [
+                        [
+                            "yeah", 
+                            0.865930873112713
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "yes "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 15, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.604, 
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            84.59, 
+                            84.92
+                        ]
+                    ], 
+                    "transcript": "yeah ", 
+                    "word_confidence": [
+                        [
+                            "yeah", 
+                            0.6042486058667178
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "yes "
+                }, 
+                {
+                    "transcript": "you "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 16, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.0, 
+                    "timestamps": [], 
+                    "transcript": "so "
+                }, 
+                {
+                    "transcript": "so I "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 17, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "you", 
+                            94.33, 
+                            94.52
+                        ], 
+                        [
+                            "like", 
+                            94.52, 
+                            94.7
+                        ], 
+                        [
+                            "to", 
+                            94.7, 
+                            94.77
+                        ], 
+                        [
+                            "know", 
+                            94.77, 
+                            94.89
+                        ], 
+                        [
+                            "what", 
+                            94.89, 
+                            95.05
+                        ], 
+                        [
+                            "they're", 
+                            95.05, 
+                            95.17
+                        ], 
+                        [
+                            "doing", 
+                            95.17, 
+                            95.44
+                        ]
+                    ], 
+                    "transcript": "you like to know what they're doing "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 17, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.918, 
+                    "timestamps": [
+                        [
+                            "you", 
+                            94.33, 
+                            94.52
+                        ], 
+                        [
+                            "like", 
+                            94.52, 
+                            94.7
+                        ], 
+                        [
+                            "to", 
+                            94.7, 
+                            94.77
+                        ], 
+                        [
+                            "know", 
+                            94.77, 
+                            94.89
+                        ], 
+                        [
+                            "what", 
+                            94.89, 
+                            95.05
+                        ], 
+                        [
+                            "they're", 
+                            95.05, 
+                            95.17
+                        ], 
+                        [
+                            "doing", 
+                            95.17, 
+                            95.57
+                        ], 
+                        [
+                            "right", 
+                            95.57, 
+                            95.8
+                        ]
+                    ], 
+                    "transcript": "you like to know what they're doing right ", 
+                    "word_confidence": [
+                        [
+                            "you", 
+                            0.9625386560383732
+                        ], 
+                        [
+                            "like", 
+                            0.5820363838757973
+                        ], 
+                        [
+                            "to", 
+                            0.9402909119822679
+                        ], 
+                        [
+                            "know", 
+                            1.0
+                        ], 
+                        [
+                            "what", 
+                            1.0
+                        ], 
+                        [
+                            "they're", 
+                            0.7985435939015878
+                        ], 
+                        [
+                            "doing", 
+                            1.0
+                        ], 
+                        [
+                            "right", 
+                            0.9559533409235077
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "you want to know what they're doing right "
+                }, 
+                {
+                    "transcript": "you like to know what they're doing right now "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 18, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "no", 
+                            103.07, 
+                            103.36
+                        ], 
+                        [
+                            "me", 
+                            103.36, 
+                            103.86
+                        ], 
+                        [
+                            "well", 
+                            104.01, 
+                            104.15
+                        ], 
+                        [
+                            "that", 
+                            104.15, 
+                            104.26
+                        ], 
+                        [
+                            "makes", 
+                            104.26, 
+                            104.44
+                        ], 
+                        [
+                            "it", 
+                            104.44, 
+                            104.52
+                        ], 
+                        [
+                            "hard", 
+                            104.52, 
+                            104.77
+                        ], 
+                        [
+                            "for", 
+                            104.77, 
+                            104.91
+                        ]
+                    ], 
+                    "transcript": "no me well that makes it hard for "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 18, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.829, 
+                    "timestamps": [
+                        [
+                            "no", 
+                            103.07, 
+                            103.36
+                        ], 
+                        [
+                            "me", 
+                            103.36, 
+                            103.86
+                        ], 
+                        [
+                            "well", 
+                            104.01, 
+                            104.15
+                        ], 
+                        [
+                            "that", 
+                            104.15, 
+                            104.26
+                        ], 
+                        [
+                            "makes", 
+                            104.26, 
+                            104.44
+                        ], 
+                        [
+                            "it", 
+                            104.44, 
+                            104.52
+                        ], 
+                        [
+                            "hard", 
+                            104.52, 
+                            104.77
+                        ], 
+                        [
+                            "for", 
+                            104.77, 
+                            104.9
+                        ], 
+                        [
+                            "you", 
+                            104.9, 
+                            105.15
+                        ], 
+                        [
+                            "doesn't", 
+                            105.15, 
+                            105.5
+                        ], 
+                        [
+                            "it", 
+                            105.5, 
+                            105.71
+                        ]
+                    ], 
+                    "transcript": "no me well that makes it hard for you doesn't it ", 
+                    "word_confidence": [
+                        [
+                            "no", 
+                            0.44715431962043783
+                        ], 
+                        [
+                            "me", 
+                            0.533450247512189
+                        ], 
+                        [
+                            "well", 
+                            0.8251301308467892
+                        ], 
+                        [
+                            "that", 
+                            0.9999999999999816
+                        ], 
+                        [
+                            "makes", 
+                            0.9999999999999797
+                        ], 
+                        [
+                            "it", 
+                            0.9999999999999883
+                        ], 
+                        [
+                            "hard", 
+                            0.999999999999992
+                        ], 
+                        [
+                            "for", 
+                            0.9999999999999917
+                        ], 
+                        [
+                            "you", 
+                            0.999999999999992
+                        ], 
+                        [
+                            "doesn't", 
+                            0.9999999999999838
+                        ], 
+                        [
+                            "it", 
+                            0.9642749147493243
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "know me well that makes it hard for you doesn't it "
+                }, 
+                {
+                    "transcript": "%HESITATION may well that makes it hard for you doesn't it "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 19, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.646, 
+                    "timestamps": [
+                        [
+                            "me", 
+                            110.7, 
+                            111.22
+                        ]
+                    ], 
+                    "transcript": "me ", 
+                    "word_confidence": [
+                        [
+                            "me", 
+                            0.6462053990716059
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "man "
+                }, 
+                {
+                    "transcript": "mi "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 20, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.661, 
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            113.89, 
+                            114.28
+                        ]
+                    ], 
+                    "transcript": "yeah ", 
+                    "word_confidence": [
+                        [
+                            "yeah", 
+                            0.6609558406344503
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "yes "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 21, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.911, 
+                    "timestamps": [
+                        [
+                            "it's", 
+                            115.03, 
+                            115.19
+                        ], 
+                        [
+                            "hard", 
+                            115.19, 
+                            115.42
+                        ], 
+                        [
+                            "to", 
+                            115.42, 
+                            115.48
+                        ], 
+                        [
+                            "explain", 
+                            115.48, 
+                            115.82
+                        ], 
+                        [
+                            "to", 
+                            115.82, 
+                            115.9
+                        ], 
+                        [
+                            "them", 
+                            115.9, 
+                            116.1
+                        ], 
+                        [
+                            "why", 
+                            116.1, 
+                            116.28
+                        ], 
+                        [
+                            "you", 
+                            116.28, 
+                            116.45
+                        ], 
+                        [
+                            "can't", 
+                            116.45, 
+                            117.02
+                        ]
+                    ], 
+                    "transcript": "it's hard to explain to them why you can't ", 
+                    "word_confidence": [
+                        [
+                            "it's", 
+                            0.9999999999999969
+                        ], 
+                        [
+                            "hard", 
+                            0.9999999999999972
+                        ], 
+                        [
+                            "to", 
+                            0.9999999999999973
+                        ], 
+                        [
+                            "explain", 
+                            0.9999999999999974
+                        ], 
+                        [
+                            "to", 
+                            1.0
+                        ], 
+                        [
+                            "them", 
+                            1.0
+                        ], 
+                        [
+                            "why", 
+                            1.0
+                        ], 
+                        [
+                            "you", 
+                            1.0
+                        ], 
+                        [
+                            "can't", 
+                            0.688653130242811
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "its hard to explain to them why you can't "
+                }, 
+                {
+                    "transcript": "it's hard to explain to them why you can "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 22, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.99, 
+                    "timestamps": [
+                        [
+                            "right", 
+                            126.24, 
+                            126.7
+                        ]
+                    ], 
+                    "transcript": "right ", 
+                    "word_confidence": [
+                        [
+                            "right", 
+                            0.9896071259251652
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "write "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 23, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.884, 
+                    "timestamps": [
+                        [
+                            "dear", 
+                            135.25, 
+                            135.73
+                        ]
+                    ], 
+                    "transcript": "dear ", 
+                    "word_confidence": [
+                        [
+                            "dear", 
+                            0.8836128239420494
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "deer "
+                }, 
+                {
+                    "transcript": "there "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 24, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.982, 
+                    "timestamps": [
+                        [
+                            "right", 
+                            143.54, 
+                            144.07
+                        ]
+                    ], 
+                    "transcript": "right ", 
+                    "word_confidence": [
+                        [
+                            "right", 
+                            0.9823013140535225
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "write "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 25, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.985, 
+                    "timestamps": [
+                        [
+                            "right", 
+                            151.91, 
+                            152.28
+                        ]
+                    ], 
+                    "transcript": "right ", 
+                    "word_confidence": [
+                        [
+                            "right", 
+                            0.9853669244859318
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "write "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 26, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "kind", 
+                            159.42, 
+                            159.62
+                        ], 
+                        [
+                            "of", 
+                            159.62, 
+                            159.74
+                        ], 
+                        [
+                            "the", 
+                            159.74, 
+                            159.83
+                        ], 
+                        [
+                            "kids", 
+                            159.83, 
+                            160.25
+                        ], 
+                        [
+                            "how", 
+                            160.25, 
+                            160.4
+                        ], 
+                        [
+                            "are", 
+                            160.4, 
+                            160.51
+                        ], 
+                        [
+                            "they", 
+                            160.51, 
+                            160.63
+                        ], 
+                        [
+                            "coping", 
+                            160.63, 
+                            161.11
+                        ]
+                    ], 
+                    "transcript": "kind of the kids how are they coping "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 26, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.914, 
+                    "timestamps": [
+                        [
+                            "kind", 
+                            159.42, 
+                            159.62
+                        ], 
+                        [
+                            "of", 
+                            159.62, 
+                            159.74
+                        ], 
+                        [
+                            "the", 
+                            159.74, 
+                            159.83
+                        ], 
+                        [
+                            "kids", 
+                            159.83, 
+                            160.25
+                        ], 
+                        [
+                            "how", 
+                            160.25, 
+                            160.4
+                        ], 
+                        [
+                            "are", 
+                            160.4, 
+                            160.51
+                        ], 
+                        [
+                            "they", 
+                            160.51, 
+                            160.63
+                        ], 
+                        [
+                            "coping", 
+                            160.63, 
+                            161.03
+                        ], 
+                        [
+                            "with", 
+                            161.03, 
+                            161.25
+                        ], 
+                        [
+                            "it", 
+                            161.25, 
+                            161.53
+                        ]
+                    ], 
+                    "transcript": "kind of the kids how are they coping with it ", 
+                    "word_confidence": [
+                        [
+                            "kind", 
+                            0.4940396113171247
+                        ], 
+                        [
+                            "of", 
+                            0.5269536722005838
+                        ], 
+                        [
+                            "the", 
+                            0.837546344776026
+                        ], 
+                        [
+                            "kids", 
+                            0.9999999999999799
+                        ], 
+                        [
+                            "how", 
+                            0.9999999999999803
+                        ], 
+                        [
+                            "are", 
+                            0.9999999999999811
+                        ], 
+                        [
+                            "they", 
+                            0.9999999999999803
+                        ], 
+                        [
+                            "coping", 
+                            0.9999999999999838
+                        ], 
+                        [
+                            "with", 
+                            0.9999999999999712
+                        ], 
+                        [
+                            "it", 
+                            0.9654110753891763
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "how the kids how are they coping with it "
+                }, 
+                {
+                    "transcript": "how does the kids how are they coping with it "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 27, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.988, 
+                    "timestamps": [
+                        [
+                            "right", 
+                            173.7, 
+                            174.35
+                        ]
+                    ], 
+                    "transcript": "right ", 
+                    "word_confidence": [
+                        [
+                            "right", 
+                            0.9879498982773857
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "write "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 28, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            176.5, 
+                            176.9
+                        ], 
+                        [
+                            "rather", 
+                            176.99, 
+                            177.35
+                        ], 
+                        [
+                            "than", 
+                            177.35, 
+                            177.62
+                        ], 
+                        [
+                            "anticipate", 
+                            177.65, 
+                            178.32
+                        ]
+                    ], 
+                    "transcript": "yeah rather than anticipate "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 28, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.775, 
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            176.5, 
+                            176.9
+                        ], 
+                        [
+                            "rather", 
+                            176.99, 
+                            177.35
+                        ], 
+                        [
+                            "than", 
+                            177.35, 
+                            177.62
+                        ], 
+                        [
+                            "anticipating", 
+                            177.65, 
+                            178.48
+                        ]
+                    ], 
+                    "transcript": "yeah rather than anticipating ", 
+                    "word_confidence": [
+                        [
+                            "yeah", 
+                            0.8381549150732983
+                        ], 
+                        [
+                            "rather", 
+                            0.9999999999999587
+                        ], 
+                        [
+                            "than", 
+                            0.9999999999999528
+                        ], 
+                        [
+                            "anticipating", 
+                            0.5735976365937836
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "yeah rather than anticipated "
+                }, 
+                {
+                    "transcript": "yes rather than anticipating "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 29, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.849, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            197.59, 
+                            197.82
+                        ], 
+                        [
+                            "it", 
+                            197.82, 
+                            197.9
+                        ], 
+                        [
+                            "is", 
+                            197.9, 
+                            198.29
+                        ]
+                    ], 
+                    "transcript": "%HESITATION it is ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.6815931001951547
+                        ], 
+                        [
+                            "it", 
+                            0.7479307690251149
+                        ], 
+                        [
+                            "is", 
+                            0.9688379313778779
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "all it is "
+                }, 
+                {
+                    "transcript": "oh it is "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 30, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.992, 
+                    "timestamps": [
+                        [
+                            "that's", 
+                            201.64, 
+                            201.89
+                        ], 
+                        [
+                            "right", 
+                            201.89, 
+                            202.45
+                        ]
+                    ], 
+                    "transcript": "that's right ", 
+                    "word_confidence": [
+                        [
+                            "that's", 
+                            1.0
+                        ], 
+                        [
+                            "right", 
+                            0.9879669626170846
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 31, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "my", 
+                            203.88, 
+                            204.05
+                        ], 
+                        [
+                            "son", 
+                            204.05, 
+                            204.32
+                        ], 
+                        [
+                            "said", 
+                            204.32, 
+                            204.62
+                        ], 
+                        [
+                            "that", 
+                            204.62, 
+                            204.8
+                        ], 
+                        [
+                            "came", 
+                            204.8, 
+                            204.99
+                        ], 
+                        [
+                            "home", 
+                            204.99, 
+                            205.17
+                        ], 
+                        [
+                            "and", 
+                            205.17, 
+                            205.28
+                        ], 
+                        [
+                            "he", 
+                            205.28, 
+                            205.41
+                        ], 
+                        [
+                            "said", 
+                            205.41, 
+                            205.68
+                        ]
+                    ], 
+                    "transcript": "my son said that came home and he said "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 31, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.919, 
+                    "timestamps": [
+                        [
+                            "my", 
+                            203.88, 
+                            204.05
+                        ], 
+                        [
+                            "son", 
+                            204.05, 
+                            204.32
+                        ], 
+                        [
+                            "said", 
+                            204.32, 
+                            204.62
+                        ], 
+                        [
+                            "that", 
+                            204.62, 
+                            204.8
+                        ], 
+                        [
+                            "came", 
+                            204.8, 
+                            204.99
+                        ], 
+                        [
+                            "home", 
+                            204.99, 
+                            205.17
+                        ], 
+                        [
+                            "and", 
+                            205.17, 
+                            205.28
+                        ], 
+                        [
+                            "he", 
+                            205.28, 
+                            205.41
+                        ], 
+                        [
+                            "said", 
+                            205.41, 
+                            205.76
+                        ], 
+                        [
+                            "he", 
+                            205.79, 
+                            206.15
+                        ], 
+                        [
+                            "said", 
+                            206.15, 
+                            206.36
+                        ], 
+                        [
+                            "mom", 
+                            206.36, 
+                            206.59
+                        ], 
+                        [
+                            "all", 
+                            206.59, 
+                            206.74
+                        ], 
+                        [
+                            "we", 
+                            206.74, 
+                            206.86
+                        ], 
+                        [
+                            "do", 
+                            206.86, 
+                            207.01
+                        ], 
+                        [
+                            "is", 
+                            207.01, 
+                            207.21
+                        ], 
+                        [
+                            "work", 
+                            207.21, 
+                            207.9
+                        ]
+                    ], 
+                    "transcript": "my son said that came home and he said he said mom all we do is work ", 
+                    "word_confidence": [
+                        [
+                            "my", 
+                            0.9999999999999671
+                        ], 
+                        [
+                            "son", 
+                            0.9999999999999674
+                        ], 
+                        [
+                            "said", 
+                            0.9999999999999675
+                        ], 
+                        [
+                            "that", 
+                            0.9999999999999347
+                        ], 
+                        [
+                            "came", 
+                            0.9999999999999672
+                        ], 
+                        [
+                            "home", 
+                            1.0
+                        ], 
+                        [
+                            "and", 
+                            1.0
+                        ], 
+                        [
+                            "he", 
+                            1.0
+                        ], 
+                        [
+                            "said", 
+                            0.9999999999999671
+                        ], 
+                        [
+                            "he", 
+                            0.9999999999999809
+                        ], 
+                        [
+                            "said", 
+                            1.0
+                        ], 
+                        [
+                            "mom", 
+                            0.596526374901822
+                        ], 
+                        [
+                            "all", 
+                            0.17506699791360483
+                        ], 
+                        [
+                            "we", 
+                            0.2763383426747932
+                        ], 
+                        [
+                            "do", 
+                            0.9517002668831516
+                        ], 
+                        [
+                            "is", 
+                            1.0
+                        ], 
+                        [
+                            "work", 
+                            0.9845829332104241
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "my son said that came home and he said he said my mom would do is work "
+                }, 
+                {
+                    "transcript": "my son said that came home and he said he said my mom do is work "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 32, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "we", 
+                            208.44, 
+                            208.59
+                        ], 
+                        [
+                            "hardly", 
+                            208.59, 
+                            208.97
+                        ], 
+                        [
+                            "ever", 
+                            208.97, 
+                            209.19
+                        ], 
+                        [
+                            "play", 
+                            209.19, 
+                            209.88
+                        ]
+                    ], 
+                    "transcript": "we hardly ever play "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 32, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.993, 
+                    "timestamps": [
+                        [
+                            "we", 
+                            208.44, 
+                            208.59
+                        ], 
+                        [
+                            "hardly", 
+                            208.59, 
+                            208.97
+                        ], 
+                        [
+                            "ever", 
+                            208.97, 
+                            209.19
+                        ], 
+                        [
+                            "play", 
+                            209.19, 
+                            209.88
+                        ], 
+                        [
+                            "and", 
+                            210.0, 
+                            210.34
+                        ]
+                    ], 
+                    "transcript": "we hardly ever play and ", 
+                    "word_confidence": [
+                        [
+                            "we", 
+                            1.0
+                        ], 
+                        [
+                            "hardly", 
+                            1.0
+                        ], 
+                        [
+                            "ever", 
+                            1.0
+                        ], 
+                        [
+                            "play", 
+                            0.9944347519913618
+                        ], 
+                        [
+                            "and", 
+                            0.9742660589957872
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 33, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.294, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            215.88, 
+                            216.15
+                        ], 
+                        [
+                            "icon", 
+                            216.15, 
+                            216.59
+                        ]
+                    ], 
+                    "transcript": "%HESITATION icon ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.6111055843692688
+                        ], 
+                        [
+                            "icon", 
+                            0.09907717953763383
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "I don't like on "
+                }, 
+                {
+                    "transcript": "oh icon "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 34, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.863, 
+                    "timestamps": [
+                        [
+                            "right", 
+                            221.12, 
+                            221.67
+                        ]
+                    ], 
+                    "transcript": "right ", 
+                    "word_confidence": [
+                        [
+                            "right", 
+                            0.8626167443650635
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "all right "
+                }, 
+                {
+                    "transcript": "alright "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 35, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.927, 
+                    "timestamps": [
+                        [
+                            "wouldn't", 
+                            224.85, 
+                            225.11
+                        ], 
+                        [
+                            "that", 
+                            225.11, 
+                            225.26
+                        ], 
+                        [
+                            "be", 
+                            225.26, 
+                            225.36
+                        ], 
+                        [
+                            "great", 
+                            225.36, 
+                            225.89
+                        ]
+                    ], 
+                    "transcript": "wouldn't that be great ", 
+                    "word_confidence": [
+                        [
+                            "wouldn't", 
+                            1.0
+                        ], 
+                        [
+                            "that", 
+                            0.5442629102769895
+                        ], 
+                        [
+                            "be", 
+                            1.0
+                        ], 
+                        [
+                            "great", 
+                            0.9860126721750393
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "wouldn't it be great "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 36, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.99, 
+                    "timestamps": [
+                        [
+                            "right", 
+                            230.99, 
+                            231.62
+                        ]
+                    ], 
+                    "transcript": "right ", 
+                    "word_confidence": [
+                        [
+                            "right", 
+                            0.9899211277743315
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "write "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 37, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.504, 
+                    "timestamps": [
+                        [
+                            "is", 
+                            249.6, 
+                            249.78
+                        ], 
+                        [
+                            "that", 
+                            249.78, 
+                            249.95
+                        ]
+                    ], 
+                    "transcript": "is that ", 
+                    "word_confidence": [
+                        [
+                            "is", 
+                            0.8260918831827399
+                        ], 
+                        [
+                            "that", 
+                            0.1627734058995328
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "is there "
+                }, 
+                {
+                    "transcript": "is "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 38, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.916, 
+                    "timestamps": [
+                        [
+                            "oh", 
+                            251.64, 
+                            251.86
+                        ], 
+                        [
+                            "my", 
+                            251.86, 
+                            252.09
+                        ], 
+                        [
+                            "gosh", 
+                            252.09, 
+                            252.8
+                        ]
+                    ], 
+                    "transcript": "oh my gosh ", 
+                    "word_confidence": [
+                        [
+                            "oh", 
+                            0.6421376912134241
+                        ], 
+                        [
+                            "my", 
+                            0.9539639187497255
+                        ], 
+                        [
+                            "gosh", 
+                            0.9892656207572861
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "all my gosh "
+                }, 
+                {
+                    "transcript": "%HESITATION my gosh "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 39, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.996, 
+                    "timestamps": [
+                        [
+                            "oh", 
+                            254.74, 
+                            254.97
+                        ], 
+                        [
+                            "my", 
+                            254.97, 
+                            255.25
+                        ], 
+                        [
+                            "gosh", 
+                            255.25, 
+                            255.91
+                        ]
+                    ], 
+                    "transcript": "oh my gosh ", 
+                    "word_confidence": [
+                        [
+                            "oh", 
+                            0.9999999999999808
+                        ], 
+                        [
+                            "my", 
+                            0.9999999999999865
+                        ], 
+                        [
+                            "gosh", 
+                            0.9924743678832496
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION my gosh "
+                }, 
+                {
+                    "transcript": "O. my gosh "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 40, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "well", 
+                            257.52, 
+                            258.04
+                        ], 
+                        [
+                            "for", 
+                            258.04, 
+                            258.17
+                        ], 
+                        [
+                            "example", 
+                            258.17, 
+                            258.57
+                        ], 
+                        [
+                            "in", 
+                            258.57, 
+                            258.63
+                        ], 
+                        [
+                            "my", 
+                            258.63, 
+                            258.75
+                        ], 
+                        [
+                            "son's", 
+                            258.75, 
+                            259.02
+                        ], 
+                        [
+                            "can", 
+                            259.02, 
+                            259.24
+                        ]
+                    ], 
+                    "transcript": "well for example in my son's can "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 40, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "well", 
+                            257.52, 
+                            258.04
+                        ], 
+                        [
+                            "for", 
+                            258.04, 
+                            258.17
+                        ], 
+                        [
+                            "example", 
+                            258.17, 
+                            258.57
+                        ], 
+                        [
+                            "in", 
+                            258.57, 
+                            258.63
+                        ], 
+                        [
+                            "my", 
+                            258.63, 
+                            258.75
+                        ], 
+                        [
+                            "son's", 
+                            258.75, 
+                            259.02
+                        ], 
+                        [
+                            "kindergarten", 
+                            259.02, 
+                            259.5
+                        ], 
+                        [
+                            "they're", 
+                            259.5, 
+                            259.66
+                        ], 
+                        [
+                            "really", 
+                            259.66, 
+                            259.91
+                        ], 
+                        [
+                            "finished", 
+                            259.91, 
+                            260.56
+                        ], 
+                        [
+                            "at", 
+                            260.59, 
+                            260.96
+                        ], 
+                        [
+                            "lunch", 
+                            261.08, 
+                            261.4
+                        ]
+                    ], 
+                    "transcript": "well for example in my son's kindergarten they're really finished at lunch "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 40, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.952, 
+                    "timestamps": [
+                        [
+                            "well", 
+                            257.52, 
+                            258.04
+                        ], 
+                        [
+                            "for", 
+                            258.04, 
+                            258.17
+                        ], 
+                        [
+                            "example", 
+                            258.17, 
+                            258.57
+                        ], 
+                        [
+                            "in", 
+                            258.57, 
+                            258.63
+                        ], 
+                        [
+                            "my", 
+                            258.63, 
+                            258.75
+                        ], 
+                        [
+                            "son's", 
+                            258.75, 
+                            259.02
+                        ], 
+                        [
+                            "kindergarten", 
+                            259.02, 
+                            259.5
+                        ], 
+                        [
+                            "they're", 
+                            259.5, 
+                            259.66
+                        ], 
+                        [
+                            "really", 
+                            259.66, 
+                            259.91
+                        ], 
+                        [
+                            "finished", 
+                            259.91, 
+                            260.56
+                        ], 
+                        [
+                            "at", 
+                            260.59, 
+                            260.96
+                        ], 
+                        [
+                            "lunch", 
+                            261.08, 
+                            261.39
+                        ], 
+                        [
+                            "time", 
+                            261.39, 
+                            261.8
+                        ]
+                    ], 
+                    "transcript": "well for example in my son's kindergarten they're really finished at lunch time ", 
+                    "word_confidence": [
+                        [
+                            "well", 
+                            1.0
+                        ], 
+                        [
+                            "for", 
+                            1.0
+                        ], 
+                        [
+                            "example", 
+                            1.0
+                        ], 
+                        [
+                            "in", 
+                            0.6462998194678348
+                        ], 
+                        [
+                            "my", 
+                            1.0
+                        ], 
+                        [
+                            "son's", 
+                            0.9999999999999957
+                        ], 
+                        [
+                            "kindergarten", 
+                            0.999999999999984
+                        ], 
+                        [
+                            "they're", 
+                            1.0
+                        ], 
+                        [
+                            "really", 
+                            1.0
+                        ], 
+                        [
+                            "finished", 
+                            0.9956153918463999
+                        ], 
+                        [
+                            "at", 
+                            1.0
+                        ], 
+                        [
+                            "lunch", 
+                            0.7685342368860221
+                        ], 
+                        [
+                            "time", 
+                            0.7542169011218517
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "well for example my son's kindergarten they're really finished at lunch time "
+                }, 
+                {
+                    "transcript": "well for example in my son's kindergarten they're really finished at lunchtime "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 41, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.903, 
+                    "timestamps": [
+                        [
+                            "after", 
+                            262.22, 
+                            262.52
+                        ], 
+                        [
+                            "lunch", 
+                            262.52, 
+                            262.85
+                        ], 
+                        [
+                            "they", 
+                            262.85, 
+                            263.02
+                        ], 
+                        [
+                            "have", 
+                            263.02, 
+                            263.31
+                        ], 
+                        [
+                            "some", 
+                            263.31, 
+                            263.69
+                        ], 
+                        [
+                            "%HESITATION", 
+                            263.69, 
+                            264.05
+                        ]
+                    ], 
+                    "transcript": "after lunch they have some %HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "after", 
+                            1.0
+                        ], 
+                        [
+                            "lunch", 
+                            1.0
+                        ], 
+                        [
+                            "they", 
+                            1.0
+                        ], 
+                        [
+                            "have", 
+                            1.0
+                        ], 
+                        [
+                            "some", 
+                            0.9999999999999973
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.5080144811256763
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "after lunch they have some "
+                }, 
+                {
+                    "transcript": "after lunch they have some time "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 42, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "trying", 
+                            265.04, 
+                            265.21
+                        ], 
+                        [
+                            "to", 
+                            265.21, 
+                            265.27
+                        ], 
+                        [
+                            "think", 
+                            265.27, 
+                            265.43
+                        ], 
+                        [
+                            "if", 
+                            265.43, 
+                            265.49
+                        ], 
+                        [
+                            "they", 
+                            265.49, 
+                            265.62
+                        ], 
+                        [
+                            "have", 
+                            265.62, 
+                            265.83
+                        ], 
+                        [
+                            "recess", 
+                            265.83, 
+                            266.31
+                        ], 
+                        [
+                            "after", 
+                            266.31, 
+                            266.61
+                        ], 
+                        [
+                            "one", 
+                            266.61, 
+                            266.76
+                        ]
+                    ], 
+                    "transcript": "trying to think if they have recess after one "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 42, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "trying", 
+                            265.04, 
+                            265.21
+                        ], 
+                        [
+                            "to", 
+                            265.21, 
+                            265.27
+                        ], 
+                        [
+                            "think", 
+                            265.27, 
+                            265.43
+                        ], 
+                        [
+                            "if", 
+                            265.43, 
+                            265.49
+                        ], 
+                        [
+                            "they", 
+                            265.49, 
+                            265.62
+                        ], 
+                        [
+                            "have", 
+                            265.62, 
+                            265.83
+                        ], 
+                        [
+                            "recess", 
+                            265.83, 
+                            266.31
+                        ], 
+                        [
+                            "after", 
+                            266.31, 
+                            266.59
+                        ], 
+                        [
+                            "lunch", 
+                            266.59, 
+                            266.93
+                        ], 
+                        [
+                            "and", 
+                            266.93, 
+                            267.12
+                        ], 
+                        [
+                            "then", 
+                            267.12, 
+                            267.25
+                        ], 
+                        [
+                            "they", 
+                            267.25, 
+                            267.33
+                        ], 
+                        [
+                            "have", 
+                            267.33, 
+                            267.53
+                        ], 
+                        [
+                            "naps", 
+                            267.53, 
+                            268.13
+                        ], 
+                        [
+                            "or", 
+                            268.38, 
+                            268.64
+                        ]
+                    ], 
+                    "transcript": "trying to think if they have recess after lunch and then they have naps or "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 42, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.949, 
+                    "timestamps": [
+                        [
+                            "trying", 
+                            265.04, 
+                            265.21
+                        ], 
+                        [
+                            "to", 
+                            265.21, 
+                            265.27
+                        ], 
+                        [
+                            "think", 
+                            265.27, 
+                            265.43
+                        ], 
+                        [
+                            "if", 
+                            265.43, 
+                            265.49
+                        ], 
+                        [
+                            "they", 
+                            265.49, 
+                            265.62
+                        ], 
+                        [
+                            "have", 
+                            265.62, 
+                            265.83
+                        ], 
+                        [
+                            "recess", 
+                            265.83, 
+                            266.31
+                        ], 
+                        [
+                            "after", 
+                            266.31, 
+                            266.59
+                        ], 
+                        [
+                            "lunch", 
+                            266.59, 
+                            266.93
+                        ], 
+                        [
+                            "and", 
+                            266.93, 
+                            267.12
+                        ], 
+                        [
+                            "then", 
+                            267.12, 
+                            267.25
+                        ], 
+                        [
+                            "they", 
+                            267.25, 
+                            267.33
+                        ], 
+                        [
+                            "have", 
+                            267.33, 
+                            267.53
+                        ], 
+                        [
+                            "naps", 
+                            267.53, 
+                            268.13
+                        ], 
+                        [
+                            "or", 
+                            268.38, 
+                            268.55
+                        ], 
+                        [
+                            "rest", 
+                            268.55, 
+                            268.88
+                        ], 
+                        [
+                            "period", 
+                            268.88, 
+                            269.4
+                        ]
+                    ], 
+                    "transcript": "trying to think if they have recess after lunch and then they have naps or rest period ", 
+                    "word_confidence": [
+                        [
+                            "trying", 
+                            1.0
+                        ], 
+                        [
+                            "to", 
+                            1.0
+                        ], 
+                        [
+                            "think", 
+                            1.0
+                        ], 
+                        [
+                            "if", 
+                            0.46533774549680246
+                        ], 
+                        [
+                            "they", 
+                            0.9786034333873744
+                        ], 
+                        [
+                            "have", 
+                            1.0
+                        ], 
+                        [
+                            "recess", 
+                            1.0
+                        ], 
+                        [
+                            "after", 
+                            1.0
+                        ], 
+                        [
+                            "lunch", 
+                            1.0
+                        ], 
+                        [
+                            "and", 
+                            0.9115266596587089
+                        ], 
+                        [
+                            "then", 
+                            1.0
+                        ], 
+                        [
+                            "they", 
+                            0.999999999999998
+                        ], 
+                        [
+                            "have", 
+                            1.0
+                        ], 
+                        [
+                            "naps", 
+                            1.0
+                        ], 
+                        [
+                            "or", 
+                            0.9999999999999837
+                        ], 
+                        [
+                            "rest", 
+                            0.9999999999999672
+                        ], 
+                        [
+                            "period", 
+                            0.6972667012627726
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "trying to think they have recess after lunch and then they have naps or rest period "
+                }, 
+                {
+                    "transcript": "trying to think if they have recess after lunch and then they have naps or rest periods "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 43, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.929, 
+                    "timestamps": [
+                        [
+                            "and", 
+                            270.14, 
+                            270.5
+                        ], 
+                        [
+                            "%HESITATION", 
+                            270.5, 
+                            270.85
+                        ]
+                    ], 
+                    "transcript": "and %HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "and", 
+                            0.9925669018571922
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.8628505491227499
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "and the "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 44, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.935, 
+                    "timestamps": [
+                        [
+                            "I", 
+                            271.76, 
+                            271.89
+                        ], 
+                        [
+                            "think", 
+                            271.89, 
+                            272.14
+                        ], 
+                        [
+                            "either", 
+                            272.14, 
+                            272.33
+                        ], 
+                        [
+                            "send", 
+                            272.33, 
+                            272.55
+                        ], 
+                        [
+                            "him", 
+                            272.55, 
+                            272.64
+                        ], 
+                        [
+                            "home", 
+                            272.64, 
+                            272.98
+                        ], 
+                        [
+                            "or", 
+                            272.98, 
+                            273.15
+                        ], 
+                        [
+                            "do", 
+                            273.15, 
+                            273.31
+                        ], 
+                        [
+                            "something", 
+                            273.31, 
+                            273.88
+                        ]
+                    ], 
+                    "transcript": "I think either send him home or do something ", 
+                    "word_confidence": [
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "think", 
+                            0.9941115307422596
+                        ], 
+                        [
+                            "either", 
+                            0.9806300353364056
+                        ], 
+                        [
+                            "send", 
+                            0.6733256311885168
+                        ], 
+                        [
+                            "him", 
+                            0.415244890974078
+                        ], 
+                        [
+                            "home", 
+                            0.9999999999999889
+                        ], 
+                        [
+                            "or", 
+                            0.9999999999999915
+                        ], 
+                        [
+                            "do", 
+                            0.9999999999999868
+                        ], 
+                        [
+                            "something", 
+                            0.9850000400966407
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "I think either send them home or do something "
+                }, 
+                {
+                    "transcript": "I think either sent him home or do something "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 45, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "a", 
+                            275.56, 
+                            275.65
+                        ], 
+                        [
+                            "little", 
+                            275.65, 
+                            275.83
+                        ], 
+                        [
+                            "more", 
+                            275.83, 
+                            276.0
+                        ], 
+                        [
+                            "interesting", 
+                            276.0, 
+                            276.46
+                        ], 
+                        [
+                            "I", 
+                            276.46, 
+                            276.62
+                        ], 
+                        [
+                            "agree", 
+                            276.62, 
+                            277.23
+                        ]
+                    ], 
+                    "transcript": "a little more interesting I agree "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 45, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.992, 
+                    "timestamps": [
+                        [
+                            "a", 
+                            275.56, 
+                            275.65
+                        ], 
+                        [
+                            "little", 
+                            275.65, 
+                            275.83
+                        ], 
+                        [
+                            "more", 
+                            275.83, 
+                            276.0
+                        ], 
+                        [
+                            "interesting", 
+                            276.0, 
+                            276.46
+                        ], 
+                        [
+                            "I", 
+                            276.46, 
+                            276.62
+                        ], 
+                        [
+                            "agree", 
+                            276.62, 
+                            277.23
+                        ]
+                    ], 
+                    "transcript": "a little more interesting I agree ", 
+                    "word_confidence": [
+                        [
+                            "a", 
+                            1.0
+                        ], 
+                        [
+                            "little", 
+                            1.0
+                        ], 
+                        [
+                            "more", 
+                            1.0
+                        ], 
+                        [
+                            "interesting", 
+                            0.9956237085148784
+                        ], 
+                        [
+                            "I", 
+                            0.9748363239606284
+                        ], 
+                        [
+                            "agree", 
+                            0.9881842038547152
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 46, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.994, 
+                    "timestamps": [
+                        [
+                            "I", 
+                            280.82, 
+                            280.92
+                        ], 
+                        [
+                            "wouldn't", 
+                            280.92, 
+                            281.17
+                        ], 
+                        [
+                            "be", 
+                            281.17, 
+                            281.25
+                        ], 
+                        [
+                            "surprised", 
+                            281.25, 
+                            282.01
+                        ]
+                    ], 
+                    "transcript": "I wouldn't be surprised ", 
+                    "word_confidence": [
+                        [
+                            "I", 
+                            0.9999999999999838
+                        ], 
+                        [
+                            "wouldn't", 
+                            0.9999999999999836
+                        ], 
+                        [
+                            "be", 
+                            0.9999999999999919
+                        ], 
+                        [
+                            "surprised", 
+                            0.9900780270403642
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 47, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            283.57, 
+                            283.7
+                        ], 
+                        [
+                            "doubt", 
+                            283.7, 
+                            283.96
+                        ], 
+                        [
+                            "if", 
+                            283.96, 
+                            284.04
+                        ], 
+                        [
+                            "they", 
+                            284.04, 
+                            284.2
+                        ], 
+                        [
+                            "would", 
+                            284.2, 
+                            284.38
+                        ], 
+                        [
+                            "say", 
+                            284.38, 
+                            284.65
+                        ], 
+                        [
+                            "that", 
+                            284.65, 
+                            284.81
+                        ], 
+                        [
+                            "it", 
+                            284.81, 
+                            284.87
+                        ], 
+                        [
+                            "was", 
+                            284.87, 
+                            285.01
+                        ], 
+                        [
+                            "too", 
+                            285.01, 
+                            285.17
+                        ], 
+                        [
+                            "low", 
+                            285.17, 
+                            285.3
+                        ]
+                    ], 
+                    "transcript": "I doubt if they would say that it was too low "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 47, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.917, 
+                    "timestamps": [
+                        [
+                            "I", 
+                            283.57, 
+                            283.7
+                        ], 
+                        [
+                            "doubt", 
+                            283.7, 
+                            283.96
+                        ], 
+                        [
+                            "if", 
+                            283.96, 
+                            284.04
+                        ], 
+                        [
+                            "they", 
+                            284.04, 
+                            284.2
+                        ], 
+                        [
+                            "would", 
+                            284.2, 
+                            284.38
+                        ], 
+                        [
+                            "say", 
+                            284.38, 
+                            284.65
+                        ], 
+                        [
+                            "that", 
+                            284.65, 
+                            284.81
+                        ], 
+                        [
+                            "it", 
+                            284.81, 
+                            284.87
+                        ], 
+                        [
+                            "was", 
+                            284.87, 
+                            285.01
+                        ], 
+                        [
+                            "too", 
+                            285.01, 
+                            285.17
+                        ], 
+                        [
+                            "long", 
+                            285.17, 
+                            285.48
+                        ]
+                    ], 
+                    "transcript": "I doubt if they would say that it was too long ", 
+                    "word_confidence": [
+                        [
+                            "I", 
+                            0.9999999999999344
+                        ], 
+                        [
+                            "doubt", 
+                            0.9999999999999509
+                        ], 
+                        [
+                            "if", 
+                            0.999999999999951
+                        ], 
+                        [
+                            "they", 
+                            0.9999999999999507
+                        ], 
+                        [
+                            "would", 
+                            0.9999999999999347
+                        ], 
+                        [
+                            "say", 
+                            0.9999999999999348
+                        ], 
+                        [
+                            "that", 
+                            0.9999999999999346
+                        ], 
+                        [
+                            "it", 
+                            0.9999999999999346
+                        ], 
+                        [
+                            "was", 
+                            0.9999999999999344
+                        ], 
+                        [
+                            "too", 
+                            0.9999999999999429
+                        ], 
+                        [
+                            "long", 
+                            0.48671158032383693
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "I doubt if they would say that it was to our "
+                }, 
+                {
+                    "transcript": "I doubt if they would say that it was too are "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 48, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            290.49, 
+                            290.88
+                        ], 
+                        [
+                            "do", 
+                            290.91, 
+                            291.06
+                        ], 
+                        [
+                            "you", 
+                            291.06, 
+                            291.23
+                        ], 
+                        [
+                            "have", 
+                            291.23, 
+                            291.57
+                        ], 
+                        [
+                            "the", 
+                            291.57, 
+                            291.95
+                        ], 
+                        [
+                            "be", 
+                            291.98, 
+                            292.17
+                        ]
+                    ], 
+                    "transcript": "%HESITATION do you have the be "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 48, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            290.49, 
+                            290.88
+                        ], 
+                        [
+                            "do", 
+                            290.91, 
+                            291.06
+                        ], 
+                        [
+                            "you", 
+                            291.06, 
+                            291.23
+                        ], 
+                        [
+                            "have", 
+                            291.23, 
+                            291.57
+                        ], 
+                        [
+                            "the", 
+                            291.57, 
+                            291.95
+                        ], 
+                        [
+                            "before", 
+                            291.98, 
+                            292.48
+                        ], 
+                        [
+                            "school", 
+                            292.48, 
+                            292.82
+                        ], 
+                        [
+                            "care", 
+                            292.82, 
+                            293.21
+                        ], 
+                        [
+                            "at", 
+                            293.21, 
+                            293.4
+                        ], 
+                        [
+                            "your", 
+                            293.4, 
+                            293.59
+                        ], 
+                        [
+                            "school", 
+                            293.59, 
+                            294.09
+                        ]
+                    ], 
+                    "transcript": "%HESITATION do you have the before school care at your school "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 48, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.978, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            290.49, 
+                            290.88
+                        ], 
+                        [
+                            "do", 
+                            290.91, 
+                            291.06
+                        ], 
+                        [
+                            "you", 
+                            291.06, 
+                            291.23
+                        ], 
+                        [
+                            "have", 
+                            291.23, 
+                            291.57
+                        ], 
+                        [
+                            "the", 
+                            291.57, 
+                            291.95
+                        ], 
+                        [
+                            "before", 
+                            291.98, 
+                            292.48
+                        ], 
+                        [
+                            "school", 
+                            292.48, 
+                            292.82
+                        ], 
+                        [
+                            "care", 
+                            292.82, 
+                            293.21
+                        ], 
+                        [
+                            "at", 
+                            293.21, 
+                            293.4
+                        ], 
+                        [
+                            "your", 
+                            293.4, 
+                            293.59
+                        ], 
+                        [
+                            "school", 
+                            293.59, 
+                            294.09
+                        ], 
+                        [
+                            "and", 
+                            294.15, 
+                            294.33
+                        ], 
+                        [
+                            "the", 
+                            294.33, 
+                            294.41
+                        ], 
+                        [
+                            "after", 
+                            294.41, 
+                            294.73
+                        ], 
+                        [
+                            "school", 
+                            294.73, 
+                            295.0
+                        ], 
+                        [
+                            "care", 
+                            295.0, 
+                            295.35
+                        ]
+                    ], 
+                    "transcript": "%HESITATION do you have the before school care at your school and the after school care ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            1.0
+                        ], 
+                        [
+                            "do", 
+                            1.0
+                        ], 
+                        [
+                            "you", 
+                            1.0
+                        ], 
+                        [
+                            "have", 
+                            1.0
+                        ], 
+                        [
+                            "the", 
+                            1.0
+                        ], 
+                        [
+                            "before", 
+                            1.0
+                        ], 
+                        [
+                            "school", 
+                            1.0
+                        ], 
+                        [
+                            "care", 
+                            1.0
+                        ], 
+                        [
+                            "at", 
+                            1.0
+                        ], 
+                        [
+                            "your", 
+                            1.0
+                        ], 
+                        [
+                            "school", 
+                            0.9883713267391289
+                        ], 
+                        [
+                            "and", 
+                            0.5753494360995143
+                        ], 
+                        [
+                            "the", 
+                            1.0
+                        ], 
+                        [
+                            "after", 
+                            1.0
+                        ], 
+                        [
+                            "school", 
+                            0.997142456891793
+                        ], 
+                        [
+                            "care", 
+                            0.9370684992144576
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION do you have the before school care at your school in the after school care "
+                }, 
+                {
+                    "transcript": "%HESITATION do you have the before school care at your school and the after school care is "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}

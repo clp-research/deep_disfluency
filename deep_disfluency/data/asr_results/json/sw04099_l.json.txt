@@ -1,0 +1,5476 @@
+{
+    "result_index": 0, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.805, 
+                    "timestamps": [
+                        [
+                            "okay", 
+                            0.03, 
+                            0.32
+                        ], 
+                        [
+                            "I", 
+                            0.46, 
+                            0.54
+                        ], 
+                        [
+                            "guess", 
+                            0.54, 
+                            0.79
+                        ], 
+                        [
+                            "talking", 
+                            0.89, 
+                            1.17
+                        ], 
+                        [
+                            "about", 
+                            1.17, 
+                            1.43
+                        ], 
+                        [
+                            "exercise", 
+                            1.43, 
+                            2.08
+                        ], 
+                        [
+                            "huh", 
+                            2.08, 
+                            2.41
+                        ]
+                    ], 
+                    "transcript": "okay I guess talking about exercise huh ", 
+                    "word_confidence": [
+                        [
+                            "okay", 
+                            0.49959947933206034
+                        ], 
+                        [
+                            "I", 
+                            0.32749844235474473
+                        ], 
+                        [
+                            "guess", 
+                            0.38438083963244163
+                        ], 
+                        [
+                            "talking", 
+                            0.9999999999999998
+                        ], 
+                        [
+                            "about", 
+                            0.9999999999999989
+                        ], 
+                        [
+                            "exercise", 
+                            1.0
+                        ], 
+                        [
+                            "huh", 
+                            0.8020563113208775
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "Hey I guess talking about exercise huh "
+                }, 
+                {
+                    "transcript": "okay talking about exercise huh "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 1, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.904, 
+                    "timestamps": [
+                        [
+                            "oh", 
+                            5.68, 
+                            5.89
+                        ], 
+                        [
+                            "I'm", 
+                            5.89, 
+                            6.36
+                        ], 
+                        [
+                            "twenty", 
+                            6.39, 
+                            6.66
+                        ], 
+                        [
+                            "seven", 
+                            6.66, 
+                            7.09
+                        ]
+                    ], 
+                    "transcript": "oh I'm twenty seven ", 
+                    "word_confidence": [
+                        [
+                            "oh", 
+                            0.9317093599073096
+                        ], 
+                        [
+                            "I'm", 
+                            0.9956410229728316
+                        ], 
+                        [
+                            "twenty", 
+                            0.982472927152678
+                        ], 
+                        [
+                            "seven", 
+                            0.7414998053495266
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION I'm twenty seven "
+                }, 
+                {
+                    "transcript": "O. I'm twenty seven "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 2, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.0, 
+                    "timestamps": [], 
+                    "transcript": "okay "
+                }, 
+                {
+                    "transcript": "K. "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 3, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "they", 
+                            16.71, 
+                            16.85
+                        ], 
+                        [
+                            "do", 
+                            16.85, 
+                            17.15
+                        ], 
+                        [
+                            "what", 
+                            17.18, 
+                            17.4
+                        ], 
+                        [
+                            "type", 
+                            17.45, 
+                            17.69
+                        ], 
+                        [
+                            "of", 
+                            17.69, 
+                            17.8
+                        ], 
+                        [
+                            "exercise", 
+                            17.8, 
+                            18.3
+                        ]
+                    ], 
+                    "transcript": "they do what type of exercise "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 3, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.918, 
+                    "timestamps": [
+                        [
+                            "they", 
+                            16.71, 
+                            16.85
+                        ], 
+                        [
+                            "do", 
+                            16.85, 
+                            17.15
+                        ], 
+                        [
+                            "what", 
+                            17.18, 
+                            17.4
+                        ], 
+                        [
+                            "type", 
+                            17.45, 
+                            17.69
+                        ], 
+                        [
+                            "of", 
+                            17.69, 
+                            17.8
+                        ], 
+                        [
+                            "exercise", 
+                            17.8, 
+                            18.3
+                        ], 
+                        [
+                            "they", 
+                            18.33, 
+                            18.43
+                        ], 
+                        [
+                            "do", 
+                            18.43, 
+                            18.68
+                        ]
+                    ], 
+                    "transcript": "they do what type of exercise they do ", 
+                    "word_confidence": [
+                        [
+                            "they", 
+                            0.27138056108854697
+                        ], 
+                        [
+                            "do", 
+                            0.9729229976596373
+                        ], 
+                        [
+                            "what", 
+                            0.9999999999999569
+                        ], 
+                        [
+                            "type", 
+                            0.9999999999999654
+                        ], 
+                        [
+                            "of", 
+                            0.9999999999999738
+                        ], 
+                        [
+                            "exercise", 
+                            0.9981468609807951
+                        ], 
+                        [
+                            "they", 
+                            0.67842224386653
+                        ], 
+                        [
+                            "do", 
+                            0.9591644737595725
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "you do what type of exercise they do "
+                }, 
+                {
+                    "transcript": "I do what type of exercise they do "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 4, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.795, 
+                    "timestamps": [
+                        [
+                            "all", 
+                            20.77, 
+                            20.94
+                        ], 
+                        [
+                            "you", 
+                            20.94, 
+                            21.03
+                        ], 
+                        [
+                            "do", 
+                            21.03, 
+                            21.44
+                        ]
+                    ], 
+                    "transcript": "all you do ", 
+                    "word_confidence": [
+                        [
+                            "all", 
+                            0.2581116932348722
+                        ], 
+                        [
+                            "you", 
+                            0.9595059659739551
+                        ], 
+                        [
+                            "do", 
+                            0.9811761885823884
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION you do "
+                }, 
+                {
+                    "transcript": "oh you do "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 5, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.601, 
+                    "timestamps": [
+                        [
+                            "yes", 
+                            26.1, 
+                            26.52
+                        ]
+                    ], 
+                    "transcript": "yes ", 
+                    "word_confidence": [
+                        [
+                            "yes", 
+                            0.6014286640116667
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "yeah "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 6, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "is", 
+                            34.07, 
+                            34.13
+                        ], 
+                        [
+                            "that", 
+                            34.13, 
+                            34.28
+                        ], 
+                        [
+                            "different", 
+                            34.28, 
+                            34.69
+                        ], 
+                        [
+                            "from", 
+                            34.69, 
+                            35.02
+                        ], 
+                        [
+                            "aerobics", 
+                            35.02, 
+                            35.67
+                        ]
+                    ], 
+                    "transcript": "is that different from aerobics "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 6, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.93, 
+                    "timestamps": [
+                        [
+                            "is", 
+                            34.07, 
+                            34.13
+                        ], 
+                        [
+                            "that", 
+                            34.13, 
+                            34.28
+                        ], 
+                        [
+                            "different", 
+                            34.28, 
+                            34.69
+                        ], 
+                        [
+                            "from", 
+                            34.69, 
+                            35.02
+                        ], 
+                        [
+                            "aerobics", 
+                            35.02, 
+                            35.68
+                        ], 
+                        [
+                            "or", 
+                            35.68, 
+                            35.77
+                        ], 
+                        [
+                            "is", 
+                            35.77, 
+                            35.87
+                        ], 
+                        [
+                            "it", 
+                            35.87, 
+                            35.96
+                        ], 
+                        [
+                            "the", 
+                            35.96, 
+                            36.04
+                        ], 
+                        [
+                            "same", 
+                            36.04, 
+                            36.28
+                        ], 
+                        [
+                            "thing", 
+                            36.28, 
+                            36.69
+                        ]
+                    ], 
+                    "transcript": "is that different from aerobics or is it the same thing ", 
+                    "word_confidence": [
+                        [
+                            "is", 
+                            0.28622280944924955
+                        ], 
+                        [
+                            "that", 
+                            0.777817369327236
+                        ], 
+                        [
+                            "different", 
+                            1.0
+                        ], 
+                        [
+                            "from", 
+                            1.0
+                        ], 
+                        [
+                            "aerobics", 
+                            1.0
+                        ], 
+                        [
+                            "or", 
+                            0.9797885407527781
+                        ], 
+                        [
+                            "is", 
+                            0.5942671061374301
+                        ], 
+                        [
+                            "it", 
+                            0.37092793644785577
+                        ], 
+                        [
+                            "the", 
+                            1.0
+                        ], 
+                        [
+                            "same", 
+                            1.0
+                        ], 
+                        [
+                            "thing", 
+                            0.9825656949790768
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "that different from aerobics or is it the same thing "
+                }, 
+                {
+                    "transcript": "is that different from aerobics or the same thing "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 7, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.826, 
+                    "timestamps": [
+                        [
+                            "and", 
+                            49.83, 
+                            49.99
+                        ], 
+                        [
+                            "you", 
+                            49.99, 
+                            50.08
+                        ], 
+                        [
+                            "do", 
+                            50.08, 
+                            50.21
+                        ], 
+                        [
+                            "that", 
+                            50.21, 
+                            50.41
+                        ], 
+                        [
+                            "every", 
+                            50.41, 
+                            50.63
+                        ], 
+                        [
+                            "day", 
+                            50.63, 
+                            50.96
+                        ]
+                    ], 
+                    "transcript": "and you do that every day ", 
+                    "word_confidence": [
+                        [
+                            "and", 
+                            1.0
+                        ], 
+                        [
+                            "you", 
+                            1.0
+                        ], 
+                        [
+                            "do", 
+                            1.0
+                        ], 
+                        [
+                            "that", 
+                            1.0
+                        ], 
+                        [
+                            "every", 
+                            0.6505654304957766
+                        ], 
+                        [
+                            "day", 
+                            0.6383437829429753
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "and you do that everyday "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 8, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.755, 
+                    "timestamps": [
+                        [
+                            "okay", 
+                            54.48, 
+                            55.16
+                        ]
+                    ], 
+                    "transcript": "okay ", 
+                    "word_confidence": [
+                        [
+                            "okay", 
+                            0.755029439386197
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "oh okay "
+                }, 
+                {
+                    "transcript": "okay a "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 9, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "and", 
+                            58.52, 
+                            58.86
+                        ], 
+                        [
+                            "this", 
+                            58.92, 
+                            59.1
+                        ], 
+                        [
+                            "is", 
+                            59.1, 
+                            59.23
+                        ], 
+                        [
+                            "a", 
+                            59.23, 
+                            59.32
+                        ], 
+                        [
+                            "club", 
+                            59.32, 
+                            59.71
+                        ], 
+                        [
+                            "or", 
+                            59.71, 
+                            59.9
+                        ]
+                    ], 
+                    "transcript": "and this is a club or "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 9, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.879, 
+                    "timestamps": [
+                        [
+                            "and", 
+                            58.52, 
+                            58.86
+                        ], 
+                        [
+                            "this", 
+                            58.92, 
+                            59.1
+                        ], 
+                        [
+                            "is", 
+                            59.1, 
+                            59.23
+                        ], 
+                        [
+                            "a", 
+                            59.23, 
+                            59.32
+                        ], 
+                        [
+                            "club", 
+                            59.32, 
+                            59.71
+                        ], 
+                        [
+                            "or", 
+                            59.71, 
+                            59.99
+                        ], 
+                        [
+                            "do", 
+                            60.02, 
+                            60.12
+                        ], 
+                        [
+                            "you", 
+                            60.12, 
+                            60.29
+                        ], 
+                        [
+                            "belong", 
+                            60.52, 
+                            60.83
+                        ], 
+                        [
+                            "to", 
+                            60.83, 
+                            61.03
+                        ], 
+                        [
+                            "a", 
+                            61.03, 
+                            61.27
+                        ]
+                    ], 
+                    "transcript": "and this is a club or do you belong to a ", 
+                    "word_confidence": [
+                        [
+                            "and", 
+                            0.9663210915227035
+                        ], 
+                        [
+                            "this", 
+                            1.0
+                        ], 
+                        [
+                            "is", 
+                            0.9798236436772788
+                        ], 
+                        [
+                            "a", 
+                            0.7377073678045428
+                        ], 
+                        [
+                            "club", 
+                            0.6731446560919755
+                        ], 
+                        [
+                            "or", 
+                            0.669386065335246
+                        ], 
+                        [
+                            "do", 
+                            0.6380167916759304
+                        ], 
+                        [
+                            "you", 
+                            1.0
+                        ], 
+                        [
+                            "belong", 
+                            1.0
+                        ], 
+                        [
+                            "to", 
+                            1.0
+                        ], 
+                        [
+                            "a", 
+                            0.999999999999987
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION and this is a club or do you belong to a "
+                }, 
+                {
+                    "transcript": "and this is a club or you belong to a "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 10, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.938, 
+                    "timestamps": [
+                        [
+                            "a", 
+                            61.69, 
+                            61.81
+                        ], 
+                        [
+                            "group", 
+                            61.81, 
+                            62.28
+                        ]
+                    ], 
+                    "transcript": "a group ", 
+                    "word_confidence": [
+                        [
+                            "a", 
+                            0.7544443617146239
+                        ], 
+                        [
+                            "group", 
+                            0.9849734003581218
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "our group "
+                }, 
+                {
+                    "transcript": "are group "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 11, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.734, 
+                    "timestamps": [
+                        [
+                            "do", 
+                            78.68, 
+                            78.77
+                        ], 
+                        [
+                            "you", 
+                            78.77, 
+                            78.83
+                        ], 
+                        [
+                            "go", 
+                            78.83, 
+                            78.97
+                        ], 
+                        [
+                            "as", 
+                            78.97, 
+                            79.11
+                        ], 
+                        [
+                            "friends", 
+                            79.11, 
+                            79.5
+                        ], 
+                        [
+                            "or", 
+                            79.5, 
+                            79.58
+                        ], 
+                        [
+                            "you", 
+                            79.58, 
+                            79.69
+                        ], 
+                        [
+                            "go", 
+                            79.69, 
+                            79.85
+                        ], 
+                        [
+                            "alone", 
+                            79.85, 
+                            80.18
+                        ]
+                    ], 
+                    "transcript": "do you go as friends or you go alone ", 
+                    "word_confidence": [
+                        [
+                            "do", 
+                            0.36893514910696346
+                        ], 
+                        [
+                            "you", 
+                            0.6233289417620729
+                        ], 
+                        [
+                            "go", 
+                            0.9519982484353642
+                        ], 
+                        [
+                            "as", 
+                            0.2548704921034402
+                        ], 
+                        [
+                            "friends", 
+                            0.9859406957673733
+                        ], 
+                        [
+                            "or", 
+                            0.23457610899360132
+                        ], 
+                        [
+                            "you", 
+                            0.7365293588763092
+                        ], 
+                        [
+                            "go", 
+                            0.5382456201312054
+                        ], 
+                        [
+                            "alone", 
+                            0.8835517626211266
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "do you go as friends are you go alone "
+                }, 
+                {
+                    "transcript": "you go as friends or you go alone "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 12, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.97, 
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            86.6, 
+                            87.01
+                        ]
+                    ], 
+                    "transcript": "yeah ", 
+                    "word_confidence": [
+                        [
+                            "yeah", 
+                            0.970059020744116
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 13, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.985, 
+                    "timestamps": [
+                        [
+                            "uhhuh", 
+                            92.41, 
+                            92.84
+                        ]
+                    ], 
+                    "transcript": "uhhuh ", 
+                    "word_confidence": [
+                        [
+                            "uhhuh", 
+                            0.9847864465352689
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "uhuh "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 14, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.908, 
+                    "timestamps": [
+                        [
+                            "okay", 
+                            108.48, 
+                            108.78
+                        ]
+                    ], 
+                    "transcript": "okay ", 
+                    "word_confidence": [
+                        [
+                            "okay", 
+                            0.9083408885965819
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "all right "
+                }, 
+                {
+                    "transcript": "okay right "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 15, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.844, 
+                    "timestamps": [
+                        [
+                            "young", 
+                            109.73, 
+                            109.95
+                        ], 
+                        [
+                            "mothers", 
+                            109.95, 
+                            110.42
+                        ], 
+                        [
+                            "or", 
+                            110.42, 
+                            110.66
+                        ]
+                    ], 
+                    "transcript": "young mothers or ", 
+                    "word_confidence": [
+                        [
+                            "young", 
+                            1.0
+                        ], 
+                        [
+                            "mothers", 
+                            1.0
+                        ], 
+                        [
+                            "or", 
+                            0.3964250040450799
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "young mothers are "
+                }, 
+                {
+                    "transcript": "young mothers our "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 16, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.0, 
+                    "timestamps": [], 
+                    "transcript": "so "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 17, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.0, 
+                    "timestamps": [], 
+                    "transcript": "I "
+                }, 
+                {
+                    "transcript": "and "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 18, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.85, 
+                    "timestamps": [
+                        [
+                            "uhhuh", 
+                            114.75, 
+                            115.19
+                        ]
+                    ], 
+                    "transcript": "uhhuh ", 
+                    "word_confidence": [
+                        [
+                            "uhhuh", 
+                            0.8503773511488134
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "uhuh "
+                }, 
+                {
+                    "transcript": "huh "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 19, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            117.31, 
+                            117.85
+                        ], 
+                        [
+                            "I", 
+                            117.93, 
+                            118.04
+                        ], 
+                        [
+                            "really", 
+                            118.04, 
+                            118.27
+                        ], 
+                        [
+                            "don't", 
+                            118.27, 
+                            118.44
+                        ], 
+                        [
+                            "have", 
+                            118.44, 
+                            118.55
+                        ], 
+                        [
+                            "a", 
+                            118.55, 
+                            118.64
+                        ], 
+                        [
+                            "routine", 
+                            118.64, 
+                            118.88
+                        ]
+                    ], 
+                    "transcript": "%HESITATION I really don't have a routine "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 19, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            117.31, 
+                            117.85
+                        ], 
+                        [
+                            "I", 
+                            117.93, 
+                            118.04
+                        ], 
+                        [
+                            "really", 
+                            118.04, 
+                            118.27
+                        ], 
+                        [
+                            "don't", 
+                            118.27, 
+                            118.44
+                        ], 
+                        [
+                            "have", 
+                            118.44, 
+                            118.55
+                        ], 
+                        [
+                            "a", 
+                            118.55, 
+                            118.64
+                        ], 
+                        [
+                            "routine", 
+                            118.64, 
+                            118.94
+                        ], 
+                        [
+                            "I", 
+                            118.94, 
+                            118.99
+                        ], 
+                        [
+                            "like", 
+                            118.99, 
+                            119.17
+                        ], 
+                        [
+                            "playing", 
+                            119.17, 
+                            119.4
+                        ], 
+                        [
+                            "basketball", 
+                            119.4, 
+                            119.92
+                        ], 
+                        [
+                            "we", 
+                            119.92, 
+                            120.04
+                        ], 
+                        [
+                            "just", 
+                            120.04, 
+                            120.25
+                        ], 
+                        [
+                            "bought", 
+                            120.43, 
+                            120.65
+                        ], 
+                        [
+                            "a", 
+                            120.65, 
+                            120.69
+                        ], 
+                        [
+                            "new", 
+                            120.69, 
+                            120.83
+                        ], 
+                        [
+                            "home", 
+                            120.83, 
+                            120.98
+                        ]
+                    ], 
+                    "transcript": "%HESITATION I really don't have a routine I like playing basketball we just bought a new home "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 19, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.956, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            117.31, 
+                            117.85
+                        ], 
+                        [
+                            "I", 
+                            117.93, 
+                            118.04
+                        ], 
+                        [
+                            "really", 
+                            118.04, 
+                            118.27
+                        ], 
+                        [
+                            "don't", 
+                            118.27, 
+                            118.44
+                        ], 
+                        [
+                            "have", 
+                            118.44, 
+                            118.55
+                        ], 
+                        [
+                            "a", 
+                            118.55, 
+                            118.64
+                        ], 
+                        [
+                            "routine", 
+                            118.64, 
+                            118.94
+                        ], 
+                        [
+                            "I", 
+                            118.94, 
+                            118.99
+                        ], 
+                        [
+                            "like", 
+                            118.99, 
+                            119.17
+                        ], 
+                        [
+                            "playing", 
+                            119.17, 
+                            119.4
+                        ], 
+                        [
+                            "basketball", 
+                            119.4, 
+                            119.92
+                        ], 
+                        [
+                            "we", 
+                            119.92, 
+                            120.04
+                        ], 
+                        [
+                            "just", 
+                            120.04, 
+                            120.25
+                        ], 
+                        [
+                            "bought", 
+                            120.43, 
+                            120.65
+                        ], 
+                        [
+                            "a", 
+                            120.65, 
+                            120.69
+                        ], 
+                        [
+                            "new", 
+                            120.69, 
+                            120.83
+                        ], 
+                        [
+                            "home", 
+                            120.83, 
+                            121.03
+                        ], 
+                        [
+                            "with", 
+                            121.03, 
+                            121.18
+                        ], 
+                        [
+                            "a", 
+                            121.18, 
+                            121.23
+                        ], 
+                        [
+                            "basketball", 
+                            121.23, 
+                            121.74
+                        ], 
+                        [
+                            "hoop", 
+                            121.74, 
+                            122.11
+                        ]
+                    ], 
+                    "transcript": "%HESITATION I really don't have a routine I like playing basketball we just bought a new home with a basketball hoop ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.8919642503429505
+                        ], 
+                        [
+                            "I", 
+                            0.9999999999999999
+                        ], 
+                        [
+                            "really", 
+                            0.9999999999999997
+                        ], 
+                        [
+                            "don't", 
+                            1.0
+                        ], 
+                        [
+                            "have", 
+                            1.0
+                        ], 
+                        [
+                            "a", 
+                            1.0
+                        ], 
+                        [
+                            "routine", 
+                            0.75388782821451
+                        ], 
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "like", 
+                            0.9600412621020603
+                        ], 
+                        [
+                            "playing", 
+                            1.0
+                        ], 
+                        [
+                            "basketball", 
+                            1.0
+                        ], 
+                        [
+                            "we", 
+                            1.0
+                        ], 
+                        [
+                            "just", 
+                            1.0
+                        ], 
+                        [
+                            "bought", 
+                            1.0
+                        ], 
+                        [
+                            "a", 
+                            1.0
+                        ], 
+                        [
+                            "new", 
+                            1.0
+                        ], 
+                        [
+                            "home", 
+                            1.0
+                        ], 
+                        [
+                            "with", 
+                            0.9325712907081454
+                        ], 
+                        [
+                            "a", 
+                            0.6628564535406465
+                        ], 
+                        [
+                            "basketball", 
+                            0.9902758858277118
+                        ], 
+                        [
+                            "hoop", 
+                            0.9202747544887978
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION I really don't have a routine I like playing basketball we just bought a new home with the basketball hoop "
+                }, 
+                {
+                    "transcript": "um I really don't have a routine I like playing basketball we just bought a new home with a basketball hoop "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 20, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "and", 
+                            122.64, 
+                            123.08
+                        ], 
+                        [
+                            "that's", 
+                            123.27, 
+                            123.51
+                        ], 
+                        [
+                            "what", 
+                            123.51, 
+                            123.63
+                        ], 
+                        [
+                            "I", 
+                            123.63, 
+                            123.7
+                        ], 
+                        [
+                            "do", 
+                            123.7, 
+                            123.91
+                        ], 
+                        [
+                            "everyday", 
+                            123.91, 
+                            124.41
+                        ]
+                    ], 
+                    "transcript": "and that's what I do everyday "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 20, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.831, 
+                    "timestamps": [
+                        [
+                            "and", 
+                            122.64, 
+                            123.08
+                        ], 
+                        [
+                            "that's", 
+                            123.27, 
+                            123.51
+                        ], 
+                        [
+                            "what", 
+                            123.51, 
+                            123.63
+                        ], 
+                        [
+                            "I", 
+                            123.63, 
+                            123.7
+                        ], 
+                        [
+                            "do", 
+                            123.7, 
+                            123.91
+                        ], 
+                        [
+                            "everyday", 
+                            123.91, 
+                            124.6
+                        ]
+                    ], 
+                    "transcript": "and that's what I do everyday ", 
+                    "word_confidence": [
+                        [
+                            "and", 
+                            0.9999999999999839
+                        ], 
+                        [
+                            "that's", 
+                            0.9999999999999836
+                        ], 
+                        [
+                            "what", 
+                            0.7490862642781101
+                        ], 
+                        [
+                            "I", 
+                            0.964155180611154
+                        ], 
+                        [
+                            "do", 
+                            0.9999999999999929
+                        ], 
+                        [
+                            "everyday", 
+                            0.6140161668243548
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "and that's what I do every day "
+                }, 
+                {
+                    "transcript": "and that's when I do everyday "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 21, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.992, 
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            126.07, 
+                            126.46
+                        ], 
+                        [
+                            "pretty", 
+                            126.49, 
+                            126.74
+                        ], 
+                        [
+                            "much", 
+                            126.74, 
+                            127.29
+                        ]
+                    ], 
+                    "transcript": "yeah pretty much ", 
+                    "word_confidence": [
+                        [
+                            "yeah", 
+                            0.9922673742419074
+                        ], 
+                        [
+                            "pretty", 
+                            0.9999999999999796
+                        ], 
+                        [
+                            "much", 
+                            0.9888742532962674
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 22, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.557, 
+                    "timestamps": [
+                        [
+                            "my", 
+                            127.69, 
+                            127.9
+                        ], 
+                        [
+                            "wife", 
+                            127.9, 
+                            128.24
+                        ], 
+                        [
+                            "left", 
+                            128.24, 
+                            128.51
+                        ]
+                    ], 
+                    "transcript": "my wife left ", 
+                    "word_confidence": [
+                        [
+                            "my", 
+                            0.7140003825074919
+                        ], 
+                        [
+                            "wife", 
+                            0.727182498924684
+                        ], 
+                        [
+                            "left", 
+                            0.22090676496473413
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "my wife left me "
+                }, 
+                {
+                    "transcript": "my wife let "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 23, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.964, 
+                    "timestamps": [
+                        [
+                            "no", 
+                            131.01, 
+                            131.16
+                        ], 
+                        [
+                            "I", 
+                            131.16, 
+                            131.26
+                        ], 
+                        [
+                            "just", 
+                            131.26, 
+                            131.48
+                        ], 
+                        [
+                            "shoot", 
+                            131.48, 
+                            131.67
+                        ], 
+                        [
+                            "around", 
+                            131.67, 
+                            131.95
+                        ], 
+                        [
+                            "by", 
+                            131.95, 
+                            132.04
+                        ], 
+                        [
+                            "myself", 
+                            132.04, 
+                            132.73
+                        ]
+                    ], 
+                    "transcript": "no I just shoot around by myself ", 
+                    "word_confidence": [
+                        [
+                            "no", 
+                            0.6398537178083993
+                        ], 
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "just", 
+                            1.0
+                        ], 
+                        [
+                            "shoot", 
+                            1.0
+                        ], 
+                        [
+                            "around", 
+                            0.9996634457881751
+                        ], 
+                        [
+                            "by", 
+                            0.99057648206834
+                        ], 
+                        [
+                            "myself", 
+                            0.9887579877088053
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "now I just shoot around by myself "
+                }, 
+                {
+                    "transcript": "nah I just shoot around by myself "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 24, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.682, 
+                    "timestamps": [
+                        [
+                            "and", 
+                            134.15, 
+                            134.41
+                        ]
+                    ], 
+                    "transcript": "and ", 
+                    "word_confidence": [
+                        [
+                            "and", 
+                            0.6817436470080669
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "in "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 25, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "that's", 
+                            134.66, 
+                            134.87
+                        ], 
+                        [
+                            "about", 
+                            134.87, 
+                            135.16
+                        ], 
+                        [
+                            "it", 
+                            135.16, 
+                            135.29
+                        ], 
+                        [
+                            "I", 
+                            135.29, 
+                            135.35
+                        ], 
+                        [
+                            "used", 
+                            135.35, 
+                            135.52
+                        ], 
+                        [
+                            "to", 
+                            135.52, 
+                            135.59
+                        ], 
+                        [
+                            "play", 
+                            135.59, 
+                            135.72
+                        ], 
+                        [
+                            "soccer", 
+                            135.72, 
+                            136.16
+                        ], 
+                        [
+                            "a", 
+                            136.16, 
+                            136.21
+                        ], 
+                        [
+                            "lot", 
+                            136.21, 
+                            136.35
+                        ], 
+                        [
+                            "in", 
+                            136.35, 
+                            136.47
+                        ]
+                    ], 
+                    "transcript": "that's about it I used to play soccer a lot in "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 25, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.928, 
+                    "timestamps": [
+                        [
+                            "that's", 
+                            134.66, 
+                            134.87
+                        ], 
+                        [
+                            "about", 
+                            134.87, 
+                            135.16
+                        ], 
+                        [
+                            "it", 
+                            135.16, 
+                            135.29
+                        ], 
+                        [
+                            "I", 
+                            135.29, 
+                            135.35
+                        ], 
+                        [
+                            "used", 
+                            135.35, 
+                            135.52
+                        ], 
+                        [
+                            "to", 
+                            135.52, 
+                            135.59
+                        ], 
+                        [
+                            "play", 
+                            135.59, 
+                            135.72
+                        ], 
+                        [
+                            "soccer", 
+                            135.72, 
+                            136.16
+                        ], 
+                        [
+                            "a", 
+                            136.16, 
+                            136.21
+                        ], 
+                        [
+                            "lot", 
+                            136.21, 
+                            136.35
+                        ], 
+                        [
+                            "in", 
+                            136.35, 
+                            136.41
+                        ], 
+                        [
+                            "high", 
+                            136.41, 
+                            136.57
+                        ], 
+                        [
+                            "school", 
+                            136.57, 
+                            136.85
+                        ], 
+                        [
+                            "but", 
+                            136.85, 
+                            136.96
+                        ], 
+                        [
+                            "when", 
+                            136.96, 
+                            137.08
+                        ], 
+                        [
+                            "I", 
+                            137.08, 
+                            137.13
+                        ], 
+                        [
+                            "graduate", 
+                            137.13, 
+                            137.64
+                        ], 
+                        [
+                            "haven't", 
+                            137.64, 
+                            137.89
+                        ], 
+                        [
+                            "done", 
+                            137.89, 
+                            138.18
+                        ]
+                    ], 
+                    "transcript": "that's about it I used to play soccer a lot in high school but when I graduate haven't done ", 
+                    "word_confidence": [
+                        [
+                            "that's", 
+                            0.9999999999999674
+                        ], 
+                        [
+                            "about", 
+                            1.0
+                        ], 
+                        [
+                            "it", 
+                            1.0
+                        ], 
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "used", 
+                            1.0
+                        ], 
+                        [
+                            "to", 
+                            1.0
+                        ], 
+                        [
+                            "play", 
+                            1.0
+                        ], 
+                        [
+                            "soccer", 
+                            1.0
+                        ], 
+                        [
+                            "a", 
+                            1.0
+                        ], 
+                        [
+                            "lot", 
+                            1.0
+                        ], 
+                        [
+                            "in", 
+                            1.0
+                        ], 
+                        [
+                            "high", 
+                            1.0
+                        ], 
+                        [
+                            "school", 
+                            1.0
+                        ], 
+                        [
+                            "but", 
+                            1.0
+                        ], 
+                        [
+                            "when", 
+                            1.0
+                        ], 
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "graduate", 
+                            1.0
+                        ], 
+                        [
+                            "haven't", 
+                            0.5445131702902976
+                        ], 
+                        [
+                            "done", 
+                            0.5140711740842141
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "that's about it I used to play soccer a lot in high school but when I graduate evident "
+                }, 
+                {
+                    "transcript": "that's about it I used to play soccer a lot in high school but when I graduate event and "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 26, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "much", 
+                            138.67, 
+                            138.98
+                        ], 
+                        [
+                            "I", 
+                            138.98, 
+                            139.02
+                        ], 
+                        [
+                            "don't", 
+                            139.02, 
+                            139.16
+                        ], 
+                        [
+                            "have", 
+                            139.16, 
+                            139.25
+                        ], 
+                        [
+                            "a", 
+                            139.25, 
+                            139.33
+                        ], 
+                        [
+                            "problem", 
+                            139.33, 
+                            139.78
+                        ], 
+                        [
+                            "I", 
+                            139.81, 
+                            139.91
+                        ], 
+                        [
+                            "know", 
+                            139.91, 
+                            140.04
+                        ], 
+                        [
+                            "I", 
+                            140.04, 
+                            140.13
+                        ], 
+                        [
+                            "have", 
+                            140.13, 
+                            140.27
+                        ], 
+                        [
+                            "to", 
+                            140.27, 
+                            140.42
+                        ]
+                    ], 
+                    "transcript": "much I don't have a problem I know I have to "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 26, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "much", 
+                            138.67, 
+                            138.98
+                        ], 
+                        [
+                            "I", 
+                            138.98, 
+                            139.02
+                        ], 
+                        [
+                            "don't", 
+                            139.02, 
+                            139.16
+                        ], 
+                        [
+                            "have", 
+                            139.16, 
+                            139.25
+                        ], 
+                        [
+                            "a", 
+                            139.25, 
+                            139.33
+                        ], 
+                        [
+                            "problem", 
+                            139.33, 
+                            139.78
+                        ], 
+                        [
+                            "I", 
+                            139.81, 
+                            139.91
+                        ], 
+                        [
+                            "know", 
+                            139.91, 
+                            140.04
+                        ], 
+                        [
+                            "I", 
+                            140.04, 
+                            140.13
+                        ], 
+                        [
+                            "have", 
+                            140.13, 
+                            140.27
+                        ], 
+                        [
+                            "to", 
+                            140.27, 
+                            140.4
+                        ], 
+                        [
+                            "do", 
+                            140.4, 
+                            140.54
+                        ], 
+                        [
+                            "more", 
+                            140.54, 
+                            140.8
+                        ], 
+                        [
+                            "robotics", 
+                            140.8, 
+                            141.26
+                        ], 
+                        [
+                            "but", 
+                            141.26, 
+                            141.39
+                        ], 
+                        [
+                            "don't", 
+                            141.39, 
+                            141.56
+                        ], 
+                        [
+                            "have", 
+                            141.56, 
+                            141.66
+                        ], 
+                        [
+                            "a", 
+                            141.66, 
+                            141.74
+                        ], 
+                        [
+                            "problem", 
+                            141.74, 
+                            142.03
+                        ], 
+                        [
+                            "with", 
+                            142.03, 
+                            142.16
+                        ], 
+                        [
+                            "the", 
+                            142.16, 
+                            142.23
+                        ], 
+                        [
+                            "way", 
+                            142.23, 
+                            142.42
+                        ]
+                    ], 
+                    "transcript": "much I don't have a problem I know I have to do more robotics but don't have a problem with the way "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 26, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.952, 
+                    "timestamps": [
+                        [
+                            "much", 
+                            138.67, 
+                            138.98
+                        ], 
+                        [
+                            "I", 
+                            138.98, 
+                            139.02
+                        ], 
+                        [
+                            "don't", 
+                            139.02, 
+                            139.16
+                        ], 
+                        [
+                            "have", 
+                            139.16, 
+                            139.25
+                        ], 
+                        [
+                            "a", 
+                            139.25, 
+                            139.33
+                        ], 
+                        [
+                            "problem", 
+                            139.33, 
+                            139.78
+                        ], 
+                        [
+                            "I", 
+                            139.81, 
+                            139.91
+                        ], 
+                        [
+                            "know", 
+                            139.91, 
+                            140.04
+                        ], 
+                        [
+                            "I", 
+                            140.04, 
+                            140.13
+                        ], 
+                        [
+                            "have", 
+                            140.13, 
+                            140.27
+                        ], 
+                        [
+                            "to", 
+                            140.27, 
+                            140.4
+                        ], 
+                        [
+                            "do", 
+                            140.4, 
+                            140.54
+                        ], 
+                        [
+                            "more", 
+                            140.54, 
+                            140.8
+                        ], 
+                        [
+                            "robotics", 
+                            140.8, 
+                            141.26
+                        ], 
+                        [
+                            "but", 
+                            141.26, 
+                            141.39
+                        ], 
+                        [
+                            "don't", 
+                            141.39, 
+                            141.56
+                        ], 
+                        [
+                            "have", 
+                            141.56, 
+                            141.66
+                        ], 
+                        [
+                            "a", 
+                            141.66, 
+                            141.74
+                        ], 
+                        [
+                            "problem", 
+                            141.74, 
+                            142.03
+                        ], 
+                        [
+                            "with", 
+                            142.03, 
+                            142.18
+                        ], 
+                        [
+                            "weight", 
+                            142.18, 
+                            142.62
+                        ]
+                    ], 
+                    "transcript": "much I don't have a problem I know I have to do more robotics but don't have a problem with weight ", 
+                    "word_confidence": [
+                        [
+                            "much", 
+                            0.9999999999999349
+                        ], 
+                        [
+                            "I", 
+                            0.9999999999999346
+                        ], 
+                        [
+                            "don't", 
+                            0.9999999999999675
+                        ], 
+                        [
+                            "have", 
+                            0.9999999999999345
+                        ], 
+                        [
+                            "a", 
+                            0.9999999999999672
+                        ], 
+                        [
+                            "problem", 
+                            0.9770961716897746
+                        ], 
+                        [
+                            "I", 
+                            0.9999999999999598
+                        ], 
+                        [
+                            "know", 
+                            0.9999999999999462
+                        ], 
+                        [
+                            "I", 
+                            0.99999999999995
+                        ], 
+                        [
+                            "have", 
+                            0.9999999999999613
+                        ], 
+                        [
+                            "to", 
+                            0.9999999999999859
+                        ], 
+                        [
+                            "do", 
+                            1.0
+                        ], 
+                        [
+                            "more", 
+                            1.0
+                        ], 
+                        [
+                            "robotics", 
+                            0.9181387872907123
+                        ], 
+                        [
+                            "but", 
+                            0.8212965029203899
+                        ], 
+                        [
+                            "don't", 
+                            0.6284452833547238
+                        ], 
+                        [
+                            "have", 
+                            0.9999999999999865
+                        ], 
+                        [
+                            "a", 
+                            0.9999999999999856
+                        ], 
+                        [
+                            "problem", 
+                            0.9999999999999968
+                        ], 
+                        [
+                            "with", 
+                            0.9688000700343173
+                        ], 
+                        [
+                            "weight", 
+                            0.8897951445549995
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "much I don't have a problem I know I have to do more robotics don't have a problem with weight "
+                }, 
+                {
+                    "transcript": "much I don't have a problem I know I have to do more robotics but I don't have a problem with weight "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 27, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.996, 
+                    "timestamps": [
+                        [
+                            "I", 
+                            143.09, 
+                            143.19
+                        ], 
+                        [
+                            "could", 
+                            143.19, 
+                            143.35
+                        ], 
+                        [
+                            "eat", 
+                            143.35, 
+                            143.49
+                        ], 
+                        [
+                            "all", 
+                            143.49, 
+                            143.63
+                        ], 
+                        [
+                            "day", 
+                            143.63, 
+                            143.79
+                        ], 
+                        [
+                            "and", 
+                            143.79, 
+                            143.91
+                        ], 
+                        [
+                            "not", 
+                            143.91, 
+                            144.07
+                        ], 
+                        [
+                            "gain", 
+                            144.07, 
+                            144.22
+                        ], 
+                        [
+                            "an", 
+                            144.22, 
+                            144.35
+                        ], 
+                        [
+                            "ounce", 
+                            144.35, 
+                            144.74
+                        ]
+                    ], 
+                    "transcript": "I could eat all day and not gain an ounce ", 
+                    "word_confidence": [
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "could", 
+                            1.0
+                        ], 
+                        [
+                            "eat", 
+                            1.0
+                        ], 
+                        [
+                            "all", 
+                            1.0
+                        ], 
+                        [
+                            "day", 
+                            1.0
+                        ], 
+                        [
+                            "and", 
+                            1.0
+                        ], 
+                        [
+                            "not", 
+                            0.9995470384416002
+                        ], 
+                        [
+                            "gain", 
+                            1.0
+                        ], 
+                        [
+                            "an", 
+                            0.9970348263833381
+                        ], 
+                        [
+                            "ounce", 
+                            0.982651342055016
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 28, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.725, 
+                    "timestamps": [
+                        [
+                            "uhhuh", 
+                            150.44, 
+                            150.86
+                        ]
+                    ], 
+                    "transcript": "uhhuh ", 
+                    "word_confidence": [
+                        [
+                            "uhhuh", 
+                            0.7249857404489463
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "uhuh "
+                }, 
+                {
+                    "transcript": "huh "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 29, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.787, 
+                    "timestamps": [
+                        [
+                            "you", 
+                            155.08, 
+                            155.21
+                        ], 
+                        [
+                            "do", 
+                            155.21, 
+                            155.35
+                        ], 
+                        [
+                            "exercise", 
+                            155.35, 
+                            155.86
+                        ]
+                    ], 
+                    "transcript": "you do exercise ", 
+                    "word_confidence": [
+                        [
+                            "you", 
+                            0.6349824800447219
+                        ], 
+                        [
+                            "do", 
+                            0.9334406953372755
+                        ], 
+                        [
+                            "exercise", 
+                            0.7860248958221715
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "you do exercises "
+                }, 
+                {
+                    "transcript": "do exercise "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 30, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.07, 
+                    "timestamps": [
+                        [
+                            "he", 
+                            159.62, 
+                            159.7
+                        ], 
+                        [
+                            "was", 
+                            159.7, 
+                            159.89
+                        ]
+                    ], 
+                    "transcript": "he was ", 
+                    "word_confidence": [
+                        [
+                            "he", 
+                            0.04187486378448606
+                        ], 
+                        [
+                            "was", 
+                            0.08114500186742706
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "do "
+                }, 
+                {
+                    "transcript": "do it "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 31, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.847, 
+                    "timestamps": [
+                        [
+                            "uhhuh", 
+                            161.32, 
+                            161.69
+                        ]
+                    ], 
+                    "transcript": "uhhuh ", 
+                    "word_confidence": [
+                        [
+                            "uhhuh", 
+                            0.8467117872023006
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "uhuh "
+                }, 
+                {
+                    "transcript": "huh "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 32, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.421, 
+                    "timestamps": [
+                        [
+                            "and", 
+                            167.22, 
+                            167.49
+                        ], 
+                        [
+                            "I", 
+                            167.49, 
+                            167.56
+                        ], 
+                        [
+                            "have", 
+                            167.56, 
+                            167.84
+                        ]
+                    ], 
+                    "transcript": "and I have ", 
+                    "word_confidence": [
+                        [
+                            "and", 
+                            0.5522847444063927
+                        ], 
+                        [
+                            "I", 
+                            0.9348461697341344
+                        ], 
+                        [
+                            "have", 
+                            0.16593854381742543
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "and I am "
+                }, 
+                {
+                    "transcript": "and I had "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 33, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "we", 
+                            168.55, 
+                            168.68
+                        ], 
+                        [
+                            "were", 
+                            168.68, 
+                            168.77
+                        ], 
+                        [
+                            "once", 
+                            168.77, 
+                            168.96
+                        ], 
+                        [
+                            "told", 
+                            168.96, 
+                            169.21
+                        ], 
+                        [
+                            "my", 
+                            169.21, 
+                            169.32
+                        ], 
+                        [
+                            "waistline", 
+                            169.32, 
+                            169.85
+                        ], 
+                        [
+                            "connects", 
+                            169.85, 
+                            170.22
+                        ]
+                    ], 
+                    "transcript": "we were once told my waistline connects "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 33, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.745, 
+                    "timestamps": [
+                        [
+                            "we", 
+                            168.55, 
+                            168.68
+                        ], 
+                        [
+                            "were", 
+                            168.68, 
+                            168.77
+                        ], 
+                        [
+                            "once", 
+                            168.77, 
+                            168.96
+                        ], 
+                        [
+                            "told", 
+                            168.96, 
+                            169.21
+                        ], 
+                        [
+                            "my", 
+                            169.21, 
+                            169.32
+                        ], 
+                        [
+                            "waistline", 
+                            169.32, 
+                            169.85
+                        ], 
+                        [
+                            "can", 
+                            169.85, 
+                            170.03
+                        ], 
+                        [
+                            "expand", 
+                            170.03, 
+                            170.56
+                        ], 
+                        [
+                            "one", 
+                            170.56, 
+                            170.68
+                        ], 
+                        [
+                            "of", 
+                            170.68, 
+                            170.74
+                        ], 
+                        [
+                            "these", 
+                            170.74, 
+                            170.92
+                        ], 
+                        [
+                            "days", 
+                            170.92, 
+                            171.29
+                        ], 
+                        [
+                            "but", 
+                            171.29, 
+                            171.54
+                        ]
+                    ], 
+                    "transcript": "we were once told my waistline can expand one of these days but ", 
+                    "word_confidence": [
+                        [
+                            "we", 
+                            0.24573545301769356
+                        ], 
+                        [
+                            "were", 
+                            0.2714552574325859
+                        ], 
+                        [
+                            "once", 
+                            0.6944628924679649
+                        ], 
+                        [
+                            "told", 
+                            0.3648066284686575
+                        ], 
+                        [
+                            "my", 
+                            1.0
+                        ], 
+                        [
+                            "waistline", 
+                            0.4655228273913674
+                        ], 
+                        [
+                            "can", 
+                            0.6837475848204275
+                        ], 
+                        [
+                            "expand", 
+                            1.0
+                        ], 
+                        [
+                            "one", 
+                            1.0
+                        ], 
+                        [
+                            "of", 
+                            1.0
+                        ], 
+                        [
+                            "these", 
+                            0.9999999999999917
+                        ], 
+                        [
+                            "days", 
+                            0.9999999999999866
+                        ], 
+                        [
+                            "but", 
+                            0.8293143208537355
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "where once told my waistline can expand one of these days but "
+                }, 
+                {
+                    "transcript": "never once told my waistline can expand one of these days but "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 34, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.858, 
+                    "timestamps": [
+                        [
+                            "I", 
+                            172.53, 
+                            172.56
+                        ], 
+                        [
+                            "don't", 
+                            172.56, 
+                            172.7
+                        ], 
+                        [
+                            "know", 
+                            172.7, 
+                            172.97
+                        ]
+                    ], 
+                    "transcript": "I don't know ", 
+                    "word_confidence": [
+                        [
+                            "I", 
+                            0.7153750809486384
+                        ], 
+                        [
+                            "don't", 
+                            0.894175849029024
+                        ], 
+                        [
+                            "know", 
+                            0.8549179646028006
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "I don't know if "
+                }, 
+                {
+                    "transcript": "for a moment "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 35, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.849, 
+                    "timestamps": [
+                        [
+                            "uhhuh", 
+                            183.36, 
+                            183.75
+                        ]
+                    ], 
+                    "transcript": "uhhuh ", 
+                    "word_confidence": [
+                        [
+                            "uhhuh", 
+                            0.8493324789874
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "uhuh "
+                }, 
+                {
+                    "transcript": "huh "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 36, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            189.89, 
+                            190.02
+                        ], 
+                        [
+                            "I", 
+                            190.02, 
+                            190.08
+                        ], 
+                        [
+                            "guess", 
+                            190.08, 
+                            190.35
+                        ], 
+                        [
+                            "I", 
+                            190.35, 
+                            190.41
+                        ], 
+                        [
+                            "enjoy", 
+                            190.41, 
+                            190.76
+                        ], 
+                        [
+                            "sports", 
+                            190.76, 
+                            191.18
+                        ], 
+                        [
+                            "less", 
+                            191.18, 
+                            191.39
+                        ], 
+                        [
+                            "that's", 
+                            191.39, 
+                            191.61
+                        ], 
+                        [
+                            "why", 
+                            191.61, 
+                            191.69
+                        ]
+                    ], 
+                    "transcript": "yeah I guess I enjoy sports less that's why "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 36, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.853, 
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            189.89, 
+                            190.02
+                        ], 
+                        [
+                            "I", 
+                            190.02, 
+                            190.08
+                        ], 
+                        [
+                            "guess", 
+                            190.08, 
+                            190.35
+                        ], 
+                        [
+                            "I", 
+                            190.35, 
+                            190.41
+                        ], 
+                        [
+                            "enjoy", 
+                            190.41, 
+                            190.76
+                        ], 
+                        [
+                            "sports", 
+                            190.76, 
+                            191.18
+                        ], 
+                        [
+                            "less", 
+                            191.18, 
+                            191.39
+                        ], 
+                        [
+                            "that's", 
+                            191.39, 
+                            191.61
+                        ], 
+                        [
+                            "why", 
+                            191.61, 
+                            191.71
+                        ], 
+                        [
+                            "I've", 
+                            191.71, 
+                            191.8
+                        ], 
+                        [
+                            "kept", 
+                            191.8, 
+                            192.25
+                        ], 
+                        [
+                            "active", 
+                            192.28, 
+                            192.87
+                        ], 
+                        [
+                            "and", 
+                            192.9, 
+                            193.06
+                        ], 
+                        [
+                            "that", 
+                            193.06, 
+                            193.24
+                        ], 
+                        [
+                            "way", 
+                            193.24, 
+                            193.56
+                        ]
+                    ], 
+                    "transcript": "yeah I guess I enjoy sports less that's why I've kept active and that way ", 
+                    "word_confidence": [
+                        [
+                            "yeah", 
+                            0.736651089300623
+                        ], 
+                        [
+                            "I", 
+                            0.9999999999999921
+                        ], 
+                        [
+                            "guess", 
+                            0.9796167377881213
+                        ], 
+                        [
+                            "I", 
+                            0.44965192027986545
+                        ], 
+                        [
+                            "enjoy", 
+                            0.7005355381610759
+                        ], 
+                        [
+                            "sports", 
+                            0.9668640631436498
+                        ], 
+                        [
+                            "less", 
+                            0.2783457566359357
+                        ], 
+                        [
+                            "that's", 
+                            0.9336896875291661
+                        ], 
+                        [
+                            "why", 
+                            0.4754610751022593
+                        ], 
+                        [
+                            "I've", 
+                            0.4623783948756728
+                        ], 
+                        [
+                            "kept", 
+                            0.9807213300656354
+                        ], 
+                        [
+                            "active", 
+                            0.9974953310895216
+                        ], 
+                        [
+                            "and", 
+                            0.6409524664994705
+                        ], 
+                        [
+                            "that", 
+                            1.0
+                        ], 
+                        [
+                            "way", 
+                            0.9837083092762672
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "yeah I guess I enjoy sports life that's why I've kept active and that way "
+                }, 
+                {
+                    "transcript": "yeah I guess enjoy sports less that's why I've kept active and that way "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 37, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            196.24, 
+                            196.62
+                        ], 
+                        [
+                            "basketball", 
+                            196.62, 
+                            197.22
+                        ], 
+                        [
+                            "volleyball", 
+                            197.22, 
+                            198.01
+                        ]
+                    ], 
+                    "transcript": "%HESITATION basketball volleyball "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 37, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.962, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            196.24, 
+                            196.62
+                        ], 
+                        [
+                            "basketball", 
+                            196.62, 
+                            197.22
+                        ], 
+                        [
+                            "volleyball", 
+                            197.22, 
+                            198.03
+                        ], 
+                        [
+                            "%HESITATION", 
+                            198.15, 
+                            198.68
+                        ]
+                    ], 
+                    "transcript": "%HESITATION basketball volleyball %HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.7978030004636625
+                        ], 
+                        [
+                            "basketball", 
+                            0.9999999999999573
+                        ], 
+                        [
+                            "volleyball", 
+                            0.9935475463792156
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.9890039594625825
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION basketball volleyball um "
+                }, 
+                {
+                    "transcript": "I'm basketball volleyball %HESITATION "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 38, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "about", 
+                            199.67, 
+                            199.96
+                        ], 
+                        [
+                            "it", 
+                            199.96, 
+                            200.06
+                        ], 
+                        [
+                            "just", 
+                            200.06, 
+                            200.35
+                        ], 
+                        [
+                            "not", 
+                            200.55, 
+                            200.8
+                        ], 
+                        [
+                            "really", 
+                            200.8, 
+                            201.02
+                        ], 
+                        [
+                            "heavy", 
+                            201.02, 
+                            201.39
+                        ]
+                    ], 
+                    "transcript": "about it just not really heavy "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 38, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "about", 
+                            199.67, 
+                            199.96
+                        ], 
+                        [
+                            "it", 
+                            199.96, 
+                            200.06
+                        ], 
+                        [
+                            "just", 
+                            200.06, 
+                            200.35
+                        ], 
+                        [
+                            "not", 
+                            200.55, 
+                            200.8
+                        ], 
+                        [
+                            "really", 
+                            200.8, 
+                            201.02
+                        ], 
+                        [
+                            "heavy", 
+                            201.02, 
+                            201.3
+                        ], 
+                        [
+                            "just", 
+                            201.3, 
+                            201.73
+                        ], 
+                        [
+                            "as", 
+                            201.76, 
+                            201.9
+                        ], 
+                        [
+                            "far", 
+                            201.9, 
+                            202.13
+                        ], 
+                        [
+                            "as", 
+                            202.13, 
+                            202.22
+                        ], 
+                        [
+                            "recreation", 
+                            202.22, 
+                            202.78
+                        ], 
+                        [
+                            "or", 
+                            202.78, 
+                            202.87
+                        ], 
+                        [
+                            "hobby", 
+                            202.87, 
+                            203.24
+                        ], 
+                        [
+                            "I", 
+                            203.24, 
+                            203.33
+                        ]
+                    ], 
+                    "transcript": "about it just not really heavy just as far as recreation or hobby I "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 38, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.828, 
+                    "timestamps": [
+                        [
+                            "about", 
+                            199.67, 
+                            199.96
+                        ], 
+                        [
+                            "it", 
+                            199.96, 
+                            200.06
+                        ], 
+                        [
+                            "just", 
+                            200.06, 
+                            200.35
+                        ], 
+                        [
+                            "not", 
+                            200.55, 
+                            200.8
+                        ], 
+                        [
+                            "really", 
+                            200.8, 
+                            201.02
+                        ], 
+                        [
+                            "heavy", 
+                            201.02, 
+                            201.3
+                        ], 
+                        [
+                            "just", 
+                            201.3, 
+                            201.73
+                        ], 
+                        [
+                            "as", 
+                            201.76, 
+                            201.9
+                        ], 
+                        [
+                            "far", 
+                            201.9, 
+                            202.13
+                        ], 
+                        [
+                            "as", 
+                            202.13, 
+                            202.22
+                        ], 
+                        [
+                            "recreation", 
+                            202.22, 
+                            202.78
+                        ], 
+                        [
+                            "or", 
+                            202.78, 
+                            202.87
+                        ], 
+                        [
+                            "hobby", 
+                            202.87, 
+                            203.24
+                        ], 
+                        [
+                            "I", 
+                            203.24, 
+                            203.31
+                        ], 
+                        [
+                            "do", 
+                            203.31, 
+                            203.48
+                        ], 
+                        [
+                            "them", 
+                            203.48, 
+                            203.85
+                        ]
+                    ], 
+                    "transcript": "about it just not really heavy just as far as recreation or hobby I do them ", 
+                    "word_confidence": [
+                        [
+                            "about", 
+                            0.40083814789631195
+                        ], 
+                        [
+                            "it", 
+                            0.7720520360447007
+                        ], 
+                        [
+                            "just", 
+                            0.8446247908164755
+                        ], 
+                        [
+                            "not", 
+                            0.9999999999999364
+                        ], 
+                        [
+                            "really", 
+                            0.9999999999999467
+                        ], 
+                        [
+                            "heavy", 
+                            0.9999999999999387
+                        ], 
+                        [
+                            "just", 
+                            0.9999999999999347
+                        ], 
+                        [
+                            "as", 
+                            0.9849326372959731
+                        ], 
+                        [
+                            "far", 
+                            0.999999999999946
+                        ], 
+                        [
+                            "as", 
+                            0.9999999999999333
+                        ], 
+                        [
+                            "recreation", 
+                            0.7196978787854762
+                        ], 
+                        [
+                            "or", 
+                            0.9999999999999056
+                        ], 
+                        [
+                            "hobby", 
+                            0.9999999999999045
+                        ], 
+                        [
+                            "I", 
+                            0.7221688391619161
+                        ], 
+                        [
+                            "do", 
+                            0.9346279621556819
+                        ], 
+                        [
+                            "them", 
+                            0.328868013988475
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "but it's just not really heavy just as far as recreation or hobby I do them "
+                }, 
+                {
+                    "transcript": "about it just not really heavy just as far as recreation or hobby I do then "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 39, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            205.81, 
+                            206.18
+                        ], 
+                        [
+                            "I", 
+                            206.18, 
+                            206.24
+                        ], 
+                        [
+                            "used", 
+                            206.24, 
+                            206.57
+                        ], 
+                        [
+                            "to", 
+                            206.57, 
+                            206.75
+                        ], 
+                        [
+                            "but", 
+                            206.75, 
+                            207.02
+                        ], 
+                        [
+                            "got", 
+                            207.27, 
+                            207.46
+                        ], 
+                        [
+                            "to", 
+                            207.46, 
+                            207.61
+                        ]
+                    ], 
+                    "transcript": "%HESITATION I used to but got to "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 39, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.917, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            205.81, 
+                            206.18
+                        ], 
+                        [
+                            "I", 
+                            206.18, 
+                            206.24
+                        ], 
+                        [
+                            "used", 
+                            206.24, 
+                            206.57
+                        ], 
+                        [
+                            "to", 
+                            206.57, 
+                            206.75
+                        ], 
+                        [
+                            "but", 
+                            206.75, 
+                            207.02
+                        ], 
+                        [
+                            "got", 
+                            207.27, 
+                            207.46
+                        ], 
+                        [
+                            "too", 
+                            207.46, 
+                            207.59
+                        ], 
+                        [
+                            "expensive", 
+                            207.59, 
+                            208.23
+                        ], 
+                        [
+                            "so", 
+                            208.23, 
+                            208.51
+                        ]
+                    ], 
+                    "transcript": "%HESITATION I used to but got too expensive so ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.7471356427125434
+                        ], 
+                        [
+                            "I", 
+                            0.9999999999999586
+                        ], 
+                        [
+                            "used", 
+                            0.8538011558609943
+                        ], 
+                        [
+                            "to", 
+                            0.9999999999999728
+                        ], 
+                        [
+                            "but", 
+                            0.9669629023566841
+                        ], 
+                        [
+                            "got", 
+                            0.8046554184795962
+                        ], 
+                        [
+                            "too", 
+                            0.9999999999999875
+                        ], 
+                        [
+                            "expensive", 
+                            0.999999999999986
+                        ], 
+                        [
+                            "so", 
+                            0.9419680779640396
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION I used to but I got too expensive so "
+                }, 
+                {
+                    "transcript": "I'm I used to but got too expensive so "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 40, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.855, 
+                    "timestamps": [
+                        [
+                            "and", 
+                            209.2, 
+                            209.57
+                        ]
+                    ], 
+                    "transcript": "and ", 
+                    "word_confidence": [
+                        [
+                            "and", 
+                            0.8550130017502593
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "yeah "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 41, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.992, 
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            212.93, 
+                            213.21
+                        ], 
+                        [
+                            "it's", 
+                            213.21, 
+                            213.37
+                        ], 
+                        [
+                            "a", 
+                            213.37, 
+                            213.42
+                        ], 
+                        [
+                            "lot", 
+                            213.42, 
+                            213.55
+                        ], 
+                        [
+                            "of", 
+                            213.55, 
+                            213.62
+                        ], 
+                        [
+                            "people", 
+                            213.62, 
+                            213.92
+                        ], 
+                        [
+                            "do", 
+                            213.92, 
+                            214.08
+                        ], 
+                        [
+                            "that", 
+                            214.08, 
+                            214.43
+                        ]
+                    ], 
+                    "transcript": "yeah it's a lot of people do that ", 
+                    "word_confidence": [
+                        [
+                            "yeah", 
+                            1.0
+                        ], 
+                        [
+                            "it's", 
+                            1.0
+                        ], 
+                        [
+                            "a", 
+                            1.0
+                        ], 
+                        [
+                            "lot", 
+                            0.9669982941445199
+                        ], 
+                        [
+                            "of", 
+                            1.0
+                        ], 
+                        [
+                            "people", 
+                            1.0
+                        ], 
+                        [
+                            "do", 
+                            1.0
+                        ], 
+                        [
+                            "that", 
+                            0.9761286934949236
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "yeah its a lot of people do that "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 42, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 1.0, 
+                    "timestamps": [
+                        [
+                            "and", 
+                            215.22, 
+                            215.67
+                        ]
+                    ], 
+                    "transcript": "and ", 
+                    "word_confidence": [
+                        [
+                            "and", 
+                            1.0
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "and I "
+                }, 
+                {
+                    "transcript": "and it "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 43, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.981, 
+                    "timestamps": [
+                        [
+                            "but", 
+                            216.46, 
+                            216.8
+                        ]
+                    ], 
+                    "transcript": "but ", 
+                    "word_confidence": [
+                        [
+                            "but", 
+                            0.9809836379098787
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 44, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "and", 
+                            217.55, 
+                            217.75
+                        ], 
+                        [
+                            "I", 
+                            217.75, 
+                            217.83
+                        ], 
+                        [
+                            "just", 
+                            217.83, 
+                            218.09
+                        ], 
+                        [
+                            "never", 
+                            218.09, 
+                            218.27
+                        ], 
+                        [
+                            "finding", 
+                            218.27, 
+                            218.58
+                        ], 
+                        [
+                            "time", 
+                            218.58, 
+                            218.81
+                        ], 
+                        [
+                            "under", 
+                            218.81, 
+                            219.05
+                        ], 
+                        [
+                            "the", 
+                            219.05, 
+                            219.15
+                        ], 
+                        [
+                            "do", 
+                            219.15, 
+                            219.28
+                        ], 
+                        [
+                            "I", 
+                            219.28, 
+                            219.33
+                        ]
+                    ], 
+                    "transcript": "and I just never finding time under the do I "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 44, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.802, 
+                    "timestamps": [
+                        [
+                            "and", 
+                            217.55, 
+                            217.75
+                        ], 
+                        [
+                            "I", 
+                            217.75, 
+                            217.83
+                        ], 
+                        [
+                            "just", 
+                            217.83, 
+                            218.09
+                        ], 
+                        [
+                            "never", 
+                            218.09, 
+                            218.27
+                        ], 
+                        [
+                            "finding", 
+                            218.27, 
+                            218.58
+                        ], 
+                        [
+                            "time", 
+                            218.58, 
+                            218.81
+                        ], 
+                        [
+                            "under", 
+                            218.81, 
+                            219.05
+                        ], 
+                        [
+                            "the", 
+                            219.05, 
+                            219.15
+                        ], 
+                        [
+                            "do", 
+                            219.15, 
+                            219.27
+                        ], 
+                        [
+                            "other", 
+                            219.27, 
+                            219.45
+                        ], 
+                        [
+                            "things", 
+                            219.45, 
+                            219.83
+                        ]
+                    ], 
+                    "transcript": "and I just never finding time under the do other things ", 
+                    "word_confidence": [
+                        [
+                            "and", 
+                            0.2629889678897547
+                        ], 
+                        [
+                            "I", 
+                            0.9653538692150506
+                        ], 
+                        [
+                            "just", 
+                            0.9999999999999972
+                        ], 
+                        [
+                            "never", 
+                            1.0
+                        ], 
+                        [
+                            "finding", 
+                            0.26998744381179113
+                        ], 
+                        [
+                            "time", 
+                            0.9755049993487469
+                        ], 
+                        [
+                            "under", 
+                            0.7953043802274639
+                        ], 
+                        [
+                            "the", 
+                            1.0
+                        ], 
+                        [
+                            "do", 
+                            1.0
+                        ], 
+                        [
+                            "other", 
+                            1.0
+                        ], 
+                        [
+                            "things", 
+                            0.9488008588352245
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "I just never finding time under the do other things "
+                }, 
+                {
+                    "transcript": "and I just never find the time under the do other things "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 45, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.681, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            224.35, 
+                            224.59
+                        ], 
+                        [
+                            "they", 
+                            224.59, 
+                            224.7
+                        ], 
+                        [
+                            "come", 
+                            224.7, 
+                            224.9
+                        ], 
+                        [
+                            "up", 
+                            224.9, 
+                            225.07
+                        ], 
+                        [
+                            "here", 
+                            225.07, 
+                            225.29
+                        ]
+                    ], 
+                    "transcript": "%HESITATION they come up here ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.38381837597199203
+                        ], 
+                        [
+                            "they", 
+                            0.9296524281858212
+                        ], 
+                        [
+                            "come", 
+                            1.0
+                        ], 
+                        [
+                            "up", 
+                            0.993118007027693
+                        ], 
+                        [
+                            "here", 
+                            0.351049339382598
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION they come up "
+                }, 
+                {
+                    "transcript": "oh they come up here "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 46, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.4, 
+                    "timestamps": [
+                        [
+                            "that's", 
+                            232.3, 
+                            232.45
+                        ], 
+                        [
+                            "a", 
+                            232.45, 
+                            232.51
+                        ], 
+                        [
+                            "Nevada", 
+                            232.51, 
+                            233.01
+                        ]
+                    ], 
+                    "transcript": "that's a Nevada ", 
+                    "word_confidence": [
+                        [
+                            "that's", 
+                            0.6513102034800925
+                        ], 
+                        [
+                            "a", 
+                            0.1703089476664796
+                        ], 
+                        [
+                            "Nevada", 
+                            0.35236513642452066
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "that's in about a "
+                }, 
+                {
+                    "transcript": "to Nevada "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 47, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.43, 
+                    "timestamps": [
+                        [
+                            "huh", 
+                            233.32, 
+                            233.77
+                        ]
+                    ], 
+                    "transcript": "huh ", 
+                    "word_confidence": [
+                        [
+                            "huh", 
+                            0.42977939494752776
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION "
+                }, 
+                {
+                    "transcript": "hi "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 48, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.859, 
+                    "timestamps": [
+                        [
+                            "oh", 
+                            236.9, 
+                            237.26
+                        ], 
+                        [
+                            "yeah", 
+                            237.29, 
+                            237.63
+                        ]
+                    ], 
+                    "transcript": "oh yeah ", 
+                    "word_confidence": [
+                        [
+                            "oh", 
+                            1.0
+                        ], 
+                        [
+                            "yeah", 
+                            0.710314379419922
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION yeah "
+                }, 
+                {
+                    "transcript": "oh yes "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 49, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "or", 
+                            240.96, 
+                            241.07
+                        ], 
+                        [
+                            "snow", 
+                            241.07, 
+                            241.41
+                        ], 
+                        [
+                            "bird", 
+                            241.41, 
+                            241.76
+                        ], 
+                        [
+                            "or", 
+                            241.76, 
+                            241.91
+                        ], 
+                        [
+                            "Alta", 
+                            241.91, 
+                            242.51
+                        ]
+                    ], 
+                    "transcript": "or snow bird or Alta "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 49, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.281, 
+                    "timestamps": [
+                        [
+                            "or", 
+                            240.96, 
+                            241.07
+                        ], 
+                        [
+                            "snow", 
+                            241.07, 
+                            241.41
+                        ], 
+                        [
+                            "bird", 
+                            241.41, 
+                            241.76
+                        ], 
+                        [
+                            "or", 
+                            241.76, 
+                            241.91
+                        ], 
+                        [
+                            "Alta", 
+                            241.91, 
+                            242.51
+                        ]
+                    ], 
+                    "transcript": "or snow bird or Alta ", 
+                    "word_confidence": [
+                        [
+                            "or", 
+                            0.16835662955101194
+                        ], 
+                        [
+                            "snow", 
+                            0.4755704353224754
+                        ], 
+                        [
+                            "bird", 
+                            0.3441292886654417
+                        ], 
+                        [
+                            "or", 
+                            0.4989700908810939
+                        ], 
+                        [
+                            "Alta", 
+                            0.09919154163785772
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "for snow bird or Alta "
+                }, 
+                {
+                    "transcript": "or Snowbird or alto "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 50, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.989, 
+                    "timestamps": [
+                        [
+                            "heavenly", 
+                            245.89, 
+                            246.43
+                        ]
+                    ], 
+                    "transcript": "heavenly ", 
+                    "word_confidence": [
+                        [
+                            "heavenly", 
+                            0.989194591741721
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 51, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.807, 
+                    "timestamps": [
+                        [
+                            "huh", 
+                            248.49, 
+                            248.85
+                        ], 
+                        [
+                            "I've", 
+                            248.9, 
+                            249.04
+                        ], 
+                        [
+                            "never", 
+                            249.04, 
+                            249.23
+                        ], 
+                        [
+                            "heard", 
+                            249.23, 
+                            249.42
+                        ], 
+                        [
+                            "of", 
+                            249.42, 
+                            249.49
+                        ]
+                    ], 
+                    "transcript": "huh I've never heard of ", 
+                    "word_confidence": [
+                        [
+                            "huh", 
+                            0.7003909422917283
+                        ], 
+                        [
+                            "I've", 
+                            0.5493335453813899
+                        ], 
+                        [
+                            "never", 
+                            0.9916052429517079
+                        ], 
+                        [
+                            "heard", 
+                            0.9999999999999897
+                        ], 
+                        [
+                            "of", 
+                            0.8404606544412834
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "I've never heard of "
+                }, 
+                {
+                    "transcript": "I have never heard of "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 52, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.74, 
+                    "timestamps": [
+                        [
+                            "huh", 
+                            250.2, 
+                            250.79
+                        ]
+                    ], 
+                    "transcript": "huh ", 
+                    "word_confidence": [
+                        [
+                            "huh", 
+                            0.7404222167513074
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION "
+                }, 
+                {
+                    "transcript": "uhhuh "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 53, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.834, 
+                    "timestamps": [
+                        [
+                            "do", 
+                            262.23, 
+                            262.36
+                        ], 
+                        [
+                            "they", 
+                            262.36, 
+                            262.49
+                        ], 
+                        [
+                            "exercise", 
+                            262.49, 
+                            263.12
+                        ], 
+                        [
+                            "much", 
+                            263.12, 
+                            263.43
+                        ], 
+                        [
+                            "or", 
+                            263.43, 
+                            263.68
+                        ]
+                    ], 
+                    "transcript": "do they exercise much or ", 
+                    "word_confidence": [
+                        [
+                            "do", 
+                            0.5382769356006081
+                        ], 
+                        [
+                            "they", 
+                            0.5476437495576015
+                        ], 
+                        [
+                            "exercise", 
+                            0.9928197420564568
+                        ], 
+                        [
+                            "much", 
+                            0.9706090943019308
+                        ], 
+                        [
+                            "or", 
+                            0.5684976662879698
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "do the exercise much or "
+                }, 
+                {
+                    "transcript": "do they exercise much sure "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 54, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            264.16, 
+                            264.26
+                        ], 
+                        [
+                            "mean", 
+                            264.26, 
+                            264.42
+                        ], 
+                        [
+                            "for", 
+                            264.42, 
+                            264.56
+                        ], 
+                        [
+                            "skiing", 
+                            264.56, 
+                            265.06
+                        ], 
+                        [
+                            "I", 
+                            265.09, 
+                            265.16
+                        ], 
+                        [
+                            "know", 
+                            265.16, 
+                            265.32
+                        ], 
+                        [
+                            "when", 
+                            265.32, 
+                            265.5
+                        ], 
+                        [
+                            "I", 
+                            265.5, 
+                            265.57
+                        ], 
+                        [
+                            "went", 
+                            265.57, 
+                            265.89
+                        ]
+                    ], 
+                    "transcript": "I mean for skiing I know when I went "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 54, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.79, 
+                    "timestamps": [
+                        [
+                            "I", 
+                            264.16, 
+                            264.26
+                        ], 
+                        [
+                            "mean", 
+                            264.26, 
+                            264.42
+                        ], 
+                        [
+                            "for", 
+                            264.42, 
+                            264.56
+                        ], 
+                        [
+                            "skiing", 
+                            264.56, 
+                            265.06
+                        ], 
+                        [
+                            "I", 
+                            265.09, 
+                            265.16
+                        ], 
+                        [
+                            "know", 
+                            265.16, 
+                            265.32
+                        ], 
+                        [
+                            "when", 
+                            265.32, 
+                            265.5
+                        ], 
+                        [
+                            "I", 
+                            265.5, 
+                            265.57
+                        ], 
+                        [
+                            "went", 
+                            265.57, 
+                            265.91
+                        ], 
+                        [
+                            "to", 
+                            265.94, 
+                            266.05
+                        ], 
+                        [
+                            "get", 
+                            266.2, 
+                            266.42
+                        ], 
+                        [
+                            "Souris", 
+                            266.42, 
+                            266.89
+                        ], 
+                        [
+                            "isn't", 
+                            266.89, 
+                            267.07
+                        ], 
+                        [
+                            "it", 
+                            267.07, 
+                            267.25
+                        ]
+                    ], 
+                    "transcript": "I mean for skiing I know when I went to get Souris isn't it ", 
+                    "word_confidence": [
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "mean", 
+                            1.0
+                        ], 
+                        [
+                            "for", 
+                            1.0
+                        ], 
+                        [
+                            "skiing", 
+                            0.9914208238355926
+                        ], 
+                        [
+                            "I", 
+                            0.5041185695269211
+                        ], 
+                        [
+                            "know", 
+                            0.9049863093669678
+                        ], 
+                        [
+                            "when", 
+                            1.0
+                        ], 
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "went", 
+                            0.9666206766235158
+                        ], 
+                        [
+                            "to", 
+                            0.5073970879815947
+                        ], 
+                        [
+                            "get", 
+                            1.0
+                        ], 
+                        [
+                            "Souris", 
+                            0.4922698950268746
+                        ], 
+                        [
+                            "isn't", 
+                            0.24976481164339168
+                        ], 
+                        [
+                            "it", 
+                            0.37490216457556197
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "I mean for skiing I know when I went to get stories admit "
+                }, 
+                {
+                    "transcript": "I mean for skiing I know when I went to get stories in it "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 55, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "oh", 
+                            273.93, 
+                            274.18
+                        ], 
+                        [
+                            "yeah", 
+                            274.18, 
+                            274.47
+                        ], 
+                        [
+                            "Samus", 
+                            274.5, 
+                            275.07
+                        ], 
+                        [
+                            "one", 
+                            275.07, 
+                            275.35
+                        ], 
+                        [
+                            "or", 
+                            275.35, 
+                            275.47
+                        ], 
+                        [
+                            "two", 
+                            275.47, 
+                            275.66
+                        ]
+                    ], 
+                    "transcript": "oh yeah Samus one or two "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 55, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.83, 
+                    "timestamps": [
+                        [
+                            "oh", 
+                            273.93, 
+                            274.18
+                        ], 
+                        [
+                            "yeah", 
+                            274.18, 
+                            274.47
+                        ], 
+                        [
+                            "Samus", 
+                            274.5, 
+                            275.07
+                        ], 
+                        [
+                            "one", 
+                            275.07, 
+                            275.35
+                        ], 
+                        [
+                            "or", 
+                            275.35, 
+                            275.47
+                        ], 
+                        [
+                            "two", 
+                            275.47, 
+                            275.71
+                        ], 
+                        [
+                            "timer", 
+                            275.71, 
+                            276.29
+                        ]
+                    ], 
+                    "transcript": "oh yeah Samus one or two timer ", 
+                    "word_confidence": [
+                        [
+                            "oh", 
+                            0.948455659110766
+                        ], 
+                        [
+                            "yeah", 
+                            0.9715820553904871
+                        ], 
+                        [
+                            "Samus", 
+                            0.39234327685533854
+                        ], 
+                        [
+                            "one", 
+                            0.9403128772860742
+                        ], 
+                        [
+                            "or", 
+                            0.9373079147355218
+                        ], 
+                        [
+                            "two", 
+                            1.0
+                        ], 
+                        [
+                            "timer", 
+                            0.9904610345651483
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "oh yeah Sam this one or two timer "
+                }, 
+                {
+                    "transcript": "%HESITATION yeah Samus one or two timer "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 56, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "a", 
+                            276.76, 
+                            276.88
+                        ], 
+                        [
+                            "year", 
+                            276.88, 
+                            277.1
+                        ], 
+                        [
+                            "if", 
+                            277.1, 
+                            277.23
+                        ], 
+                        [
+                            "I", 
+                            277.23, 
+                            277.3
+                        ], 
+                        [
+                            "do", 
+                            277.3, 
+                            277.53
+                        ], 
+                        [
+                            "go", 
+                            277.53, 
+                            277.75
+                        ], 
+                        [
+                            "and", 
+                            277.75, 
+                            277.93
+                        ], 
+                        [
+                            "I'm", 
+                            277.93, 
+                            278.02
+                        ], 
+                        [
+                            "really", 
+                            278.02, 
+                            278.38
+                        ]
+                    ], 
+                    "transcript": "a year if I do go and I'm really "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 56, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.964, 
+                    "timestamps": [
+                        [
+                            "a", 
+                            276.76, 
+                            276.88
+                        ], 
+                        [
+                            "year", 
+                            276.88, 
+                            277.1
+                        ], 
+                        [
+                            "if", 
+                            277.1, 
+                            277.23
+                        ], 
+                        [
+                            "I", 
+                            277.23, 
+                            277.3
+                        ], 
+                        [
+                            "do", 
+                            277.3, 
+                            277.53
+                        ], 
+                        [
+                            "go", 
+                            277.53, 
+                            277.75
+                        ], 
+                        [
+                            "and", 
+                            277.75, 
+                            277.93
+                        ], 
+                        [
+                            "I'm", 
+                            277.93, 
+                            278.02
+                        ], 
+                        [
+                            "really", 
+                            278.02, 
+                            278.3
+                        ], 
+                        [
+                            "sore", 
+                            278.3, 
+                            278.53
+                        ], 
+                        [
+                            "after", 
+                            278.53, 
+                            279.04
+                        ]
+                    ], 
+                    "transcript": "a year if I do go and I'm really sore after ", 
+                    "word_confidence": [
+                        [
+                            "a", 
+                            0.790860293957082
+                        ], 
+                        [
+                            "year", 
+                            0.999999999999985
+                        ], 
+                        [
+                            "if", 
+                            0.9999999999999681
+                        ], 
+                        [
+                            "I", 
+                            0.9999999999999849
+                        ], 
+                        [
+                            "do", 
+                            0.9999999999999835
+                        ], 
+                        [
+                            "go", 
+                            0.9771778105633206
+                        ], 
+                        [
+                            "and", 
+                            0.748955916196654
+                        ], 
+                        [
+                            "I'm", 
+                            0.9999999999999891
+                        ], 
+                        [
+                            "really", 
+                            0.9999999999999906
+                        ], 
+                        [
+                            "sore", 
+                            0.999999999999993
+                        ], 
+                        [
+                            "after", 
+                            0.988057996947908
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "a year if I do go on I'm really sore after "
+                }, 
+                {
+                    "transcript": "year if I do go and I'm really sore after "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 57, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.396, 
+                    "timestamps": [
+                        [
+                            "yes", 
+                            281.61, 
+                            282.08
+                        ]
+                    ], 
+                    "transcript": "yes ", 
+                    "word_confidence": [
+                        [
+                            "yes", 
+                            0.3964710812973079
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "yeah "
+                }, 
+                {
+                    "transcript": "yeah it's "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 58, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.995, 
+                    "timestamps": [
+                        [
+                            "my", 
+                            282.59, 
+                            282.76
+                        ], 
+                        [
+                            "legs", 
+                            282.76, 
+                            283.12
+                        ], 
+                        [
+                            "really", 
+                            283.12, 
+                            283.47
+                        ], 
+                        [
+                            "really", 
+                            283.64, 
+                            283.99
+                        ], 
+                        [
+                            "ache", 
+                            283.99, 
+                            284.38
+                        ]
+                    ], 
+                    "transcript": "my legs really really ache ", 
+                    "word_confidence": [
+                        [
+                            "my", 
+                            1.0
+                        ], 
+                        [
+                            "legs", 
+                            1.0
+                        ], 
+                        [
+                            "really", 
+                            0.9999999999999925
+                        ], 
+                        [
+                            "really", 
+                            1.0
+                        ], 
+                        [
+                            "ache", 
+                            0.9806380894670877
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 59, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "but", 
+                            285.56, 
+                            285.85
+                        ], 
+                        [
+                            "that's", 
+                            285.85, 
+                            286.08
+                        ], 
+                        [
+                            "I'm", 
+                            286.25, 
+                            286.44
+                        ], 
+                        [
+                            "using", 
+                            286.44, 
+                            286.7
+                        ], 
+                        [
+                            "muscles", 
+                            286.7, 
+                            287.09
+                        ], 
+                        [
+                            "and", 
+                            287.09, 
+                            287.24
+                        ], 
+                        [
+                            "they", 
+                            287.24, 
+                            287.3
+                        ]
+                    ], 
+                    "transcript": "but that's I'm using muscles and they "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 59, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.681, 
+                    "timestamps": [
+                        [
+                            "but", 
+                            285.56, 
+                            285.85
+                        ], 
+                        [
+                            "that's", 
+                            285.85, 
+                            286.08
+                        ], 
+                        [
+                            "I'm", 
+                            286.25, 
+                            286.44
+                        ], 
+                        [
+                            "using", 
+                            286.44, 
+                            286.7
+                        ], 
+                        [
+                            "muscles", 
+                            286.7, 
+                            287.09
+                        ], 
+                        [
+                            "I've", 
+                            287.09, 
+                            287.2
+                        ], 
+                        [
+                            "never", 
+                            287.2, 
+                            287.41
+                        ], 
+                        [
+                            "seen", 
+                            287.41, 
+                            287.6
+                        ], 
+                        [
+                            "before", 
+                            287.76, 
+                            288.31
+                        ]
+                    ], 
+                    "transcript": "but that's I'm using muscles I've never seen before ", 
+                    "word_confidence": [
+                        [
+                            "but", 
+                            0.6698714947390185
+                        ], 
+                        [
+                            "that's", 
+                            0.5951570179927356
+                        ], 
+                        [
+                            "I'm", 
+                            0.84879444979701
+                        ], 
+                        [
+                            "using", 
+                            0.8487944497970079
+                        ], 
+                        [
+                            "muscles", 
+                            0.9964280181328891
+                        ], 
+                        [
+                            "I've", 
+                            0.3846983959581552
+                        ], 
+                        [
+                            "never", 
+                            0.95494126945008
+                        ], 
+                        [
+                            "seen", 
+                            0.22706382912924256
+                        ], 
+                        [
+                            "before", 
+                            0.4723807446690082
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "but as I'm using muscles I've never seen before "
+                }, 
+                {
+                    "transcript": "that's I'm using muscles I've never seen before "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}

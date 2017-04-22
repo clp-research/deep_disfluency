@@ -1,0 +1,3439 @@
+{
+    "result_index": 0, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            1.98, 
+                            2.47
+                        ], 
+                        [
+                            "I", 
+                            2.5, 
+                            2.91
+                        ], 
+                        [
+                            "I", 
+                            2.99, 
+                            3.09
+                        ], 
+                        [
+                            "don't", 
+                            3.09, 
+                            3.3
+                        ], 
+                        [
+                            "see", 
+                            3.3, 
+                            3.4
+                        ], 
+                        [
+                            "any", 
+                            3.4, 
+                            3.62
+                        ]
+                    ], 
+                    "transcript": "%HESITATION I I don't see any "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 0, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.992, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            1.98, 
+                            2.47
+                        ], 
+                        [
+                            "I", 
+                            2.5, 
+                            2.91
+                        ], 
+                        [
+                            "I", 
+                            2.99, 
+                            3.09
+                        ], 
+                        [
+                            "don't", 
+                            3.09, 
+                            3.3
+                        ], 
+                        [
+                            "see", 
+                            3.3, 
+                            3.4
+                        ], 
+                        [
+                            "any", 
+                            3.4, 
+                            3.54
+                        ], 
+                        [
+                            "problem", 
+                            3.54, 
+                            3.94
+                        ], 
+                        [
+                            "with", 
+                            3.94, 
+                            4.24
+                        ], 
+                        [
+                            "with", 
+                            4.28, 
+                            4.52
+                        ]
+                    ], 
+                    "transcript": "%HESITATION I I don't see any problem with with ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            1.0
+                        ], 
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "I", 
+                            0.8660688818739357
+                        ], 
+                        [
+                            "don't", 
+                            1.0
+                        ], 
+                        [
+                            "see", 
+                            1.0
+                        ], 
+                        [
+                            "any", 
+                            1.0
+                        ], 
+                        [
+                            "problem", 
+                            1.0
+                        ], 
+                        [
+                            "with", 
+                            1.0
+                        ], 
+                        [
+                            "with", 
+                            0.9754110334032555
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION I I I don't see any problem with with "
+                }, 
+                {
+                    "transcript": "%HESITATION I don't see any problem with with "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 1, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.971, 
+                    "timestamps": [
+                        [
+                            "testing", 
+                            5.22, 
+                            5.6
+                        ], 
+                        [
+                            "for", 
+                            5.6, 
+                            5.76
+                        ], 
+                        [
+                            "random", 
+                            5.76, 
+                            6.06
+                        ], 
+                        [
+                            "drugs", 
+                            6.06, 
+                            6.56
+                        ]
+                    ], 
+                    "transcript": "testing for random drugs ", 
+                    "word_confidence": [
+                        [
+                            "testing", 
+                            0.9999999999999837
+                        ], 
+                        [
+                            "for", 
+                            0.9999999999999898
+                        ], 
+                        [
+                            "random", 
+                            0.9999999999999896
+                        ], 
+                        [
+                            "drugs", 
+                            0.921624849295691
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "testing for random drug "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 2, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.989, 
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            34.14, 
+                            34.64
+                        ]
+                    ], 
+                    "transcript": "yeah ", 
+                    "word_confidence": [
+                        [
+                            "yeah", 
+                            0.9890597098280394
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 3, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            37.19, 
+                            37.79
+                        ], 
+                        [
+                            "well", 
+                            37.82, 
+                            37.95
+                        ], 
+                        [
+                            "I'm", 
+                            37.95, 
+                            38.12
+                        ], 
+                        [
+                            "a", 
+                            38.12, 
+                            38.35
+                        ], 
+                        [
+                            "graduate", 
+                            38.43, 
+                            38.88
+                        ]
+                    ], 
+                    "transcript": "%HESITATION well I'm a graduate "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 3, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.968, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            37.19, 
+                            37.79
+                        ], 
+                        [
+                            "well", 
+                            37.82, 
+                            37.95
+                        ], 
+                        [
+                            "I'm", 
+                            37.95, 
+                            38.12
+                        ], 
+                        [
+                            "a", 
+                            38.12, 
+                            38.35
+                        ], 
+                        [
+                            "graduate", 
+                            38.43, 
+                            38.82
+                        ], 
+                        [
+                            "student", 
+                            38.82, 
+                            39.2
+                        ], 
+                        [
+                            "right", 
+                            39.2, 
+                            39.33
+                        ], 
+                        [
+                            "now", 
+                            39.33, 
+                            39.73
+                        ], 
+                        [
+                            "Carnegie", 
+                            39.85, 
+                            40.27
+                        ], 
+                        [
+                            "Mellon", 
+                            40.27, 
+                            40.7
+                        ]
+                    ], 
+                    "transcript": "%HESITATION well I'm a graduate student right now Carnegie Mellon ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.9928184725415126
+                        ], 
+                        [
+                            "well", 
+                            0.4924154542103893
+                        ], 
+                        [
+                            "I'm", 
+                            0.8580229441639564
+                        ], 
+                        [
+                            "a", 
+                            1.0
+                        ], 
+                        [
+                            "graduate", 
+                            1.0
+                        ], 
+                        [
+                            "student", 
+                            1.0
+                        ], 
+                        [
+                            "right", 
+                            1.0
+                        ], 
+                        [
+                            "now", 
+                            0.9851420166701386
+                        ], 
+                        [
+                            "Carnegie", 
+                            1.0
+                        ], 
+                        [
+                            "Mellon", 
+                            0.9897551981905356
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION while I'm a graduate student right now Carnegie Mellon "
+                }, 
+                {
+                    "transcript": "um well I'm a graduate student right now Carnegie Mellon "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 4, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "and", 
+                            41.16, 
+                            41.53
+                        ], 
+                        [
+                            "I", 
+                            41.59, 
+                            41.85
+                        ], 
+                        [
+                            "just", 
+                            41.85, 
+                            42.07
+                        ], 
+                        [
+                            "came", 
+                            42.07, 
+                            42.28
+                        ], 
+                        [
+                            "from", 
+                            42.28, 
+                            42.82
+                        ]
+                    ], 
+                    "transcript": "and I just came from "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 4, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.859, 
+                    "timestamps": [
+                        [
+                            "and", 
+                            41.16, 
+                            41.53
+                        ], 
+                        [
+                            "I", 
+                            41.59, 
+                            41.85
+                        ], 
+                        [
+                            "just", 
+                            41.85, 
+                            42.07
+                        ], 
+                        [
+                            "came", 
+                            42.07, 
+                            42.28
+                        ], 
+                        [
+                            "from", 
+                            42.28, 
+                            42.82
+                        ], 
+                        [
+                            "Saint", 
+                            42.95, 
+                            43.28
+                        ], 
+                        [
+                            "Paul", 
+                            43.28, 
+                            43.7
+                        ]
+                    ], 
+                    "transcript": "and I just came from Saint Paul ", 
+                    "word_confidence": [
+                        [
+                            "and", 
+                            0.9999999999999347
+                        ], 
+                        [
+                            "I", 
+                            0.9999999999999539
+                        ], 
+                        [
+                            "just", 
+                            0.9999999999999606
+                        ], 
+                        [
+                            "came", 
+                            0.9999999999999606
+                        ], 
+                        [
+                            "from", 
+                            0.9935222937294057
+                        ], 
+                        [
+                            "Saint", 
+                            0.6416744664868748
+                        ], 
+                        [
+                            "Paul", 
+                            0.501063168337923
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "and I I just came from Saint Paul "
+                }, 
+                {
+                    "transcript": "and I just came from simple "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 5, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.757, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            44.49, 
+                            44.79
+                        ], 
+                        [
+                            "interviewing", 
+                            44.79, 
+                            45.34
+                        ], 
+                        [
+                            "the", 
+                            45.34, 
+                            45.44
+                        ], 
+                        [
+                            "three", 
+                            45.44, 
+                            45.7
+                        ], 
+                        [
+                            "M.", 
+                            45.7, 
+                            46.08
+                        ]
+                    ], 
+                    "transcript": "%HESITATION interviewing the three M. ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            1.0
+                        ], 
+                        [
+                            "interviewing", 
+                            0.9471265408663493
+                        ], 
+                        [
+                            "the", 
+                            0.4640128156702491
+                        ], 
+                        [
+                            "three", 
+                            0.954648956350391
+                        ], 
+                        [
+                            "M.", 
+                            0.23326669639167064
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION interviewing the three AM "
+                }, 
+                {
+                    "transcript": "%HESITATION interviewing the three EM "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 6, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "and", 
+                            47.16, 
+                            47.55
+                        ], 
+                        [
+                            "%HESITATION", 
+                            47.55, 
+                            47.79
+                        ], 
+                        [
+                            "they", 
+                            47.79, 
+                            47.94
+                        ], 
+                        [
+                            "have", 
+                            47.94, 
+                            48.08
+                        ], 
+                        [
+                            "a", 
+                            48.08, 
+                            48.16
+                        ], 
+                        [
+                            "policy", 
+                            48.16, 
+                            48.81
+                        ]
+                    ], 
+                    "transcript": "and %HESITATION they have a policy "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 6, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.918, 
+                    "timestamps": [
+                        [
+                            "and", 
+                            47.16, 
+                            47.55
+                        ], 
+                        [
+                            "%HESITATION", 
+                            47.55, 
+                            47.79
+                        ], 
+                        [
+                            "they", 
+                            47.79, 
+                            47.94
+                        ], 
+                        [
+                            "have", 
+                            47.94, 
+                            48.08
+                        ], 
+                        [
+                            "a", 
+                            48.08, 
+                            48.16
+                        ], 
+                        [
+                            "policy", 
+                            48.16, 
+                            48.77
+                        ], 
+                        [
+                            "for", 
+                            48.77, 
+                            49.21
+                        ], 
+                        [
+                            "a", 
+                            49.21, 
+                            49.43
+                        ]
+                    ], 
+                    "transcript": "and %HESITATION they have a policy for a ", 
+                    "word_confidence": [
+                        [
+                            "and", 
+                            1.0
+                        ], 
+                        [
+                            "%HESITATION", 
+                            1.0
+                        ], 
+                        [
+                            "they", 
+                            1.0
+                        ], 
+                        [
+                            "have", 
+                            1.0
+                        ], 
+                        [
+                            "a", 
+                            1.0
+                        ], 
+                        [
+                            "policy", 
+                            1.0
+                        ], 
+                        [
+                            "for", 
+                            0.9815115758300393
+                        ], 
+                        [
+                            "a", 
+                            0.18859118928385374
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "and %HESITATION they have a policy for %HESITATION "
+                }, 
+                {
+                    "transcript": "and %HESITATION they have a policy for up "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 7, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "testing", 
+                            49.87, 
+                            50.52
+                        ], 
+                        [
+                            "if", 
+                            50.55, 
+                            50.93
+                        ], 
+                        [
+                            "you", 
+                            50.93, 
+                            51.06
+                        ], 
+                        [
+                            "if", 
+                            51.06, 
+                            51.22
+                        ], 
+                        [
+                            "they", 
+                            51.22, 
+                            51.31
+                        ], 
+                        [
+                            "make", 
+                            51.31, 
+                            51.55
+                        ], 
+                        [
+                            "you", 
+                            51.55, 
+                            51.61
+                        ]
+                    ], 
+                    "transcript": "testing if you if they make you "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 7, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "testing", 
+                            49.87, 
+                            50.52
+                        ], 
+                        [
+                            "if", 
+                            50.55, 
+                            50.93
+                        ], 
+                        [
+                            "you", 
+                            50.93, 
+                            51.06
+                        ], 
+                        [
+                            "if", 
+                            51.06, 
+                            51.22
+                        ], 
+                        [
+                            "they", 
+                            51.22, 
+                            51.31
+                        ], 
+                        [
+                            "make", 
+                            51.31, 
+                            51.55
+                        ], 
+                        [
+                            "you", 
+                            51.55, 
+                            51.68
+                        ], 
+                        [
+                            "an", 
+                            51.68, 
+                            51.77
+                        ], 
+                        [
+                            "offer", 
+                            51.77, 
+                            52.17
+                        ], 
+                        [
+                            "then", 
+                            52.17, 
+                            52.6
+                        ], 
+                        [
+                            "they'll", 
+                            52.63, 
+                            52.83
+                        ], 
+                        [
+                            "test", 
+                            52.83, 
+                            53.24
+                        ], 
+                        [
+                            "you", 
+                            53.24, 
+                            53.61
+                        ]
+                    ], 
+                    "transcript": "testing if you if they make you an offer then they'll test you "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 7, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.99, 
+                    "timestamps": [
+                        [
+                            "testing", 
+                            49.87, 
+                            50.52
+                        ], 
+                        [
+                            "if", 
+                            50.55, 
+                            50.93
+                        ], 
+                        [
+                            "you", 
+                            50.93, 
+                            51.06
+                        ], 
+                        [
+                            "if", 
+                            51.06, 
+                            51.22
+                        ], 
+                        [
+                            "they", 
+                            51.22, 
+                            51.31
+                        ], 
+                        [
+                            "make", 
+                            51.31, 
+                            51.55
+                        ], 
+                        [
+                            "you", 
+                            51.55, 
+                            51.68
+                        ], 
+                        [
+                            "an", 
+                            51.68, 
+                            51.77
+                        ], 
+                        [
+                            "offer", 
+                            51.77, 
+                            52.17
+                        ], 
+                        [
+                            "then", 
+                            52.17, 
+                            52.6
+                        ], 
+                        [
+                            "they'll", 
+                            52.63, 
+                            52.83
+                        ], 
+                        [
+                            "test", 
+                            52.83, 
+                            53.24
+                        ], 
+                        [
+                            "you", 
+                            53.24, 
+                            53.71
+                        ]
+                    ], 
+                    "transcript": "testing if you if they make you an offer then they'll test you ", 
+                    "word_confidence": [
+                        [
+                            "testing", 
+                            0.9941304401364424
+                        ], 
+                        [
+                            "if", 
+                            0.9999999999999923
+                        ], 
+                        [
+                            "you", 
+                            0.9999999999999978
+                        ], 
+                        [
+                            "if", 
+                            1.0
+                        ], 
+                        [
+                            "they", 
+                            1.0
+                        ], 
+                        [
+                            "make", 
+                            1.0
+                        ], 
+                        [
+                            "you", 
+                            1.0
+                        ], 
+                        [
+                            "an", 
+                            1.0
+                        ], 
+                        [
+                            "offer", 
+                            1.0
+                        ], 
+                        [
+                            "then", 
+                            1.0
+                        ], 
+                        [
+                            "they'll", 
+                            1.0
+                        ], 
+                        [
+                            "test", 
+                            0.9686293029334798
+                        ], 
+                        [
+                            "you", 
+                            0.9532162293170845
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "testing if you if they make you an offer then they'll test do you "
+                }, 
+                {
+                    "transcript": "testing if you if they make you an offer then they'll test to you "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 8, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.995, 
+                    "timestamps": [
+                        [
+                            "right", 
+                            54.17, 
+                            54.41
+                        ], 
+                        [
+                            "before", 
+                            54.41, 
+                            54.68
+                        ], 
+                        [
+                            "you", 
+                            54.68, 
+                            54.83
+                        ], 
+                        [
+                            "start", 
+                            54.83, 
+                            55.4
+                        ]
+                    ], 
+                    "transcript": "right before you start ", 
+                    "word_confidence": [
+                        [
+                            "right", 
+                            1.0
+                        ], 
+                        [
+                            "before", 
+                            1.0
+                        ], 
+                        [
+                            "you", 
+                            1.0
+                        ], 
+                        [
+                            "start", 
+                            0.9901829682571797
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 9, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 1.0, 
+                    "timestamps": [
+                        [
+                            "and", 
+                            56.23, 
+                            56.81
+                        ]
+                    ], 
+                    "transcript": "and ", 
+                    "word_confidence": [
+                        [
+                            "and", 
+                            0.9999999999999956
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 10, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 1.0, 
+                    "timestamps": [
+                        [
+                            "I", 
+                            57.24, 
+                            57.37
+                        ], 
+                        [
+                            "guess", 
+                            57.37, 
+                            57.61
+                        ], 
+                        [
+                            "the", 
+                            57.61, 
+                            57.7
+                        ], 
+                        [
+                            "only", 
+                            57.7, 
+                            58.3
+                        ]
+                    ], 
+                    "transcript": "I guess the only ", 
+                    "word_confidence": [
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "guess", 
+                            1.0
+                        ], 
+                        [
+                            "the", 
+                            1.0
+                        ], 
+                        [
+                            "only", 
+                            0.9999999999999957
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 11, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "drawback", 
+                            59.4, 
+                            59.86
+                        ], 
+                        [
+                            "I", 
+                            59.86, 
+                            59.94
+                        ], 
+                        [
+                            "can", 
+                            59.94, 
+                            60.1
+                        ], 
+                        [
+                            "see", 
+                            60.1, 
+                            60.31
+                        ], 
+                        [
+                            "to", 
+                            60.31, 
+                            60.6
+                        ], 
+                        [
+                            "to", 
+                            60.79, 
+                            61.12
+                        ]
+                    ], 
+                    "transcript": "drawback I can see to to "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 11, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.961, 
+                    "timestamps": [
+                        [
+                            "drawback", 
+                            59.4, 
+                            59.86
+                        ], 
+                        [
+                            "I", 
+                            59.86, 
+                            59.94
+                        ], 
+                        [
+                            "can", 
+                            59.94, 
+                            60.1
+                        ], 
+                        [
+                            "see", 
+                            60.1, 
+                            60.31
+                        ], 
+                        [
+                            "to", 
+                            60.31, 
+                            60.6
+                        ], 
+                        [
+                            "to", 
+                            60.79, 
+                            61.18
+                        ], 
+                        [
+                            "drug", 
+                            61.31, 
+                            61.56
+                        ], 
+                        [
+                            "testing", 
+                            61.56, 
+                            61.98
+                        ], 
+                        [
+                            "is", 
+                            61.98, 
+                            62.44
+                        ]
+                    ], 
+                    "transcript": "drawback I can see to to drug testing is ", 
+                    "word_confidence": [
+                        [
+                            "drawback", 
+                            0.7767633074220912
+                        ], 
+                        [
+                            "I", 
+                            0.999999999999983
+                        ], 
+                        [
+                            "can", 
+                            0.9999999999999827
+                        ], 
+                        [
+                            "see", 
+                            0.9999999999999755
+                        ], 
+                        [
+                            "to", 
+                            0.990981190212771
+                        ], 
+                        [
+                            "to", 
+                            0.9999999999999832
+                        ], 
+                        [
+                            "drug", 
+                            0.9999999999999836
+                        ], 
+                        [
+                            "testing", 
+                            0.9999999999999828
+                        ], 
+                        [
+                            "is", 
+                            0.9999999999999745
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "draw back I can see to to drug testing is "
+                }, 
+                {
+                    "transcript": "drawback I can see two to drug testing is "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 12, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "in", 
+                            62.72, 
+                            63.08
+                        ], 
+                        [
+                            "case", 
+                            63.08, 
+                            63.39
+                        ], 
+                        [
+                            "you", 
+                            63.39, 
+                            63.54
+                        ], 
+                        [
+                            "are", 
+                            63.54, 
+                            63.68
+                        ], 
+                        [
+                            "on", 
+                            63.68, 
+                            63.84
+                        ], 
+                        [
+                            "some", 
+                            63.84, 
+                            64.01
+                        ], 
+                        [
+                            "sort", 
+                            64.01, 
+                            64.21
+                        ], 
+                        [
+                            "of", 
+                            64.21, 
+                            64.28
+                        ], 
+                        [
+                            "met", 
+                            64.28, 
+                            64.42
+                        ]
+                    ], 
+                    "transcript": "in case you are on some sort of met "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 12, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.939, 
+                    "timestamps": [
+                        [
+                            "in", 
+                            62.72, 
+                            63.08
+                        ], 
+                        [
+                            "case", 
+                            63.08, 
+                            63.39
+                        ], 
+                        [
+                            "you", 
+                            63.39, 
+                            63.54
+                        ], 
+                        [
+                            "are", 
+                            63.54, 
+                            63.68
+                        ], 
+                        [
+                            "on", 
+                            63.68, 
+                            63.84
+                        ], 
+                        [
+                            "some", 
+                            63.84, 
+                            64.01
+                        ], 
+                        [
+                            "sort", 
+                            64.01, 
+                            64.21
+                        ], 
+                        [
+                            "of", 
+                            64.21, 
+                            64.28
+                        ], 
+                        [
+                            "medication", 
+                            64.28, 
+                            64.91
+                        ], 
+                        [
+                            "that", 
+                            64.91, 
+                            65.27
+                        ]
+                    ], 
+                    "transcript": "in case you are on some sort of medication that ", 
+                    "word_confidence": [
+                        [
+                            "in", 
+                            0.5685028333130897
+                        ], 
+                        [
+                            "case", 
+                            0.9999999999999762
+                        ], 
+                        [
+                            "you", 
+                            0.9999999999999681
+                        ], 
+                        [
+                            "are", 
+                            0.9999999999999675
+                        ], 
+                        [
+                            "on", 
+                            0.9999999999999672
+                        ], 
+                        [
+                            "some", 
+                            0.9999999999999671
+                        ], 
+                        [
+                            "sort", 
+                            0.9999999999999835
+                        ], 
+                        [
+                            "of", 
+                            0.9999999999999838
+                        ], 
+                        [
+                            "medication", 
+                            0.9999999999999759
+                        ], 
+                        [
+                            "that", 
+                            0.9999999999999838
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "and in case you are on some sort of medication that "
+                }, 
+                {
+                    "transcript": "in in case you are on some sort of medication that "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 13, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "might", 
+                            65.99, 
+                            66.23
+                        ], 
+                        [
+                            "give", 
+                            66.23, 
+                            66.49
+                        ], 
+                        [
+                            "some", 
+                            66.49, 
+                            66.77
+                        ], 
+                        [
+                            "%HESITATION", 
+                            66.77, 
+                            67.01
+                        ], 
+                        [
+                            "sort", 
+                            67.01, 
+                            67.27
+                        ], 
+                        [
+                            "of", 
+                            67.27, 
+                            67.51
+                        ]
+                    ], 
+                    "transcript": "might give some %HESITATION sort of "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 13, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.882, 
+                    "timestamps": [
+                        [
+                            "might", 
+                            65.99, 
+                            66.23
+                        ], 
+                        [
+                            "give", 
+                            66.23, 
+                            66.49
+                        ], 
+                        [
+                            "some", 
+                            66.49, 
+                            66.77
+                        ], 
+                        [
+                            "%HESITATION", 
+                            66.77, 
+                            67.01
+                        ], 
+                        [
+                            "sort", 
+                            67.01, 
+                            67.27
+                        ], 
+                        [
+                            "of", 
+                            67.27, 
+                            67.51
+                        ], 
+                        [
+                            "false", 
+                            67.62, 
+                            68.02
+                        ], 
+                        [
+                            "positive", 
+                            68.02, 
+                            68.49
+                        ], 
+                        [
+                            "result", 
+                            68.49, 
+                            69.02
+                        ]
+                    ], 
+                    "transcript": "might give some %HESITATION sort of false positive result ", 
+                    "word_confidence": [
+                        [
+                            "might", 
+                            0.30154626365774134
+                        ], 
+                        [
+                            "give", 
+                            0.9857209700289171
+                        ], 
+                        [
+                            "some", 
+                            0.8638263450602928
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.48393603790350986
+                        ], 
+                        [
+                            "sort", 
+                            0.9786351741061684
+                        ], 
+                        [
+                            "of", 
+                            0.9999999999999978
+                        ], 
+                        [
+                            "false", 
+                            0.9999999999999989
+                        ], 
+                        [
+                            "positive", 
+                            0.999999999999993
+                        ], 
+                        [
+                            "result", 
+                            0.9895567995725038
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "might give some sort of false positive result "
+                }, 
+                {
+                    "transcript": "like give some %HESITATION sort of false positive result "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 14, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "then", 
+                            69.92, 
+                            70.38
+                        ], 
+                        [
+                            "there", 
+                            70.7, 
+                            70.86
+                        ], 
+                        [
+                            "could", 
+                            70.86, 
+                            71.02
+                        ], 
+                        [
+                            "be", 
+                            71.02, 
+                            71.11
+                        ], 
+                        [
+                            "some", 
+                            71.11, 
+                            71.3
+                        ], 
+                        [
+                            "sort", 
+                            71.3, 
+                            71.49
+                        ], 
+                        [
+                            "of", 
+                            71.49, 
+                            71.57
+                        ]
+                    ], 
+                    "transcript": "then there could be some sort of "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 14, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.956, 
+                    "timestamps": [
+                        [
+                            "then", 
+                            69.92, 
+                            70.38
+                        ], 
+                        [
+                            "there", 
+                            70.7, 
+                            70.86
+                        ], 
+                        [
+                            "could", 
+                            70.86, 
+                            71.02
+                        ], 
+                        [
+                            "be", 
+                            71.02, 
+                            71.11
+                        ], 
+                        [
+                            "some", 
+                            71.11, 
+                            71.3
+                        ], 
+                        [
+                            "sort", 
+                            71.3, 
+                            71.49
+                        ], 
+                        [
+                            "of", 
+                            71.49, 
+                            71.58
+                        ], 
+                        [
+                            "problem", 
+                            71.58, 
+                            71.94
+                        ], 
+                        [
+                            "but", 
+                            71.94, 
+                            72.26
+                        ]
+                    ], 
+                    "transcript": "then there could be some sort of problem but ", 
+                    "word_confidence": [
+                        [
+                            "then", 
+                            0.8253898458408522
+                        ], 
+                        [
+                            "there", 
+                            0.9999999999999772
+                        ], 
+                        [
+                            "could", 
+                            0.9999999999999801
+                        ], 
+                        [
+                            "be", 
+                            0.9999999999999802
+                        ], 
+                        [
+                            "some", 
+                            0.9999999999999836
+                        ], 
+                        [
+                            "sort", 
+                            0.9999999999999755
+                        ], 
+                        [
+                            "of", 
+                            0.9999999999999754
+                        ], 
+                        [
+                            "problem", 
+                            0.9999999999999633
+                        ], 
+                        [
+                            "but", 
+                            0.9743978781749998
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "been there could be some sort of problem but "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 15, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.397, 
+                    "timestamps": [
+                        [
+                            "it's", 
+                            73.1, 
+                            73.42
+                        ]
+                    ], 
+                    "transcript": "it's ", 
+                    "word_confidence": [
+                        [
+                            "it's", 
+                            0.3971742033415827
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "it "
+                }, 
+                {
+                    "transcript": "its "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 16, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.986, 
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            80.56, 
+                            81.08
+                        ]
+                    ], 
+                    "transcript": "yeah ", 
+                    "word_confidence": [
+                        [
+                            "yeah", 
+                            0.9861986750481635
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 17, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.988, 
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            93.94, 
+                            94.27
+                        ]
+                    ], 
+                    "transcript": "yeah ", 
+                    "word_confidence": [
+                        [
+                            "yeah", 
+                            0.9878334847143351
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "yeah I "
+                }, 
+                {
+                    "transcript": "yeah yeah "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 18, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.991, 
+                    "timestamps": [
+                        [
+                            "right", 
+                            115.77, 
+                            116.27
+                        ]
+                    ], 
+                    "transcript": "right ", 
+                    "word_confidence": [
+                        [
+                            "right", 
+                            0.9910690856245953
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "write "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 19, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.67, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            119.9, 
+                            120.17
+                        ], 
+                        [
+                            "looks", 
+                            120.17, 
+                            120.38
+                        ], 
+                        [
+                            "real", 
+                            120.38, 
+                            120.59
+                        ], 
+                        [
+                            "engineering", 
+                            120.59, 
+                            121.1
+                        ]
+                    ], 
+                    "transcript": "%HESITATION looks real engineering ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            1.0
+                        ], 
+                        [
+                            "looks", 
+                            0.06098430706460859
+                        ], 
+                        [
+                            "real", 
+                            0.10167247197077972
+                        ], 
+                        [
+                            "engineering", 
+                            0.9798720039358546
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION lecture will engineering "
+                }, 
+                {
+                    "transcript": "%HESITATION luxury will engineering "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 20, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.683, 
+                    "timestamps": [
+                        [
+                            "oh", 
+                            127.79, 
+                            128.05
+                        ], 
+                        [
+                            "well", 
+                            128.05, 
+                            128.34
+                        ]
+                    ], 
+                    "transcript": "oh well ", 
+                    "word_confidence": [
+                        [
+                            "oh", 
+                            1.0
+                        ], 
+                        [
+                            "well", 
+                            0.39962741587866607
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION well "
+                }, 
+                {
+                    "transcript": "%HESITATION while "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 21, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.0, 
+                    "timestamps": [], 
+                    "transcript": "yeah "
+                }, 
+                {
+                    "transcript": "so "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 22, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "they", 
+                            139.78, 
+                            140.31
+                        ], 
+                        [
+                            "test", 
+                            140.31, 
+                            140.63
+                        ], 
+                        [
+                            "you", 
+                            140.63, 
+                            140.84
+                        ], 
+                        [
+                            "%HESITATION", 
+                            140.84, 
+                            141.49
+                        ]
+                    ], 
+                    "transcript": "they test you %HESITATION "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 22, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.999, 
+                    "timestamps": [
+                        [
+                            "they", 
+                            139.78, 
+                            140.31
+                        ], 
+                        [
+                            "test", 
+                            140.31, 
+                            140.63
+                        ], 
+                        [
+                            "you", 
+                            140.63, 
+                            140.84
+                        ], 
+                        [
+                            "%HESITATION", 
+                            140.84, 
+                            141.49
+                        ], 
+                        [
+                            "before", 
+                            141.63, 
+                            142.41
+                        ], 
+                        [
+                            "they", 
+                            142.45, 
+                            142.9
+                        ]
+                    ], 
+                    "transcript": "they test you %HESITATION before they ", 
+                    "word_confidence": [
+                        [
+                            "they", 
+                            1.0
+                        ], 
+                        [
+                            "test", 
+                            1.0
+                        ], 
+                        [
+                            "you", 
+                            1.0
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.9950534861284756
+                        ], 
+                        [
+                            "before", 
+                            0.9999999999999795
+                        ], 
+                        [
+                            "they", 
+                            0.9999999999999836
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "they test you um before they "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 23, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "before", 
+                            143.41, 
+                            143.72
+                        ], 
+                        [
+                            "you", 
+                            143.72, 
+                            143.82
+                        ], 
+                        [
+                            "start", 
+                            143.82, 
+                            144.13
+                        ], 
+                        [
+                            "or", 
+                            144.13, 
+                            144.25
+                        ], 
+                        [
+                            "before", 
+                            144.25, 
+                            144.66
+                        ], 
+                        [
+                            "you", 
+                            144.66, 
+                            144.81
+                        ], 
+                        [
+                            "even", 
+                            144.81, 
+                            145.05
+                        ], 
+                        [
+                            "enter", 
+                            145.05, 
+                            145.2
+                        ]
+                    ], 
+                    "transcript": "before you start or before you even enter "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 23, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.75, 
+                    "timestamps": [
+                        [
+                            "before", 
+                            143.41, 
+                            143.72
+                        ], 
+                        [
+                            "you", 
+                            143.72, 
+                            143.82
+                        ], 
+                        [
+                            "start", 
+                            143.82, 
+                            144.13
+                        ], 
+                        [
+                            "or", 
+                            144.13, 
+                            144.25
+                        ], 
+                        [
+                            "before", 
+                            144.25, 
+                            144.66
+                        ], 
+                        [
+                            "you", 
+                            144.66, 
+                            144.81
+                        ], 
+                        [
+                            "even", 
+                            144.81, 
+                            145.04
+                        ], 
+                        [
+                            "interviewer", 
+                            145.04, 
+                            145.75
+                        ]
+                    ], 
+                    "transcript": "before you start or before you even interviewer ", 
+                    "word_confidence": [
+                        [
+                            "before", 
+                            1.0
+                        ], 
+                        [
+                            "you", 
+                            1.0
+                        ], 
+                        [
+                            "start", 
+                            0.587239155051949
+                        ], 
+                        [
+                            "or", 
+                            0.5872391550519492
+                        ], 
+                        [
+                            "before", 
+                            0.9899326623183409
+                        ], 
+                        [
+                            "you", 
+                            1.0
+                        ], 
+                        [
+                            "even", 
+                            1.0
+                        ], 
+                        [
+                            "interviewer", 
+                            0.4330574805683513
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "before you start or before you even interview or "
+                }, 
+                {
+                    "transcript": "before you start or before you even interview were "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 24, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.552, 
+                    "timestamps": [
+                        [
+                            "huh", 
+                            171.1, 
+                            171.4
+                        ]
+                    ], 
+                    "transcript": "huh ", 
+                    "word_confidence": [
+                        [
+                            "huh", 
+                            0.5517538827895797
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "the "
+                }, 
+                {
+                    "transcript": "yeah "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 25, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.145, 
+                    "timestamps": [
+                        [
+                            "all", 
+                            176.22, 
+                            176.6
+                        ]
+                    ], 
+                    "transcript": "all ", 
+                    "word_confidence": [
+                        [
+                            "all", 
+                            0.14480380650839428
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION "
+                }, 
+                {
+                    "transcript": "oh "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 26, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.35, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            181.21, 
+                            181.51
+                        ]
+                    ], 
+                    "transcript": "%HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.3497039866947495
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "so "
+                }, 
+                {
+                    "transcript": "oh "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 27, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.453, 
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            184.24, 
+                            184.56
+                        ]
+                    ], 
+                    "transcript": "yeah ", 
+                    "word_confidence": [
+                        [
+                            "yeah", 
+                            0.45268025970488274
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "yes "
+                }, 
+                {
+                    "transcript": "yet "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 28, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "but", 
+                            185.37, 
+                            185.54
+                        ], 
+                        [
+                            "what", 
+                            185.54, 
+                            185.65
+                        ], 
+                        [
+                            "happens", 
+                            185.65, 
+                            186.04
+                        ], 
+                        [
+                            "if", 
+                            186.04, 
+                            186.24
+                        ], 
+                        [
+                            "you", 
+                            186.24, 
+                            186.44
+                        ], 
+                        [
+                            "were", 
+                            186.44, 
+                            186.62
+                        ], 
+                        [
+                            "to", 
+                            186.62, 
+                            186.78
+                        ], 
+                        [
+                            "fail", 
+                            186.78, 
+                            187.07
+                        ]
+                    ], 
+                    "transcript": "but what happens if you were to fail "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 28, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.919, 
+                    "timestamps": [
+                        [
+                            "but", 
+                            185.37, 
+                            185.54
+                        ], 
+                        [
+                            "what", 
+                            185.54, 
+                            185.65
+                        ], 
+                        [
+                            "happens", 
+                            185.65, 
+                            186.04
+                        ], 
+                        [
+                            "if", 
+                            186.04, 
+                            186.24
+                        ], 
+                        [
+                            "you", 
+                            186.24, 
+                            186.44
+                        ], 
+                        [
+                            "were", 
+                            186.44, 
+                            186.62
+                        ], 
+                        [
+                            "to", 
+                            186.62, 
+                            186.78
+                        ], 
+                        [
+                            "fail", 
+                            186.78, 
+                            187.26
+                        ], 
+                        [
+                            "then", 
+                            187.36, 
+                            187.55
+                        ], 
+                        [
+                            "do", 
+                            187.55, 
+                            187.73
+                        ], 
+                        [
+                            "they", 
+                            187.73, 
+                            187.84
+                        ], 
+                        [
+                            "give", 
+                            187.84, 
+                            188.04
+                        ], 
+                        [
+                            "you", 
+                            188.04, 
+                            188.23
+                        ], 
+                        [
+                            "like", 
+                            188.23, 
+                            188.66
+                        ]
+                    ], 
+                    "transcript": "but what happens if you were to fail then do they give you like ", 
+                    "word_confidence": [
+                        [
+                            "but", 
+                            0.2696388089365294
+                        ], 
+                        [
+                            "what", 
+                            1.0
+                        ], 
+                        [
+                            "happens", 
+                            1.0
+                        ], 
+                        [
+                            "if", 
+                            1.0
+                        ], 
+                        [
+                            "you", 
+                            1.0
+                        ], 
+                        [
+                            "were", 
+                            1.0
+                        ], 
+                        [
+                            "to", 
+                            1.0
+                        ], 
+                        [
+                            "fail", 
+                            0.9911011143669178
+                        ], 
+                        [
+                            "then", 
+                            0.46894915052171066
+                        ], 
+                        [
+                            "do", 
+                            0.8759570040320834
+                        ], 
+                        [
+                            "they", 
+                            1.0
+                        ], 
+                        [
+                            "give", 
+                            1.0
+                        ], 
+                        [
+                            "you", 
+                            1.0
+                        ], 
+                        [
+                            "like", 
+                            0.9828173774385842
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "what happens if you were to fail then do they give you like "
+                }, 
+                {
+                    "transcript": "what what happens if you were to fail then do they give you like "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 29, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.889, 
+                    "timestamps": [
+                        [
+                            "one", 
+                            189.06, 
+                            189.27
+                        ], 
+                        [
+                            "two", 
+                            189.27, 
+                            189.42
+                        ], 
+                        [
+                            "one", 
+                            189.46, 
+                            189.64
+                        ], 
+                        [
+                            "more", 
+                            189.64, 
+                            189.8
+                        ], 
+                        [
+                            "chance", 
+                            189.8, 
+                            190.13
+                        ], 
+                        [
+                            "or", 
+                            190.13, 
+                            190.21
+                        ], 
+                        [
+                            "two", 
+                            190.21, 
+                            190.36
+                        ], 
+                        [
+                            "more", 
+                            190.36, 
+                            190.51
+                        ], 
+                        [
+                            "to", 
+                            190.51, 
+                            190.7
+                        ]
+                    ], 
+                    "transcript": "one two one more chance or two more to ", 
+                    "word_confidence": [
+                        [
+                            "one", 
+                            0.938498351041076
+                        ], 
+                        [
+                            "two", 
+                            0.589838869625042
+                        ], 
+                        [
+                            "one", 
+                            0.9999999999999629
+                        ], 
+                        [
+                            "more", 
+                            0.9999999999999623
+                        ], 
+                        [
+                            "chance", 
+                            0.9990436871798549
+                        ], 
+                        [
+                            "or", 
+                            0.783121866143625
+                        ], 
+                        [
+                            "two", 
+                            0.9999999999999715
+                        ], 
+                        [
+                            "more", 
+                            0.999999999999975
+                        ], 
+                        [
+                            "to", 
+                            0.5498166433209234
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "one to one more chance or two more to "
+                }, 
+                {
+                    "transcript": "one one more chance or two more to "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 30, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            216.98, 
+                            217.32
+                        ], 
+                        [
+                            "no", 
+                            217.32, 
+                            217.83
+                        ], 
+                        [
+                            "I'm", 
+                            217.93, 
+                            218.1
+                        ], 
+                        [
+                            "just", 
+                            218.1, 
+                            218.39
+                        ], 
+                        [
+                            "about", 
+                            218.42, 
+                            218.75
+                        ]
+                    ], 
+                    "transcript": "%HESITATION no I'm just about "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 30, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.988, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            216.98, 
+                            217.32
+                        ], 
+                        [
+                            "no", 
+                            217.32, 
+                            217.83
+                        ], 
+                        [
+                            "I'm", 
+                            217.93, 
+                            218.1
+                        ], 
+                        [
+                            "just", 
+                            218.1, 
+                            218.39
+                        ], 
+                        [
+                            "about", 
+                            218.42, 
+                            218.71
+                        ], 
+                        [
+                            "to", 
+                            218.71, 
+                            218.98
+                        ], 
+                        [
+                            "finish", 
+                            218.98, 
+                            219.29
+                        ], 
+                        [
+                            "my", 
+                            219.29, 
+                            219.41
+                        ], 
+                        [
+                            "masters", 
+                            219.41, 
+                            220.04
+                        ], 
+                        [
+                            "in", 
+                            220.04, 
+                            220.14
+                        ], 
+                        [
+                            "may", 
+                            220.14, 
+                            220.6
+                        ]
+                    ], 
+                    "transcript": "%HESITATION no I'm just about to finish my masters in may ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.9999999999999671
+                        ], 
+                        [
+                            "no", 
+                            0.9959274144558103
+                        ], 
+                        [
+                            "I'm", 
+                            0.9999999999999938
+                        ], 
+                        [
+                            "just", 
+                            0.999999999999996
+                        ], 
+                        [
+                            "about", 
+                            0.9999999999999843
+                        ], 
+                        [
+                            "to", 
+                            0.9999999999999835
+                        ], 
+                        [
+                            "finish", 
+                            0.9999999999999833
+                        ], 
+                        [
+                            "my", 
+                            0.9999999999999839
+                        ], 
+                        [
+                            "masters", 
+                            0.9960768139371944
+                        ], 
+                        [
+                            "in", 
+                            0.7528392780436629
+                        ], 
+                        [
+                            "may", 
+                            0.9701788093047871
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION no I'm just about to finish my masters and may "
+                }, 
+                {
+                    "transcript": "%HESITATION know I'm just about to finish my masters in may "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 31, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "and", 
+                            220.97, 
+                            221.34
+                        ], 
+                        [
+                            "%HESITATION", 
+                            221.34, 
+                            221.63
+                        ], 
+                        [
+                            "just", 
+                            221.8, 
+                            222.04
+                        ], 
+                        [
+                            "interviewing", 
+                            222.04, 
+                            222.52
+                        ], 
+                        [
+                            "with", 
+                            222.52, 
+                            222.64
+                        ], 
+                        [
+                            "come", 
+                            222.64, 
+                            222.78
+                        ]
+                    ], 
+                    "transcript": "and %HESITATION just interviewing with come "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 31, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.959, 
+                    "timestamps": [
+                        [
+                            "and", 
+                            220.97, 
+                            221.34
+                        ], 
+                        [
+                            "%HESITATION", 
+                            221.34, 
+                            221.63
+                        ], 
+                        [
+                            "just", 
+                            221.8, 
+                            222.04
+                        ], 
+                        [
+                            "interviewing", 
+                            222.04, 
+                            222.52
+                        ], 
+                        [
+                            "with", 
+                            222.52, 
+                            222.64
+                        ], 
+                        [
+                            "companies", 
+                            222.64, 
+                            223.02
+                        ], 
+                        [
+                            "right", 
+                            223.02, 
+                            223.2
+                        ], 
+                        [
+                            "now", 
+                            223.2, 
+                            223.53
+                        ]
+                    ], 
+                    "transcript": "and %HESITATION just interviewing with companies right now ", 
+                    "word_confidence": [
+                        [
+                            "and", 
+                            1.0
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.9999999999999833
+                        ], 
+                        [
+                            "just", 
+                            0.6144255301659226
+                        ], 
+                        [
+                            "interviewing", 
+                            0.999999999999984
+                        ], 
+                        [
+                            "with", 
+                            0.9999999999999916
+                        ], 
+                        [
+                            "companies", 
+                            0.9999999999999987
+                        ], 
+                        [
+                            "right", 
+                            1.0
+                        ], 
+                        [
+                            "now", 
+                            0.9845264540986102
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "and %HESITATION this interviewing with companies right now "
+                }, 
+                {
+                    "transcript": "and %HESITATION interviewing with companies right now "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 32, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.588, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            235.6, 
+                            236.02
+                        ]
+                    ], 
+                    "transcript": "%HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.5884606019858435
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "all "
+                }, 
+                {
+                    "transcript": "oh "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 33, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "do", 
+                            250.99, 
+                            251.26
+                        ], 
+                        [
+                            "do", 
+                            251.59, 
+                            251.71
+                        ], 
+                        [
+                            "they", 
+                            251.71, 
+                            251.81
+                        ], 
+                        [
+                            "test", 
+                            251.81, 
+                            252.15
+                        ], 
+                        [
+                            "you", 
+                            252.15, 
+                            252.46
+                        ], 
+                        [
+                            "right", 
+                            252.59, 
+                            252.72
+                        ]
+                    ], 
+                    "transcript": "do do they test you right "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 33, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.872, 
+                    "timestamps": [
+                        [
+                            "do", 
+                            250.99, 
+                            251.26
+                        ], 
+                        [
+                            "do", 
+                            251.59, 
+                            251.71
+                        ], 
+                        [
+                            "they", 
+                            251.71, 
+                            251.81
+                        ], 
+                        [
+                            "test", 
+                            251.81, 
+                            252.15
+                        ], 
+                        [
+                            "you", 
+                            252.15, 
+                            252.46
+                        ], 
+                        [
+                            "right", 
+                            252.59, 
+                            252.78
+                        ], 
+                        [
+                            "now", 
+                            252.78, 
+                            253.02
+                        ], 
+                        [
+                            "at", 
+                            253.02, 
+                            253.15
+                        ], 
+                        [
+                            "work", 
+                            253.15, 
+                            253.44
+                        ], 
+                        [
+                            "too", 
+                            253.44, 
+                            253.8
+                        ]
+                    ], 
+                    "transcript": "do do they test you right now at work too ", 
+                    "word_confidence": [
+                        [
+                            "do", 
+                            0.7311165467586279
+                        ], 
+                        [
+                            "do", 
+                            0.9999999999999609
+                        ], 
+                        [
+                            "they", 
+                            0.4328293297675801
+                        ], 
+                        [
+                            "test", 
+                            0.9999999999999619
+                        ], 
+                        [
+                            "you", 
+                            0.8839497614202084
+                        ], 
+                        [
+                            "right", 
+                            0.9999999999999684
+                        ], 
+                        [
+                            "now", 
+                            0.936416218854727
+                        ], 
+                        [
+                            "at", 
+                            0.3372354687091666
+                        ], 
+                        [
+                            "work", 
+                            0.9016357315557868
+                        ], 
+                        [
+                            "too", 
+                            0.9853210047241119
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "do do they test you right now at work to "
+                }, 
+                {
+                    "transcript": "do do they test you right now what work to "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 34, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.908, 
+                    "timestamps": [
+                        [
+                            "okay", 
+                            254.83, 
+                            255.17
+                        ]
+                    ], 
+                    "transcript": "okay ", 
+                    "word_confidence": [
+                        [
+                            "okay", 
+                            0.9079683825273426
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 35, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.874, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            264.56, 
+                            264.96
+                        ]
+                    ], 
+                    "transcript": "%HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.8743573890115647
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "oh "
+                }, 
+                {
+                    "transcript": "O. "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 36, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "wow", 
+                            293.63, 
+                            294.06
+                        ], 
+                        [
+                            "is", 
+                            294.2, 
+                            294.43
+                        ], 
+                        [
+                            "it", 
+                            294.43, 
+                            294.62
+                        ], 
+                        [
+                            "formal", 
+                            294.72, 
+                            295.2
+                        ]
+                    ], 
+                    "transcript": "wow is it formal "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 36, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "wow", 
+                            293.63, 
+                            294.06
+                        ], 
+                        [
+                            "is", 
+                            294.2, 
+                            294.43
+                        ], 
+                        [
+                            "it", 
+                            294.43, 
+                            294.62
+                        ], 
+                        [
+                            "formal", 
+                            294.72, 
+                            295.12
+                        ], 
+                        [
+                            "policy", 
+                            295.12, 
+                            295.78
+                        ], 
+                        [
+                            "that", 
+                            295.84, 
+                            296.01
+                        ], 
+                        [
+                            "they", 
+                            296.01, 
+                            296.12
+                        ], 
+                        [
+                            "said", 
+                            296.12, 
+                            296.38
+                        ], 
+                        [
+                            "that", 
+                            296.38, 
+                            296.54
+                        ], 
+                        [
+                            "they", 
+                            296.54, 
+                            296.66
+                        ], 
+                        [
+                            "might", 
+                            296.66, 
+                            297.02
+                        ]
+                    ], 
+                    "transcript": "wow is it formal policy that they said that they might "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 36, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.931, 
+                    "timestamps": [
+                        [
+                            "wow", 
+                            293.63, 
+                            294.06
+                        ], 
+                        [
+                            "is", 
+                            294.2, 
+                            294.43
+                        ], 
+                        [
+                            "it", 
+                            294.43, 
+                            294.62
+                        ], 
+                        [
+                            "formal", 
+                            294.72, 
+                            295.12
+                        ], 
+                        [
+                            "policy", 
+                            295.12, 
+                            295.78
+                        ], 
+                        [
+                            "that", 
+                            295.84, 
+                            296.01
+                        ], 
+                        [
+                            "they", 
+                            296.01, 
+                            296.12
+                        ], 
+                        [
+                            "said", 
+                            296.12, 
+                            296.38
+                        ], 
+                        [
+                            "that", 
+                            296.38, 
+                            296.54
+                        ], 
+                        [
+                            "they", 
+                            296.54, 
+                            296.66
+                        ], 
+                        [
+                            "might", 
+                            296.66, 
+                            297.02
+                        ], 
+                        [
+                            "test", 
+                            297.39, 
+                            297.88
+                        ]
+                    ], 
+                    "transcript": "wow is it formal policy that they said that they might test ", 
+                    "word_confidence": [
+                        [
+                            "wow", 
+                            0.4507428487464123
+                        ], 
+                        [
+                            "is", 
+                            0.9999999999999085
+                        ], 
+                        [
+                            "it", 
+                            0.9874325483320007
+                        ], 
+                        [
+                            "formal", 
+                            0.9999999999998963
+                        ], 
+                        [
+                            "policy", 
+                            0.9965890947079666
+                        ], 
+                        [
+                            "that", 
+                            0.9999999999998896
+                        ], 
+                        [
+                            "they", 
+                            0.999999999999907
+                        ], 
+                        [
+                            "said", 
+                            0.9999999999999064
+                        ], 
+                        [
+                            "that", 
+                            0.9999999999999182
+                        ], 
+                        [
+                            "they", 
+                            0.9999999999999182
+                        ], 
+                        [
+                            "might", 
+                            0.9999999999999347
+                        ], 
+                        [
+                            "test", 
+                            0.9898602329723287
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "well is it formal policy that they said that they might test "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}

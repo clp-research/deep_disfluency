@@ -1,0 +1,4447 @@
+{
+    "result_index": 0, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.769, 
+                    "timestamps": [
+                        [
+                            "hello", 
+                            1.26, 
+                            1.67
+                        ], 
+                        [
+                            "Chuck", 
+                            1.67, 
+                            2.21
+                        ]
+                    ], 
+                    "transcript": "hello Chuck ", 
+                    "word_confidence": [
+                        [
+                            "hello", 
+                            0.9999999999999861
+                        ], 
+                        [
+                            "Chuck", 
+                            0.5931058002765495
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "hello chock "
+                }, 
+                {
+                    "transcript": "hello shock "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 1, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.983, 
+                    "timestamps": [
+                        [
+                            "uhhuh", 
+                            10.33, 
+                            10.81
+                        ]
+                    ], 
+                    "transcript": "uhhuh ", 
+                    "word_confidence": [
+                        [
+                            "uhhuh", 
+                            0.9825117753183171
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 2, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.989, 
+                    "timestamps": [
+                        [
+                            "uhhuh", 
+                            18.42, 
+                            18.89
+                        ]
+                    ], 
+                    "transcript": "uhhuh ", 
+                    "word_confidence": [
+                        [
+                            "uhhuh", 
+                            0.9893236707535651
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 3, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            31.68, 
+                            31.86
+                        ], 
+                        [
+                            "didn't", 
+                            31.86, 
+                            32.1
+                        ], 
+                        [
+                            "think", 
+                            32.1, 
+                            32.28
+                        ], 
+                        [
+                            "that", 
+                            32.28, 
+                            32.5
+                        ], 
+                        [
+                            "was", 
+                            32.5, 
+                            32.68
+                        ], 
+                        [
+                            "a", 
+                            32.68, 
+                            32.76
+                        ], 
+                        [
+                            "new", 
+                            32.76, 
+                            32.97
+                        ]
+                    ], 
+                    "transcript": "I didn't think that was a new "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 3, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.959, 
+                    "timestamps": [
+                        [
+                            "I", 
+                            31.68, 
+                            31.86
+                        ], 
+                        [
+                            "didn't", 
+                            31.86, 
+                            32.1
+                        ], 
+                        [
+                            "think", 
+                            32.1, 
+                            32.28
+                        ], 
+                        [
+                            "that", 
+                            32.28, 
+                            32.5
+                        ], 
+                        [
+                            "was", 
+                            32.5, 
+                            32.68
+                        ], 
+                        [
+                            "a", 
+                            32.68, 
+                            32.76
+                        ], 
+                        [
+                            "new", 
+                            32.76, 
+                            32.99
+                        ], 
+                        [
+                            "revelation", 
+                            32.99, 
+                            34.08
+                        ]
+                    ], 
+                    "transcript": "I didn't think that was a new revelation ", 
+                    "word_confidence": [
+                        [
+                            "I", 
+                            0.7240597176532073
+                        ], 
+                        [
+                            "didn't", 
+                            0.9784358465190411
+                        ], 
+                        [
+                            "think", 
+                            0.9999999999999764
+                        ], 
+                        [
+                            "that", 
+                            0.9999999999999836
+                        ], 
+                        [
+                            "was", 
+                            0.9684502780853629
+                        ], 
+                        [
+                            "a", 
+                            0.7160525027683756
+                        ], 
+                        [
+                            "new", 
+                            0.9572203867157995
+                        ], 
+                        [
+                            "revelation", 
+                            0.9948807972014097
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "and I didn't think that was a new revelation "
+                }, 
+                {
+                    "transcript": "I'm I didn't think that was a new revelation "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 4, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.966, 
+                    "timestamps": [
+                        [
+                            "right", 
+                            36.51, 
+                            37.31
+                        ]
+                    ], 
+                    "transcript": "right ", 
+                    "word_confidence": [
+                        [
+                            "right", 
+                            0.9661232574507634
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "write "
+                }, 
+                {
+                    "transcript": "all right "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 5, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "so", 
+                            38.45, 
+                            38.73
+                        ], 
+                        [
+                            "what", 
+                            38.73, 
+                            39.01
+                        ], 
+                        [
+                            "water", 
+                            39.04, 
+                            39.6
+                        ], 
+                        [
+                            "is", 
+                            39.63, 
+                            39.87
+                        ], 
+                        [
+                            "that", 
+                            39.87, 
+                            40.01
+                        ], 
+                        [
+                            "it", 
+                            40.01, 
+                            40.24
+                        ]
+                    ], 
+                    "transcript": "so what water is that it "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 5, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.829, 
+                    "timestamps": [
+                        [
+                            "so", 
+                            38.45, 
+                            38.73
+                        ], 
+                        [
+                            "what", 
+                            38.73, 
+                            39.01
+                        ], 
+                        [
+                            "water", 
+                            39.04, 
+                            39.6
+                        ], 
+                        [
+                            "is", 
+                            39.63, 
+                            39.87
+                        ], 
+                        [
+                            "the", 
+                            39.87, 
+                            40.07
+                        ], 
+                        [
+                            "EPA", 
+                            40.07, 
+                            40.44
+                        ], 
+                        [
+                            "recommending", 
+                            40.44, 
+                            41.22
+                        ], 
+                        [
+                            "now", 
+                            41.28, 
+                            41.63
+                        ]
+                    ], 
+                    "transcript": "so what water is the EPA recommending now ", 
+                    "word_confidence": [
+                        [
+                            "so", 
+                            1.0
+                        ], 
+                        [
+                            "what", 
+                            0.8896041985397366
+                        ], 
+                        [
+                            "water", 
+                            0.2999224101760291
+                        ], 
+                        [
+                            "is", 
+                            0.9849913714308968
+                        ], 
+                        [
+                            "the", 
+                            1.0
+                        ], 
+                        [
+                            "EPA", 
+                            1.0
+                        ], 
+                        [
+                            "recommending", 
+                            0.9962692052983624
+                        ], 
+                        [
+                            "now", 
+                            0.7322490618351989
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "so what what are is the EPA recommending now "
+                }, 
+                {
+                    "transcript": "so what what are you is the EPA recommending now "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 6, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.985, 
+                    "timestamps": [
+                        [
+                            "uhhuh", 
+                            53.91, 
+                            54.46
+                        ]
+                    ], 
+                    "transcript": "uhhuh ", 
+                    "word_confidence": [
+                        [
+                            "uhhuh", 
+                            0.9852354814399751
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 7, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.678, 
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            79.57, 
+                            80.16
+                        ]
+                    ], 
+                    "transcript": "yeah ", 
+                    "word_confidence": [
+                        [
+                            "yeah", 
+                            0.67823289587794
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "yeah her "
+                }, 
+                {
+                    "transcript": "yeah there "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 8, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.309, 
+                    "timestamps": [
+                        [
+                            "all", 
+                            90.85, 
+                            91.12
+                        ], 
+                        [
+                            "right", 
+                            91.12, 
+                            91.61
+                        ]
+                    ], 
+                    "transcript": "all right ", 
+                    "word_confidence": [
+                        [
+                            "all", 
+                            0.3368681177569086
+                        ], 
+                        [
+                            "right", 
+                            0.2928795219837745
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "oh my "
+                }, 
+                {
+                    "transcript": "my "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 9, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "that's", 
+                            92.41, 
+                            92.74
+                        ], 
+                        [
+                            "a", 
+                            92.74, 
+                            92.94
+                        ], 
+                        [
+                            "that's", 
+                            92.97, 
+                            93.24
+                        ], 
+                        [
+                            "a", 
+                            93.24, 
+                            93.3
+                        ], 
+                        [
+                            "common", 
+                            93.3, 
+                            93.65
+                        ], 
+                        [
+                            "problem", 
+                            93.65, 
+                            94.14
+                        ]
+                    ], 
+                    "transcript": "that's a that's a common problem "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 9, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "that's", 
+                            92.41, 
+                            92.74
+                        ], 
+                        [
+                            "a", 
+                            92.74, 
+                            92.94
+                        ], 
+                        [
+                            "that's", 
+                            92.97, 
+                            93.24
+                        ], 
+                        [
+                            "a", 
+                            93.24, 
+                            93.3
+                        ], 
+                        [
+                            "common", 
+                            93.3, 
+                            93.65
+                        ], 
+                        [
+                            "problem", 
+                            93.65, 
+                            94.12
+                        ], 
+                        [
+                            "now", 
+                            94.12, 
+                            94.54
+                        ], 
+                        [
+                            "that", 
+                            94.71, 
+                            94.97
+                        ], 
+                        [
+                            "seems", 
+                            94.97, 
+                            95.4
+                        ], 
+                        [
+                            "the", 
+                            95.52, 
+                            95.69
+                        ]
+                    ], 
+                    "transcript": "that's a that's a common problem now that seems the "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 9, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "that's", 
+                            92.41, 
+                            92.74
+                        ], 
+                        [
+                            "a", 
+                            92.74, 
+                            92.94
+                        ], 
+                        [
+                            "that's", 
+                            92.97, 
+                            93.24
+                        ], 
+                        [
+                            "a", 
+                            93.24, 
+                            93.3
+                        ], 
+                        [
+                            "common", 
+                            93.3, 
+                            93.65
+                        ], 
+                        [
+                            "problem", 
+                            93.65, 
+                            94.12
+                        ], 
+                        [
+                            "now", 
+                            94.12, 
+                            94.54
+                        ], 
+                        [
+                            "that", 
+                            94.71, 
+                            94.97
+                        ], 
+                        [
+                            "seems", 
+                            94.97, 
+                            95.4
+                        ], 
+                        [
+                            "that", 
+                            95.52, 
+                            95.71
+                        ], 
+                        [
+                            "has", 
+                            95.71, 
+                            95.88
+                        ], 
+                        [
+                            "happened", 
+                            95.88, 
+                            96.36
+                        ], 
+                        [
+                            "in", 
+                            96.36, 
+                            96.6
+                        ], 
+                        [
+                            "Dallas", 
+                            96.6, 
+                            97.19
+                        ], 
+                        [
+                            "this", 
+                            97.19, 
+                            97.4
+                        ], 
+                        [
+                            "will", 
+                            97.4, 
+                            97.61
+                        ], 
+                        [
+                            "listen", 
+                            97.61, 
+                            97.89
+                        ], 
+                        [
+                            "to", 
+                            97.89, 
+                            97.98
+                        ], 
+                        [
+                            "your", 
+                            97.98, 
+                            98.14
+                        ]
+                    ], 
+                    "transcript": "that's a that's a common problem now that seems that has happened in Dallas this will listen to your "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 9, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.827, 
+                    "timestamps": [
+                        [
+                            "that's", 
+                            92.41, 
+                            92.74
+                        ], 
+                        [
+                            "a", 
+                            92.74, 
+                            92.94
+                        ], 
+                        [
+                            "that's", 
+                            92.97, 
+                            93.24
+                        ], 
+                        [
+                            "a", 
+                            93.24, 
+                            93.3
+                        ], 
+                        [
+                            "common", 
+                            93.3, 
+                            93.65
+                        ], 
+                        [
+                            "problem", 
+                            93.65, 
+                            94.12
+                        ], 
+                        [
+                            "now", 
+                            94.12, 
+                            94.54
+                        ], 
+                        [
+                            "that", 
+                            94.71, 
+                            94.97
+                        ], 
+                        [
+                            "seems", 
+                            94.97, 
+                            95.4
+                        ], 
+                        [
+                            "that", 
+                            95.52, 
+                            95.71
+                        ], 
+                        [
+                            "has", 
+                            95.71, 
+                            95.88
+                        ], 
+                        [
+                            "happened", 
+                            95.88, 
+                            96.36
+                        ], 
+                        [
+                            "in", 
+                            96.36, 
+                            96.6
+                        ], 
+                        [
+                            "Dallas", 
+                            96.6, 
+                            97.2
+                        ], 
+                        [
+                            "with", 
+                            97.2, 
+                            97.4
+                        ], 
+                        [
+                            "Willis", 
+                            97.4, 
+                            97.83
+                        ], 
+                        [
+                            "New", 
+                            97.83, 
+                            97.98
+                        ], 
+                        [
+                            "York", 
+                            97.98, 
+                            98.53
+                        ]
+                    ], 
+                    "transcript": "that's a that's a common problem now that seems that has happened in Dallas with Willis New York ", 
+                    "word_confidence": [
+                        [
+                            "that's", 
+                            0.9999999999999933
+                        ], 
+                        [
+                            "a", 
+                            0.8038569674759353
+                        ], 
+                        [
+                            "that's", 
+                            1.0
+                        ], 
+                        [
+                            "a", 
+                            1.0
+                        ], 
+                        [
+                            "common", 
+                            1.0
+                        ], 
+                        [
+                            "problem", 
+                            1.0
+                        ], 
+                        [
+                            "now", 
+                            0.8523019536107812
+                        ], 
+                        [
+                            "that", 
+                            0.3255749183525378
+                        ], 
+                        [
+                            "seems", 
+                            0.4458527777648785
+                        ], 
+                        [
+                            "that", 
+                            0.48492013015390667
+                        ], 
+                        [
+                            "has", 
+                            0.980516055269509
+                        ], 
+                        [
+                            "happened", 
+                            1.0
+                        ], 
+                        [
+                            "in", 
+                            1.0
+                        ], 
+                        [
+                            "Dallas", 
+                            0.9952044152269252
+                        ], 
+                        [
+                            "with", 
+                            0.2695473511124808
+                        ], 
+                        [
+                            "Willis", 
+                            0.4631894059609333
+                        ], 
+                        [
+                            "New", 
+                            1.0
+                        ], 
+                        [
+                            "York", 
+                            0.9890178780752724
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "that's a that's a common problem now the teams that has happened in Dallas with Willis New York "
+                }, 
+                {
+                    "transcript": "that's a that's a common problem now that seems that has happened in Dallas this Willis New York "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 10, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "and", 
+                            99.53, 
+                            99.99
+                        ], 
+                        [
+                            "I", 
+                            100.42, 
+                            100.56
+                        ], 
+                        [
+                            "try", 
+                            100.56, 
+                            100.79
+                        ], 
+                        [
+                            "to", 
+                            100.79, 
+                            100.92
+                        ], 
+                        [
+                            "reset", 
+                            100.92, 
+                            101.2
+                        ]
+                    ], 
+                    "transcript": "and I try to reset "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 10, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "and", 
+                            99.53, 
+                            99.99
+                        ], 
+                        [
+                            "I", 
+                            100.42, 
+                            100.56
+                        ], 
+                        [
+                            "try", 
+                            100.56, 
+                            100.79
+                        ], 
+                        [
+                            "to", 
+                            100.79, 
+                            100.92
+                        ], 
+                        [
+                            "recycle", 
+                            100.92, 
+                            101.56
+                        ], 
+                        [
+                            "all", 
+                            101.56, 
+                            101.75
+                        ], 
+                        [
+                            "of", 
+                            101.75, 
+                            101.84
+                        ], 
+                        [
+                            "the", 
+                            101.84, 
+                            101.94
+                        ], 
+                        [
+                            "newspapers", 
+                            101.94, 
+                            102.49
+                        ], 
+                        [
+                            "that", 
+                            102.49, 
+                            102.65
+                        ], 
+                        [
+                            "come", 
+                            102.65, 
+                            102.87
+                        ], 
+                        [
+                            "to", 
+                            102.87, 
+                            102.95
+                        ], 
+                        [
+                            "mind", 
+                            102.95, 
+                            103.2
+                        ]
+                    ], 
+                    "transcript": "and I try to recycle all of the newspapers that come to mind "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 10, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "and", 
+                            99.53, 
+                            99.99
+                        ], 
+                        [
+                            "I", 
+                            100.42, 
+                            100.56
+                        ], 
+                        [
+                            "try", 
+                            100.56, 
+                            100.79
+                        ], 
+                        [
+                            "to", 
+                            100.79, 
+                            100.92
+                        ], 
+                        [
+                            "recycle", 
+                            100.92, 
+                            101.56
+                        ], 
+                        [
+                            "all", 
+                            101.56, 
+                            101.75
+                        ], 
+                        [
+                            "of", 
+                            101.75, 
+                            101.84
+                        ], 
+                        [
+                            "the", 
+                            101.84, 
+                            101.94
+                        ], 
+                        [
+                            "newspapers", 
+                            101.94, 
+                            102.49
+                        ], 
+                        [
+                            "that", 
+                            102.49, 
+                            102.65
+                        ], 
+                        [
+                            "come", 
+                            102.65, 
+                            102.87
+                        ], 
+                        [
+                            "to", 
+                            102.87, 
+                            102.95
+                        ], 
+                        [
+                            "my", 
+                            102.95, 
+                            103.2
+                        ], 
+                        [
+                            "house", 
+                            103.2, 
+                            103.47
+                        ], 
+                        [
+                            "and", 
+                            103.47, 
+                            103.57
+                        ], 
+                        [
+                            "after", 
+                            103.57, 
+                            103.83
+                        ], 
+                        [
+                            "a", 
+                            103.83, 
+                            103.89
+                        ], 
+                        [
+                            "while", 
+                            103.89, 
+                            104.16
+                        ], 
+                        [
+                            "I", 
+                            104.16, 
+                            104.22
+                        ], 
+                        [
+                            "just", 
+                            104.22, 
+                            104.43
+                        ], 
+                        [
+                            "quit", 
+                            104.43, 
+                            104.62
+                        ], 
+                        [
+                            "taking", 
+                            104.62, 
+                            104.99
+                        ], 
+                        [
+                            "a", 
+                            104.99, 
+                            105.04
+                        ], 
+                        [
+                            "new", 
+                            105.04, 
+                            105.2
+                        ]
+                    ], 
+                    "transcript": "and I try to recycle all of the newspapers that come to my house and after a while I just quit taking a new "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 10, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "and", 
+                            99.53, 
+                            99.99
+                        ], 
+                        [
+                            "I", 
+                            100.42, 
+                            100.56
+                        ], 
+                        [
+                            "try", 
+                            100.56, 
+                            100.79
+                        ], 
+                        [
+                            "to", 
+                            100.79, 
+                            100.92
+                        ], 
+                        [
+                            "recycle", 
+                            100.92, 
+                            101.56
+                        ], 
+                        [
+                            "all", 
+                            101.56, 
+                            101.75
+                        ], 
+                        [
+                            "of", 
+                            101.75, 
+                            101.84
+                        ], 
+                        [
+                            "the", 
+                            101.84, 
+                            101.94
+                        ], 
+                        [
+                            "newspapers", 
+                            101.94, 
+                            102.49
+                        ], 
+                        [
+                            "that", 
+                            102.49, 
+                            102.65
+                        ], 
+                        [
+                            "come", 
+                            102.65, 
+                            102.87
+                        ], 
+                        [
+                            "to", 
+                            102.87, 
+                            102.95
+                        ], 
+                        [
+                            "my", 
+                            102.95, 
+                            103.2
+                        ], 
+                        [
+                            "house", 
+                            103.2, 
+                            103.47
+                        ], 
+                        [
+                            "and", 
+                            103.47, 
+                            103.57
+                        ], 
+                        [
+                            "after", 
+                            103.57, 
+                            103.83
+                        ], 
+                        [
+                            "a", 
+                            103.83, 
+                            103.89
+                        ], 
+                        [
+                            "while", 
+                            103.89, 
+                            104.16
+                        ], 
+                        [
+                            "I", 
+                            104.16, 
+                            104.22
+                        ], 
+                        [
+                            "just", 
+                            104.22, 
+                            104.43
+                        ], 
+                        [
+                            "quit", 
+                            104.43, 
+                            104.62
+                        ], 
+                        [
+                            "taking", 
+                            104.62, 
+                            104.97
+                        ], 
+                        [
+                            "the", 
+                            104.97, 
+                            105.04
+                        ], 
+                        [
+                            "newspaper", 
+                            105.04, 
+                            105.65
+                        ], 
+                        [
+                            "because", 
+                            105.65, 
+                            106.02
+                        ], 
+                        [
+                            "I", 
+                            106.02, 
+                            106.09
+                        ], 
+                        [
+                            "couldn't", 
+                            106.09, 
+                            106.45
+                        ], 
+                        [
+                            "recycle", 
+                            106.7, 
+                            107.2
+                        ]
+                    ], 
+                    "transcript": "and I try to recycle all of the newspapers that come to my house and after a while I just quit taking the newspaper because I couldn't recycle "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 10, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.972, 
+                    "timestamps": [
+                        [
+                            "and", 
+                            99.53, 
+                            99.99
+                        ], 
+                        [
+                            "I", 
+                            100.42, 
+                            100.56
+                        ], 
+                        [
+                            "try", 
+                            100.56, 
+                            100.79
+                        ], 
+                        [
+                            "to", 
+                            100.79, 
+                            100.92
+                        ], 
+                        [
+                            "recycle", 
+                            100.92, 
+                            101.56
+                        ], 
+                        [
+                            "all", 
+                            101.56, 
+                            101.75
+                        ], 
+                        [
+                            "of", 
+                            101.75, 
+                            101.84
+                        ], 
+                        [
+                            "the", 
+                            101.84, 
+                            101.94
+                        ], 
+                        [
+                            "newspapers", 
+                            101.94, 
+                            102.49
+                        ], 
+                        [
+                            "that", 
+                            102.49, 
+                            102.65
+                        ], 
+                        [
+                            "come", 
+                            102.65, 
+                            102.87
+                        ], 
+                        [
+                            "to", 
+                            102.87, 
+                            102.95
+                        ], 
+                        [
+                            "my", 
+                            102.95, 
+                            103.2
+                        ], 
+                        [
+                            "house", 
+                            103.2, 
+                            103.47
+                        ], 
+                        [
+                            "and", 
+                            103.47, 
+                            103.57
+                        ], 
+                        [
+                            "after", 
+                            103.57, 
+                            103.83
+                        ], 
+                        [
+                            "a", 
+                            103.83, 
+                            103.89
+                        ], 
+                        [
+                            "while", 
+                            103.89, 
+                            104.16
+                        ], 
+                        [
+                            "I", 
+                            104.16, 
+                            104.22
+                        ], 
+                        [
+                            "just", 
+                            104.22, 
+                            104.43
+                        ], 
+                        [
+                            "quit", 
+                            104.43, 
+                            104.62
+                        ], 
+                        [
+                            "taking", 
+                            104.62, 
+                            104.97
+                        ], 
+                        [
+                            "the", 
+                            104.97, 
+                            105.04
+                        ], 
+                        [
+                            "newspaper", 
+                            105.04, 
+                            105.65
+                        ], 
+                        [
+                            "because", 
+                            105.65, 
+                            106.02
+                        ], 
+                        [
+                            "I", 
+                            106.02, 
+                            106.09
+                        ], 
+                        [
+                            "couldn't", 
+                            106.09, 
+                            106.45
+                        ], 
+                        [
+                            "recycle", 
+                            106.7, 
+                            107.25
+                        ], 
+                        [
+                            "it", 
+                            107.25, 
+                            107.36
+                        ], 
+                        [
+                            "anymore", 
+                            107.36, 
+                            107.82
+                        ]
+                    ], 
+                    "transcript": "and I try to recycle all of the newspapers that come to my house and after a while I just quit taking the newspaper because I couldn't recycle it anymore ", 
+                    "word_confidence": [
+                        [
+                            "and", 
+                            0.9999999999999506
+                        ], 
+                        [
+                            "I", 
+                            0.8388677050717346
+                        ], 
+                        [
+                            "try", 
+                            0.9021216042880787
+                        ], 
+                        [
+                            "to", 
+                            0.9667847712912894
+                        ], 
+                        [
+                            "recycle", 
+                            0.9999999999999483
+                        ], 
+                        [
+                            "all", 
+                            0.9747155669087365
+                        ], 
+                        [
+                            "of", 
+                            0.9999999999999686
+                        ], 
+                        [
+                            "the", 
+                            0.9999999999999345
+                        ], 
+                        [
+                            "newspapers", 
+                            0.9999999999999346
+                        ], 
+                        [
+                            "that", 
+                            0.9999999999999346
+                        ], 
+                        [
+                            "come", 
+                            0.9999999999999347
+                        ], 
+                        [
+                            "to", 
+                            0.9999999999998692
+                        ], 
+                        [
+                            "my", 
+                            0.9999999999999347
+                        ], 
+                        [
+                            "house", 
+                            0.9999999999998643
+                        ], 
+                        [
+                            "and", 
+                            0.9104068089458599
+                        ], 
+                        [
+                            "after", 
+                            0.999999999999911
+                        ], 
+                        [
+                            "a", 
+                            0.5256877760507912
+                        ], 
+                        [
+                            "while", 
+                            0.6337190186762826
+                        ], 
+                        [
+                            "I", 
+                            0.9999999999999073
+                        ], 
+                        [
+                            "just", 
+                            0.9999999999999212
+                        ], 
+                        [
+                            "quit", 
+                            0.9999999999999278
+                        ], 
+                        [
+                            "taking", 
+                            0.9999999999999235
+                        ], 
+                        [
+                            "the", 
+                            0.8018452809700956
+                        ], 
+                        [
+                            "newspaper", 
+                            0.9999999999999264
+                        ], 
+                        [
+                            "because", 
+                            0.9858076664451697
+                        ], 
+                        [
+                            "I", 
+                            0.9999999999999084
+                        ], 
+                        [
+                            "couldn't", 
+                            0.9999999999998787
+                        ], 
+                        [
+                            "recycle", 
+                            0.9999999999999508
+                        ], 
+                        [
+                            "it", 
+                            0.9999999999999839
+                        ], 
+                        [
+                            "anymore", 
+                            0.9913619441027082
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "and I try to recycle all of the newspapers that come to my house and after awhile I just quit taking the newspaper because I couldn't recycle it anymore "
+                }, 
+                {
+                    "transcript": "and I tried to recycle all of the newspapers that come to my house and after a while I just quit taking the newspaper because I couldn't recycle it anymore "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 11, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "which", 
+                            109.2, 
+                            109.44
+                        ], 
+                        [
+                            "isn't", 
+                            109.44, 
+                            109.74
+                        ], 
+                        [
+                            "good", 
+                            109.74, 
+                            109.93
+                        ], 
+                        [
+                            "for", 
+                            109.93, 
+                            110.09
+                        ], 
+                        [
+                            "business", 
+                            110.09, 
+                            110.56
+                        ], 
+                        [
+                            "on", 
+                            110.56, 
+                            110.71
+                        ], 
+                        [
+                            "the", 
+                            110.71, 
+                            110.93
+                        ]
+                    ], 
+                    "transcript": "which isn't good for business on the "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 11, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.956, 
+                    "timestamps": [
+                        [
+                            "which", 
+                            109.2, 
+                            109.44
+                        ], 
+                        [
+                            "isn't", 
+                            109.44, 
+                            109.74
+                        ], 
+                        [
+                            "good", 
+                            109.74, 
+                            109.93
+                        ], 
+                        [
+                            "for", 
+                            109.93, 
+                            110.09
+                        ], 
+                        [
+                            "business", 
+                            110.09, 
+                            110.56
+                        ], 
+                        [
+                            "on", 
+                            110.56, 
+                            110.71
+                        ], 
+                        [
+                            "the", 
+                            110.71, 
+                            110.82
+                        ], 
+                        [
+                            "other", 
+                            110.82, 
+                            111.09
+                        ], 
+                        [
+                            "end", 
+                            111.09, 
+                            111.34
+                        ], 
+                        [
+                            "either", 
+                            111.34, 
+                            111.66
+                        ], 
+                        [
+                            "I", 
+                            111.66, 
+                            111.75
+                        ], 
+                        [
+                            "suppose", 
+                            111.75, 
+                            112.46
+                        ]
+                    ], 
+                    "transcript": "which isn't good for business on the other end either I suppose ", 
+                    "word_confidence": [
+                        [
+                            "which", 
+                            1.0
+                        ], 
+                        [
+                            "isn't", 
+                            0.5791406606931783
+                        ], 
+                        [
+                            "good", 
+                            0.9811292566385743
+                        ], 
+                        [
+                            "for", 
+                            0.9999999999999889
+                        ], 
+                        [
+                            "business", 
+                            0.9999999999999767
+                        ], 
+                        [
+                            "on", 
+                            0.9999999999999839
+                        ], 
+                        [
+                            "the", 
+                            0.9999999999999839
+                        ], 
+                        [
+                            "other", 
+                            0.9999999999999835
+                        ], 
+                        [
+                            "end", 
+                            0.9999999999999745
+                        ], 
+                        [
+                            "either", 
+                            0.980840673200595
+                        ], 
+                        [
+                            "I", 
+                            0.9999999999999611
+                        ], 
+                        [
+                            "suppose", 
+                            0.9885879831208523
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "which is good for business on the other end either I suppose "
+                }, 
+                {
+                    "transcript": "which is a good for business on the other end either I suppose "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 12, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.988, 
+                    "timestamps": [
+                        [
+                            "right", 
+                            134.44, 
+                            135.07
+                        ]
+                    ], 
+                    "transcript": "right ", 
+                    "word_confidence": [
+                        [
+                            "right", 
+                            0.9883193170560529
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "write "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 13, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.985, 
+                    "timestamps": [
+                        [
+                            "well", 
+                            145.59, 
+                            145.79
+                        ], 
+                        [
+                            "that's", 
+                            145.79, 
+                            146.06
+                        ], 
+                        [
+                            "good", 
+                            146.06, 
+                            146.48
+                        ]
+                    ], 
+                    "transcript": "well that's good ", 
+                    "word_confidence": [
+                        [
+                            "well", 
+                            0.9958424505417994
+                        ], 
+                        [
+                            "that's", 
+                            0.9999999999999923
+                        ], 
+                        [
+                            "good", 
+                            0.9697316715090013
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "well thats good "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 14, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "right", 
+                            157.96, 
+                            158.27
+                        ], 
+                        [
+                            "there", 
+                            158.27, 
+                            158.4
+                        ], 
+                        [
+                            "has", 
+                            158.4, 
+                            158.64
+                        ], 
+                        [
+                            "to", 
+                            158.64, 
+                            158.76
+                        ], 
+                        [
+                            "be", 
+                            158.76, 
+                            158.87
+                        ], 
+                        [
+                            "a", 
+                            158.87, 
+                            159.08
+                        ], 
+                        [
+                            "%HESITATION", 
+                            159.11, 
+                            159.27
+                        ], 
+                        [
+                            "review", 
+                            159.27, 
+                            159.75
+                        ]
+                    ], 
+                    "transcript": "right there has to be a %HESITATION review "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 14, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "right", 
+                            157.96, 
+                            158.27
+                        ], 
+                        [
+                            "there", 
+                            158.27, 
+                            158.4
+                        ], 
+                        [
+                            "has", 
+                            158.4, 
+                            158.64
+                        ], 
+                        [
+                            "to", 
+                            158.64, 
+                            158.76
+                        ], 
+                        [
+                            "be", 
+                            158.76, 
+                            158.87
+                        ], 
+                        [
+                            "a", 
+                            158.87, 
+                            159.08
+                        ], 
+                        [
+                            "%HESITATION", 
+                            159.11, 
+                            159.27
+                        ], 
+                        [
+                            "re", 
+                            159.27, 
+                            159.58
+                        ], 
+                        [
+                            "use", 
+                            159.58, 
+                            159.93
+                        ], 
+                        [
+                            "for", 
+                            159.93, 
+                            160.41
+                        ], 
+                        [
+                            "it", 
+                            160.41, 
+                            160.56
+                        ], 
+                        [
+                            "I", 
+                            160.59, 
+                            160.7
+                        ], 
+                        [
+                            "mean", 
+                            160.7, 
+                            160.93
+                        ], 
+                        [
+                            "that's", 
+                            160.93, 
+                            161.23
+                        ], 
+                        [
+                            "one", 
+                            161.23, 
+                            161.49
+                        ], 
+                        [
+                            "thing", 
+                            161.49, 
+                            161.75
+                        ]
+                    ], 
+                    "transcript": "right there has to be a %HESITATION re use for it I mean that's one thing "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 14, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.862, 
+                    "timestamps": [
+                        [
+                            "right", 
+                            157.96, 
+                            158.27
+                        ], 
+                        [
+                            "there", 
+                            158.27, 
+                            158.4
+                        ], 
+                        [
+                            "has", 
+                            158.4, 
+                            158.64
+                        ], 
+                        [
+                            "to", 
+                            158.64, 
+                            158.76
+                        ], 
+                        [
+                            "be", 
+                            158.76, 
+                            158.87
+                        ], 
+                        [
+                            "a", 
+                            158.87, 
+                            159.08
+                        ], 
+                        [
+                            "%HESITATION", 
+                            159.11, 
+                            159.27
+                        ], 
+                        [
+                            "re", 
+                            159.27, 
+                            159.58
+                        ], 
+                        [
+                            "use", 
+                            159.58, 
+                            159.93
+                        ], 
+                        [
+                            "for", 
+                            159.93, 
+                            160.41
+                        ], 
+                        [
+                            "it", 
+                            160.41, 
+                            160.56
+                        ], 
+                        [
+                            "I", 
+                            160.59, 
+                            160.7
+                        ], 
+                        [
+                            "mean", 
+                            160.7, 
+                            160.93
+                        ], 
+                        [
+                            "that's", 
+                            160.93, 
+                            161.23
+                        ], 
+                        [
+                            "why", 
+                            161.23, 
+                            161.42
+                        ], 
+                        [
+                            "they", 
+                            161.42, 
+                            161.66
+                        ], 
+                        [
+                            "recycle", 
+                            161.66, 
+                            162.65
+                        ]
+                    ], 
+                    "transcript": "right there has to be a %HESITATION re use for it I mean that's why they recycle ", 
+                    "word_confidence": [
+                        [
+                            "right", 
+                            0.9999999999999674
+                        ], 
+                        [
+                            "there", 
+                            0.9999999999999344
+                        ], 
+                        [
+                            "has", 
+                            0.9999999999999347
+                        ], 
+                        [
+                            "to", 
+                            0.9999999999999344
+                        ], 
+                        [
+                            "be", 
+                            0.9836511441539411
+                        ], 
+                        [
+                            "a", 
+                            0.9177787265510434
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.3963660350133774
+                        ], 
+                        [
+                            "re", 
+                            0.62908102346786
+                        ], 
+                        [
+                            "use", 
+                            0.6757623419152354
+                        ], 
+                        [
+                            "for", 
+                            0.9999999999999631
+                        ], 
+                        [
+                            "it", 
+                            0.7384823059275539
+                        ], 
+                        [
+                            "I", 
+                            0.8080619422976164
+                        ], 
+                        [
+                            "mean", 
+                            0.9999999999999886
+                        ], 
+                        [
+                            "that's", 
+                            0.9999999999999812
+                        ], 
+                        [
+                            "why", 
+                            0.5372963015958896
+                        ], 
+                        [
+                            "they", 
+                            0.5372963015958928
+                        ], 
+                        [
+                            "recycle", 
+                            0.9653689145849839
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "right there has to be a %HESITATION reviews for it I mean that's why they recycle "
+                }, 
+                {
+                    "transcript": "right there has to be a re use for it I mean that's why they recycle "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 15, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "the", 
+                            163.1, 
+                            163.19
+                        ], 
+                        [
+                            "one", 
+                            163.19, 
+                            163.35
+                        ], 
+                        [
+                            "I", 
+                            163.35, 
+                            163.48
+                        ], 
+                        [
+                            "think", 
+                            163.48, 
+                            163.72
+                        ], 
+                        [
+                            "the", 
+                            163.72, 
+                            163.84
+                        ], 
+                        [
+                            "most", 
+                            163.84, 
+                            164.11
+                        ], 
+                        [
+                            "interesting", 
+                            164.11, 
+                            164.61
+                        ], 
+                        [
+                            "is", 
+                            164.61, 
+                            164.78
+                        ]
+                    ], 
+                    "transcript": "the one I think the most interesting is "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 15, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "the", 
+                            163.1, 
+                            163.19
+                        ], 
+                        [
+                            "one", 
+                            163.19, 
+                            163.35
+                        ], 
+                        [
+                            "I", 
+                            163.35, 
+                            163.48
+                        ], 
+                        [
+                            "think", 
+                            163.48, 
+                            163.72
+                        ], 
+                        [
+                            "the", 
+                            163.72, 
+                            163.84
+                        ], 
+                        [
+                            "most", 
+                            163.84, 
+                            164.11
+                        ], 
+                        [
+                            "interesting", 
+                            164.11, 
+                            164.61
+                        ], 
+                        [
+                            "is", 
+                            164.61, 
+                            164.78
+                        ], 
+                        [
+                            "with", 
+                            164.78, 
+                            164.94
+                        ], 
+                        [
+                            "the", 
+                            164.94, 
+                            165.04
+                        ], 
+                        [
+                            "recycled", 
+                            165.04, 
+                            165.65
+                        ], 
+                        [
+                            "bottles", 
+                            165.65, 
+                            166.26
+                        ], 
+                        [
+                            "and", 
+                            166.26, 
+                            166.45
+                        ], 
+                        [
+                            "all", 
+                            166.45, 
+                            166.7
+                        ], 
+                        [
+                            "the", 
+                            166.7, 
+                            166.78
+                        ]
+                    ], 
+                    "transcript": "the one I think the most interesting is with the recycled bottles and all the "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 15, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.932, 
+                    "timestamps": [
+                        [
+                            "the", 
+                            163.1, 
+                            163.19
+                        ], 
+                        [
+                            "one", 
+                            163.19, 
+                            163.35
+                        ], 
+                        [
+                            "I", 
+                            163.35, 
+                            163.48
+                        ], 
+                        [
+                            "think", 
+                            163.48, 
+                            163.72
+                        ], 
+                        [
+                            "the", 
+                            163.72, 
+                            163.84
+                        ], 
+                        [
+                            "most", 
+                            163.84, 
+                            164.11
+                        ], 
+                        [
+                            "interesting", 
+                            164.11, 
+                            164.61
+                        ], 
+                        [
+                            "is", 
+                            164.61, 
+                            164.78
+                        ], 
+                        [
+                            "with", 
+                            164.78, 
+                            164.94
+                        ], 
+                        [
+                            "the", 
+                            164.94, 
+                            165.04
+                        ], 
+                        [
+                            "recycled", 
+                            165.04, 
+                            165.65
+                        ], 
+                        [
+                            "bottles", 
+                            165.65, 
+                            166.26
+                        ], 
+                        [
+                            "and", 
+                            166.26, 
+                            166.45
+                        ], 
+                        [
+                            "all", 
+                            166.45, 
+                            166.7
+                        ], 
+                        [
+                            "that", 
+                            166.7, 
+                            167.14
+                        ]
+                    ], 
+                    "transcript": "the one I think the most interesting is with the recycled bottles and all that ", 
+                    "word_confidence": [
+                        [
+                            "the", 
+                            0.44987829526486667
+                        ], 
+                        [
+                            "one", 
+                            0.42431080773957014
+                        ], 
+                        [
+                            "I", 
+                            0.8554692152181066
+                        ], 
+                        [
+                            "think", 
+                            0.9579154196932889
+                        ], 
+                        [
+                            "the", 
+                            0.6721893491095196
+                        ], 
+                        [
+                            "most", 
+                            0.9894961839160293
+                        ], 
+                        [
+                            "interesting", 
+                            1.0
+                        ], 
+                        [
+                            "is", 
+                            1.0
+                        ], 
+                        [
+                            "with", 
+                            1.0
+                        ], 
+                        [
+                            "the", 
+                            1.0
+                        ], 
+                        [
+                            "recycled", 
+                            1.0
+                        ], 
+                        [
+                            "bottles", 
+                            1.0
+                        ], 
+                        [
+                            "and", 
+                            1.0
+                        ], 
+                        [
+                            "all", 
+                            1.0
+                        ], 
+                        [
+                            "that", 
+                            0.8584410323766396
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "well I think the most interesting is with the recycled bottles and all that "
+                }, 
+                {
+                    "transcript": "what I think the most interesting is with the recycled bottles and all that "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 16, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            167.79, 
+                            168.1
+                        ], 
+                        [
+                            "the", 
+                            168.1, 
+                            168.4
+                        ], 
+                        [
+                            "industry", 
+                            168.4, 
+                            168.83
+                        ], 
+                        [
+                            "seems", 
+                            168.83, 
+                            169.1
+                        ], 
+                        [
+                            "to", 
+                            169.1, 
+                            169.19
+                        ], 
+                        [
+                            "be", 
+                            169.19, 
+                            169.29
+                        ], 
+                        [
+                            "doing", 
+                            169.29, 
+                            169.55
+                        ]
+                    ], 
+                    "transcript": "%HESITATION the industry seems to be doing "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 16, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            167.79, 
+                            168.1
+                        ], 
+                        [
+                            "the", 
+                            168.1, 
+                            168.4
+                        ], 
+                        [
+                            "industry", 
+                            168.4, 
+                            168.83
+                        ], 
+                        [
+                            "seems", 
+                            168.83, 
+                            169.1
+                        ], 
+                        [
+                            "to", 
+                            169.1, 
+                            169.19
+                        ], 
+                        [
+                            "be", 
+                            169.19, 
+                            169.29
+                        ], 
+                        [
+                            "doing", 
+                            169.29, 
+                            169.57
+                        ], 
+                        [
+                            "with", 
+                            169.57, 
+                            169.77
+                        ], 
+                        [
+                            "the", 
+                            169.85, 
+                            170.2
+                        ], 
+                        [
+                            "recycled", 
+                            170.47, 
+                            171.28
+                        ], 
+                        [
+                            "Paul", 
+                            171.28, 
+                            171.55
+                        ]
+                    ], 
+                    "transcript": "%HESITATION the industry seems to be doing with the recycled Paul "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 16, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.982, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            167.79, 
+                            168.1
+                        ], 
+                        [
+                            "the", 
+                            168.1, 
+                            168.4
+                        ], 
+                        [
+                            "industry", 
+                            168.4, 
+                            168.83
+                        ], 
+                        [
+                            "seems", 
+                            168.83, 
+                            169.1
+                        ], 
+                        [
+                            "to", 
+                            169.1, 
+                            169.19
+                        ], 
+                        [
+                            "be", 
+                            169.19, 
+                            169.29
+                        ], 
+                        [
+                            "doing", 
+                            169.29, 
+                            169.57
+                        ], 
+                        [
+                            "with", 
+                            169.57, 
+                            169.77
+                        ], 
+                        [
+                            "the", 
+                            169.85, 
+                            170.2
+                        ], 
+                        [
+                            "recycled", 
+                            170.47, 
+                            171.28
+                        ], 
+                        [
+                            "polymers", 
+                            171.28, 
+                            172.04
+                        ]
+                    ], 
+                    "transcript": "%HESITATION the industry seems to be doing with the recycled polymers ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.9378519519298537
+                        ], 
+                        [
+                            "the", 
+                            0.8546158039018188
+                        ], 
+                        [
+                            "industry", 
+                            1.0
+                        ], 
+                        [
+                            "seems", 
+                            1.0
+                        ], 
+                        [
+                            "to", 
+                            1.0
+                        ], 
+                        [
+                            "be", 
+                            1.0
+                        ], 
+                        [
+                            "doing", 
+                            1.0
+                        ], 
+                        [
+                            "with", 
+                            1.0
+                        ], 
+                        [
+                            "the", 
+                            1.0
+                        ], 
+                        [
+                            "recycled", 
+                            1.0
+                        ], 
+                        [
+                            "polymers", 
+                            0.9914025921610295
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "I the industry seems to be doing with the recycled polymers "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 17, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 1.0, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            173.0, 
+                            173.28
+                        ], 
+                        [
+                            "everything", 
+                            173.28, 
+                            173.89
+                        ], 
+                        [
+                            "from", 
+                            173.89, 
+                            174.49
+                        ]
+                    ], 
+                    "transcript": "%HESITATION everything from ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            1.0
+                        ], 
+                        [
+                            "everything", 
+                            0.9999999999999919
+                        ], 
+                        [
+                            "from", 
+                            0.9999999999999913
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 18, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "waste", 
+                            175.79, 
+                            176.24
+                        ], 
+                        [
+                            "baskets", 
+                            176.24, 
+                            177.07
+                        ], 
+                        [
+                            "to", 
+                            177.1, 
+                            177.53
+                        ]
+                    ], 
+                    "transcript": "waste baskets to "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 18, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.973, 
+                    "timestamps": [
+                        [
+                            "waste", 
+                            175.79, 
+                            176.24
+                        ], 
+                        [
+                            "baskets", 
+                            176.24, 
+                            177.07
+                        ], 
+                        [
+                            "to", 
+                            177.1, 
+                            177.81
+                        ], 
+                        [
+                            "carpet", 
+                            177.84, 
+                            178.71
+                        ]
+                    ], 
+                    "transcript": "waste baskets to carpet ", 
+                    "word_confidence": [
+                        [
+                            "waste", 
+                            0.84761604204717
+                        ], 
+                        [
+                            "baskets", 
+                            0.9997492584762447
+                        ], 
+                        [
+                            "to", 
+                            0.9999999999999896
+                        ], 
+                        [
+                            "carpet", 
+                            0.9910363374691042
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "Weiss baskets to carpet "
+                }, 
+                {
+                    "transcript": "waist baskets to carpet "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 19, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "to", 
+                            179.28, 
+                            179.51
+                        ], 
+                        [
+                            "the", 
+                            179.51, 
+                            179.87
+                        ], 
+                        [
+                            "no", 
+                            179.91, 
+                            180.12
+                        ], 
+                        [
+                            "stick", 
+                            180.12, 
+                            180.51
+                        ], 
+                        [
+                            "I'm", 
+                            180.8, 
+                            181.01
+                        ]
+                    ], 
+                    "transcript": "to the no stick I'm "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 19, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.997, 
+                    "timestamps": [
+                        [
+                            "to", 
+                            179.28, 
+                            179.51
+                        ], 
+                        [
+                            "the", 
+                            179.51, 
+                            179.87
+                        ], 
+                        [
+                            "no", 
+                            179.91, 
+                            180.12
+                        ], 
+                        [
+                            "stick", 
+                            180.12, 
+                            180.51
+                        ], 
+                        [
+                            "I", 
+                            180.8, 
+                            180.92
+                        ], 
+                        [
+                            "mean", 
+                            180.92, 
+                            181.12
+                        ], 
+                        [
+                            "the", 
+                            181.12, 
+                            181.21
+                        ], 
+                        [
+                            "sticky", 
+                            181.21, 
+                            181.59
+                        ], 
+                        [
+                            "slide", 
+                            181.59, 
+                            181.99
+                        ], 
+                        [
+                            "rugs", 
+                            181.99, 
+                            182.4
+                        ], 
+                        [
+                            "under", 
+                            182.4, 
+                            182.68
+                        ], 
+                        [
+                            "the", 
+                            182.68, 
+                            182.77
+                        ], 
+                        [
+                            "carpet", 
+                            182.77, 
+                            183.54
+                        ]
+                    ], 
+                    "transcript": "to the no stick I mean the sticky slide rugs under the carpet ", 
+                    "word_confidence": [
+                        [
+                            "to", 
+                            0.9999999999999993
+                        ], 
+                        [
+                            "the", 
+                            1.0
+                        ], 
+                        [
+                            "no", 
+                            1.0
+                        ], 
+                        [
+                            "stick", 
+                            0.9938891649102942
+                        ], 
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "mean", 
+                            1.0
+                        ], 
+                        [
+                            "the", 
+                            1.0
+                        ], 
+                        [
+                            "sticky", 
+                            1.0
+                        ], 
+                        [
+                            "slide", 
+                            1.0
+                        ], 
+                        [
+                            "rugs", 
+                            1.0
+                        ], 
+                        [
+                            "under", 
+                            1.0
+                        ], 
+                        [
+                            "the", 
+                            1.0
+                        ], 
+                        [
+                            "carpet", 
+                            0.9900548718772239
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "two the no stick I mean the sticky slide rugs under the carpet "
+                }, 
+                {
+                    "transcript": "to the know stick I mean the sticky slide rugs under the carpet "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 20, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.995, 
+                    "timestamps": [
+                        [
+                            "and", 
+                            184.46, 
+                            184.89
+                        ], 
+                        [
+                            "%HESITATION", 
+                            184.89, 
+                            185.13
+                        ]
+                    ], 
+                    "transcript": "and %HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "and", 
+                            1.0
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.9852979306501691
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 21, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            186.29, 
+                            186.45
+                        ], 
+                        [
+                            "think", 
+                            186.45, 
+                            186.69
+                        ], 
+                        [
+                            "they're", 
+                            186.69, 
+                            186.8
+                        ], 
+                        [
+                            "even", 
+                            186.8, 
+                            187.02
+                        ], 
+                        [
+                            "putting", 
+                            187.02, 
+                            187.34
+                        ], 
+                        [
+                            "it", 
+                            187.34, 
+                            187.47
+                        ], 
+                        [
+                            "in", 
+                            187.47, 
+                            187.58
+                        ], 
+                        [
+                            "the", 
+                            187.58, 
+                            187.67
+                        ], 
+                        [
+                            "road", 
+                            187.67, 
+                            187.96
+                        ]
+                    ], 
+                    "transcript": "I think they're even putting it in the road "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 21, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.939, 
+                    "timestamps": [
+                        [
+                            "I", 
+                            186.29, 
+                            186.45
+                        ], 
+                        [
+                            "think", 
+                            186.45, 
+                            186.69
+                        ], 
+                        [
+                            "they're", 
+                            186.69, 
+                            186.8
+                        ], 
+                        [
+                            "even", 
+                            186.8, 
+                            187.02
+                        ], 
+                        [
+                            "putting", 
+                            187.02, 
+                            187.34
+                        ], 
+                        [
+                            "it", 
+                            187.34, 
+                            187.47
+                        ], 
+                        [
+                            "in", 
+                            187.47, 
+                            187.58
+                        ], 
+                        [
+                            "the", 
+                            187.58, 
+                            187.67
+                        ], 
+                        [
+                            "roadways", 
+                            187.67, 
+                            188.37
+                        ], 
+                        [
+                            "these", 
+                            188.37, 
+                            188.58
+                        ], 
+                        [
+                            "days", 
+                            188.58, 
+                            189.12
+                        ]
+                    ], 
+                    "transcript": "I think they're even putting it in the roadways these days ", 
+                    "word_confidence": [
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "think", 
+                            1.0
+                        ], 
+                        [
+                            "they're", 
+                            0.6887818315223492
+                        ], 
+                        [
+                            "even", 
+                            0.7101894550921014
+                        ], 
+                        [
+                            "putting", 
+                            0.9666450987881097
+                        ], 
+                        [
+                            "it", 
+                            1.0
+                        ], 
+                        [
+                            "in", 
+                            1.0
+                        ], 
+                        [
+                            "the", 
+                            1.0
+                        ], 
+                        [
+                            "roadways", 
+                            1.0
+                        ], 
+                        [
+                            "these", 
+                            1.0
+                        ], 
+                        [
+                            "days", 
+                            0.8822974761348191
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "I think the rain and putting it in the roadways these days "
+                }, 
+                {
+                    "transcript": "I think the room and putting it in the roadways these days "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 22, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "and", 
+                            189.96, 
+                            190.08
+                        ], 
+                        [
+                            "then", 
+                            190.08, 
+                            190.18
+                        ], 
+                        [
+                            "my", 
+                            190.18, 
+                            190.31
+                        ], 
+                        [
+                            "can", 
+                            190.31, 
+                            190.65
+                        ], 
+                        [
+                            "close", 
+                            190.8, 
+                            191.41
+                        ], 
+                        [
+                            "out", 
+                            191.41, 
+                            191.59
+                        ], 
+                        [
+                            "a", 
+                            191.59, 
+                            191.62
+                        ]
+                    ], 
+                    "transcript": "and then my can close out a "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 22, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.786, 
+                    "timestamps": [
+                        [
+                            "and", 
+                            189.96, 
+                            190.08
+                        ], 
+                        [
+                            "then", 
+                            190.08, 
+                            190.18
+                        ], 
+                        [
+                            "my", 
+                            190.18, 
+                            190.31
+                        ], 
+                        [
+                            "can", 
+                            190.31, 
+                            190.65
+                        ], 
+                        [
+                            "close", 
+                            190.8, 
+                            191.41
+                        ], 
+                        [
+                            "out", 
+                            191.41, 
+                            191.59
+                        ], 
+                        [
+                            "of", 
+                            191.59, 
+                            191.66
+                        ], 
+                        [
+                            "the", 
+                            191.66, 
+                            191.8
+                        ], 
+                        [
+                            "recycled", 
+                            191.8, 
+                            192.61
+                        ]
+                    ], 
+                    "transcript": "and then my can close out of the recycled ", 
+                    "word_confidence": [
+                        [
+                            "and", 
+                            0.9999999999999952
+                        ], 
+                        [
+                            "then", 
+                            0.4297347300843398
+                        ], 
+                        [
+                            "my", 
+                            0.14291518085279623
+                        ], 
+                        [
+                            "can", 
+                            0.395195997672489
+                        ], 
+                        [
+                            "close", 
+                            0.8094418347226987
+                        ], 
+                        [
+                            "out", 
+                            0.8961313751942828
+                        ], 
+                        [
+                            "of", 
+                            0.7843789707057649
+                        ], 
+                        [
+                            "the", 
+                            0.9537954937226588
+                        ], 
+                        [
+                            "recycled", 
+                            0.9930975171864984
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "and then making close out of the recycled "
+                }, 
+                {
+                    "transcript": "and then make can close out of the recycled "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 23, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "like", 
+                            193.23, 
+                            193.54
+                        ], 
+                        [
+                            "the", 
+                            193.54, 
+                            193.71
+                        ], 
+                        [
+                            "recycled", 
+                            193.71, 
+                            194.5
+                        ], 
+                        [
+                            "plastic", 
+                            194.53, 
+                            194.93
+                        ]
+                    ], 
+                    "transcript": "like the recycled plastic "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 23, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 1.0, 
+                    "timestamps": [
+                        [
+                            "like", 
+                            193.23, 
+                            193.54
+                        ], 
+                        [
+                            "the", 
+                            193.54, 
+                            193.71
+                        ], 
+                        [
+                            "recycled", 
+                            193.71, 
+                            194.5
+                        ], 
+                        [
+                            "plastic", 
+                            194.53, 
+                            194.97
+                        ], 
+                        [
+                            "coke", 
+                            194.97, 
+                            195.27
+                        ], 
+                        [
+                            "bottles", 
+                            195.27, 
+                            195.93
+                        ], 
+                        [
+                            "and", 
+                            195.93, 
+                            196.23
+                        ]
+                    ], 
+                    "transcript": "like the recycled plastic coke bottles and ", 
+                    "word_confidence": [
+                        [
+                            "like", 
+                            1.0
+                        ], 
+                        [
+                            "the", 
+                            1.0
+                        ], 
+                        [
+                            "recycled", 
+                            1.0
+                        ], 
+                        [
+                            "plastic", 
+                            1.0
+                        ], 
+                        [
+                            "coke", 
+                            1.0
+                        ], 
+                        [
+                            "bottles", 
+                            1.0
+                        ], 
+                        [
+                            "and", 
+                            1.0
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 24, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "and", 
+                            197.05, 
+                            197.33
+                        ], 
+                        [
+                            "milk", 
+                            197.33, 
+                            197.54
+                        ], 
+                        [
+                            "cartons", 
+                            197.54, 
+                            198.06
+                        ], 
+                        [
+                            "and", 
+                            198.06, 
+                            198.21
+                        ], 
+                        [
+                            "things", 
+                            198.21, 
+                            198.45
+                        ], 
+                        [
+                            "like", 
+                            198.45, 
+                            198.65
+                        ], 
+                        [
+                            "that", 
+                            198.65, 
+                            198.82
+                        ]
+                    ], 
+                    "transcript": "and milk cartons and things like that "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 24, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.939, 
+                    "timestamps": [
+                        [
+                            "and", 
+                            197.05, 
+                            197.33
+                        ], 
+                        [
+                            "milk", 
+                            197.33, 
+                            197.54
+                        ], 
+                        [
+                            "cartons", 
+                            197.54, 
+                            198.06
+                        ], 
+                        [
+                            "and", 
+                            198.06, 
+                            198.21
+                        ], 
+                        [
+                            "things", 
+                            198.21, 
+                            198.45
+                        ], 
+                        [
+                            "like", 
+                            198.45, 
+                            198.65
+                        ], 
+                        [
+                            "that", 
+                            198.65, 
+                            199.01
+                        ]
+                    ], 
+                    "transcript": "and milk cartons and things like that ", 
+                    "word_confidence": [
+                        [
+                            "and", 
+                            0.5909931872670312
+                        ], 
+                        [
+                            "milk", 
+                            0.9999999999999968
+                        ], 
+                        [
+                            "cartons", 
+                            0.999999999999997
+                        ], 
+                        [
+                            "and", 
+                            1.0
+                        ], 
+                        [
+                            "things", 
+                            0.999999999999992
+                        ], 
+                        [
+                            "like", 
+                            0.9999999999999837
+                        ], 
+                        [
+                            "that", 
+                            0.9837528035320039
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "in milk cartons and things like that "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 25, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.978, 
+                    "timestamps": [
+                        [
+                            "oh", 
+                            235.0, 
+                            235.14
+                        ], 
+                        [
+                            "really", 
+                            235.14, 
+                            235.64
+                        ]
+                    ], 
+                    "transcript": "oh really ", 
+                    "word_confidence": [
+                        [
+                            "oh", 
+                            0.9366371578852762
+                        ], 
+                        [
+                            "really", 
+                            0.9893156537898465
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION really "
+                }, 
+                {
+                    "transcript": "O. really "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 26, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.32, 
+                    "timestamps": [
+                        [
+                            "right", 
+                            244.88, 
+                            245.32
+                        ]
+                    ], 
+                    "transcript": "right ", 
+                    "word_confidence": [
+                        [
+                            "right", 
+                            0.3200036531232351
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "alright "
+                }, 
+                {
+                    "transcript": "not "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 27, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.516, 
+                    "timestamps": [
+                        [
+                            "huh", 
+                            256.09, 
+                            256.51
+                        ]
+                    ], 
+                    "transcript": "huh ", 
+                    "word_confidence": [
+                        [
+                            "huh", 
+                            0.5155180916980138
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "yeah "
+                }, 
+                {
+                    "transcript": "Hon "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 28, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.982, 
+                    "timestamps": [
+                        [
+                            "well", 
+                            259.5, 
+                            259.7
+                        ], 
+                        [
+                            "it's", 
+                            259.7, 
+                            259.89
+                        ], 
+                        [
+                            "carbon", 
+                            259.89, 
+                            260.58
+                        ]
+                    ], 
+                    "transcript": "well it's carbon ", 
+                    "word_confidence": [
+                        [
+                            "well", 
+                            0.9915646705787582
+                        ], 
+                        [
+                            "it's", 
+                            0.943764470524976
+                        ], 
+                        [
+                            "carbon", 
+                            0.9891294698398296
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "well its carbon "
+                }, 
+                {
+                    "transcript": "well let's carbon "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 29, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "so", 
+                            260.84, 
+                            261.1
+                        ], 
+                        [
+                            "that", 
+                            261.1, 
+                            261.29
+                        ], 
+                        [
+                            "makes", 
+                            261.29, 
+                            261.6
+                        ], 
+                        [
+                            "sense", 
+                            261.6, 
+                            262.02
+                        ], 
+                        [
+                            "like", 
+                            262.02, 
+                            262.21
+                        ], 
+                        [
+                            "a", 
+                            262.21, 
+                            262.28
+                        ], 
+                        [
+                            "carbon", 
+                            262.28, 
+                            262.64
+                        ]
+                    ], 
+                    "transcript": "so that makes sense like a carbon "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 29, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.972, 
+                    "timestamps": [
+                        [
+                            "so", 
+                            260.84, 
+                            261.1
+                        ], 
+                        [
+                            "that", 
+                            261.1, 
+                            261.29
+                        ], 
+                        [
+                            "makes", 
+                            261.29, 
+                            261.6
+                        ], 
+                        [
+                            "sense", 
+                            261.6, 
+                            262.02
+                        ], 
+                        [
+                            "like", 
+                            262.02, 
+                            262.21
+                        ], 
+                        [
+                            "a", 
+                            262.21, 
+                            262.28
+                        ], 
+                        [
+                            "carbon", 
+                            262.28, 
+                            262.72
+                        ], 
+                        [
+                            "fuel", 
+                            262.72, 
+                            263.02
+                        ], 
+                        [
+                            "of", 
+                            263.02, 
+                            263.14
+                        ], 
+                        [
+                            "some", 
+                            263.14, 
+                            263.37
+                        ], 
+                        [
+                            "sort", 
+                            263.37, 
+                            263.78
+                        ], 
+                        [
+                            "but", 
+                            263.84, 
+                            264.2
+                        ]
+                    ], 
+                    "transcript": "so that makes sense like a carbon fuel of some sort but ", 
+                    "word_confidence": [
+                        [
+                            "so", 
+                            1.0
+                        ], 
+                        [
+                            "that", 
+                            0.5797112607674698
+                        ], 
+                        [
+                            "makes", 
+                            1.0
+                        ], 
+                        [
+                            "sense", 
+                            1.0
+                        ], 
+                        [
+                            "like", 
+                            0.9999999999999837
+                        ], 
+                        [
+                            "a", 
+                            0.9999999999999838
+                        ], 
+                        [
+                            "carbon", 
+                            0.9999999999999839
+                        ], 
+                        [
+                            "fuel", 
+                            0.9999999999999833
+                        ], 
+                        [
+                            "of", 
+                            0.9999999999999839
+                        ], 
+                        [
+                            "some", 
+                            0.9999999999999835
+                        ], 
+                        [
+                            "sort", 
+                            0.9963018640689785
+                        ], 
+                        [
+                            "but", 
+                            0.9671635456075018
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "so it makes sense like a carbon fuel of some sort but "
+                }, 
+                {
+                    "transcript": "so that makes sense like a carbon fuel of some sort **** "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 30, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.511, 
+                    "timestamps": [
+                        [
+                            "what", 
+                            264.64, 
+                            264.96
+                        ]
+                    ], 
+                    "transcript": "what ", 
+                    "word_confidence": [
+                        [
+                            "what", 
+                            0.5114739258790985
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "for "
+                }, 
+                {
+                    "transcript": "four "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 31, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.995, 
+                    "timestamps": [
+                        [
+                            "what", 
+                            269.53, 
+                            269.69
+                        ], 
+                        [
+                            "about", 
+                            269.69, 
+                            269.97
+                        ], 
+                        [
+                            "emissions", 
+                            269.97, 
+                            270.79
+                        ]
+                    ], 
+                    "transcript": "what about emissions ", 
+                    "word_confidence": [
+                        [
+                            "what", 
+                            1.0
+                        ], 
+                        [
+                            "about", 
+                            0.999999999999999
+                        ], 
+                        [
+                            "emissions", 
+                            0.9921721792353014
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 32, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 1.0, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            273.81, 
+                            274.3
+                        ]
+                    ], 
+                    "transcript": "%HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.999999999999989
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "oh "
+                }, 
+                {
+                    "transcript": "O. "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 33, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.98, 
+                    "timestamps": [
+                        [
+                            "okay", 
+                            276.18, 
+                            276.5
+                        ]
+                    ], 
+                    "transcript": "okay ", 
+                    "word_confidence": [
+                        [
+                            "okay", 
+                            0.9796703492591429
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "okay a "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 34, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.994, 
+                    "timestamps": [
+                        [
+                            "no", 
+                            280.64, 
+                            281.42
+                        ]
+                    ], 
+                    "transcript": "no ", 
+                    "word_confidence": [
+                        [
+                            "no", 
+                            0.9942800114111676
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "know "
+                }, 
+                {
+                    "transcript": "No "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 35, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "well", 
+                            281.97, 
+                            282.07
+                        ], 
+                        [
+                            "that's", 
+                            282.07, 
+                            282.25
+                        ], 
+                        [
+                            "interesting", 
+                            282.25, 
+                            282.88
+                        ], 
+                        [
+                            "on", 
+                            282.88, 
+                            283.01
+                        ], 
+                        [
+                            "that", 
+                            283.01, 
+                            283.13
+                        ], 
+                        [
+                            "that", 
+                            283.13, 
+                            283.25
+                        ], 
+                        [
+                            "was", 
+                            283.25, 
+                            283.38
+                        ], 
+                        [
+                            "a", 
+                            283.38, 
+                            283.45
+                        ], 
+                        [
+                            "good", 
+                            283.45, 
+                            283.66
+                        ], 
+                        [
+                            "day", 
+                            283.66, 
+                            283.73
+                        ]
+                    ], 
+                    "transcript": "well that's interesting on that that was a good day "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 35, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.772, 
+                    "timestamps": [
+                        [
+                            "well", 
+                            281.97, 
+                            282.07
+                        ], 
+                        [
+                            "that's", 
+                            282.07, 
+                            282.25
+                        ], 
+                        [
+                            "interesting", 
+                            282.25, 
+                            282.88
+                        ], 
+                        [
+                            "on", 
+                            282.88, 
+                            283.01
+                        ], 
+                        [
+                            "that", 
+                            283.01, 
+                            283.13
+                        ], 
+                        [
+                            "that", 
+                            283.13, 
+                            283.25
+                        ], 
+                        [
+                            "was", 
+                            283.25, 
+                            283.38
+                        ], 
+                        [
+                            "a", 
+                            283.38, 
+                            283.45
+                        ], 
+                        [
+                            "good", 
+                            283.45, 
+                            283.66
+                        ], 
+                        [
+                            "day", 
+                            283.66, 
+                            283.95
+                        ], 
+                        [
+                            "at", 
+                            283.95, 
+                            284.12
+                        ], 
+                        [
+                            "the", 
+                            284.12, 
+                            284.29
+                        ], 
+                        [
+                            "conference", 
+                            284.59, 
+                            285.26
+                        ], 
+                        [
+                            "then", 
+                            285.26, 
+                            285.6
+                        ]
+                    ], 
+                    "transcript": "well that's interesting on that that was a good day at the conference then ", 
+                    "word_confidence": [
+                        [
+                            "well", 
+                            0.8448210918552235
+                        ], 
+                        [
+                            "that's", 
+                            0.7561458008777924
+                        ], 
+                        [
+                            "interesting", 
+                            0.9916603736593647
+                        ], 
+                        [
+                            "on", 
+                            0.21796767436922884
+                        ], 
+                        [
+                            "that", 
+                            0.4808107516565972
+                        ], 
+                        [
+                            "that", 
+                            0.9360575736480671
+                        ], 
+                        [
+                            "was", 
+                            0.9999999999999117
+                        ], 
+                        [
+                            "a", 
+                            0.9999999999999092
+                        ], 
+                        [
+                            "good", 
+                            0.9999999999999135
+                        ], 
+                        [
+                            "day", 
+                            0.9988424195500372
+                        ], 
+                        [
+                            "at", 
+                            0.2722141803169682
+                        ], 
+                        [
+                            "the", 
+                            0.21086328827241707
+                        ], 
+                        [
+                            "conference", 
+                            0.9273403773396968
+                        ], 
+                        [
+                            "then", 
+                            0.3683423560175108
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "well that's interesting element that was a good day at the conference then "
+                }, 
+                {
+                    "transcript": "well that's interesting over there was a good day at the conference then "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 36, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.944, 
+                    "timestamps": [
+                        [
+                            "did", 
+                            287.39, 
+                            287.57
+                        ], 
+                        [
+                            "it", 
+                            287.57, 
+                            287.67
+                        ], 
+                        [
+                            "change", 
+                            287.67, 
+                            288.02
+                        ], 
+                        [
+                            "anything", 
+                            288.02, 
+                            288.42
+                        ], 
+                        [
+                            "for", 
+                            288.42, 
+                            288.59
+                        ], 
+                        [
+                            "you", 
+                            288.59, 
+                            288.9
+                        ]
+                    ], 
+                    "transcript": "did it change anything for you ", 
+                    "word_confidence": [
+                        [
+                            "did", 
+                            0.6260583774939635
+                        ], 
+                        [
+                            "it", 
+                            0.8773352867894921
+                        ], 
+                        [
+                            "change", 
+                            1.0
+                        ], 
+                        [
+                            "anything", 
+                            1.0
+                        ], 
+                        [
+                            "for", 
+                            1.0
+                        ], 
+                        [
+                            "you", 
+                            0.9853360647244312
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "does it change anything for you "
+                }, 
+                {
+                    "transcript": "didn't change anything for you "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}

@@ -104,6 +104,18 @@ deep_disf/data/raw_data/
 
 If the above is in place (even without acoustic features), the script at EACL_2017.py should work out of the box and return the results from the paper.
 
+Once that is done you can use a saved tagger from python based on a saved model and its markov model file:
+
+from deep_disf.tagger import disfluency_tagger
+
+#tagger which does 
+disf = disfluency_tagger("disf/experiments/033/best", internal_pos_tagger=False, internal_timer=False, do_utterance_segmentation=True)
+print disf.new_word("john",pos="NN",timing=0.33)
+print disf.new_word("likes",pos="NN",timing=0.33)
+print disf.new_word("uh",pos="NN",timing=0.33)
+print disf.new_word("loves",pos="NN",timing=0.33)
+print disf.new_word("mary",pos="NN",timing=0.33)
+disf.reset() #resets the whole tagger
 
 
 

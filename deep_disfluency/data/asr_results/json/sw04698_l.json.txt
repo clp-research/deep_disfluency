@@ -1,0 +1,6192 @@
+{
+    "result_index": 0, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "actually", 
+                            2.27, 
+                            2.73
+                        ], 
+                        [
+                            "you", 
+                            2.73, 
+                            2.8
+                        ], 
+                        [
+                            "know", 
+                            2.8, 
+                            2.91
+                        ], 
+                        [
+                            "I've", 
+                            2.91, 
+                            3.04
+                        ], 
+                        [
+                            "been", 
+                            3.04, 
+                            3.15
+                        ], 
+                        [
+                            "involved", 
+                            3.15, 
+                            3.63
+                        ], 
+                        [
+                            "in", 
+                            3.63, 
+                            3.7
+                        ], 
+                        [
+                            "like", 
+                            3.7, 
+                            3.89
+                        ]
+                    ], 
+                    "transcript": "actually you know I've been involved in like "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 0, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.923, 
+                    "timestamps": [
+                        [
+                            "actually", 
+                            2.27, 
+                            2.73
+                        ], 
+                        [
+                            "you", 
+                            2.73, 
+                            2.8
+                        ], 
+                        [
+                            "know", 
+                            2.8, 
+                            2.91
+                        ], 
+                        [
+                            "I've", 
+                            2.91, 
+                            3.04
+                        ], 
+                        [
+                            "been", 
+                            3.04, 
+                            3.15
+                        ], 
+                        [
+                            "involved", 
+                            3.15, 
+                            3.63
+                        ], 
+                        [
+                            "electronics", 
+                            3.63, 
+                            4.29
+                        ], 
+                        [
+                            "for", 
+                            4.29, 
+                            4.36
+                        ], 
+                        [
+                            "a", 
+                            4.36, 
+                            4.39
+                        ], 
+                        [
+                            "long", 
+                            4.39, 
+                            4.65
+                        ], 
+                        [
+                            "time", 
+                            4.65, 
+                            5.12
+                        ], 
+                        [
+                            "O.", 
+                            5.32, 
+                            5.86
+                        ]
+                    ], 
+                    "transcript": "actually you know I've been involved electronics for a long time O. ", 
+                    "word_confidence": [
+                        [
+                            "actually", 
+                            1.0
+                        ], 
+                        [
+                            "you", 
+                            1.0
+                        ], 
+                        [
+                            "know", 
+                            1.0
+                        ], 
+                        [
+                            "I've", 
+                            1.0
+                        ], 
+                        [
+                            "been", 
+                            1.0
+                        ], 
+                        [
+                            "involved", 
+                            1.0
+                        ], 
+                        [
+                            "electronics", 
+                            0.9168918250634196
+                        ], 
+                        [
+                            "for", 
+                            0.5531682592626334
+                        ], 
+                        [
+                            "a", 
+                            0.7125541014884367
+                        ], 
+                        [
+                            "long", 
+                            0.9471207785478032
+                        ], 
+                        [
+                            "time", 
+                            0.9899285455178745
+                        ], 
+                        [
+                            "O.", 
+                            0.7267960166685514
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "actually you know I've been involved electronics for a long time %HESITATION "
+                }, 
+                {
+                    "transcript": "actually you know I've been involved electronics for a long time oh "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 1, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "in", 
+                            7.17, 
+                            7.32
+                        ], 
+                        [
+                            "computers", 
+                            7.32, 
+                            7.92
+                        ], 
+                        [
+                            "and", 
+                            7.92, 
+                            8.08
+                        ], 
+                        [
+                            "I", 
+                            8.08, 
+                            8.53
+                        ]
+                    ], 
+                    "transcript": "in computers and I "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 1, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.945, 
+                    "timestamps": [
+                        [
+                            "in", 
+                            7.17, 
+                            7.32
+                        ], 
+                        [
+                            "computers", 
+                            7.32, 
+                            7.92
+                        ], 
+                        [
+                            "and", 
+                            7.92, 
+                            8.08
+                        ], 
+                        [
+                            "I", 
+                            8.08, 
+                            8.53
+                        ], 
+                        [
+                            "have", 
+                            9.0, 
+                            9.2
+                        ], 
+                        [
+                            "really", 
+                            9.2, 
+                            9.48
+                        ], 
+                        [
+                            "resisted", 
+                            9.48, 
+                            10.13
+                        ], 
+                        [
+                            "the", 
+                            10.13, 
+                            10.39
+                        ]
+                    ], 
+                    "transcript": "in computers and I have really resisted the ", 
+                    "word_confidence": [
+                        [
+                            "in", 
+                            1.0
+                        ], 
+                        [
+                            "computers", 
+                            1.0
+                        ], 
+                        [
+                            "and", 
+                            1.0
+                        ], 
+                        [
+                            "I", 
+                            0.9238820663385519
+                        ], 
+                        [
+                            "have", 
+                            0.4162800611691731
+                        ], 
+                        [
+                            "really", 
+                            1.0
+                        ], 
+                        [
+                            "resisted", 
+                            0.9999999999999973
+                        ], 
+                        [
+                            "the", 
+                            0.9999999999999942
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "in computers and I really resisted the "
+                }, 
+                {
+                    "transcript": "in computers and I am really resisted the "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 2, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 1.0, 
+                    "timestamps": [
+                        [
+                            "impulse", 
+                            11.14, 
+                            11.73
+                        ], 
+                        [
+                            "to", 
+                            11.73, 
+                            12.15
+                        ]
+                    ], 
+                    "transcript": "impulse to ", 
+                    "word_confidence": [
+                        [
+                            "impulse", 
+                            1.0
+                        ], 
+                        [
+                            "to", 
+                            1.0
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "impulse two "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 3, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.916, 
+                    "timestamps": [
+                        [
+                            "get", 
+                            13.12, 
+                            13.39
+                        ], 
+                        [
+                            "one", 
+                            13.39, 
+                            13.58
+                        ], 
+                        [
+                            "for", 
+                            13.58, 
+                            13.73
+                        ], 
+                        [
+                            "the", 
+                            13.73, 
+                            13.8
+                        ], 
+                        [
+                            "home", 
+                            13.8, 
+                            14.22
+                        ]
+                    ], 
+                    "transcript": "get one for the home ", 
+                    "word_confidence": [
+                        [
+                            "get", 
+                            1.0
+                        ], 
+                        [
+                            "one", 
+                            1.0
+                        ], 
+                        [
+                            "for", 
+                            0.7921423160040403
+                        ], 
+                        [
+                            "the", 
+                            0.332873181614354
+                        ], 
+                        [
+                            "home", 
+                            0.9662692649616841
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "get one for a home "
+                }, 
+                {
+                    "transcript": "get one for home "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 4, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            16.19, 
+                            16.9
+                        ], 
+                        [
+                            "up", 
+                            17.32, 
+                            17.64
+                        ], 
+                        [
+                            "and", 
+                            17.64, 
+                            17.84
+                        ]
+                    ], 
+                    "transcript": "%HESITATION up and "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 4, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            16.19, 
+                            16.9
+                        ], 
+                        [
+                            "up", 
+                            17.32, 
+                            17.64
+                        ], 
+                        [
+                            "until", 
+                            17.64, 
+                            18.33
+                        ], 
+                        [
+                            "I", 
+                            18.33, 
+                            18.41
+                        ], 
+                        [
+                            "guess", 
+                            18.41, 
+                            18.61
+                        ], 
+                        [
+                            "maybe", 
+                            18.61, 
+                            18.82
+                        ], 
+                        [
+                            "about", 
+                            18.82, 
+                            19.03
+                        ], 
+                        [
+                            "a", 
+                            19.03, 
+                            19.1
+                        ], 
+                        [
+                            "year", 
+                            19.1, 
+                            19.26
+                        ], 
+                        [
+                            "and", 
+                            19.26, 
+                            19.35
+                        ], 
+                        [
+                            "a", 
+                            19.35, 
+                            19.4
+                        ], 
+                        [
+                            "half", 
+                            19.4, 
+                            19.64
+                        ], 
+                        [
+                            "ago", 
+                            19.64, 
+                            19.84
+                        ]
+                    ], 
+                    "transcript": "%HESITATION up until I guess maybe about a year and a half ago "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 4, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            16.19, 
+                            16.9
+                        ], 
+                        [
+                            "up", 
+                            17.32, 
+                            17.64
+                        ], 
+                        [
+                            "until", 
+                            17.64, 
+                            18.33
+                        ], 
+                        [
+                            "I", 
+                            18.33, 
+                            18.41
+                        ], 
+                        [
+                            "guess", 
+                            18.41, 
+                            18.61
+                        ], 
+                        [
+                            "maybe", 
+                            18.61, 
+                            18.82
+                        ], 
+                        [
+                            "about", 
+                            18.82, 
+                            19.03
+                        ], 
+                        [
+                            "a", 
+                            19.03, 
+                            19.1
+                        ], 
+                        [
+                            "year", 
+                            19.1, 
+                            19.26
+                        ], 
+                        [
+                            "and", 
+                            19.26, 
+                            19.35
+                        ], 
+                        [
+                            "a", 
+                            19.35, 
+                            19.4
+                        ], 
+                        [
+                            "half", 
+                            19.4, 
+                            19.64
+                        ], 
+                        [
+                            "ago", 
+                            19.64, 
+                            19.87
+                        ], 
+                        [
+                            "I", 
+                            19.87, 
+                            19.99
+                        ], 
+                        [
+                            "got", 
+                            19.99, 
+                            20.23
+                        ], 
+                        [
+                            "one", 
+                            20.23, 
+                            20.39
+                        ], 
+                        [
+                            "for", 
+                            20.39, 
+                            20.54
+                        ], 
+                        [
+                            "my", 
+                            20.54, 
+                            20.71
+                        ], 
+                        [
+                            "son", 
+                            20.71, 
+                            21.22
+                        ], 
+                        [
+                            "%HESITATION", 
+                            21.36, 
+                            21.84
+                        ]
+                    ], 
+                    "transcript": "%HESITATION up until I guess maybe about a year and a half ago I got one for my son %HESITATION "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 4, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.977, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            16.19, 
+                            16.9
+                        ], 
+                        [
+                            "up", 
+                            17.32, 
+                            17.64
+                        ], 
+                        [
+                            "until", 
+                            17.64, 
+                            18.33
+                        ], 
+                        [
+                            "I", 
+                            18.33, 
+                            18.41
+                        ], 
+                        [
+                            "guess", 
+                            18.41, 
+                            18.61
+                        ], 
+                        [
+                            "maybe", 
+                            18.61, 
+                            18.82
+                        ], 
+                        [
+                            "about", 
+                            18.82, 
+                            19.03
+                        ], 
+                        [
+                            "a", 
+                            19.03, 
+                            19.1
+                        ], 
+                        [
+                            "year", 
+                            19.1, 
+                            19.26
+                        ], 
+                        [
+                            "and", 
+                            19.26, 
+                            19.35
+                        ], 
+                        [
+                            "a", 
+                            19.35, 
+                            19.4
+                        ], 
+                        [
+                            "half", 
+                            19.4, 
+                            19.64
+                        ], 
+                        [
+                            "ago", 
+                            19.64, 
+                            19.87
+                        ], 
+                        [
+                            "I", 
+                            19.87, 
+                            19.99
+                        ], 
+                        [
+                            "got", 
+                            19.99, 
+                            20.23
+                        ], 
+                        [
+                            "one", 
+                            20.23, 
+                            20.39
+                        ], 
+                        [
+                            "for", 
+                            20.39, 
+                            20.54
+                        ], 
+                        [
+                            "my", 
+                            20.54, 
+                            20.71
+                        ], 
+                        [
+                            "son", 
+                            20.71, 
+                            21.22
+                        ], 
+                        [
+                            "%HESITATION", 
+                            21.36, 
+                            21.92
+                        ], 
+                        [
+                            "%HESITATION", 
+                            22.06, 
+                            22.51
+                        ]
+                    ], 
+                    "transcript": "%HESITATION up until I guess maybe about a year and a half ago I got one for my son %HESITATION %HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.994817021314552
+                        ], 
+                        [
+                            "up", 
+                            1.0
+                        ], 
+                        [
+                            "until", 
+                            1.0
+                        ], 
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "guess", 
+                            1.0
+                        ], 
+                        [
+                            "maybe", 
+                            1.0
+                        ], 
+                        [
+                            "about", 
+                            1.0
+                        ], 
+                        [
+                            "a", 
+                            1.0
+                        ], 
+                        [
+                            "year", 
+                            1.0
+                        ], 
+                        [
+                            "and", 
+                            1.0
+                        ], 
+                        [
+                            "a", 
+                            1.0
+                        ], 
+                        [
+                            "half", 
+                            1.0
+                        ], 
+                        [
+                            "ago", 
+                            1.0
+                        ], 
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "got", 
+                            1.0
+                        ], 
+                        [
+                            "one", 
+                            1.0
+                        ], 
+                        [
+                            "for", 
+                            0.7977354282319792
+                        ], 
+                        [
+                            "my", 
+                            0.9643062520411777
+                        ], 
+                        [
+                            "son", 
+                            0.9943622432820027
+                        ], 
+                        [
+                            "%HESITATION", 
+                            1.0
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.810515056724251
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION up until I guess maybe about a year and a half ago I got one for my son %HESITATION "
+                }, 
+                {
+                    "transcript": "%HESITATION up until I guess maybe about a year and a half ago I got one for my son %HESITATION um "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 5, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.994, 
+                    "timestamps": [
+                        [
+                            "Macintosh", 
+                            22.8, 
+                            23.72
+                        ]
+                    ], 
+                    "transcript": "Macintosh ", 
+                    "word_confidence": [
+                        [
+                            "Macintosh", 
+                            0.9944181110956861
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "McIntosh "
+                }, 
+                {
+                    "transcript": "Mackintosh "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 6, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            24.37, 
+                            24.89
+                        ], 
+                        [
+                            "LC", 
+                            25.15, 
+                            25.82
+                        ], 
+                        [
+                            "it's", 
+                            25.9, 
+                            26.09
+                        ]
+                    ], 
+                    "transcript": "%HESITATION LC it's "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 6, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.861, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            24.37, 
+                            24.89
+                        ], 
+                        [
+                            "LC", 
+                            25.15, 
+                            25.82
+                        ], 
+                        [
+                            "it's", 
+                            25.9, 
+                            26.18
+                        ], 
+                        [
+                            "a", 
+                            26.18, 
+                            26.4
+                        ]
+                    ], 
+                    "transcript": "%HESITATION LC it's a ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.9934404439301925
+                        ], 
+                        [
+                            "LC", 
+                            0.9967686695426353
+                        ], 
+                        [
+                            "it's", 
+                            0.7187534807220006
+                        ], 
+                        [
+                            "a", 
+                            0.3137907901522984
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION LC it's so "
+                }, 
+                {
+                    "transcript": "%HESITATION Elsie it's a "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 7, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "real", 
+                            27.19, 
+                            27.35
+                        ], 
+                        [
+                            "easy", 
+                            27.35, 
+                            27.64
+                        ], 
+                        [
+                            "to", 
+                            27.64, 
+                            27.72
+                        ], 
+                        [
+                            "use", 
+                            27.72, 
+                            28.18
+                        ], 
+                        [
+                            "color", 
+                            28.18, 
+                            28.74
+                        ]
+                    ], 
+                    "transcript": "real easy to use color "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 7, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.992, 
+                    "timestamps": [
+                        [
+                            "real", 
+                            27.19, 
+                            27.35
+                        ], 
+                        [
+                            "easy", 
+                            27.35, 
+                            27.64
+                        ], 
+                        [
+                            "to", 
+                            27.64, 
+                            27.72
+                        ], 
+                        [
+                            "use", 
+                            27.72, 
+                            28.18
+                        ], 
+                        [
+                            "color", 
+                            28.18, 
+                            28.74
+                        ], 
+                        [
+                            "%HESITATION", 
+                            28.97, 
+                            29.5
+                        ]
+                    ], 
+                    "transcript": "real easy to use color %HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "real", 
+                            1.0
+                        ], 
+                        [
+                            "easy", 
+                            1.0
+                        ], 
+                        [
+                            "to", 
+                            1.0
+                        ], 
+                        [
+                            "use", 
+                            1.0
+                        ], 
+                        [
+                            "color", 
+                            0.9698313205593304
+                        ], 
+                        [
+                            "%HESITATION", 
+                            1.0
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "real easy to use colour %HESITATION "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 8, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "computer", 
+                            30.43, 
+                            31.07
+                        ], 
+                        [
+                            "and", 
+                            31.37, 
+                            32.13
+                        ]
+                    ], 
+                    "transcript": "computer and "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 8, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.993, 
+                    "timestamps": [
+                        [
+                            "computer", 
+                            30.43, 
+                            31.07
+                        ], 
+                        [
+                            "and", 
+                            31.37, 
+                            32.21
+                        ]
+                    ], 
+                    "transcript": "computer and ", 
+                    "word_confidence": [
+                        [
+                            "computer", 
+                            1.0
+                        ], 
+                        [
+                            "and", 
+                            0.9877533299976636
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 9, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.712, 
+                    "timestamps": [
+                        [
+                            "I", 
+                            33.39, 
+                            33.5
+                        ], 
+                        [
+                            "got", 
+                            33.5, 
+                            33.71
+                        ], 
+                        [
+                            "a", 
+                            33.71, 
+                            33.95
+                        ]
+                    ], 
+                    "transcript": "I got a ", 
+                    "word_confidence": [
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "got", 
+                            0.955862857837102
+                        ], 
+                        [
+                            "a", 
+                            0.3656517742768152
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "I got up "
+                }, 
+                {
+                    "transcript": "I got out "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 10, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "very", 
+                            34.76, 
+                            35.1
+                        ], 
+                        [
+                            "nice", 
+                            35.1, 
+                            35.36
+                        ], 
+                        [
+                            "printer", 
+                            35.36, 
+                            35.74
+                        ], 
+                        [
+                            "that", 
+                            35.74, 
+                            35.87
+                        ], 
+                        [
+                            "goes", 
+                            35.87, 
+                            36.06
+                        ], 
+                        [
+                            "along", 
+                            36.06, 
+                            36.33
+                        ], 
+                        [
+                            "with", 
+                            36.33, 
+                            36.53
+                        ]
+                    ], 
+                    "transcript": "very nice printer that goes along with "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 10, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.959, 
+                    "timestamps": [
+                        [
+                            "very", 
+                            34.76, 
+                            35.1
+                        ], 
+                        [
+                            "nice", 
+                            35.1, 
+                            35.36
+                        ], 
+                        [
+                            "printer", 
+                            35.36, 
+                            35.74
+                        ], 
+                        [
+                            "that", 
+                            35.74, 
+                            35.87
+                        ], 
+                        [
+                            "goes", 
+                            35.87, 
+                            36.06
+                        ], 
+                        [
+                            "along", 
+                            36.06, 
+                            36.33
+                        ], 
+                        [
+                            "with", 
+                            36.33, 
+                            36.49
+                        ], 
+                        [
+                            "it", 
+                            36.49, 
+                            36.59
+                        ], 
+                        [
+                            "and", 
+                            36.59, 
+                            36.72
+                        ], 
+                        [
+                            "he", 
+                            36.72, 
+                            36.81
+                        ], 
+                        [
+                            "uses", 
+                            36.81, 
+                            37.14
+                        ], 
+                        [
+                            "it", 
+                            37.14, 
+                            37.27
+                        ], 
+                        [
+                            "for", 
+                            37.27, 
+                            37.4
+                        ], 
+                        [
+                            "his", 
+                            37.4, 
+                            37.52
+                        ], 
+                        [
+                            "school", 
+                            37.52, 
+                            37.82
+                        ], 
+                        [
+                            "work", 
+                            37.82, 
+                            38.18
+                        ]
+                    ], 
+                    "transcript": "very nice printer that goes along with it and he uses it for his school work ", 
+                    "word_confidence": [
+                        [
+                            "very", 
+                            1.0
+                        ], 
+                        [
+                            "nice", 
+                            1.0
+                        ], 
+                        [
+                            "printer", 
+                            1.0
+                        ], 
+                        [
+                            "that", 
+                            0.8342869841889814
+                        ], 
+                        [
+                            "goes", 
+                            1.0
+                        ], 
+                        [
+                            "along", 
+                            1.0
+                        ], 
+                        [
+                            "with", 
+                            1.0
+                        ], 
+                        [
+                            "it", 
+                            1.0
+                        ], 
+                        [
+                            "and", 
+                            1.0
+                        ], 
+                        [
+                            "he", 
+                            1.0
+                        ], 
+                        [
+                            "uses", 
+                            0.9970124210384275
+                        ], 
+                        [
+                            "it", 
+                            0.9507049471330973
+                        ], 
+                        [
+                            "for", 
+                            1.0
+                        ], 
+                        [
+                            "his", 
+                            0.4458507991885146
+                        ], 
+                        [
+                            "school", 
+                            0.9402768547387302
+                        ], 
+                        [
+                            "work", 
+                            0.921845290318466
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "very nice printer that goes along with it and he uses it for school work "
+                }, 
+                {
+                    "transcript": "very nice printer that goes along with it and he uses it for the school work "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 11, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.933, 
+                    "timestamps": [
+                        [
+                            "are", 
+                            75.01, 
+                            75.18
+                        ], 
+                        [
+                            "you", 
+                            75.18, 
+                            75.27
+                        ], 
+                        [
+                            "going", 
+                            75.27, 
+                            75.46
+                        ], 
+                        [
+                            "to", 
+                            75.46, 
+                            75.53
+                        ], 
+                        [
+                            "school", 
+                            75.53, 
+                            75.91
+                        ]
+                    ], 
+                    "transcript": "are you going to school ", 
+                    "word_confidence": [
+                        [
+                            "are", 
+                            0.720627552904836
+                        ], 
+                        [
+                            "you", 
+                            0.9390540576664093
+                        ], 
+                        [
+                            "going", 
+                            1.0
+                        ], 
+                        [
+                            "to", 
+                            1.0
+                        ], 
+                        [
+                            "school", 
+                            0.9796932534145588
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "or are you going to school "
+                }, 
+                {
+                    "transcript": "or you going to school "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 12, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.848, 
+                    "timestamps": [
+                        [
+                            "I", 
+                            77.05, 
+                            77.17
+                        ], 
+                        [
+                            "see", 
+                            77.17, 
+                            77.46
+                        ]
+                    ], 
+                    "transcript": "I see ", 
+                    "word_confidence": [
+                        [
+                            "I", 
+                            0.7497990805396145
+                        ], 
+                        [
+                            "see", 
+                            0.8889767866749918
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "see "
+                }, 
+                {
+                    "transcript": "mostly "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 13, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.992, 
+                    "timestamps": [
+                        [
+                            "in", 
+                            79.07, 
+                            79.23
+                        ], 
+                        [
+                            "engineering", 
+                            79.23, 
+                            79.77
+                        ]
+                    ], 
+                    "transcript": "in engineering ", 
+                    "word_confidence": [
+                        [
+                            "in", 
+                            1.0
+                        ], 
+                        [
+                            "engineering", 
+                            0.9895407535671878
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 14, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "so", 
+                            81.79, 
+                            82.05
+                        ], 
+                        [
+                            "that", 
+                            82.05, 
+                            82.25
+                        ], 
+                        [
+                            "explains", 
+                            82.25, 
+                            82.71
+                        ], 
+                        [
+                            "what", 
+                            82.71, 
+                            82.88
+                        ], 
+                        [
+                            "all", 
+                            82.88, 
+                            83.1
+                        ], 
+                        [
+                            "the", 
+                            83.1, 
+                            83.44
+                        ]
+                    ], 
+                    "transcript": "so that explains what all the "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 14, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.958, 
+                    "timestamps": [
+                        [
+                            "so", 
+                            81.79, 
+                            82.05
+                        ], 
+                        [
+                            "that", 
+                            82.05, 
+                            82.25
+                        ], 
+                        [
+                            "explains", 
+                            82.25, 
+                            82.71
+                        ], 
+                        [
+                            "what", 
+                            82.71, 
+                            82.88
+                        ], 
+                        [
+                            "all", 
+                            82.88, 
+                            83.1
+                        ], 
+                        [
+                            "the", 
+                            83.1, 
+                            83.43
+                        ], 
+                        [
+                            "computer", 
+                            83.46, 
+                            84.1
+                        ], 
+                        [
+                            "assignments", 
+                            84.18, 
+                            84.89
+                        ]
+                    ], 
+                    "transcript": "so that explains what all the computer assignments ", 
+                    "word_confidence": [
+                        [
+                            "so", 
+                            1.0
+                        ], 
+                        [
+                            "that", 
+                            1.0
+                        ], 
+                        [
+                            "explains", 
+                            1.0
+                        ], 
+                        [
+                            "what", 
+                            0.3011364544490962
+                        ], 
+                        [
+                            "all", 
+                            1.0
+                        ], 
+                        [
+                            "the", 
+                            1.0
+                        ], 
+                        [
+                            "computer", 
+                            1.0
+                        ], 
+                        [
+                            "assignments", 
+                            0.9913438436429005
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "so that explains why all the computer assignments "
+                }, 
+                {
+                    "transcript": "so that explains well all the computer assignments "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 15, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "what", 
+                            85.73, 
+                            85.89
+                        ], 
+                        [
+                            "do", 
+                            85.89, 
+                            85.97
+                        ], 
+                        [
+                            "you", 
+                            85.97, 
+                            86.08
+                        ], 
+                        [
+                            "use", 
+                            86.08, 
+                            86.4
+                        ], 
+                        [
+                            "your", 
+                            86.4, 
+                            86.51
+                        ], 
+                        [
+                            "PC", 
+                            86.51, 
+                            86.93
+                        ], 
+                        [
+                            "for", 
+                            86.93, 
+                            87.11
+                        ], 
+                        [
+                            "things", 
+                            87.11, 
+                            87.41
+                        ]
+                    ], 
+                    "transcript": "what do you use your PC for things "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 15, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.968, 
+                    "timestamps": [
+                        [
+                            "what", 
+                            85.73, 
+                            85.89
+                        ], 
+                        [
+                            "do", 
+                            85.89, 
+                            85.97
+                        ], 
+                        [
+                            "you", 
+                            85.97, 
+                            86.08
+                        ], 
+                        [
+                            "use", 
+                            86.08, 
+                            86.4
+                        ], 
+                        [
+                            "your", 
+                            86.4, 
+                            86.51
+                        ], 
+                        [
+                            "PC", 
+                            86.51, 
+                            86.93
+                        ], 
+                        [
+                            "for", 
+                            86.93, 
+                            87.11
+                        ], 
+                        [
+                            "things", 
+                            87.11, 
+                            87.37
+                        ], 
+                        [
+                            "other", 
+                            87.37, 
+                            87.73
+                        ], 
+                        [
+                            "than", 
+                            87.73, 
+                            87.95
+                        ], 
+                        [
+                            "explicit", 
+                            87.95, 
+                            88.48
+                        ], 
+                        [
+                            "computer", 
+                            88.48, 
+                            88.97
+                        ], 
+                        [
+                            "work", 
+                            88.97, 
+                            89.42
+                        ]
+                    ], 
+                    "transcript": "what do you use your PC for things other than explicit computer work ", 
+                    "word_confidence": [
+                        [
+                            "what", 
+                            0.39419740393118197
+                        ], 
+                        [
+                            "do", 
+                            1.0
+                        ], 
+                        [
+                            "you", 
+                            0.8739959025810268
+                        ], 
+                        [
+                            "use", 
+                            1.0
+                        ], 
+                        [
+                            "your", 
+                            1.0
+                        ], 
+                        [
+                            "PC", 
+                            0.999999999999999
+                        ], 
+                        [
+                            "for", 
+                            1.0
+                        ], 
+                        [
+                            "things", 
+                            1.0
+                        ], 
+                        [
+                            "other", 
+                            1.0
+                        ], 
+                        [
+                            "than", 
+                            1.0
+                        ], 
+                        [
+                            "explicit", 
+                            1.0
+                        ], 
+                        [
+                            "computer", 
+                            1.0
+                        ], 
+                        [
+                            "work", 
+                            0.9842483705274426
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "well do you use your PC for things other than explicit computer work "
+                }, 
+                {
+                    "transcript": "or do you use your PC for things other than explicit computer work "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 16, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "no", 
+                            114.04, 
+                            114.49
+                        ], 
+                        [
+                            "no", 
+                            114.63, 
+                            114.93
+                        ], 
+                        [
+                            "I", 
+                            114.93, 
+                            115.08
+                        ], 
+                        [
+                            "just", 
+                            115.08, 
+                            115.31
+                        ], 
+                        [
+                            "have", 
+                            115.31, 
+                            115.46
+                        ], 
+                        [
+                            "one", 
+                            115.46, 
+                            115.7
+                        ]
+                    ], 
+                    "transcript": "no no I just have one "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 16, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "no", 
+                            114.04, 
+                            114.49
+                        ], 
+                        [
+                            "no", 
+                            114.63, 
+                            114.93
+                        ], 
+                        [
+                            "I", 
+                            114.93, 
+                            115.08
+                        ], 
+                        [
+                            "just", 
+                            115.08, 
+                            115.31
+                        ], 
+                        [
+                            "have", 
+                            115.31, 
+                            115.46
+                        ], 
+                        [
+                            "one", 
+                            115.46, 
+                            115.62
+                        ], 
+                        [
+                            "for", 
+                            115.62, 
+                            115.77
+                        ], 
+                        [
+                            "my", 
+                            115.77, 
+                            115.89
+                        ], 
+                        [
+                            "son", 
+                            115.89, 
+                            116.18
+                        ], 
+                        [
+                            "and", 
+                            116.18, 
+                            116.32
+                        ], 
+                        [
+                            "I", 
+                            116.32, 
+                            116.7
+                        ], 
+                        [
+                            "really", 
+                            116.73, 
+                            117.03
+                        ], 
+                        [
+                            "sort", 
+                            117.03, 
+                            117.25
+                        ], 
+                        [
+                            "of", 
+                            117.25, 
+                            117.33
+                        ], 
+                        [
+                            "the", 
+                            117.33, 
+                            117.4
+                        ], 
+                        [
+                            "feeling", 
+                            117.4, 
+                            117.7
+                        ]
+                    ], 
+                    "transcript": "no no I just have one for my son and I really sort of the feeling "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 16, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.955, 
+                    "timestamps": [
+                        [
+                            "no", 
+                            114.04, 
+                            114.49
+                        ], 
+                        [
+                            "no", 
+                            114.63, 
+                            114.93
+                        ], 
+                        [
+                            "I", 
+                            114.93, 
+                            115.08
+                        ], 
+                        [
+                            "just", 
+                            115.08, 
+                            115.31
+                        ], 
+                        [
+                            "have", 
+                            115.31, 
+                            115.46
+                        ], 
+                        [
+                            "one", 
+                            115.46, 
+                            115.62
+                        ], 
+                        [
+                            "for", 
+                            115.62, 
+                            115.77
+                        ], 
+                        [
+                            "my", 
+                            115.77, 
+                            115.89
+                        ], 
+                        [
+                            "son", 
+                            115.89, 
+                            116.18
+                        ], 
+                        [
+                            "and", 
+                            116.18, 
+                            116.32
+                        ], 
+                        [
+                            "I", 
+                            116.32, 
+                            116.7
+                        ], 
+                        [
+                            "really", 
+                            116.73, 
+                            117.03
+                        ], 
+                        [
+                            "sort", 
+                            117.03, 
+                            117.25
+                        ], 
+                        [
+                            "of", 
+                            117.25, 
+                            117.33
+                        ], 
+                        [
+                            "the", 
+                            117.33, 
+                            117.4
+                        ], 
+                        [
+                            "feeling", 
+                            117.4, 
+                            117.71
+                        ], 
+                        [
+                            "that", 
+                            117.71, 
+                            117.85
+                        ], 
+                        [
+                            "word", 
+                            117.85, 
+                            118.09
+                        ], 
+                        [
+                            "processing", 
+                            118.09, 
+                            118.73
+                        ], 
+                        [
+                            "is", 
+                            118.73, 
+                            118.9
+                        ], 
+                        [
+                            "a", 
+                            118.9, 
+                            119.02
+                        ], 
+                        [
+                            "big", 
+                            119.05, 
+                            119.57
+                        ]
+                    ], 
+                    "transcript": "no no I just have one for my son and I really sort of the feeling that word processing is a big ", 
+                    "word_confidence": [
+                        [
+                            "no", 
+                            0.9999999999999348
+                        ], 
+                        [
+                            "no", 
+                            1.0
+                        ], 
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "just", 
+                            1.0
+                        ], 
+                        [
+                            "have", 
+                            0.9999999999999344
+                        ], 
+                        [
+                            "one", 
+                            0.9999999999999344
+                        ], 
+                        [
+                            "for", 
+                            0.79833300141568
+                        ], 
+                        [
+                            "my", 
+                            0.9663888335692251
+                        ], 
+                        [
+                            "son", 
+                            0.9999999999999337
+                        ], 
+                        [
+                            "and", 
+                            0.9999999999999342
+                        ], 
+                        [
+                            "I", 
+                            0.9999999999999338
+                        ], 
+                        [
+                            "really", 
+                            0.939526538938685
+                        ], 
+                        [
+                            "sort", 
+                            0.9506368044236051
+                        ], 
+                        [
+                            "of", 
+                            0.7828019394640329
+                        ], 
+                        [
+                            "the", 
+                            0.7895129830699753
+                        ], 
+                        [
+                            "feeling", 
+                            0.9999999999999535
+                        ], 
+                        [
+                            "that", 
+                            0.8038369731997802
+                        ], 
+                        [
+                            "word", 
+                            0.9999999999999742
+                        ], 
+                        [
+                            "processing", 
+                            0.9999999999999918
+                        ], 
+                        [
+                            "is", 
+                            0.6941515175605604
+                        ], 
+                        [
+                            "a", 
+                            0.46714943968089573
+                        ], 
+                        [
+                            "big", 
+                            0.9999999999999548
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "no no I just have one for my son and I really sort of the feeling that word processing is the big "
+                }, 
+                {
+                    "transcript": "no no I just have one for my son and I I really sort of the feeling that word processing is a big "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 17, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.985, 
+                    "timestamps": [
+                        [
+                            "market", 
+                            120.05, 
+                            120.55
+                        ], 
+                        [
+                            "for", 
+                            120.55, 
+                            121.01
+                        ], 
+                        [
+                            "home", 
+                            121.23, 
+                            121.51
+                        ], 
+                        [
+                            "computing", 
+                            121.51, 
+                            122.12
+                        ]
+                    ], 
+                    "transcript": "market for home computing ", 
+                    "word_confidence": [
+                        [
+                            "market", 
+                            1.0
+                        ], 
+                        [
+                            "for", 
+                            0.9532082184876262
+                        ], 
+                        [
+                            "home", 
+                            1.0
+                        ], 
+                        [
+                            "computing", 
+                            0.9910043830059894
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "market for a home computing "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 18, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "we", 
+                            123.21, 
+                            123.42
+                        ], 
+                        [
+                            "have", 
+                            123.53, 
+                            123.66
+                        ], 
+                        [
+                            "to", 
+                            123.66, 
+                            123.74
+                        ], 
+                        [
+                            "work", 
+                            123.74, 
+                            124.19
+                        ], 
+                        [
+                            "%HESITATION", 
+                            124.19, 
+                            124.85
+                        ]
+                    ], 
+                    "transcript": "we have to work %HESITATION "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 18, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.823, 
+                    "timestamps": [
+                        [
+                            "we", 
+                            123.21, 
+                            123.42
+                        ], 
+                        [
+                            "have", 
+                            123.53, 
+                            123.66
+                        ], 
+                        [
+                            "to", 
+                            123.66, 
+                            123.74
+                        ], 
+                        [
+                            "work", 
+                            123.74, 
+                            124.19
+                        ], 
+                        [
+                            "%HESITATION", 
+                            124.19, 
+                            125.18
+                        ]
+                    ], 
+                    "transcript": "we have to work %HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "we", 
+                            0.10848453747074399
+                        ], 
+                        [
+                            "have", 
+                            0.26150436752107525
+                        ], 
+                        [
+                            "to", 
+                            0.4179319751341392
+                        ], 
+                        [
+                            "work", 
+                            0.9999999999999739
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.9999999999999805
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "we'll have to work %HESITATION "
+                }, 
+                {
+                    "transcript": "at work %HESITATION "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 19, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I'm", 
+                            126.65, 
+                            127.45
+                        ], 
+                        [
+                            "a", 
+                            127.48, 
+                            127.77
+                        ], 
+                        [
+                            "techno", 
+                            127.77, 
+                            128.2
+                        ]
+                    ], 
+                    "transcript": "I'm a techno "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 19, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I'm", 
+                            126.65, 
+                            127.45
+                        ], 
+                        [
+                            "a", 
+                            127.48, 
+                            127.77
+                        ], 
+                        [
+                            "technologist", 
+                            127.77, 
+                            128.84
+                        ], 
+                        [
+                            "%HESITATION", 
+                            128.92, 
+                            129.51
+                        ], 
+                        [
+                            "and", 
+                            129.51, 
+                            129.75
+                        ], 
+                        [
+                            "I", 
+                            129.75, 
+                            130.22
+                        ]
+                    ], 
+                    "transcript": "I'm a technologist %HESITATION and I "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 19, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.78, 
+                    "timestamps": [
+                        [
+                            "I'm", 
+                            126.65, 
+                            127.45
+                        ], 
+                        [
+                            "a", 
+                            127.48, 
+                            127.77
+                        ], 
+                        [
+                            "technologist", 
+                            127.77, 
+                            128.84
+                        ], 
+                        [
+                            "%HESITATION", 
+                            128.92, 
+                            129.51
+                        ], 
+                        [
+                            "and", 
+                            129.51, 
+                            129.75
+                        ], 
+                        [
+                            "I", 
+                            129.75, 
+                            130.22
+                        ], 
+                        [
+                            "in", 
+                            130.27, 
+                            130.41
+                        ], 
+                        [
+                            "the", 
+                            130.41, 
+                            130.5
+                        ], 
+                        [
+                            "past", 
+                            130.5, 
+                            130.98
+                        ], 
+                        [
+                            "have", 
+                            130.98, 
+                            131.11
+                        ], 
+                        [
+                            "done", 
+                            131.11, 
+                            131.83
+                        ]
+                    ], 
+                    "transcript": "I'm a technologist %HESITATION and I in the past have done ", 
+                    "word_confidence": [
+                        [
+                            "I'm", 
+                            0.9999999999999721
+                        ], 
+                        [
+                            "a", 
+                            0.3898826850872659
+                        ], 
+                        [
+                            "technologist", 
+                            0.6142129098354803
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.9236096532942965
+                        ], 
+                        [
+                            "and", 
+                            0.6340057654808532
+                        ], 
+                        [
+                            "I", 
+                            0.4328640085259277
+                        ], 
+                        [
+                            "in", 
+                            0.9999999999999319
+                        ], 
+                        [
+                            "the", 
+                            0.999999999999927
+                        ], 
+                        [
+                            "past", 
+                            0.99999999999993
+                        ], 
+                        [
+                            "have", 
+                            0.3387736460152197
+                        ], 
+                        [
+                            "done", 
+                            0.9564502881922581
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "I'm a technologist %HESITATION in a in the past have done "
+                }, 
+                {
+                    "transcript": "I'm %HESITATION technologists %HESITATION in a in the past have done "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 20, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.976, 
+                    "timestamps": [
+                        [
+                            "a", 
+                            132.14, 
+                            132.24
+                        ], 
+                        [
+                            "great", 
+                            132.24, 
+                            132.54
+                        ], 
+                        [
+                            "deal", 
+                            132.54, 
+                            132.8
+                        ], 
+                        [
+                            "of", 
+                            132.8, 
+                            133.03
+                        ]
+                    ], 
+                    "transcript": "a great deal of ", 
+                    "word_confidence": [
+                        [
+                            "a", 
+                            0.8460641944401288
+                        ], 
+                        [
+                            "great", 
+                            0.9999999999999933
+                        ], 
+                        [
+                            "deal", 
+                            0.999999999999993
+                        ], 
+                        [
+                            "of", 
+                            0.9739509685576182
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "great deal of "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 21, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.827, 
+                    "timestamps": [
+                        [
+                            "of", 
+                            133.38, 
+                            133.75
+                        ], 
+                        [
+                            "%HESITATION", 
+                            133.75, 
+                            134.04
+                        ]
+                    ], 
+                    "transcript": "of %HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "of", 
+                            0.9999999999999898
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.6071144174201064
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "of of "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 22, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "system", 
+                            134.36, 
+                            134.84
+                        ], 
+                        [
+                            "development", 
+                            134.84, 
+                            135.41
+                        ], 
+                        [
+                            "just", 
+                            135.41, 
+                            135.88
+                        ]
+                    ], 
+                    "transcript": "system development just "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 22, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.945, 
+                    "timestamps": [
+                        [
+                            "system", 
+                            134.36, 
+                            134.84
+                        ], 
+                        [
+                            "development", 
+                            134.84, 
+                            135.41
+                        ], 
+                        [
+                            "just", 
+                            135.41, 
+                            135.88
+                        ], 
+                        [
+                            "through", 
+                            135.93, 
+                            136.44
+                        ], 
+                        [
+                            "a", 
+                            136.44, 
+                            136.59
+                        ], 
+                        [
+                            "software", 
+                            136.59, 
+                            137.09
+                        ], 
+                        [
+                            "development", 
+                            137.09, 
+                            137.64
+                        ], 
+                        [
+                            "programming", 
+                            137.64, 
+                            138.17
+                        ]
+                    ], 
+                    "transcript": "system development just through a software development programming ", 
+                    "word_confidence": [
+                        [
+                            "system", 
+                            0.7024521683553325
+                        ], 
+                        [
+                            "development", 
+                            0.9676617851576322
+                        ], 
+                        [
+                            "just", 
+                            0.9999999999999424
+                        ], 
+                        [
+                            "through", 
+                            0.9999999999999636
+                        ], 
+                        [
+                            "a", 
+                            0.7425155650560075
+                        ], 
+                        [
+                            "software", 
+                            0.9999999999999595
+                        ], 
+                        [
+                            "development", 
+                            0.9999999999999584
+                        ], 
+                        [
+                            "programming", 
+                            0.9893395762766887
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "system development just through software development programming "
+                }, 
+                {
+                    "transcript": "systems development just through a software development programming "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 23, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            138.95, 
+                            139.53
+                        ], 
+                        [
+                            "but", 
+                            139.53, 
+                            139.74
+                        ], 
+                        [
+                            "now", 
+                            139.74, 
+                            139.99
+                        ], 
+                        [
+                            "I", 
+                            139.99, 
+                            140.11
+                        ], 
+                        [
+                            "find", 
+                            140.11, 
+                            140.45
+                        ], 
+                        [
+                            "my", 
+                            140.45, 
+                            140.61
+                        ]
+                    ], 
+                    "transcript": "%HESITATION but now I find my "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 23, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            138.95, 
+                            139.53
+                        ], 
+                        [
+                            "but", 
+                            139.53, 
+                            139.74
+                        ], 
+                        [
+                            "now", 
+                            139.74, 
+                            139.99
+                        ], 
+                        [
+                            "I", 
+                            139.99, 
+                            140.11
+                        ], 
+                        [
+                            "find", 
+                            140.11, 
+                            140.45
+                        ], 
+                        [
+                            "myself", 
+                            140.45, 
+                            140.98
+                        ], 
+                        [
+                            "using", 
+                            140.98, 
+                            141.34
+                        ], 
+                        [
+                            "the", 
+                            141.34, 
+                            141.43
+                        ], 
+                        [
+                            "computer", 
+                            141.43, 
+                            141.84
+                        ], 
+                        [
+                            "even", 
+                            141.84, 
+                            142.08
+                        ], 
+                        [
+                            "the", 
+                            142.08, 
+                            142.17
+                        ], 
+                        [
+                            "computer", 
+                            142.17, 
+                            142.67
+                        ]
+                    ], 
+                    "transcript": "%HESITATION but now I find myself using the computer even the computer "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 23, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.974, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            138.95, 
+                            139.53
+                        ], 
+                        [
+                            "but", 
+                            139.53, 
+                            139.74
+                        ], 
+                        [
+                            "now", 
+                            139.74, 
+                            139.99
+                        ], 
+                        [
+                            "I", 
+                            139.99, 
+                            140.11
+                        ], 
+                        [
+                            "find", 
+                            140.11, 
+                            140.45
+                        ], 
+                        [
+                            "myself", 
+                            140.45, 
+                            140.98
+                        ], 
+                        [
+                            "using", 
+                            140.98, 
+                            141.34
+                        ], 
+                        [
+                            "the", 
+                            141.34, 
+                            141.43
+                        ], 
+                        [
+                            "computer", 
+                            141.43, 
+                            141.84
+                        ], 
+                        [
+                            "even", 
+                            141.84, 
+                            142.08
+                        ], 
+                        [
+                            "the", 
+                            142.08, 
+                            142.17
+                        ], 
+                        [
+                            "computer", 
+                            142.17, 
+                            142.55
+                        ], 
+                        [
+                            "work", 
+                            142.55, 
+                            142.95
+                        ], 
+                        [
+                            "is", 
+                            142.95, 
+                            143.31
+                        ]
+                    ], 
+                    "transcript": "%HESITATION but now I find myself using the computer even the computer work is ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            1.0
+                        ], 
+                        [
+                            "but", 
+                            1.0
+                        ], 
+                        [
+                            "now", 
+                            1.0
+                        ], 
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "find", 
+                            1.0
+                        ], 
+                        [
+                            "myself", 
+                            1.0
+                        ], 
+                        [
+                            "using", 
+                            1.0
+                        ], 
+                        [
+                            "the", 
+                            1.0
+                        ], 
+                        [
+                            "computer", 
+                            0.9999999999999839
+                        ], 
+                        [
+                            "even", 
+                            0.9999999999999836
+                        ], 
+                        [
+                            "the", 
+                            0.9999999999999838
+                        ], 
+                        [
+                            "computer", 
+                            0.9586604578917596
+                        ], 
+                        [
+                            "work", 
+                            0.9493822736677087
+                        ], 
+                        [
+                            "is", 
+                            0.7876226445609639
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION but now I find myself using the computer even the computer at work is "
+                }, 
+                {
+                    "transcript": "%HESITATION but now I find myself using the computer even the computer work as "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 24, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.999, 
+                    "timestamps": [
+                        [
+                            "primarily", 
+                            144.06, 
+                            144.94
+                        ], 
+                        [
+                            "a", 
+                            144.97, 
+                            145.42
+                        ], 
+                        [
+                            "%HESITATION", 
+                            145.42, 
+                            146.04
+                        ]
+                    ], 
+                    "transcript": "primarily a %HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "primarily", 
+                            1.0
+                        ], 
+                        [
+                            "a", 
+                            0.9952939885392517
+                        ], 
+                        [
+                            "%HESITATION", 
+                            1.0
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "primarily a um "
+                }, 
+                {
+                    "transcript": "primarily a %HESITATION %HESITATION "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 25, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "word", 
+                            146.63, 
+                            146.84
+                        ], 
+                        [
+                            "processing", 
+                            146.84, 
+                            147.51
+                        ], 
+                        [
+                            "system", 
+                            147.51, 
+                            148.19
+                        ]
+                    ], 
+                    "transcript": "word processing system "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 25, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "word", 
+                            146.63, 
+                            146.84
+                        ], 
+                        [
+                            "processing", 
+                            146.84, 
+                            147.51
+                        ], 
+                        [
+                            "system", 
+                            147.51, 
+                            148.19
+                        ], 
+                        [
+                            "and", 
+                            148.26, 
+                            148.94
+                        ], 
+                        [
+                            "a", 
+                            148.97, 
+                            149.17
+                        ], 
+                        [
+                            "communication", 
+                            149.17, 
+                            149.81
+                        ], 
+                        [
+                            "system", 
+                            149.81, 
+                            150.32
+                        ]
+                    ], 
+                    "transcript": "word processing system and a communication system "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 25, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.967, 
+                    "timestamps": [
+                        [
+                            "word", 
+                            146.63, 
+                            146.84
+                        ], 
+                        [
+                            "processing", 
+                            146.84, 
+                            147.51
+                        ], 
+                        [
+                            "system", 
+                            147.51, 
+                            148.19
+                        ], 
+                        [
+                            "and", 
+                            148.26, 
+                            148.94
+                        ], 
+                        [
+                            "a", 
+                            148.97, 
+                            149.17
+                        ], 
+                        [
+                            "communication", 
+                            149.17, 
+                            149.81
+                        ], 
+                        [
+                            "system", 
+                            149.81, 
+                            150.32
+                        ]
+                    ], 
+                    "transcript": "word processing system and a communication system ", 
+                    "word_confidence": [
+                        [
+                            "word", 
+                            1.0
+                        ], 
+                        [
+                            "processing", 
+                            1.0
+                        ], 
+                        [
+                            "system", 
+                            0.9950820943101656
+                        ], 
+                        [
+                            "and", 
+                            1.0
+                        ], 
+                        [
+                            "a", 
+                            0.4639363227472055
+                        ], 
+                        [
+                            "communication", 
+                            1.0
+                        ], 
+                        [
+                            "system", 
+                            0.9828615482244965
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "word processing system and communication system "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 26, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.911, 
+                    "timestamps": [
+                        [
+                            "yes", 
+                            152.89, 
+                            153.21
+                        ], 
+                        [
+                            "email", 
+                            153.21, 
+                            153.69
+                        ], 
+                        [
+                            "is", 
+                            153.69, 
+                            153.87
+                        ], 
+                        [
+                            "probably", 
+                            153.87, 
+                            154.28
+                        ], 
+                        [
+                            "pulls", 
+                            154.28, 
+                            154.63
+                        ], 
+                        [
+                            "down", 
+                            154.63, 
+                            155.07
+                        ]
+                    ], 
+                    "transcript": "yes email is probably pulls down ", 
+                    "word_confidence": [
+                        [
+                            "yes", 
+                            0.9939449722902061
+                        ], 
+                        [
+                            "email", 
+                            0.9677065188811409
+                        ], 
+                        [
+                            "is", 
+                            1.0
+                        ], 
+                        [
+                            "probably", 
+                            1.0
+                        ], 
+                        [
+                            "pulls", 
+                            1.0
+                        ], 
+                        [
+                            "down", 
+                            0.6003536275084085
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "yes email is probably pulls town "
+                }, 
+                {
+                    "transcript": "yes email is probably pulls down on "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 27, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.802, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            155.9, 
+                            156.26
+                        ], 
+                        [
+                            "third", 
+                            156.26, 
+                            156.55
+                        ], 
+                        [
+                            "of", 
+                            156.55, 
+                            156.7
+                        ], 
+                        [
+                            "all", 
+                            156.85, 
+                            157.06
+                        ], 
+                        [
+                            "my", 
+                            157.06, 
+                            157.23
+                        ], 
+                        [
+                            "time", 
+                            157.23, 
+                            157.67
+                        ]
+                    ], 
+                    "transcript": "%HESITATION third of all my time ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.9354399039462155
+                        ], 
+                        [
+                            "third", 
+                            0.5692686194604776
+                        ], 
+                        [
+                            "of", 
+                            0.5167520563933227
+                        ], 
+                        [
+                            "all", 
+                            1.0
+                        ], 
+                        [
+                            "my", 
+                            0.9999999999999979
+                        ], 
+                        [
+                            "time", 
+                            0.7727432812530634
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION third of all my times "
+                }, 
+                {
+                    "transcript": "%HESITATION thirty all my time "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 28, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.105, 
+                    "timestamps": [
+                        [
+                            "and", 
+                            202.67, 
+                            203.0
+                        ]
+                    ], 
+                    "transcript": "and ", 
+                    "word_confidence": [
+                        [
+                            "and", 
+                            0.10483448396513059
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "I'm "
+                }, 
+                {
+                    "transcript": "when "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 29, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "well", 
+                            208.05, 
+                            208.32
+                        ], 
+                        [
+                            "I'm", 
+                            208.32, 
+                            208.46
+                        ], 
+                        [
+                            "an", 
+                            208.46, 
+                            208.54
+                        ], 
+                        [
+                            "old", 
+                            208.54, 
+                            208.8
+                        ], 
+                        [
+                            "timer", 
+                            208.8, 
+                            209.18
+                        ], 
+                        [
+                            "I", 
+                            209.18, 
+                            209.42
+                        ], 
+                        [
+                            "did", 
+                            209.42, 
+                            209.74
+                        ]
+                    ], 
+                    "transcript": "well I'm an old timer I did "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 29, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.922, 
+                    "timestamps": [
+                        [
+                            "well", 
+                            208.05, 
+                            208.32
+                        ], 
+                        [
+                            "I'm", 
+                            208.32, 
+                            208.46
+                        ], 
+                        [
+                            "an", 
+                            208.46, 
+                            208.54
+                        ], 
+                        [
+                            "old", 
+                            208.54, 
+                            208.8
+                        ], 
+                        [
+                            "timer", 
+                            208.8, 
+                            209.18
+                        ], 
+                        [
+                            "I", 
+                            209.18, 
+                            209.42
+                        ], 
+                        [
+                            "did", 
+                            209.42, 
+                            209.72
+                        ], 
+                        [
+                            "my", 
+                            209.75, 
+                            210.15
+                        ], 
+                        [
+                            "master's", 
+                            210.22, 
+                            210.72
+                        ], 
+                        [
+                            "thesis", 
+                            210.72, 
+                            211.21
+                        ], 
+                        [
+                            "on", 
+                            211.21, 
+                            211.54
+                        ], 
+                        [
+                            "%HESITATION", 
+                            211.54, 
+                            211.87
+                        ]
+                    ], 
+                    "transcript": "well I'm an old timer I did my master's thesis on %HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "well", 
+                            1.0
+                        ], 
+                        [
+                            "I'm", 
+                            0.7689227429517589
+                        ], 
+                        [
+                            "an", 
+                            0.7586443024115682
+                        ], 
+                        [
+                            "old", 
+                            0.9165614427645229
+                        ], 
+                        [
+                            "timer", 
+                            0.8996983745942955
+                        ], 
+                        [
+                            "I", 
+                            0.9031933901211232
+                        ], 
+                        [
+                            "did", 
+                            0.9833702079950337
+                        ], 
+                        [
+                            "my", 
+                            0.9999999999999993
+                        ], 
+                        [
+                            "master's", 
+                            1.0
+                        ], 
+                        [
+                            "thesis", 
+                            1.0
+                        ], 
+                        [
+                            "on", 
+                            0.97464211189641
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.5729406359493849
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "well I'm an old timer I did my master's thesis on the "
+                }, 
+                {
+                    "transcript": "well I'm an old timer I did my masters thesis on %HESITATION "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 30, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.94, 
+                    "timestamps": [
+                        [
+                            "a", 
+                            212.74, 
+                            212.85
+                        ], 
+                        [
+                            "typewriter", 
+                            212.85, 
+                            213.51
+                        ]
+                    ], 
+                    "transcript": "a typewriter ", 
+                    "word_confidence": [
+                        [
+                            "a", 
+                            0.6307189110190805
+                        ], 
+                        [
+                            "typewriter", 
+                            0.9920248369695807
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "the typewriter "
+                }, 
+                {
+                    "transcript": "they typewriter "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 31, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            214.78, 
+                            215.21
+                        ], 
+                        [
+                            "I", 
+                            215.21, 
+                            215.32
+                        ], 
+                        [
+                            "rented", 
+                            215.32, 
+                            215.75
+                        ], 
+                        [
+                            "an", 
+                            215.75, 
+                            215.86
+                        ], 
+                        [
+                            "IBM", 
+                            215.86, 
+                            216.26
+                        ], 
+                        [
+                            "so", 
+                            216.26, 
+                            216.48
+                        ]
+                    ], 
+                    "transcript": "%HESITATION I rented an IBM so "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 31, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.961, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            214.78, 
+                            215.21
+                        ], 
+                        [
+                            "I", 
+                            215.21, 
+                            215.32
+                        ], 
+                        [
+                            "rented", 
+                            215.32, 
+                            215.75
+                        ], 
+                        [
+                            "an", 
+                            215.75, 
+                            215.86
+                        ], 
+                        [
+                            "IBM", 
+                            215.86, 
+                            216.26
+                        ], 
+                        [
+                            "Selectric", 
+                            216.26, 
+                            217.04
+                        ]
+                    ], 
+                    "transcript": "%HESITATION I rented an IBM Selectric ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            1.0
+                        ], 
+                        [
+                            "I", 
+                            0.747301366931853
+                        ], 
+                        [
+                            "rented", 
+                            0.9572098820905719
+                        ], 
+                        [
+                            "an", 
+                            0.7464519242736521
+                        ], 
+                        [
+                            "IBM", 
+                            0.9809838943205553
+                        ], 
+                        [
+                            "Selectric", 
+                            0.9913440630744247
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION rented an IBM Selectric "
+                }, 
+                {
+                    "transcript": "%HESITATION I rented and IBM Selectric "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 32, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.894, 
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            218.16, 
+                            218.29
+                        ], 
+                        [
+                            "that", 
+                            218.29, 
+                            218.43
+                        ], 
+                        [
+                            "was", 
+                            218.43, 
+                            218.54
+                        ], 
+                        [
+                            "a", 
+                            218.54, 
+                            218.61
+                        ], 
+                        [
+                            "pretty", 
+                            218.61, 
+                            218.82
+                        ], 
+                        [
+                            "big", 
+                            218.82, 
+                            219.09
+                        ], 
+                        [
+                            "deal", 
+                            219.09, 
+                            219.55
+                        ]
+                    ], 
+                    "transcript": "yeah that was a pretty big deal ", 
+                    "word_confidence": [
+                        [
+                            "yeah", 
+                            0.4912879620775105
+                        ], 
+                        [
+                            "that", 
+                            0.48126711302838243
+                        ], 
+                        [
+                            "was", 
+                            1.0
+                        ], 
+                        [
+                            "a", 
+                            1.0
+                        ], 
+                        [
+                            "pretty", 
+                            1.0
+                        ], 
+                        [
+                            "big", 
+                            1.0
+                        ], 
+                        [
+                            "deal", 
+                            0.9820299918102675
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "and that was a pretty big deal "
+                }, 
+                {
+                    "transcript": "and it was a pretty big deal "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 33, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.974, 
+                    "timestamps": [
+                        [
+                            "yeah", 
+                            236.57, 
+                            236.99
+                        ], 
+                        [
+                            "it", 
+                            237.2, 
+                            237.6
+                        ], 
+                        [
+                            "%HESITATION", 
+                            237.6, 
+                            238.1
+                        ]
+                    ], 
+                    "transcript": "yeah it %HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "yeah", 
+                            0.9172498436921158
+                        ], 
+                        [
+                            "it", 
+                            1.0
+                        ], 
+                        [
+                            "%HESITATION", 
+                            1.0
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "it %HESITATION "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 34, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "well", 
+                            239.74, 
+                            240.12
+                        ], 
+                        [
+                            "you", 
+                            240.16, 
+                            240.26
+                        ], 
+                        [
+                            "know", 
+                            240.26, 
+                            240.46
+                        ], 
+                        [
+                            "it's", 
+                            240.46, 
+                            240.58
+                        ], 
+                        [
+                            "just", 
+                            240.58, 
+                            240.83
+                        ], 
+                        [
+                            "it", 
+                            240.83, 
+                            240.96
+                        ], 
+                        [
+                            "was", 
+                            240.96, 
+                            241.12
+                        ], 
+                        [
+                            "just", 
+                            241.12, 
+                            241.43
+                        ], 
+                        [
+                            "come", 
+                            241.43, 
+                            241.6
+                        ]
+                    ], 
+                    "transcript": "well you know it's just it was just come "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 34, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.922, 
+                    "timestamps": [
+                        [
+                            "well", 
+                            239.74, 
+                            240.12
+                        ], 
+                        [
+                            "you", 
+                            240.16, 
+                            240.26
+                        ], 
+                        [
+                            "know", 
+                            240.26, 
+                            240.46
+                        ], 
+                        [
+                            "it's", 
+                            240.46, 
+                            240.58
+                        ], 
+                        [
+                            "just", 
+                            240.58, 
+                            240.83
+                        ], 
+                        [
+                            "it", 
+                            240.83, 
+                            240.96
+                        ], 
+                        [
+                            "was", 
+                            240.96, 
+                            241.12
+                        ], 
+                        [
+                            "just", 
+                            241.12, 
+                            241.36
+                        ], 
+                        [
+                            "a", 
+                            241.36, 
+                            241.42
+                        ], 
+                        [
+                            "completely", 
+                            241.42, 
+                            241.88
+                        ], 
+                        [
+                            "different", 
+                            241.88, 
+                            242.19
+                        ], 
+                        [
+                            "world", 
+                            242.19, 
+                            242.56
+                        ], 
+                        [
+                            "then", 
+                            242.56, 
+                            242.9
+                        ]
+                    ], 
+                    "transcript": "well you know it's just it was just a completely different world then ", 
+                    "word_confidence": [
+                        [
+                            "well", 
+                            0.9999999999999016
+                        ], 
+                        [
+                            "you", 
+                            0.9999999999999021
+                        ], 
+                        [
+                            "know", 
+                            0.9791232145017361
+                        ], 
+                        [
+                            "it's", 
+                            0.7912321450180361
+                        ], 
+                        [
+                            "just", 
+                            0.9999999999999196
+                        ], 
+                        [
+                            "it", 
+                            0.9999999999999231
+                        ], 
+                        [
+                            "was", 
+                            0.9999999999999148
+                        ], 
+                        [
+                            "just", 
+                            0.999999999999912
+                        ], 
+                        [
+                            "a", 
+                            0.6477728378392281
+                        ], 
+                        [
+                            "completely", 
+                            0.992342887779028
+                        ], 
+                        [
+                            "different", 
+                            0.9999999999999118
+                        ], 
+                        [
+                            "world", 
+                            0.9894314680810365
+                        ], 
+                        [
+                            "then", 
+                            0.4566997105125237
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "well you know it's just it was just a completely different world than "
+                }, 
+                {
+                    "transcript": "well you know it's just it was just completely different world then "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 35, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            252.59, 
+                            252.82
+                        ], 
+                        [
+                            "like", 
+                            252.82, 
+                            253.18
+                        ], 
+                        [
+                            "it", 
+                            253.18, 
+                            253.33
+                        ], 
+                        [
+                            "yeah", 
+                            253.33, 
+                            253.5
+                        ], 
+                        [
+                            "I", 
+                            253.5, 
+                            253.58
+                        ], 
+                        [
+                            "like", 
+                            253.58, 
+                            253.8
+                        ], 
+                        [
+                            "it", 
+                            253.8, 
+                            253.89
+                        ], 
+                        [
+                            "from", 
+                            253.89, 
+                            254.08
+                        ], 
+                        [
+                            "a", 
+                            254.08, 
+                            254.26
+                        ]
+                    ], 
+                    "transcript": "I like it yeah I like it from a "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 35, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            252.59, 
+                            252.82
+                        ], 
+                        [
+                            "like", 
+                            252.82, 
+                            253.18
+                        ], 
+                        [
+                            "it", 
+                            253.18, 
+                            253.33
+                        ], 
+                        [
+                            "yeah", 
+                            253.33, 
+                            253.5
+                        ], 
+                        [
+                            "I", 
+                            253.5, 
+                            253.58
+                        ], 
+                        [
+                            "like", 
+                            253.58, 
+                            253.8
+                        ], 
+                        [
+                            "it", 
+                            253.8, 
+                            253.89
+                        ], 
+                        [
+                            "from", 
+                            253.89, 
+                            254.08
+                        ], 
+                        [
+                            "a", 
+                            254.08, 
+                            254.15
+                        ], 
+                        [
+                            "distance", 
+                            254.15, 
+                            254.67
+                        ], 
+                        [
+                            "really", 
+                            254.67, 
+                            255.0
+                        ], 
+                        [
+                            "I", 
+                            255.0, 
+                            255.2
+                        ], 
+                        [
+                            "I", 
+                            255.2, 
+                            255.38
+                        ], 
+                        [
+                            "see", 
+                            255.38, 
+                            255.72
+                        ], 
+                        [
+                            "the", 
+                            255.72, 
+                            256.02
+                        ], 
+                        [
+                            "pack", 
+                            256.02, 
+                            256.32
+                        ]
+                    ], 
+                    "transcript": "I like it yeah I like it from a distance really I I see the pack "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 35, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.97, 
+                    "timestamps": [
+                        [
+                            "I", 
+                            252.59, 
+                            252.82
+                        ], 
+                        [
+                            "like", 
+                            252.82, 
+                            253.18
+                        ], 
+                        [
+                            "it", 
+                            253.18, 
+                            253.33
+                        ], 
+                        [
+                            "yeah", 
+                            253.33, 
+                            253.5
+                        ], 
+                        [
+                            "I", 
+                            253.5, 
+                            253.58
+                        ], 
+                        [
+                            "like", 
+                            253.58, 
+                            253.8
+                        ], 
+                        [
+                            "it", 
+                            253.8, 
+                            253.89
+                        ], 
+                        [
+                            "from", 
+                            253.89, 
+                            254.08
+                        ], 
+                        [
+                            "a", 
+                            254.08, 
+                            254.15
+                        ], 
+                        [
+                            "distance", 
+                            254.15, 
+                            254.67
+                        ], 
+                        [
+                            "really", 
+                            254.67, 
+                            255.0
+                        ], 
+                        [
+                            "I", 
+                            255.0, 
+                            255.2
+                        ], 
+                        [
+                            "I", 
+                            255.2, 
+                            255.38
+                        ], 
+                        [
+                            "see", 
+                            255.38, 
+                            255.72
+                        ], 
+                        [
+                            "the", 
+                            255.72, 
+                            256.02
+                        ], 
+                        [
+                            "packages", 
+                            256.02, 
+                            256.69
+                        ], 
+                        [
+                            "on", 
+                            256.69, 
+                            256.88
+                        ], 
+                        [
+                            "it", 
+                            256.88, 
+                            257.24
+                        ], 
+                        [
+                            "%HESITATION", 
+                            257.24, 
+                            257.96
+                        ]
+                    ], 
+                    "transcript": "I like it yeah I like it from a distance really I I see the packages on it %HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "I", 
+                            0.7354888102145315
+                        ], 
+                        [
+                            "like", 
+                            0.9485672686528075
+                        ], 
+                        [
+                            "it", 
+                            0.9999999999999605
+                        ], 
+                        [
+                            "yeah", 
+                            0.6318859889540327
+                        ], 
+                        [
+                            "I", 
+                            0.9539857486192136
+                        ], 
+                        [
+                            "like", 
+                            0.9999999999999525
+                        ], 
+                        [
+                            "it", 
+                            0.9999999999999645
+                        ], 
+                        [
+                            "from", 
+                            0.9999999999999672
+                        ], 
+                        [
+                            "a", 
+                            1.0
+                        ], 
+                        [
+                            "distance", 
+                            0.9999999999999672
+                        ], 
+                        [
+                            "really", 
+                            1.0
+                        ], 
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "see", 
+                            1.0
+                        ], 
+                        [
+                            "the", 
+                            1.0
+                        ], 
+                        [
+                            "packages", 
+                            0.9785626899340628
+                        ], 
+                        [
+                            "on", 
+                            1.0
+                        ], 
+                        [
+                            "it", 
+                            0.9999999999999977
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.9999999999999906
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "I like it you know I like it from a distance really I I see the packages on it %HESITATION "
+                }, 
+                {
+                    "transcript": "I'd like it yeah I like it from a distance really I I see the packages on it %HESITATION "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 36, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "they're", 
+                            258.39, 
+                            258.59
+                        ], 
+                        [
+                            "available", 
+                            258.59, 
+                            259.1
+                        ], 
+                        [
+                            "and", 
+                            259.1, 
+                            259.2
+                        ], 
+                        [
+                            "it's", 
+                            259.2, 
+                            259.36
+                        ], 
+                        [
+                            "nice", 
+                            259.36, 
+                            259.73
+                        ], 
+                        [
+                            "I", 
+                            259.73, 
+                            259.8
+                        ], 
+                        [
+                            "really", 
+                            259.8, 
+                            260.13
+                        ]
+                    ], 
+                    "transcript": "they're available and it's nice I really "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 36, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.949, 
+                    "timestamps": [
+                        [
+                            "they're", 
+                            258.39, 
+                            258.59
+                        ], 
+                        [
+                            "available", 
+                            258.59, 
+                            259.1
+                        ], 
+                        [
+                            "and", 
+                            259.1, 
+                            259.2
+                        ], 
+                        [
+                            "it's", 
+                            259.2, 
+                            259.36
+                        ], 
+                        [
+                            "nice", 
+                            259.36, 
+                            259.73
+                        ], 
+                        [
+                            "I", 
+                            259.73, 
+                            259.8
+                        ], 
+                        [
+                            "really", 
+                            259.8, 
+                            260.1
+                        ], 
+                        [
+                            "don't", 
+                            260.1, 
+                            260.48
+                        ], 
+                        [
+                            "use", 
+                            260.48, 
+                            260.82
+                        ], 
+                        [
+                            "it", 
+                            260.82, 
+                            260.96
+                        ], 
+                        [
+                            "myself", 
+                            260.99, 
+                            261.79
+                        ]
+                    ], 
+                    "transcript": "they're available and it's nice I really don't use it myself ", 
+                    "word_confidence": [
+                        [
+                            "they're", 
+                            0.6670069154822735
+                        ], 
+                        [
+                            "available", 
+                            0.9700505701455197
+                        ], 
+                        [
+                            "and", 
+                            0.5510516958580474
+                        ], 
+                        [
+                            "it's", 
+                            0.9144005289897634
+                        ], 
+                        [
+                            "nice", 
+                            1.0
+                        ], 
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "really", 
+                            1.0
+                        ], 
+                        [
+                            "don't", 
+                            0.9694455746958459
+                        ], 
+                        [
+                            "use", 
+                            0.998541849122806
+                        ], 
+                        [
+                            "it", 
+                            0.9052829831828852
+                        ], 
+                        [
+                            "myself", 
+                            0.9921714896298368
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "they are available and it's nice I really don't use it myself "
+                }, 
+                {
+                    "transcript": "they were available and it's nice I really don't use it myself "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 37, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 1.0, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            262.54, 
+                            263.25
+                        ]
+                    ], 
+                    "transcript": "%HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            1.0
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "um "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 38, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            264.3, 
+                            264.66
+                        ], 
+                        [
+                            "when", 
+                            264.69, 
+                            264.85
+                        ], 
+                        [
+                            "I", 
+                            264.85, 
+                            264.93
+                        ], 
+                        [
+                            "come", 
+                            264.93, 
+                            265.13
+                        ], 
+                        [
+                            "home", 
+                            265.13, 
+                            265.35
+                        ], 
+                        [
+                            "from", 
+                            265.35, 
+                            265.58
+                        ], 
+                        [
+                            "work", 
+                            265.58, 
+                            265.88
+                        ], 
+                        [
+                            "I", 
+                            265.88, 
+                            266.04
+                        ]
+                    ], 
+                    "transcript": "I when I come home from work I "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 38, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            264.3, 
+                            264.66
+                        ], 
+                        [
+                            "when", 
+                            264.69, 
+                            264.85
+                        ], 
+                        [
+                            "I", 
+                            264.85, 
+                            264.93
+                        ], 
+                        [
+                            "come", 
+                            264.93, 
+                            265.13
+                        ], 
+                        [
+                            "home", 
+                            265.13, 
+                            265.35
+                        ], 
+                        [
+                            "from", 
+                            265.35, 
+                            265.58
+                        ], 
+                        [
+                            "work", 
+                            265.58, 
+                            265.88
+                        ], 
+                        [
+                            "I", 
+                            265.88, 
+                            266.11
+                        ], 
+                        [
+                            "I'd", 
+                            266.27, 
+                            266.49
+                        ], 
+                        [
+                            "like", 
+                            266.49, 
+                            266.68
+                        ], 
+                        [
+                            "to", 
+                            266.68, 
+                            266.8
+                        ], 
+                        [
+                            "stay", 
+                            266.8, 
+                            266.98
+                        ], 
+                        [
+                            "far", 
+                            266.98, 
+                            267.26
+                        ], 
+                        [
+                            "away", 
+                            267.26, 
+                            267.48
+                        ], 
+                        [
+                            "from", 
+                            267.48, 
+                            267.84
+                        ]
+                    ], 
+                    "transcript": "I when I come home from work I I'd like to stay far away from "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 38, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.955, 
+                    "timestamps": [
+                        [
+                            "I", 
+                            264.3, 
+                            264.66
+                        ], 
+                        [
+                            "when", 
+                            264.69, 
+                            264.85
+                        ], 
+                        [
+                            "I", 
+                            264.85, 
+                            264.93
+                        ], 
+                        [
+                            "come", 
+                            264.93, 
+                            265.13
+                        ], 
+                        [
+                            "home", 
+                            265.13, 
+                            265.35
+                        ], 
+                        [
+                            "from", 
+                            265.35, 
+                            265.58
+                        ], 
+                        [
+                            "work", 
+                            265.58, 
+                            265.88
+                        ], 
+                        [
+                            "I", 
+                            265.88, 
+                            266.11
+                        ], 
+                        [
+                            "I'd", 
+                            266.27, 
+                            266.49
+                        ], 
+                        [
+                            "like", 
+                            266.49, 
+                            266.68
+                        ], 
+                        [
+                            "to", 
+                            266.68, 
+                            266.8
+                        ], 
+                        [
+                            "stay", 
+                            266.8, 
+                            266.98
+                        ], 
+                        [
+                            "far", 
+                            266.98, 
+                            267.26
+                        ], 
+                        [
+                            "away", 
+                            267.26, 
+                            267.48
+                        ], 
+                        [
+                            "from", 
+                            267.48, 
+                            267.79
+                        ], 
+                        [
+                            "computers", 
+                            267.79, 
+                            268.49
+                        ], 
+                        [
+                            "and", 
+                            268.49, 
+                            268.68
+                        ], 
+                        [
+                            "electronic", 
+                            268.71, 
+                            269.26
+                        ], 
+                        [
+                            "things", 
+                            269.26, 
+                            269.82
+                        ]
+                    ], 
+                    "transcript": "I when I come home from work I I'd like to stay far away from computers and electronic things ", 
+                    "word_confidence": [
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "when", 
+                            1.0
+                        ], 
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "come", 
+                            1.0
+                        ], 
+                        [
+                            "home", 
+                            1.0
+                        ], 
+                        [
+                            "from", 
+                            1.0
+                        ], 
+                        [
+                            "work", 
+                            1.0
+                        ], 
+                        [
+                            "I", 
+                            0.7969719153164785
+                        ], 
+                        [
+                            "I'd", 
+                            0.4319146376043379
+                        ], 
+                        [
+                            "like", 
+                            1.0
+                        ], 
+                        [
+                            "to", 
+                            1.0
+                        ], 
+                        [
+                            "stay", 
+                            1.0
+                        ], 
+                        [
+                            "far", 
+                            1.0
+                        ], 
+                        [
+                            "away", 
+                            1.0
+                        ], 
+                        [
+                            "from", 
+                            1.0
+                        ], 
+                        [
+                            "computers", 
+                            1.0
+                        ], 
+                        [
+                            "and", 
+                            1.0
+                        ], 
+                        [
+                            "electronic", 
+                            1.0
+                        ], 
+                        [
+                            "things", 
+                            0.8845599199909548
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "I when I come home from work I I like to stay far away from computers and electronic things "
+                }, 
+                {
+                    "transcript": "I when I come home from work I like to stay far away from computers and electronic things "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 39, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 1.0, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            270.83, 
+                            271.43
+                        ]
+                    ], 
+                    "transcript": "%HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.9999999999999971
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 40, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.897, 
+                    "timestamps": [
+                        [
+                            "so", 
+                            271.81, 
+                            272.02
+                        ], 
+                        [
+                            "I", 
+                            272.02, 
+                            272.08
+                        ], 
+                        [
+                            "let", 
+                            272.08, 
+                            272.23
+                        ], 
+                        [
+                            "my", 
+                            272.23, 
+                            272.36
+                        ], 
+                        [
+                            "son", 
+                            272.36, 
+                            272.64
+                        ], 
+                        [
+                            "do", 
+                            272.64, 
+                            272.75
+                        ], 
+                        [
+                            "it", 
+                            272.75, 
+                            272.91
+                        ], 
+                        [
+                            "and", 
+                            272.91, 
+                            273.26
+                        ]
+                    ], 
+                    "transcript": "so I let my son do it and ", 
+                    "word_confidence": [
+                        [
+                            "so", 
+                            0.9999999999999836
+                        ], 
+                        [
+                            "I", 
+                            0.8033316342117831
+                        ], 
+                        [
+                            "let", 
+                            0.44929070739595994
+                        ], 
+                        [
+                            "my", 
+                            0.9623120138196302
+                        ], 
+                        [
+                            "son", 
+                            0.9999999999999989
+                        ], 
+                        [
+                            "do", 
+                            0.6826900804238186
+                        ], 
+                        [
+                            "it", 
+                            0.9588170424896341
+                        ], 
+                        [
+                            "and", 
+                            0.9752515879786896
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "so I thought my son do it and "
+                }, 
+                {
+                    "transcript": "so I let my son to it and "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 41, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "of", 
+                            274.61, 
+                            275.01
+                        ], 
+                        [
+                            "course", 
+                            275.01, 
+                            275.65
+                        ], 
+                        [
+                            "you", 
+                            275.8, 
+                            275.93
+                        ], 
+                        [
+                            "know", 
+                            275.93, 
+                            276.04
+                        ], 
+                        [
+                            "there's", 
+                            276.04, 
+                            276.26
+                        ], 
+                        [
+                            "a", 
+                            276.26, 
+                            276.41
+                        ]
+                    ], 
+                    "transcript": "of course you know there's a "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 41, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.716, 
+                    "timestamps": [
+                        [
+                            "of", 
+                            274.61, 
+                            275.01
+                        ], 
+                        [
+                            "course", 
+                            275.01, 
+                            275.65
+                        ], 
+                        [
+                            "you", 
+                            275.8, 
+                            275.93
+                        ], 
+                        [
+                            "know", 
+                            275.93, 
+                            276.04
+                        ], 
+                        [
+                            "there's", 
+                            276.04, 
+                            276.26
+                        ], 
+                        [
+                            "a", 
+                            276.26, 
+                            276.41
+                        ]
+                    ], 
+                    "transcript": "of course you know there's a ", 
+                    "word_confidence": [
+                        [
+                            "of", 
+                            0.767636031169997
+                        ], 
+                        [
+                            "course", 
+                            0.9975872349912063
+                        ], 
+                        [
+                            "you", 
+                            0.6572550307920756
+                        ], 
+                        [
+                            "know", 
+                            0.6379696146182138
+                        ], 
+                        [
+                            "there's", 
+                            0.18593793626799957
+                        ], 
+                        [
+                            "a", 
+                            0.2636016819096601
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "of course you know this "
+                }, 
+                {
+                    "transcript": "of course in others "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 42, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "there's", 
+                            276.89, 
+                            277.15
+                        ], 
+                        [
+                            "an", 
+                            277.15, 
+                            277.27
+                        ], 
+                        [
+                            "intellectual", 
+                            277.27, 
+                            277.81
+                        ], 
+                        [
+                            "evolution", 
+                            277.81, 
+                            278.44
+                        ], 
+                        [
+                            "take", 
+                            278.44, 
+                            278.63
+                        ]
+                    ], 
+                    "transcript": "there's an intellectual evolution take "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 42, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.883, 
+                    "timestamps": [
+                        [
+                            "there's", 
+                            276.89, 
+                            277.15
+                        ], 
+                        [
+                            "an", 
+                            277.15, 
+                            277.27
+                        ], 
+                        [
+                            "intellectual", 
+                            277.27, 
+                            277.81
+                        ], 
+                        [
+                            "evolution", 
+                            277.81, 
+                            278.44
+                        ], 
+                        [
+                            "taking", 
+                            278.44, 
+                            278.83
+                        ], 
+                        [
+                            "place", 
+                            278.83, 
+                            279.17
+                        ], 
+                        [
+                            "where", 
+                            279.17, 
+                            279.64
+                        ]
+                    ], 
+                    "transcript": "there's an intellectual evolution taking place where ", 
+                    "word_confidence": [
+                        [
+                            "there's", 
+                            0.5113934451380157
+                        ], 
+                        [
+                            "an", 
+                            0.999999999999981
+                        ], 
+                        [
+                            "intellectual", 
+                            0.9999999999999934
+                        ], 
+                        [
+                            "evolution", 
+                            0.99999999999999
+                        ], 
+                        [
+                            "taking", 
+                            0.9999999999999838
+                        ], 
+                        [
+                            "place", 
+                            0.9999999999999837
+                        ], 
+                        [
+                            "where", 
+                            0.5854072054918328
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "there is an intellectual evolution taking place where "
+                }, 
+                {
+                    "transcript": "there's an intellectual evolution taking place were "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 43, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "it's", 
+                            280.45, 
+                            280.78
+                        ], 
+                        [
+                            "sort", 
+                            280.78, 
+                            280.92
+                        ], 
+                        [
+                            "of", 
+                            280.92, 
+                            280.98
+                        ], 
+                        [
+                            "a", 
+                            280.98, 
+                            281.04
+                        ], 
+                        [
+                            "joke", 
+                            281.04, 
+                            281.33
+                        ], 
+                        [
+                            "but", 
+                            281.33, 
+                            281.44
+                        ], 
+                        [
+                            "it's", 
+                            281.44, 
+                            281.58
+                        ], 
+                        [
+                            "really", 
+                            281.58, 
+                            281.79
+                        ], 
+                        [
+                            "true", 
+                            281.79, 
+                            282.06
+                        ]
+                    ], 
+                    "transcript": "it's sort of a joke but it's really true "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 43, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "it's", 
+                            280.45, 
+                            280.78
+                        ], 
+                        [
+                            "sort", 
+                            280.78, 
+                            280.92
+                        ], 
+                        [
+                            "of", 
+                            280.92, 
+                            280.98
+                        ], 
+                        [
+                            "a", 
+                            280.98, 
+                            281.04
+                        ], 
+                        [
+                            "joke", 
+                            281.04, 
+                            281.33
+                        ], 
+                        [
+                            "but", 
+                            281.33, 
+                            281.44
+                        ], 
+                        [
+                            "it's", 
+                            281.44, 
+                            281.58
+                        ], 
+                        [
+                            "really", 
+                            281.58, 
+                            281.79
+                        ], 
+                        [
+                            "true", 
+                            281.79, 
+                            282.3
+                        ], 
+                        [
+                            "the", 
+                            282.3, 
+                            282.45
+                        ], 
+                        [
+                            "oldtimers", 
+                            282.45, 
+                            283.12
+                        ], 
+                        [
+                            "even", 
+                            283.12, 
+                            283.36
+                        ], 
+                        [
+                            "the", 
+                            283.36, 
+                            283.44
+                        ], 
+                        [
+                            "people", 
+                            283.44, 
+                            283.75
+                        ], 
+                        [
+                            "who", 
+                            283.75, 
+                            283.87
+                        ], 
+                        [
+                            "are", 
+                            283.87, 
+                            284.06
+                        ]
+                    ], 
+                    "transcript": "it's sort of a joke but it's really true the oldtimers even the people who are "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 43, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.937, 
+                    "timestamps": [
+                        [
+                            "it's", 
+                            280.45, 
+                            280.78
+                        ], 
+                        [
+                            "sort", 
+                            280.78, 
+                            280.92
+                        ], 
+                        [
+                            "of", 
+                            280.92, 
+                            280.98
+                        ], 
+                        [
+                            "a", 
+                            280.98, 
+                            281.04
+                        ], 
+                        [
+                            "joke", 
+                            281.04, 
+                            281.33
+                        ], 
+                        [
+                            "but", 
+                            281.33, 
+                            281.44
+                        ], 
+                        [
+                            "it's", 
+                            281.44, 
+                            281.58
+                        ], 
+                        [
+                            "really", 
+                            281.58, 
+                            281.79
+                        ], 
+                        [
+                            "true", 
+                            281.79, 
+                            282.3
+                        ], 
+                        [
+                            "the", 
+                            282.3, 
+                            282.45
+                        ], 
+                        [
+                            "oldtimers", 
+                            282.45, 
+                            283.12
+                        ], 
+                        [
+                            "even", 
+                            283.12, 
+                            283.36
+                        ], 
+                        [
+                            "the", 
+                            283.36, 
+                            283.44
+                        ], 
+                        [
+                            "people", 
+                            283.44, 
+                            283.75
+                        ], 
+                        [
+                            "who", 
+                            283.75, 
+                            283.87
+                        ], 
+                        [
+                            "are", 
+                            283.87, 
+                            283.95
+                        ], 
+                        [
+                            "technologists", 
+                            283.95, 
+                            284.68
+                        ], 
+                        [
+                            "don't", 
+                            284.68, 
+                            285.09
+                        ]
+                    ], 
+                    "transcript": "it's sort of a joke but it's really true the oldtimers even the people who are technologists don't ", 
+                    "word_confidence": [
+                        [
+                            "it's", 
+                            0.8080793222419924
+                        ], 
+                        [
+                            "sort", 
+                            0.9999999999999977
+                        ], 
+                        [
+                            "of", 
+                            0.9999999999999784
+                        ], 
+                        [
+                            "a", 
+                            0.9999999999999786
+                        ], 
+                        [
+                            "joke", 
+                            1.0
+                        ], 
+                        [
+                            "but", 
+                            1.0
+                        ], 
+                        [
+                            "it's", 
+                            0.9999999999999963
+                        ], 
+                        [
+                            "really", 
+                            1.0
+                        ], 
+                        [
+                            "true", 
+                            0.9539470338566818
+                        ], 
+                        [
+                            "the", 
+                            0.9622106069814972
+                        ], 
+                        [
+                            "oldtimers", 
+                            0.7027508284470947
+                        ], 
+                        [
+                            "even", 
+                            1.0
+                        ], 
+                        [
+                            "the", 
+                            1.0
+                        ], 
+                        [
+                            "people", 
+                            1.0
+                        ], 
+                        [
+                            "who", 
+                            1.0
+                        ], 
+                        [
+                            "are", 
+                            1.0
+                        ], 
+                        [
+                            "technologists", 
+                            1.0
+                        ], 
+                        [
+                            "don't", 
+                            1.0
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "it sort of a joke but it's really true the oldtimers even the people who are technologists don't "
+                }, 
+                {
+                    "transcript": "it's sort of a joke but it's really true the old timers even the people who are technologists don't "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 44, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "know", 
+                            285.61, 
+                            285.81
+                        ], 
+                        [
+                            "how", 
+                            285.81, 
+                            286.02
+                        ], 
+                        [
+                            "to", 
+                            286.02, 
+                            286.14
+                        ], 
+                        [
+                            "operate", 
+                            286.14, 
+                            286.68
+                        ], 
+                        [
+                            "these", 
+                            286.68, 
+                            286.9
+                        ], 
+                        [
+                            "electronic", 
+                            286.9, 
+                            287.36
+                        ]
+                    ], 
+                    "transcript": "know how to operate these electronic "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 44, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "know", 
+                            285.61, 
+                            285.81
+                        ], 
+                        [
+                            "how", 
+                            285.81, 
+                            286.02
+                        ], 
+                        [
+                            "to", 
+                            286.02, 
+                            286.14
+                        ], 
+                        [
+                            "operate", 
+                            286.14, 
+                            286.68
+                        ], 
+                        [
+                            "these", 
+                            286.68, 
+                            286.9
+                        ], 
+                        [
+                            "electronic", 
+                            286.9, 
+                            287.43
+                        ], 
+                        [
+                            "things", 
+                            287.43, 
+                            287.75
+                        ], 
+                        [
+                            "like", 
+                            287.75, 
+                            287.94
+                        ], 
+                        [
+                            "VCRs", 
+                            287.94, 
+                            288.67
+                        ], 
+                        [
+                            "and", 
+                            288.67, 
+                            288.76
+                        ], 
+                        [
+                            "whatnot", 
+                            288.76, 
+                            289.12
+                        ], 
+                        [
+                            "in", 
+                            289.12, 
+                            289.2
+                        ], 
+                        [
+                            "the", 
+                            289.2, 
+                            289.36
+                        ]
+                    ], 
+                    "transcript": "know how to operate these electronic things like VCRs and whatnot in the "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 44, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "know", 
+                            285.61, 
+                            285.81
+                        ], 
+                        [
+                            "how", 
+                            285.81, 
+                            286.02
+                        ], 
+                        [
+                            "to", 
+                            286.02, 
+                            286.14
+                        ], 
+                        [
+                            "operate", 
+                            286.14, 
+                            286.68
+                        ], 
+                        [
+                            "these", 
+                            286.68, 
+                            286.9
+                        ], 
+                        [
+                            "electronic", 
+                            286.9, 
+                            287.43
+                        ], 
+                        [
+                            "things", 
+                            287.43, 
+                            287.75
+                        ], 
+                        [
+                            "like", 
+                            287.75, 
+                            287.94
+                        ], 
+                        [
+                            "VCRs", 
+                            287.94, 
+                            288.67
+                        ], 
+                        [
+                            "and", 
+                            288.67, 
+                            288.76
+                        ], 
+                        [
+                            "whatnot", 
+                            288.76, 
+                            289.11
+                        ], 
+                        [
+                            "and", 
+                            289.11, 
+                            289.22
+                        ], 
+                        [
+                            "the", 
+                            289.22, 
+                            289.3
+                        ], 
+                        [
+                            "kids", 
+                            289.3, 
+                            289.84
+                        ], 
+                        [
+                            "just", 
+                            290.01, 
+                            290.24
+                        ], 
+                        [
+                            "take", 
+                            290.24, 
+                            290.44
+                        ], 
+                        [
+                            "to", 
+                            290.44, 
+                            290.56
+                        ], 
+                        [
+                            "it", 
+                            290.56, 
+                            290.64
+                        ], 
+                        [
+                            "like", 
+                            290.64, 
+                            290.79
+                        ], 
+                        [
+                            "candy", 
+                            290.79, 
+                            291.33
+                        ]
+                    ], 
+                    "transcript": "know how to operate these electronic things like VCRs and whatnot and the kids just take to it like candy "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 44, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.89, 
+                    "timestamps": [
+                        [
+                            "know", 
+                            285.61, 
+                            285.81
+                        ], 
+                        [
+                            "how", 
+                            285.81, 
+                            286.02
+                        ], 
+                        [
+                            "to", 
+                            286.02, 
+                            286.14
+                        ], 
+                        [
+                            "operate", 
+                            286.14, 
+                            286.68
+                        ], 
+                        [
+                            "these", 
+                            286.68, 
+                            286.9
+                        ], 
+                        [
+                            "electronic", 
+                            286.9, 
+                            287.43
+                        ], 
+                        [
+                            "things", 
+                            287.43, 
+                            287.75
+                        ], 
+                        [
+                            "like", 
+                            287.75, 
+                            287.94
+                        ], 
+                        [
+                            "VCRs", 
+                            287.94, 
+                            288.67
+                        ], 
+                        [
+                            "and", 
+                            288.67, 
+                            288.76
+                        ], 
+                        [
+                            "whatnot", 
+                            288.76, 
+                            289.11
+                        ], 
+                        [
+                            "and", 
+                            289.11, 
+                            289.22
+                        ], 
+                        [
+                            "the", 
+                            289.22, 
+                            289.3
+                        ], 
+                        [
+                            "kids", 
+                            289.3, 
+                            289.84
+                        ], 
+                        [
+                            "just", 
+                            290.01, 
+                            290.24
+                        ], 
+                        [
+                            "take", 
+                            290.24, 
+                            290.44
+                        ], 
+                        [
+                            "to", 
+                            290.44, 
+                            290.56
+                        ], 
+                        [
+                            "it", 
+                            290.56, 
+                            290.64
+                        ], 
+                        [
+                            "like", 
+                            290.64, 
+                            290.79
+                        ], 
+                        [
+                            "candy", 
+                            290.79, 
+                            291.33
+                        ]
+                    ], 
+                    "transcript": "know how to operate these electronic things like VCRs and whatnot and the kids just take to it like candy ", 
+                    "word_confidence": [
+                        [
+                            "know", 
+                            1.0
+                        ], 
+                        [
+                            "how", 
+                            1.0
+                        ], 
+                        [
+                            "to", 
+                            1.0
+                        ], 
+                        [
+                            "operate", 
+                            1.0
+                        ], 
+                        [
+                            "these", 
+                            1.0
+                        ], 
+                        [
+                            "electronic", 
+                            1.0
+                        ], 
+                        [
+                            "things", 
+                            1.0
+                        ], 
+                        [
+                            "like", 
+                            1.0
+                        ], 
+                        [
+                            "VCRs", 
+                            0.7560010277563279
+                        ], 
+                        [
+                            "and", 
+                            0.9748551706676076
+                        ], 
+                        [
+                            "whatnot", 
+                            0.5393434889853951
+                        ], 
+                        [
+                            "and", 
+                            0.39208609040772174
+                        ], 
+                        [
+                            "the", 
+                            0.965231278525338
+                        ], 
+                        [
+                            "kids", 
+                            0.8423004915985928
+                        ], 
+                        [
+                            "just", 
+                            0.935182797169544
+                        ], 
+                        [
+                            "take", 
+                            0.7753689294489448
+                        ], 
+                        [
+                            "to", 
+                            1.0
+                        ], 
+                        [
+                            "it", 
+                            0.4196943594132093
+                        ], 
+                        [
+                            "like", 
+                            1.0
+                        ], 
+                        [
+                            "candy", 
+                            0.9850845989867222
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "know how to operate these electronic things like VCRs and whatnot and the kids they just take to it like candy "
+                }, 
+                {
+                    "transcript": "know how to operate these electronic things like VCRs and whatnot and the kids just took to it like candy "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}

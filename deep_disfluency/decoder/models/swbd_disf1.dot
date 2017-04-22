@@ -1,0 +1,58 @@
+digraph G {
+
+            f -> rpSM;
+            f -> rpSE;
+            e -> rpSM;
+            e -> rpSE;
+            
+            s -> f;
+            s -> e;
+        
+            f -> f;
+            f -> e;
+            f -> rpSM;
+            f -> rpSE;
+            
+            
+            e -> e;
+            e -> f;
+            e -> rpSM;
+            e -> rpSE;
+        
+            rpSE -> rpSE;
+            rpSE -> f;
+            rpSE -> e;
+            rpSE -> rpE;
+            rpSE -> rpM;    
+        
+            rpSM -> rpSM;
+            rpSM -> rpM;
+            rpSM -> rpE;
+            rpSM -> eR;
+            rpSM -> rpSE;
+        
+            rpM -> rpM;
+            rpM -> eR;
+            rpM -> rpE;
+            rpM -> rpSM;
+            rpM -> rpSE;
+        
+            eR -> eR;
+            eR -> rpM;
+            eR -> rpE;
+            eR -> rpSM;
+            eR -> rpSE;    
+        
+            rpE -> rpE;
+            rpE -> e;
+            rpE -> eR;
+            rpE -> rpSM;
+            rpE -> f;
+            rpE -> rpSE;
+            rpE -> rpM;
+        
+            rpE -> se;
+            f -> se;
+            e -> se;
+            rpSE -> se;            
+        }

@@ -1,0 +1,4363 @@
+{
+    "result_index": 0, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.495, 
+                    "timestamps": [
+                        [
+                            "and", 
+                            36.42, 
+                            36.6
+                        ], 
+                        [
+                            "what", 
+                            36.6, 
+                            36.75
+                        ]
+                    ], 
+                    "transcript": "and what ", 
+                    "word_confidence": [
+                        [
+                            "and", 
+                            0.7203507877716633
+                        ], 
+                        [
+                            "what", 
+                            0.2241336351940878
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "and when "
+                }, 
+                {
+                    "transcript": "and one "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 1, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.633, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            43.51, 
+                            43.97
+                        ]
+                    ], 
+                    "transcript": "%HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.6325370257257681
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "I'm "
+                }, 
+                {
+                    "transcript": "and "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 2, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            44.26, 
+                            44.73
+                        ], 
+                        [
+                            "I", 
+                            44.85, 
+                            44.98
+                        ], 
+                        [
+                            "don't", 
+                            44.98, 
+                            45.21
+                        ], 
+                        [
+                            "think", 
+                            45.21, 
+                            45.42
+                        ], 
+                        [
+                            "so", 
+                            45.42, 
+                            45.75
+                        ], 
+                        [
+                            "pop", 
+                            45.79, 
+                            46.07
+                        ]
+                    ], 
+                    "transcript": "I I don't think so pop "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 2, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            44.26, 
+                            44.73
+                        ], 
+                        [
+                            "I", 
+                            44.85, 
+                            44.98
+                        ], 
+                        [
+                            "don't", 
+                            44.98, 
+                            45.21
+                        ], 
+                        [
+                            "think", 
+                            45.21, 
+                            45.42
+                        ], 
+                        [
+                            "so", 
+                            45.42, 
+                            45.75
+                        ], 
+                        [
+                            "possibly", 
+                            45.79, 
+                            46.39
+                        ], 
+                        [
+                            "in", 
+                            46.39, 
+                            46.54
+                        ], 
+                        [
+                            "the", 
+                            46.54, 
+                            46.72
+                        ], 
+                        [
+                            "jury", 
+                            46.72, 
+                            47.05
+                        ], 
+                        [
+                            "selection", 
+                            47.05, 
+                            47.82
+                        ], 
+                        [
+                            "with", 
+                            47.9, 
+                            48.07
+                        ]
+                    ], 
+                    "transcript": "I I don't think so possibly in the jury selection with "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 2, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.961, 
+                    "timestamps": [
+                        [
+                            "I", 
+                            44.26, 
+                            44.73
+                        ], 
+                        [
+                            "I", 
+                            44.85, 
+                            44.98
+                        ], 
+                        [
+                            "don't", 
+                            44.98, 
+                            45.21
+                        ], 
+                        [
+                            "think", 
+                            45.21, 
+                            45.42
+                        ], 
+                        [
+                            "so", 
+                            45.42, 
+                            45.75
+                        ], 
+                        [
+                            "possibly", 
+                            45.79, 
+                            46.39
+                        ], 
+                        [
+                            "in", 
+                            46.39, 
+                            46.54
+                        ], 
+                        [
+                            "the", 
+                            46.54, 
+                            46.72
+                        ], 
+                        [
+                            "jury", 
+                            46.72, 
+                            47.05
+                        ], 
+                        [
+                            "selection", 
+                            47.05, 
+                            47.82
+                        ], 
+                        [
+                            "would", 
+                            47.9, 
+                            48.09
+                        ], 
+                        [
+                            "be", 
+                            48.09, 
+                            48.3
+                        ], 
+                        [
+                            "the", 
+                            48.3, 
+                            48.41
+                        ], 
+                        [
+                            "only", 
+                            48.41, 
+                            48.88
+                        ]
+                    ], 
+                    "transcript": "I I don't think so possibly in the jury selection would be the only ", 
+                    "word_confidence": [
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "don't", 
+                            1.0
+                        ], 
+                        [
+                            "think", 
+                            1.0
+                        ], 
+                        [
+                            "so", 
+                            0.9790469380685517
+                        ], 
+                        [
+                            "possibly", 
+                            0.9783781119557656
+                        ], 
+                        [
+                            "in", 
+                            0.6388659606070846
+                        ], 
+                        [
+                            "the", 
+                            0.5975443366113957
+                        ], 
+                        [
+                            "jury", 
+                            0.9546092291804638
+                        ], 
+                        [
+                            "selection", 
+                            0.9886142261789402
+                        ], 
+                        [
+                            "would", 
+                            1.0
+                        ], 
+                        [
+                            "be", 
+                            1.0
+                        ], 
+                        [
+                            "the", 
+                            1.0
+                        ], 
+                        [
+                            "only", 
+                            0.9999999999999938
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "I I don't think so possibly in that jury selection would be the only "
+                }, 
+                {
+                    "transcript": "I I don't think so possibly and the jury selection would be the only "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 3, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "just", 
+                            49.82, 
+                            50.19
+                        ], 
+                        [
+                            "for", 
+                            50.22, 
+                            50.37
+                        ], 
+                        [
+                            "example", 
+                            50.37, 
+                            50.87
+                        ], 
+                        [
+                            "what", 
+                            50.87, 
+                            51.05
+                        ], 
+                        [
+                            "we're", 
+                            51.05, 
+                            51.19
+                        ], 
+                        [
+                            "seeing", 
+                            51.19, 
+                            51.45
+                        ], 
+                        [
+                            "a", 
+                            51.45, 
+                            51.59
+                        ]
+                    ], 
+                    "transcript": "just for example what we're seeing a "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 3, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.965, 
+                    "timestamps": [
+                        [
+                            "just", 
+                            49.82, 
+                            50.19
+                        ], 
+                        [
+                            "for", 
+                            50.22, 
+                            50.37
+                        ], 
+                        [
+                            "example", 
+                            50.37, 
+                            50.87
+                        ], 
+                        [
+                            "what", 
+                            50.87, 
+                            51.05
+                        ], 
+                        [
+                            "we're", 
+                            51.05, 
+                            51.19
+                        ], 
+                        [
+                            "seeing", 
+                            51.19, 
+                            51.46
+                        ], 
+                        [
+                            "in", 
+                            51.46, 
+                            51.56
+                        ], 
+                        [
+                            "California", 
+                            51.56, 
+                            52.15
+                        ], 
+                        [
+                            "I", 
+                            52.15, 
+                            52.2
+                        ], 
+                        [
+                            "guess", 
+                            52.2, 
+                            52.63
+                        ]
+                    ], 
+                    "transcript": "just for example what we're seeing in California I guess ", 
+                    "word_confidence": [
+                        [
+                            "just", 
+                            1.0
+                        ], 
+                        [
+                            "for", 
+                            1.0
+                        ], 
+                        [
+                            "example", 
+                            1.0
+                        ], 
+                        [
+                            "what", 
+                            1.0
+                        ], 
+                        [
+                            "we're", 
+                            0.8516418311523418
+                        ], 
+                        [
+                            "seeing", 
+                            0.7496808513997272
+                        ], 
+                        [
+                            "in", 
+                            0.9749680851399857
+                        ], 
+                        [
+                            "California", 
+                            1.0
+                        ], 
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "guess", 
+                            0.9829325929812756
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "just for example what were seen in California I guess "
+                }, 
+                {
+                    "transcript": "just for example what we're seen in California I guess "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 4, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "makes", 
+                            53.77, 
+                            54.02
+                        ], 
+                        [
+                            "you", 
+                            54.02, 
+                            54.11
+                        ], 
+                        [
+                            "wonder", 
+                            54.11, 
+                            54.6
+                        ], 
+                        [
+                            "%HESITATION", 
+                            54.64, 
+                            55.06
+                        ]
+                    ], 
+                    "transcript": "makes you wonder %HESITATION "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 4, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.959, 
+                    "timestamps": [
+                        [
+                            "makes", 
+                            53.77, 
+                            54.02
+                        ], 
+                        [
+                            "you", 
+                            54.02, 
+                            54.11
+                        ], 
+                        [
+                            "wonder", 
+                            54.11, 
+                            54.6
+                        ], 
+                        [
+                            "%HESITATION", 
+                            54.64, 
+                            55.06
+                        ], 
+                        [
+                            "had", 
+                            55.29, 
+                            55.58
+                        ], 
+                        [
+                            "the", 
+                            55.58, 
+                            55.67
+                        ], 
+                        [
+                            "jury", 
+                            55.67, 
+                            55.97
+                        ], 
+                        [
+                            "been", 
+                            55.97, 
+                            56.19
+                        ], 
+                        [
+                            "a", 
+                            56.19, 
+                            56.26
+                        ], 
+                        [
+                            "different", 
+                            56.26, 
+                            56.62
+                        ], 
+                        [
+                            "group", 
+                            56.62, 
+                            56.81
+                        ], 
+                        [
+                            "of", 
+                            56.81, 
+                            56.92
+                        ], 
+                        [
+                            "people", 
+                            56.92, 
+                            57.42
+                        ]
+                    ], 
+                    "transcript": "makes you wonder %HESITATION had the jury been a different group of people ", 
+                    "word_confidence": [
+                        [
+                            "makes", 
+                            0.8066533208249461
+                        ], 
+                        [
+                            "you", 
+                            0.9999999999998883
+                        ], 
+                        [
+                            "wonder", 
+                            0.9855719903888299
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.9999999999999127
+                        ], 
+                        [
+                            "had", 
+                            0.7340959700153917
+                        ], 
+                        [
+                            "the", 
+                            0.9999999999999003
+                        ], 
+                        [
+                            "jury", 
+                            0.9999999999999004
+                        ], 
+                        [
+                            "been", 
+                            0.9999999999999054
+                        ], 
+                        [
+                            "a", 
+                            0.9999999999999345
+                        ], 
+                        [
+                            "different", 
+                            0.9999999999999347
+                        ], 
+                        [
+                            "group", 
+                            0.9999999999999428
+                        ], 
+                        [
+                            "of", 
+                            0.999999999999943
+                        ], 
+                        [
+                            "people", 
+                            0.98787270530453
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "yeah it makes you wonder %HESITATION had the jury been a different group of people "
+                }, 
+                {
+                    "transcript": "it makes you wonder %HESITATION had the jury been a different group of people "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 5, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.961, 
+                    "timestamps": [
+                        [
+                            "what", 
+                            58.23, 
+                            58.39
+                        ], 
+                        [
+                            "would", 
+                            58.39, 
+                            58.49
+                        ], 
+                        [
+                            "have", 
+                            58.49, 
+                            58.59
+                        ], 
+                        [
+                            "happened", 
+                            58.59, 
+                            59.03
+                        ], 
+                        [
+                            "with", 
+                            59.06, 
+                            59.2
+                        ], 
+                        [
+                            "that", 
+                            59.2, 
+                            59.4
+                        ], 
+                        [
+                            "outcome", 
+                            59.4, 
+                            59.93
+                        ]
+                    ], 
+                    "transcript": "what would have happened with that outcome ", 
+                    "word_confidence": [
+                        [
+                            "what", 
+                            0.9999999999999998
+                        ], 
+                        [
+                            "would", 
+                            0.7168836190812896
+                        ], 
+                        [
+                            "have", 
+                            0.7168836190812924
+                        ], 
+                        [
+                            "happened", 
+                            0.996362440290006
+                        ], 
+                        [
+                            "with", 
+                            1.0
+                        ], 
+                        [
+                            "that", 
+                            1.0
+                        ], 
+                        [
+                            "outcome", 
+                            0.9854944572760351
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "what would've happened with that outcome "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 6, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 1.0, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            60.49, 
+                            60.95
+                        ]
+                    ], 
+                    "transcript": "%HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.9999999999999976
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "um "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 7, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "and", 
+                            61.56, 
+                            61.72
+                        ], 
+                        [
+                            "it", 
+                            61.72, 
+                            61.83
+                        ], 
+                        [
+                            "and", 
+                            62.22, 
+                            62.35
+                        ], 
+                        [
+                            "the", 
+                            62.35, 
+                            62.41
+                        ], 
+                        [
+                            "problems", 
+                            62.41, 
+                            62.8
+                        ], 
+                        [
+                            "that", 
+                            62.8, 
+                            63.01
+                        ], 
+                        [
+                            "that", 
+                            63.05, 
+                            63.34
+                        ]
+                    ], 
+                    "transcript": "and it and the problems that that "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 7, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.834, 
+                    "timestamps": [
+                        [
+                            "and", 
+                            61.56, 
+                            61.72
+                        ], 
+                        [
+                            "it", 
+                            61.72, 
+                            61.83
+                        ], 
+                        [
+                            "and", 
+                            62.22, 
+                            62.35
+                        ], 
+                        [
+                            "the", 
+                            62.35, 
+                            62.41
+                        ], 
+                        [
+                            "problems", 
+                            62.41, 
+                            62.8
+                        ], 
+                        [
+                            "that", 
+                            62.8, 
+                            63.01
+                        ], 
+                        [
+                            "that", 
+                            63.05, 
+                            63.29
+                        ], 
+                        [
+                            "has", 
+                            63.29, 
+                            63.46
+                        ], 
+                        [
+                            "come", 
+                            63.46, 
+                            63.79
+                        ]
+                    ], 
+                    "transcript": "and it and the problems that that has come ", 
+                    "word_confidence": [
+                        [
+                            "and", 
+                            0.9613830091600153
+                        ], 
+                        [
+                            "it", 
+                            0.28311234116633993
+                        ], 
+                        [
+                            "and", 
+                            0.8853120048573212
+                        ], 
+                        [
+                            "the", 
+                            0.9999999999999982
+                        ], 
+                        [
+                            "problems", 
+                            0.6390824321901517
+                        ], 
+                        [
+                            "that", 
+                            0.9999999999999893
+                        ], 
+                        [
+                            "that", 
+                            0.9999999999999846
+                        ], 
+                        [
+                            "has", 
+                            0.9978765002612439
+                        ], 
+                        [
+                            "come", 
+                            0.8256451851291012
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "and the and the problems that that has come "
+                }, 
+                {
+                    "transcript": "and it and the problems that that has come to "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 8, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "that", 
+                            64.97, 
+                            65.1
+                        ], 
+                        [
+                            "has", 
+                            65.1, 
+                            65.26
+                        ], 
+                        [
+                            "come", 
+                            65.26, 
+                            65.48
+                        ], 
+                        [
+                            "from", 
+                            65.48, 
+                            65.68
+                        ], 
+                        [
+                            "this", 
+                            65.68, 
+                            65.99
+                        ], 
+                        [
+                            "decision", 
+                            65.99, 
+                            66.53
+                        ], 
+                        [
+                            "that", 
+                            66.53, 
+                            66.66
+                        ], 
+                        [
+                            "the", 
+                            66.66, 
+                            66.75
+                        ]
+                    ], 
+                    "transcript": "that has come from this decision that the "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 8, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "that", 
+                            64.97, 
+                            65.1
+                        ], 
+                        [
+                            "has", 
+                            65.1, 
+                            65.26
+                        ], 
+                        [
+                            "come", 
+                            65.26, 
+                            65.48
+                        ], 
+                        [
+                            "from", 
+                            65.48, 
+                            65.68
+                        ], 
+                        [
+                            "this", 
+                            65.68, 
+                            65.99
+                        ], 
+                        [
+                            "decision", 
+                            65.99, 
+                            66.53
+                        ], 
+                        [
+                            "that", 
+                            66.53, 
+                            66.66
+                        ], 
+                        [
+                            "that", 
+                            66.66, 
+                            66.89
+                        ], 
+                        [
+                            "jury", 
+                            66.89, 
+                            67.26
+                        ], 
+                        [
+                            "came", 
+                            67.29, 
+                            67.58
+                        ], 
+                        [
+                            "to", 
+                            67.58, 
+                            67.95
+                        ], 
+                        [
+                            "after", 
+                            68.13, 
+                            68.49
+                        ], 
+                        [
+                            "all", 
+                            68.49, 
+                            68.75
+                        ]
+                    ], 
+                    "transcript": "that has come from this decision that that jury came to after all "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 8, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.956, 
+                    "timestamps": [
+                        [
+                            "that", 
+                            64.97, 
+                            65.1
+                        ], 
+                        [
+                            "has", 
+                            65.1, 
+                            65.26
+                        ], 
+                        [
+                            "come", 
+                            65.26, 
+                            65.48
+                        ], 
+                        [
+                            "from", 
+                            65.48, 
+                            65.68
+                        ], 
+                        [
+                            "this", 
+                            65.68, 
+                            65.99
+                        ], 
+                        [
+                            "decision", 
+                            65.99, 
+                            66.53
+                        ], 
+                        [
+                            "that", 
+                            66.53, 
+                            66.66
+                        ], 
+                        [
+                            "that", 
+                            66.66, 
+                            66.89
+                        ], 
+                        [
+                            "jury", 
+                            66.89, 
+                            67.26
+                        ], 
+                        [
+                            "came", 
+                            67.29, 
+                            67.58
+                        ], 
+                        [
+                            "to", 
+                            67.58, 
+                            67.95
+                        ], 
+                        [
+                            "after", 
+                            68.13, 
+                            68.49
+                        ], 
+                        [
+                            "all", 
+                            68.49, 
+                            68.75
+                        ], 
+                        [
+                            "this", 
+                            68.75, 
+                            68.91
+                        ], 
+                        [
+                            "witness", 
+                            68.91, 
+                            69.3
+                        ], 
+                        [
+                            "what", 
+                            69.3, 
+                            69.46
+                        ], 
+                        [
+                            "we", 
+                            69.46, 
+                            69.57
+                        ], 
+                        [
+                            "did", 
+                            69.57, 
+                            69.93
+                        ]
+                    ], 
+                    "transcript": "that has come from this decision that that jury came to after all this witness what we did ", 
+                    "word_confidence": [
+                        [
+                            "that", 
+                            0.39424662438967534
+                        ], 
+                        [
+                            "has", 
+                            0.8244655476718764
+                        ], 
+                        [
+                            "come", 
+                            1.0
+                        ], 
+                        [
+                            "from", 
+                            0.9999999999999847
+                        ], 
+                        [
+                            "this", 
+                            0.9965407459109547
+                        ], 
+                        [
+                            "decision", 
+                            0.9887216175924435
+                        ], 
+                        [
+                            "that", 
+                            0.9999999999999728
+                        ], 
+                        [
+                            "that", 
+                            0.9999999999999419
+                        ], 
+                        [
+                            "jury", 
+                            0.9936748048727748
+                        ], 
+                        [
+                            "came", 
+                            0.9999999999999474
+                        ], 
+                        [
+                            "to", 
+                            0.9999999999999524
+                        ], 
+                        [
+                            "after", 
+                            0.9999999999999554
+                        ], 
+                        [
+                            "all", 
+                            0.9120995908796892
+                        ], 
+                        [
+                            "this", 
+                            0.9523872783931605
+                        ], 
+                        [
+                            "witness", 
+                            0.8624610139985152
+                        ], 
+                        [
+                            "what", 
+                            0.9742114401246942
+                        ], 
+                        [
+                            "we", 
+                            0.9999999999999585
+                        ], 
+                        [
+                            "did", 
+                            0.9836232601094544
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "has come from this decision that that jury came to after all this witness what we did "
+                }, 
+                {
+                    "transcript": "that has come from this decision that that jury came to after all of this witness what we did "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 9, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "with", 
+                            70.62, 
+                            70.86
+                        ], 
+                        [
+                            "the", 
+                            70.86, 
+                            70.94
+                        ], 
+                        [
+                            "videotape", 
+                            70.94, 
+                            71.58
+                        ], 
+                        [
+                            "beating", 
+                            71.58, 
+                            72.1
+                        ]
+                    ], 
+                    "transcript": "with the videotape beating "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 9, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.705, 
+                    "timestamps": [
+                        [
+                            "with", 
+                            70.62, 
+                            70.86
+                        ], 
+                        [
+                            "the", 
+                            70.86, 
+                            70.94
+                        ], 
+                        [
+                            "videotape", 
+                            70.94, 
+                            71.58
+                        ], 
+                        [
+                            "beating", 
+                            71.58, 
+                            72.1
+                        ], 
+                        [
+                            "%HESITATION", 
+                            72.29, 
+                            72.74
+                        ]
+                    ], 
+                    "transcript": "with the videotape beating %HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "with", 
+                            1.0
+                        ], 
+                        [
+                            "the", 
+                            0.634935206320216
+                        ], 
+                        [
+                            "videotape", 
+                            0.6293882025831765
+                        ], 
+                        [
+                            "beating", 
+                            0.5658676521751681
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.8284812231150703
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "with the video tape beating %HESITATION "
+                }, 
+                {
+                    "transcript": "with the videotape beating um "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 10, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.962, 
+                    "timestamps": [
+                        [
+                            "just", 
+                            74.48, 
+                            74.68
+                        ], 
+                        [
+                            "makes", 
+                            74.68, 
+                            74.93
+                        ], 
+                        [
+                            "you", 
+                            74.93, 
+                            75.01
+                        ], 
+                        [
+                            "wonder", 
+                            75.01, 
+                            75.46
+                        ], 
+                        [
+                            "I", 
+                            75.46, 
+                            75.59
+                        ], 
+                        [
+                            "guess", 
+                            75.59, 
+                            75.98
+                        ]
+                    ], 
+                    "transcript": "just makes you wonder I guess ", 
+                    "word_confidence": [
+                        [
+                            "just", 
+                            0.8098558044892737
+                        ], 
+                        [
+                            "makes", 
+                            0.9999999999999954
+                        ], 
+                        [
+                            "you", 
+                            1.0
+                        ], 
+                        [
+                            "wonder", 
+                            0.999999999999999
+                        ], 
+                        [
+                            "I", 
+                            0.9066480354470561
+                        ], 
+                        [
+                            "guess", 
+                            0.9829216058724509
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "this makes you wonder I guess "
+                }, 
+                {
+                    "transcript": "just makes you wonder how I guess "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 11, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.991, 
+                    "timestamps": [
+                        [
+                            "whether", 
+                            76.35, 
+                            76.68
+                        ], 
+                        [
+                            "or", 
+                            76.68, 
+                            76.75
+                        ], 
+                        [
+                            "not", 
+                            76.75, 
+                            77.02
+                        ]
+                    ], 
+                    "transcript": "whether or not ", 
+                    "word_confidence": [
+                        [
+                            "whether", 
+                            1.0
+                        ], 
+                        [
+                            "or", 
+                            0.9973080115335548
+                        ], 
+                        [
+                            "not", 
+                            0.9782299436952089
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "weather or not "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 12, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.172, 
+                    "timestamps": [
+                        [
+                            "they", 
+                            77.4, 
+                            77.6
+                        ]
+                    ], 
+                    "transcript": "they ", 
+                    "word_confidence": [
+                        [
+                            "they", 
+                            0.17183946558332214
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "I "
+                }, 
+                {
+                    "transcript": "okay "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 13, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.667, 
+                    "timestamps": [
+                        [
+                            "that", 
+                            87.39, 
+                            87.66
+                        ]
+                    ], 
+                    "transcript": "that ", 
+                    "word_confidence": [
+                        [
+                            "that", 
+                            0.6666400870262438
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "that's "
+                }, 
+                {
+                    "transcript": "but "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 14, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.842, 
+                    "timestamps": [
+                        [
+                            "no", 
+                            91.36, 
+                            91.75
+                        ]
+                    ], 
+                    "transcript": "no ", 
+                    "word_confidence": [
+                        [
+                            "no", 
+                            0.8422596046163926
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "know "
+                }, 
+                {
+                    "transcript": "No "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 15, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.0, 
+                    "timestamps": [], 
+                    "transcript": "been "
+                }, 
+                {
+                    "transcript": "did "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 16, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.755, 
+                    "timestamps": [
+                        [
+                            "oh", 
+                            105.93, 
+                            106.04
+                        ], 
+                        [
+                            "yes", 
+                            106.04, 
+                            106.37
+                        ]
+                    ], 
+                    "transcript": "oh yes ", 
+                    "word_confidence": [
+                        [
+                            "oh", 
+                            0.7692035036448467
+                        ], 
+                        [
+                            "yes", 
+                            0.7507122066880157
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION yes "
+                }, 
+                {
+                    "transcript": "yes "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 17, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.983, 
+                    "timestamps": [
+                        [
+                            "that's", 
+                            115.02, 
+                            115.34
+                        ], 
+                        [
+                            "right", 
+                            115.34, 
+                            115.75
+                        ]
+                    ], 
+                    "transcript": "that's right ", 
+                    "word_confidence": [
+                        [
+                            "that's", 
+                            0.999999999999992
+                        ], 
+                        [
+                            "right", 
+                            0.969153911101338
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 18, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.686, 
+                    "timestamps": [
+                        [
+                            "they're", 
+                            117.12, 
+                            117.37
+                        ], 
+                        [
+                            "only", 
+                            117.37, 
+                            117.57
+                        ], 
+                        [
+                            "gonna", 
+                            117.57, 
+                            117.73
+                        ], 
+                        [
+                            "suffer", 
+                            117.73, 
+                            118.22
+                        ]
+                    ], 
+                    "transcript": "they're only gonna suffer ", 
+                    "word_confidence": [
+                        [
+                            "they're", 
+                            0.923898715803238
+                        ], 
+                        [
+                            "only", 
+                            0.9792907907537861
+                        ], 
+                        [
+                            "gonna", 
+                            0.482527239467369
+                        ], 
+                        [
+                            "suffer", 
+                            0.5116503384967593
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "they're only going to suffer "
+                }, 
+                {
+                    "transcript": "they're only going to bat for "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 19, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "they're", 
+                            127.28, 
+                            127.48
+                        ], 
+                        [
+                            "only", 
+                            127.48, 
+                            127.71
+                        ], 
+                        [
+                            "gonna", 
+                            127.71, 
+                            127.89
+                        ], 
+                        [
+                            "suffer", 
+                            127.89, 
+                            128.37
+                        ], 
+                        [
+                            "they", 
+                            128.4, 
+                            128.66
+                        ], 
+                        [
+                            "they've", 
+                            128.71, 
+                            128.99
+                        ]
+                    ], 
+                    "transcript": "they're only gonna suffer they they've "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 19, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.947, 
+                    "timestamps": [
+                        [
+                            "they're", 
+                            127.28, 
+                            127.48
+                        ], 
+                        [
+                            "only", 
+                            127.48, 
+                            127.71
+                        ], 
+                        [
+                            "gonna", 
+                            127.71, 
+                            127.89
+                        ], 
+                        [
+                            "suffer", 
+                            127.89, 
+                            128.37
+                        ], 
+                        [
+                            "they", 
+                            128.4, 
+                            128.66
+                        ], 
+                        [
+                            "they've", 
+                            128.71, 
+                            128.97
+                        ], 
+                        [
+                            "defeated", 
+                            128.97, 
+                            129.35
+                        ], 
+                        [
+                            "themselves", 
+                            129.35, 
+                            129.92
+                        ]
+                    ], 
+                    "transcript": "they're only gonna suffer they they've defeated themselves ", 
+                    "word_confidence": [
+                        [
+                            "they're", 
+                            0.7808725706493094
+                        ], 
+                        [
+                            "only", 
+                            0.9999999999999654
+                        ], 
+                        [
+                            "gonna", 
+                            0.6494315893682485
+                        ], 
+                        [
+                            "suffer", 
+                            0.9895575406443582
+                        ], 
+                        [
+                            "they", 
+                            0.9477756787512477
+                        ], 
+                        [
+                            "they've", 
+                            0.999999999999981
+                        ], 
+                        [
+                            "defeated", 
+                            0.9999999999999837
+                        ], 
+                        [
+                            "themselves", 
+                            0.9800973444186407
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "they're only going to suffer they they've defeated themselves "
+                }, 
+                {
+                    "transcript": "yet they're only gonna suffer they they've defeated themselves "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 20, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.365, 
+                    "timestamps": [
+                        [
+                            "with", 
+                            130.24, 
+                            130.53
+                        ], 
+                        [
+                            "their", 
+                            130.53, 
+                            130.77
+                        ], 
+                        [
+                            "looting", 
+                            130.77, 
+                            131.11
+                        ], 
+                        [
+                            "and", 
+                            131.11, 
+                            131.4
+                        ]
+                    ], 
+                    "transcript": "with their looting and ", 
+                    "word_confidence": [
+                        [
+                            "with", 
+                            0.21154781632555747
+                        ], 
+                        [
+                            "their", 
+                            0.7307127901142226
+                        ], 
+                        [
+                            "looting", 
+                            0.22562788513568138
+                        ], 
+                        [
+                            "and", 
+                            0.3787744562634186
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "what they're looting and "
+                }, 
+                {
+                    "transcript": "with their looting in "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 21, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.566, 
+                    "timestamps": [
+                        [
+                            "violence", 
+                            131.91, 
+                            132.49
+                        ]
+                    ], 
+                    "transcript": "violence ", 
+                    "word_confidence": [
+                        [
+                            "violence", 
+                            0.5661626516066399
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "silence "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 22, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            133.7, 
+                            133.83
+                        ], 
+                        [
+                            "understand", 
+                            133.83, 
+                            134.29
+                        ], 
+                        [
+                            "why", 
+                            134.29, 
+                            134.41
+                        ], 
+                        [
+                            "they", 
+                            134.41, 
+                            134.53
+                        ], 
+                        [
+                            "were", 
+                            134.53, 
+                            134.65
+                        ], 
+                        [
+                            "upset", 
+                            134.65, 
+                            135.15
+                        ], 
+                        [
+                            "by", 
+                            135.15, 
+                            135.28
+                        ], 
+                        [
+                            "the", 
+                            135.28, 
+                            135.38
+                        ]
+                    ], 
+                    "transcript": "I understand why they were upset by the "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 22, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            133.7, 
+                            133.83
+                        ], 
+                        [
+                            "understand", 
+                            133.83, 
+                            134.29
+                        ], 
+                        [
+                            "why", 
+                            134.29, 
+                            134.41
+                        ], 
+                        [
+                            "they", 
+                            134.41, 
+                            134.53
+                        ], 
+                        [
+                            "were", 
+                            134.53, 
+                            134.65
+                        ], 
+                        [
+                            "upset", 
+                            134.65, 
+                            135.15
+                        ], 
+                        [
+                            "by", 
+                            135.15, 
+                            135.28
+                        ], 
+                        [
+                            "the", 
+                            135.28, 
+                            135.39
+                        ], 
+                        [
+                            "verdict", 
+                            135.39, 
+                            135.81
+                        ], 
+                        [
+                            "just", 
+                            135.81, 
+                            135.99
+                        ], 
+                        [
+                            "because", 
+                            135.99, 
+                            136.43
+                        ], 
+                        [
+                            "even", 
+                            136.71, 
+                            137.02
+                        ], 
+                        [
+                            "those", 
+                            137.02, 
+                            137.23
+                        ], 
+                        [
+                            "of", 
+                            137.23, 
+                            137.38
+                        ]
+                    ], 
+                    "transcript": "I understand why they were upset by the verdict just because even those of "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 22, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.97, 
+                    "timestamps": [
+                        [
+                            "I", 
+                            133.7, 
+                            133.83
+                        ], 
+                        [
+                            "understand", 
+                            133.83, 
+                            134.29
+                        ], 
+                        [
+                            "why", 
+                            134.29, 
+                            134.41
+                        ], 
+                        [
+                            "they", 
+                            134.41, 
+                            134.53
+                        ], 
+                        [
+                            "were", 
+                            134.53, 
+                            134.65
+                        ], 
+                        [
+                            "upset", 
+                            134.65, 
+                            135.15
+                        ], 
+                        [
+                            "by", 
+                            135.15, 
+                            135.28
+                        ], 
+                        [
+                            "the", 
+                            135.28, 
+                            135.39
+                        ], 
+                        [
+                            "verdict", 
+                            135.39, 
+                            135.81
+                        ], 
+                        [
+                            "just", 
+                            135.81, 
+                            135.99
+                        ], 
+                        [
+                            "because", 
+                            135.99, 
+                            136.43
+                        ], 
+                        [
+                            "even", 
+                            136.71, 
+                            137.02
+                        ], 
+                        [
+                            "those", 
+                            137.02, 
+                            137.23
+                        ], 
+                        [
+                            "of", 
+                            137.23, 
+                            137.32
+                        ], 
+                        [
+                            "us", 
+                            137.32, 
+                            137.52
+                        ], 
+                        [
+                            "that", 
+                            137.52, 
+                            137.66
+                        ], 
+                        [
+                            "aren't", 
+                            137.66, 
+                            138.01
+                        ]
+                    ], 
+                    "transcript": "I understand why they were upset by the verdict just because even those of us that aren't ", 
+                    "word_confidence": [
+                        [
+                            "I", 
+                            0.9999999999999022
+                        ], 
+                        [
+                            "understand", 
+                            0.9999999999999017
+                        ], 
+                        [
+                            "why", 
+                            0.8135158729671693
+                        ], 
+                        [
+                            "they", 
+                            0.9689193121611148
+                        ], 
+                        [
+                            "were", 
+                            0.999999999999904
+                        ], 
+                        [
+                            "upset", 
+                            0.9999999999999035
+                        ], 
+                        [
+                            "by", 
+                            0.9999999999999022
+                        ], 
+                        [
+                            "the", 
+                            0.9999999999999022
+                        ], 
+                        [
+                            "verdict", 
+                            0.9999999999999029
+                        ], 
+                        [
+                            "just", 
+                            0.7181052737636873
+                        ], 
+                        [
+                            "because", 
+                            0.9999999999999148
+                        ], 
+                        [
+                            "even", 
+                            0.9999999999999143
+                        ], 
+                        [
+                            "those", 
+                            0.9999999999999251
+                        ], 
+                        [
+                            "of", 
+                            0.9999999999999282
+                        ], 
+                        [
+                            "us", 
+                            0.9999999999999509
+                        ], 
+                        [
+                            "that", 
+                            0.9999999999999553
+                        ], 
+                        [
+                            "aren't", 
+                            0.8752701649293831
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "I understand why they were upset by the verdict is because even those of us that aren't "
+                }, 
+                {
+                    "transcript": "I understand why they were upset by the verdict just because even those of us that are "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 23, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.836, 
+                    "timestamps": [
+                        [
+                            "black", 
+                            138.49, 
+                            138.96
+                        ], 
+                        [
+                            "or", 
+                            138.96, 
+                            139.16
+                        ]
+                    ], 
+                    "transcript": "black or ", 
+                    "word_confidence": [
+                        [
+                            "black", 
+                            0.8355676430223443
+                        ], 
+                        [
+                            "or", 
+                            0.835567643022341
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "blacker "
+                }, 
+                {
+                    "transcript": "Black or "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 24, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.862, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            139.51, 
+                            139.75
+                        ], 
+                        [
+                            "don't", 
+                            139.75, 
+                            140.01
+                        ], 
+                        [
+                            "live", 
+                            140.01, 
+                            140.26
+                        ], 
+                        [
+                            "there", 
+                            140.26, 
+                            140.46
+                        ], 
+                        [
+                            "or", 
+                            140.46, 
+                            140.66
+                        ], 
+                        [
+                            "whatever", 
+                            140.66, 
+                            141.21
+                        ]
+                    ], 
+                    "transcript": "%HESITATION don't live there or whatever ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.5158750437513983
+                        ], 
+                        [
+                            "don't", 
+                            0.9999999999999845
+                        ], 
+                        [
+                            "live", 
+                            0.9999999999999843
+                        ], 
+                        [
+                            "there", 
+                            0.9999999999999801
+                        ], 
+                        [
+                            "or", 
+                            0.43277180712488167
+                        ], 
+                        [
+                            "whatever", 
+                            0.9915173659025716
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "I don't live there or whatever "
+                }, 
+                {
+                    "transcript": "%HESITATION don't live there whatever "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 25, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "we", 
+                            142.11, 
+                            142.29
+                        ], 
+                        [
+                            "all", 
+                            142.29, 
+                            142.6
+                        ], 
+                        [
+                            "saw", 
+                            142.66, 
+                            142.94
+                        ], 
+                        [
+                            "the", 
+                            142.94, 
+                            143.07
+                        ], 
+                        [
+                            "same", 
+                            143.07, 
+                            143.32
+                        ], 
+                        [
+                            "thing", 
+                            143.32, 
+                            143.59
+                        ], 
+                        [
+                            "on", 
+                            143.59, 
+                            143.78
+                        ], 
+                        [
+                            "the", 
+                            143.78, 
+                            143.87
+                        ]
+                    ], 
+                    "transcript": "we all saw the same thing on the "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 25, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.854, 
+                    "timestamps": [
+                        [
+                            "we", 
+                            142.11, 
+                            142.29
+                        ], 
+                        [
+                            "all", 
+                            142.29, 
+                            142.6
+                        ], 
+                        [
+                            "saw", 
+                            142.66, 
+                            142.94
+                        ], 
+                        [
+                            "the", 
+                            142.94, 
+                            143.07
+                        ], 
+                        [
+                            "same", 
+                            143.07, 
+                            143.32
+                        ], 
+                        [
+                            "thing", 
+                            143.32, 
+                            143.59
+                        ], 
+                        [
+                            "on", 
+                            143.59, 
+                            143.78
+                        ], 
+                        [
+                            "the", 
+                            143.78, 
+                            143.98
+                        ], 
+                        [
+                            "on", 
+                            144.04, 
+                            144.21
+                        ], 
+                        [
+                            "the", 
+                            144.21, 
+                            144.29
+                        ], 
+                        [
+                            "tapes", 
+                            144.29, 
+                            144.68
+                        ], 
+                        [
+                            "and", 
+                            144.68, 
+                            144.96
+                        ], 
+                        [
+                            "%HESITATION", 
+                            145.13, 
+                            145.59
+                        ]
+                    ], 
+                    "transcript": "we all saw the same thing on the on the tapes and %HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "we", 
+                            0.9999999999999672
+                        ], 
+                        [
+                            "all", 
+                            0.7743321637889822
+                        ], 
+                        [
+                            "saw", 
+                            1.0
+                        ], 
+                        [
+                            "the", 
+                            1.0
+                        ], 
+                        [
+                            "same", 
+                            0.9999999999999784
+                        ], 
+                        [
+                            "thing", 
+                            0.9999999999999835
+                        ], 
+                        [
+                            "on", 
+                            0.9999999999999831
+                        ], 
+                        [
+                            "the", 
+                            0.7757807000393784
+                        ], 
+                        [
+                            "on", 
+                            0.9915966569414053
+                        ], 
+                        [
+                            "the", 
+                            0.9999999999999815
+                        ], 
+                        [
+                            "tapes", 
+                            0.4598664084698686
+                        ], 
+                        [
+                            "and", 
+                            0.4992150109698361
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.9999999999999796
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "we all saw the same thing on the on the tape and %HESITATION "
+                }, 
+                {
+                    "transcript": "we all saw the same thing on the on the pavement %HESITATION "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 26, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.0, 
+                    "timestamps": [], 
+                    "transcript": "and "
+                }, 
+                {
+                    "transcript": "I know "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 27, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.973, 
+                    "timestamps": [
+                        [
+                            "it's", 
+                            168.67, 
+                            168.8
+                        ], 
+                        [
+                            "really", 
+                            168.8, 
+                            169.05
+                        ], 
+                        [
+                            "ridiculous", 
+                            169.05, 
+                            169.72
+                        ]
+                    ], 
+                    "transcript": "it's really ridiculous ", 
+                    "word_confidence": [
+                        [
+                            "it's", 
+                            0.8455039000553713
+                        ], 
+                        [
+                            "really", 
+                            1.0
+                        ], 
+                        [
+                            "ridiculous", 
+                            0.987087526515368
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "that's really ridiculous "
+                }, 
+                {
+                    "transcript": "its really ridiculous "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 28, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 1.0, 
+                    "timestamps": [
+                        [
+                            "against", 
+                            179.17, 
+                            179.64
+                        ], 
+                        [
+                            "forty", 
+                            179.64, 
+                            179.89
+                        ], 
+                        [
+                            "other", 
+                            179.89, 
+                            180.1
+                        ], 
+                        [
+                            "people", 
+                            180.1, 
+                            180.44
+                        ], 
+                        [
+                            "being", 
+                            180.44, 
+                            180.84
+                        ]
+                    ], 
+                    "transcript": "against forty other people being ", 
+                    "word_confidence": [
+                        [
+                            "against", 
+                            1.0
+                        ], 
+                        [
+                            "forty", 
+                            1.0
+                        ], 
+                        [
+                            "other", 
+                            1.0
+                        ], 
+                        [
+                            "people", 
+                            1.0
+                        ], 
+                        [
+                            "being", 
+                            1.0
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 29, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.491, 
+                    "timestamps": [
+                        [
+                            "so", 
+                            194.15, 
+                            194.4
+                        ], 
+                        [
+                            "that", 
+                            194.43, 
+                            194.73
+                        ]
+                    ], 
+                    "transcript": "so that ", 
+                    "word_confidence": [
+                        [
+                            "so", 
+                            0.3159296784140874
+                        ], 
+                        [
+                            "that", 
+                            0.6370964544232792
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "don't that "
+                }, 
+                {
+                    "transcript": "that "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 30, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "our", 
+                            203.42, 
+                            203.61
+                        ], 
+                        [
+                            "deficit", 
+                            203.61, 
+                            203.95
+                        ], 
+                        [
+                            "by", 
+                            203.95, 
+                            204.15
+                        ], 
+                        [
+                            "Nathan", 
+                            204.48, 
+                            204.94
+                        ], 
+                        [
+                            "vice", 
+                            204.94, 
+                            205.16
+                        ]
+                    ], 
+                    "transcript": "our deficit by Nathan vice "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 30, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "our", 
+                            203.42, 
+                            203.61
+                        ], 
+                        [
+                            "deficit", 
+                            203.61, 
+                            203.95
+                        ], 
+                        [
+                            "by", 
+                            203.95, 
+                            204.15
+                        ], 
+                        [
+                            "citizen", 
+                            204.28, 
+                            204.93
+                        ], 
+                        [
+                            "bystander", 
+                            204.93, 
+                            205.5
+                        ], 
+                        [
+                            "or", 
+                            205.5, 
+                            205.65
+                        ], 
+                        [
+                            "somebody", 
+                            205.65, 
+                            206.0
+                        ], 
+                        [
+                            "got", 
+                            206.0, 
+                            206.24
+                        ], 
+                        [
+                            "actually", 
+                            206.58, 
+                            207.06
+                        ], 
+                        [
+                            "be", 
+                            207.06, 
+                            207.16
+                        ]
+                    ], 
+                    "transcript": "our deficit by citizen bystander or somebody got actually be "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 30, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.696, 
+                    "timestamps": [
+                        [
+                            "or", 
+                            203.39, 
+                            203.66
+                        ], 
+                        [
+                            "that", 
+                            203.69, 
+                            203.8
+                        ], 
+                        [
+                            "the", 
+                            203.8, 
+                            203.93
+                        ], 
+                        [
+                            "blacksmith", 
+                            203.93, 
+                            204.85
+                        ], 
+                        [
+                            "and", 
+                            204.85, 
+                            204.96
+                        ], 
+                        [
+                            "bystander", 
+                            204.96, 
+                            205.5
+                        ], 
+                        [
+                            "or", 
+                            205.5, 
+                            205.65
+                        ], 
+                        [
+                            "somebody", 
+                            205.65, 
+                            206.0
+                        ], 
+                        [
+                            "got", 
+                            206.0, 
+                            206.24
+                        ], 
+                        [
+                            "actually", 
+                            206.58, 
+                            207.06
+                        ], 
+                        [
+                            "beat", 
+                            207.06, 
+                            207.29
+                        ], 
+                        [
+                            "to", 
+                            207.29, 
+                            207.38
+                        ], 
+                        [
+                            "death", 
+                            207.38, 
+                            207.68
+                        ], 
+                        [
+                            "or", 
+                            207.68, 
+                            207.94
+                        ], 
+                        [
+                            "what", 
+                            208.0, 
+                            208.37
+                        ]
+                    ], 
+                    "transcript": "or that the blacksmith and bystander or somebody got actually beat to death or what ", 
+                    "word_confidence": [
+                        [
+                            "or", 
+                            0.31012413523370674
+                        ], 
+                        [
+                            "that", 
+                            0.05236837361493584
+                        ], 
+                        [
+                            "the", 
+                            0.3979205828992836
+                        ], 
+                        [
+                            "blacksmith", 
+                            0.03462592503939354
+                        ], 
+                        [
+                            "and", 
+                            0.04837044955564813
+                        ], 
+                        [
+                            "bystander", 
+                            0.999999999999993
+                        ], 
+                        [
+                            "or", 
+                            1.0
+                        ], 
+                        [
+                            "somebody", 
+                            0.999999999999987
+                        ], 
+                        [
+                            "got", 
+                            0.9999999999999835
+                        ], 
+                        [
+                            "actually", 
+                            0.9999999999999668
+                        ], 
+                        [
+                            "beat", 
+                            0.9999999999999509
+                        ], 
+                        [
+                            "to", 
+                            0.9999999999999591
+                        ], 
+                        [
+                            "death", 
+                            0.9999999999999635
+                        ], 
+                        [
+                            "or", 
+                            0.9454953973231485
+                        ], 
+                        [
+                            "what", 
+                            0.9825996764869619
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "our deficit by citizen bystander or somebody got actually beat to death or what "
+                }, 
+                {
+                    "transcript": "or it's a black citizen bystander or somebody got actually beat to death or what "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 31, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.0, 
+                    "timestamps": [], 
+                    "transcript": "%HESITATION "
+                }, 
+                {
+                    "transcript": "I'll "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 32, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.516, 
+                    "timestamps": [
+                        [
+                            "or", 
+                            217.43, 
+                            217.58
+                        ], 
+                        [
+                            "be", 
+                            217.58, 
+                            217.85
+                        ]
+                    ], 
+                    "transcript": "or be ", 
+                    "word_confidence": [
+                        [
+                            "or", 
+                            0.30932692327024747
+                        ], 
+                        [
+                            "be", 
+                            0.6305143698073075
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "be "
+                }, 
+                {
+                    "transcript": "for B. "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 33, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "that's", 
+                            230.55, 
+                            230.87
+                        ], 
+                        [
+                            "a", 
+                            230.87, 
+                            230.93
+                        ], 
+                        [
+                            "that's", 
+                            230.93, 
+                            231.22
+                        ], 
+                        [
+                            "exactly", 
+                            231.22, 
+                            231.61
+                        ], 
+                        [
+                            "how", 
+                            231.61, 
+                            231.7
+                        ], 
+                        [
+                            "I", 
+                            231.7, 
+                            231.82
+                        ], 
+                        [
+                            "feel", 
+                            231.82, 
+                            232.03
+                        ], 
+                        [
+                            "too", 
+                            232.03, 
+                            232.2
+                        ], 
+                        [
+                            "I", 
+                            232.2, 
+                            232.35
+                        ]
+                    ], 
+                    "transcript": "that's a that's exactly how I feel too I "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 33, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.769, 
+                    "timestamps": [
+                        [
+                            "that's", 
+                            230.55, 
+                            230.87
+                        ], 
+                        [
+                            "a", 
+                            230.87, 
+                            230.93
+                        ], 
+                        [
+                            "that's", 
+                            230.93, 
+                            231.22
+                        ], 
+                        [
+                            "exactly", 
+                            231.22, 
+                            231.61
+                        ], 
+                        [
+                            "how", 
+                            231.61, 
+                            231.7
+                        ], 
+                        [
+                            "I", 
+                            231.7, 
+                            231.82
+                        ], 
+                        [
+                            "feel", 
+                            231.82, 
+                            232.03
+                        ], 
+                        [
+                            "too", 
+                            232.03, 
+                            232.2
+                        ], 
+                        [
+                            "I", 
+                            232.2, 
+                            232.32
+                        ], 
+                        [
+                            "would", 
+                            232.32, 
+                            232.47
+                        ], 
+                        [
+                            "have", 
+                            232.47, 
+                            232.57
+                        ], 
+                        [
+                            "been", 
+                            232.57, 
+                            232.69
+                        ], 
+                        [
+                            "a", 
+                            232.69, 
+                            233.01
+                        ]
+                    ], 
+                    "transcript": "that's a that's exactly how I feel too I would have been a ", 
+                    "word_confidence": [
+                        [
+                            "that's", 
+                            0.9897089861710459
+                        ], 
+                        [
+                            "a", 
+                            0.3879534791121814
+                        ], 
+                        [
+                            "that's", 
+                            0.9529163457563578
+                        ], 
+                        [
+                            "exactly", 
+                            0.9999999999999647
+                        ], 
+                        [
+                            "how", 
+                            0.9999999999999635
+                        ], 
+                        [
+                            "I", 
+                            0.9999999999999675
+                        ], 
+                        [
+                            "feel", 
+                            0.9999999999999755
+                        ], 
+                        [
+                            "too", 
+                            0.9999999999999649
+                        ], 
+                        [
+                            "I", 
+                            0.9999999999999646
+                        ], 
+                        [
+                            "would", 
+                            0.28148587441339146
+                        ], 
+                        [
+                            "have", 
+                            0.25549453065171635
+                        ], 
+                        [
+                            "been", 
+                            0.19846116277235315
+                        ], 
+                        [
+                            "a", 
+                            0.26419570794812486
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "that's a that's exactly how I feel too I when the "
+                }, 
+                {
+                    "transcript": "that's a that's exactly how I feel too I would have been %HESITATION "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 34, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "they", 
+                            233.63, 
+                            233.82
+                        ], 
+                        [
+                            "would", 
+                            233.82, 
+                            233.98
+                        ], 
+                        [
+                            "have", 
+                            233.98, 
+                            234.07
+                        ], 
+                        [
+                            "stopped", 
+                            234.07, 
+                            234.34
+                        ], 
+                        [
+                            "my", 
+                            234.34, 
+                            234.48
+                        ], 
+                        [
+                            "car", 
+                            234.48, 
+                            234.79
+                        ], 
+                        [
+                            "for", 
+                            234.79, 
+                            234.95
+                        ], 
+                        [
+                            "any", 
+                            234.95, 
+                            235.19
+                        ], 
+                        [
+                            "and", 
+                            235.24, 
+                            235.4
+                        ]
+                    ], 
+                    "transcript": "they would have stopped my car for any and "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 34, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "they", 
+                            233.63, 
+                            233.82
+                        ], 
+                        [
+                            "would", 
+                            233.82, 
+                            233.98
+                        ], 
+                        [
+                            "have", 
+                            233.98, 
+                            234.07
+                        ], 
+                        [
+                            "stopped", 
+                            234.07, 
+                            234.34
+                        ], 
+                        [
+                            "my", 
+                            234.34, 
+                            234.48
+                        ], 
+                        [
+                            "car", 
+                            234.48, 
+                            234.79
+                        ], 
+                        [
+                            "for", 
+                            234.79, 
+                            234.95
+                        ], 
+                        [
+                            "any", 
+                            234.95, 
+                            235.21
+                        ], 
+                        [
+                            "anything", 
+                            235.24, 
+                            235.73
+                        ], 
+                        [
+                            "had", 
+                            235.73, 
+                            235.91
+                        ], 
+                        [
+                            "I", 
+                            235.91, 
+                            235.96
+                        ], 
+                        [
+                            "seen", 
+                            235.96, 
+                            236.2
+                        ], 
+                        [
+                            "them", 
+                            236.2, 
+                            236.31
+                        ], 
+                        [
+                            "coming", 
+                            236.31, 
+                            236.66
+                        ], 
+                        [
+                            "but", 
+                            236.66, 
+                            236.95
+                        ]
+                    ], 
+                    "transcript": "they would have stopped my car for any anything had I seen them coming but "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 34, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "they", 
+                            233.63, 
+                            233.82
+                        ], 
+                        [
+                            "would", 
+                            233.82, 
+                            233.98
+                        ], 
+                        [
+                            "have", 
+                            233.98, 
+                            234.07
+                        ], 
+                        [
+                            "stopped", 
+                            234.07, 
+                            234.34
+                        ], 
+                        [
+                            "my", 
+                            234.34, 
+                            234.48
+                        ], 
+                        [
+                            "car", 
+                            234.48, 
+                            234.79
+                        ], 
+                        [
+                            "for", 
+                            234.79, 
+                            234.95
+                        ], 
+                        [
+                            "any", 
+                            234.95, 
+                            235.21
+                        ], 
+                        [
+                            "anything", 
+                            235.24, 
+                            235.73
+                        ], 
+                        [
+                            "had", 
+                            235.73, 
+                            235.91
+                        ], 
+                        [
+                            "I", 
+                            235.91, 
+                            235.96
+                        ], 
+                        [
+                            "seen", 
+                            235.96, 
+                            236.2
+                        ], 
+                        [
+                            "them", 
+                            236.2, 
+                            236.31
+                        ], 
+                        [
+                            "coming", 
+                            236.31, 
+                            236.66
+                        ], 
+                        [
+                            "but", 
+                            236.66, 
+                            236.95
+                        ], 
+                        [
+                            "I", 
+                            237.37, 
+                            237.46
+                        ], 
+                        [
+                            "was", 
+                            237.46, 
+                            237.63
+                        ], 
+                        [
+                            "just", 
+                            237.63, 
+                            237.82
+                        ], 
+                        [
+                            "wondering", 
+                            237.82, 
+                            238.29
+                        ], 
+                        [
+                            "since", 
+                            238.29, 
+                            238.61
+                        ], 
+                        [
+                            "you're", 
+                            238.61, 
+                            238.95
+                        ], 
+                        [
+                            "you're", 
+                            238.98, 
+                            239.16
+                        ], 
+                        [
+                            "in", 
+                            239.16, 
+                            239.37
+                        ]
+                    ], 
+                    "transcript": "they would have stopped my car for any anything had I seen them coming but I was just wondering since you're you're in "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 34, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.816, 
+                    "timestamps": [
+                        [
+                            "they", 
+                            233.63, 
+                            233.82
+                        ], 
+                        [
+                            "would", 
+                            233.82, 
+                            233.98
+                        ], 
+                        [
+                            "have", 
+                            233.98, 
+                            234.07
+                        ], 
+                        [
+                            "stopped", 
+                            234.07, 
+                            234.34
+                        ], 
+                        [
+                            "my", 
+                            234.34, 
+                            234.48
+                        ], 
+                        [
+                            "car", 
+                            234.48, 
+                            234.79
+                        ], 
+                        [
+                            "for", 
+                            234.79, 
+                            234.95
+                        ], 
+                        [
+                            "any", 
+                            234.95, 
+                            235.21
+                        ], 
+                        [
+                            "anything", 
+                            235.24, 
+                            235.73
+                        ], 
+                        [
+                            "had", 
+                            235.73, 
+                            235.91
+                        ], 
+                        [
+                            "I", 
+                            235.91, 
+                            235.96
+                        ], 
+                        [
+                            "seen", 
+                            235.96, 
+                            236.2
+                        ], 
+                        [
+                            "them", 
+                            236.2, 
+                            236.31
+                        ], 
+                        [
+                            "coming", 
+                            236.31, 
+                            236.66
+                        ], 
+                        [
+                            "but", 
+                            236.66, 
+                            236.95
+                        ], 
+                        [
+                            "I", 
+                            237.37, 
+                            237.46
+                        ], 
+                        [
+                            "was", 
+                            237.46, 
+                            237.63
+                        ], 
+                        [
+                            "just", 
+                            237.63, 
+                            237.82
+                        ], 
+                        [
+                            "wondering", 
+                            237.82, 
+                            238.29
+                        ], 
+                        [
+                            "since", 
+                            238.29, 
+                            238.61
+                        ], 
+                        [
+                            "you", 
+                            238.61, 
+                            238.71
+                        ], 
+                        [
+                            "were", 
+                            238.71, 
+                            238.95
+                        ], 
+                        [
+                            "you're", 
+                            238.98, 
+                            239.16
+                        ], 
+                        [
+                            "in", 
+                            239.16, 
+                            239.4
+                        ], 
+                        [
+                            "you're", 
+                            239.57, 
+                            239.75
+                        ], 
+                        [
+                            "back", 
+                            239.75, 
+                            240.02
+                        ], 
+                        [
+                            "east", 
+                            240.02, 
+                            240.42
+                        ], 
+                        [
+                            "them", 
+                            240.45, 
+                            240.88
+                        ]
+                    ], 
+                    "transcript": "they would have stopped my car for any anything had I seen them coming but I was just wondering since you were you're in you're back east them ", 
+                    "word_confidence": [
+                        [
+                            "they", 
+                            0.869044002666644
+                        ], 
+                        [
+                            "would", 
+                            0.20705181598321862
+                        ], 
+                        [
+                            "have", 
+                            0.17899840887827334
+                        ], 
+                        [
+                            "stopped", 
+                            0.1999018754816285
+                        ], 
+                        [
+                            "my", 
+                            1.0
+                        ], 
+                        [
+                            "car", 
+                            1.0
+                        ], 
+                        [
+                            "for", 
+                            1.0
+                        ], 
+                        [
+                            "any", 
+                            0.8306862631916695
+                        ], 
+                        [
+                            "anything", 
+                            1.0
+                        ], 
+                        [
+                            "had", 
+                            1.0
+                        ], 
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "seen", 
+                            1.0
+                        ], 
+                        [
+                            "them", 
+                            0.8197959575373933
+                        ], 
+                        [
+                            "coming", 
+                            1.0
+                        ], 
+                        [
+                            "but", 
+                            1.0
+                        ], 
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "was", 
+                            1.0
+                        ], 
+                        [
+                            "just", 
+                            1.0
+                        ], 
+                        [
+                            "wondering", 
+                            1.0
+                        ], 
+                        [
+                            "since", 
+                            0.9875229118305691
+                        ], 
+                        [
+                            "you", 
+                            0.53887063120568
+                        ], 
+                        [
+                            "were", 
+                            0.30612620978850685
+                        ], 
+                        [
+                            "you're", 
+                            0.9686549389347667
+                        ], 
+                        [
+                            "in", 
+                            0.48699349975056333
+                        ], 
+                        [
+                            "you're", 
+                            1.0
+                        ], 
+                        [
+                            "back", 
+                            1.0
+                        ], 
+                        [
+                            "east", 
+                            0.9689612207861902
+                        ], 
+                        [
+                            "them", 
+                            0.1949695473110623
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "they would have stopped my car for any anything had I seen them coming but I was just wondering since you're you're in you're back east them "
+                }, 
+                {
+                    "transcript": "they would've stopped my car for any anything had I seen them coming but I was just wondering since you were you're in you're back east them "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 35, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.877, 
+                    "timestamps": [
+                        [
+                            "but", 
+                            242.15, 
+                            242.27
+                        ], 
+                        [
+                            "a", 
+                            242.27, 
+                            242.33
+                        ], 
+                        [
+                            "little", 
+                            242.33, 
+                            242.5
+                        ], 
+                        [
+                            "closer", 
+                            242.5, 
+                            242.85
+                        ], 
+                        [
+                            "to", 
+                            242.85, 
+                            243.02
+                        ], 
+                        [
+                            "the", 
+                            243.02, 
+                            243.39
+                        ]
+                    ], 
+                    "transcript": "but a little closer to the ", 
+                    "word_confidence": [
+                        [
+                            "but", 
+                            0.22406864762918352
+                        ], 
+                        [
+                            "a", 
+                            1.0
+                        ], 
+                        [
+                            "little", 
+                            0.9702266216323665
+                        ], 
+                        [
+                            "closer", 
+                            1.0
+                        ], 
+                        [
+                            "to", 
+                            1.0
+                        ], 
+                        [
+                            "the", 
+                            0.8540065880164972
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "what a little closer to the "
+                }, 
+                {
+                    "transcript": "put a little closer to the "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 36, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "the", 
+                            243.86, 
+                            243.98
+                        ], 
+                        [
+                            "bigger", 
+                            243.98, 
+                            244.27
+                        ], 
+                        [
+                            "cities", 
+                            244.27, 
+                            244.67
+                        ], 
+                        [
+                            "probably", 
+                            244.67, 
+                            245.07
+                        ], 
+                        [
+                            "than", 
+                            245.07, 
+                            245.21
+                        ], 
+                        [
+                            "we", 
+                            245.21, 
+                            245.38
+                        ], 
+                        [
+                            "are", 
+                            245.38, 
+                            245.62
+                        ]
+                    ], 
+                    "transcript": "the bigger cities probably than we are "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 36, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.965, 
+                    "timestamps": [
+                        [
+                            "the", 
+                            243.86, 
+                            243.98
+                        ], 
+                        [
+                            "bigger", 
+                            243.98, 
+                            244.27
+                        ], 
+                        [
+                            "cities", 
+                            244.27, 
+                            244.67
+                        ], 
+                        [
+                            "probably", 
+                            244.67, 
+                            245.07
+                        ], 
+                        [
+                            "than", 
+                            245.07, 
+                            245.21
+                        ], 
+                        [
+                            "we", 
+                            245.21, 
+                            245.38
+                        ], 
+                        [
+                            "are", 
+                            245.38, 
+                            245.56
+                        ], 
+                        [
+                            "in", 
+                            245.56, 
+                            245.66
+                        ], 
+                        [
+                            "Idaho", 
+                            245.66, 
+                            246.0
+                        ], 
+                        [
+                            "here", 
+                            246.0, 
+                            246.33
+                        ]
+                    ], 
+                    "transcript": "the bigger cities probably than we are in Idaho here ", 
+                    "word_confidence": [
+                        [
+                            "the", 
+                            0.7689155873141739
+                        ], 
+                        [
+                            "bigger", 
+                            0.96812628790543
+                        ], 
+                        [
+                            "cities", 
+                            1.0
+                        ], 
+                        [
+                            "probably", 
+                            1.0
+                        ], 
+                        [
+                            "than", 
+                            0.8650216508780596
+                        ], 
+                        [
+                            "we", 
+                            1.0
+                        ], 
+                        [
+                            "are", 
+                            1.0
+                        ], 
+                        [
+                            "in", 
+                            0.7861988744100213
+                        ], 
+                        [
+                            "Idaho", 
+                            0.9829889590155823
+                        ], 
+                        [
+                            "here", 
+                            0.9875266941210226
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "the bigger cities probably than we are and Idaho here "
+                }, 
+                {
+                    "transcript": "the bigger cities probably than we are in Idaho hear "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 37, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "oh", 
+                            259.35, 
+                            260.02
+                        ], 
+                        [
+                            "and", 
+                            260.06, 
+                            260.23
+                        ], 
+                        [
+                            "what", 
+                            260.23, 
+                            260.45
+                        ], 
+                        [
+                            "the", 
+                            260.45, 
+                            260.87
+                        ]
+                    ], 
+                    "transcript": "oh and what the "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 37, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.692, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            259.35, 
+                            260.02
+                        ], 
+                        [
+                            "and", 
+                            260.06, 
+                            260.23
+                        ], 
+                        [
+                            "what", 
+                            260.23, 
+                            260.45
+                        ], 
+                        [
+                            "the", 
+                            260.45, 
+                            260.87
+                        ], 
+                        [
+                            "section", 
+                            261.07, 
+                            261.44
+                        ], 
+                        [
+                            "of", 
+                            261.44, 
+                            261.51
+                        ], 
+                        [
+                            "the", 
+                            261.51, 
+                            261.6
+                        ], 
+                        [
+                            "government", 
+                            261.6, 
+                            261.98
+                        ], 
+                        [
+                            "do", 
+                            261.98, 
+                            262.12
+                        ]
+                    ], 
+                    "transcript": "%HESITATION and what the section of the government do ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.9935333374728429
+                        ], 
+                        [
+                            "and", 
+                            0.6452627906886441
+                        ], 
+                        [
+                            "what", 
+                            0.422774703426475
+                        ], 
+                        [
+                            "the", 
+                            0.5658405690608165
+                        ], 
+                        [
+                            "section", 
+                            0.5396647611696805
+                        ], 
+                        [
+                            "of", 
+                            0.18702855399759882
+                        ], 
+                        [
+                            "the", 
+                            0.22796596100802585
+                        ], 
+                        [
+                            "government", 
+                            0.9971384584619333
+                        ], 
+                        [
+                            "do", 
+                            0.23708718392178765
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION and what the section of the government "
+                }, 
+                {
+                    "transcript": "%HESITATION and what the section of the government they "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 38, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 1.0, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            263.36, 
+                            263.77
+                        ]
+                    ], 
+                    "transcript": "%HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            1.0
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "oh "
+                }, 
+                {
+                    "transcript": "O. "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 39, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.905, 
+                    "timestamps": [
+                        [
+                            "well", 
+                            264.13, 
+                            264.25
+                        ], 
+                        [
+                            "that's", 
+                            264.25, 
+                            264.47
+                        ], 
+                        [
+                            "interesting", 
+                            264.47, 
+                            264.9
+                        ]
+                    ], 
+                    "transcript": "well that's interesting ", 
+                    "word_confidence": [
+                        [
+                            "well", 
+                            0.4152065965519271
+                        ], 
+                        [
+                            "that's", 
+                            0.9999999999999766
+                        ], 
+                        [
+                            "interesting", 
+                            0.9938162035524533
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION that's interesting "
+                }, 
+                {
+                    "transcript": "oh that's interesting "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 40, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.861, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            280.47, 
+                            281.08
+                        ]
+                    ], 
+                    "transcript": "%HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.8614322592016865
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "oh "
+                }, 
+                {
+                    "transcript": "O. "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 41, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.705, 
+                    "timestamps": [
+                        [
+                            "oh", 
+                            284.42, 
+                            284.7
+                        ], 
+                        [
+                            "I", 
+                            284.7, 
+                            284.79
+                        ], 
+                        [
+                            "see", 
+                            284.79, 
+                            285.3
+                        ]
+                    ], 
+                    "transcript": "oh I see ", 
+                    "word_confidence": [
+                        [
+                            "oh", 
+                            0.6503146850824582
+                        ], 
+                        [
+                            "I", 
+                            0.2990740458741095
+                        ], 
+                        [
+                            "see", 
+                            0.8068484388388407
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION I see "
+                }, 
+                {
+                    "transcript": "all right C. "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}

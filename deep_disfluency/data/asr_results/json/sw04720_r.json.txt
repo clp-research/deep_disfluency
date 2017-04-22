@@ -1,0 +1,5519 @@
+{
+    "result_index": 0, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.991, 
+                    "timestamps": [
+                        [
+                            "right", 
+                            15.71, 
+                            16.21
+                        ]
+                    ], 
+                    "transcript": "right ", 
+                    "word_confidence": [
+                        [
+                            "right", 
+                            0.9911297997516801
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "write "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 1, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.822, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            19.59, 
+                            19.83
+                        ], 
+                        [
+                            "on", 
+                            19.83, 
+                            19.97
+                        ], 
+                        [
+                            "and", 
+                            19.97, 
+                            20.2
+                        ], 
+                        [
+                            "if", 
+                            20.2, 
+                            20.39
+                        ], 
+                        [
+                            "you", 
+                            20.44, 
+                            20.57
+                        ], 
+                        [
+                            "try", 
+                            20.57, 
+                            20.75
+                        ], 
+                        [
+                            "to", 
+                            20.75, 
+                            20.85
+                        ], 
+                        [
+                            "get", 
+                            20.85, 
+                            21.03
+                        ], 
+                        [
+                            "it", 
+                            21.03, 
+                            21.2
+                        ]
+                    ], 
+                    "transcript": "%HESITATION on and if you try to get it ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.5473154921182478
+                        ], 
+                        [
+                            "on", 
+                            0.36324028552817406
+                        ], 
+                        [
+                            "and", 
+                            0.8993205886165581
+                        ], 
+                        [
+                            "if", 
+                            1.0
+                        ], 
+                        [
+                            "you", 
+                            1.0
+                        ], 
+                        [
+                            "try", 
+                            1.0
+                        ], 
+                        [
+                            "to", 
+                            1.0
+                        ], 
+                        [
+                            "get", 
+                            1.0
+                        ], 
+                        [
+                            "it", 
+                            0.668716973307816
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "Alan and if you try to get it "
+                }, 
+                {
+                    "transcript": "oh on and if you try to get it "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 2, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "outside", 
+                            21.71, 
+                            22.31
+                        ], 
+                        [
+                            "of", 
+                            22.31, 
+                            22.49
+                        ], 
+                        [
+                            "your", 
+                            22.49, 
+                            22.9
+                        ], 
+                        [
+                            "car", 
+                            22.93, 
+                            23.21
+                        ]
+                    ], 
+                    "transcript": "outside of your car "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 2, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.774, 
+                    "timestamps": [
+                        [
+                            "outside", 
+                            21.71, 
+                            22.31
+                        ], 
+                        [
+                            "of", 
+                            22.31, 
+                            22.49
+                        ], 
+                        [
+                            "your", 
+                            22.49, 
+                            22.9
+                        ], 
+                        [
+                            "corporation", 
+                            22.93, 
+                            23.56
+                        ], 
+                        [
+                            "in", 
+                            23.56, 
+                            23.69
+                        ], 
+                        [
+                            "a", 
+                            23.69, 
+                            23.75
+                        ], 
+                        [
+                            "pan", 
+                            23.75, 
+                            24.0
+                        ], 
+                        [
+                            "arm", 
+                            24.0, 
+                            24.2
+                        ], 
+                        [
+                            "lying", 
+                            24.2, 
+                            24.67
+                        ]
+                    ], 
+                    "transcript": "outside of your corporation in a pan arm lying ", 
+                    "word_confidence": [
+                        [
+                            "outside", 
+                            0.9999999999997382
+                        ], 
+                        [
+                            "of", 
+                            0.9999999999997381
+                        ], 
+                        [
+                            "your", 
+                            0.9999999999997219
+                        ], 
+                        [
+                            "corporation", 
+                            0.9999999999997228
+                        ], 
+                        [
+                            "in", 
+                            0.3946067674545283
+                        ], 
+                        [
+                            "a", 
+                            0.3082539727834424
+                        ], 
+                        [
+                            "pan", 
+                            0.41504020498779615
+                        ], 
+                        [
+                            "arm", 
+                            0.7366992300286253
+                        ], 
+                        [
+                            "lying", 
+                            0.2703643418955609
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "outside of your corporation in pain arm lying "
+                }, 
+                {
+                    "transcript": "outside of your corporation in Panama lying "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 3, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.99, 
+                    "timestamps": [
+                        [
+                            "right", 
+                            29.7, 
+                            30.23
+                        ]
+                    ], 
+                    "transcript": "right ", 
+                    "word_confidence": [
+                        [
+                            "right", 
+                            0.9900291569806816
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "write "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 4, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            36.75, 
+                            37.14
+                        ], 
+                        [
+                            "do", 
+                            37.14, 
+                            37.29
+                        ], 
+                        [
+                            "you", 
+                            37.29, 
+                            37.42
+                        ], 
+                        [
+                            "also", 
+                            37.42, 
+                            37.72
+                        ], 
+                        [
+                            "get", 
+                            37.72, 
+                            37.99
+                        ], 
+                        [
+                            "dental", 
+                            37.99, 
+                            38.44
+                        ]
+                    ], 
+                    "transcript": "%HESITATION do you also get dental "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 4, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.902, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            36.75, 
+                            37.14
+                        ], 
+                        [
+                            "do", 
+                            37.14, 
+                            37.29
+                        ], 
+                        [
+                            "you", 
+                            37.29, 
+                            37.42
+                        ], 
+                        [
+                            "also", 
+                            37.42, 
+                            37.72
+                        ], 
+                        [
+                            "get", 
+                            37.72, 
+                            37.99
+                        ], 
+                        [
+                            "dental", 
+                            37.99, 
+                            38.61
+                        ]
+                    ], 
+                    "transcript": "%HESITATION do you also get dental ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.6133762348151867
+                        ], 
+                        [
+                            "do", 
+                            0.8492411376618227
+                        ], 
+                        [
+                            "you", 
+                            0.9999999999999999
+                        ], 
+                        [
+                            "also", 
+                            0.9999999999999927
+                        ], 
+                        [
+                            "get", 
+                            0.9999999999999835
+                        ], 
+                        [
+                            "dental", 
+                            0.9847554160468012
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "up do you also get dental "
+                }, 
+                {
+                    "transcript": "%HESITATION up do you also get dental "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 5, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.823, 
+                    "timestamps": [
+                        [
+                            "oh", 
+                            48.41, 
+                            48.58
+                        ], 
+                        [
+                            "I", 
+                            48.58, 
+                            48.7
+                        ], 
+                        [
+                            "know", 
+                            48.7, 
+                            49.2
+                        ]
+                    ], 
+                    "transcript": "oh I know ", 
+                    "word_confidence": [
+                        [
+                            "oh", 
+                            0.8622792310418446
+                        ], 
+                        [
+                            "I", 
+                            0.9999999999999852
+                        ], 
+                        [
+                            "know", 
+                            0.7671062875588802
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION I know "
+                }, 
+                {
+                    "transcript": "no I know "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 6, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "no", 
+                            52.19, 
+                            52.36
+                        ], 
+                        [
+                            "my", 
+                            52.36, 
+                            52.48
+                        ], 
+                        [
+                            "husband's", 
+                            52.48, 
+                            52.97
+                        ], 
+                        [
+                            "with", 
+                            52.97, 
+                            53.25
+                        ], 
+                        [
+                            "the", 
+                            53.25, 
+                            53.65
+                        ], 
+                        [
+                            "north", 
+                            53.69, 
+                            53.95
+                        ]
+                    ], 
+                    "transcript": "no my husband's with the north "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 6, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "no", 
+                            52.19, 
+                            52.36
+                        ], 
+                        [
+                            "my", 
+                            52.36, 
+                            52.48
+                        ], 
+                        [
+                            "husband's", 
+                            52.48, 
+                            52.97
+                        ], 
+                        [
+                            "with", 
+                            52.97, 
+                            53.25
+                        ], 
+                        [
+                            "the", 
+                            53.25, 
+                            53.65
+                        ], 
+                        [
+                            "north", 
+                            53.69, 
+                            53.95
+                        ], 
+                        [
+                            "west", 
+                            53.95, 
+                            54.19
+                        ], 
+                        [
+                            "airlines", 
+                            54.19, 
+                            54.64
+                        ], 
+                        [
+                            "and", 
+                            54.64, 
+                            54.76
+                        ], 
+                        [
+                            "he", 
+                            54.76, 
+                            54.93
+                        ], 
+                        [
+                            "gets", 
+                            54.93, 
+                            55.38
+                        ], 
+                        [
+                            "up", 
+                            55.38, 
+                            55.75
+                        ]
+                    ], 
+                    "transcript": "no my husband's with the north west airlines and he gets up "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 6, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.934, 
+                    "timestamps": [
+                        [
+                            "no", 
+                            52.19, 
+                            52.36
+                        ], 
+                        [
+                            "my", 
+                            52.36, 
+                            52.48
+                        ], 
+                        [
+                            "husband's", 
+                            52.48, 
+                            52.97
+                        ], 
+                        [
+                            "with", 
+                            52.97, 
+                            53.25
+                        ], 
+                        [
+                            "the", 
+                            53.25, 
+                            53.65
+                        ], 
+                        [
+                            "north", 
+                            53.69, 
+                            53.95
+                        ], 
+                        [
+                            "west", 
+                            53.95, 
+                            54.19
+                        ], 
+                        [
+                            "airlines", 
+                            54.19, 
+                            54.64
+                        ], 
+                        [
+                            "and", 
+                            54.64, 
+                            54.76
+                        ], 
+                        [
+                            "he", 
+                            54.76, 
+                            54.93
+                        ], 
+                        [
+                            "gets", 
+                            54.93, 
+                            55.38
+                        ], 
+                        [
+                            "up", 
+                            55.38, 
+                            55.75
+                        ], 
+                        [
+                            "you", 
+                            55.89, 
+                            56.02
+                        ], 
+                        [
+                            "know", 
+                            56.02, 
+                            56.13
+                        ], 
+                        [
+                            "the", 
+                            56.13, 
+                            56.24
+                        ], 
+                        [
+                            "full", 
+                            56.24, 
+                            56.69
+                        ], 
+                        [
+                            "health", 
+                            56.75, 
+                            57.14
+                        ], 
+                        [
+                            "and", 
+                            57.14, 
+                            57.31
+                        ], 
+                        [
+                            "dental", 
+                            57.31, 
+                            57.9
+                        ]
+                    ], 
+                    "transcript": "no my husband's with the north west airlines and he gets up you know the full health and dental ", 
+                    "word_confidence": [
+                        [
+                            "no", 
+                            0.4468683757506535
+                        ], 
+                        [
+                            "my", 
+                            0.9700678608793823
+                        ], 
+                        [
+                            "husband's", 
+                            0.9999999999999001
+                        ], 
+                        [
+                            "with", 
+                            0.9999999999998769
+                        ], 
+                        [
+                            "the", 
+                            0.9999999999998709
+                        ], 
+                        [
+                            "north", 
+                            0.7927748961811502
+                        ], 
+                        [
+                            "west", 
+                            0.7927748961811562
+                        ], 
+                        [
+                            "airlines", 
+                            0.9999999999999081
+                        ], 
+                        [
+                            "and", 
+                            0.9999999999999098
+                        ], 
+                        [
+                            "he", 
+                            0.99999999999991
+                        ], 
+                        [
+                            "gets", 
+                            0.9885495507932186
+                        ], 
+                        [
+                            "up", 
+                            0.5881565975380021
+                        ], 
+                        [
+                            "you", 
+                            0.9999999999998964
+                        ], 
+                        [
+                            "know", 
+                            0.9999999999998915
+                        ], 
+                        [
+                            "the", 
+                            0.9999999999998844
+                        ], 
+                        [
+                            "full", 
+                            0.9999999999999177
+                        ], 
+                        [
+                            "health", 
+                            0.9999999999999017
+                        ], 
+                        [
+                            "and", 
+                            0.9999999999999256
+                        ], 
+                        [
+                            "dental", 
+                            0.9999999999999526
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "now my husband's with the north west airlines and he gets up you know the full health and dental "
+                }, 
+                {
+                    "transcript": "no my husbands with the north west airlines and he gets up you know the full health and dental "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 7, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "and", 
+                            58.34, 
+                            58.79
+                        ], 
+                        [
+                            "%HESITATION", 
+                            58.79, 
+                            59.08
+                        ], 
+                        [
+                            "we", 
+                            59.08, 
+                            59.26
+                        ], 
+                        [
+                            "have", 
+                            59.26, 
+                            59.47
+                        ], 
+                        [
+                            "forty", 
+                            59.47, 
+                            59.79
+                        ]
+                    ], 
+                    "transcript": "and %HESITATION we have forty "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 7, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "and", 
+                            58.34, 
+                            58.79
+                        ], 
+                        [
+                            "%HESITATION", 
+                            58.79, 
+                            59.08
+                        ], 
+                        [
+                            "we", 
+                            59.08, 
+                            59.26
+                        ], 
+                        [
+                            "have", 
+                            59.26, 
+                            59.47
+                        ], 
+                        [
+                            "four", 
+                            59.47, 
+                            59.7
+                        ], 
+                        [
+                            "children", 
+                            59.7, 
+                            60.19
+                        ], 
+                        [
+                            "and", 
+                            60.22, 
+                            60.61
+                        ], 
+                        [
+                            "what", 
+                            60.61, 
+                            60.81
+                        ], 
+                        [
+                            "you", 
+                            60.81, 
+                            60.95
+                        ], 
+                        [
+                            "pay", 
+                            60.95, 
+                            61.27
+                        ], 
+                        [
+                            "just", 
+                            61.27, 
+                            61.49
+                        ], 
+                        [
+                            "to", 
+                            61.49, 
+                            61.57
+                        ], 
+                        [
+                            "have", 
+                            61.57, 
+                            61.71
+                        ], 
+                        [
+                            "teeth", 
+                            61.71, 
+                            61.99
+                        ]
+                    ], 
+                    "transcript": "and %HESITATION we have four children and what you pay just to have teeth "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 7, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.944, 
+                    "timestamps": [
+                        [
+                            "and", 
+                            58.34, 
+                            58.79
+                        ], 
+                        [
+                            "%HESITATION", 
+                            58.79, 
+                            59.08
+                        ], 
+                        [
+                            "we", 
+                            59.08, 
+                            59.26
+                        ], 
+                        [
+                            "have", 
+                            59.26, 
+                            59.47
+                        ], 
+                        [
+                            "four", 
+                            59.47, 
+                            59.7
+                        ], 
+                        [
+                            "children", 
+                            59.7, 
+                            60.19
+                        ], 
+                        [
+                            "and", 
+                            60.22, 
+                            60.61
+                        ], 
+                        [
+                            "what", 
+                            60.61, 
+                            60.81
+                        ], 
+                        [
+                            "you", 
+                            60.81, 
+                            60.95
+                        ], 
+                        [
+                            "pay", 
+                            60.95, 
+                            61.27
+                        ], 
+                        [
+                            "just", 
+                            61.27, 
+                            61.49
+                        ], 
+                        [
+                            "to", 
+                            61.49, 
+                            61.57
+                        ], 
+                        [
+                            "have", 
+                            61.57, 
+                            61.71
+                        ], 
+                        [
+                            "teeth", 
+                            61.71, 
+                            61.99
+                        ], 
+                        [
+                            "cleaned", 
+                            61.99, 
+                            62.31
+                        ], 
+                        [
+                            "is", 
+                            62.31, 
+                            62.41
+                        ], 
+                        [
+                            "outrageous", 
+                            62.41, 
+                            63.25
+                        ]
+                    ], 
+                    "transcript": "and %HESITATION we have four children and what you pay just to have teeth cleaned is outrageous ", 
+                    "word_confidence": [
+                        [
+                            "and", 
+                            0.9999999999999348
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.9999999999999348
+                        ], 
+                        [
+                            "we", 
+                            0.9999999999999347
+                        ], 
+                        [
+                            "have", 
+                            0.9999999999999347
+                        ], 
+                        [
+                            "four", 
+                            0.9999999999999367
+                        ], 
+                        [
+                            "children", 
+                            0.9999999999999558
+                        ], 
+                        [
+                            "and", 
+                            0.9999999999999261
+                        ], 
+                        [
+                            "what", 
+                            0.9999999999999313
+                        ], 
+                        [
+                            "you", 
+                            0.9999999999999306
+                        ], 
+                        [
+                            "pay", 
+                            0.8230299133828444
+                        ], 
+                        [
+                            "just", 
+                            0.951735430922533
+                        ], 
+                        [
+                            "to", 
+                            0.5437526853141686
+                        ], 
+                        [
+                            "have", 
+                            0.9675592903346691
+                        ], 
+                        [
+                            "teeth", 
+                            0.9988414032261571
+                        ], 
+                        [
+                            "cleaned", 
+                            0.5854280932334806
+                        ], 
+                        [
+                            "is", 
+                            0.7729041881127588
+                        ], 
+                        [
+                            "outrageous", 
+                            0.9903172126390775
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "and %HESITATION we have four children and what you pay just have teeth cleaned is outrageous "
+                }, 
+                {
+                    "transcript": "and %HESITATION we have four children and what you pay just to have teeth claim is outrageous "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 8, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "and", 
+                            63.91, 
+                            64.07
+                        ], 
+                        [
+                            "I", 
+                            64.07, 
+                            64.11
+                        ], 
+                        [
+                            "don't", 
+                            64.11, 
+                            64.26
+                        ], 
+                        [
+                            "know", 
+                            64.26, 
+                            64.32
+                        ], 
+                        [
+                            "how", 
+                            64.32, 
+                            64.45
+                        ], 
+                        [
+                            "people", 
+                            64.45, 
+                            64.74
+                        ], 
+                        [
+                            "that", 
+                            64.74, 
+                            64.86
+                        ], 
+                        [
+                            "don't", 
+                            64.86, 
+                            65.11
+                        ], 
+                        [
+                            "have", 
+                            65.11, 
+                            65.31
+                        ], 
+                        [
+                            "it", 
+                            65.31, 
+                            65.4
+                        ], 
+                        [
+                            "can", 
+                            65.4, 
+                            65.6
+                        ]
+                    ], 
+                    "transcript": "and I don't know how people that don't have it can "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 8, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.997, 
+                    "timestamps": [
+                        [
+                            "and", 
+                            63.91, 
+                            64.07
+                        ], 
+                        [
+                            "I", 
+                            64.07, 
+                            64.11
+                        ], 
+                        [
+                            "don't", 
+                            64.11, 
+                            64.26
+                        ], 
+                        [
+                            "know", 
+                            64.26, 
+                            64.32
+                        ], 
+                        [
+                            "how", 
+                            64.32, 
+                            64.45
+                        ], 
+                        [
+                            "people", 
+                            64.45, 
+                            64.74
+                        ], 
+                        [
+                            "that", 
+                            64.74, 
+                            64.86
+                        ], 
+                        [
+                            "don't", 
+                            64.86, 
+                            65.11
+                        ], 
+                        [
+                            "have", 
+                            65.11, 
+                            65.31
+                        ], 
+                        [
+                            "it", 
+                            65.31, 
+                            65.4
+                        ], 
+                        [
+                            "can", 
+                            65.4, 
+                            65.54
+                        ], 
+                        [
+                            "afford", 
+                            65.54, 
+                            65.91
+                        ], 
+                        [
+                            "it", 
+                            65.91, 
+                            66.14
+                        ]
+                    ], 
+                    "transcript": "and I don't know how people that don't have it can afford it ", 
+                    "word_confidence": [
+                        [
+                            "and", 
+                            1.0
+                        ], 
+                        [
+                            "I", 
+                            1.0
+                        ], 
+                        [
+                            "don't", 
+                            1.0
+                        ], 
+                        [
+                            "know", 
+                            0.9999999999999837
+                        ], 
+                        [
+                            "how", 
+                            1.0
+                        ], 
+                        [
+                            "people", 
+                            1.0
+                        ], 
+                        [
+                            "that", 
+                            1.0
+                        ], 
+                        [
+                            "don't", 
+                            1.0
+                        ], 
+                        [
+                            "have", 
+                            0.9999999999999918
+                        ], 
+                        [
+                            "it", 
+                            0.9999999999999919
+                        ], 
+                        [
+                            "can", 
+                            1.0
+                        ], 
+                        [
+                            "afford", 
+                            1.0
+                        ], 
+                        [
+                            "it", 
+                            0.971339660190441
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 9, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 1.0, 
+                    "timestamps": [
+                        [
+                            "or", 
+                            67.69, 
+                            67.8
+                        ], 
+                        [
+                            "maybe", 
+                            67.8, 
+                            68.05
+                        ], 
+                        [
+                            "they", 
+                            68.05, 
+                            68.19
+                        ], 
+                        [
+                            "don't", 
+                            68.19, 
+                            68.62
+                        ]
+                    ], 
+                    "transcript": "or maybe they don't ", 
+                    "word_confidence": [
+                        [
+                            "or", 
+                            1.0
+                        ], 
+                        [
+                            "maybe", 
+                            0.999999999999992
+                        ], 
+                        [
+                            "they", 
+                            0.9999999999999917
+                        ], 
+                        [
+                            "don't", 
+                            0.9999999999999875
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "or maybe they don't know "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 10, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.0, 
+                    "timestamps": [], 
+                    "transcript": "so "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 11, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.972, 
+                    "timestamps": [
+                        [
+                            "that's", 
+                            75.22, 
+                            75.42
+                        ], 
+                        [
+                            "right", 
+                            75.42, 
+                            75.65
+                        ], 
+                        [
+                            "that's", 
+                            76.22, 
+                            76.45
+                        ], 
+                        [
+                            "right", 
+                            76.45, 
+                            77.06
+                        ]
+                    ], 
+                    "transcript": "that's right that's right ", 
+                    "word_confidence": [
+                        [
+                            "that's", 
+                            1.0
+                        ], 
+                        [
+                            "right", 
+                            1.0
+                        ], 
+                        [
+                            "that's", 
+                            0.999999999999992
+                        ], 
+                        [
+                            "right", 
+                            0.9412946966020889
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 12, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.99, 
+                    "timestamps": [
+                        [
+                            "right", 
+                            94.15, 
+                            94.64
+                        ]
+                    ], 
+                    "transcript": "right ", 
+                    "word_confidence": [
+                        [
+                            "right", 
+                            0.9903411294992267
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "write "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 13, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.985, 
+                    "timestamps": [
+                        [
+                            "right", 
+                            103.92, 
+                            104.39
+                        ]
+                    ], 
+                    "transcript": "right ", 
+                    "word_confidence": [
+                        [
+                            "right", 
+                            0.9845989825580912
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "write "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 14, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "well", 
+                            110.66, 
+                            110.96
+                        ], 
+                        [
+                            "it's", 
+                            110.96, 
+                            111.05
+                        ], 
+                        [
+                            "a", 
+                            111.05, 
+                            111.12
+                        ], 
+                        [
+                            "lot", 
+                            111.12, 
+                            111.33
+                        ], 
+                        [
+                            "easier", 
+                            111.33, 
+                            111.62
+                        ], 
+                        [
+                            "to", 
+                            111.62, 
+                            111.89
+                        ], 
+                        [
+                            "to", 
+                            111.92, 
+                            112.05
+                        ], 
+                        [
+                            "save", 
+                            112.05, 
+                            112.33
+                        ], 
+                        [
+                            "it", 
+                            112.33, 
+                            112.41
+                        ], 
+                        [
+                            "when", 
+                            112.41, 
+                            112.53
+                        ]
+                    ], 
+                    "transcript": "well it's a lot easier to to save it when "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 14, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.988, 
+                    "timestamps": [
+                        [
+                            "well", 
+                            110.66, 
+                            110.96
+                        ], 
+                        [
+                            "it's", 
+                            110.96, 
+                            111.05
+                        ], 
+                        [
+                            "a", 
+                            111.05, 
+                            111.12
+                        ], 
+                        [
+                            "lot", 
+                            111.12, 
+                            111.33
+                        ], 
+                        [
+                            "easier", 
+                            111.33, 
+                            111.62
+                        ], 
+                        [
+                            "to", 
+                            111.62, 
+                            111.89
+                        ], 
+                        [
+                            "to", 
+                            111.92, 
+                            112.05
+                        ], 
+                        [
+                            "save", 
+                            112.05, 
+                            112.33
+                        ], 
+                        [
+                            "it", 
+                            112.33, 
+                            112.41
+                        ], 
+                        [
+                            "when", 
+                            112.41, 
+                            112.54
+                        ], 
+                        [
+                            "you", 
+                            112.54, 
+                            112.63
+                        ], 
+                        [
+                            "don't", 
+                            112.63, 
+                            112.9
+                        ], 
+                        [
+                            "get", 
+                            113.01, 
+                            113.23
+                        ], 
+                        [
+                            "your", 
+                            113.23, 
+                            113.35
+                        ], 
+                        [
+                            "hands", 
+                            113.35, 
+                            113.69
+                        ], 
+                        [
+                            "on", 
+                            113.69, 
+                            113.81
+                        ], 
+                        [
+                            "it", 
+                            113.81, 
+                            113.91
+                        ], 
+                        [
+                            "first", 
+                            113.91, 
+                            114.49
+                        ]
+                    ], 
+                    "transcript": "well it's a lot easier to to save it when you don't get your hands on it first ", 
+                    "word_confidence": [
+                        [
+                            "well", 
+                            0.9999999999999674
+                        ], 
+                        [
+                            "it's", 
+                            0.9999999999999668
+                        ], 
+                        [
+                            "a", 
+                            0.9999999999999669
+                        ], 
+                        [
+                            "lot", 
+                            0.9999999999999416
+                        ], 
+                        [
+                            "easier", 
+                            0.9999999999999418
+                        ], 
+                        [
+                            "to", 
+                            0.9999999999999348
+                        ], 
+                        [
+                            "to", 
+                            0.9999999999999484
+                        ], 
+                        [
+                            "save", 
+                            0.9999999999999389
+                        ], 
+                        [
+                            "it", 
+                            0.9999999999999387
+                        ], 
+                        [
+                            "when", 
+                            0.9999999999999344
+                        ], 
+                        [
+                            "you", 
+                            0.999999999999951
+                        ], 
+                        [
+                            "don't", 
+                            0.9999999999999509
+                        ], 
+                        [
+                            "get", 
+                            0.9999999999999674
+                        ], 
+                        [
+                            "your", 
+                            0.9999999999999675
+                        ], 
+                        [
+                            "hands", 
+                            0.9999999999999671
+                        ], 
+                        [
+                            "on", 
+                            0.9863723803823584
+                        ], 
+                        [
+                            "it", 
+                            0.5949768110355125
+                        ], 
+                        [
+                            "first", 
+                            0.9936245959500293
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "well its a lot easier to to save it when you don't get your hands on it first "
+                }, 
+                {
+                    "transcript": "well it's a lot easier to to save it when you don't get your hands on a first "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 15, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.992, 
+                    "timestamps": [
+                        [
+                            "right", 
+                            127.17, 
+                            127.68
+                        ]
+                    ], 
+                    "transcript": "right ", 
+                    "word_confidence": [
+                        [
+                            "right", 
+                            0.9916973953833068
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "write "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 16, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.874, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            133.2, 
+                            133.53
+                        ], 
+                        [
+                            "what", 
+                            133.53, 
+                            133.69
+                        ], 
+                        [
+                            "about", 
+                            133.69, 
+                            134.09
+                        ], 
+                        [
+                            "what", 
+                            134.19, 
+                            134.31
+                        ], 
+                        [
+                            "about", 
+                            134.31, 
+                            134.74
+                        ], 
+                        [
+                            "%HESITATION", 
+                            134.74, 
+                            135.24
+                        ]
+                    ], 
+                    "transcript": "%HESITATION what about what about %HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            1.0
+                        ], 
+                        [
+                            "what", 
+                            1.0
+                        ], 
+                        [
+                            "about", 
+                            1.0
+                        ], 
+                        [
+                            "what", 
+                            1.0
+                        ], 
+                        [
+                            "about", 
+                            0.9321141557174699
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.5677578734148954
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "%HESITATION what about what about the "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 17, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.863, 
+                    "timestamps": [
+                        [
+                            "Lester", 
+                            135.76, 
+                            136.43
+                        ]
+                    ], 
+                    "transcript": "Lester ", 
+                    "word_confidence": [
+                        [
+                            "Lester", 
+                            0.8632439213037226
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "Leicester "
+                }, 
+                {
+                    "transcript": "lesser "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 18, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            136.74, 
+                            137.15
+                        ], 
+                        [
+                            "benefits", 
+                            137.32, 
+                            137.84
+                        ], 
+                        [
+                            "perhaps", 
+                            137.84, 
+                            138.23
+                        ], 
+                        [
+                            "for", 
+                            138.23, 
+                            138.41
+                        ], 
+                        [
+                            "you", 
+                            138.41, 
+                            138.54
+                        ]
+                    ], 
+                    "transcript": "%HESITATION benefits perhaps for you "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 18, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            136.74, 
+                            137.15
+                        ], 
+                        [
+                            "benefits", 
+                            137.32, 
+                            137.84
+                        ], 
+                        [
+                            "perhaps", 
+                            137.84, 
+                            138.23
+                        ], 
+                        [
+                            "for", 
+                            138.23, 
+                            138.41
+                        ], 
+                        [
+                            "you", 
+                            138.41, 
+                            138.69
+                        ], 
+                        [
+                            "but", 
+                            138.69, 
+                            138.9
+                        ], 
+                        [
+                            "for", 
+                            138.9, 
+                            139.26
+                        ], 
+                        [
+                            "for", 
+                            139.64, 
+                            139.85
+                        ], 
+                        [
+                            "the", 
+                            139.85, 
+                            139.98
+                        ], 
+                        [
+                            "women", 
+                            139.98, 
+                            140.32
+                        ], 
+                        [
+                            "in", 
+                            140.32, 
+                            140.45
+                        ], 
+                        [
+                            "the", 
+                            140.45, 
+                            140.54
+                        ]
+                    ], 
+                    "transcript": "%HESITATION benefits perhaps for you but for for the women in the "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 18, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.997, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            136.74, 
+                            137.15
+                        ], 
+                        [
+                            "benefits", 
+                            137.32, 
+                            137.84
+                        ], 
+                        [
+                            "perhaps", 
+                            137.84, 
+                            138.23
+                        ], 
+                        [
+                            "for", 
+                            138.23, 
+                            138.41
+                        ], 
+                        [
+                            "you", 
+                            138.41, 
+                            138.69
+                        ], 
+                        [
+                            "but", 
+                            138.69, 
+                            138.9
+                        ], 
+                        [
+                            "for", 
+                            138.9, 
+                            139.26
+                        ], 
+                        [
+                            "for", 
+                            139.64, 
+                            139.85
+                        ], 
+                        [
+                            "the", 
+                            139.85, 
+                            139.98
+                        ], 
+                        [
+                            "women", 
+                            139.98, 
+                            140.32
+                        ], 
+                        [
+                            "in", 
+                            140.32, 
+                            140.45
+                        ], 
+                        [
+                            "the", 
+                            140.45, 
+                            140.74
+                        ], 
+                        [
+                            "in", 
+                            140.93, 
+                            141.09
+                        ], 
+                        [
+                            "the", 
+                            141.09, 
+                            141.31
+                        ]
+                    ], 
+                    "transcript": "%HESITATION benefits perhaps for you but for for the women in the in the ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            1.0
+                        ], 
+                        [
+                            "benefits", 
+                            1.0
+                        ], 
+                        [
+                            "perhaps", 
+                            1.0
+                        ], 
+                        [
+                            "for", 
+                            1.0
+                        ], 
+                        [
+                            "you", 
+                            1.0
+                        ], 
+                        [
+                            "but", 
+                            1.0
+                        ], 
+                        [
+                            "for", 
+                            1.0
+                        ], 
+                        [
+                            "for", 
+                            1.0
+                        ], 
+                        [
+                            "the", 
+                            1.0
+                        ], 
+                        [
+                            "women", 
+                            1.0
+                        ], 
+                        [
+                            "in", 
+                            1.0
+                        ], 
+                        [
+                            "the", 
+                            1.0
+                        ], 
+                        [
+                            "in", 
+                            1.0
+                        ], 
+                        [
+                            "the", 
+                            0.9450713685217719
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 19, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "corporation", 
+                            141.94, 
+                            142.87
+                        ], 
+                        [
+                            "for", 
+                            142.87, 
+                            143.3
+                        ]
+                    ], 
+                    "transcript": "corporation for "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 19, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.897, 
+                    "timestamps": [
+                        [
+                            "corporation", 
+                            141.94, 
+                            142.87
+                        ], 
+                        [
+                            "for", 
+                            142.87, 
+                            143.3
+                        ], 
+                        [
+                            "example", 
+                            143.36, 
+                            144.2
+                        ], 
+                        [
+                            "%HESITATION", 
+                            144.2, 
+                            144.53
+                        ]
+                    ], 
+                    "transcript": "corporation for example %HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "corporation", 
+                            0.8749045188294089
+                        ], 
+                        [
+                            "for", 
+                            0.9271098153610904
+                        ], 
+                        [
+                            "example", 
+                            0.9883908043723872
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.6841282811623695
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "corporations for example %HESITATION "
+                }, 
+                {
+                    "transcript": "corporation for example a "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 20, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.995, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            145.53, 
+                            146.59
+                        ]
+                    ], 
+                    "transcript": "%HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.9946183348794231
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "oh "
+                }, 
+                {
+                    "transcript": "O. "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 21, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.603, 
+                    "timestamps": [
+                        [
+                            "yes", 
+                            147.23, 
+                            147.67
+                        ]
+                    ], 
+                    "transcript": "yes ", 
+                    "word_confidence": [
+                        [
+                            "yes", 
+                            0.6028117270733375
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "yeah "
+                }, 
+                {
+                    "transcript": "yes I "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 22, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "they", 
+                            148.15, 
+                            148.38
+                        ], 
+                        [
+                            "have", 
+                            148.38, 
+                            148.54
+                        ], 
+                        [
+                            "even", 
+                            148.54, 
+                            148.77
+                        ], 
+                        [
+                            "have", 
+                            148.77, 
+                            148.97
+                        ], 
+                        [
+                            "do", 
+                            148.97, 
+                            149.06
+                        ], 
+                        [
+                            "they", 
+                            149.06, 
+                            149.16
+                        ], 
+                        [
+                            "have", 
+                            149.16, 
+                            149.31
+                        ], 
+                        [
+                            "fatherly", 
+                            149.31, 
+                            149.89
+                        ]
+                    ], 
+                    "transcript": "they have even have do they have fatherly "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 22, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.935, 
+                    "timestamps": [
+                        [
+                            "they", 
+                            148.15, 
+                            148.38
+                        ], 
+                        [
+                            "have", 
+                            148.38, 
+                            148.54
+                        ], 
+                        [
+                            "even", 
+                            148.54, 
+                            148.77
+                        ], 
+                        [
+                            "have", 
+                            148.77, 
+                            148.97
+                        ], 
+                        [
+                            "do", 
+                            148.97, 
+                            149.06
+                        ], 
+                        [
+                            "they", 
+                            149.06, 
+                            149.16
+                        ], 
+                        [
+                            "have", 
+                            149.16, 
+                            149.31
+                        ], 
+                        [
+                            "father", 
+                            149.31, 
+                            149.77
+                        ], 
+                        [
+                            "leaves", 
+                            149.77, 
+                            150.24
+                        ], 
+                        [
+                            "or", 
+                            150.24, 
+                            150.35
+                        ], 
+                        [
+                            "anything", 
+                            150.35, 
+                            150.71
+                        ], 
+                        [
+                            "like", 
+                            150.71, 
+                            150.9
+                        ], 
+                        [
+                            "that", 
+                            150.9, 
+                            151.16
+                        ]
+                    ], 
+                    "transcript": "they have even have do they have father leaves or anything like that ", 
+                    "word_confidence": [
+                        [
+                            "they", 
+                            0.6095455436764268
+                        ], 
+                        [
+                            "have", 
+                            0.5789459524272602
+                        ], 
+                        [
+                            "even", 
+                            0.9926804987676284
+                        ], 
+                        [
+                            "have", 
+                            1.0
+                        ], 
+                        [
+                            "do", 
+                            0.8155938650397766
+                        ], 
+                        [
+                            "they", 
+                            0.9631187730079812
+                        ], 
+                        [
+                            "have", 
+                            1.0
+                        ], 
+                        [
+                            "father", 
+                            1.0
+                        ], 
+                        [
+                            "leaves", 
+                            1.0
+                        ], 
+                        [
+                            "or", 
+                            1.0
+                        ], 
+                        [
+                            "anything", 
+                            0.9999999999999919
+                        ], 
+                        [
+                            "like", 
+                            0.9999999999999959
+                        ], 
+                        [
+                            "that", 
+                            0.9334381080032055
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "do they have even have do they have father leaves or anything like that "
+                }, 
+                {
+                    "transcript": "they had even have do they have father leaves or anything like that "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 23, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.87, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            166.27, 
+                            166.48
+                        ], 
+                        [
+                            "I", 
+                            166.48, 
+                            166.58
+                        ], 
+                        [
+                            "do", 
+                            166.58, 
+                            166.71
+                        ], 
+                        [
+                            "too", 
+                            166.71, 
+                            167.31
+                        ]
+                    ], 
+                    "transcript": "%HESITATION I do too ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.9004398223743919
+                        ], 
+                        [
+                            "I", 
+                            0.554494374109284
+                        ], 
+                        [
+                            "do", 
+                            0.494715843479507
+                        ], 
+                        [
+                            "too", 
+                            0.9926707922249852
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "oh I do too "
+                }, 
+                {
+                    "transcript": "%HESITATION ID to "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 24, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            174.95, 
+                            175.24
+                        ], 
+                        [
+                            "I", 
+                            175.24, 
+                            175.39
+                        ], 
+                        [
+                            "say", 
+                            175.39, 
+                            175.56
+                        ], 
+                        [
+                            "I", 
+                            175.56, 
+                            175.74
+                        ], 
+                        [
+                            "think", 
+                            175.74, 
+                            176.0
+                        ], 
+                        [
+                            "it's", 
+                            176.0, 
+                            176.12
+                        ], 
+                        [
+                            "just", 
+                            176.12, 
+                            176.36
+                        ], 
+                        [
+                            "a", 
+                            176.36, 
+                            176.42
+                        ], 
+                        [
+                            "cry", 
+                            176.42, 
+                            176.6
+                        ]
+                    ], 
+                    "transcript": "%HESITATION I say I think it's just a cry "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 24, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.868, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            174.95, 
+                            175.24
+                        ], 
+                        [
+                            "I", 
+                            175.24, 
+                            175.39
+                        ], 
+                        [
+                            "say", 
+                            175.39, 
+                            175.56
+                        ], 
+                        [
+                            "I", 
+                            175.56, 
+                            175.74
+                        ], 
+                        [
+                            "think", 
+                            175.74, 
+                            176.0
+                        ], 
+                        [
+                            "it's", 
+                            176.0, 
+                            176.12
+                        ], 
+                        [
+                            "just", 
+                            176.12, 
+                            176.36
+                        ], 
+                        [
+                            "a", 
+                            176.36, 
+                            176.42
+                        ], 
+                        [
+                            "crying", 
+                            176.42, 
+                            176.78
+                        ], 
+                        [
+                            "shame", 
+                            176.78, 
+                            177.35
+                        ], 
+                        [
+                            "%HESITATION", 
+                            177.46, 
+                            177.83
+                        ]
+                    ], 
+                    "transcript": "%HESITATION I say I think it's just a crying shame %HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.9422153124650884
+                        ], 
+                        [
+                            "I", 
+                            0.9417555335633109
+                        ], 
+                        [
+                            "say", 
+                            0.3361891647437735
+                        ], 
+                        [
+                            "I", 
+                            0.8072841298073747
+                        ], 
+                        [
+                            "think", 
+                            1.0
+                        ], 
+                        [
+                            "it's", 
+                            0.7449873538012005
+                        ], 
+                        [
+                            "just", 
+                            1.0
+                        ], 
+                        [
+                            "a", 
+                            1.0
+                        ], 
+                        [
+                            "crying", 
+                            1.0
+                        ], 
+                        [
+                            "shame", 
+                            0.9962964631298017
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.5643819070672431
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "oh I say I think it's just a crying shame %HESITATION "
+                }, 
+                {
+                    "transcript": "%HESITATION I say I think it's just a crying shame "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 25, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.941, 
+                    "timestamps": [
+                        [
+                            "for", 
+                            178.27, 
+                            178.46
+                        ], 
+                        [
+                            "a", 
+                            178.46, 
+                            178.52
+                        ], 
+                        [
+                            "mother", 
+                            178.52, 
+                            178.75
+                        ], 
+                        [
+                            "to", 
+                            178.75, 
+                            178.82
+                        ], 
+                        [
+                            "have", 
+                            178.82, 
+                            178.94
+                        ], 
+                        [
+                            "to", 
+                            178.94, 
+                            179.02
+                        ], 
+                        [
+                            "go", 
+                            179.02, 
+                            179.09
+                        ], 
+                        [
+                            "back", 
+                            179.09, 
+                            179.27
+                        ], 
+                        [
+                            "to", 
+                            179.27, 
+                            179.37
+                        ], 
+                        [
+                            "work", 
+                            179.37, 
+                            179.53
+                        ], 
+                        [
+                            "at", 
+                            179.53, 
+                            179.66
+                        ], 
+                        [
+                            "six", 
+                            179.66, 
+                            179.96
+                        ], 
+                        [
+                            "weeks", 
+                            179.96, 
+                            180.4
+                        ]
+                    ], 
+                    "transcript": "for a mother to have to go back to work at six weeks ", 
+                    "word_confidence": [
+                        [
+                            "for", 
+                            0.7030331057377103
+                        ], 
+                        [
+                            "a", 
+                            0.5485351473556181
+                        ], 
+                        [
+                            "mother", 
+                            0.8475267629265028
+                        ], 
+                        [
+                            "to", 
+                            1.0
+                        ], 
+                        [
+                            "have", 
+                            1.0
+                        ], 
+                        [
+                            "to", 
+                            1.0
+                        ], 
+                        [
+                            "go", 
+                            1.0
+                        ], 
+                        [
+                            "back", 
+                            1.0
+                        ], 
+                        [
+                            "to", 
+                            1.0
+                        ], 
+                        [
+                            "work", 
+                            1.0
+                        ], 
+                        [
+                            "at", 
+                            1.0
+                        ], 
+                        [
+                            "six", 
+                            1.0
+                        ], 
+                        [
+                            "weeks", 
+                            0.9827847224108154
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "from mother to have to go back to work at six weeks "
+                }, 
+                {
+                    "transcript": "for mother to have to go back to work at six weeks "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 26, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.995, 
+                    "timestamps": [
+                        [
+                            "she", 
+                            181.24, 
+                            181.46
+                        ], 
+                        [
+                            "isn't", 
+                            181.46, 
+                            181.72
+                        ], 
+                        [
+                            "recovered", 
+                            181.72, 
+                            182.37
+                        ]
+                    ], 
+                    "transcript": "she isn't recovered ", 
+                    "word_confidence": [
+                        [
+                            "she", 
+                            1.0
+                        ], 
+                        [
+                            "isn't", 
+                            1.0
+                        ], 
+                        [
+                            "recovered", 
+                            0.9921748584770838
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 27, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "and", 
+                            183.39, 
+                            183.62
+                        ], 
+                        [
+                            "the", 
+                            183.62, 
+                            183.9
+                        ], 
+                        [
+                            "the", 
+                            184.02, 
+                            184.16
+                        ], 
+                        [
+                            "infant", 
+                            184.16, 
+                            184.54
+                        ], 
+                        [
+                            "name", 
+                            184.54, 
+                            184.71
+                        ]
+                    ], 
+                    "transcript": "and the the infant name "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 27, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.912, 
+                    "timestamps": [
+                        [
+                            "and", 
+                            183.39, 
+                            183.62
+                        ], 
+                        [
+                            "the", 
+                            183.62, 
+                            183.9
+                        ], 
+                        [
+                            "the", 
+                            184.02, 
+                            184.16
+                        ], 
+                        [
+                            "infant", 
+                            184.16, 
+                            184.54
+                        ], 
+                        [
+                            "needs", 
+                            184.54, 
+                            184.84
+                        ], 
+                        [
+                            "her", 
+                            184.84, 
+                            184.92
+                        ], 
+                        [
+                            "desperately", 
+                            184.92, 
+                            185.55
+                        ], 
+                        [
+                            "at", 
+                            185.55, 
+                            185.65
+                        ], 
+                        [
+                            "that", 
+                            185.65, 
+                            185.84
+                        ], 
+                        [
+                            "point", 
+                            185.84, 
+                            186.14
+                        ], 
+                        [
+                            "time", 
+                            186.14, 
+                            186.51
+                        ]
+                    ], 
+                    "transcript": "and the the infant needs her desperately at that point time ", 
+                    "word_confidence": [
+                        [
+                            "and", 
+                            0.9614942300216491
+                        ], 
+                        [
+                            "the", 
+                            0.41006648567087856
+                        ], 
+                        [
+                            "the", 
+                            1.0
+                        ], 
+                        [
+                            "infant", 
+                            1.0
+                        ], 
+                        [
+                            "needs", 
+                            1.0
+                        ], 
+                        [
+                            "her", 
+                            0.44823983569783415
+                        ], 
+                        [
+                            "desperately", 
+                            0.9896457410913226
+                        ], 
+                        [
+                            "at", 
+                            0.7801671856627272
+                        ], 
+                        [
+                            "that", 
+                            1.0
+                        ], 
+                        [
+                            "point", 
+                            0.9730968302667188
+                        ], 
+                        [
+                            "time", 
+                            0.9751914840605012
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "and the the infant needs are desperately at that point time "
+                }, 
+                {
+                    "transcript": "and let the infant needs her desperately at that point time "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 28, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.935, 
+                    "timestamps": [
+                        [
+                            "right", 
+                            202.46, 
+                            202.82
+                        ], 
+                        [
+                            "I", 
+                            202.85, 
+                            202.95
+                        ], 
+                        [
+                            "agree", 
+                            202.95, 
+                            203.37
+                        ]
+                    ], 
+                    "transcript": "right I agree ", 
+                    "word_confidence": [
+                        [
+                            "right", 
+                            0.991835929430997
+                        ], 
+                        [
+                            "I", 
+                            0.7939855924705551
+                        ], 
+                        [
+                            "agree", 
+                            0.9192910423824797
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "right angry "
+                }, 
+                {
+                    "transcript": "right and I agree "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 29, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.803, 
+                    "timestamps": [
+                        [
+                            "well", 
+                            211.3, 
+                            211.47
+                        ], 
+                        [
+                            "sure", 
+                            211.47, 
+                            212.05
+                        ]
+                    ], 
+                    "transcript": "well sure ", 
+                    "word_confidence": [
+                        [
+                            "well", 
+                            0.22024901942403896
+                        ], 
+                        [
+                            "sure", 
+                            0.9737219385632705
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "sure "
+                }, 
+                {
+                    "transcript": "I'm sure "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 30, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.976, 
+                    "timestamps": [
+                        [
+                            "especially", 
+                            212.42, 
+                            212.86
+                        ], 
+                        [
+                            "in", 
+                            212.86, 
+                            212.96
+                        ], 
+                        [
+                            "this", 
+                            212.96, 
+                            213.12
+                        ], 
+                        [
+                            "day", 
+                            213.12, 
+                            213.26
+                        ], 
+                        [
+                            "and", 
+                            213.26, 
+                            213.38
+                        ], 
+                        [
+                            "age", 
+                            213.38, 
+                            213.77
+                        ]
+                    ], 
+                    "transcript": "especially in this day and age ", 
+                    "word_confidence": [
+                        [
+                            "especially", 
+                            1.0
+                        ], 
+                        [
+                            "in", 
+                            1.0
+                        ], 
+                        [
+                            "this", 
+                            1.0
+                        ], 
+                        [
+                            "day", 
+                            1.0
+                        ], 
+                        [
+                            "and", 
+                            0.7755217075831204
+                        ], 
+                        [
+                            "age", 
+                            0.9872786095408416
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "especially in this day in age "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 31, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.997, 
+                    "timestamps": [
+                        [
+                            "you", 
+                            214.29, 
+                            214.55
+                        ], 
+                        [
+                            "don't", 
+                            214.55, 
+                            214.7
+                        ], 
+                        [
+                            "want", 
+                            214.7, 
+                            214.83
+                        ], 
+                        [
+                            "to", 
+                            214.83, 
+                            214.89
+                        ], 
+                        [
+                            "start", 
+                            214.89, 
+                            215.16
+                        ], 
+                        [
+                            "over", 
+                            215.16, 
+                            215.36
+                        ], 
+                        [
+                            "again", 
+                            215.36, 
+                            215.65
+                        ], 
+                        [
+                            "anywhere", 
+                            215.65, 
+                            216.08
+                        ]
+                    ], 
+                    "transcript": "you don't want to start over again anywhere ", 
+                    "word_confidence": [
+                        [
+                            "you", 
+                            0.9999999999999508
+                        ], 
+                        [
+                            "don't", 
+                            0.9999999999999507
+                        ], 
+                        [
+                            "want", 
+                            0.9999999999999573
+                        ], 
+                        [
+                            "to", 
+                            0.999999999999957
+                        ], 
+                        [
+                            "start", 
+                            0.9999999999999508
+                        ], 
+                        [
+                            "over", 
+                            0.9999999999999509
+                        ], 
+                        [
+                            "again", 
+                            0.9999999999999587
+                        ], 
+                        [
+                            "anywhere", 
+                            0.9870342186606803
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 32, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "well", 
+                            227.27, 
+                            227.76
+                        ], 
+                        [
+                            "I", 
+                            227.76, 
+                            227.84
+                        ], 
+                        [
+                            "think", 
+                            227.84, 
+                            228.06
+                        ], 
+                        [
+                            "they're", 
+                            228.06, 
+                            228.22
+                        ], 
+                        [
+                            "at", 
+                            228.22, 
+                            228.36
+                        ], 
+                        [
+                            "their", 
+                            228.36, 
+                            228.69
+                        ], 
+                        [
+                            "camp", 
+                            228.82, 
+                            229.11
+                        ]
+                    ], 
+                    "transcript": "well I think they're at their camp "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 32, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "well", 
+                            227.27, 
+                            227.76
+                        ], 
+                        [
+                            "I", 
+                            227.76, 
+                            227.84
+                        ], 
+                        [
+                            "think", 
+                            227.84, 
+                            228.06
+                        ], 
+                        [
+                            "they're", 
+                            228.06, 
+                            228.22
+                        ], 
+                        [
+                            "at", 
+                            228.22, 
+                            228.36
+                        ], 
+                        [
+                            "they're", 
+                            228.36, 
+                            228.69
+                        ], 
+                        [
+                            "coming", 
+                            228.8, 
+                            229.16
+                        ], 
+                        [
+                            "they've", 
+                            229.19, 
+                            229.4
+                        ], 
+                        [
+                            "come", 
+                            229.4, 
+                            229.61
+                        ], 
+                        [
+                            "a", 
+                            229.61, 
+                            229.7
+                        ], 
+                        [
+                            "long", 
+                            229.7, 
+                            230.01
+                        ], 
+                        [
+                            "way", 
+                            230.01, 
+                            230.49
+                        ], 
+                        [
+                            "%HESITATION", 
+                            230.8, 
+                            231.11
+                        ]
+                    ], 
+                    "transcript": "well I think they're at they're coming they've come a long way %HESITATION "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 32, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.948, 
+                    "timestamps": [
+                        [
+                            "well", 
+                            227.27, 
+                            227.76
+                        ], 
+                        [
+                            "I", 
+                            227.76, 
+                            227.84
+                        ], 
+                        [
+                            "think", 
+                            227.84, 
+                            228.06
+                        ], 
+                        [
+                            "they're", 
+                            228.06, 
+                            228.22
+                        ], 
+                        [
+                            "at", 
+                            228.22, 
+                            228.36
+                        ], 
+                        [
+                            "they're", 
+                            228.36, 
+                            228.69
+                        ], 
+                        [
+                            "coming", 
+                            228.8, 
+                            229.16
+                        ], 
+                        [
+                            "they've", 
+                            229.19, 
+                            229.4
+                        ], 
+                        [
+                            "come", 
+                            229.4, 
+                            229.61
+                        ], 
+                        [
+                            "a", 
+                            229.61, 
+                            229.7
+                        ], 
+                        [
+                            "long", 
+                            229.7, 
+                            230.01
+                        ], 
+                        [
+                            "way", 
+                            230.01, 
+                            230.49
+                        ], 
+                        [
+                            "%HESITATION", 
+                            230.8, 
+                            231.21
+                        ], 
+                        [
+                            "at", 
+                            231.21, 
+                            231.36
+                        ], 
+                        [
+                            "least", 
+                            231.36, 
+                            231.6
+                        ], 
+                        [
+                            "some", 
+                            231.6, 
+                            231.8
+                        ], 
+                        [
+                            "companies", 
+                            231.8, 
+                            232.45
+                        ]
+                    ], 
+                    "transcript": "well I think they're at they're coming they've come a long way %HESITATION at least some companies ", 
+                    "word_confidence": [
+                        [
+                            "well", 
+                            0.9999999999998692
+                        ], 
+                        [
+                            "I", 
+                            0.9999999999998692
+                        ], 
+                        [
+                            "think", 
+                            0.9999999999999347
+                        ], 
+                        [
+                            "they're", 
+                            0.8623897780558035
+                        ], 
+                        [
+                            "at", 
+                            0.4520960969319807
+                        ], 
+                        [
+                            "they're", 
+                            0.9797314213056046
+                        ], 
+                        [
+                            "coming", 
+                            0.6688886941022463
+                        ], 
+                        [
+                            "they've", 
+                            0.9999999999998695
+                        ], 
+                        [
+                            "come", 
+                            0.9999999999998785
+                        ], 
+                        [
+                            "a", 
+                            0.9999999999998901
+                        ], 
+                        [
+                            "long", 
+                            0.9999999999999015
+                        ], 
+                        [
+                            "way", 
+                            0.9888386378095708
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.9831286250507976
+                        ], 
+                        [
+                            "at", 
+                            0.9769424542361235
+                        ], 
+                        [
+                            "least", 
+                            0.9999999999999213
+                        ], 
+                        [
+                            "some", 
+                            0.9999999999999287
+                        ], 
+                        [
+                            "companies", 
+                            0.9910926332148939
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "well I think they're at they're they've come a long way %HESITATION at least some companies "
+                }, 
+                {
+                    "transcript": "well I think they're they're coming they've come a long way %HESITATION at least some companies "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 33, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "some", 
+                            232.87, 
+                            233.15
+                        ], 
+                        [
+                            "of", 
+                            233.15, 
+                            233.31
+                        ], 
+                        [
+                            "them", 
+                            233.31, 
+                            233.64
+                        ], 
+                        [
+                            "%HESITATION", 
+                            233.64, 
+                            234.3
+                        ], 
+                        [
+                            "my", 
+                            234.47, 
+                            234.73
+                        ]
+                    ], 
+                    "transcript": "some of them %HESITATION my "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 33, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.865, 
+                    "timestamps": [
+                        [
+                            "some", 
+                            232.87, 
+                            233.15
+                        ], 
+                        [
+                            "of", 
+                            233.15, 
+                            233.31
+                        ], 
+                        [
+                            "them", 
+                            233.31, 
+                            233.64
+                        ], 
+                        [
+                            "%HESITATION", 
+                            233.64, 
+                            234.3
+                        ], 
+                        [
+                            "my", 
+                            234.47, 
+                            234.75
+                        ], 
+                        [
+                            "girlfriend", 
+                            234.75, 
+                            235.19
+                        ], 
+                        [
+                            "in", 
+                            235.19, 
+                            235.27
+                        ], 
+                        [
+                            "particular", 
+                            235.27, 
+                            235.74
+                        ], 
+                        [
+                            "who", 
+                            235.74, 
+                            235.87
+                        ], 
+                        [
+                            "works", 
+                            235.9, 
+                            236.2
+                        ], 
+                        [
+                            "for", 
+                            236.2, 
+                            236.59
+                        ]
+                    ], 
+                    "transcript": "some of them %HESITATION my girlfriend in particular who works for ", 
+                    "word_confidence": [
+                        [
+                            "some", 
+                            1.0
+                        ], 
+                        [
+                            "of", 
+                            1.0
+                        ], 
+                        [
+                            "them", 
+                            0.4576546903994906
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.9709120298075875
+                        ], 
+                        [
+                            "my", 
+                            1.0
+                        ], 
+                        [
+                            "girlfriend", 
+                            0.8028640412149458
+                        ], 
+                        [
+                            "in", 
+                            1.0
+                        ], 
+                        [
+                            "particular", 
+                            0.9797762443945991
+                        ], 
+                        [
+                            "who", 
+                            0.2127019367437301
+                        ], 
+                        [
+                            "works", 
+                            0.8929926002167773
+                        ], 
+                        [
+                            "for", 
+                            0.8852670258901528
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "some of them %HESITATION my girlfriend in particular works for "
+                }, 
+                {
+                    "transcript": "some of them %HESITATION my girlfriend in particular that works for "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 34, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.951, 
+                    "timestamps": [
+                        [
+                            "rental", 
+                            237.03, 
+                            237.38
+                        ], 
+                        [
+                            "car", 
+                            237.38, 
+                            237.64
+                        ], 
+                        [
+                            "agency", 
+                            237.64, 
+                            238.21
+                        ]
+                    ], 
+                    "transcript": "rental car agency ", 
+                    "word_confidence": [
+                        [
+                            "rental", 
+                            0.9898014039026126
+                        ], 
+                        [
+                            "car", 
+                            1.0
+                        ], 
+                        [
+                            "agency", 
+                            0.9055187874910603
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "the rental car agency "
+                }, 
+                {
+                    "transcript": "rental car agencies "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 35, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "and", 
+                            238.81, 
+                            239.26
+                        ], 
+                        [
+                            "%HESITATION", 
+                            239.26, 
+                            239.61
+                        ], 
+                        [
+                            "as", 
+                            239.66, 
+                            239.79
+                        ], 
+                        [
+                            "manager", 
+                            239.79, 
+                            240.49
+                        ]
+                    ], 
+                    "transcript": "and %HESITATION as manager "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 35, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.85, 
+                    "timestamps": [
+                        [
+                            "and", 
+                            238.81, 
+                            239.26
+                        ], 
+                        [
+                            "%HESITATION", 
+                            239.26, 
+                            239.61
+                        ], 
+                        [
+                            "as", 
+                            239.66, 
+                            239.79
+                        ], 
+                        [
+                            "manager", 
+                            239.79, 
+                            240.49
+                        ], 
+                        [
+                            "and", 
+                            240.63, 
+                            241.0
+                        ], 
+                        [
+                            "them", 
+                            241.0, 
+                            241.31
+                        ]
+                    ], 
+                    "transcript": "and %HESITATION as manager and them ", 
+                    "word_confidence": [
+                        [
+                            "and", 
+                            0.9915599629451904
+                        ], 
+                        [
+                            "%HESITATION", 
+                            0.9562891338190385
+                        ], 
+                        [
+                            "as", 
+                            0.25166347096968233
+                        ], 
+                        [
+                            "manager", 
+                            0.9806332529566136
+                        ], 
+                        [
+                            "and", 
+                            1.0
+                        ], 
+                        [
+                            "them", 
+                            0.3016683717509742
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "and %HESITATION as manager and the "
+                }, 
+                {
+                    "transcript": "and %HESITATION as manager and then "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 36, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "they", 
+                            241.9, 
+                            242.06
+                        ], 
+                        [
+                            "have", 
+                            242.06, 
+                            242.3
+                        ], 
+                        [
+                            "a", 
+                            242.3, 
+                            242.39
+                        ], 
+                        [
+                            "very", 
+                            242.39, 
+                            242.78
+                        ], 
+                        [
+                            "very", 
+                            242.78, 
+                            243.13
+                        ], 
+                        [
+                            "poorly", 
+                            243.13, 
+                            243.56
+                        ]
+                    ], 
+                    "transcript": "they have a very very poorly "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 36, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.908, 
+                    "timestamps": [
+                        [
+                            "they", 
+                            241.9, 
+                            242.06
+                        ], 
+                        [
+                            "have", 
+                            242.06, 
+                            242.3
+                        ], 
+                        [
+                            "a", 
+                            242.3, 
+                            242.39
+                        ], 
+                        [
+                            "very", 
+                            242.39, 
+                            242.78
+                        ], 
+                        [
+                            "very", 
+                            242.78, 
+                            243.13
+                        ], 
+                        [
+                            "poor", 
+                            243.13, 
+                            243.42
+                        ], 
+                        [
+                            "leave", 
+                            243.42, 
+                            243.67
+                        ], 
+                        [
+                            "policy", 
+                            243.67, 
+                            244.29
+                        ]
+                    ], 
+                    "transcript": "they have a very very poor leave policy ", 
+                    "word_confidence": [
+                        [
+                            "they", 
+                            0.9270188471543269
+                        ], 
+                        [
+                            "have", 
+                            0.98917453359812
+                        ], 
+                        [
+                            "a", 
+                            0.6029073401789553
+                        ], 
+                        [
+                            "very", 
+                            0.9157815572479061
+                        ], 
+                        [
+                            "very", 
+                            1.0
+                        ], 
+                        [
+                            "poor", 
+                            0.7615835397293473
+                        ], 
+                        [
+                            "leave", 
+                            0.758789486831883
+                        ], 
+                        [
+                            "policy", 
+                            0.9887202283903059
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "they have very very poor leave policy "
+                }, 
+                {
+                    "transcript": "and they have a very very poor leave policy "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 37, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.876, 
+                    "timestamps": [
+                        [
+                            "and", 
+                            245.39, 
+                            245.78
+                        ], 
+                        [
+                            "the", 
+                            245.78, 
+                            246.06
+                        ]
+                    ], 
+                    "transcript": "and the ", 
+                    "word_confidence": [
+                        [
+                            "and", 
+                            0.9999999999999946
+                        ], 
+                        [
+                            "the", 
+                            0.7039197910554756
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "and %HESITATION "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 38, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            247.26, 
+                            247.37
+                        ], 
+                        [
+                            "just", 
+                            247.37, 
+                            247.62
+                        ], 
+                        [
+                            "don't", 
+                            247.62, 
+                            247.81
+                        ], 
+                        [
+                            "know", 
+                            247.81, 
+                            247.92
+                        ], 
+                        [
+                            "how", 
+                            247.92, 
+                            248.31
+                        ], 
+                        [
+                            "how", 
+                            248.34, 
+                            248.53
+                        ], 
+                        [
+                            "women", 
+                            248.53, 
+                            248.94
+                        ]
+                    ], 
+                    "transcript": "I just don't know how how women "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 38, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "I", 
+                            247.26, 
+                            247.37
+                        ], 
+                        [
+                            "just", 
+                            247.37, 
+                            247.62
+                        ], 
+                        [
+                            "don't", 
+                            247.62, 
+                            247.81
+                        ], 
+                        [
+                            "know", 
+                            247.81, 
+                            247.92
+                        ], 
+                        [
+                            "how", 
+                            247.92, 
+                            248.31
+                        ], 
+                        [
+                            "how", 
+                            248.34, 
+                            248.53
+                        ], 
+                        [
+                            "women", 
+                            248.53, 
+                            248.87
+                        ], 
+                        [
+                            "do", 
+                            248.87, 
+                            249.03
+                        ], 
+                        [
+                            "it", 
+                            249.03, 
+                            249.2
+                        ], 
+                        [
+                            "particularly", 
+                            249.2, 
+                            249.69
+                        ], 
+                        [
+                            "single", 
+                            249.69, 
+                            250.13
+                        ], 
+                        [
+                            "parents", 
+                            250.13, 
+                            250.69
+                        ], 
+                        [
+                            "who", 
+                            250.69, 
+                            250.91
+                        ]
+                    ], 
+                    "transcript": "I just don't know how how women do it particularly single parents who "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 38, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.981, 
+                    "timestamps": [
+                        [
+                            "I", 
+                            247.26, 
+                            247.37
+                        ], 
+                        [
+                            "just", 
+                            247.37, 
+                            247.62
+                        ], 
+                        [
+                            "don't", 
+                            247.62, 
+                            247.81
+                        ], 
+                        [
+                            "know", 
+                            247.81, 
+                            247.92
+                        ], 
+                        [
+                            "how", 
+                            247.92, 
+                            248.31
+                        ], 
+                        [
+                            "how", 
+                            248.34, 
+                            248.53
+                        ], 
+                        [
+                            "women", 
+                            248.53, 
+                            248.87
+                        ], 
+                        [
+                            "do", 
+                            248.87, 
+                            249.03
+                        ], 
+                        [
+                            "it", 
+                            249.03, 
+                            249.2
+                        ], 
+                        [
+                            "particularly", 
+                            249.2, 
+                            249.69
+                        ], 
+                        [
+                            "single", 
+                            249.69, 
+                            250.13
+                        ], 
+                        [
+                            "parents", 
+                            250.13, 
+                            250.69
+                        ], 
+                        [
+                            "who", 
+                            250.69, 
+                            250.85
+                        ], 
+                        [
+                            "don't", 
+                            250.85, 
+                            251.11
+                        ], 
+                        [
+                            "have", 
+                            251.11, 
+                            251.24
+                        ], 
+                        [
+                            "the", 
+                            251.24, 
+                            251.3
+                        ], 
+                        [
+                            "support", 
+                            251.3, 
+                            251.73
+                        ], 
+                        [
+                            "at", 
+                            251.73, 
+                            251.81
+                        ], 
+                        [
+                            "the", 
+                            251.81, 
+                            251.94
+                        ], 
+                        [
+                            "other", 
+                            251.94, 
+                            252.19
+                        ], 
+                        [
+                            "end", 
+                            252.19, 
+                            252.6
+                        ]
+                    ], 
+                    "transcript": "I just don't know how how women do it particularly single parents who don't have the support at the other end ", 
+                    "word_confidence": [
+                        [
+                            "I", 
+                            0.9999999999998039
+                        ], 
+                        [
+                            "just", 
+                            0.9999999999998039
+                        ], 
+                        [
+                            "don't", 
+                            0.9999999999997382
+                        ], 
+                        [
+                            "know", 
+                            0.9999999999998039
+                        ], 
+                        [
+                            "how", 
+                            0.999999999999738
+                        ], 
+                        [
+                            "how", 
+                            0.9999999999997328
+                        ], 
+                        [
+                            "women", 
+                            0.9999999999997327
+                        ], 
+                        [
+                            "do", 
+                            0.9999999999997551
+                        ], 
+                        [
+                            "it", 
+                            0.999999999999771
+                        ], 
+                        [
+                            "particularly", 
+                            0.9999999999997708
+                        ], 
+                        [
+                            "single", 
+                            0.9999999999997712
+                        ], 
+                        [
+                            "parents", 
+                            0.9999999999997711
+                        ], 
+                        [
+                            "who", 
+                            0.999999999999771
+                        ], 
+                        [
+                            "don't", 
+                            0.9999999999997871
+                        ], 
+                        [
+                            "have", 
+                            0.9999999999998229
+                        ], 
+                        [
+                            "the", 
+                            0.8351402332206849
+                        ], 
+                        [
+                            "support", 
+                            0.9999999999998519
+                        ], 
+                        [
+                            "at", 
+                            0.5922049678605273
+                        ], 
+                        [
+                            "the", 
+                            0.9999999999998703
+                        ], 
+                        [
+                            "other", 
+                            0.9999999999998931
+                        ], 
+                        [
+                            "end", 
+                            0.8605563308817322
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "I just don't know how how women do it particularly single parents who don't have the support of the other end "
+                }, 
+                {
+                    "transcript": "I just don't know how how women do it particularly single parents who don't have a support at the other end "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 39, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.468, 
+                    "timestamps": [
+                        [
+                            "%HESITATION", 
+                            253.83, 
+                            254.19
+                        ]
+                    ], 
+                    "transcript": "%HESITATION ", 
+                    "word_confidence": [
+                        [
+                            "%HESITATION", 
+                            0.4681536888698558
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "I'm "
+                }, 
+                {
+                    "transcript": "and "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 40, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.99, 
+                    "timestamps": [
+                        [
+                            "that's", 
+                            256.05, 
+                            256.29
+                        ], 
+                        [
+                            "right", 
+                            256.29, 
+                            256.71
+                        ]
+                    ], 
+                    "transcript": "that's right ", 
+                    "word_confidence": [
+                        [
+                            "that's", 
+                            0.999999999999992
+                        ], 
+                        [
+                            "right", 
+                            0.9847782606568181
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 41, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.993, 
+                    "timestamps": [
+                        [
+                            "that's", 
+                            257.03, 
+                            257.18
+                        ], 
+                        [
+                            "exactly", 
+                            257.18, 
+                            257.66
+                        ], 
+                        [
+                            "right", 
+                            257.66, 
+                            258.0
+                        ]
+                    ], 
+                    "transcript": "that's exactly right ", 
+                    "word_confidence": [
+                        [
+                            "that's", 
+                            0.9999999999999839
+                        ], 
+                        [
+                            "exactly", 
+                            0.9999999999999837
+                        ], 
+                        [
+                            "right", 
+                            0.9813659538745062
+                        ]
+                    ]
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 42, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.993, 
+                    "timestamps": [
+                        [
+                            "right", 
+                            262.25, 
+                            262.68
+                        ]
+                    ], 
+                    "transcript": "right ", 
+                    "word_confidence": [
+                        [
+                            "right", 
+                            0.9931657723864746
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "write "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 43, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "one", 
+                            271.67, 
+                            271.95
+                        ], 
+                        [
+                            "of", 
+                            271.95, 
+                            272.05
+                        ], 
+                        [
+                            "the", 
+                            272.05, 
+                            272.11
+                        ], 
+                        [
+                            "benefits", 
+                            272.11, 
+                            272.52
+                        ], 
+                        [
+                            "we", 
+                            272.52, 
+                            272.68
+                        ], 
+                        [
+                            "get", 
+                            272.68, 
+                            272.84
+                        ], 
+                        [
+                            "of", 
+                            272.84, 
+                            272.9
+                        ], 
+                        [
+                            "course", 
+                            272.9, 
+                            273.15
+                        ], 
+                        [
+                            "is", 
+                            273.15, 
+                            273.26
+                        ], 
+                        [
+                            "to", 
+                            273.26, 
+                            273.37
+                        ]
+                    ], 
+                    "transcript": "one of the benefits we get of course is to "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 43, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.849, 
+                    "timestamps": [
+                        [
+                            "one", 
+                            271.67, 
+                            271.95
+                        ], 
+                        [
+                            "of", 
+                            271.95, 
+                            272.05
+                        ], 
+                        [
+                            "the", 
+                            272.05, 
+                            272.11
+                        ], 
+                        [
+                            "benefits", 
+                            272.11, 
+                            272.52
+                        ], 
+                        [
+                            "we", 
+                            272.52, 
+                            272.68
+                        ], 
+                        [
+                            "get", 
+                            272.68, 
+                            272.84
+                        ], 
+                        [
+                            "of", 
+                            272.84, 
+                            272.9
+                        ], 
+                        [
+                            "course", 
+                            272.9, 
+                            273.15
+                        ], 
+                        [
+                            "is", 
+                            273.15, 
+                            273.24
+                        ], 
+                        [
+                            "travel", 
+                            273.24, 
+                            273.82
+                        ]
+                    ], 
+                    "transcript": "one of the benefits we get of course is travel ", 
+                    "word_confidence": [
+                        [
+                            "one", 
+                            0.7182080553664997
+                        ], 
+                        [
+                            "of", 
+                            0.9999999999999758
+                        ], 
+                        [
+                            "the", 
+                            0.6519289837260535
+                        ], 
+                        [
+                            "benefits", 
+                            0.9999999999999877
+                        ], 
+                        [
+                            "we", 
+                            0.9999999999999888
+                        ], 
+                        [
+                            "get", 
+                            0.8751774381007733
+                        ], 
+                        [
+                            "of", 
+                            0.44762631956596494
+                        ], 
+                        [
+                            "course", 
+                            0.6399303856927752
+                        ], 
+                        [
+                            "is", 
+                            0.25539306512717475
+                        ], 
+                        [
+                            "travel", 
+                            0.976405105513287
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "the one of the benefits we get of course is travel "
+                }, 
+                {
+                    "transcript": "one of the benefits we get courses travel "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 44, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "it's", 
+                            277.91, 
+                            278.11
+                        ], 
+                        [
+                            "a", 
+                            278.11, 
+                            278.18
+                        ], 
+                        [
+                            "wonderful", 
+                            278.18, 
+                            278.82
+                        ]
+                    ], 
+                    "transcript": "it's a wonderful "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 44, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "it's", 
+                            277.91, 
+                            278.11
+                        ], 
+                        [
+                            "wonderful", 
+                            278.11, 
+                            278.82
+                        ], 
+                        [
+                            "the", 
+                            279.21, 
+                            279.35
+                        ], 
+                        [
+                            "only", 
+                            279.35, 
+                            279.51
+                        ], 
+                        [
+                            "trouble", 
+                            279.51, 
+                            279.87
+                        ], 
+                        [
+                            "is", 
+                            279.87, 
+                            280.09
+                        ], 
+                        [
+                            "that", 
+                            280.09, 
+                            280.19
+                        ], 
+                        [
+                            "you", 
+                            280.19, 
+                            280.29
+                        ], 
+                        [
+                            "can", 
+                            280.29, 
+                            280.4
+                        ], 
+                        [
+                            "afford", 
+                            280.4, 
+                            280.69
+                        ], 
+                        [
+                            "to", 
+                            280.69, 
+                            280.76
+                        ], 
+                        [
+                            "go", 
+                            280.76, 
+                            280.9
+                        ], 
+                        [
+                            "anywhere", 
+                            280.9, 
+                            281.2
+                        ], 
+                        [
+                            "with", 
+                            281.2, 
+                            281.33
+                        ]
+                    ], 
+                    "transcript": "it's wonderful the only trouble is that you can afford to go anywhere with "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 44, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.885, 
+                    "timestamps": [
+                        [
+                            "it's", 
+                            277.91, 
+                            278.11
+                        ], 
+                        [
+                            "wonderful", 
+                            278.11, 
+                            278.82
+                        ], 
+                        [
+                            "the", 
+                            279.21, 
+                            279.35
+                        ], 
+                        [
+                            "only", 
+                            279.35, 
+                            279.51
+                        ], 
+                        [
+                            "trouble", 
+                            279.51, 
+                            279.87
+                        ], 
+                        [
+                            "is", 
+                            279.87, 
+                            280.09
+                        ], 
+                        [
+                            "that", 
+                            280.09, 
+                            280.19
+                        ], 
+                        [
+                            "you", 
+                            280.19, 
+                            280.29
+                        ], 
+                        [
+                            "can", 
+                            280.29, 
+                            280.4
+                        ], 
+                        [
+                            "afford", 
+                            280.4, 
+                            280.69
+                        ], 
+                        [
+                            "to", 
+                            280.69, 
+                            280.76
+                        ], 
+                        [
+                            "go", 
+                            280.76, 
+                            280.9
+                        ], 
+                        [
+                            "anywhere", 
+                            280.9, 
+                            281.19
+                        ], 
+                        [
+                            "but", 
+                            281.19, 
+                            281.3
+                        ], 
+                        [
+                            "to", 
+                            281.3, 
+                            281.39
+                        ], 
+                        [
+                            "give", 
+                            281.39, 
+                            281.65
+                        ], 
+                        [
+                            "or", 
+                            281.65, 
+                            281.79
+                        ], 
+                        [
+                            "to", 
+                            281.79, 
+                            281.89
+                        ], 
+                        [
+                            "stay", 
+                            281.89, 
+                            282.18
+                        ], 
+                        [
+                            "one", 
+                            282.18, 
+                            282.32
+                        ], 
+                        [
+                            "to", 
+                            282.32, 
+                            282.45
+                        ], 
+                        [
+                            "get", 
+                            282.45, 
+                            282.65
+                        ], 
+                        [
+                            "there", 
+                            282.65, 
+                            282.94
+                        ]
+                    ], 
+                    "transcript": "it's wonderful the only trouble is that you can afford to go anywhere but to give or to stay one to get there ", 
+                    "word_confidence": [
+                        [
+                            "it's", 
+                            0.7700729875012478
+                        ], 
+                        [
+                            "wonderful", 
+                            0.9596869808802814
+                        ], 
+                        [
+                            "the", 
+                            0.9999999999999255
+                        ], 
+                        [
+                            "only", 
+                            0.9999999999999344
+                        ], 
+                        [
+                            "trouble", 
+                            0.999999999999928
+                        ], 
+                        [
+                            "is", 
+                            0.9999999999999347
+                        ], 
+                        [
+                            "that", 
+                            0.9999999999999345
+                        ], 
+                        [
+                            "you", 
+                            0.9999999999999345
+                        ], 
+                        [
+                            "can", 
+                            0.9999999999999344
+                        ], 
+                        [
+                            "afford", 
+                            0.9999999999999348
+                        ], 
+                        [
+                            "to", 
+                            0.9999999999999345
+                        ], 
+                        [
+                            "go", 
+                            0.9999999999999344
+                        ], 
+                        [
+                            "anywhere", 
+                            0.999999999999928
+                        ], 
+                        [
+                            "but", 
+                            0.6526049082537018
+                        ], 
+                        [
+                            "to", 
+                            0.9999999999999185
+                        ], 
+                        [
+                            "give", 
+                            0.89173215123502
+                        ], 
+                        [
+                            "or", 
+                            0.35448595272785866
+                        ], 
+                        [
+                            "to", 
+                            0.8279250925772276
+                        ], 
+                        [
+                            "stay", 
+                            0.5220509871541219
+                        ], 
+                        [
+                            "one", 
+                            0.25292569457193836
+                        ], 
+                        [
+                            "to", 
+                            0.7240680126683334
+                        ], 
+                        [
+                            "get", 
+                            0.9928456618479553
+                        ], 
+                        [
+                            "there", 
+                            0.9856501448096125
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "it's wonderful the only trouble is that you can afford to go anywhere but to give or to stay once you get there "
+                }, 
+                {
+                    "transcript": "it's wonderful the only trouble is that you can afford to go anywhere but to Gifford to stay one to get there "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 45, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.0, 
+                    "timestamps": [], 
+                    "transcript": "a "
+                }, 
+                {
+                    "transcript": "so "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 46, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.0, 
+                    "timestamps": [], 
+                    "transcript": "yes "
+                }, 
+                {
+                    "transcript": "I "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 47, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.0, 
+                    "timestamps": [], 
+                    "transcript": "a "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}{
+    "result_index": 48, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "you", 
+                            289.77, 
+                            290.0
+                        ], 
+                        [
+                            "have", 
+                            290.0, 
+                            290.13
+                        ], 
+                        [
+                            "to", 
+                            290.13, 
+                            290.21
+                        ], 
+                        [
+                            "have", 
+                            290.21, 
+                            290.3
+                        ], 
+                        [
+                            "an", 
+                            290.3, 
+                            290.38
+                        ], 
+                        [
+                            "awful", 
+                            290.38, 
+                            290.63
+                        ], 
+                        [
+                            "lot", 
+                            290.63, 
+                            290.77
+                        ], 
+                        [
+                            "of", 
+                            290.77, 
+                            290.85
+                        ], 
+                        [
+                            "fun", 
+                            290.85, 
+                            291.08
+                        ], 
+                        [
+                            "just", 
+                            291.08, 
+                            291.36
+                        ]
+                    ], 
+                    "transcript": "you have to have an awful lot of fun just "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 48, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "timestamps": [
+                        [
+                            "you", 
+                            289.77, 
+                            290.0
+                        ], 
+                        [
+                            "have", 
+                            290.0, 
+                            290.13
+                        ], 
+                        [
+                            "to", 
+                            290.13, 
+                            290.21
+                        ], 
+                        [
+                            "have", 
+                            290.21, 
+                            290.3
+                        ], 
+                        [
+                            "an", 
+                            290.3, 
+                            290.38
+                        ], 
+                        [
+                            "awful", 
+                            290.38, 
+                            290.63
+                        ], 
+                        [
+                            "lot", 
+                            290.63, 
+                            290.77
+                        ], 
+                        [
+                            "of", 
+                            290.77, 
+                            290.85
+                        ], 
+                        [
+                            "fun", 
+                            290.85, 
+                            291.08
+                        ], 
+                        [
+                            "just", 
+                            291.08, 
+                            291.36
+                        ], 
+                        [
+                            "just", 
+                            291.39, 
+                            291.74
+                        ], 
+                        [
+                            "getting", 
+                            291.74, 
+                            292.03
+                        ], 
+                        [
+                            "there", 
+                            292.03, 
+                            292.21
+                        ], 
+                        [
+                            "is", 
+                            292.21, 
+                            292.37
+                        ], 
+                        [
+                            "has", 
+                            292.37, 
+                            292.6
+                        ], 
+                        [
+                            "to", 
+                            292.6, 
+                            292.71
+                        ], 
+                        [
+                            "be", 
+                            292.71, 
+                            292.93
+                        ], 
+                        [
+                            "half", 
+                            292.93, 
+                            293.17
+                        ], 
+                        [
+                            "the", 
+                            293.17, 
+                            293.27
+                        ], 
+                        [
+                            "fun", 
+                            293.27, 
+                            293.59
+                        ]
+                    ], 
+                    "transcript": "you have to have an awful lot of fun just just getting there is has to be half the fun "
+                }
+            ], 
+            "final": false
+        }
+    ]
+}{
+    "result_index": 48, 
+    "results": [
+        {
+            "alternatives": [
+                {
+                    "confidence": 0.948, 
+                    "timestamps": [
+                        [
+                            "you", 
+                            289.77, 
+                            290.0
+                        ], 
+                        [
+                            "have", 
+                            290.0, 
+                            290.13
+                        ], 
+                        [
+                            "to", 
+                            290.13, 
+                            290.21
+                        ], 
+                        [
+                            "have", 
+                            290.21, 
+                            290.3
+                        ], 
+                        [
+                            "an", 
+                            290.3, 
+                            290.38
+                        ], 
+                        [
+                            "awful", 
+                            290.38, 
+                            290.63
+                        ], 
+                        [
+                            "lot", 
+                            290.63, 
+                            290.77
+                        ], 
+                        [
+                            "of", 
+                            290.77, 
+                            290.85
+                        ], 
+                        [
+                            "fun", 
+                            290.85, 
+                            291.08
+                        ], 
+                        [
+                            "just", 
+                            291.08, 
+                            291.36
+                        ], 
+                        [
+                            "just", 
+                            291.39, 
+                            291.74
+                        ], 
+                        [
+                            "getting", 
+                            291.74, 
+                            292.03
+                        ], 
+                        [
+                            "there", 
+                            292.03, 
+                            292.21
+                        ], 
+                        [
+                            "is", 
+                            292.21, 
+                            292.37
+                        ], 
+                        [
+                            "has", 
+                            292.37, 
+                            292.6
+                        ], 
+                        [
+                            "to", 
+                            292.6, 
+                            292.71
+                        ], 
+                        [
+                            "be", 
+                            292.71, 
+                            292.93
+                        ], 
+                        [
+                            "half", 
+                            292.93, 
+                            293.17
+                        ], 
+                        [
+                            "the", 
+                            293.17, 
+                            293.27
+                        ], 
+                        [
+                            "fun", 
+                            293.27, 
+                            293.66
+                        ]
+                    ], 
+                    "transcript": "you have to have an awful lot of fun just just getting there is has to be half the fun ", 
+                    "word_confidence": [
+                        [
+                            "you", 
+                            1.0
+                        ], 
+                        [
+                            "have", 
+                            1.0
+                        ], 
+                        [
+                            "to", 
+                            1.0
+                        ], 
+                        [
+                            "have", 
+                            1.0
+                        ], 
+                        [
+                            "an", 
+                            1.0
+                        ], 
+                        [
+                            "awful", 
+                            1.0
+                        ], 
+                        [
+                            "lot", 
+                            1.0
+                        ], 
+                        [
+                            "of", 
+                            1.0
+                        ], 
+                        [
+                            "fun", 
+                            0.8496794241977703
+                        ], 
+                        [
+                            "just", 
+                            0.712647560519227
+                        ], 
+                        [
+                            "just", 
+                            0.9766631314343328
+                        ], 
+                        [
+                            "getting", 
+                            0.9929682568969194
+                        ], 
+                        [
+                            "there", 
+                            0.7960794500099089
+                        ], 
+                        [
+                            "is", 
+                            0.7960794500099181
+                        ], 
+                        [
+                            "has", 
+                            1.0
+                        ], 
+                        [
+                            "to", 
+                            1.0
+                        ], 
+                        [
+                            "be", 
+                            1.0
+                        ], 
+                        [
+                            "half", 
+                            1.0
+                        ], 
+                        [
+                            "the", 
+                            1.0
+                        ], 
+                        [
+                            "fun", 
+                            0.9884131438530083
+                        ]
+                    ]
+                }, 
+                {
+                    "transcript": "you have to have an awful lot of fund is just getting there is has to be half the fun "
+                }, 
+                {
+                    "transcript": "you have to have an awful lot of fun just just getting mers has to be half the fun "
+                }
+            ], 
+            "final": true
+        }
+    ]
+}
