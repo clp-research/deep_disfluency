@@ -4,23 +4,7 @@ Deep Learning systems for training and testing disfluency detection and related 
 
 ==============================================================================================================
 
-Code for Deep Learning based Incremental Disfluency Detection. The code can be used to run the experiments on Recurrent Neural Networks in the Interspeech 2015 paper:
-
-Julian Hough and David Schlangen. Recurrent Neural Networks for Incremental Disfluency Detection. INTERSPEECH 2015. Dresden, Germany, September 2015.
-
-The code can also be used to run the experiments on Recurrent Neural Networks and LSTMs from:
-
-Julian Hough and David Schlangen. Joint, Incremental Disfluency Detection and Utterance Segmentation from Speech. Proceedings of EACL 2017. Valencia, Spain, April 2017.
-
-Please cite the appropriate paper if you use this code.
-
-Acknowledgement: the code uses some of the core code from the Interspeech 2013 paper:
-
-Gregoire Mesnil, Xiaodong He, Li Deng and Yoshua Bengio
-Investigation of Recurrent Neural Network Architectures and
-Learning Methods for Spoken Language Understanding
-
-http://www.iro.umontreal.ca/~lisa/pointeurs/RNNSpokenLanguage2013.pdf
+Code for Deep Learning based Incremental Disfluency Detection.
 
 ## Set up ##
 
@@ -37,6 +21,29 @@ You then need to run the below from the command line from inside this folder:
 `sudo pip install -r requirements.txt`
 
 You then need to clone the Mumodo repository from https://github.com/dsg-bielefeld/mumodo.git and follow the installation instructions there.
+
+If you just want to use the tagger off-the-shelf see the usage in `demo.py'.
+Make sure this repository is on your system path if you want to use it in python more generally.
+
+## Running experiments ##
+
+The code can be used to run the experiments on Recurrent Neural Networks in the Interspeech 2015 paper:
+
+Julian Hough and David Schlangen. Recurrent Neural Networks for Incremental Disfluency Detection. INTERSPEECH 2015. Dresden, Germany, September 2015.
+
+The code can also be used to run the experiments on Recurrent Neural Networks and LSTMs from:
+
+Julian Hough and David Schlangen. Joint, Incremental Disfluency Detection and Utterance Segmentation from Speech. Proceedings of EACL 2017. Valencia, Spain, April 2017.
+
+Please cite the appropriate paper if you use this code.
+
+Acknowledgement: the code uses some of the core code from the Interspeech 2013 paper:
+
+Gregoire Mesnil, Xiaodong He, Li Deng and Yoshua Bengio
+Investigation of Recurrent Neural Network Architectures and
+Learning Methods for Spoken Language Understanding
+
+http://www.iro.umontreal.ca/~lisa/pointeurs/RNNSpokenLanguage2013.pdf
 
 **Data**
 
@@ -103,20 +110,6 @@ deep_disf/data/raw_data/
 ```
 
 If the above is in place (even without acoustic features), the script at EACL_2017.py should work out of the box and return the results from the paper.
-
-Once that is done you can use a saved tagger from python based on a saved model and its markov model file:
-
-from deep_disf.tagger import disfluency_tagger
-
-#tagger which does 
-disf = disfluency_tagger("disf/experiments/033/best", internal_pos_tagger=False, internal_timer=False, do_utterance_segmentation=True)
-print disf.new_word("john",pos="NN",timing=0.33)
-print disf.new_word("likes",pos="NN",timing=0.33)
-print disf.new_word("uh",pos="NN",timing=0.33)
-print disf.new_word("loves",pos="NN",timing=0.33)
-print disf.new_word("mary",pos="NN",timing=0.33)
-disf.reset() #resets the whole tagger
-
 
 
 

@@ -2,13 +2,16 @@ from deep_disfluency.tagger.deep_tagger import DeepDisfluencyTagger
 
 
 def test_tagger():
-    # this is what we're trying to get to:
+    # Initialize the tagger from the config file with a config number
     disf = DeepDisfluencyTagger(
             config_file="deep_disfluency/experiments/experiment_configs.csv",
             config_number=35,
             saved_model_dir="deep_disfluency/experiments/035/epoch_6"
             # optional
             )
+    # Tag each word individually and it outputs the whole tag sequence
+    # each time
+    # Notice the incremental change in previous utterances
     disf.tag_new_word("john", pos="NNP", timing=0.33)
     disf.tag_new_word("likes", pos="VBP", timing=0.33)
     disf.tag_new_word("uh", pos="UH", timing=0.33)
@@ -32,6 +35,4 @@ def test_tagger():
 #     disf.save_decoder_model(decoder_path)
 
 if __name__ == '__main__':
-    #print "running experiment"
-    #print sys.path
     test_tagger()
