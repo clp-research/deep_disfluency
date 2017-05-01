@@ -22,7 +22,7 @@ You then need to run the below from the command line from inside this folder:
 
 You then need to clone the Mumodo repository from https://github.com/dsg-bielefeld/mumodo.git and follow the installation instructions there.
 
-If you just want to use the tagger off-the-shelf see the usage in `demo.py'.
+If you just want to use the tagger off-the-shelf see the usage in `demo.py`.
 Make sure this repository is on your system path if you want to use it in python more generally.
 
 ## Running experiments ##
@@ -37,15 +37,22 @@ Julian Hough and David Schlangen. Joint, Incremental Disfluency Detection and Ut
 
 Please cite the appropriate paper if you use this code.
 
-Acknowledgement: the code uses some of the core code from the Interspeech 2013 paper:
+If you are using a pretrained model as in the usage in `demo.py` you can run `experiments/EACL_2017.py` or `experiments/Interspeech_2015.py` but adjusting the parameters at the top of the file to:
 
-Gregoire Mesnil, Xiaodong He, Li Deng and Yoshua Bengio
-Investigation of Recurrent Neural Network Architectures and
-Learning Methods for Spoken Language Understanding
-
-http://www.iro.umontreal.ca/~lisa/pointeurs/RNNSpokenLanguage2013.pdf
+```
+create_disf_corpus = False
+extract_features = False
+train_models = False
+test_models = True
+```
+ 
 
 **Data**
+
+Training is done through creating dialogue matrix (one per speaker in each dialogue), whereby the format of these for each row in the matrix is:
+
+`word_idx, pos_idx, word_duration, lm_features...., acoustic_features...,label`
+
 
 To generate the data for these experiments, for using text alone (without speech data) you need access to two publicly available versions of the Switchboard corpus transcripts.
 
