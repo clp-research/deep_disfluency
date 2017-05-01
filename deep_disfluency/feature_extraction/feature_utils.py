@@ -4,7 +4,7 @@ import numpy
 from copy import deepcopy
 import sys
 from nltk.test import wordnet_fixt
-from deep_disfluency.utils.tools import convertFromEvalTagsToIncDisfluencyTags
+from deep_disfluency.utils.tools import convert_from_eval_tags_to_inc_disfluency_tags
 import argparse
 
 def get_tags(s, open_delim='<',
@@ -219,7 +219,7 @@ def sort_into_dialogue_speakers(IDs, mappings, utts, pos_tags=None, labels=None,
             A_mappings.extend(list(mapping))
             A_pos.extend(list(pos))
             tags = list(add_word_continuation_tags(
-                        convertFromEvalTagsToIncDisfluencyTags(label, utt)))
+                        convert_from_eval_tags_to_inc_disfluency_tags(label, utt)))
             tags = [this_tag + '<diact type="{0}"/>'\
                             .format(dialogue_act) for this_tag in tags]
             A_labels.extend(tags)
@@ -236,7 +236,7 @@ def sort_into_dialogue_speakers(IDs, mappings, utts, pos_tags=None, labels=None,
             B_mappings.extend(list(mapping))
             B_pos.extend(list(pos))
             tags = list(add_word_continuation_tags(
-                        convertFromEvalTagsToIncDisfluencyTags(label, utt)))
+                        convert_from_eval_tags_to_inc_disfluency_tags(label, utt)))
             tags = [this_tag + '<diact type="{0}"/>'\
                             .format(dialogue_act) for this_tag in tags]
             B_labels.extend(tags)

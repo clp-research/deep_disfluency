@@ -13,6 +13,7 @@
 #
 # To find the best tag sequence for a given sequence of words,
 # we want to find the tag sequence that has the maximum P(tags | words)
+from __future__ import division
 import os
 import re
 import math
@@ -25,6 +26,12 @@ import nltk
 from hmm_utils import convert_to_dot
 from hmm_utils import load_data_from_corpus_file
 
+# the weights for the source language model and the timing duration
+# classifier
+source_weight = 0.3
+timing_weight = 1 # 10 gives 0.756, no great gains with higher weight
+#  NB on 30.04 this is just a weight on the <t class as timer not working
+# Given this can improve things from 0.70 -> 0.76 weighting worth looking at
 
 def log(prob):
     if prob == 0.0:
@@ -154,13 +161,13 @@ def convert_to_disfluency_uttseg_tag(previous, tag):
     if "<f" in tag:
         if "rpSM" in previous or "rpM" in previous:
             # TODO change back for later ones without MID!
-            if "<t" not in tag and "t>" not in tag:
+            if "<t" not in tag and "t/>" not in tag:
                 return trp_tag.format("rpM")  # can be mid repair
         return trp_tag.format("f")
     elif "<e" in tag and "<i" not in tag:
         if "rpM" in previous or "rpSM" in previous or 'eR' in previous:
             # Not to punish mid-repair
-            if "t>" not in tag:
+            if "t/>" not in tag:
                 # edit term mid-repair phase, not interreg
                 # return trp_tag.format("eR")
                 return trp_tag.format("e")
@@ -250,6 +257,36 @@ def convert_to_diact_uttseg_interactive_tag(previous, tag):
     return trp_tag.format(convert_to_diact_interactive_tag(previous, tag))
 
 
+def convert_to_source_model_tags(seq, uttseg=True):
+    """Convert seq of repair tags to the source model tags.
+    Source model tags are:
+    <s/> start fluent word (utteseg only)
+    <f/> fluent mid utterance word
+    <e/> edited word
+    """
+    source_tags = []
+    # print seq
+    for i, tag in enumerate(seq):
+        if "<e" in tag or "<i" in tag:
+            source_tags.append("<e/>")
+        elif "<rm-" in tag:
+            m = re.search("<rm-([0-9]+)\/>", tag)
+            if m:
+                back = min([int(m.group(1)), len(source_tags)])
+                # print back, i, source_tags
+                for b in range(i-back, i):
+                    source_tags[b] = "<e/>"
+                source_tags.append("<f/>")
+            else:
+                raise Exception('NO REPARANDUM DEPTH {}'.format(tag))
+        else:
+            if "<t" in tag:
+                source_tags.append("<s/>")
+                continue
+            source_tags.append("<f/>")
+    return source_tags
+
+
 class FirstOrderHMM():
     """A standard hmm model which interfaces with any sequential channel model
     that outputs the softmax over all labels at each time step.
@@ -258,7 +295,7 @@ class FirstOrderHMM():
     """
     def __init__(self, disf_dict, markov_model_file=None,
                  timing_model=None, timing_model_scaler=None,
-                 n_history=20, constraint_only=True):
+                 n_history=20, constraint_only=True, noisy_channel=None):
 
         self.tagToIndexDict = disf_dict  # dict maps from tags -> indices
         self.n_history = n_history  # how many steps back we should store
@@ -270,6 +307,7 @@ class FirstOrderHMM():
         self.timing_model = None
         self.timing_model_scaler = None
         self.constraint_only = constraint_only
+        self.noisy_channel_source_model = noisy_channel
 
         if any(["<ct/>" in x for x in self.observation_tags]):
             # if a segmentation problem
@@ -335,10 +373,10 @@ class FirstOrderHMM():
         if timing_model:
             self.timing_model = timing_model
             self.timing_model_scaler = timing_model_scaler
-            # self.simple_trp_idx2label = {0 : "<cc>",
-            #                        1 : "<ct>",
-            #                        2 : "<tc>",
-            #                       3 : "<tt>"}
+            # self.simple_trp_idx2label = {0 : "<cc/>",
+            #                        1 : "<ct/>",
+            #                        2 : "<tc/>",
+            #                       3 : "<tt/>"}
             # Only use the Inbetween and Start tags
             self.simple_trp_idx2label = {0: "<c", 1: "<t"}
         else:
@@ -421,6 +459,9 @@ class FirstOrderHMM():
         self.backpointer = []
         self.converted = []
         self.history = []
+        if self.noisy_channel_source_model:
+            self.noisy_channel_source_model.reset()
+            self.noisy_channel = [] # history
 
     def add_to_history(self, viterbi, backpointer, converted):
         """We store a history of n_history steps back in case we need to
@@ -442,17 +483,23 @@ class FirstOrderHMM():
         self.converted = self.converted[:len(self.converted)-n]
         self.best_tagsequence = self.best_tagsequence[
             :len(self.best_tagsequence)-n]
+        if self.noisy_channel_source_model:
+            self.noisy_channel = self.noisy_channel[
+            :len(self.best_tagsequence)-n] # history
 
     def viterbi_step(self, softmax, word_index, sequence_initial=False,
                      timing_data=None):
         """The principal viterbi calculation for an extension to the
         input prefix, i.e. not reseting.
         """
+        # source_weight = 13 # higher for WML
         if sequence_initial:
             # first time requires initialization with the start of sequence tag
             first_viterbi = {}
             first_backpointer = {}
             first_converted = {}
+            if self.noisy_channel_source_model:
+                first_noisy_channel = {}
             for tag in self.observation_tags:
                 # don't record anything for the START tag
                 # print tag
@@ -463,13 +510,28 @@ class FirstOrderHMM():
                 # print self.tagToIndexDict[tag]
                 # print softmax[word_index][self.tagToIndexDict[tag]]
                 tag_prob = self.cpd_tags["s"].prob(self.convert_tag("s", tag))
-                if tag_prob > 0:
+                if tag_prob >= 0.001:  #allowing for margin
                     if self.constraint_only:
                         # TODO for now treating this like a {0,1} constraint
-                        tag_prob = log(1.0)
-                first_viterbi[tag] = log(tag_prob) + \
+                        tag_prob = 1.0
+                else:
+                    tag_prob = 0.0
+
+                prob = log(tag_prob) + \
                     log(softmax[word_index][self.tagToIndexDict[tag]])
                 # no timing bias to start
+                if self.noisy_channel_source_model:
+                    # noisy channel eliminate the missing tags
+                    source_tags = convert_to_source_model_tags([tag],
+                                                               uttseg=True)
+                    source_prob, node = self.noisy_channel_source_model.\
+                                        get_log_diff_of_tag_suffix(source_tags,
+                                                                   n=1)
+                    first_noisy_channel[tag] = node
+                    #prob = (source_weight * source_prob) + \
+                    #        ((1 - source_weight) * prob)
+                    prob+=(source_weight * source_prob)
+                first_viterbi[tag] = prob
                 first_backpointer[tag] = "s"
                 first_converted[tag] = self.convert_tag("s", tag)
                 assert first_converted[tag] in self.tag_set,\
@@ -480,6 +542,8 @@ class FirstOrderHMM():
             self.viterbi.append(first_viterbi)
             self.backpointer.append(first_backpointer)
             self.converted.append(first_converted)
+            if self.noisy_channel_source_model:
+                self.noisy_channel.append(first_noisy_channel)
             self.add_to_history(first_viterbi, first_backpointer,
                                 first_converted)
             return
@@ -501,6 +565,9 @@ class FirstOrderHMM():
         # ending in that tag.
         prev_viterbi = self.viterbi[-1]
         prev_converted = self.converted[-1]
+        if self.noisy_channel_source_model:
+            this_noisy_channel = {}
+            prev_noisy_channel = self.noisy_channel[-1]
         # for each tag, determine what the best previous-tag is,
         # and what the probability is of the best tag sequence ending.
         # store this information in the dictionary this_viterbi
@@ -509,8 +576,11 @@ class FirstOrderHMM():
             # [timing_data[word_index-2:word_index+1]]))
             # TODO may already be an array
             # print "calculating timing"
+            # print timing_data
             X = self.timing_model_scaler.transform(np.asarray([timing_data]))
             softmax_timing = self.timing_model.predict_proba(X)
+            # print softmax_timing
+            # raw_input()
         for tag in self.observation_tags:
             # don't record anything for the START/END tag
             if tag in ["s", "se"]:
@@ -537,15 +607,15 @@ class FirstOrderHMM():
                     converted_tag + " prev:" + str(prev_converted_tag)
                 tag_prob = self.cpd_tags[prev_converted_tag].prob(
                     converted_tag)
-                if tag_prob > 0:
+                if tag_prob >= 0.001:  # allowing for margin of error
                     if self.constraint_only:
                         # TODO for now treating this like a {0,1} constraint
-                        tag_prob = log(1.0)
+                        tag_prob = 1.0
                     test = converted_tag.lower()
-                    if "rpe" in test:  # boost for end tags
-                        tag_prob = tag_prob
-                    elif "rpsm_" in test:
-                        tag_prob = tag_prob
+                    if "rps" in test:  # boost for start tags
+                        tag_prob = tag_prob * 2.0
+                    elif "rpe" in test:
+                        tag_prob = tag_prob  #  * 14  # boost for end tags
                     if timing_data and self.timing_model:
                         for k, v in self.simple_trp_idx2label.items():
                             if v in tag:
@@ -557,53 +627,214 @@ class FirstOrderHMM():
                         # using the prob from the timing classifier
                         # array over the different classes
                         timing_prob = softmax_timing[0][timing_tag]
+                        if "<t" in tag:
+                            sparse_weight = 7.0
+                            # results on unweighted timing classifier:
+                            # 1 0.757 2 0.770 3 0.778  4. 0.781 5.0.783
+                            # 6. 0.785 7. 0.784
+                            timing_prob = timing_prob * sparse_weight
                         if self.constraint_only:
-                            tag_prob = log(0.5 * timing_prob)
+                            # just adapt the prob of the timing tag
+                            # tag_prob = timing_prob
+                            # the higher the timing weight the more influence
+                            # the timing classifier has
+                            tag_prob = (timing_weight * timing_prob) # + tag_prob
+                            # print tag, timing_tag, timing_prob
                         else:
-                            tag_prob = tag_prob * timing_prob
+                            
+                            tag_prob = (timing_weight * timing_prob) + tag_prob
                 else:
-                    tag_prob = log(0.0)
-                prob = prev_viterbi[prevtag] + tag_prob + \
+                    tag_prob = 0.0
+                # the principal joint log prob
+                prob = prev_viterbi[prevtag] + log(tag_prob) + \
                     log(softmax[word_index][self.tagToIndexDict[tag]])
+                if self.noisy_channel_source_model:
+                    prev_n_ch_node = prev_noisy_channel[prevtag]
+                    # The noisy channel model adds the score
+                    # if we assume this tag and the backpointed path
+                    # from the prev tag
+                    # Converting all to source tags first
+                    # NB this is what is slowing things down
+                    # Need to go from the known index
+                    # in the nc model
+                    full_backtrack_method = False
+                    if full_backtrack_method:
+                        inc_best_tag_sequence = [prevtag]
+                        # invert the list of backpointers
+                        inc_backpointer = deepcopy(self.backpointer)
+                        inc_backpointer.reverse()
+                        # go backwards through the list of backpointers
+                        # (or in this case forward, we have inverted the
+                        # backpointer list)
+                        inc_current_best_tag = prevtag
+                        for b_count, bp in enumerate(inc_backpointer):
+                            inc_best_tag_sequence.append(bp[inc_current_best_tag])
+                            inc_current_best_tag = bp[inc_current_best_tag]
+                            if b_count > 9:
+                                break
+                        inc_best_tag_sequence.reverse()
+                        inc_best_tag_sequence.append(tag)  # add tag
+                        source_tags = convert_to_source_model_tags(
+                                                inc_best_tag_sequence[1:],
+                                                uttseg=True)
+                        source_prob, nc_node = self.noisy_channel_source_model.\
+                                          get_log_diff_of_tag_suffix(source_tags,
+                                                                   n=1)
+                    else:
+                        # NB these only change if there is a backward
+                        # looking tag
+                        if "<rm-" in tag:
+                            m = re.search("<rm-([0-9]+)\/>", tag)
+                            if m:
+                                back = min([int(m.group(1)), len(self.backpointer)])
+                                suffix = ["<e/>"] * back + ["<f/>"]
+                            # to get the change in probability due to this
+                            # we need to backtrack further
+                            n = len(suffix)
+                        
+                        else:
+                            suffix = convert_to_source_model_tags([tag])
+                            n = 1 # just monotonic extention
+                            
+                                # print back, i, source_tags
+                        source_prob, nc_node = self.noisy_channel_source_model.\
+                                          get_log_diff_of_tag_suffix(suffix,
+                                                            start_node_ID=prev_n_ch_node,
+                                                                   n=n)
+                         
+                    
+                    
+                    prob+=(source_weight * source_prob)
+                
                 if prob >= best_prob:
                     best_converted = converted_tag
                     best_previous = prevtag
                     best_prob = prob
+                    if self.noisy_channel_source_model:
+                        best_n_c_node = nc_node
             # if best result is 0 do not add, pruning, could set this higher
             if best_prob > log(0.0):
+            # if True:  # TODO still a mystery
                 this_converted[tag] = best_converted
                 this_viterbi[tag] = best_prob
                 # the most likely preceding tag for this current tag
                 this_backpointer[tag] = best_previous
+                if self.noisy_channel_source_model:
+                    this_noisy_channel[tag] = best_n_c_node
         # done with all tags in this iteration
         # so store the current viterbi step
         self.viterbi.append(this_viterbi)
         self.backpointer.append(this_backpointer)
         self.converted.append(this_converted)
+        if self.noisy_channel_source_model:
+            self.noisy_channel.append(this_noisy_channel)
         self.add_to_history(this_viterbi, this_backpointer, this_converted)
         return
 
-    def get_best_tag_sequence(self):
-        """Returns the best tag sequence from the input so far.
-        """
-        inc_prev_viterbi = deepcopy(self.viterbi[-1])
-        inc_best_previous = max(inc_prev_viterbi.keys(),
-                                key=lambda prevtag: inc_prev_viterbi[prevtag])
-        assert(inc_prev_viterbi[inc_best_previous]) != log(0),\
-            "highest likelihood is 0!"
-        inc_best_tag_sequence = [inc_best_previous]
-        # invert the list of backpointers
-        inc_backpointer = deepcopy(self.backpointer)
-        inc_backpointer.reverse()
-        # go backwards through the list of backpointers
-        # (or in this case forward, we have inverted the backpointer list)
-        inc_current_best_tag = inc_best_previous
-        for bp in inc_backpointer:
-            inc_best_tag_sequence.append(bp[inc_current_best_tag])
-            inc_current_best_tag = bp[inc_current_best_tag]
+    def get_best_n_tag_sequences(self, n, noisy_channel_source_model=None):
+        # Do a breadth-first search
+        # try the best final tag and its backpointers, then the second
+        # best final tag etc.
+        # once all final tags are done and n > len(final tags)
+        # move to the second best penult tags for each tag
+        # from the best to worst, then the 3rd row
+        # it terminates when n is reached
+        # use the history self.history = [{"viterbi": deepcopy(viterbi),
+        #                 "backpointer": deepcopy(backpointer),
+        #                 "converted": deepcopy(converted)}] + self.history
+        # num_seq = n if not noisy_channel_source_model else 1000
+        num_seq = n
+        best_n = []  # the tag sequences with their probability (tuple)
+        # print "len viterbi", len(self.viterbi)
+        # print "len backpoint", len(self.backpointer)
+        for viterbi_depth in range(len(self.viterbi)-1, -1, -1):
+            if len(best_n) == num_seq:
+                break
+            inc_prev_viterbi = deepcopy(self.viterbi[viterbi_depth])
+            # inc_best_previous = max(inc_prev_viterbi.keys(),
+            #                        key=lambda prevtag:
+            # inc_prev_viterbi[prevtag])
+            inc_previous = sorted(inc_prev_viterbi.items(),
+                                  key=lambda x: x[1], reverse=True)
+            for tag, prob in inc_previous:
+                # print tag, prob
+                # prob = inc_prev_viterbi[inc_best_previous]
+                # assert(prob != log(0)), "highest likelihood is 0!"
+                if prob == log(0):
+                    continue
+                inc_best_tag_sequence = [tag]
+                # invert the list of backpointers
+                inc_backpointer = deepcopy(self.backpointer)
+                inc_backpointer.reverse()
+                # go backwards through the list of backpointers
+                # (or in this case forward, we have inverted the
+                # backpointer list)
+                inc_current_best_tag = tag
+                # print "backpointer..."
+                d = 0
+                for bp in inc_backpointer:
+                    d+=1
+                    # print "depth", d, "find bp for", inc_current_best_tag
+                    inc_best_tag_sequence.append(bp[inc_current_best_tag])
+                    inc_current_best_tag = bp[inc_current_best_tag]
+                # print "..."
+                inc_best_tag_sequence.reverse()
+                best_n.append((inc_best_tag_sequence, prob))
+                if len(best_n) == num_seq:
+                    break
+        best_n = sorted(best_n, key=lambda x: x[1], reverse=True)
+        debug = False
+        if debug:
+            print "getting best n"
+            for s, p in best_n:
+                print s[-1], p
+            print "***"
+        assert(best_n[0][1] > log(0.0)), "best prob 0!"
 
-        inc_best_tag_sequence.reverse()
-        return inc_best_tag_sequence
+        if not noisy_channel_source_model:
+            # return inc_best_tag_sequence
+            return [x[0] for x in best_n]
+        # if noisy channel do the interpolation
+        # need to entertain the whole beam for the channel model and source
+        # model
+        # channel_beam = best_n  # the tag sequences with their probability
+        # source_beam = noisy_channel.get_best_n_tag_sequences(1000)
+        # self.interpolate_(channel_beam, source_beam)
+        channel_beam = [lambda x: (x[0], convert_to_source_model_tags(x[0]),
+                                   x[1]) for x in best_n]
+        best_seqs = noisy_channel_source_model.\
+                    interpolate_probs_with_n_best(channel_beam,
+                                                  source_beam_width=1000,
+                                                  output_beam_width=n)
+
+#     def get_best_tag_sequence(self):
+#         """Returns the best tag sequence from the input so far.
+#         """
+#         inc_prev_viterbi = deepcopy(self.viterbi[-1])
+#         inc_best_previous = max(inc_prev_viterbi.keys(),
+#                                 key=lambda prevtag: inc_prev_viterbi[prevtag])
+#         assert(inc_prev_viterbi[inc_best_previous]) != log(0),\
+#             "highest likelihood is 0!"
+#         inc_best_tag_sequence = [inc_best_previous]
+#         # invert the list of backpointers
+#         inc_backpointer = deepcopy(self.backpointer)
+#         inc_backpointer.reverse()
+#         # go backwards through the list of backpointers
+#         # (or in this case forward, we have inverted the backpointer list)
+#         inc_current_best_tag = inc_best_previous
+#         for bp in inc_backpointer:
+#             inc_best_tag_sequence.append(bp[inc_current_best_tag])
+#             inc_current_best_tag = bp[inc_current_best_tag]
+# 
+#         inc_best_tag_sequence.reverse()
+#         return inc_best_tag_sequence
+
+
+    def get_best_tag_sequence(self, noisy_channel_source_model=None):
+        l = self.get_best_n_tag_sequences(1, noisy_channel_source_model)
+
+        return l[0]
+
 
     def viterbi(self, softmax, incremental_best=False):
         """Standard non incremental (sequence-level) viterbi over softmax input
@@ -654,7 +885,8 @@ class FirstOrderHMM():
         return self.best_tagsequence[1:-1]
 
     def viterbi_incremental(self, soft_max, a_range=None,
-                            changed_suffix_only=False, timing_data=None):
+                            changed_suffix_only=False, timing_data=None,
+                            words=None):
         """Given a new softmax input, output the latest labels.
         Effectively incrementing/editing self.best_tagsequence.
 
@@ -676,6 +908,8 @@ class FirstOrderHMM():
             # if not specified consume the whole soft_max input
             a_range = (0, len(soft_max))
         for i in xrange(a_range[0], a_range[1]):
+            if self.noisy_channel_source_model:
+                self.noisy_channel_source_model.consume_word(words.pop(0))
             self.viterbi_step(soft_max, i, sequence_initial=self.viterbi == [],
                               timing_data=timing_data)
             # slice the input if multiple steps
@@ -692,6 +926,16 @@ class FirstOrderHMM():
                     return self.best_tagsequence[r:]
         return self.best_tagsequence[1:]
 
+    # def adjust_incremental_viterbi_with_source_channel(self, source_channel):
+    #    """This reranks the current hypotheses with the noisy channel
+    #    decode, adding a weighted log prob of the language model
+    #    scores from the source model to the probs in viterbi.
+    #    Note this should be done before the backpointer is computed
+    #    for each new tag?
+    #    """
+
+
+
 if __name__ == '__main__':
     def load_tags(filepath):
         """Returns a tag dictionary from word to a n int indicating index
@@ -705,7 +949,7 @@ if __name__ == '__main__':
         f.close()
         return tag_dictionary
 
-    tags_name = "swbd_disf1_uttseg_simple_035"
+    tags_name = "swbd_disf1_uttseg_034"
     tags = load_tags(
         "../data/tag_representations/{}_tags.csv".format(tags_name))
     if "disf" in tags_name:
@@ -716,7 +960,7 @@ if __name__ == '__main__':
 
     h = FirstOrderHMM(tags, markov_model_file=None)
     corpus_path = "../data/tag_representations/{}_tag_corpus.csv".format(
-        tags_name).replace("_035", "")
+        tags_name).replace("_034", "")
     mm_path = "models/{}_tags.pkl".format(tags_name)
     h.train_markov_model_from_file(corpus_path, mm_path)
     table = tabulate_cfd(h.cpd_tags)

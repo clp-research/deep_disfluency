@@ -66,7 +66,9 @@ def load_timing_data(dialogues, labels2idx, simple=False):
                 print "below zero"
                 t = np.average([x[0] for x in timing_dict[tag]])
                 timings[i-1] = timings[i] - t
-            timing_dict[tag].append((prev_prev_t, prev_t, t))
+            # turn to milliseconds
+            timing_dict[tag].append((prev_prev_t, prev_t,
+                                     t))
             # now the second one
             prev = timings[i]
             prev_prev_t = prev_t
@@ -92,7 +94,9 @@ def load_timing_data(dialogues, labels2idx, simple=False):
 def train(X, y):
     scaler = StandardScaler()
     X = scaler.fit_transform(X)
-    model = LogisticRegression(class_weight='auto')
+    # quite a sparsity problem
+    model = LogisticRegression(class_weight='balanced',
+                               multi_class='ovr')
     model.fit(X, y)
 
     print(model)
@@ -105,6 +109,7 @@ def test_simple(model, scaler, data, y):
     expected = y
     print expected
     predicted = model.predict(X)
+    print model.predict_proba(X)
     print metrics.classification_report(expected, predicted)
     print metrics.confusion_matrix(expected, predicted)
 
@@ -161,7 +166,9 @@ if __name__ == '__main__':
     test_simple(model, scaler, X, y)
 
     # save the classifier
-    with open('LogReg_balanced_timing_classifier.pkl', 'wb') as fid:
+    with open('timing_models/' +
+              'LogReg_balanced_timing_classifier.pkl', 'wb') as fid:
         cPickle.dump(model, fid)
-    with open('LogReg_balanced_timing_scaler.pkl', 'wb') as fid:
+    with open('timing_models/' +
+              'LogReg_balanced_timing_scaler.pkl', 'wb') as fid:
         cPickle.dump(scaler, fid)

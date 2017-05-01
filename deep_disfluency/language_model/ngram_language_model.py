@@ -380,6 +380,7 @@ class KneserNeySmoothingModel(LanguageModel):
         print "1-grams =", str(self.vocab_size)
         print "2-grams =", str(self.bigram_types)
         print "3-grams =", str(self.trigram_types)
+        # print self.unigrams
         
     def glue_tokens(self,tokens,order):
         """NB this is specific to the way we store these for \

@@ -235,16 +235,24 @@ class model_no_pos(object):
         b = numpy.load(os.path.join(folder, 'b.npy'))
         h0 = numpy.load(os.path.join(folder, 'h0.npy'))
         return emb, Wx, Wh, W, bh, b, h0
-    
-    def load_weights(self, emb=None, Wx=None, Wh=None, W=None, bh=None, b=None, h0=None):
+
+    def load_weights(self, emb=None, Wx=None, Wh=None, W=None, bh=None, b=None,
+                     h0=None):
         print "loading previous weights"
-        if not emb == None: self.emb.set_value(emb)
-        if not Wx == None: self.Wx.set_value(Wx)
-        if not Wh == None: self.Wh.set_value(Wh)
-        if not W == None: self.W.set_value(W)
-        if not bh == None: self.bh.set_value(bh)
-        if not b == None: self.b.set_value(b)
-        if not h0 == None: self.h0.set_value(h0)
+        if emb is not None:
+            self.emb.set_value(emb)
+        if Wx is not None:
+            self.Wx.set_value(Wx)
+        if Wh is not None:
+            self.Wh.set_value(Wh)
+        if W is not None:
+            self.W.set_value(W)
+        if bh is not None:
+            self.bh.set_value(bh)
+        if b is not None:
+            self.b.set_value(b)
+        if h0 is not None:
+            self.h0.set_value(h0)
     
     def save(self, folder):   
         for param, name in zip(self.params, self.names):

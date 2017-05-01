@@ -44,7 +44,7 @@ class LSTM(object):
         '''
         ne :: number of word embeddings in the vocabulary
         de :: dimension of the word embeddings
-        na :: number of acoustic features at each word step
+        na :: number of acoustic or language model features at each word step
                 (acoustic context size in frames * number of features)
         n_lstm :: dimension of the lstm layer
         n_out :: number of classes
@@ -193,9 +193,20 @@ class LSTM(object):
         self.soft_max_return_hidden_layer = theano.function(inputs=[self.idxs, self.pos_idxs], outputs=p_y_given_x_sentence_hidden)
         
         #if na == 0: #assume no acoustic features for now
-        self.train = theano.function( inputs  = [self.idxs, self.pos_idxs, self.y, self.lr],
-                                   outputs = self.cost,
-                                   updates = self.updates )
+        # self.train = theano.function( inputs  = [self.idxs, self.pos_idxs, self.y, self.lr],
+        #                           outputs = self.cost,
+        #                           updates = self.updates )
+        if na == 0:
+            self.train = theano.function(inputs=[self.idxs, self.pos_idxs,
+                                                 self.y, self.lr],
+                                         outputs=self.cost,
+                                         updates=self.updates)
+        else:
+            self.train = theano.function(inputs=[self.idxs, self.pos_idxs,
+                                                 self.acoustic, self.y,
+                                                 self.lr],
+                                         outputs=self.cost,
+                                         updates=self.updates)
         
         #nb adding embeddings
         self.normalize = theano.function( inputs = [],
@@ -203,8 +214,46 @@ class LSTM(object):
                          self.emb/T.sqrt((self.emb**2).sum(axis=1)).dimshuffle(0,'x')})
         
         
+    def fit(self, dialogue, lr):
+        dialogue_loss = 0.0
+        load_data = True
+        acoustic = True
+        if load_data: #set to False on Bender for training as these will be python np objects there is enough space?
+            data = np.load(dialogue) #load the pickled numpy array
+            _, extra_data, lex_data, pos_data, indices, labels = load_data_from_array(data, self.n_acoust)
+        else:
+            _, extra_data, lex_data, pos_data, indices, labels = data #should be bundles up already
+        nw = extra_data.shape[0] # number of examples in this dialogue
         
-    def fit(self, dialogues, lr, acoustic=True, load_data=True):
+        test = 0
+        for start,stop in indices:
+            test+=1 #TODO for testing
+            #if test > 50: break #TODO for testing
+            if acoustic:
+                #print 'extra raw', acoustic_data[start:stop+1,:].shape
+                #ac = np.asarray(acoustic_data[start:stop+1,:],dtype='float32')
+                #print 'extra', ac.shape
+                #print 'lexical', lex_data[start:stop+1,:].shape
+                x = self.train(lex_data[start:stop+1, :],
+                               pos_data[start:stop+1, :],
+                               np.asarray(extra_data[start:stop+1, :],
+                                          dtype='float32'),
+                               labels[stop],
+                               lr)
+            else:
+                #print lex_data[start:stop+1,:]
+                #print pos_data[start:stop+1,:]
+                x = self.train(lex_data[start:stop+1, :],
+                               pos_data[start:stop+1, :],
+                               labels[stop],
+                               lr)
+                
+            dialogue_loss += x
+            self.normalize()
+            
+        return dialogue_loss
+
+    def fit_multiple(self, dialogues, lr, acoustic=True, load_data=True):
         """Fit method that takes pickled numpy matrices pathed to in the list
         files as its input.
         """
@@ -216,72 +265,32 @@ class LSTM(object):
         current_index = 0
         for i in range(0,len(dialogues)):
             data = dialogues[i][1]
-            if load_data: #set to False on Bender for training as these will be python np objects there is enough space?
-                data = np.load(data) #load the pickled numpy array
-                _, acoustic_data, lex_data, pos_data, indices, labels = load_data_from_array(data, self.n_acoust)
-            else:
-                _, acoustic_data, lex_data, pos_data, indices, labels = data #should be bundles up already
-            nw = acoustic_data.shape[0] # number of examples in this dialogue
-            #if acoustic:
-            #shuffle([train_lex, train_y], s['seed'])
-            #tic = time.time()
-            #mycorpus, myb_indices = corpusToIndexedMatrix(lex_data, , s['bs']) #window size across number of words deep, gets matrix too
-            #mylabels = np.asarray(list(itertools.chain(*train_y)), dtype='int32')
-            
-            
-            test = 0
-            #load in the data to shared vars, can use 'set value too'
-            #self.lexical_data = self.shared_dataset(lex_data) #loads dummy data set as a shared variable
-            #self.pos_data = self.shared_dataset(pos_data)
-            #self.acoustic_data = data = self.shared_dataset(acoustic_data,dtype=theano.config.floatX)
-            #self.labels = self.shared_dataset(labels)
-            for start,stop in indices:
-                current_index+=1
-                test+=1 #TODO for testing
-                #if test > 50: break #TODO for testing
-                if acoustic:
-                    #print 'acoustic raw', acoustic_data[start:stop+1,:].shape
-                    #ac = np.asarray(acoustic_data[start:stop+1,:],dtype='float32')
-                    #print 'acoustic', ac.shape
-                    #print 'lexical', lex_data[start:stop+1,:].shape
-                    #raw_input()
-                    x = self.train(lex_data[start:stop+1,:],pos_data[start:stop+1,:],np.asarray(acoustic_data[start:stop+1,:],dtype='float32'),labels[stop],lr)
-                else:
-                    #print lex_data[start:stop+1,:]
-                    #print pos_data[start:stop+1,:]
-                    x = self.train(lex_data[start:stop+1,:],pos_data[start:stop+1,:],labels[stop],lr)
-                    #raw_input()
-                    
-                loss+=x
-                self.normalize()
-                
-                #print '[learning] >> %2.2f%%'%((stop+1)*100./nw),'of file {} / {}'.format(i+1,len(dialogues)),\
-            print 'file {} / {}'.format(i+1,len(dialogues)),'completed in %.2f (sec) <<\r'%(time.time()-tic)
+            dialogue_loss = self.fit(data, lr)
+            loss += dialogue_loss
+            current_index += len(data)
+            print 'file {} / {}'.format(i+1,len(dialogues)),\
+                'completed in %.2f (sec) <<\r'%(time.time()-tic)
             sys.stdout.flush()
             print "current train_loss", loss/float(current_index)
-            #break #TODO switch back when actually training
         return loss/float(current_index)
-    
-    
-    
-    
+
     def fitold(self, my_seq, my_indices, my_labels, lr, nw, pos=None, sentence=False):
         """The main training function over the corpus indexing into my_indices"""
         tic = time.time()
         corpus = self.shared_dataset(my_seq) #loads data set as a shared variable
         labels = self.shared_dataset(my_labels)
-        if not pos == None:
+        if pos is not None:
             pos = self.shared_dataset(pos)
         #TODO new effort to index the shared vars
         batchstart = T.iscalar('batchstart')
         batchstop = T.iscalar('batchstop')
-        if sentence == True:
+        if sentence:
             cost = self.sentence_nll
             updates = self.sentence_updates
-        else:    
+        else:
             cost = self.nll
             updates = self.updates
-        if pos == None:
+        if pos is None:
             self.train_by_index = theano.function( inputs  = [batchstart, batchstop,self.lr],
                                       outputs = cost,
                                       updates = updates, 
@@ -324,17 +333,17 @@ class LSTM(object):
 
         corpus = self.shared_dataset(my_seq) #loads data set as a shared variable
         labels = self.shared_dataset(my_labels)
-        if not pos == None:
+        if pos is not None:
             pos = self.shared_dataset(pos)
         
         batchstart = T.iscalar('batchstart')
         batchstop = T.iscalar('batchstop')
-        if sentence == True:
+        if sentence:
             cost = self.sentence_nll
-        else:    
+        else:
             cost = self.nll
         
-        if pos == None:
+        if pos is None:
             self.error_by_index = theano.function( inputs  = [batchstart, batchstop],
                                           outputs = cost,
                                           givens={self.idxs : corpus[batchstart:batchstop+1],
@@ -360,18 +369,20 @@ class LSTM(object):
         """ Load the dataset into shared variables """
         return theano.shared(np.asarray(mycorpus, dtype='int32'),
                                  borrow=True)
-    
-    def load_weights_from_folder(self,folder):
+
+    def load_weights_from_folder(self, folder):
         for name, param in zip(self.names, self.params):
             param.set_value(np.load(os.path.join(folder, name + ".npy")))
-    
+
     def load_weights(self, emb=None, c0=None, h0=None):
-        if not emb == None: self.emb.set_value(emb)
-        if not c0 == None: self.c0.set_value(c0)
-        if not h0 == None: self.h0.set_value(h0)
-            
-            
-    def save(self, folder):   
+        if emb is not None:
+            self.emb.set_value(emb)
+        if c0 is not None:
+            self.c0.set_value(c0)
+        if h0 is not None:
+            self.h0.set_value(h0)
+
+    def save(self, folder):
         for param, name in zip(self.params, self.names):
             np.save(os.path.join(folder, name + '.npy'), param.get_value())
 

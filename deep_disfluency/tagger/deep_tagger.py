@@ -4,15 +4,20 @@ import numpy as np
 import cPickle
 import os
 from copy import deepcopy
+import time
 from nltk.tag import CRFTagger
 
 from deep_disfluency.language_model.ngram_language_model \
     import KneserNeySmoothingModel
-from deep_disfluency.utils.tools import convertFromIncDisfluencyTagsToEvalTags
+from deep_disfluency.utils.tools \
+    import convert_from_inc_disfluency_tags_to_eval_tags
+from deep_disfluency.utils.tools import verify_dialogue_data_matrices
 from deep_disfluency.load.load import load_tags
 from deep_disfluency.rnn.elman import Elman
 from deep_disfluency.rnn.lstm import LSTM
+from deep_disfluency.rnn.test_if_using_gpu import test_if_using_GPU
 from deep_disfluency.decoder.hmm import FirstOrderHMM
+from deep_disfluency.decoder.noisy_channel import SourceModel
 
 
 def process_arguments(config=None,
@@ -72,14 +77,15 @@ def process_arguments(config=None,
         'loss_function',  # default will be nll, unlikely to change
         'reg',  # regularization type
         'pos',  # whether pos tags or not
-        'acoustic',  # whether using aoustic features or not
-        'language_model',  # whether to use language model features
+        'n_acoustic_features',  # number of acoustic features used per word
+        'n_language_model_features',  # number of language model features used
         'embeddings',  # embedding files, if any
         'update_embeddings',  # whether the embeddings should be updates
         'batch_size',  # batch size, 'word' or 'utterance'
         'word_rep',  # the word to index mapping filename
         'pos_rep',  # the pos tag to index mapping filename
         'tags',  # the output tag representations used
+        'decoder_type',  # which type of decoder
         'utts_presegmented',  # whether utterances are pre-segmented
         'do_utt_segmentation'  # whether we do combined end of utt detection
         ]
@@ -102,7 +108,8 @@ def process_arguments(config=None,
                     feat_value = float(feat_value)
                 elif header[i] in ['seed', 'window', 'bs',
                                    'emb_dimension', 'n_hidden', 'n_epochs',
-                                   'n_acoustic']:
+                                   'n_acoustic_features',
+                                   'n_language_model_features']:
                     feat_value = int(feat_value)
                 setattr(args, header[i], feat_value)
     return args
@@ -112,24 +119,18 @@ def get_last_n_features(feature, current_words, idx, n=3):
     """For the purposes of timing info, get the timing, word or pos
     values  of the last n words (default = 3).
     """
-    if feature == "timing":
-        last = 0
-        timings = []
-        if idx > n:
-            last = current_words[idx-n][2]
-        for _, _, e in current_words[max(0, (idx - n) + 1): idx + 1]:
-            timings.append((e-last)*100)
-            last = e
-        while len(timings) < n:
-            timings = [0] + timings
-        return timings
+    if feature == "words":
+        position = 0
+    elif feature == "POS":
+        position = 1
+    elif feature == "timings":
+        position = 2
     else:
-        # words or pos
-        start = max(0, (idx - n) + 1)
-        print start, idx + 1
-        position = 1 if feature == "POS" else 0
-        return [triple[position] for triple in
-                current_words[start: idx + 1]]
+        raise Exception("Unknown feature {}".format(feature))
+    start = max(0, (idx - n) + 1)
+    # print start, idx + 1
+    return [triple[position] for triple in
+            current_words[start: idx + 1]]
 
 
 class IncrementalTagger(object):
@@ -171,11 +172,12 @@ class IncrementalTagger(object):
         self.word_graph = [(self.word_to_index_map["<s>"],
                             self.pos_to_index_map["<s>"], 0)] \
                             * (self.window_size - 1)
+        self.output_tags = []
 
 
 class DeepDisfluencyTagger(IncrementalTagger):
-    """A deep-learning driven incremental disfluency tagger (and optionally
-    utterance-segmenter).
+    """A deep-learning driven incremental disfluency tagger
+    (and optionally utterance-segmenter).
     """
     def __init__(self, config_file=None,
                  config_number=None,
@@ -216,30 +218,35 @@ class DeepDisfluencyTagger(IncrementalTagger):
             print "loading POS tagger..."
             self.pos_tagger = pos_tagger
         elif self.args.pos:
-            print "No POS tagger specified,\
-                loading default CRF switchboard one"
+            print "No POS tagger specified,loading default CRF switchboard one"
             self.pos_tagger = CRFTagger()
             tagger_path = os.path.dirname(os.path.realpath(__file__)) +\
                 "/../feature_extraction/crfpostagger"
             self.pos_tagger.set_model_file(tagger_path)
 
-        if self.args.language_model:
+        if self.args.n_language_model_features > 0 or \
+                'noisy_channel' in self.args.decoder_type:
             print "training language model..."
             self.init_language_models(language_model,
                                       pos_language_model,
                                       edit_language_model)
+
         if timer:
             print "loading timer..."
             self.timing_model = timer
             self.timing_model_scaler = timer_scaler
         else:
+            # self.timing_model = None
+            # self.timing_model_scaler = None
             print "No timer specified, using default switchboard one"
             timer_path = os.path.dirname(os.path.realpath(__file__)) +\
-                '/../decoder/LogReg_balanced_timing_classifier.pkl'
+                '/../decoder/timing_models/' + \
+                'LogReg_balanced_timing_classifier.pkl'
             with open(timer_path, 'rb') as fid:
                 self.timing_model = cPickle.load(fid)
             timer_scaler_path = os.path.dirname(os.path.realpath(__file__)) +\
-                '/../decoder/LogReg_balanced_timing_scaler.pkl'
+                '/../decoder/timing_models/' + \
+                'LogReg_balanced_timing_scaler.pkl'
             with open(timer_scaler_path, 'rb') as fid:
                 self.timing_model_scaler = cPickle.load(fid)
                 # TODO a hack
@@ -257,12 +264,16 @@ class DeepDisfluencyTagger(IncrementalTagger):
 
         # decoder_file = os.path.dirname(os.path.realpath(__file__)) + \
         #     "/../decoder/model/{}_tags".format(self.args.tags)
+        noisy_channel = None
+        if 'noisy_channel' in self.args.decoder_type:
+            noisy_channel = SourceModel(self.lm, self.pos_lm)
         self.decoder = FirstOrderHMM(
             hmm_dict,
             markov_model_file=self.args.tags,
             timing_model=self.timing_model,
             timing_model_scaler=self.timing_model_scaler,
-            constraint_only=False
+            constraint_only=True,
+            noisy_channel=noisy_channel
             )
 
         # getting the states in the right shape
@@ -334,12 +345,11 @@ class DeepDisfluencyTagger(IncrementalTagger):
                                         discount=0.7)
 
     def init_model_from_config(self, args):
-        #  get all parameters of the model and decoder
-        # full_label2idx = load_tags(label_path)
-        # full_idx2label = dict((k,v) for v,k in full_label2idx.iteritems())
         # for feat, val in args._get_kwargs():
         #     print feat, val, type(val)
-
+        if not test_if_using_GPU():
+            print "Warning: not using GPU, might be a bit slow"
+            print "\tAdjust Theano config file ($HOME/.theanorc)"
         print "loading tag to index maps..."
         label_path = os.path.dirname(os.path.realpath(__file__)) +\
             "/../data/tag_representations/{}_tags.csv".format(args.tags)
@@ -354,7 +364,7 @@ class DeepDisfluencyTagger(IncrementalTagger):
         vocab_size = len(self.word_to_index_map.keys())
         emb_dimension = args.emb_dimension
         n_hidden = args.n_hidden
-        n_acoustic = 350 if args.acoustic else 0
+        n_extra = args.n_language_model_features + args.n_acoustic_features
         n_classes = len(self.tag_to_index_map.keys())
         self.window_size = args.window
         n_pos = len(self.pos_to_index_map.keys())
@@ -365,22 +375,27 @@ class DeepDisfluencyTagger(IncrementalTagger):
             model = Elman(ne=vocab_size,
                           de=emb_dimension,
                           nh=n_hidden,
-                          na=n_acoustic,
+                          na=n_extra,
                           n_out=n_classes,
                           cs=self.window_size,
                           npos=n_pos,
                           update_embeddings=update_embeddings)
+            self.initial_h0_state = model.h0.get_value()
+            self.initial_c0_state = None
+
         elif self.model_type == 'lstm':
             model = LSTM(ne=vocab_size,
                          de=emb_dimension,
                          n_lstm=n_hidden,
-                         na=n_acoustic,
+                         na=n_extra,
                          n_out=n_classes,
                          cs=self.window_size,
                          npos=n_pos,
                          lr=lr,
                          single_output=True,
                          cost_function='nll')
+            self.initial_h0_state = model.h0.get_value()
+            self.initial_c0_state = model.c0.get_value()
         else:
             raise NotImplementedError('No model init for {0}'.format(
                 self.model_type))
@@ -389,6 +404,9 @@ class DeepDisfluencyTagger(IncrementalTagger):
     def load_model_params_from_folder(self, model_folder, model_type):
         if model_type in ["lstm", "elman"]:
             self.model.load_weights_from_folder(model_folder)
+            self.initial_h0_state = self.model.h0.get_value()
+            if model_type == "lstm":
+                self.initial_c0_state = self.model.c0.get_value()
         else:
             raise NotImplementedError('No weight loading for {0}'.format(
                 model_type))
@@ -397,39 +415,47 @@ class DeepDisfluencyTagger(IncrementalTagger):
                      proper_name_pos_tags=["NNP", "NNPS", "CD", "LS",
                                            "SYM", "FW"]):
         # 0. Add new word to word graph
-        print "*" * 30
         word = word.lower()
         if not pos and self.pos_tagger:
-            pos = self.pos_tagger.tag([])
+            pos = self.pos_tagger.tag([])  # TODO
         if pos:
             pos = pos.upper()
             if pos in proper_name_pos_tags and "$unc$" not in word:
                 word = "$unc$" + word
             if pos not in self.pos_to_index_map.keys():
-                print "unknown pos", pos
+                # print "unknown pos", pos
                 pos = "<unk>"
         if word not in self.word_to_index_map.keys():
-            print "unknown word", word
+            # print "unknown word", word
             word = "<unk>"
-        print "New word:", word, pos
+        # print "New word:", word, pos
         self.word_graph.append((self.word_to_index_map[word],
                                 self.pos_to_index_map[pos],
                                 timing
                                 ))
-        print "word graph ****"
-        for w, p, t in self.word_graph:
-            print "**", w, p, t
-        print "****"
+        # print "word graph ****"
+        # for w, p, t in self.word_graph:
+        #     print "**", w, p, t
+        # print "****"
         # 1. load the saved internal rnn state
-        if not self.state_history == []:
+        if self.state_history == []:
+            c0_state = self.initial_c0_state
+            h0_state = self.initial_h0_state
+        else:
             if self.model_type == "lstm":
-                self.model.load_weights(c0=self.state_history[-1][0][-1],
-                                        h0=self.state_history[-1][1][-1])
+                c0_state = self.state_history[-1][0][-1]
+                h0_state = self.state_history[-1][1][-1]
             elif self.model_type == "elman":
-                self.model.load_weights(h0=self.state_history[-1][-1])
-            else:
-                raise NotImplementedError("no history loading for\
-                                 {0} model".format(self.model_type))
+                h0_state = self.state_history[-1][-1]
+
+        if self.model_type == "lstm":
+            self.model.load_weights(c0=c0_state,
+                                    h0=h0_state)
+        elif self.model_type == "elman":
+            self.model.load_weights(h0=h0_state)
+        else:
+            raise NotImplementedError("no history loading for\
+                             {0} model".format(self.model_type))
 
         # 2. do the softmax output
         word_window = get_last_n_features("words", self.word_graph,
@@ -438,7 +464,7 @@ class DeepDisfluencyTagger(IncrementalTagger):
         pos_window = get_last_n_features("POS", self.word_graph,
                                          len(self.word_graph)-1,
                                          n=self.window_size)
-        print "word_window, pos_window", word_window, pos_window
+        # print "word_window, pos_window", word_window, pos_window
         if self.model_type == "lstm":
             h_t, c_t, s_t = self.model.\
                 soft_max_return_hidden_layer([word_window], [pos_window])
@@ -461,7 +487,7 @@ class DeepDisfluencyTagger(IncrementalTagger):
         # 3. do the decoding on the softmax
         if "disf" in self.args.tags:
             edit_tag = "<e/><cc>" if "uttseg" in self.args.tags else "<e/>"
-            print self.tag_to_index_map[edit_tag]
+            # print self.tag_to_index_map[edit_tag]
             adjustsoftmax = np.concatenate((
                     softmax,
                     softmax[
@@ -478,8 +504,9 @@ class DeepDisfluencyTagger(IncrementalTagger):
             adjustsoftmax, a_range=(len(adjustsoftmax)-1,
                                     len(adjustsoftmax)),
             changed_suffix_only=True,
-            timing_data=last_n_timings)
-        print "new tags", new_tags
+            timing_data=last_n_timings,
+            words=[word])
+        # print "new tags", new_tags
         self.output_tags = self.output_tags[:len(self.output_tags) -
                                             (len(new_tags) -
                                              1)] + new_tags
@@ -498,14 +525,35 @@ class DeepDisfluencyTagger(IncrementalTagger):
                     self.output_tags[p] = self.output_tags[p].\
                         replace("<e/>", "").replace("<i", "<e/><i")
         else:
-            new_words = [word]
-            self.output_tags = convertFromIncDisfluencyTagsToEvalTags(
+            # new_words = [word]
+            words = get_last_n_features("words", self.word_graph,
+                                        len(self.word_graph)-1,
+                                        n=len(self.word_graph) -
+                                        (self.window_size-1))
+            self.output_tags = convert_from_inc_disfluency_tags_to_eval_tags(
                         self.output_tags,
-                        new_words,
+                        words,
                         start=len(self.output_tags) -
                         (len(new_tags)),
                         representation=self.args.tags)
-        print self.output_tags
+        return self.output_tags
+
+    def tag_utterance(self, utterance):
+        if not self.args.utts_presegmented:
+            raise NotImplementedError("Tagger trained on unsegmented data,\
+            please call tag_prefix(words) instead.")
+        # non segmenting
+        self.reset()  # always starts in initial state
+        if not self.args.pos:  # no pos tag model
+            utterance = [(w, None, t) for w, p, t in utterance]
+            print "Warning: not using pos tags as not pos tag model"
+        if not self.args.timings:
+            utterance = [(w, p, None) for w, p, t in utterance]
+            print "Warning: not using timing durations as no timing model"
+        for w, p, t in utterance:
+            if self.args.pos:
+                self.tag_word(w, pos=p, timing=t)
+        return self.output_tags
 
     def rollback(self, backwards):
         IncrementalTagger.rollback(self, backwards)
@@ -517,11 +565,51 @@ class DeepDisfluencyTagger(IncrementalTagger):
         IncrementalTagger.reset(self)
         self.state_history = []
         self.softmax_history = []
+        self.decoder.viterbi_init()
+        if self.model_type == "lstm":
+            self.model.load_weights(c0=self.initial_c0_state,
+                                    h0=self.initial_h0_state)
+        elif self.model_type == "elman":
+            self.model.load_weights(h0=self.initial_h0_state)
 
-    def train_net(self, dialogues):
-        return NotImplementedError
+    def train_net(self, dialogue_matrices, model_dir):
+        if not verify_dialogue_data_matrices(
+                                        dialogue_matrices,
+                                        self.args.word_to_index_map,
+                                        self.args.pos_to_index_map,
+                                        self.args.tags_to_index_map,
+                                        self.args.n_language_model_features,
+                                        self.args.n_acoustic_features):
+            raise Exception("Dialogue vectors in wrong format! See README.md.")
+        start = 1  # by default start from the first epoch
+        for e in range(start, self.args.n_epochs + 1):
+            tic = time.time()
+            epoch_folder = model_dir + "/epoch_{}".format(e)
+            if not os.path.exists(epoch_folder):
+                os.mkdir(epoch_folder)
+            
+#             
+#             if s['use_saved_model']:
+#                 print "loading stored model and weights- not actually training from " + epochfolder
+#                 self.model.load_weights_from_folder(epochfolder)
+#                 #if s['model'] == "lstm":
+#                 #    rnn.load_weights_from_folder(epochfolder)
+#                 #else:
+#                 #    emb, Wx, Wh, W, bh, b, h0  = rnn.load(epochfolder)
+#                 #    rnn.load_weights(emb, Wx, Wh, W, bh, b, h0)
+#             else:
+#                 if s['pos']:
+#                     train_loss = self.model.fit(data['train'],
+#                                                 s['clr'],
+#                                                 acoustic=args.acoustic,
+#                                                 load_data=True)
+#                 else:
+#                     pass
+#             
+#             if s['verbose']: # output final learning time
+#                 print '[learning] epoch %i >>'%(e),'completed in %.2f (sec) <<\r'%(time.time()-tic),
 
-    def train_decoder(self, dialogues):
+    def train_decoder(self, tag_file):
         return NotImplementedError
 
     def save_net_weights_to_dir(self, dir_path):

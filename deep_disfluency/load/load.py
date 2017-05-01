@@ -5,27 +5,32 @@ import csv
 import numpy as np
 from copy import deepcopy
 from collections import defaultdict
-from deep_disfluency.utils.tools import convertFromEvalTagsToIncDisfluencyTags, add_word_continuation_tags, contextwinbackwards,\
- indicesFromLength, convert_to_simple_idx, convert_to_simple_label, convert_from_full_tag_set_to_idx
-from deep_disfluency.feature_extraction.feature_utils import fill_in_time_approximations
+
+from deep_disfluency.utils.tools import convert_from_eval_tags_to_inc_disfluency_tags
+from deep_disfluency.utils.tools import add_word_continuation_tags
+from deep_disfluency.utils.tools import context_win_backwards
+from deep_disfluency.utils.tools import indices_from_length
+from deep_disfluency.utils.tools import convert_to_simple_label
+from deep_disfluency.utils.tools import convert_from_full_tag_set_to_idx
+from deep_disfluency.feature_extraction.feature_utils \
+    import fill_in_time_approximations
 
 logger = logging.getLogger(__name__)
 
-DATAPREFIX = os.path.dirname(os.path.realpath(__file__)) + os.path.sep + '..' + os.path.sep + 'data'
+DATAPREFIX = os.path.dirname(os.path.realpath(__file__)) + os.path.sep +\
+ '..' + os.path.sep + 'data'
 
 
-def load_data_from_array(data, n_acoust, cs=2, bs=9, tags="disf1_uttseg_simple",
+def load_data_from_array(data, n_acoust, cs=2, bs=9,
+                         tags="disf1_uttseg_simple",
                          full_idx_to_label_dict=None, idx_to_label=None):
-    """Returns a tuple of (frames, acoustic_data, lex_data, pos_data, indices, labels )
-    From a numpy array with all those bits of info in them"""
-    #print "RAW"
-    #print 'data shape', data.shape    
-    #for i in range(0,len(data[1])):
-    #    print i, data[1:n_acoust+1,i]
+    """Returns a tuple of (frames, acoustic_data, lex_data, pos_data,
+    indices, labels )
+    From a numpy array with all those bits of info in them.
+    """
 
-    frames = data[0,:]
-    #print 'frames', frames.shape, frames[0:10]
-    acoustic_data = data[1 : n_acoust+1,:]       #from 1 to n_acoust+1 is all acoustic data
+    frames = data[0, :]
+    acoustic_data = data[1: n_acoust+1, :]  # 1 to n_acoust+1 is all acoustic
     #print 'acoustic_data', acoustic_data.shape, acoustic_data[0][0:10]
     lex_data = data[-3, :] #NB these should be windows from the outset really?
     #print 'lex data', lex_data.shape, lex_data[0:10]
@@ -35,9 +40,9 @@ def load_data_from_array(data, n_acoust, cs=2, bs=9, tags="disf1_uttseg_simple",
     #print 'labels', labels.shape, labels[0:10]
     
     #print 'ADJUSTED'
-    lex_data = np.asarray(contextwinbackwards(lex_data,cs)).astype('int32')
+    lex_data = np.asarray(context_win_backwards(lex_data,cs)).astype('int32')
     #print 'lex_data', lex_data.shape, lex_data[0:10]
-    pos_data =  np.asarray(contextwinbackwards(pos_data,cs)).astype('int32')
+    pos_data =  np.asarray(context_win_backwards(pos_data,cs)).astype('int32')
     #print 'pos_data', pos_data.shape, pos_data[0:10]
     acoustic_data = np.swapaxes(acoustic_data, 0, 1)
     #print 'acoustic_data', acoustic_data.shape
@@ -58,7 +63,7 @@ def load_data_from_array(data, n_acoust, cs=2, bs=9, tags="disf1_uttseg_simple",
     #print 'labels', labels.shape, labels[0:10]
     
     #print 'CREATED'
-    indices = np.asarray(indicesFromLength(len(lex_data),bs,0)).astype('int32')
+    indices = np.asarray(indices_from_length(len(lex_data),bs,0)).astype('int32')
     #print 'indices', indices.shape, indices[0:10]
     
     #raw_input()
@@ -153,7 +158,7 @@ def load_data_from_file(f, word_rep, pos_rep, tag_rep, representation="1", limit
                 if "0" in representation: #turn taking only
                     currentTags = [""] * len(currentTags)
                 else:
-                    currentTags = convertFromEvalTagsToIncDisfluencyTags(currentTags, currentWords, representation=representation, limit=limit)
+                    currentTags = convert_from_eval_tags_to_inc_disfluency_tags(currentTags, currentWords, representation=representation, limit=limit)
                 if 'trp' in representation:
                     currentTags = add_word_continuation_tags(currentTags)
                 if 'simple' in representation:
@@ -209,7 +214,7 @@ def load_data_from_file(f, word_rep, pos_rep, tag_rep, representation="1", limit
         if "0" in representation: #turn taking only
             currentTags = [""] * len(currentTags)
         else:
-            currentTags = convertFromEvalTagsToIncDisfluencyTags(currentTags, currentWords, representation=representation, limit=limit)
+            currentTags = convert_from_eval_tags_to_inc_disfluency_tags(currentTags, currentWords, representation=representation, limit=limit)
         if 'trp' in representation:
             currentTags = add_word_continuation_tags(currentTags)
         if 'simple' in representation:
@@ -507,9 +512,9 @@ def get_tag_data_from_corpus_file(f, representation="1", limit=8):
     f.close()
     return (IDs,timings,seq,pos_seq,targets)
 
+
 def download(origin):
-    '''
-    download the corresponding file from origin
+    '''download the corresponding file from origin
     '''
     print 'Downloading data from %s' % origin
     name = origin.split('/')[-1]

@@ -19,13 +19,12 @@ simple_tags = """<e/><cc/>
 simple_tag_dict = {}
 for s in range(0,len(simple_tags)):
     simple_tag_dict[simple_tags[s].strip()] = s
-#print simple_tag_dict
 
 
-def open_with_pandas_read_csv(filename,header=None,delim="\t"):
-    df = pd.read_csv(filename, sep=delim,header=header)
+def open_with_pandas_read_csv(filename, header=None, delim="\t"):
+    df = pd.read_csv(filename, sep=delim, header=header)
     data = df.values
-    return data  
+    return data
 
 
 def convert_to_simple_label(tag, rep="disf1_uttseg"):
@@ -47,7 +46,7 @@ def convert_to_simple_label(tag, rep="disf1_uttseg"):
     return disftag  # if not TT0
 
 
-def convert_to_simple_idx(tag,rep='1_trp'):
+def convert_to_simple_idx(tag, rep='1_trp'):
     tag = convert_to_simple_label(tag, rep)
     return simple_tag_dict[tag]
 
@@ -71,7 +70,7 @@ def get_tags(s, open_delim  ='<',
     while True:
         # Search for the next two delimiters in the source text
         start = s.find(open_delim)
-        end   = s.find(close_delim)
+        end = s.find(close_delim)
         # We found a non-empty match
         if -1 < start < end:
             # Skip the length of the open delimiter
@@ -84,11 +83,55 @@ def get_tags(s, open_delim  ='<',
             return
 
 
-def verifyDisfluencyTags(tags, normalize_ID=False):
+def verify_dialogue_data_matrix(dialogue_data_matrix, word_dict=None,
+                                pos_dict=None, tag_dict=None, n_lm=0,
+                                n_acoustic=0):
+    """Boolean check of whether dialogue data consistent
+    with args. Checks all idxs are valid and number of features is correct.
+    Standard form of each row of the vector should be:
+
+    word_idx, pos_idx, word_duration,lm_feats....,acoustic_feats...,label
+    """
+    l = 3 + n_lm + n_acoustic + 1  # row length
+    try:
+        for i, row in enumerate(dialogue_data_matrix):
+            assert len(row) == l,\
+                "row {} wrong length {}, should be {}".format(i, len(row), l)
+            assert row[0] in word_dict.values(),\
+                "row[0] {} not in word dict".format(i)
+            assert row[1] in pos_dict.values(),\
+                "row[1] {} not in POS dict".format(i)
+            assert row[-1] in tag_dict.values(),\
+                "row[-1] {} not in tag dict".format(i)
+    except AssertionError as a:
+        print a
+        return False
+    return True
+
+
+def verify_dialogue_data_matrices(dialogue_matrices,
+                                 word_dict, pos_dict, tag_dict,
+                                 n_lm, n_acoustic):
+    """A boolean check that the dialogue matrices make sense for the
+    particular configuration in args and tag2idx dicts.
+    """
+    for name, v in dialogue_matrices:
+        if not verify_dialogue_data_matrix(v, word_dict=word_dict,
+                                           pos_dict=pos_dict,
+                                           tag_dict=tag_dict,
+                                           n_lm=n_lm,
+                                           n_acoustic=n_acoustic):
+            print "{} failed test".format(name)
+            return False
+    return True
+
+
+def verify_disfluency_tags(tags, normalize_ID=False):
     """Check that the repair tags sequence is valid.
-    
+
     Keyword arguments:
-    normalize_ID -- boolean, whether to convert the repair ID numbers to be derivable from their unique RPS position in the utterance.
+    normalize_ID -- boolean, whether to convert the repair ID
+    numbers to be derivable from their unique RPS position in the utterance.
     """
     id_map = dict() #map between old ID and new ID
     #in first pass get old and new IDs
@@ -150,72 +193,69 @@ def verifyDisfluencyTags(tags, normalize_ID=False):
 
 
 def shuffle(lol, seed):
-    '''
+    """Shuffle inplace each list in the same order.
+
     lol :: list of list as input
     seed :: seed the shuffling
-
-    shuffle inplace each list in the same order
-    '''
+    """
     for l in lol:
         random.seed(seed)
         random.shuffle(l)
 
 
 def minibatch(l, bs):
-    '''
-    l :: list of word idxs
-    return a list of minibatches of indexes
+    """Returns a list of minibatches of indexes
     which size is equal to bs
     border cases are treated as follow:
     eg: [0,1,2,3] and bs = 3
     will output:
     [[0],[0,1],[0,1,2],[1,2,3]]
-    '''
-    out  = [l[:i] for i in xrange(1, min(bs,len(l)+1) )]
-    out += [l[i-bs:i] for i in xrange(bs,len(l)+1) ]
+
+    l :: list of word idxs
+    """
+    out = [l[:i] for i in xrange(1, min(bs, len(l)+1))]
+    out += [l[i-bs:i] for i in xrange(bs, len(l)+1)]
     assert len(l) == len(out)
     return out
 
 
-def indicesFromLength(sentenceLength,bs,totalSize):
-    '''
-    return a list of indexes pairs (start/stop) for each word
+def indices_from_length(sentence_length, bs, total_size):
+    """Return a list of indexes pairs (start/stop) for each word
     max difference between start and stop equal to bs
     border cases are treated as follow:
     eg: sentenceLength=4 and bs = 3
     will output:
     [[0,0],[0,1],[0,2],[1,3]]
-    '''
-    l = map(lambda x: totalSize+x ,\
-                xrange(sentenceLength))
+    """
+    l = map(lambda x: total_size+x, xrange(sentence_length))
     out = []
-    for i in xrange(0, min(bs,len(l)) ):
-        out.append([l[0],l[i]]) 
-    for i in xrange(bs+1,len(l)+1):
-        out.append([l[i-bs],l[i-1]])
-    assert len(l) == sentenceLength
+    for i in xrange(0, min(bs, len(l))):
+        out.append([l[0], l[i]])
+    for i in xrange(bs+1, len(l)+1):
+        out.append([l[i-bs], l[i-1]])
+    assert len(l) == sentence_length
     return out
 
 
-def contextwin(l, win):
-    '''
-    win :: int corresponding to the size of the window
-    given a list of indexes composing a sentence
-    it will return a list of list of indexes corresponding
+def context_win(l, win):
+    """Return a list of list of indexes corresponding
     to context windows surrounding each word in the sentence
-    '''
+    given a list of indexes composing a sentence.
+
+    win :: int corresponding to the size of the window
+    """
     assert (win % 2) == 1
-    assert win >=1
+    assert win >= 1
     l = list(l)
 
     lpadded = win/2 * [-1] + l + win/2 * [-1]
-    out = [ lpadded[i:i+win] for i in range(len(l)) ]
+    out = [lpadded[i:i+win] for i in range(len(l))]
 
     assert len(out) == len(l)
     return out
 
 
-def contextwinbackwards(l, win):
+def context_win_backwards(l, win):
     '''
     Same as contextwin except only backwards context (i.e. like an n-gram model)
     '''
@@ -230,18 +270,17 @@ def contextwinbackwards(l, win):
 
 
 def corpus_to_indexed_matrix(my_array_list, win, bs, sentence=False):
-    '''
-    Returns a matrix of contextwins for a list of utterances of dimensions win * n_words_in_corpus (i.e. total length of all arrays in my_array_list)
+    """Returns a matrix of contextwins for a list of utterances of dimensions win * n_words_in_corpus (i.e. total length of all arrays in my_array_list)
     and corresponding matrix of indexes (of just start/stop for each one) so 2 * n_words_in_corpus
     of where to access these, using bs (backprop distance) as the limiting history size
-    '''
+    """
     sentences = [] # a list (of arrays, or lists?), returned as matrix
     indices = [] #a list of index pairs (arrays?), returned as matrix
     totalSize = 0
     if sentence == True:
         for sent in my_array_list:
             mysent = np.asarray([-1] * (bs-1) + list(sent)) #padding with eos
-            mywords = contextwinbackwards(mysent, win) #get list of context windows
+            mywords = context_win_backwards(mysent, win) #get list of context windows
             cindices = [[totalSize,totalSize+len(mywords)-1]] #just one per utterance for now..
             cwords = []
             for i in range(bs, len(mywords)+1):
@@ -253,7 +292,7 @@ def corpus_to_indexed_matrix(my_array_list, win, bs, sentence=False):
             totalSize+=len(cwords)
             #if totalSize > 100: break
         """for sentence in my_array_list: #old version
-            cwords = contextwinbackwards(sentence, win) #get list of context windows
+            cwords = context_win_backwards(sentence, win) #get list of context windows
             cindices = [[totalSize,totalSize+len(cwords)-1]] #just one per utterance for now..
             
             sentences.extend(cwords)
@@ -263,8 +302,8 @@ def corpus_to_indexed_matrix(my_array_list, win, bs, sentence=False):
         for sentence in my_array_list:
             #print totalSize
             #print sentence
-            cwords = contextwinbackwards(sentence, win) #get list of context windows
-            cindices = indicesFromLength(len(cwords),bs,totalSize)
+            cwords = context_win_backwards(sentence, win) #get list of context windows
+            cindices = indices_from_length(len(cwords), bs, totalSize)
     
             indices.extend(cindices)
             sentences.extend(cwords)
@@ -296,25 +335,24 @@ def add_word_continuation_tags(tags):
     return tags
 
 
-def convertFromEvalTagsToIncDisfluencyTags(tags,words,representation="disf1",
-                                           limit=8):
-    '''
-    Conversion from disfluency tagged corpus with xml-style tags as from STIR 
-    (https://bitbucket.org/julianhough/stir)
-    to the strictly left-to-right schemas as 
-    described by Hough and Schlangen 2015 Interspeech paper, 
+def convert_from_eval_tags_to_inc_disfluency_tags(tags, words,
+                                                  representation="disf1",
+                                                  limit=8):
+    """Conversion from disfluency tagged corpus with xml-style tags
+    as from STIR (https://bitbucket.org/julianhough/stir)
+    to the strictly left-to-right schemas as
+    described by Hough and Schlangen 2015 Interspeech paper,
     which are used by RNN architectures at runtime.
-    
+
     Keyword arguments:
     tags -- the STIR eval style disfluency tags
     words -- the words in the utterance
-    representation -- the number corresponding to the type of tagging system, 
+    representation -- the number corresponding to the type of tagging system
     1=standard, 2=rm-N values where N does not count intervening edit terms
     3=same as 2 but with a 'c' tag after edit terms have ended.
     limit -- the limit on the distance back from the repair start
-    '''
-    #maps from the repair ID to a list of [reparandumStart,repairStart]
-    repair_dict = defaultdict(list) 
+    """
+    repair_dict = defaultdict(list)
     new_tags = []
     for t in range(0,len(tags)):
         current_tag = ""
@@ -365,10 +403,9 @@ def convertFromEvalTagsToIncDisfluencyTags(tags,words,representation="disf1",
     return new_tags
 
 
-def convertFromIncDisfluencyTagsToEvalTags(tags,words,start=0,
-                                           representation="disf1_trp"):
-    '''
-    Converts the incremental style output tags of the RNN to the standard 
+def convert_from_inc_disfluency_tags_to_eval_tags(tags, words, start=0,
+                                           representation="disf1_uttseg"):
+    """Converts the incremental style output tags of the RNN to the standard 
     STIR eval output tags.
     The exact inverse of convertFromEvalTagsToIncrementalDisfluencyTags.
     
@@ -379,9 +416,11 @@ def convertFromIncDisfluencyTagsToEvalTags(tags,words,start=0,
     representation -- the number corresponding to the type of tagging system, 
     1=standard, 2=rm-N values where N does not count intervening edit terms
     3=same as 2 but with a 'c' tag after edit terms have ended.
-    '''
+    """
     repair_dict = defaultdict(list) #maps from the repair ID to a list of [reparandumStart,repairStart,repairOver]
     new_tags = []
+    # print "length tags and words", len(tags), len(words)
+    # print tags
     if start >0:
         new_tags = tags[:start] #assuming the tags up to this point are already converted
         if not "mid" in representation:
@@ -411,8 +450,10 @@ def convertFromIncDisfluencyTagsToEvalTags(tags,words,start=0,
     for t in range(start,len(tags)):
         current_tag = ""
         #print "tags[t]", tags[t]
-        if "trp" in representation:
-            TTO_tag = tags[t][tags[t].rfind("><")+1:]
+        if "uttseg" in representation:
+            m = re.search(r'<[ct]*/>', tags[t])
+            if m:
+                 TTO_tag = m.group(0)
         if "<e/>" in tags[t] or "<i/>" in tags[t]:
             current_tag = "<e/>"
         if "<rm-" in tags[t]:
@@ -451,9 +492,16 @@ def convertFromIncDisfluencyTagsToEvalTags(tags,words,start=0,
                             rpns_del.pop(0)
                             continue
                         #not delete, then repeat or sub
-                        reparandum = [words[i] for i in range(0,len(new_tags)) if '<rms id="{}"/>'.format(k) in new_tags[i] or '<rm id="{}"/>'.format(k) in new_tags[i]] 
-                        
-                        repair = [words[i] for i in range(0,len(new_tags)) if '<rps id="{}"/>'.format(k) in new_tags[i] or '<rp id="{}"/>'.format(k) in new_tags[i]]  + [words[t]]
+                        # print "len new tags,", len(new_tags)
+                        # print len(words), words
+                        reparandum = [words[i] for i in range(0,len(new_tags)) 
+                                      if '<rms id="{}"/>'.format(k) in new_tags[i] 
+                                      or '<rm id="{}"/>'.format(k) in new_tags[i]] 
+                        # print "new tags", new_tags
+                        # print "words", words
+                        repair = [words[i] for i in range(0,len(new_tags)) 
+                                  if '<rps id="{}"/>'.format(k) in new_tags[i] 
+                                  or '<rp id="{}"/>'.format(k) in new_tags[i]]  + [words[t]]
                         #print reparandum, repair
                         if reparandum == repair:
                             current_tag+='<rpnrep id="{}"/>'.format(k)
@@ -467,7 +515,7 @@ def convertFromIncDisfluencyTagsToEvalTags(tags,words,start=0,
         
         if current_tag == "":
             current_tag = "<f/>"
-        if "trp" in representation:
+        if "uttseg" in representation:
             current_tag+=TTO_tag
         new_tags.append(current_tag)
     return new_tags
@@ -478,10 +526,10 @@ if __name__ == '__main__':
     words = "i,like,uh,love,to,uh,love,alot".split(",")
     print tags
     print len(tags), len(words)
-    new_tags = convertFromEvalTagsToIncDisfluencyTags(tags, words)
+    new_tags = convert_from_eval_tags_to_inc_disfluency_tags(tags, words)
     print new_tags
-    old_tags = convertFromIncDisfluencyTagsToEvalTags(new_tags, words)
+    old_tags = convert_from_inc_disfluency_tags_to_eval_tags(new_tags, words)
     assert old_tags == tags,"\n"+str(old_tags)+"\n"+str(tags)
     x = [1,2,3,4,5,6]
-    print contextwinbackwards(x, 3)
-    print indicesFromLength(6,4,10)
+    print context_win_backwards(x, 3)
+    print indices_from_length(6, 4, 10)

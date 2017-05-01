@@ -17,7 +17,7 @@ class Elman(object):
         '''
         ne :: number of word embeddings in the vocabulary
         de :: dimension of the word embeddings
-        na :: number of acoustic features at each word step (acoustic context size in frames * number of features)
+        na :: number of acoustic or language model features at each word step (acoustic context size in frames * number of features)
         nh :: dimension of the hidden layer
         n_out :: number of classes
         cs :: word window context size 
@@ -163,11 +163,19 @@ class Elman(object):
         #self.soft_max = theano.function(inputs=[self.idxs, self.pos_idxs], outputs=p_y_given_x_sentence) #simply outputs the soft_max distribution for each word in utterance
         #TODO added acoustic
         if na == 0:
-            self.soft_max = theano.function(inputs=[self.idxs, self.pos_idxs], outputs=p_y_given_x_sentence) 
-            self.soft_max_return_hidden_layer = theano.function(inputs=[self.idxs, self.pos_idxs], outputs=p_y_given_x_sentence_hidden) 
-        else:    
-            self.soft_max = theano.function(inputs=[self.idxs, self.pos_idxs, self.acoustic], outputs=p_y_given_x_sentence) 
-            self.soft_max_return_hidden_layer = theano.function(inputs=[self.idxs, self.pos_idxs, self.acoustic], outputs=p_y_given_x_sentence_hidden) 
+            self.soft_max = theano.function(inputs=[self.idxs, self.pos_idxs],
+                                            outputs=p_y_given_x_sentence)
+            self.soft_max_return_hidden_layer = theano.function(
+                                    inputs=[self.idxs, self.pos_idxs],
+                                    outputs=p_y_given_x_sentence_hidden)
+        else:
+            self.soft_max = theano.function(inputs=[self.idxs, self.pos_idxs,
+                                                    self.acoustic],
+                                            outputs=p_y_given_x_sentence)
+            self.soft_max_return_hidden_layer = theano.function(
+                                        inputs=[self.idxs, self.pos_idxs,
+                                                self.acoustic],
+                                        outputs=p_y_given_x_sentence_hidden)
 
         #=======================================================================
         # #ORIGINAL CODE
@@ -175,16 +183,17 @@ class Elman(object):
         #                               outputs = nll,
         #                               updates = self.updates )
         #=======================================================================
-        
-        
         if na == 0:
-            self.train = theano.function( inputs  = [self.idxs, self.pos_idxs, self.y, self.lr],
-                                       outputs = self.nll,
-                                       updates = self.updates )
+            self.train = theano.function(inputs=[self.idxs, self.pos_idxs,
+                                                 self.y, self.lr],
+                                         outputs=self.nll,
+                                         updates=self.updates)
         else:
-            self.train = theano.function( inputs  = [self.idxs, self.pos_idxs, self.acoustic, self.y, self.lr],
-                                       outputs = self.nll,
-                                       updates = self.updates )
+            self.train = theano.function(inputs=[self.idxs, self.pos_idxs,
+                                                 self.acoustic, self.y,
+                                                 self.lr],
+                                         outputs=self.nll,
+                                         updates=self.updates)
         
         
         self.normalize = theano.function( inputs = [],
@@ -284,19 +293,19 @@ class Elman(object):
         tic = time.time()
         corpus = self.shared_dataset(my_seq) #loads data set as a shared variable
         labels = self.shared_dataset(my_labels)
-        if not pos == None:
+        if pos:
             pos = self.shared_dataset(pos)
         #TODO new effort to index the shared vars
         batchstart = T.iscalar('batchstart')
         batchstop = T.iscalar('batchstop')
         acoustic = T.imatrix()
-        if sentence == True:
+        if sentence:
             cost = self.sentence_nll
             updates = self.sentence_updates
         else:    
             cost = self.nll
             updates = self.updates
-        if pos == None:
+        if pos is None:
             self.train_by_index = theano.function( inputs  = [batchstart, batchstop,self.lr],
                                       outputs = cost,
                                       updates = updates, 
@@ -350,7 +359,7 @@ class Elman(object):
 
         corpus = self.shared_dataset(my_seq) #loads data set as a shared variable
         labels = self.shared_dataset(my_labels)
-        if not pos == None:
+        if pos is not None:
             pos = self.shared_dataset(pos)
         
         batchstart = T.iscalar('batchstart')
@@ -360,7 +369,7 @@ class Elman(object):
         else:    
             cost = self.nll
         
-        if pos == None:
+        if pos is None:
             self.error_by_index = theano.function( inputs  = [batchstart, batchstop],
                                           outputs = cost,
                                           givens={self.idxs : corpus[batchstart:batchstop+1],
@@ -387,7 +396,7 @@ class Elman(object):
         return theano.shared(np.asarray(mycorpus, dtype=data_type),
                                  borrow=True)
     
-    def load_weights_from_folder(self,folder):
+    def load_weights_from_folder(self, folder):
         for name, param in zip(self.names, self.params):
             param.set_value(np.load(os.path.join(folder, name + ".npy")))
             
@@ -400,15 +409,23 @@ class Elman(object):
         b = np.load(os.path.join(folder, 'b.npy'))
         h0 = np.load(os.path.join(folder, 'h0.npy'))
         return emb, Wx, Wh, W, bh, b, h0
-    
-    def load_weights(self, emb=None, Wx=None, Wh=None, W=None, bh=None, b=None, h0=None):
-        if not emb == None: self.emb.set_value(emb)
-        if not Wx == None: self.Wx.set_value(Wx)
-        if not Wh == None: self.Wh.set_value(Wh)
-        if not W == None: self.W.set_value(W)
-        if not bh == None: self.bh.set_value(bh)
-        if not b == None: self.b.set_value(b)
-        if not h0 == None: self.h0.set_value(h0)
+
+    def load_weights(self, emb=None, Wx=None, Wh=None, W=None, bh=None, b=None,
+                     h0=None):
+        if emb is not None:
+            self.emb.set_value(emb)
+        if Wx is not None:
+            self.Wx.set_value(Wx)
+        if Wh is not None:
+            self.Wh.set_value(Wh)
+        if W is not None:
+            self.W.set_value(W)
+        if bh is not None:
+            self.bh.set_value(bh)
+        if b is not None:
+            self.b.set_value(b)
+        if h0 is not None:
+            self.h0.set_value(h0)
     
     def save(self, folder):   
         for param, name in zip(self.params, self.names):
