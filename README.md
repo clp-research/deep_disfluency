@@ -49,9 +49,9 @@ test_models = True
 
 **Data**
 
-Training is done through creating dialogue matrix (one per speaker in each dialogue), whereby the format of these for each row in the matrix is:
+Training is done through creating dialogue matrices (one per speaker in each dialogue), whereby the format of these for each row in the matrix is:
 
-`word_idx, pos_idx, word_duration, lm_features...., acoustic_features...,label`
+`word_idx, pos_idx, word_duration, lm_features...., acoustic_features..., label`
 
 
 To generate the data for these experiments, for using text alone (without speech data) you need access to two publicly available versions of the Switchboard corpus transcripts.
