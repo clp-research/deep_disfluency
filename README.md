@@ -39,7 +39,7 @@ Please cite the appropriate paper if you use this code.
 
 If you are using a pretrained model as in the usage in `demo.py` you can run `experiments/EACL_2017.py` or `experiments/Interspeech_2015.py` but adjusting the parameters at the top of the file to:
 
-```
+```python
 create_disf_corpus = False
 extract_features = False
 train_models = False

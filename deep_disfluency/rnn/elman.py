@@ -228,63 +228,64 @@ class Elman(object):
         #=======================================================================
 
 
-    def fit(self, dialogues, lr, acoustic=True, load_data=True):
+    def fit(self, dialogue):
         """Fit method that takes pickled numpy matrices pathed to in the list
         files as its input.
         """
-        print "training"
-        print "acoustic", acoustic
-        print "load data", load_data
-        loss = 0.0 #will increment the loss as we go along
-        tic = time.time()
-        current_index = 0
-        for i in range(0,len(dialogues)):
-            data = dialogues[i][1]
-            if load_data: #set to False on Bender for training as these will be python np objects there is enough space?
-                data = np.load(data) #load the pickled numpy array
-                _, acoustic_data, lex_data, pos_data, indices, labels = load_data_from_array(data, self.n_acoust)
-            else:
-                _, acoustic_data, lex_data, pos_data, indices, labels = data #should be bundles up already
-            nw = acoustic_data.shape[0] # number of examples in this dialogue
-            #if acoustic:
-            #shuffle([train_lex, train_y], s['seed'])
-            #tic = time.time()
-            #mycorpus, myb_indices = corpusToIndexedMatrix(lex_data, , s['bs']) #window size across number of words deep, gets matrix too
-            #mylabels = np.asarray(list(itertools.chain(*train_y)), dtype='int32')
-            
-            
-            test = 0
-            #load in the data to shared vars, can use 'set value too'
-            #self.lexical_data = self.shared_dataset(lex_data) #loads dummy data set as a shared variable
-            #self.pos_data = self.shared_dataset(pos_data)
-            #self.acoustic_data = data = self.shared_dataset(acoustic_data,dtype=theano.config.floatX)
-            #self.labels = self.shared_dataset(labels)
-            for start,stop in indices:
-                current_index+=1
-                test+=1 #TODO for testing
-                #if test > 50: break #TODO for testing
-                if acoustic:
-                    #print 'acoustic raw', acoustic_data[start:stop+1,:].shape
-                    #ac = np.asarray(acoustic_data[start:stop+1,:],dtype='float32')
-                    #print 'acoustic', ac.shape
-                    #print 'lexical', lex_data[start:stop+1,:].shape
-                    #raw_input()
-                    x = self.train(lex_data[start:stop+1,:],pos_data[start:stop+1,:],np.asarray(acoustic_data[start:stop+1,:],dtype='float32'),labels[stop],lr)
-                else:
-                    #print lex_data[start:stop+1,:]
-                    #print pos_data[start:stop+1,:]
-                    x = self.train(lex_data[start:stop+1,:],pos_data[start:stop+1,:],labels[stop],lr)
-                    #raw_input()
-                    
-                loss+=x
-                self.normalize()
-                
-                #print '[learning] >> %2.2f%%'%((stop+1)*100./nw),'of file {} / {}'.format(i+1,len(dialogues)),\
-            print 'file {} / {}'.format(i+1,len(dialogues)),'completed in %.2f (sec) <<\r'%(time.time()-tic)
-            sys.stdout.flush()
-            print "current train_loss", loss/float(current_index)
-            #break #TODO switch back
-        return loss/float(current_index)
+        raise NotImplementedError
+#         print "training"
+#         print "acoustic", acoustic
+#         print "load data", load_data
+#         loss = 0.0 #will increment the loss as we go along
+#         tic = time.time()
+#         current_index = 0
+#         for i in range(0,len(dialogues)):
+#             data = dialogues[i][1]
+#             if load_data: #set to False on Bender for training as these will be python np objects there is enough space?
+#                 data = np.load(data) #load the pickled numpy array
+#                 _, acoustic_data, lex_data, pos_data, indices, labels = load_data_from_array(data, self.n_acoust)
+#             else:
+#                 _, acoustic_data, lex_data, pos_data, indices, labels = data #should be bundles up already
+#             nw = acoustic_data.shape[0] # number of examples in this dialogue
+#             #if acoustic:
+#             #shuffle([train_lex, train_y], s['seed'])
+#             #tic = time.time()
+#             #mycorpus, myb_indices = corpusToIndexedMatrix(lex_data, , s['bs']) #window size across number of words deep, gets matrix too
+#             #mylabels = np.asarray(list(itertools.chain(*train_y)), dtype='int32')
+#             
+#             
+#             test = 0
+#             #load in the data to shared vars, can use 'set value too'
+#             #self.lexical_data = self.shared_dataset(lex_data) #loads dummy data set as a shared variable
+#             #self.pos_data = self.shared_dataset(pos_data)
+#             #self.acoustic_data = data = self.shared_dataset(acoustic_data,dtype=theano.config.floatX)
+#             #self.labels = self.shared_dataset(labels)
+#             for start,stop in indices:
+#                 current_index+=1
+#                 test+=1 #TODO for testing
+#                 #if test > 50: break #TODO for testing
+#                 if acoustic:
+#                     #print 'acoustic raw', acoustic_data[start:stop+1,:].shape
+#                     #ac = np.asarray(acoustic_data[start:stop+1,:],dtype='float32')
+#                     #print 'acoustic', ac.shape
+#                     #print 'lexical', lex_data[start:stop+1,:].shape
+#                     #raw_input()
+#                     x = self.train(lex_data[start:stop+1,:],pos_data[start:stop+1,:],np.asarray(acoustic_data[start:stop+1,:],dtype='float32'),labels[stop],lr)
+#                 else:
+#                     #print lex_data[start:stop+1,:]
+#                     #print pos_data[start:stop+1,:]
+#                     x = self.train(lex_data[start:stop+1,:],pos_data[start:stop+1,:],labels[stop],lr)
+#                     #raw_input()
+#                     
+#                 loss+=x
+#                 self.normalize()
+#                 
+#                 #print '[learning] >> %2.2f%%'%((stop+1)*100./nw),'of file {} / {}'.format(i+1,len(dialogues)),\
+#             print 'file {} / {}'.format(i+1,len(dialogues)),'completed in %.2f (sec) <<\r'%(time.time()-tic)
+#             sys.stdout.flush()
+#             print "current train_loss", loss/float(current_index)
+#             #break #TODO switch back
+#         return loss/float(current_index)
                         
                 
     def fit_old(self, my_seq, my_indices, my_labels, lr, nw, pos=None, sentence=False):

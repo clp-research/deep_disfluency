@@ -28,8 +28,8 @@ from hmm_utils import load_data_from_corpus_file
 
 # the weights for the source language model and the timing duration
 # classifier
-source_weight = 0.3
-timing_weight = 1 # 10 gives 0.756, no great gains with higher weight
+source_weight = 0.7
+timing_weight = 1.0 # 10 gives 0.756, no great gains with higher weight
 #  NB on 30.04 this is just a weight on the <t class as timer not working
 # Given this can improve things from 0.70 -> 0.76 weighting worth looking at
 

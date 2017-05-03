@@ -4,6 +4,7 @@ import itertools
 import re
 from collections import defaultdict
 import pandas as pd
+import os
 
 
 simple_tags = """<e/><cc/>
@@ -109,13 +110,14 @@ def verify_dialogue_data_matrix(dialogue_data_matrix, word_dict=None,
     return True
 
 
-def verify_dialogue_data_matrices(dialogue_matrices,
-                                 word_dict, pos_dict, tag_dict,
-                                 n_lm, n_acoustic):
+def verify_dialogue_data_matrices_from_folder(matrices_folder_filepath,
+                                              word_dict, pos_dict, tag_dict,
+                                              n_lm, n_acoustic):
     """A boolean check that the dialogue matrices make sense for the
     particular configuration in args and tag2idx dicts.
     """
-    for name, v in dialogue_matrices:
+    for dialogue_filepath in os.listdir(matrices_folder_filepath):
+        name, v = np.load(dialogue_filepath)
         if not verify_dialogue_data_matrix(v, word_dict=word_dict,
                                            pos_dict=pos_dict,
                                            tag_dict=tag_dict,

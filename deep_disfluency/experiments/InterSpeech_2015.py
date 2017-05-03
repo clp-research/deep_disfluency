@@ -2,9 +2,8 @@
 Script to run the experiments described in:
 
 Julian Hough and David Schlangen.
-Joint, Incremental Disfluency Detection and
-Utterance Segmentation from Speech.
-EACL 2017.
+Recurrent Neural Networks for Incremental Disfluency Detection.
+INTERSPEECH 2015.
 
 """
 import sys
@@ -14,23 +13,27 @@ import subprocess
 # and put in place according to the top-level README
 # each of the parts of the below can be turned off
 # though they must be run in order so the latter stages work
-create_disf_corpus = False
-extract_features = False
-train_models = False
+create_disf_corpus = True
+extract_features = True
+train_models = True
 test_models = True
 
 asr = False  # extract and test on ASR results too
 
 range_dir = "data/disfluency_detection/swda_divisions_disfluency_detection"
 file_divisions_transcripts = [
-    range_dir + "/swbd_disf_train_1_2_ranges.text",
+    range_dir + "/swbd_disf_train_1_ranges.text",
     # range_dir + "/swbd_disf_train_audio_ranges.text",
     range_dir + "/swbd_disf_heldout_ranges.text",
     range_dir + "/swbd_disf_test_ranges.text",
 ]
 
-# the experiments in the EACL paper
-experiments = [33, 34, 35, 36, 37, 38]
+# the experiments in the Interspeech paper
+# 18 non-POS window length 2
+# 21 POS length 2 RNN
+# 23 POS length 3 RNN
+# 41 POS length 2 LSTM  # not in paper, for comparison
+experiments = [21, 41]
 
 # 1. Create the base disfluency tagged corpora in a standard format
 """
@@ -49,7 +52,6 @@ in the sister directory to the corpusLocation, else assume it is there
 -p boolean, whether to include partial words or not
 -d boolean, include dialogue act tags in the info
 """
-# 1. Create the base disfluency tagged corpora in a standard format
 if create_disf_corpus:
     print "Creating corpus..."
     write_pos_map = True
@@ -99,24 +101,19 @@ data or not
 credentials string, username:password for IBM ASR
 audio string, path to open smile for audio features, if None
 no audio extraction"""
+
 if extract_features:
     print "Extracting features..."
     tags_created = False
     tagger_trained = False
     for div in file_divisions_transcripts:
-        command = [
-                   sys.executable,
+        command = [sys.executable,
                    'feature_extraction/extract_features.py',
                    '-i', "data/disfluency_detection/switchboard",
-                   '-t', "data/disfluency_detection/vectors",
+                   '-t', "data/disfluency_detection/feature_matrices",
                    '-f', div,
-                   '-p',
                    '-a', 'data/raw_data/swbd_alignments/alignments',
-                   '-tag', "data/tag_representations",
-                   '-u',
-                   '-d',
-                   '-l',
-                   '-joint',
+                   '-tag', "data/tag_representations"
                    # '-lm', "data/lm_corpora"
                    ]
         if "train" in div and "-lm" in command:
@@ -124,8 +121,8 @@ if extract_features:
         if not tags_created:
             command.append("-new_tag")
             tags_created = True
-        if asr and "ASR" in div:
-            command.extend(["-pos", "data/crfpostagger"])
+            if asr and "ASR" in div:
+                command.extend(["-pos", "data/crfpostagger"])
             if not tagger_trained:
                 command.append("-train_pos")
             credentials = \

@@ -142,8 +142,8 @@ class SourceModel(object):
             # the same
             trigram = [None] + context
             # don't update probs or unigrams/contexts or..
-            prob +=log(0.03)
-            unigram_prob+=log(0.03)
+            prob +=log(0.01)
+            unigram_prob+=log(0.5)
         else:
             if fluency_tag == "<s/>":
                 # calculate the prob of the last word ending
@@ -332,8 +332,10 @@ class SourceModel(object):
         #print '...'
         final_unigram_log_prob = path[-1][1][2]
         unigram_diff = final_unigram_log_prob - orig_unigram_log_prob
-        wml_diff = 0 if unigram_diff == 0 else diff / - unigram_diff
-        # diff = wml_diff
+        wml_diff = 0.999 if unigram_diff == 0 else 1-(((diff / - unigram_diff))/-3.5)
+        #print wml_diff
+        #diff = log(wml_diff)
+        diff = log(0.01) if diff == 0 else diff  #too much weight for 0s
         return diff, (path[-1][1][3], path[-1][0])
 
     def get_top_n_sequences(self, n):
