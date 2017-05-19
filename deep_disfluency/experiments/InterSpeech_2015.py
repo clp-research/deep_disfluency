@@ -8,24 +8,28 @@ INTERSPEECH 2015.
 """
 import sys
 import subprocess
+import os
+from deep_disfluency.tagger.deep_tagger import DeepDisfluencyTagger
 
+this_dir = os.path.dirname(os.path.realpath(__file__))
 # The data must been downloaded
 # and put in place according to the top-level README
 # each of the parts of the below can be turned off
 # though they must be run in order so the latter stages work
-create_disf_corpus = True
+create_disf_corpus = False
 extract_features = True
 train_models = True
-test_models = True
+test_models = False
 
 asr = False  # extract and test on ASR results too
 
-range_dir = "data/disfluency_detection/swda_divisions_disfluency_detection"
+range_dir = this_dir + \
+    "/../data/disfluency_detection/swda_divisions_disfluency_detection"
 file_divisions_transcripts = [
-    range_dir + "/swbd_disf_train_1_ranges.text",
+    ("train", range_dir + "/swbd_disf_train_1_ranges.text"),
     # range_dir + "/swbd_disf_train_audio_ranges.text",
-    range_dir + "/swbd_disf_heldout_ranges.text",
-    range_dir + "/swbd_disf_test_ranges.text",
+    ("heldout", range_dir + "/swbd_disf_heldout_ranges.text"),
+    ("test", range_dir + "/swbd_disf_test_ranges.text"),
 ]
 
 # the experiments in the Interspeech paper
@@ -33,7 +37,8 @@ file_divisions_transcripts = [
 # 21 POS length 2 RNN
 # 23 POS length 3 RNN
 # 41 POS length 2 LSTM  # not in paper, for comparison
-experiments = [21, 41]
+# experiments = [18, 21, 23, 41]
+experiments = [41]  # reduced version for speed for now
 
 # 1. Create the base disfluency tagged corpora in a standard format
 """
@@ -55,15 +60,16 @@ in the sister directory to the corpusLocation, else assume it is there
 if create_disf_corpus:
     print "Creating corpus..."
     write_pos_map = True
-    for div in file_divisions_transcripts:
-        command = [sys.executable, 'corpus/disfluency_corpus_creator.py',
-                   '-i', "data/raw_data/swda",
-                   '-t', "data/disfluency_detection/switchboard",
-                   '-f', div,
+    for div, divfile in file_divisions_transcripts:
+        command = [sys.executable, this_dir +
+                   '/../corpus/disfluency_corpus_creator.py',
+                   '-i', this_dir + "/../data/raw_data/swda",
+                   '-t', this_dir + "/../data/disfluency_detection/switchboard",
+                   '-f', divfile,
                    '-a',
-                   "data/disfluency_detection/swda_disfluency_annotations",
+                   this_dir + \
+                   "/../data/disfluency_detection/swda_disfluency_annotations",
                    # '-lm', "data/lm_corpora",
-                   '-p',
                    '-d'
                    ]
         if write_pos_map:
@@ -76,100 +82,120 @@ if create_disf_corpus:
 """
 note to get the audio feature extraction to work you need to have
 optional arguments are:
-i string, path of source disfluency corpus
-t string, target path of folder feature vectors in this folder
+-i string, path of source disfluency corpus
+-m string, target path of folder feature matrices in this folder
  (rather than use text files)
-f string, path of file with the division of files to be turned into
-a corpus of vectors
-p boolean, whether to include partial words or not
+-f string, path of file with the division of files to be turned into
+-a corpus of vectors
+-p boolean, whether to include partial words or not
 a string, path to word alignment folder
-tag string, path of folder with tag representations
-new_tag bool, whether to write new tag representations or use old ones
-pos path, path to POS tagger if using one, if None use gold
-train_pos bool, whether to train pos tagger or not and put it in pos
-u bool, include utterance segmentation tags, derivable from utts
-d bool, include dialogue act tags
-l bool, include laughter tags on words- either speech laugh on word or
+-tag string, path of folder with tag representations
+-new_tag bool, whether to write new tag representations or use old ones
+-pos path, path to POS tagger if using one, if None use gold
+-train_pos bool, whether to train pos tagger or not and put it in pos
+-u bool, include utterance segmentation tags, derivable from utts
+-d bool, include dialogue act tags
+-l bool, include laughter tags on words- either speech laugh on word or
 bout
-joint bool, include big joint tag set as well as the individual ones
-lm string, Location of where to write a clean language\
+-joint bool, include big joint tag set as well as the individual ones
+-lm string, Location of where to write a clean language\
 model files out of this corpus
-xlm boolean, Whether to use a cross language model\
+-xlm boolean, Whether to use a cross language model\
 training to be used for getting lm features on the same data.
-asr boolean, whether to produce ASR results for creation of the
+-asr boolean, whether to produce ASR results for creation of the
 data or not
-credentials string, username:password for IBM ASR
-audio string, path to open smile for audio features, if None
+-credentials string, username:password for IBM ASR
+-audio string, path to open smile for audio features, if None
 no audio extraction"""
 
 if extract_features:
     print "Extracting features..."
     tags_created = False
     tagger_trained = False
-    for div in file_divisions_transcripts:
+    matrix_dir = this_dir + '/../data/disfluency_detection/feature_matrices'
+    if not os.path.exists(matrix_dir):
+        os.mkdir(matrix_dir)
+    for div, divfile in file_divisions_transcripts:
         command = [sys.executable,
-                   'feature_extraction/extract_features.py',
-                   '-i', "data/disfluency_detection/switchboard",
-                   '-t', "data/disfluency_detection/feature_matrices",
-                   '-f', div,
-                   '-a', 'data/raw_data/swbd_alignments/alignments',
-                   '-tag', "data/tag_representations"
-                   # '-lm', "data/lm_corpora"
+                   this_dir + '/../feature_extraction/extract_features.py',
+                   '-i', this_dir +
+                   '/../data/disfluency_detection/switchboard',
+                   '-m', this_dir +
+                   '/../data/disfluency_detection/feature_matrices/' + div,
+                   '-f', divfile,
+                   # '-a', this_dir +
+                   # '/../data/raw_data/swbd_alignments/alignments',
+                   '-tag', this_dir +
+                   '/../data/tag_representations'
+                   # '-lm', 'data/lm_corpora'
                    ]
-        if "train" in div and "-lm" in command:
-            command.append("-xlm")
+        if 'train' in div and '-lm' in command:
+            command.append('-xlm')
         if not tags_created:
-            command.append("-new_tag")
+            command.append('-new_tag')
             tags_created = True
-            if asr and "ASR" in div:
-                command.extend(["-pos", "data/crfpostagger"])
-            if not tagger_trained:
-                command.append("-train_pos")
-            credentials = \
-                "1841487c-30f4-4450-90bd-38d1271df295:EcqA8yIP7HBZ"
-            command.extend(['-asr', '-credentials', credentials])
+            if asr and 'ASR' in div:
+                command.extend(['-pos', 'data/crfpostagger'])
+                if not tagger_trained:
+                    command.append('-train_pos')
+                credentials = \
+                    '1841487c-30f4-4450-90bd-38d1271df295:EcqA8yIP7HBZ'
+                command.extend(['-asr', '-credentials', credentials])
         subprocess.call(command)
     print "Finished extracting features."
 
 # 3. Train the model on the transcripts (and audio data if available)
 # NB each of these experiments can take up to 24 hours
+systems_best_epoch = {}
 if train_models:
-    feature_matrices_filepath = None
-    validation_filepath = None
+    feature_matrices_filepath = this_dir + '/../data/disfluency_detection/' + \
+        'feature_matrices/train'
+    validation_filepath = this_dir + '/../data/disfluency_detection/' + \
+        'feature_matrices/heldout'
     # train until convergence
     # on the settings according to the numbered experiments in
     # experiments/config.csv file
     for exp in experiments:
-        command = [sys.executable,
-                   'experiments/train_model.py',
-                   '-exp', "0{0}".format(exp),
-                   '-train', feature_matrices_filepath,
-                   '-val', validation_filepath]
-        subprocess.call(command)
+        disf = DeepDisfluencyTagger(
+            config_file=this_dir + "/experiment_configs.csv",
+            config_number=exp
+            )
+        exp_str = "%03d" % exp
+        e = disf.train_net(
+                    train_dialogues_filepath=feature_matrices_filepath,
+                    validation_dialogues_filepath=validation_filepath,
+                    model_dir=this_dir + "/" + exp_str,
+                    tag_accuracy_file_path=this_dir +
+                    "/results/tag_accuracies/{}.text".format(exp_str))
+        systems_best_epoch[exp] = e
+else:
+    # Take our word for it that the saved models are the best ones:
+    systems_best_epoch[21] = 40
 
 # 4. Test the models on the test transcripts according to the best epochs
 # from training.
 # The output from the models is made in the folders
 # For now all use timing data
-
 if test_models:
-    allsystemsfinal = [(33, 45, 'RNN'),
-                       (34, 37, 'RNN (complex tags)'),
-                       (35, 6, 'LSTM'),
-                       (36, 15, 'LSTM (complex tags)'),
-                       (37, 6, 'LSTM (disf only)'),
-                       (38, 8, 'LSTM (TTO only)'),
-                       (39, 2, 'LSTM (complex tags)')
-                       ]
-    for exp, e, system in allsystemsfinal:
-        print exp, e, system
-        test_filepath = None
-        command = [sys.executable,
-                   'experiments/test_model.py',
-                   '-exp', "0{0}".format(exp),
-                   '-epoch', str(e),
-                   '-test', test_filepath]
-        subprocess.call(command)
+    for exp, best_epoch in sorted(systems_best_epoch.items(), lambda x: x[0]):
+        exp_str = "%03d" % exp
+        # load the model
+        disf = DeepDisfluencyTagger(
+                        config_file=this_dir + "/experiment_configs.csv",
+                        config_number=exp,
+                        saved_model_dir=this_dir +
+                        "/{0}/epoch_{1}".format(exp_str, best_epoch)
+        )
+        # simulating (or using real) ASR results
+        # for now just saving these in the same folder as the best epoch
+        # also outputs the speed
+        disf.get_incremental_results_from_file(
+                this_dir + "/../data/swbd_disf_test_partial_data_timings.csv",
+                save_to_file=this_dir +
+                        "/{0}/epoch_{1}".format(exp_str, best_epoch) +
+                        "test_output_increco.text")
+        
+        
 
 # 5. To get the numbers run the notebook:
 # experiments/analysis/EACL_2017/EACL_2017.ipynb

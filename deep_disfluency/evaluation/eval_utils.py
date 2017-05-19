@@ -9,8 +9,54 @@ from collections import defaultdict
 import pandas as pd
 
 # requires mumodo from https://github.com/dsg-bielefeld/mumodo
-from mumodo.analysis import intervalframe_overlaps
-from mumodo.plotting import plot_annotations
+# from mumodo.analysis import intervalframe_overlaps
+# from mumodo.plotting import plot_annotations
+
+
+def intervalframe_overlaps(frame1, frame2, concatdelimiter='/'):
+    """Modification from mumodo https://github.com/dsg-bielefeld/mumodo
+
+    Intersection of two interval frames
+    Return an IntervalFrame with the intersection  of two intervalframes
+    An intersection is defined as an AND function on the intervals of both
+    sources (regardless of text). HINT: Input Intervalframes should
+    be imported without empty intervals
+    Arguments:
+    frame1,frame2   -- IntervalFrames.
+    Keyword arguments:
+    concatdelimiter  --  Concatenate the labels of the overlapping intervals
+                         to create labels of the new dataframe intervals.
+                         If empty string is given, the intervals are simply
+                         labeled with 'overlap' instead.
+    """
+    overlaps = []
+    if len(frame2) < len(frame1):
+        frame1, frame2 = frame2, frame1
+    for intrv1 in frame1.index:
+        st1 = frame1['start_time'].ix[intrv1]
+        en1 = frame1['end_time'].ix[intrv1]
+        fr2 = frame2[frame2['end_time'] > st1]
+        fr2 = fr2[fr2['start_time'] < en1]
+        for intrv2 in fr2.index:
+            overlap = {}
+            if type(concatdelimiter) == str and len(concatdelimiter) > 0:
+                overlap['text'] = fr2.ix[intrv2]['text'] + concatdelimiter + \
+                                  frame1.ix[intrv1]['text']
+
+            else:
+                overlap['text'] = 'overlap'
+            st2 = fr2['start_time'].ix[intrv2]
+            en2 = fr2['end_time'].ix[intrv2]
+            if st2 > st1:
+                overlap['start_time'] = st2
+            else:
+                overlap['start_time'] = st1
+            if en2 > en1:
+                overlap['end_time'] = en1
+            else:
+                overlap['end_time'] = en2
+            overlaps.append(overlap)
+    return pd.DataFrame(overlaps).ix[:, ['start_time', 'end_time', 'text']]
 
 
 # IO methods for the different file types
@@ -708,10 +754,6 @@ def final_output_accuracy_interval_level(hyp, reference, tag_dict,
                     <= gold_intervals['end_time'][x]
             print hyp_intervals
             print overlap_duration, gold_duration, hyp_duration
-            plot_annotations({"Ref": gold_intervals,
-                              "Hyp": hyp_intervals,
-                              "overlap": overlaps},
-                             linespan=30)
             return False
         # TPs
         tag_dict[tag][0] += overlap_duration

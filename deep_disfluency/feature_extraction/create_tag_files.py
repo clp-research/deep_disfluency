@@ -11,6 +11,7 @@ from feature_utils import load_data_from_corpus_file
 from feature_utils import load_data_from_disfluency_corpus_file
 from feature_utils import get_tags
 from feature_utils import concat_all_data_all_speakers
+from feature_utils import sort_into_dialogue_speakers
 from deep_disfluency.utils.tools import convert_to_simple_label
 
 
@@ -31,8 +32,8 @@ def create_word_or_pos_representation(wordrepfilepath,
         # print len(tag_sequence)
         for a_tag in tag_sequence:
             tag_dict[a_tag] += 1
-    vocab_allowed = [key for key in tag_dict.keys() if
-                     tag_dict[key] >= min_occurrences]
+    vocab_allowed = [key for key in sorted(tag_dict.keys()) if
+                     tag_dict[key] >= min_occurrences] + ["<unk>"]
     vocab = [str(i)+","+str(vocab_allowed[i])
              for i in range(0, len(vocab_allowed))]
     tagstring = "\n".join(vocab)
@@ -103,7 +104,7 @@ def create_tag_representations(tag_rep_filepath, tags,
                 else:
                     if "<laugh" in a_tag:
                         continue
-                    print "No utteg found", a_tag
+                    print "No utt seg found", a_tag
                     continue
             if tag == "":
                 if "<laugh" not in a_tag:
@@ -178,15 +179,20 @@ if __name__ == '__main__':
     disf_tag_rep_file = args.tagFolder + "/swbd_disf1_tags.csv"
     joint_tag_rep_file = disf_tag_rep_file
 
-    # input_file_type -- timings|disf whether a timings file or plain
-    input_file_type = "timings"
-    if input_file_type == "timings":
-        dialogues = load_data_from_corpus_file(corpus_file)
-        _, words, pos, _, labels = concat_all_data_all_speakers(
-            dialogues)
+    if "timings" in args.corpusFile:
+        dialogues = load_data_from_corpus_file(corpus_file,
+                                               convert_to_dnn_format=True)
+        _, words, pos, _, labels = concat_all_data_all_speakers(dialogues)
     else:
-        _, _, words, pos, labels = load_data_from_disfluency_corpus_file(
-                                                           corpus_file)
+        IDs, timings, seq, pos_seq, targets = \
+                load_data_from_disfluency_corpus_file(
+                                                corpus_file,
+                                                convert_to_dnn_format=True)
+        dialogues = sort_into_dialogue_speakers(IDs, timings, seq, pos_seq,
+                                                targets)
+        words = [x[2] for x in dialogues]
+        pos = [x[3] for x in dialogues]
+        labels = [x[4] for x in dialogues]
 
     create_tag_representations(disf_tag_rep_file, labels,
                                representation="disf1",
@@ -202,10 +208,6 @@ if __name__ == '__main__':
                                                     "_simple_tags")
                                .replace("tags", "tag_corpus"))
 
-    args.uttSeg = True
-    args.dialogueActs = True
-    args.laughter = True
-    args.joint = True
     if args.uttSeg:
         joint_tag_rep_file = joint_tag_rep_file.replace("_tags",
                                                         "_uttseg_tags")
@@ -231,7 +233,6 @@ if __name__ == '__main__':
                                    tag_corpus_file=uttseg_disf_tag_rep_file.
                                    replace("_tags", "_simple_tags").
                                    replace("tags", "tag_corpus"))
-        quit()
 
     if args.dialogueActs:
         dact_rep_file = disf_tag_rep_file.replace("disf1_tags",
@@ -308,4 +309,4 @@ if __name__ == '__main__':
     create_word_or_pos_representation(word_rep_file, words,
                                       min_occurrences=2)
     create_word_or_pos_representation(pos_rep_file, pos,
-                                      min_occurrences=1)
+                                      min_occurrences=2)

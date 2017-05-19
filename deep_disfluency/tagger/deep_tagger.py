@@ -4,6 +4,9 @@ import cPickle
 import os
 from copy import deepcopy
 import time
+from sklearn.metrics import precision_recall_fscore_support
+from sklearn.metrics import classification_report
+import gensim
 from nltk.tag import CRFTagger
 
 from deep_disfluency.language_model.ngram_language_model \
@@ -12,12 +15,15 @@ from deep_disfluency.utils.tools \
     import convert_from_inc_disfluency_tags_to_eval_tags
 from deep_disfluency.utils.tools import \
     verify_dialogue_data_matrices_from_folder
+from deep_disfluency.utils.tools import \
+    dialogue_data_and_indices_from_matrix
 from deep_disfluency.load.load import load_tags
 from deep_disfluency.rnn.elman import Elman
 from deep_disfluency.rnn.lstm import LSTM
 from deep_disfluency.rnn.test_if_using_gpu import test_if_using_GPU
 from deep_disfluency.decoder.hmm import FirstOrderHMM
 from deep_disfluency.decoder.noisy_channel import SourceModel
+from deep_disfluency.embeddings.load_embeddings import populate_embeddings
 from utils import process_arguments, get_last_n_features
 
 
@@ -27,7 +33,7 @@ class IncrementalTagger(object):
     """
 
     def __init__(self, config_file, config_number, saved_model_folder=None):
-        print "initializing Tagger"
+        print "Initializing Tagger"
         # initialize (word, pos) tuple graph
         self.window_size = 0
         self.word_graph = []
@@ -63,6 +69,29 @@ class IncrementalTagger(object):
 class DeepDisfluencyTagger(IncrementalTagger):
     """A deep-learning driven incremental disfluency tagger
     (and optionally utterance-segmenter).
+
+    Tags each word with the following:
+    <f/> - a fluent word
+    <e/> - an edit term word, not necessarily inside a repair structure
+    <rms id="N"/> - reparandum start word for repair with ID number N
+    <rm id="N"/> - mid-reparandum word for repair N
+    <i id="N"/> - interregnum word for repair N
+    <rps id="N"/> - repair onset word for repair N
+    <rp id="N"/> - mid-repair word for repair N
+    <rpn id="N"/> - repair end word for substitution or repetition repair N
+    <rpnDel id="N"/> - repair end word for a delete repair N
+
+    If in joint utterance segmentation mode
+    according to the config file,
+    the following utterance segmentation tags are used:
+
+    <cc/> - a word which continues the current utterance and whose
+            following word will continue it
+    <ct/> - a word which continues the current utterance and is the
+            last word of it
+    <tc/> - a word which is the beginning of an utterance and whose following
+            word will continue it
+    <tt/> - a word constituting an entire utterance
     """
     def __init__(self, config_file=None,
                  config_number=None,
@@ -72,7 +101,8 @@ class DeepDisfluencyTagger(IncrementalTagger):
                  pos_language_model=None,
                  edit_language_model=None,
                  timer=None,
-                 timer_scaler=None):
+                 timer_scaler=None,
+                 use_timing_data=False):
 
         if not config_file:
             config_file = os.path.dirname(os.path.realpath(__file__)) +\
@@ -88,19 +118,23 @@ class DeepDisfluencyTagger(IncrementalTagger):
                                       config_number,
                                       use_saved=False,
                                       hmm=True)
+        #  separate manual setting
+        setattr(self.args, "use_timing_data", use_timing_data)
         print "Intializing model from args..."
         self.model = self.init_model_from_config(self.args)
 
         # load a model from a folder if specified
         if saved_model_dir:
-            print "loading saved weights from", saved_model_dir
+            print "Loading saved weights from", saved_model_dir
             self.load_model_params_from_folder(saved_model_dir,
                                                self.args.model_type)
         else:
-            print "WARNING no saved model params, needs training..."
+            print "WARNING no saved model params, needs training."
+            print "Loading original embeddings"
+            self.load_embeddings(self.args.embeddings)
 
         if pos_tagger:
-            print "loading POS tagger..."
+            print "Loading POS tagger..."
             self.pos_tagger = pos_tagger
         elif self.args.pos:
             print "No POS tagger specified,loading default CRF switchboard one"
@@ -138,7 +172,7 @@ class DeepDisfluencyTagger(IncrementalTagger):
                 # self.timing_model_scaler.scale_ = \
                 #    self.timing_model_scaler.std_.copy()
 
-        print "loading decoder..."
+        print "Loading decoder..."
         hmm_dict = deepcopy(self.tag_to_index_map)
         # add the interegnum tag
         if "disf" in self.args.tags:
@@ -151,7 +185,8 @@ class DeepDisfluencyTagger(IncrementalTagger):
         #     "/../decoder/model/{}_tags".format(self.args.tags)
         noisy_channel = None
         if 'noisy_channel' in self.args.decoder_type:
-            noisy_channel = SourceModel(self.lm, self.pos_lm)
+            noisy_channel = SourceModel(self.lm, self.pos_lm,
+                                        uttseg=self.args.do_utt_segmentation)
         self.decoder = FirstOrderHMM(
             hmm_dict,
             markov_model_file=self.args.tags,
@@ -296,10 +331,42 @@ class DeepDisfluencyTagger(IncrementalTagger):
             raise NotImplementedError('No weight loading for {0}'.format(
                 model_type))
 
+    def load_embeddings(self, embeddings_name):
+        # load pre-trained embeddings
+        embeddings_dir = os.path.dirname(os.path.realpath(__file__)) +\
+                                "/../embeddings/"
+        pretrained = gensim.models.Word2Vec.load(embeddings_dir +
+                                                 embeddings_name)
+        print "emb shape", pretrained[pretrained.index2word[0]].shape
+        # print pretrained[0].shape
+        # assign and fill in the gaps
+        emb = populate_embeddings(self.args.emb_dimension,
+                                  len(self.word_to_index_map.items()),
+                                  self.word_to_index_map,
+                                  pretrained)
+        self.model.load_weights(emb=emb)
+
+    def standardize_word_and_pos(self, word, pos=None,
+                                 proper_name_pos_tags=["NNP", "NNPS",
+                                                       "CD", "LS",
+                                                       "SYM", "FW"]):
+        word = word.lower()
+        if not pos and self.pos_tagger:
+            pos = self.pos_tagger.tag([])  # TODO
+        if pos:
+            pos = pos.upper()
+            if pos in proper_name_pos_tags and "$unc$" not in word:
+                word = "$unc$" + word
+            if self.pos_to_index_map.get(pos) is None:
+                print "unknown pos", pos
+                pos = "<unk>"
+        if self.word_to_index_map.get(word) is None:
+            print "unknown word", word
+            word = "<unk>"
+        return word, pos
+
     def tag_new_word(self, word, pos=None, timing=None,
-                     diff_only=True, rollback=0,
-                     proper_name_pos_tags=["NNP", "NNPS", "CD", "LS",
-                                           "SYM", "FW"]):
+                     diff_only=True, rollback=0):
         """Tag new incoming word and update the word and tag graphs.
 
         :param word: the word to consume/tag
@@ -312,19 +379,7 @@ class DeepDisfluencyTagger(IncrementalTagger):
         """
         self.rollback(rollback)
         # 0. Add new word to word graph
-        word = word.lower()
-        if not pos and self.pos_tagger:
-            pos = self.pos_tagger.tag([])  # TODO
-        if pos:
-            pos = pos.upper()
-            if pos in proper_name_pos_tags and "$unc$" not in word:
-                word = "$unc$" + word
-            if pos not in self.pos_to_index_map.keys():
-                # print "unknown pos", pos
-                pos = "<unk>"
-        if word not in self.word_to_index_map.keys():
-            # print "unknown word", word
-            word = "<unk>"
+        word, pos = self.standardize_word_and_pos(word, pos)
         # print "New word:", word, pos
         self.word_graph.append((self.word_to_index_map[word],
                                 self.pos_to_index_map[pos],
@@ -332,6 +387,10 @@ class DeepDisfluencyTagger(IncrementalTagger):
                                 ))
 
         # 1. load the saved internal rnn state
+        # TODO these nets aren't (necessarily) trained statefully
+        # The internal state in training self.args.bs words back
+        # are the inital ones in training, however here
+        # They are the actual state reached.
         if self.state_history == []:
             c0_state = self.initial_c0_state
             h0_state = self.initial_h0_state
@@ -391,9 +450,11 @@ class DeepDisfluencyTagger(IncrementalTagger):
                             1)), 1)
         else:
             adjustsoftmax = softmax
-        last_n_timings = get_last_n_features("timings", self.word_graph,
-                                             len(self.word_graph)-1,
-                                             n=3)
+        last_n_timings = None if ((not self.args.use_timing_data) or
+                                  not timing) \
+            else get_last_n_features("timings", self.word_graph,
+                                     len(self.word_graph)-1,
+                                     n=3)
         new_tags = self.decoder.viterbi_incremental(
             adjustsoftmax, a_range=(len(adjustsoftmax)-1,
                                     len(adjustsoftmax)),
@@ -452,12 +513,12 @@ class DeepDisfluencyTagger(IncrementalTagger):
         if not self.args.pos:  # no pos tag model
             utterance = [(w, None, t) for w, p, t in utterance]
             print "Warning: not using pos tags as not pos tag model"
-        if not self.args.timings:
+        if not self.args.use_timing_data:
             utterance = [(w, p, None) for w, p, t in utterance]
             print "Warning: not using timing durations as no timing model"
         for w, p, t in utterance:
             if self.args.pos:
-                self.tag_word(w, pos=p, timing=t)
+                self.tag_new_word(w, pos=p, timing=t)
         return self.output_tags
 
     def rollback(self, backwards):
@@ -469,43 +530,106 @@ class DeepDisfluencyTagger(IncrementalTagger):
                                                     backwards]
         self.decoder.rollback(backwards)
 
-    def reset(self):
-        super(DeepDisfluencyTagger, self).reset()
-        self.word_graph = [(self.word_to_index_map["<s>"],
-                            self.pos_to_index_map["<s>"], 0)] \
-                            * (self.window_size - 1)
-        self.state_history = []
-        self.softmax_history = []
-        self.decoder.viterbi_init()
+    def init_deep_model_internal_state(self):
         if self.model_type == "lstm":
             self.model.load_weights(c0=self.initial_c0_state,
                                     h0=self.initial_h0_state)
         elif self.model_type == "elman":
             self.model.load_weights(h0=self.initial_h0_state)
-    
-    def evaluate_fast_from_matrices(self, validation_matrices):
-        raise NotImplementedError
-        
-        
-    def train_net(self, train_dialogues_filepath,
-                  validation_dialogues_filepath,
-                  validation_filepath, model_dir):
+
+    def reset(self):
+        super(DeepDisfluencyTagger, self).reset()
+        self.word_graph = [(self.word_to_index_map["<s>"],
+                           self.pos_to_index_map["<s>"], 0)] * \
+            (self.window_size - 1)
+        self.state_history = []
+        self.softmax_history = []
+        self.decoder.viterbi_init()
+        self.init_deep_model_internal_state()
+
+    def evaluate_fast_from_matrices(self, validation_matrices, tag_file,
+                                    idx_to_label_dict):
+        output = []
+        true_y = []
+        for v in validation_matrices:
+            words_idx, pos_idx, extra, y, indices = v
+            if extra:
+                output.extend(self.model.classify_by_index(words_idx, indices,
+                                                           pos_idx,
+                                                           extra))
+            else:
+                output.extend(self.model.classify_by_index(words_idx, indices,
+                                                           pos_idx))
+            true_y.extend(y)
+        p_r_f_tags = precision_recall_fscore_support(true_y,
+                                                     output,
+                                                     average='macro')
+        tag_summary = classification_report(
+                    true_y, output,
+                    labels=[i for i in xrange(len(idx_to_label_dict.items()))],
+                    target_names=[
+                        idx_to_label_dict[i]
+                        for i in xrange(len(idx_to_label_dict.items()))
+                                  ]
+                                            )
+        print tag_summary
+        results = {"f1_rmtto": p_r_f_tags[2], "f1_rm": p_r_f_tags[2],
+                   "f1_tto1": p_r_f_tags[2], "f1_tto2": p_r_f_tags[2]}
+
+        results.update({
+                    'f1_tags': p_r_f_tags[2],
+                    'tag_summary': tag_summary
+        })
+        return results
+
+    def train_net(self,
+                  train_dialogues_filepath=None,
+                  validation_dialogues_filepath=None,
+                  model_dir=None,
+                  tag_accuracy_file_path=None):
         """Train the internal deep learning model
         from a list of dialogue matrices.
         """
-        if not verify_dialogue_data_matrices_from_folder(
-                                        train_dialogues_filepath,
-                                        self.args.word_to_index_map,
-                                        self.args.pos_to_index_map,
-                                        self.args.tags_to_index_map,
-                                        self.args.n_language_model_features,
-                                        self.args.n_acoustic_features):
-            raise Exception("Dialogue vectors in wrong format! See README.md.")
+        tag_accuracy_file = open(tag_accuracy_file_path, "a")
+        print "Verifying files..."
+        for filepath in [train_dialogues_filepath,
+                         validation_dialogues_filepath]:
+            if not verify_dialogue_data_matrices_from_folder(
+                            filepath,
+                            word_dict=self.word_to_index_map,
+                            pos_dict=self.pos_to_index_map,
+                            tag_dict=self.tag_to_index_map,
+                            n_lm=self.args.n_language_model_features,
+                            n_acoustic=self.args.n_acoustic_features):
+                raise Exception("Dialogue vectors in wrong format!\
+                See README.md.")
+        lr = self.args.lr  # even if decay, start with specific lr
+        n_extra = self.args.n_language_model_features + \
+            self.args.n_acoustic_features
         # validation matrices filepath much smaller so can store these
-        validation_matrices = [np.load(fp) for fp in os.listdir(
-                                            validation_dialogues_filepath)]
+        # and preprocess them all:
+        validation_matrices = [np.load(
+                                    validation_dialogues_filepath + "/" + fp)
+                               for fp in os.listdir(
+                                validation_dialogues_filepath)]
+        validation_matrices = [dialogue_data_and_indices_from_matrix(
+                                          d_matrix,
+                                          n_extra,
+                                          pre_seg=self.args.utts_presegmented,
+                                          window_size=self.window_size,
+                                          bs=self.args.bs,
+                                          tag_rep=self.args.tags,
+                                          tag_to_idx_map=self.tag_to_index_map,
+                                    in_utterances=self.args.utts_presegmented)
+                               for d_matrix in validation_matrices
+                               ]
+        idx_2_label_dict = {v : k for k,v in self.tag_to_index_map.items()}
+        if not os.path.exists(model_dir):
+            os.mkdir(model_dir)
         start = 1  # by default start from the first epoch
-        lr = self.args.lr
+        best_score = 0
+        best_epoch = 0
+        print "Net training started..."
         for e in range(start, self.args.n_epochs + 1):
             tic = time.time()
             epoch_folder = model_dir + "/epoch_{}".format(e)
@@ -514,45 +638,91 @@ class DeepDisfluencyTagger(IncrementalTagger):
             train_loss = 0
             # TODO IO is slow, where the memory allows do in one
             load_separately = True
+            test = False
             if load_separately:
-                for dialogue_filepath in os.listdir(train_dialogues_filepath):
-                    d_matrix = np.load(dialogue_filepath)
-                    train_loss += self.model.fit(d_matrix, lr)
-            self.initial_h0_state = self.model.h0.getvalue()
+                for i, dialogue_f in enumerate(
+                                        os.listdir(train_dialogues_filepath)):
+                    if test and i > 3:
+                        break
+                    print dialogue_f
+                    d_matrix = np.load(train_dialogues_filepath + "/" +
+                                       dialogue_f)
+                    word_idx, pos_idx, extra, y, indices = \
+                        dialogue_data_and_indices_from_matrix(
+                                          d_matrix,
+                                          n_extra,
+                                          window_size=self.window_size,
+                                          bs=self.args.bs,
+                                          pre_seg=self.args.utts_presegmented
+                                                              )
+                    # for i in range(len(indices)):
+                    #     print i, word_idx[i], pos_idx[i], \
+                    #     y[i], indices[i]
+                    train_loss += self.model.fit(word_idx,
+                                                 y,
+                                                 lr,
+                                                 indices,
+                                                 pos_idx=pos_idx,
+                                                 extra_features=extra)
+                    print '[learning] file %i >>' % (i+1),\
+                        'completed in %.2f (sec) <<\r' % (time.time() - tic)
+            # save the initial states we've learned to override the random
+            self.initial_h0_state = self.model.h0.get_value()
             if self.args.model_type == "lstm":
-                self.initial_c0_state = self.model.c0.getvalue()
-            valid_score = self.evaluate_fast_from_matrices(
-                                                validation_matrices)
+                self.initial_c0_state = self.model.c0.get_value()
+            # reset and evaluate simply
+            self.reset()
+            results = self.evaluate_fast_from_matrices(
+                                        validation_matrices,
+                                        tag_accuracy_file,
+                                        idx_to_label_dict=idx_2_label_dict
+                                        )
+            val_score = results['f1_tags']  #TODO get best score type
             print "epoch training loss", train_loss
             print '[learning] epoch %i >>' % (e),\
                 'completed in %.2f (sec) <<\r' % (time.time() - tic)
-            print "validation score", valid_score
-            
-#             
-#             if s['use_saved_model']:
-#                 print "loading stored model and weights- not actually training from " + epochfolder
-#                 self.model.load_weights_from_folder(epochfolder)
-#                 #if s['model'] == "lstm":
-#                 #    rnn.load_weights_from_folder(epochfolder)
-#                 #else:
-#                 #    emb, Wx, Wh, W, bh, b, h0  = rnn.load(epochfolder)
-#                 #    rnn.load_weights(emb, Wx, Wh, W, bh, b, h0)
-#             else:
-#                 if s['pos']:
-#                     train_loss = self.model.fit(data['train'],
-#                                                 s['clr'],
-#                                                 acoustic=args.acoustic,
-#                                                 load_data=True)
-#                 else:
-#                     pass
-#             
-#             if s['verbose']: # output final learning time
-#                 print '[learning] epoch %i >>'%(e),'completed in %.2f (sec) <<\r'%(time.time()-tic),
+            print "validation score", val_score
+            tag_accuracy_file.write(str(e) + "\n" + results['tag_summary'] +
+                                    "\n%%%%%%%%%%\n")
+            tag_accuracy_file.flush()
+            print "saving model..."
+            self.model.save(epoch_folder)  # Epoch file dump
+            # checking patience and decay, if applicable
+            # stopping criterion
+            if val_score > best_score:
+                self.model.save(model_dir)
+                best_score = val_score
+                print 'NEW BEST raw labels at epoch ', e, 'best valid',\
+                    best_score
+                best_epoch = e
+            # stopping criteria = if no improvement in 10 epochs
+            if e - best_epoch >= 10:
+                print "stopping, no improvement in 10 epochs"
+                break
+            if self.args.decay and (e - best_epoch) > 1:
+                # just a steady decay if things aren't improving for 2 epochs
+                # a hidden hyperparameter
+                decay_rate = 0.85
+                lr *= decay_rate
+                print "learning rate decayed, now ", lr
+            if lr < 1e-5:
+                print "stopping, below learning rate threshold"
+                break
+            print '[learning and testing] epoch %i >>' % (e),\
+                'completed in %.2f (sec) <<\r' % (time.time()-tic)
+
+        print 'BEST RESULT: epoch', best_epoch, 'valid score', best_score
+        tag_accuracy_file.close()
+        return best_epoch
+    
+    def get_incremental_output_from_file(self, source_file, target_file,
+                                         asr_results_file=False):
+        if asr_results_file:
+            return NotImplementedError
+        
+        
 
     def train_decoder(self, tag_file):
-        return NotImplementedError
-
-    def save_net_weights_to_dir(self, dir_path):
         return NotImplementedError
 
     def save_decoder_model(self, dir_path):

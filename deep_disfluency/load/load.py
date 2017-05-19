@@ -3,6 +3,7 @@ import logging
 import os
 import csv
 import numpy as np
+import pandas as pd
 from copy import deepcopy
 from collections import defaultdict
 
@@ -19,6 +20,12 @@ logger = logging.getLogger(__name__)
 
 DATAPREFIX = os.path.dirname(os.path.realpath(__file__)) + os.path.sep +\
  '..' + os.path.sep + 'data'
+
+
+def open_with_pandas_read_csv(filename, header=None, delim="\t"):
+    df = pd.read_csv(filename, sep=delim, header=header)
+    data = df.values
+    return data
 
 
 def load_data_from_array(data, n_acoust, cs=2, bs=9,
@@ -519,3 +526,6 @@ def download(origin):
     print 'Downloading data from %s' % origin
     name = origin.split('/')[-1]
     urllib.urlretrieve(origin, name)
+
+if __name__ == '__main__':
+    print load_word_rep("../data/tag_representations/swbd_pos_rep.csv")

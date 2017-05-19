@@ -737,22 +737,18 @@ def getSWDAspeaker(MSfilename):
     return speaker
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Feature extraction for\
-    disfluency and other tagging tasks from disfluency detection corpora and\
-    raw data.')
+    parser = argparse.ArgumentParser(description='Adds word timings\
+    to disfluency detection file.')
     parser.add_argument('-i', action='store', dest='corpusLocation', 
                         default='../data/disfluency_detection/\
                         switchboard/swbd_disf_train_1_2_partial_data.csv', 
                         help='location of the SWDA corpus file')
-    parser.add_argument('-t', action='store', dest='vectorFolder', 
-                        default='./data/disfluency_detection/vectors', 
-                        help='location of the disfluency annotation csv files')
     parser.add_argument('-a', action='store', dest='wordAlignmentFolder', 
                         default='./data/raw_data/swbd_alignments', 
                         help='location of the word alignment files')
     parser.add_argument('-l', action='store_true', dest='annotateLaughter',
                         default=False)
-    parser.add_argument('-f', action='store', dest='divisionFile',
+    parser.add_argument('-d', action='store', dest='divisionFile',
                         default='../data/disfluency_detection/\
                         swda_divisions_disfluency_detection/\
                         SWDisfTrain_ranges.text',
@@ -787,7 +783,8 @@ if __name__ == '__main__':
     IDs, mappings, utts, pos_tags, labels = \
             load_data_from_disfluency_corpus_file(disf_file)
     dialogue_speakers.extend(sort_into_dialogue_speakers(IDs,mappings,utts,
-                                                         pos_tags,labels))
+                                                         pos_tags,labels,
+                                                 convert_to_dnn_tags=True))
     
     #The main loop- has every word in both formats, needs to map from MS file
     # timings to the SWDA ones

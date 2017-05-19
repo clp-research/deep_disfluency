@@ -5279,7 +5279,7 @@
 	(46:95:14)	being	VBG	<rms id="10"/>
 	(46:95:17)	you	PRP	<i id="10"/><e/>
 	(46:95:18)	know	VBP	<i id="10"/><e/>
-	(46:95:20)	having	VBG	<rps id="10"/><rms id="11"/><rpnsub id="10"/>
+	(46:95:20)	having	VBG	<rms id="11"/><rps id="10"/><rpnsub id="10"/>
 	(46:95:22)	a	DT	<rps id="11"/><rpndel id="11"/>
 	(46:95:23)	company	NN	<f/>
 	(46:95:24)	being	VBG	<f/>
@@ -7708,8 +7708,8 @@
 	(20:39:19)	of	IN	<rms id="17"/>
 	(20:39:21)	of	IN	<rps id="17"/><rpnrep id="17"/>
 	(20:39:23)	discrimination	NN	<rms id="19"/>
-	(20:39:25)	or	CC	<rms id="20"/><rps id="19"/>
-	(20:39:27)	or	CC	<rps id="20"/><rp id="19"/><rpnrep id="20"/>
+	(20:39:25)	or	CC	<rps id="19"/><rms id="20"/>
+	(20:39:27)	or	CC	<rp id="19"/><rps id="20"/><rpnrep id="20"/>
 	(20:39:30)	you	PRP	<e/>
 	(20:39:31)	know	VBP	<e/>
 	(20:39:34)	uh	UH	<e/>
@@ -13726,7 +13726,7 @@
 	(1:0:31)	very	JJ	<rps id="20"/><rp id="17"/><rm id="22"/>
 	(1:0:32)	specific	NN	<rm id="22"/><rpnsub id="20"/><rpnsub id="17"/>
 	(1:0:36)	in	IN	<rps id="22"/>
-	(1:0:37)	this	DT	<rp id="22"/><rms id="25"/>
+	(1:0:37)	this	DT	<rms id="25"/><rp id="22"/>
 	(1:0:39)	uh	UH	<e/><i id="25"/>
 	(1:0:41)	very	JJ	<rp id="22"/><rps id="25"/><rpndel id="25"/>
 	(1:0:42)	specific	NN	<rpnsub id="22"/>
@@ -18223,12 +18223,12 @@
 	(74:122:1)	you	PRP	<f/>
 	(74:122:2)	see	VB	<f/>
 	(74:122:4)	the	DT	<rms id="4"/>
-	(74:122:6)	the	DT	<rps id="4"/><rms id="8"/><rpnrep id="4"/>
+	(74:122:6)	the	DT	<rms id="8"/><rps id="4"/><rpnrep id="4"/>
 	(74:122:8)	$unc$c	NNP	<rm id="8"/>
 	(74:122:9)	$unc$n	NNP	<rm id="8"/>
 	(74:122:10)	$unc$n	NNP	<rm id="8"/>
-	(74:122:12)	the	DT	<rms id="9"/><rps id="8"/>
-	(74:122:14)	the	DT	<rps id="9"/><rp id="8"/><rpnrep id="9"/>
+	(74:122:12)	the	DT	<rps id="8"/><rms id="9"/>
+	(74:122:14)	the	DT	<rp id="8"/><rps id="9"/><rpnrep id="9"/>
 	(74:122:16)	dog	NN	<rp id="8"/>
 	(74:122:17)	show	NN	<rpnsub id="8"/>
 	(74:122:19)	uh	UH	<e/>
@@ -18701,7 +18701,7 @@
 4033:A:41:b	(27:41:1)	yeah	UH	<f/>
 4033:B:42:sv	(28:42:2)	i	PRP	<rms id="2"/>
 	(28:42:3)	think	VBP	<rm id="2"/>
-	(28:42:6)	i	PRP	<rps id="2"/><rms id="6"/>
+	(28:42:6)	i	PRP	<rms id="6"/><rps id="2"/>
 	(28:42:7)	think	VBP	<rm id="6"/><rpnrep id="2"/>
 	(28:42:9)	the	DT	<rm id="6"/>
 	(28:42:11)	uh	UH	<i id="6"/><e/>
@@ -29293,7 +29293,7 @@
 	(24:42:8)	you	PRP	<e/>
 	(24:42:9)	know	VBP	<e/>
 	(24:42:11)	for	IN	<rms id="49"/>
-	(24:42:13)	anything	NN	<rms id="53"/><rps id="49"/><rpndel id="49"/>
+	(24:42:13)	anything	NN	<rps id="49"/><rpndel id="49"/><rms id="53"/>
 	(24:42:14)	of	IN	<rm id="53"/>
 	(24:42:17)	you	PRP	<i id="53"/><e/>
 	(24:42:18)	know	VBP	<i id="53"/><e/>
@@ -29379,8 +29379,8 @@
 	(31:52:9)	$unc$texas	NNP	<f/>
 	(33:54:2)	and	CC	<rms id="12"/>
 	(33:54:3)	so	RB	<rm id="12"/>
-	(33:54:6)	that	IN	<rps id="12"/><rpndel id="12"/><rms id="13"/>
-	(33:54:8)	then	RB	<rms id="15"/><rps id="13"/><rpndel id="13"/>
+	(33:54:6)	that	IN	<rms id="13"/><rps id="12"/><rpndel id="12"/>
+	(33:54:8)	then	RB	<rps id="13"/><rpndel id="13"/><rms id="15"/>
 	(33:54:12)	like	UH	<i id="15"/><e/>
 	(33:54:14)	local	JJ	<rps id="15"/><rpndel id="15"/>
 	(33:54:15)	news	NN	<f/>
@@ -31051,7 +31051,7 @@
 	(14:29:31)	or	CC	<f/>
 	(14:29:32)	industry	NN	<f/>
 	(14:29:33)	and	CC	<rms id="21"/>
-	(14:29:35)	or	CC	<rms id="22"/><rps id="21"/><rpndel id="21"/>
+	(14:29:35)	or	CC	<rps id="21"/><rpndel id="21"/><rms id="22"/>
 	(14:29:38)	the	DT	<rps id="22"/><rpndel id="22"/>
 	(14:29:39)	government	NN	<f/>
 	(14:29:40)	go	VBP	<f/>
@@ -32188,10 +32188,10 @@
 	(61:87:15)	of	IN	<rms id="18"/>
 	(61:87:16)	being	VBG	<rm id="18"/>
 	(61:87:17)	able	JJ	<rm id="18"/>
-	(61:87:20)	to	TO	<rms id="19"/><rm id="18"/>
+	(61:87:20)	to	TO	<rm id="18"/><rms id="19"/>
 	(61:87:23)	you	PRP	<e/><i id="18"/>
 	(61:87:24)	know	VBP	<e/><i id="18"/>
-	(61:87:26)	of	IN	<rm id="19"/><rps id="18"/><rpndel id="18"/>
+	(61:87:26)	of	IN	<rps id="18"/><rpndel id="18"/><rm id="19"/>
 	(61:87:29)	of	IN	<rps id="19"/><rpnsub id="19"/>
 	(61:87:32)	letting	VBG	<rms id="21"/>
 	(61:87:34)	allowing	VBG	<rps id="21"/><rpnsub id="21"/>
@@ -33925,11 +33925,11 @@
 4032:A:127:sd	(75:127:2)	and	CC	<f/>
 	(75:127:5)	i	PRP	<rms id="3"/>
 	(75:127:6)	would	MD	<rm id="3"/>
-	(75:127:8)	once	IN	<rps id="3"/><rms id="8"/>
-	(75:127:9)	i	PRP	<rp id="3"/><rm id="8"/>
-	(75:127:10)	start	VBP	<rp id="3"/><rm id="8"/>
-	(75:127:11)	my	PRP$	<rp id="3"/><rm id="8"/>
-	(75:127:12)	$unc$forty-	CD	<rp id="3"/><rm id="8"/>
+	(75:127:8)	once	IN	<rms id="8"/><rps id="3"/>
+	(75:127:9)	i	PRP	<rm id="8"/><rp id="3"/>
+	(75:127:10)	start	VBP	<rm id="8"/><rp id="3"/>
+	(75:127:11)	my	PRP$	<rm id="8"/><rp id="3"/>
+	(75:127:12)	$unc$forty-	CD	<rm id="8"/><rp id="3"/>
 	(75:127:13)	id	PRPMD	<rps id="8"/><rpnsub id="3"/>
 	(75:127:15)	like	VB	<rp id="8"/>
 	(75:127:16)	to	TO	<rp id="8"/>
@@ -34581,7 +34581,7 @@
 	(52:86:9)	good	JJ	<f/>
 	(52:86:10)	health	NN	<f/>
 	(52:86:11)	and	CC	<rms id="9"/>
-	(52:86:13)	that	IN	<rms id="10"/><rps id="9"/><rpndel id="9"/>
+	(52:86:13)	that	IN	<rps id="9"/><rpndel id="9"/><rms id="10"/>
 	(52:86:16)	at	IN	<rps id="10"/><rpndel id="10"/>
 	(52:86:17)	that	DT	<f/>
 	(52:86:18)	age	NN	<f/>
@@ -35954,7 +35954,7 @@
 	(73:115:33)	know	VBP	<i id="17"/><e/>
 	(73:115:36)	unless	IN	<rms id="19"/><rps id="17"/>
 	(73:115:37)	he	PRP	<rm id="19"/><rp id="17"/>
-	(73:115:39)	unless	IN	<rps id="19"/><rp id="17"/><rms id="22"/><rpnsub id="19"/>
+	(73:115:39)	unless	IN	<rms id="22"/><rps id="19"/><rp id="17"/><rpnsub id="19"/>
 	(73:115:42)	you	PRP	<i id="22"/><e/>
 	(73:115:43)	know	VBP	<i id="22"/><e/>
 	(73:115:45)	that	IN	<rps id="22"/><rpndel id="22"/><rpnsub id="17"/>
@@ -44030,7 +44030,7 @@
 	(18:31:4)	so	UH	<e/>
 	(18:31:7)	the	DT	<rms id="4"/>
 	(18:31:10)	uh	UH	<i id="4"/><e/>
-	(18:31:12)	the	DT	<rps id="4"/><rms id="7"/><rpnrep id="4"/>
+	(18:31:12)	the	DT	<rms id="7"/><rps id="4"/><rpnrep id="4"/>
 	(18:31:14)	benefits	NNS	<rm id="7"/>
 	(18:32:1)	uh	UH	<i id="7"/><e/>
 	(18:32:3)	probably	RB	<rps id="7"/><rpndel id="7"/>

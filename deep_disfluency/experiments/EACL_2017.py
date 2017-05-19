@@ -9,6 +9,7 @@ EACL 2017.
 """
 import sys
 import subprocess
+from deep_disfluency.experiments.InterSpeech_2015 import feature_matrices_filepath
 
 # The data must been downloaded
 # and put in place according to the top-level README
@@ -75,7 +76,7 @@ if create_disf_corpus:
 note to get the audio feature extraction to work you need to have
 optional arguments are:
 i string, path of source disfluency corpus
-t string, target path of folder feature vectors in this folder
+t string, target path of folder feature matrices in this folder
  (rather than use text files)
 f string, path of file with the division of files to be turned into
 a corpus of vectors
@@ -108,7 +109,8 @@ if extract_features:
                    sys.executable,
                    'feature_extraction/extract_features.py',
                    '-i', "data/disfluency_detection/switchboard",
-                   '-t', "data/disfluency_detection/vectors",
+                   '-t', "data/disfluency_detection/switchboard/" +
+                   "feature_matrices",
                    '-f', div,
                    '-p',
                    '-a', 'data/raw_data/swbd_alignments/alignments',
@@ -143,12 +145,7 @@ if train_models:
     # on the settings according to the numbered experiments in
     # experiments/config.csv file
     for exp in experiments:
-        command = [sys.executable,
-                   'experiments/train_model.py',
-                   '-exp', "0{0}".format(exp),
-                   '-train', feature_matrices_filepath,
-                   '-val', validation_filepath]
-        subprocess.call(command)
+        raise NotImplementedError
 
 # 4. Test the models on the test transcripts according to the best epochs
 # from training.
@@ -167,12 +164,6 @@ if test_models:
     for exp, e, system in allsystemsfinal:
         print exp, e, system
         test_filepath = None
-        command = [sys.executable,
-                   'experiments/test_model.py',
-                   '-exp', "0{0}".format(exp),
-                   '-epoch', str(e),
-                   '-test', test_filepath]
-        subprocess.call(command)
 
 # 5. To get the numbers run the notebook:
 # experiments/analysis/EACL_2017/EACL_2017.ipynb

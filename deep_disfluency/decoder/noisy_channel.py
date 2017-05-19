@@ -21,9 +21,10 @@ def log(prob):
 
 
 class SourceModel(object):
-    def __init__(self, lm, pos_lm=None):
+    def __init__(self, lm, pos_lm=None, uttseg=True):
         self.lm = lm  # language model
-        self.pos_lm = pos_lm
+        self.pos_lm = pos_lm  # POS tag language model
+        self.uttseg = uttseg  # whether this is for utterance segmentation too
         self.reset()
 
     def reset(self):
@@ -70,7 +71,6 @@ class SourceModel(object):
             self.word_tree = [{0: ("0", -3.0, -1.0, 1, [_S_, _S_], 0)}]
             if self.pos_lm and pos:
                 self.pos_tree = [{0: ("0", -3.0, -1.0, 1, [_S_, _S_], 0)}]
-        
         new_word_dict = {}
         new_pos_dict = {}
         counter = 0
@@ -79,8 +79,9 @@ class SourceModel(object):
             language_models.append(self.pos_lm)
         new_prefix_dicts = [new_word_dict, new_pos_dict]
         trees = [self.word_tree, self.pos_tree]
+        tags = ["<s/>", "<e/>", "<f/>"] if self.uttseg else ["<e/>", "<f/>"]
         for i in sorted(self.word_tree[-1].keys()):
-            for fluency_tag in ["<s/>", "<e/>", "<f/>"]:
+            for fluency_tag in tags:
                 context = self.word_tree[-1][i][4]
                 if context[-1] == _S_ and fluency_tag == "<f/>":
                     # only two options on first branch

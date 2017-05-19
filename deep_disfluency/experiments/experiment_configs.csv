@@ -19,7 +19,7 @@ exp_id,model_type,lr,decay,seed,window,bs,emb_dimension,n_hidden,n_epochs,train_
 18,elman,0.005,False,1000000,2,9,50,50,150,swbd_disf_train_1,False,nll,L2(0.00001),False,0,0,swbd_clean_50,True,word,swbd_word_rep,swbd_pos_rep,swbd_disf1,markov_model,True,False,trying_2gram_context_window
 19,elman,0.005,False,1000000,4,9,50,50,150,swbd_disf_train_1,False,nll,L2(0.00001),False,0,0,swbd_clean_50,True,word,swbd_word_rep,swbd_pos_rep,swbd_disf1,markov_model,True,False,trying_4gram_context_window
 20,elman,0.005,False,1000000,3,9,50,50,17,swbd_disf_train_1,False,nll,L2(0.00001),False,0,0,bnc_swbd_clean_50,True,word,swbd_word_rep,swbd_pos_rep,swbd_disf1,markov_model,True,False,trying_bnc_embeddings_stopped_as_need_to_check_others
-21,elman,0.005,False,1000000,2,9,50,50,150,swbd_disf_train_1,False,nll,L2(0.00001),True,0,0,swbd_clean_50,True,word,swbd_word_rep,swbd_pos_rep,swbd_disf1,markov_model,True,False,trying_pos_tags
+21,elman,0.005,False,1000000,2,9,50,50,150,swbd_disf_train_1,False,nll,L2(0.00001),True,0,0,swbd_clean_50,True,word,swbd_word_rep_021,swbd_pos_rep_021,swbd_disf1_021,markov_model,True,False,trying_pos_tags
 22,elman,0.005,False,1000000,1,9,50,50,150,swbd_disf_train_1,False,nll,L2(0.00001),True,0,0,swbd_clean_50,True,word,swbd_word_rep,swbd_pos_rep,swbd_disf1,markov_model,True,False,trying_pos_tags
 23,elman,0.005,False,1000000,3,9,50,50,150,swbd_disf_train_1,False,nll,L2(0.00001),True,0,0,swbd_clean_50,True,word,swbd_word_rep,swbd_pos_rep,swbd_disf1,markov_model,True,False,trying_pos_tags_on_best_context
 24,elman,0.005,False,1000000,2,9,50,50,150,swbd_disf_train_1_2,False,nll,L2(0.00001),True,0,0,swbd_clean_50,True,word,swbd_word_rep,swbd_pos_rep,swbd_disf1,markov_model,True,False,trying_bigger_updates_not_done_weights_saved
@@ -40,3 +40,4 @@ exp_id,model_type,lr,decay,seed,window,bs,emb_dimension,n_hidden,n_epochs,train_
 39,lstm,0.005,False,1000000,2,9,50,50,150,swbd_disf_train_1,True,nll,L2(0.00001),True,0,0,swbd_clean_50,True,word,swbd_word_rep_033,swbd_pos_rep_033,swbd_disf1_39,markov_model,False,False,disfluency_only_lstm
 40,lstm,0.005,False,1000000,2,9,50,50,150,swbd_disf_train_1,True,nll,L2(0.00001),True,0,0,swbd_clean_50,True,word,swbd_word_rep_033,swbd_pos_rep_033,swbd_disf1_uttseg_034,markov_model_noisy_channel,False,True,trying_noisy_channel_decoder
 41,lstm,0.005,False,1000000,2,9,50,50,150,swbd_disf_train_1,False,nll,L2(0.00001),True,0,0,swbd_clean_50,True,word,swbd_word_rep,swbd_pos_rep,swbd_disf1,markov_model,True,False,disfluency_only_lstm_on_preseg
+42,lstm,0.005,False,1000000,2,9,50,50,150,swbd_disf_train_1,False,nll,L2(0.00001),True,0,0,swbd_clean_50,True,word,swbd_word_rep,swbd_pos_rep,swbd_disf1,markov_model_noisy_channel,True,False,41_with_noisy_channel_for_non_uttseg

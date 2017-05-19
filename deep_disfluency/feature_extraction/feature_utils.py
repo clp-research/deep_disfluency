@@ -2,10 +2,10 @@ from __future__ import division
 import csv
 import numpy
 from copy import deepcopy
-import sys
-from nltk.test import wordnet_fixt
-from deep_disfluency.utils.tools import convert_from_eval_tags_to_inc_disfluency_tags
 import argparse
+from deep_disfluency.utils.tools import \
+    convert_from_eval_tags_to_inc_disfluency_tags
+
 
 def get_tags(s, open_delim='<',
              close_delim='/>'):
@@ -28,6 +28,7 @@ def get_tags(s, open_delim='<',
             s = s[end + len(close_delim):]
         else:
             return
+
 
 def get_turn_number(triple_string):
     triple = triple_string[1:].strip(")").split(":")
@@ -86,6 +87,7 @@ def interactive_dialogue(pair):
         final_data.append([x[i] for x in all_data])
     return final_data
 
+
 def concat_all_data_all_speakers(dialogues, interactive_sort=False):
     """Concatenates all the data together as lists of lists"""
     frames = []
@@ -124,11 +126,11 @@ def wer(r, h):
         Works only for iterables up to 254 elements (uint8).
         O(nm) time ans space complexity.
 
-        >>> wer("who is there".split(), "is there".split()) 
+        >>> wer("who is there".split(), "is there".split())
         1
-        >>> wer("who is there".split(), "".split()) 
+        >>> wer("who is there".split(), "".split())
         3
-        >>> wer("".split(), "who is there".split()) 
+        >>> wer("".split(), "who is there".split())
         3
     """
     # initialisation
@@ -149,15 +151,15 @@ def wer(r, h):
                 d[i][j] = d[i-1][j-1]
             else:
                 substitution = d[i-1][j-1] + 1
-                insertion    = d[i][j-1] + 1
-                deletion     = d[i-1][j] + 1
+                insertion = d[i][j-1] + 1
+                deletion = d[i-1][j] + 1
                 d[i][j] = min(substitution, insertion, deletion)
 
     return float(d[len(r)][len(h)])/float(len(r))
 
 
 def add_word_continuation_tags(tags):
-    """In place, add a continuation tag to each word:
+    """Returns list with continuation tags for each word:
     <cc/> continues current dialogue act and the next word will also continue
     <ct/> continues current dialogue act and is the last word of it
     <tc/> starts this dialogue act tag and the next word continues it
@@ -173,17 +175,20 @@ def add_word_continuation_tags(tags):
             tags[i] = tags[i] + "t/>"
         else:
             tags[i] = tags[i] + "c/>"
-    return tuple(tags)
+    return tags
 
 
-def sort_into_dialogue_speakers(IDs, mappings, utts, pos_tags=None, labels=None,
-                                add_dialogue_acts=True):
-    #for each utterance, given its ID get its conversation number 
-    #and dialogue participant in the format
-    #needed for MSALign files
-    #return a list of tuples of (dialogueID+speaker [eg. sw4004A], 
-    #dialogue_act
-    #((ID1,utterance)),(ID2,utterance))
+def sort_into_dialogue_speakers(IDs, mappings, utts, pos_tags=None,
+                                labels=None,
+                                add_uttseg=True,
+                                add_dialogue_acts=True,
+                                convert_to_dnn_tags=False):
+    # for each utterance, given its ID get its conversation number
+    # and dialogue participant in the format
+    # needed for MSALign files
+    # return a list of tuples of (dialogueID+speaker [eg. sw4004A],
+    # dialogue_act
+    # ((ID1,utterance)),(ID2,utterance))
     dialogue_speakers = []
     currentA = ""
     currentB = ""
@@ -195,20 +200,20 @@ def sort_into_dialogue_speakers(IDs, mappings, utts, pos_tags=None, labels=None,
     B_pos = []
     A_labels = []
     B_labels = []
-    
-    for ID, mapping, utt, pos, label in zip(IDs, mappings, utts, pos_tags, 
-                                            labels):
-        #if "3756" in ID:
-        #print ID, mapping, utt
+
+    for ID, _, utt, pos, tags in zip(IDs, mappings, utts, pos_tags, labels):
+        # if "3756" in ID:
+        # print ID, mapping, utt
         split = ID.split(":")
         dialogue = split[0]
-        speaker =  split[1]
+        speaker = split[1]
         uttID = split[2]
+        mapping = [uttID] * len(utt)
         dialogue_act = split[3]
-        current_speaker = "".join([dialogue,speaker])
+        current_speaker = "".join([dialogue, speaker])
         if "A" in current_speaker:
             if current_speaker != currentA and not currentA == "":
-                dialogue_speakers.append((currentA, A_mappings, A_utts, A_pos, 
+                dialogue_speakers.append((currentA, A_mappings, A_utts, A_pos,
                                           A_labels))
                 A_utts = []
                 A_mappings = []
@@ -218,14 +223,17 @@ def sort_into_dialogue_speakers(IDs, mappings, utts, pos_tags=None, labels=None,
             A_utts.extend(list(utt))
             A_mappings.extend(list(mapping))
             A_pos.extend(list(pos))
-            tags = list(add_word_continuation_tags(
-                        convert_from_eval_tags_to_inc_disfluency_tags(label, utt)))
-            tags = [this_tag + '<diact type="{0}"/>'\
-                            .format(dialogue_act) for this_tag in tags]
+            if convert_to_dnn_tags:
+                tags = convert_from_eval_tags_to_inc_disfluency_tags(tags, utt)
+            if add_uttseg:
+                tags = add_word_continuation_tags(tags)
+            if add_dialogue_acts:
+                tags = [this_tag + '<diact type="{0}"/>'
+                        .format(dialogue_act) for this_tag in tags]
             A_labels.extend(tags)
         elif "B" in current_speaker:
             if current_speaker != currentB and not currentB == "":
-                dialogue_speakers.append((currentB, B_mappings, B_utts, B_pos, 
+                dialogue_speakers.append((currentB, B_mappings, B_utts, B_pos,
                                           B_labels))
                 B_utts = []
                 B_mappings = []
@@ -235,26 +243,30 @@ def sort_into_dialogue_speakers(IDs, mappings, utts, pos_tags=None, labels=None,
             B_utts.extend(list(utt))
             B_mappings.extend(list(mapping))
             B_pos.extend(list(pos))
-            tags = list(add_word_continuation_tags(
-                        convert_from_eval_tags_to_inc_disfluency_tags(label, utt)))
-            tags = [this_tag + '<diact type="{0}"/>'\
-                            .format(dialogue_act) for this_tag in tags]
+            if convert_to_dnn_tags:
+                tags = convert_from_eval_tags_to_inc_disfluency_tags(tags, utt)
+            if add_uttseg:
+                tags = add_word_continuation_tags(tags)
+            if add_dialogue_acts:
+                tags = [this_tag + '<diact type="{0}"/>'
+                        .format(dialogue_act) for this_tag in tags]
             B_labels.extend(tags)
-    
-    if not (currentA, A_mappings, A_utts, A_pos, A_labels) in \
-                    dialogue_speakers[-2:]:
-        #if current_speaker != currentA and not currentA == "":
-        dialogue_speakers.append((currentA, A_mappings, A_utts, A_pos, 
-                                  A_labels)) #concatenate them all together
+
+    if not (currentA, A_mappings, A_utts, A_pos, A_labels) in\
+            dialogue_speakers[-2:]:
+        # if current_speaker != currentA and not currentA == "":
+        dialogue_speakers.append((currentA, A_mappings, A_utts, A_pos,
+                                  A_labels))  # concatenate them all together
     if not (currentB, B_mappings, B_utts, B_pos, B_labels) in \
-                    dialogue_speakers[-2:]:
-        #if current_speaker != currentB and not currentB == "":
-        dialogue_speakers.append((currentB, B_mappings, B_utts, B_pos, 
-                                  B_labels)) #concatenate them all together
+            dialogue_speakers[-2:]:
+        # if current_speaker != currentB and not currentB == "":
+        dialogue_speakers.append((currentB, B_mappings, B_utts, B_pos,
+                                  B_labels))  # concatenate them all together
     return dialogue_speakers
 
 
-def load_data_from_disfluency_corpus_file(f, representation="1", limit=8):
+def load_data_from_disfluency_corpus_file(f, representation="disf1", limit=8,
+                                          convert_to_dnn_format=False):
     """Loads from file into five lists of lists of strings of equal length:
     one for utterance iDs (IDs))
     one for word timings of the targets (start,stop)
@@ -290,7 +302,13 @@ def load_data_from_disfluency_corpus_file(f, representation="1", limit=8):
         if not ref == "":
             if count_seq>0: #do not reset the first time
                 #convert to the inc tags
-                #currentTags = convertFromEvalTagsToIncDisfluencyTags(currentTags, currentWords, representation, limit)
+                if convert_to_dnn_format:
+                    currentTags = \
+                        convert_from_eval_tags_to_inc_disfluency_tags(
+                            currentTags,
+                            currentWords,
+                            representation,
+                            limit)
                 #corpus+=utt_reference #write data to a file for checking
                 #convert to vectors
                 seq.append(tuple(currentWords))
@@ -316,13 +334,19 @@ def load_data_from_disfluency_corpus_file(f, representation="1", limit=8):
         current_fake_time+=1
     #flush
     if not currentWords == []:
-        #currentTags = convertFromEvalTagsToIncDisfluencyTags(currentTags, currentWords, limit=8)
+        if convert_to_dnn_format:
+            currentTags = \
+                convert_from_eval_tags_to_inc_disfluency_tags(
+                    currentTags,
+                    currentWords,
+                    representation,
+                    limit)
         seq.append(tuple(currentWords))
         pos_seq.append(tuple(currentPOS))
         targets.append(tuple(currentTags))
         IDs.append(utt_reference)
         timings.append(tuple(currentTimings))
-        
+
     assert len(seq) == len(targets) == len(pos_seq)
     print "loaded " + str(len(seq)) + " sequences"
     f.close()

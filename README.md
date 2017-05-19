@@ -1,10 +1,8 @@
 # Deep Learning Incremental Disfluency Detection
 
-Deep Learning systems for training and testing disfluency detection and related tasks on speech data.
+Code for Deep Learning based Incremental Disfluency Detection and related dialogue processing tasks.
 
 ==============================================================================================================
-
-Code for Deep Learning based Incremental Disfluency Detection.
 
 ## Set up ##
 
@@ -20,9 +18,7 @@ You then need to run the below from the command line from inside this folder:
 
 `sudo pip install -r requirements.txt`
 
-You then need to clone the Mumodo repository from https://github.com/dsg-bielefeld/mumodo.git and follow the installation instructions there.
-
-If you just want to use the tagger off-the-shelf see the usage in `demo.py`.
+If you just want to use the tagger off-the-shelf see the usage in `demo.py` or the notebook `demo.ipynb`.
 Make sure this repository is on your system path if you want to use it in python more generally.
 
 ## Running experiments ##
@@ -51,7 +47,7 @@ test_models = True
 
 Training is done through creating dialogue matrices (one per speaker in each dialogue), whereby the format of these for each row in the matrix is:
 
-`word_idx, pos_idx, word_duration, lm_features...., acoustic_features..., label`
+`word_idx, pos_idx, word_duration, acoustic_features..., lm_features...., label`
 
 
 To generate the data for these experiments, for using text alone (without speech data) you need access to two publicly available versions of the Switchboard corpus transcripts.
@@ -116,7 +112,7 @@ deep_disf/data/raw_data/
     └── swda-metadata.csv
 ```
 
-If the above is in place (even without acoustic features), the script at EACL_2017.py should work out of the box and return the results from the paper.
+If the above is in place (even without acoustic features), the script at `deep_disfluency/experiments/EACL_2017.py` should work out of the box and return the results from the paper.
 
 
 

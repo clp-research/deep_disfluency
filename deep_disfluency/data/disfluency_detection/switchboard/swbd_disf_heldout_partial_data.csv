@@ -7597,7 +7597,7 @@
 4626:A:112:sd	(55:112:0)	you	PRP	<f/>
 	(55:112:1)	buy	VBP	<f/>
 	(55:112:3)	a	DT	<rms id="3"/>
-	(55:112:5)	a	DT	<rps id="3"/><rms id="4"/><rpnrep id="3"/>
+	(55:112:5)	a	DT	<rms id="4"/><rps id="3"/><rpnrep id="3"/>
 	(55:112:7)	less	JJR	<rps id="4"/>
 	(55:112:8)	than	IN	<rp id="4"/>
 	(55:112:9)	half	PDT	<rp id="4"/>
@@ -9007,11 +9007,11 @@
 	(12:35:4)	and	CC	<f/>
 	(12:35:5)	so	RB	<f/>
 	(12:35:8)	its	PRPBES	<rms id="4"/>
-	(12:35:10)	its	PRPBES	<rps id="4"/><rms id="8"/>
-	(12:35:11)	required	JJ	<rp id="4"/><rm id="8"/>
-	(12:35:12)	for	IN	<rp id="4"/><rm id="8"/>
+	(12:35:10)	its	PRPBES	<rms id="8"/><rps id="4"/>
+	(12:35:11)	required	JJ	<rm id="8"/><rp id="4"/>
+	(12:35:12)	for	IN	<rm id="8"/><rp id="4"/>
 	(12:35:13)	certain	JJ	<rm id="8"/><rpnsub id="4"/>
-	(12:35:17)	some	DT	<rms id="10"/><rps id="8"/><rpndel id="8"/>
+	(12:35:17)	some	DT	<rps id="8"/><rpndel id="8"/><rms id="10"/>
 	(12:35:18)	form	NN	<rm id="10"/>
 	(12:35:20)	some	DT	<rps id="10"/>
 	(12:35:21)	form	NN	<rpnrep id="10"/>
@@ -13248,10 +13248,10 @@
 	(7:13:30)	just	RB	<f/>
 	(7:13:31)	drag	VBP	<f/>
 	(7:13:33)	these	DT	<rms id="20"/>
-	(7:13:35)	this	DT	<rps id="20"/><rms id="23"/><rpnsub id="20"/>
+	(7:13:35)	this	DT	<rms id="23"/><rps id="20"/><rpnsub id="20"/>
 	(7:13:37)	guy	NN	<rm id="23"/>
 	(7:13:39)	uh	UH	<i id="23"/><e/>
-	(7:13:42)	his	PRP$	<rms id="24"/><rps id="23"/><rpndel id="23"/>
+	(7:13:42)	his	PRP$	<rps id="23"/><rpndel id="23"/><rms id="24"/>
 	(7:13:44)	his	PRP$	<rps id="24"/><rpnrep id="24"/>
 	(7:13:47)	uh	UH	<e/>
 	(7:13:49)	ultimate	JJ	<f/>
@@ -19140,10 +19140,10 @@
 	(33:53:24)	understand	VB	<f/>
 	(33:53:26)	that	IN	<rms id="10"/>
 	(33:53:29)	uh	UH	<i id="10"/><e/>
-	(33:53:31)	that	IN	<rps id="10"/><rms id="13"/><rpnrep id="10"/>
+	(33:53:31)	that	IN	<rms id="13"/><rps id="10"/><rpnrep id="10"/>
 	(33:53:34)	you	PRP	<i id="13"/><e/>
 	(33:53:35)	know	VBP	<i id="13"/><e/>
-	(33:53:38)	the	DT	<rms id="15"/><rps id="13"/><rpndel id="13"/>
+	(33:53:38)	the	DT	<rps id="13"/><rpndel id="13"/><rms id="15"/>
 	(33:53:42)	uh	UH	<i id="15"/><e/>
 	(33:53:44)	who	WP	<rps id="15"/><rpndel id="15"/>
 	(33:53:45)	gets	VBZ	<f/>
@@ -19250,7 +19250,7 @@
 	(41:66:18)	taxes	NNS	<f/>
 	(41:66:19)	here	RB	<f/>
 	(41:66:21)	i	PRP	<rms id="10"/>
-	(41:66:23)	i	PRP	<rps id="10"/><rms id="11"/><rpnrep id="10"/>
+	(41:66:23)	i	PRP	<rms id="11"/><rps id="10"/><rpnrep id="10"/>
 	(41:67:1)	i-	IN	<rps id="11"/><rpndel id="11"/><rms id="12"/>
 	(41:67:3)	in	IN	<rps id="12"/><rpnsub id="12"/>
 	(41:67:5)	this	DT	<f/>
@@ -20241,7 +20241,7 @@
 	(36:61:12)	at	IN	<f/>
 	(36:61:13)	times	NNS	<f/>
 	(36:61:15)	i-	XX	<rms id="15"/>
-	(36:61:17)	at	IN	<rps id="15"/><rms id="17"/><rpnsub id="15"/>
+	(36:61:17)	at	IN	<rms id="17"/><rps id="15"/><rpnsub id="15"/>
 	(36:61:20)	well	UH	<i id="17"/><e/>
 	(36:61:22)	the	DT	<rps id="17"/><rpndel id="17"/>
 	(36:61:23)	$unc$los	NNP	<f/>
@@ -21113,7 +21113,7 @@
 	(37:63:2)	is	VBZ	<f/>
 	(37:63:3)	something	NN	<f/>
 4548:A:64:sv	(37:64:1)	but	CC	<rms id="1"/>
-	(37:64:4)	its	PRPBES	<rms id="2"/><rps id="1"/><rpndel id="1"/>
+	(37:64:4)	its	PRPBES	<rps id="1"/><rpndel id="1"/><rms id="2"/>
 	(37:64:7)	but	CC	<rps id="2"/>
 	(37:64:9)	i	PRP	<rp id="2"/>
 	(37:64:10)	think	VBP	<rp id="2"/>
@@ -23132,8 +23132,8 @@
 	(14:39:16)	about	RB	<rms id="10"/><rms id="12"/>
 	(14:39:18)	about	RB	<rps id="10"/><rm id="12"/>
 	(14:39:19)	a	DT	<rm id="12"/><rpnsub id="10"/>
-	(14:39:22)	close	RB	<rps id="12"/><rms id="13"/>
-	(14:39:23)	about	RB	<rps id="13"/><rpnsub id="12"/><rpnsub id="13"/>
+	(14:39:22)	close	RB	<rms id="13"/><rps id="12"/>
+	(14:39:23)	about	RB	<rps id="13"/><rpnsub id="13"/><rpnsub id="12"/>
 	(14:39:25)	$unc$five	CD	<f/>
 	(14:39:26)	$unc$hundred	CD	<f/>
 	(14:39:27)	dollars	NNS	<f/>
@@ -35389,8 +35389,8 @@
 	(44:93:17)	$unc$hundred	CD	<rm id="13"/>
 	(44:93:18)	number	NN	<rm id="13"/>
 	(44:93:21)	uh	UH	<i id="13"/><e/>
-	(44:93:23)	if	IN	<rps id="13"/><rms id="14"/>
-	(44:93:25)	you	PRP	<rms id="15"/><rp id="13"/><rps id="14"/><rpndel id="14"/>
+	(44:93:23)	if	IN	<rms id="14"/><rps id="13"/>
+	(44:93:25)	you	PRP	<rps id="14"/><rpndel id="14"/><rms id="15"/><rp id="13"/>
 	(44:93:27)	you	PRP	<rps id="15"/><rp id="13"/><rpnrep id="15"/>
 	(44:93:29)	can	MD	<rp id="13"/>
 	(44:93:30)	call	VB	<rp id="13"/>
@@ -35537,8 +35537,8 @@
 	(46:104:22)	things	NNS	<rp id="7"/><rm id="12"/>
 	(46:104:23)	are	VBP	<rm id="12"/><rpnsub id="7"/>
 	(46:104:26)	they	PRP	<rps id="12"/>
-	(46:104:27)	ma-	VBP	<rp id="12"/><rms id="14"/>
-	(46:104:28)	make	VBP	<rp id="12"/><rps id="14"/><rpnsub id="14"/>
+	(46:104:27)	ma-	VBP	<rms id="14"/><rp id="12"/>
+	(46:104:28)	make	VBP	<rps id="14"/><rp id="12"/><rpnsub id="14"/>
 	(46:104:29)	sure	JJ	<rp id="12"/>
 	(46:104:30)	things	NNS	<rp id="12"/>
 	(46:104:31)	are	VBP	<rpnsub id="12"/>
@@ -38314,7 +38314,7 @@
 4801:B:121:bk	(70:121:0)	okay	UH	<f/>
 4801:B:123:b	(72:123:1)	yeah	UH	<f/>
 4801:B:124:%	(72:124:1)	i	PRP	<rms id="1"/>
-	(72:124:3)	i	PRP	<rps id="1"/><rms id="2"/><rpnrep id="1"/>
+	(72:124:3)	i	PRP	<rms id="2"/><rps id="1"/><rpnrep id="1"/>
 	(72:124:5)	kind	RB	<rps id="2"/>
 	(72:124:6)	of	RB	<rp id="2"/>
 	(72:125:1)	yeah	UH	<e/>
@@ -39695,8 +39695,8 @@
 	(26:51:22)	parents	NNS	<f/>
 4886:B:52:%	(26:52:1)	so	RB	<f/>
 4886:A:53:qy^d	(27:53:0)	did	VBD	<rms id="2"/>
-	(27:53:3)	you	PRP	<rms id="8"/><rm id="2"/>
-	(27:53:5)	you	PRP	<rm id="8"/><rps id="2"/><rpndel id="2"/>
+	(27:53:3)	you	PRP	<rm id="2"/><rms id="8"/>
+	(27:53:5)	you	PRP	<rps id="2"/><rpndel id="2"/><rm id="8"/>
 	(27:53:7)	framed	VBD	<rm id="8"/>
 	(27:53:8)	it	PRP	<rm id="8"/>
 	(27:53:9)	in	IN	<rm id="8"/>
@@ -39822,8 +39822,8 @@
 	(34:68:9)	put	VBD	<rps id="4"/><rpndel id="4"/>
 	(34:68:11)	a	DT	<rms id="7"/>
 	(34:68:14)	like	UH	<i id="7"/><e/>
-	(34:68:16)	a	DT	<rps id="7"/><rms id="8"/><rpnrep id="7"/>
-	(34:68:19)	not	RB	<rms id="9"/><rps id="8"/><rpndel id="8"/>
+	(34:68:16)	a	DT	<rms id="8"/><rps id="7"/><rpnrep id="7"/>
+	(34:68:19)	not	RB	<rps id="8"/><rpndel id="8"/><rms id="9"/>
 	(34:68:21)	not	RB	<rps id="9"/><rpnrep id="9"/>
 	(34:68:23)	necessarily	RB	<f/>
 	(34:68:24)	a	DT	<f/>
@@ -42139,12 +42139,12 @@
 	(55:105:4)	think	VB	<f/>
 	(55:105:5)	although	IN	<f/>
 	(55:105:7)	i-	XX	<rms id="5"/>
-	(55:105:9)	i-	XX	<rps id="5"/><rms id="6"/><rpnrep id="5"/>
+	(55:105:9)	i-	XX	<rms id="6"/><rps id="5"/><rpnrep id="5"/>
 	(55:106:0)	i	PRP	<rps id="6"/><rpnsub id="6"/>
 	(55:106:1)	think	VBP	<f/>
 	(55:106:4)	a	DT	<rms id="9"/><rms id="10"/>
 	(55:106:6)	a	DT	<rps id="9"/><rm id="10"/><rpnrep id="9"/>
-	(55:106:10)	more	JJR	<rps id="10"/><rpndel id="10"/><rms id="15"/>
+	(55:106:10)	more	JJR	<rms id="15"/><rps id="10"/><rpndel id="10"/>
 	(55:106:11)	than	IN	<rm id="15"/>
 	(55:106:12)	$unc$one	CD	<rm id="15"/>
 	(55:106:13)	child	NN	<rm id="15"/>

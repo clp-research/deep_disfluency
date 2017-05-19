@@ -542,11 +542,11 @@ if __name__ == '__main__':
                         default="../data/lm_corpora",
                         help='Location of where to write a clean language\
                         model files out of this corpus.')
-    parser.add_argument('-v', action='store',
-                        dest='vectorFolder',
-                        default='../data/vector_outputs',
-                        help="The location of the data vectors to be\
-                        outputted.")
+    parser.add_argument(
+        '-f', action='store',
+        dest='featureFolder',
+        default='../data/disfluency_detection/feature_matrices/lm_features',
+        help="The location of the data vectors to be outputted.")
     parser.add_argument('-order', action='store', default=3, type=int)
     parser.add_argument('-xlm', action='store_true', 
                         dest='crossValLanguageModelTraining',

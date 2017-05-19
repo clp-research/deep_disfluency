@@ -1,4 +1,79 @@
 from copy import deepcopy
+import math
+import nltk
+
+
+def log(prob):
+    if prob == 0.0:
+        return - float("Inf")
+    return math.log(prob, 2)
+
+
+def tabulate_cfd(cfd, *args, **kwargs):
+    """
+    Tabulate the given samples from the conditional frequency distribution
+    or conditional probability distribution.
+
+    :param samples: The samples to plot
+    :type samples: list
+    :param conditions: The conditions to plot (default is all)
+    :type conditions: list
+    :param cumulative: A flag to specify whether the freqs are cumulative
+    (default = False)
+    :type title: bool
+    """
+
+    cumulative = False
+    # conditions = sorted([c for c in cfd.conditions()
+    #                     if "_t_" in c])   # only concerned with act-final
+    conditions = sorted([c for c in cfd.conditions()])
+    if type(cfd) == nltk.ConditionalProbDist:
+        samples = sorted(set(v for c in conditions for v in cfd[c].samples()))
+    else:
+        samples = sorted(set(v for c in conditions for v in cfd[c]))
+    if samples == []:
+        print "No conditions for tabulate!"
+        return None
+    width = max(len("%s" % s) for s in samples)
+    freqs = dict()
+    for c in conditions:
+        if cumulative:
+            freqs[c] = list(cfd[c]._cumulative_frequencies(samples))
+        else:
+            if type(cfd) == nltk.ConditionalProbDist:
+                freqs[c] = [cfd[c].prob(sample) for sample in samples]
+            else:
+                freqs[c] = [cfd[c][sample] for sample in samples]
+        width = max(width, max(len("%d" % f) for f in freqs[c]))
+
+    # condition_size = max(len("%s" % c) for c in conditions)
+    final_string = ""
+    # final_string += ' ' * condition_size
+    if type(cfd) == nltk.ConditionalProbDist:
+        width += 1
+    for s in samples:
+        # final_string += "%*s" % (width, s)
+        final_string += "\t" + str(s)
+    final_string = final_string + "\n"
+    for c in conditions:
+        # final_string += "%*s" % (condition_size, c)
+        final_string += str(c) + "\t"
+        for f in freqs[c]:
+
+            if type(cfd) == nltk.ConditionalProbDist:
+                # final_string += "%*.2f" % (width, f)
+                if f == 0:
+                    final_string += "\t"
+                else:
+                    final_string += "{:.3f}\t".format(f)
+            else:
+                # final_string += "%*d" % (width, f)
+                if f == 0:
+                    final_string += "\t"
+                else:
+                    final_string += "{}\t".format(f)
+        final_string = final_string[:-1] + "\n"
+    return final_string
 
 
 def convert_to_dot(filename):

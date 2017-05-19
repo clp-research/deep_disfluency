@@ -29,6 +29,7 @@ import re
 import csv
 import string
 import sys
+from copy import deepcopy
 from glob import iglob
 from collections import defaultdict, Counter
 
@@ -919,18 +920,22 @@ class DisfluencyCorpusCreator:
                 annotate_relaxed_repairs(
                     overallTagList[i], self.dRelaxedRepairs[relaxedRef])
 
-            # No partial words allowed, remove them
             if debug:
                 print overallWordsList[i], overallTagList[i]
-            if partial == False:
-                overallTagList[i], overallWordsList[i], overallPOSList[i],
-                overallIndexList[i] = remove_partial_words(
-                    overallTagList[i], overallWordsList[i], overallPOSList[i],
-                    overallIndexList[i])
-                if debug:
-                    print 'after partials removed\n',
-                    str(overallWordsList[i]) + "\n", str(overallTagList[i])
+            # No partial words allowed, remove them
+            if not partial:
+                removal = remove_partial_words(
+                    deepcopy(overallTagList[i]), deepcopy(overallWordsList[i]),
+                    deepcopy(overallPOSList[i]), deepcopy(overallIndexList[i]))
+                overallTagList[i] = removal[0]
+                overallWordsList[i] = removal[1]
+                overallPOSList[i] = removal[2]
+                overallIndexList[i] = removal[3]
+                # if debug:
+                print 'after partials removed\n',
+                print str(overallWordsList[i]) + "\n", str(overallTagList[i]), overallIndexList[i]
                 if len(overallTagList[i]) == 0:
+                    print "ERROR empty list"
                     continue
             # normalise tag IDs and check them
             verify_disfluency_tags(overallTagList[i], normalize_ID=True)
@@ -974,8 +979,9 @@ class DisfluencyCorpusCreator:
             easyread_format = uttref + "," + wordstring + \
                 "\nPOS," + posstring + "\n" + "REF," + indexstring
             corpus_format = detection_corpus_format(
-                uttref, overallWordsList[i], overallPOSList[i],
-                overallTagList[i], indices)
+                uttref, deepcopy(overallWordsList[i]),
+                deepcopy(overallPOSList[i]),
+                deepcopy(overallTagList[i]), deepcopy(indices))
             # check one can be derived from the other
             assert easyread_format == easy_read_format_from_detection_corpus(
                 corpus_format), easyread_format + "VS\n" + \
@@ -991,7 +997,7 @@ class DisfluencyCorpusCreator:
             wordCount += len(wordstring.split())
 
         # write corpus string to file
-        if partial == True:
+        if partial:
             filepartial = "_partial"  # suffix for file name
         else:
             filepartial = ""
@@ -1306,7 +1312,7 @@ class DisfluencyCorpusCreator:
             test_corpus = self.write_test_corpus(target_folder + os.sep + \
                                                  corpus,
                                                  ranges=self.ranges,
-                                                 partial=self.partial_words,
+                                                 partial=args.partialWords,
                                                  writeFile=save_test,
                                                  edit_terms_marked=
                                                  edit_terms_marked,
@@ -1314,7 +1320,7 @@ class DisfluencyCorpusCreator:
             if mode in ["clean", "both"]:
                 self.write_clean_corpus(
                     test_corpus, target_folder + os.sep + corpus, debug=debug)
-            if write_edit == True:
+            if write_edit:
                 self.write_edit_term_corpus(
                     test_corpus, target_folder + os.sep + corpus, debug=debug)
         if mode == "tree":
@@ -1365,7 +1371,7 @@ if __name__ == '__main__':
                         default=False,
                         help='Whether to annotate with dialogue acts.')
     parser.add_argument('-p', action='store_true', dest='partialWords',
-                        default=True,
+                        default=False,
                         help='Whether to include partial words or not.')
     args = parser.parse_args()
 

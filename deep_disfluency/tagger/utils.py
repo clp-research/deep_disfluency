@@ -30,6 +30,10 @@ config_header = [
     ]
 
 
+class SimpleArgs(object):
+    pass
+
+
 def process_arguments(config=None,
                       exp_id=None,
                       heldout_file="../data/disfluency_detection/" +
@@ -45,32 +49,44 @@ def process_arguments(config=None,
     config -- the config file location, default None
     exp_id -- the experiment ID name, default None
     """
-    parser = argparse.ArgumentParser(description='This script trains a RNN for\
-        disfluency detection and saves the best models and results to disk.')
-    parser.add_argument('-c', '--config', type=str,
-                        help='The location of the config file.',
-                        default=config)
-    parser.add_argument('-e', '--exp_id', type=str,
-                        help='The experiment number from which to load \
-                            arguments from the config file.',
-                        default=exp_id)
-    parser.add_argument('-v', '--heldout_file', type=str,
-                        help='The path to the validation file.',
-                        default=heldout_file)
-    parser.add_argument('-t', '--test_file', type=str,
-                        help='The path to the test file.',
-                        default=test_file)
-    parser.add_argument('-m', '--use_saved_model', type=int,
-                        help='Epoch number of the pre-trained model to load.',
-                        default=use_saved)
-    parser.add_argument('-hmm', '--decoder_file', type=str,
-                        help='Path to the hmm file.',
-                        default=hmm)
-    parser.add_argument('-verb', '--verbose', type=bool,
-                        help='Whether to output training progress.',
-                        default=verbose)
-    args = parser.parse_args()
-    # print header
+
+# # the legacy argparse version with explanations:
+#     parser = argparse.ArgumentParser(description='This script trains a RNN\
+#         for disfluency detection and saves the best models and results to
+#          disk.')
+#     parser.add_argument('-c', '--config', type=str,
+#                         help='The location of the config file.',
+#                         default=config)
+#     parser.add_argument('-e', '--exp_id', type=str,
+#                         help='The experiment number from which to load \
+#                             arguments from the config file.',
+#                         default=exp_id)
+#     parser.add_argument('-v', '--heldout_file', type=str,
+#                         help='The path to the validation file.',
+#                         default=heldout_file)
+#     parser.add_argument('-t', '--test_file', type=str,
+#                         help='The path to the test file.',
+#                         default=test_file)
+#     parser.add_argument('-m', '--use_saved_model', type=int,
+#                       help='Epoch number of the pre-trained model to load.',
+#                         default=use_saved)
+#     parser.add_argument('-hmm', '--decoder_file', type=str,
+#                         help='Path to the hmm file.',
+#                         default=hmm)
+#     parser.add_argument('-verb', '--verbose', type=bool,
+#                         help='Whether to output training progress.',
+#                         default=verbose)
+#     args = parser.parse_args()
+    # newer simple version:
+    args = SimpleArgs()
+    setattr(args, "config", config)
+    setattr(args, "exp_id", exp_id)
+    setattr(args, "heldout_file", test_file)
+    setattr(args, "test_file", test_file)
+    setattr(args, "use_saved_model", use_saved)
+    setattr(args, "decoder_file", hmm)
+    setattr(args, "verbose", verbose)
+
     if args.config:
         for line in open(args.config):
             # print line

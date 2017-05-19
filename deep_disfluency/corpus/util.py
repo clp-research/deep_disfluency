@@ -58,6 +58,11 @@ def detection_corpus_format(uttRef, words, pos, tags, indices):
             tags[i] = "<f/>"
     final_string = "\t".join(
         [uttRef, indices.pop(0), words.pop(0), pos.pop(0), tags.pop(0)]) + "\n"
+    print len(indices), len(words), len(pos), len(tags)
+    print indices
+    print words
+    print pos
+    print tags
     for i in range(0, len(tags)):
         final_string += "\t".join(["", indices[i],
                                    words[i], pos[i], tags[i]]) + "\n"
@@ -731,7 +736,7 @@ def remove_partial_words(tagList, wordsList, POSList, refList):
     for problem in repairsToRemove:
         repairID = problem[problem.find("=") + 2:-3]
         repairIDs.append(repairID)
-    remove_repairs(tagList, repairIDs)
+    tagList = remove_repairs(tagList, repairIDs)
     i = len(tagList) - 1
     while i >= 0:
         if i in wordsToRemove:
