@@ -17,9 +17,9 @@ this_dir = os.path.dirname(os.path.realpath(__file__))
 # each of the parts of the below can be turned off
 # though they must be run in order so the latter stages work
 create_disf_corpus = False
-extract_features = True
-train_models = True
-test_models = False
+extract_features = False
+train_models = False
+test_models = True
 
 asr = False  # extract and test on ASR results too
 
@@ -38,7 +38,7 @@ file_divisions_transcripts = [
 # 23 POS length 3 RNN
 # 41 POS length 2 LSTM  # not in paper, for comparison
 # experiments = [18, 21, 23, 41]
-experiments = [41]  # reduced version for speed for now
+experiments = [21]  # reduced version for speed for now
 
 # 1. Create the base disfluency tagged corpora in a standard format
 """
