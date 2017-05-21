@@ -367,9 +367,9 @@ class FirstOrderHMM():
                         tag_prob = 1.0
                     test = converted_tag.lower()
                     if "rps" in test:  # boost for start tags
-                        tag_prob = tag_prob * 2  # boost for rps
+                        tag_prob = tag_prob * 4  # boost for rps
                     elif "rpe" in test:
-                        tag_prob = tag_prob * 1  # boost for end tags
+                        tag_prob = tag_prob * 6  # boost for end tags
                     if timing_data and self.timing_model:
                         found = False
                         for k, v in self.simple_trp_idx2label.items():

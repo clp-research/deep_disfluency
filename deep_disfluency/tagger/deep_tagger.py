@@ -8,6 +8,7 @@ from sklearn.metrics import precision_recall_fscore_support
 from sklearn.metrics import classification_report
 import gensim
 from nltk.tag import CRFTagger
+from numpy import source
 
 from deep_disfluency.language_model.ngram_language_model \
     import KneserNeySmoothingModel
@@ -24,7 +25,11 @@ from deep_disfluency.rnn.test_if_using_gpu import test_if_using_GPU
 from deep_disfluency.decoder.hmm import FirstOrderHMM
 from deep_disfluency.decoder.noisy_channel import SourceModel
 from deep_disfluency.embeddings.load_embeddings import populate_embeddings
+from deep_disfluency.feature_extraction.feature_utils import \
+    load_data_from_corpus_file, load_data_from_disfluency_corpus_file
 from utils import process_arguments, get_last_n_features
+from deep_disfluency.feature_extraction.feature_utils import \
+    sort_into_dialogue_speakers
 
 
 class IncrementalTagger(object):
@@ -113,7 +118,7 @@ class DeepDisfluencyTagger(IncrementalTagger):
         super(DeepDisfluencyTagger, self).__init__(config_file,
                                                    config_number,
                                                    saved_model_dir)
-        print "Processing args from config file..."
+        print "Processing args from config number {} ...".format(config_number)
         self.args = process_arguments(config_file,
                                       config_number,
                                       use_saved=False,
@@ -263,6 +268,8 @@ class DeepDisfluencyTagger(IncrementalTagger):
                                         heldout_corpus=heldout_edit_lm_corpus,
                                         order=2,
                                         discount=0.7)
+            # TODO an object for getting the lm features incrementally
+            # in the language model
 
     def init_model_from_config(self, args):
         # for feat, val in args._get_kwargs():
@@ -365,7 +372,7 @@ class DeepDisfluencyTagger(IncrementalTagger):
             word = "<unk>"
         return word, pos
 
-    def tag_new_word(self, word, pos=None, timing=None,
+    def tag_new_word(self, word, pos=None, timing=None, extra=None,
                      diff_only=True, rollback=0):
         """Tag new incoming word and update the word and tag graphs.
 
@@ -714,13 +721,57 @@ class DeepDisfluencyTagger(IncrementalTagger):
         print 'BEST RESULT: epoch', best_epoch, 'valid score', best_score
         tag_accuracy_file.close()
         return best_epoch
-    
+
     def get_incremental_output_from_file(self, source_file, target_file,
                                          asr_results_file=False):
+        if not self.args.do_utt_segmentation:
+            print "not doing utt seg, using pre-segmented file"
         if asr_results_file:
             return NotImplementedError
-        
-        
+        if "timings" in source_file:
+            dialogues = load_data_from_corpus_file(source_file)
+        else:
+            print "no timings"
+            IDs, timings, seq, pos_seq, targets = \
+                load_data_from_disfluency_corpus_file(
+                    source_file, convert_to_dnn_format=True)
+            raw_dialogues = sort_into_dialogue_speakers(IDs,
+                                                        timings,
+                                                        seq,
+                                                        pos_seq,
+                                                        targets,
+                add_uttseg=self.args.do_utt_segmentation,
+                add_dialogue_acts="dact" in self.args.tags)
+            dialogues = []
+            for conv_no, indices, lex_data, pos_data, labels in raw_dialogues:
+                frames = indices
+                dialogues.append((conv_no, (frames, lex_data, pos_data,
+                                            indices,
+                                            labels)))
+        for dialogue_name, dialogue_data in dialogues:
+            self.reset()  # reset at the beginning of each dialogue
+            target_file.write("\nFile: " + str(dialogue_name) + "\n")
+            frames, lex_data, pos_data, indices, labels = dialogue_data
+            # iterate through the utterances
+            utt_idx = -1
+            current_time = 0
+            for i in range(0, len(frames)):
+                if (not self.args.do_utt_segmentation) \
+                        and utt_idx != frames[i]:
+                    self.reset()  # reset after each utt if non pre-seg
+                utt_idx = frames[i]
+                timing = None
+                if "timings" in source_file and self.args.use_timing_data:
+                    timing = lex_data[i] - current_time
+                word = lex_data[i][0]
+                pos = lex_data[i][1]
+                diff = self.tag_new_word(word, pos, timing, diff_only=True,
+                                         rollback=0)
+                current_time = lex_data[i][2]
+                target_file.write(str(current_time) + "\n")
+                for tag in diff:
+                    target_file.write(tag + "\n")
+
 
     def train_decoder(self, tag_file):
         return NotImplementedError

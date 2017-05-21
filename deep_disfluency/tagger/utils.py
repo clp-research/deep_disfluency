@@ -131,3 +131,19 @@ def get_last_n_features(feature, current_words, idx, n=3):
     # print start, idx + 1
     return [triple[position] for triple in
             current_words[start: idx + 1]]
+
+def simulate_increco_data(frame, acoustic_data, lexical_data, pos_data):
+    """For transcripts + timings, create tuples of single hypotheses
+    to simulate perfect ASR at the end of each word.
+    """
+    new_lexical_data = []
+    new_pos_data = []
+    new_acoustic_data = []
+    current_time = 0
+    for my_frame, acoust, word, pos in zip(frame, acoustic_data,
+                                           lexical_data, pos_data):
+        new_lexical_data.append([(word, current_time/100, my_frame/100)])
+        current_time = my_frame
+        new_pos_data.append([pos])
+        new_acoustic_data.append([acoust])
+    return new_acoustic_data, new_lexical_data, new_pos_data
