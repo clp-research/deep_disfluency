@@ -1,8 +1,6 @@
-# Deep Learning Incremental Disfluency Detection
+# Deep Learning Driven Incremental Disfluency Detection
 
-Code for Deep Learning based Incremental Disfluency Detection and related dialogue processing tasks.
-
-==============================================================================================================
+Code for Deep Learning driven incremental disfluency detection and related dialogue processing tasks.
 
 ## Set up ##
 

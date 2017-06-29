@@ -163,7 +163,8 @@ class FirstOrderHMM():
                 if any(["<i" in t for t in self.observation_tags]):
                     if "<rm-" in labels_data[i]:
                         b = len(tags)-1
-                        while "e" in tags[b][1] and b > 0:
+                        while ("e" in tags[b][1] and (not tags[b][1]=="se")\
+                                and b > 0):
                             if "i" not in tags[b][1]:
                                 new_1 = tags[b][1].replace('eR', 'i').\
                                     replace('e', 'i')
@@ -367,9 +368,9 @@ class FirstOrderHMM():
                         tag_prob = 1.0
                     test = converted_tag.lower()
                     if "rps" in test:  # boost for start tags
-                        tag_prob = tag_prob * 4  # boost for rps
+                        tag_prob = tag_prob * 1  # boost for rps
                     elif "rpe" in test:
-                        tag_prob = tag_prob * 6  # boost for end tags
+                        tag_prob = tag_prob * 4  # boost for end tags
                     if timing_data and self.timing_model:
                         found = False
                         for k, v in self.simple_trp_idx2label.items():

@@ -8,7 +8,6 @@ from sklearn.metrics import precision_recall_fscore_support
 from sklearn.metrics import classification_report
 import gensim
 from nltk.tag import CRFTagger
-from numpy import source
 
 from deep_disfluency.language_model.ngram_language_model \
     import KneserNeySmoothingModel
@@ -365,10 +364,10 @@ class DeepDisfluencyTagger(IncrementalTagger):
             if pos in proper_name_pos_tags and "$unc$" not in word:
                 word = "$unc$" + word
             if self.pos_to_index_map.get(pos) is None:
-                print "unknown pos", pos
+                # print "unknown pos", pos
                 pos = "<unk>"
         if self.word_to_index_map.get(word) is None:
-            print "unknown word", word
+            # print "unknown word", word
             word = "<unk>"
         return word, pos
 
@@ -385,14 +384,22 @@ class DeepDisfluencyTagger(IncrementalTagger):
         in the case of changed word hypotheses from an ASR
         """
         self.rollback(rollback)
+        if pos is None and self.args.pos:
+            # if no pos tag provided but there is a pos-tagger, tag word
+            test_words = [unicode(x) for x in
+                          get_last_n_features(
+                                              "words",
+                                              self.word_graph,
+                                              len(self.word_graph)-1,
+                                              n=4
+                                              )
+                          ] + [unicode(word.lower())]
+            pos = self.pos_tagger.tag(test_words)[-1][1]
+            # print "tagging", word, "as", pos
         # 0. Add new word to word graph
         word, pos = self.standardize_word_and_pos(word, pos)
         # print "New word:", word, pos
-        self.word_graph.append((self.word_to_index_map[word],
-                                self.pos_to_index_map[pos],
-                                timing
-                                ))
-
+        self.word_graph.append((word, pos, timing))
         # 1. load the saved internal rnn state
         # TODO these nets aren't (necessarily) trained statefully
         # The internal state in training self.args.bs words back
@@ -417,13 +424,17 @@ class DeepDisfluencyTagger(IncrementalTagger):
             raise NotImplementedError("no history loading for\
                              {0} model".format(self.model_type))
 
-        # 2. do the softmax output
-        word_window = get_last_n_features("words", self.word_graph,
+        # 2. do the softmax output with converted inputs
+        word_window = [self.word_to_index_map[x] for x in
+                       get_last_n_features("words", self.word_graph,
+                                           len(self.word_graph)-1,
+                                           n=self.window_size)
+                       ]
+        pos_window = [self.pos_to_index_map[x] for x in
+                      get_last_n_features("POS", self.word_graph,
                                           len(self.word_graph)-1,
                                           n=self.window_size)
-        pos_window = get_last_n_features("POS", self.word_graph,
-                                         len(self.word_graph)-1,
-                                         n=self.window_size)
+                      ]
         # print "word_window, pos_window", word_window, pos_window
         if self.model_type == "lstm":
             h_t, c_t, s_t = self.model.\
@@ -546,8 +557,7 @@ class DeepDisfluencyTagger(IncrementalTagger):
 
     def reset(self):
         super(DeepDisfluencyTagger, self).reset()
-        self.word_graph = [(self.word_to_index_map["<s>"],
-                           self.pos_to_index_map["<s>"], 0)] * \
+        self.word_graph = [("<s>", "<s>", 0)] * \
             (self.window_size - 1)
         self.state_history = []
         self.softmax_history = []
