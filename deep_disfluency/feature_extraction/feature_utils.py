@@ -5,6 +5,48 @@ from copy import deepcopy
 import argparse
 from deep_disfluency.utils.tools import \
     convert_from_eval_tags_to_inc_disfluency_tags
+from theano.sandbox.cuda.dnn import local_dnn_convgi_inplace
+
+
+def wer(r, h, macro=False):
+    """
+        Calculation of WER with Levenshtein distance.
+        O(nm) time ans space complexity.
+
+        >>> wer("who is there".split(), "is there".split())
+        33.3333333
+        >>> wer("who is there".split(), "".split())
+        100.0
+        >>> wer("".split(), "who is there".split())
+        100.0
+
+        macro :: Return the overall cost, else the WER
+    """
+    # initialisation
+    d = numpy.zeros((len(r)+1)*(len(h)+1), dtype=numpy.int)
+    d = d.reshape((len(r)+1, len(h)+1))
+
+    for i in range(len(r)+1):
+        for j in range(len(h)+1):
+            if i == 0:
+                d[0][j] = j
+            elif j == 0:
+                d[i][0] = i
+
+    # computation
+    for i in range(1, len(r)+1):
+        for j in range(1, len(h)+1):
+            if r[i-1] == h[j-1]:
+                d[i][j] = d[i-1][j-1]
+            else:
+                substitution = d[i-1][j-1] + 1
+                insertion = d[i][j-1] + 1
+                deletion = d[i-1][j] + 1
+                d[i][j] = min(substitution, insertion, deletion)
+    if macro:
+        return d[len(r)][len(h)]
+    wer = 1 if len(r) == 0 and 0 < len(h) else d[len(r)][len(h)]/float(len(r))
+    return 100 * float(wer)
 
 
 def get_tags(s, open_delim='<',
@@ -88,7 +130,11 @@ def interactive_dialogue(pair):
     return final_data
 
 
-def concat_all_data_all_speakers(dialogues, interactive_sort=False):
+def concat_all_data_all_speakers(dialogues, interactive_sort=False,
+                                 divide_into_utts=False,
+                                 convert_to_dnn_format = False,
+                                representation="disf_1",
+                                limit=8):
     """Concatenates all the data together as lists of lists"""
     frames = []
     words = []
@@ -109,53 +155,55 @@ def concat_all_data_all_speakers(dialogues, interactive_sort=False):
             else:
                 continue
         frames_data, lex_data, pos_data, indices_data, labels_data = data
-        frames.append(deepcopy(frames_data))
-        words.append(deepcopy([x[0][1] for x in lex_data]))
-        pos.append(deepcopy([x[1] for x in pos_data]))
-        indices.append(deepcopy(indices_data))
-        labels.append(deepcopy(labels_data))
+        lex_data = [x[0][1] for x in lex_data]
+        pos_data = [x[1] for x in pos_data]
+        if divide_into_utts:
+            frames.append(deepcopy(frames_data))
+            current_lex = []
+            current_pos = []
+            current_idx = []
+            current_label = []
+            started = False
+            last_idx = ""
+            for i, w_i, p_i, i_i, l_i in zip(range(0,len(lex_data)),
+                                                   lex_data,
+                                                   pos_data,
+                                                   indices_data,
+                                                   labels_data):
+                print w_i, p_i, i_i, l_i
+                if (started and i_i.split(":")[0] != last_idx) or \
+                        i == len(lex_data) - 1:
+                    if convert_to_dnn_format:
+                        current_label = \
+                            convert_from_eval_tags_to_inc_disfluency_tags(
+                                current_label,
+                                current_lex,
+                                representation,
+                                limit)
+                    words.append(deepcopy(current_lex))
+                    pos.append(deepcopy(current_pos))
+                    indices.append(deepcopy(current_idx))
+                    labels.append(deepcopy(current_label))
+                    current_lex = []
+                    current_pos = []
+                    current_idx = []
+                    current_label = []
+                current_lex.append(w_i)
+                current_pos.append(p_i)
+                current_idx.append(i_i)
+                last_idx = i_i.split(":")[0]
+                current_label.append(l_i)
+                started = True
+        else:
+            frames.append(deepcopy(frames_data))
+            words.append(deepcopy(lex_data))
+            pos.append(deepcopy(pos_data))
+            indices.append(deepcopy(indices_data))
+            labels.append(deepcopy(labels_data))
 
     print "concatenated all data"
     # print [len(x) for x in [frames, words, pos, indices, labels]]
     return frames, words, pos, indices, labels
-
-
-def wer(r, h):
-    """
-        Calculation of WER with Levenshtein distance.
-        Works only for iterables up to 254 elements (uint8).
-        O(nm) time ans space complexity.
-
-        >>> wer("who is there".split(), "is there".split())
-        1
-        >>> wer("who is there".split(), "".split())
-        3
-        >>> wer("".split(), "who is there".split())
-        3
-    """
-    # initialisation
-    d = numpy.zeros((len(r)+1)*(len(h)+1), dtype=numpy.uint8)
-    d = d.reshape((len(r)+1, len(h)+1))
-
-    for i in range(len(r)+1):
-        for j in range(len(h)+1):
-            if i == 0:
-                d[0][j] = j
-            elif j == 0:
-                d[i][0] = i
-
-    # computation
-    for i in range(1, len(r)+1):
-        for j in range(1, len(h)+1):
-            if r[i-1] == h[j-1]:
-                d[i][j] = d[i-1][j-1]
-            else:
-                substitution = d[i-1][j-1] + 1
-                insertion = d[i][j-1] + 1
-                deletion = d[i-1][j] + 1
-                d[i][j] = min(substitution, insertion, deletion)
-
-    return float(d[len(r)][len(h)])/float(len(r))
 
 
 def add_word_continuation_tags(tags):
@@ -201,14 +249,14 @@ def sort_into_dialogue_speakers(IDs, mappings, utts, pos_tags=None,
     A_labels = []
     B_labels = []
 
-    for ID, _, utt, pos, tags in zip(IDs, mappings, utts, pos_tags, labels):
+    for ID, map, utt, pos, tags in zip(IDs, mappings, utts, pos_tags, labels):
         # if "3756" in ID:
         # print ID, mapping, utt
         split = ID.split(":")
         dialogue = split[0]
         speaker = split[1]
         uttID = split[2]
-        mapping = [uttID] * len(utt)
+        # mapping = [uttID] * len(utt)
         dialogue_act = split[3]
         current_speaker = "".join([dialogue, speaker])
         if "A" in current_speaker:
@@ -221,7 +269,7 @@ def sort_into_dialogue_speakers(IDs, mappings, utts, pos_tags=None,
                 A_labels = []
             currentA = current_speaker
             A_utts.extend(list(utt))
-            A_mappings.extend(list(mapping))
+            A_mappings.extend(list(map))
             A_pos.extend(list(pos))
             if convert_to_dnn_tags:
                 tags = convert_from_eval_tags_to_inc_disfluency_tags(tags, utt)
@@ -241,7 +289,7 @@ def sort_into_dialogue_speakers(IDs, mappings, utts, pos_tags=None,
                 B_labels = []
             currentB = current_speaker
             B_utts.extend(list(utt))
-            B_mappings.extend(list(mapping))
+            B_mappings.extend(list(map))
             B_pos.extend(list(pos))
             if convert_to_dnn_tags:
                 tags = convert_from_eval_tags_to_inc_disfluency_tags(tags, utt)
@@ -265,7 +313,7 @@ def sort_into_dialogue_speakers(IDs, mappings, utts, pos_tags=None,
     return dialogue_speakers
 
 
-def load_data_from_disfluency_corpus_file(f, representation="disf1", limit=8,
+def load_data_from_disfluency_corpus_file(fp, representation="disf1", limit=8,
                                           convert_to_dnn_format=False):
     """Loads from file into five lists of lists of strings of equal length:
     one for utterance iDs (IDs))
@@ -275,8 +323,8 @@ def load_data_from_disfluency_corpus_file(f, representation="disf1", limit=8,
     one for tags (targets).
      
     NB this does not convert them into one-hot arrays, just outputs lists of string tags."""
-     
-    f = open(f)
+    print "loading from", fp
+    f = open(fp)
     print "loading data", f.name
     count_seq = 0
     IDs = []
@@ -298,6 +346,7 @@ def load_data_from_disfluency_corpus_file(f, representation="disf1", limit=8,
     
     #corpus = "" # can write to file
     for ref,timing,word,postag,disftag in reader: #mixture of POS and Words
+        # print ref, timing, word, postag, disftag
         counter+=1
         if not ref == "":
             if count_seq>0: #do not reset the first time
@@ -353,7 +402,9 @@ def load_data_from_disfluency_corpus_file(f, representation="disf1", limit=8,
     return (IDs,timings,seq,pos_seq,targets)
 
 
-def load_data_from_corpus_file(filename):
+def load_data_from_corpus_file(filename, limit=8,
+                               representation="disf1",
+                               convert_to_dnn_format=False):
     """Loads from disfluency detection with timings file.
     """
     all_speakers = []
@@ -398,6 +449,13 @@ def load_data_from_corpus_file(filename):
                     pos_data.extend(deepcopy(latest_pos))
                     # convert to the disfluency tags for this
                     # latest_labels = convertFromEvalTagsToIncDisfluencyTags()
+                    if convert_to_dnn_format:
+                        latest_labels = \
+                            convert_from_eval_tags_to_inc_disfluency_tags(
+                                latest_labels,
+                                latest_increco,
+                                representation,
+                                limit)
                     labels.extend(deepcopy(latest_labels))
                     indices.extend(deepcopy(latest_indices))
                 # fake
@@ -455,6 +513,13 @@ def load_data_from_corpus_file(filename):
             latest_increco = fill_in_time_approximations(latest_increco, shift)
         lex_data.extend(latest_increco)
         pos_data.extend(latest_pos)
+        if convert_to_dnn_format:
+            latest_labels = \
+                convert_from_eval_tags_to_inc_disfluency_tags(
+                    latest_labels,
+                    latest_increco,
+                    representation,
+                    limit)
         labels.extend(latest_labels)
         indices.extend(latest_indices)
     frames = [x[-1] for x in lex_data]  # last word end time
@@ -659,3 +724,8 @@ def process_arguments(config=None,
                 setattr(args, header[i], feat_value)
     #print args
     return args
+
+if __name__ == "__main__":
+    print wer("who is there".split(), "is there".split(), macro=True)
+    print wer("who is there".split(), "".split(), macro=True)
+    print wer("".split(), "who is there".split(), macro=True)

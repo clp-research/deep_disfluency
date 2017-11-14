@@ -465,9 +465,9 @@ class KneserNeySmoothingModel(LanguageModel):
         
         if heldout == True:
             totalunk = 0
-            print "Training on heldout data..."
+            print "Training language model on heldout data..."
         else:
-            print "Training on standard data..."
+            print "Training language model on standard data..."
             
         for line in train_corpus:
             if is_file: #assuming a REF file here

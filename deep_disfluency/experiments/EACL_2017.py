@@ -9,7 +9,10 @@ EACL 2017.
 """
 import sys
 import subprocess
-from deep_disfluency.experiments.InterSpeech_2015 import feature_matrices_filepath
+import os
+THIS_DIR = os.path.dirname(os.path.realpath(__file__))
+sys.path.append(THIS_DIR + "/../../")
+from deep_disfluency.tagger.deep_tagger import DeepDisfluencyTagger
 
 # The data must been downloaded
 # and put in place according to the top-level README
@@ -21,22 +24,25 @@ train_models = False
 test_models = True
 
 asr = False  # extract and test on ASR results too
+partial = True  # whether to include partial words or not
 
-range_dir = "data/disfluency_detection/swda_divisions_disfluency_detection"
+range_dir = THIS_DIR + \
+    '/../data/disfluency_detection/swda_divisions_disfluency_detection'
 file_divisions_transcripts = [
-    range_dir + "/swbd_disf_train_1_2_ranges.text",
-    # range_dir + "/swbd_disf_train_audio_ranges.text",
-    range_dir + "/swbd_disf_heldout_ranges.text",
-    range_dir + "/swbd_disf_test_ranges.text",
+    ('train', range_dir + '/swbd_disf_train_1_ranges.text'),
+    # range_dir + '/swbd_disf_train_audio_ranges.text',
+    ('heldout', range_dir + '/swbd_disf_heldout_ranges.text'),
+    ('test', range_dir + '/swbd_disf_test_ranges.text'),
 ]
 
 # the experiments in the EACL paper
-experiments = [33, 34, 35, 36, 37, 38]
+# experiments = [33, 34, 35, 36, 37, 38]
+experiments = [35]
 
 # 1. Create the base disfluency tagged corpora in a standard format
 """
 for all divisions call the corpus creator
-parse command line parameters
+parse c line parameters
 Optional arguments:
 -i string, path of source data (in swda style)
 -t string, target path of folder for the preprocessed data
@@ -55,7 +61,7 @@ if create_disf_corpus:
     print "Creating corpus..."
     write_pos_map = True
     for div in file_divisions_transcripts:
-        command = [sys.executable, 'corpus/disfluency_corpus_creator.py',
+        c = [sys.executable, 'corpus/disfluency_corpus_creator.py',
                    '-i', "data/raw_data/swda",
                    '-t', "data/disfluency_detection/switchboard",
                    '-f', div,
@@ -66,9 +72,9 @@ if create_disf_corpus:
                    '-d'
                    ]
         if write_pos_map:
-            command.append("-pos")
+            c.append("-pos")
             write_pos_map = False  # just call it once
-        subprocess.call(command)
+        subprocess.call(c)
     print "Finished creating corpus."
 
 # 2. Run the preprocessing and extraction of features for all files
@@ -105,7 +111,7 @@ if extract_features:
     tags_created = False
     tagger_trained = False
     for div in file_divisions_transcripts:
-        command = [
+        c = [
                    sys.executable,
                    'feature_extraction/extract_features.py',
                    '-i', "data/disfluency_detection/switchboard",
@@ -121,23 +127,24 @@ if extract_features:
                    '-joint',
                    # '-lm', "data/lm_corpora"
                    ]
-        if "train" in div and "-lm" in command:
-            command.append("-xlm")
+        if "train" in div and "-lm" in c:
+            c.append("-xlm")
         if not tags_created:
-            command.append("-new_tag")
+            c.append("-new_tag")
             tags_created = True
         if asr and "ASR" in div:
-            command.extend(["-pos", "data/crfpostagger"])
+            c.extend(["-pos", "data/crfpostagger"])
             if not tagger_trained:
-                command.append("-train_pos")
+                c.append("-train_pos")
             credentials = \
                 "1841487c-30f4-4450-90bd-38d1271df295:EcqA8yIP7HBZ"
-            command.extend(['-asr', '-credentials', credentials])
-        subprocess.call(command)
+            c.extend(['-asr', '-credentials', credentials])
+        subprocess.call(c)
     print "Finished extracting features."
 
 # 3. Train the model on the transcripts (and audio data if available)
 # NB each of these experiments can take up to 24 hours
+systems_best_epoch = {}
 if train_models:
     feature_matrices_filepath = None
     validation_filepath = None
@@ -146,6 +153,16 @@ if train_models:
     # experiments/config.csv file
     for exp in experiments:
         raise NotImplementedError
+else:
+    # Take our word for it that the saved models are the best ones:
+    systems_best_epoch[35] = 6  # LSTM
+    # (33, 45, 'RNN'),
+    # (34, 37, 'RNN (complex tags)'),
+    # (35, 6, 'LSTM'),
+    # (36, 15, 'LSTM (complex tags)'),
+    # (37, 6, 'LSTM (disf only)'),
+    # (38, 8, 'LSTM (TTO only)'),
+    # (39, 2, 'LSTM (complex tags)')
 
 # 4. Test the models on the test transcripts according to the best epochs
 # from training.
@@ -153,17 +170,28 @@ if train_models:
 # For now all use timing data
 
 if test_models:
-    allsystemsfinal = [(33, 45, 'RNN'),
-                       (34, 37, 'RNN (complex tags)'),
-                       (35, 6, 'LSTM'),
-                       (36, 15, 'LSTM (complex tags)'),
-                       (37, 6, 'LSTM (disf only)'),
-                       (38, 8, 'LSTM (TTO only)'),
-                       (39, 2, 'LSTM (complex tags)')
-                       ]
-    for exp, e, system in allsystemsfinal:
-        print exp, e, system
-        test_filepath = None
+    print "testing models..."
+    for exp, best_epoch in sorted(systems_best_epoch.items(), lambda x: x[0]):
+        exp_str = '%03d' % exp
+        # load the model
+        disf = DeepDisfluencyTagger(
+                        config_file=THIS_DIR + '/experiment_configs.csv',
+                        config_number=exp,
+                        saved_model_dir=THIS_DIR +
+                        '/{0}/epoch_{1}'.format(exp_str, best_epoch)
+                                    )
+        # simulating (or using real) ASR results
+        # for now just saving these in the same folder as the best epoch
+        # also outputs the speed
+        partial_string = '_partial' if partial else ''
+        disf.incremental_output_from_file(
+                THIS_DIR + '/../data/disfluency_detection/switchboard/' +
+                'swbd_disf_heldout{}_data_timings.csv'
+                .format(partial_string),
+                target_file_path=THIS_DIR + '/{0}/epoch_{1}/'.format(
+                    exp_str, best_epoch) +
+                'heldout_output_increco.text')
+
 
 # 5. To get the numbers run the notebook:
 # experiments/analysis/EACL_2017/EACL_2017.ipynb

@@ -82,6 +82,10 @@ class DisfluencyCorpusCreator:
     def __init__(self, path, metadata_path=None, mapdir_path=None,
                  partial=True, d_acts=True, annotation_files=None,
                  annotation_files_relaxed=None, error_log=None, lang='en'):
+        data_warning = "data folder not in raw_data, please move it in there!"
+        if not os.path.exists(path):
+            print data_warning, path
+            quit()
 
         if error_log:
             self.errorlog = open(error_log, "w")
@@ -90,7 +94,7 @@ class DisfluencyCorpusCreator:
 
         self.partial_words = partial  # turn off/on
         self.d_acts = d_acts
-        
+
         self.corpus = CorpusReader(path, metadata_path)
 
         try:

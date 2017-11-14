@@ -1,22 +1,24 @@
 from mumodo.mumodoIO import open_intervalframe_from_textgrid
 import numpy
-from feature_utils import wer
+from deep_disfluency.utils.accuracy import wer
 
 
-final_file = open('wer_test.text',"w")
+final_file = open('wer_test.text', "w")
 ranges1 = [line.strip() for line in open("/media/data/jh/simple_rnn_disf/rnn_disf_detection/data/disfluency_detection/swda_divisions_disfluency_detection/SWDisfHeldoutASR_ranges.text")]
 ranges2 = [line.strip() for line in open("/media/data/jh/simple_rnn_disf/rnn_disf_detection/data/disfluency_detection/swda_divisions_disfluency_detection/SWDisfTestASR_ranges.text")]
 
-for ranges in [ranges1,ranges2]:
+for ranges in [ranges1, ranges2]:
     final_file.write("\n\n")
     for r in ranges:
-        for s in ["A","B"]:
-            iframe = open_intervalframe_from_textgrid("{0}{1}.TextGrid".format(r,s))
+        for s in ["A", "B"]:
+            iframe = open_intervalframe_from_textgrid("{0}{1}.TextGrid"
+                                                      .format(r, s))
             hyp = " ".join(iframe['Hyp']['text'])
             ref = " ".join(iframe['Ref']['text'])
-            cost = wer(ref,hyp)
-            print r, s, cost
-            print>>final_file, r, s,cost
+            wer = wer(ref, hyp)
+            cost = wer(ref, hyp, macro=True)
+            print r, s, wer
+            print>>final_file, r, s, wer, cost
 final_file.close()
 
 

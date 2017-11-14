@@ -5,6 +5,9 @@ from scipy import ndimage
 import matplotlib.pyplot as plt
 
 from disf_evaluation import ACCURACY_HEADER
+from disf_evaluation import FINAL_OUTPUT_TTO_ACCURACY_HEADER
+from disf_evaluation import INCREMENTAL_OUTPUT_TTO_ACCURACY_HEADER
+
 
 final_result_to_latex_dict = OrderedDict((key, val) for key, val in [
              ("f1_<rm_word", """$F_{rm}$ (per word)"""),
@@ -33,7 +36,8 @@ incremental_result_to_latex_dict = OrderedDict((key, val) for key, val in [
 )
 
 
-def convert_to_latex(results, inc=False):
+def convert_to_latex(results, eval_level=["word", "interval"],
+                     inc=False, utt_seg=False):
     """Returns a latex style tabular from results dict.
     Also displays the pandas data frame.
     """
@@ -43,12 +47,16 @@ def convert_to_latex(results, inc=False):
         result_to_latex_dict = incremental_result_to_latex_dict
     header = []
     system_results = {sys: [] for sys in results.keys()}
+    utt_seg_measures = FINAL_OUTPUT_TTO_ACCURACY_HEADER.split(',') + \
+                            INCREMENTAL_OUTPUT_TTO_ACCURACY_HEADER.split(',')
     for raw in ACCURACY_HEADER.split(","):
+        if not utt_seg and raw in utt_seg_measures:
+            continue
         if "NIST_SU" in raw or "DSER" in raw or "edit_overhead" in raw:
             raw += "_{0}"
-        for t in ["word", "interval"]:
-            if "rps_rate_per_utt" in raw and t == "word":
-                continue
+        for t in eval_level:
+            # if "rps_rate_per_utt" in raw and t == "word":
+            #    continue
             r = raw.format(t)
             if r in result_to_latex_dict.keys():
                 conversion = result_to_latex_dict[r]

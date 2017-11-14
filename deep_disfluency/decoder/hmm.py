@@ -134,7 +134,8 @@ class FirstOrderHMM():
         else:
             print "No timing model given"
 
-    def train_markov_model_from_file(self, corpus_path, mm_path, update=False):
+    def train_markov_model_from_file(self, corpus_path, mm_path, update=False,
+                                     non_sparse=False):
         """Adds to the self.cfd_tags conditional frequency distribution
         loaded, if there is one, else starts afresh.
         Recalculate the conditional prob distribution afresh.
@@ -144,37 +145,57 @@ class FirstOrderHMM():
         probabilities from.
         --mm_path : filepath to markov model distribution path to write to.
         --update : whether to update the current cfd, if not start anew.
+        --non_sparse : whether to omit lines in the corpus without repairs,
+        gives higher prob to repairs
         """
         tags = []
         # expects line separated sequences
         corpus_file = open(corpus_path)
+        print "training decoder from", corpus_path
         for line in corpus_file:
             if line.strip("\n") == "":
                 continue
+            if non_sparse and ("<r" not in line):
+                continue
             labels_data = line.strip("\n").split(",")
+            if "<r" in labels_data[0]:
+                continue # TODO error with corpus creation
             previous = "s"
             # print "length sequence", len(labels_data)
             for i in range(len(labels_data)):
                 if labels_data[i] not in self.observation_tags:
                     print labels_data[i], "not in obs tags"
                     continue
+                if any(["<i" in t for t in self.observation_tags]):
+                    if "<e" in labels_data[i] and i < len(labels_data)-1:
+                        rps_onset = None
+                        for j in range(i, len(labels_data)):
+                            if "<rm" in labels_data[j]:
+                                rps_onset = j
+                                break
+                            if "<e" not in labels_data[j]:
+                                break
+                        if rps_onset:
+                            for k in range(i, rps_onset):
+                                labels_data[k] = labels_data[k].replace("<e",
+                                                                        "<i")
                 # print labels_data[i]
                 # adjust interregna
-                if any(["<i" in t for t in self.observation_tags]):
-                    if "<rm-" in labels_data[i]:
-                        b = len(tags)-1
-                        while ("e" in tags[b][1] and (not tags[b][1]=="se")\
-                                and b > 0):
-                            if "i" not in tags[b][1]:
-                                new_1 = tags[b][1].replace('eR', 'i').\
-                                    replace('e', 'i')
-                                tags[b] = (tags[b][0], new_1)
-                            if "e" in tags[b][0] and "i" not in tags[b][0]:
-                                new_0 = tags[b][0].replace('eR', 'i').\
-                                    replace('e', 'i')
-                                tags[b] = (new_0, tags[b][1])
-                            b -= 1
-                        previous = tags[-1][1]
+#                 if any(["<i" in t for t in self.observation_tags]):
+#                     if "<rm-" in labels_data[i]:
+#                         b = len(tags)-1
+#                         while ("e" in tags[b][1] and (not tags[b][1]=="se")\
+#                                 and b > 0):
+#                             if "i" not in tags[b][1]:
+#                                 new_1 = tags[b][1].replace('eR', 'i').\
+#                                     replace('e', 'i')
+#                                 tags[b] = (tags[b][0], new_1)
+#                             if "e" in tags[b][0] and "i" not in tags[b][0]:
+#                                 new_0 = tags[b][0].replace('eR', 'i').\
+#                                     replace('e', 'i')
+#                                 tags[b] = (new_0, tags[b][1])
+#                             b -= 1
+#                         previous = tags[-1][1]
                 tag = self.convert_tag(previous, labels_data[i])
                 tags.append((previous, tag))
                 previous = tag
@@ -362,15 +383,15 @@ class FirstOrderHMM():
                     converted_tag + " prev:" + str(prev_converted_tag)
                 tag_prob = self.cpd_tags[prev_converted_tag].prob(
                     converted_tag)
-                if tag_prob >= 0.001:  # allowing for margin of error
+                if tag_prob >= 0.00001:  # allowing for margin of error
                     if self.constraint_only:
                         # TODO for now treating this like a {0,1} constraint
                         tag_prob = 1.0
                     test = converted_tag.lower()
                     if "rps" in test:  # boost for start tags
-                        tag_prob = tag_prob * 1  # boost for rps
+                        tag_prob = tag_prob * 3  # boost for rps
                     elif "rpe" in test:
-                        tag_prob = tag_prob * 4  # boost for end tags
+                        tag_prob = tag_prob  # * 2  # boost for end tags
                     if timing_data and self.timing_model:
                         found = False
                         for k, v in self.simple_trp_idx2label.items():
@@ -394,10 +415,9 @@ class FirstOrderHMM():
                             # tag_prob = timing_prob
                             # the higher the timing weight the more influence
                             # the timing classifier has
-                            tag_prob = (timing_weight * timing_prob) # + tag_prob
+                            tag_prob = (timing_weight * timing_prob) + tag_prob
                             # print tag, timing_tag, timing_prob
                         else:
-                            
                             tag_prob = (timing_weight * timing_prob) + tag_prob
                 else:
                     tag_prob = 0.0
@@ -708,7 +728,7 @@ if __name__ == '__main__':
         f.close()
         return tag_dictionary
 
-    tags_name = "swbd_disf1"
+    tags_name = "swbd_disf1_021"
     tags = load_tags(
         "../data/tag_representations/{}_tags.csv".format(tags_name))
     if "disf" in tags_name:
@@ -719,9 +739,9 @@ if __name__ == '__main__':
 
     h = FirstOrderHMM(tags, markov_model_file=None)
     corpus_path = "../data/tag_representations/{}_tag_corpus.csv".format(
-        tags_name).replace("_034", "")
+        tags_name).replace("_021", "")
     mm_path = "models/{}_tags.pkl".format(tags_name)
-    h.train_markov_model_from_file(corpus_path, mm_path)
+    h.train_markov_model_from_file(corpus_path, mm_path, non_sparse=True)
     table = tabulate_cfd(h.cpd_tags)
     test_f = open("models/{}_tags_table.csv".format(tags_name), "w")
     test_f.write(table)

@@ -99,7 +99,8 @@ def get_best_word_alignment(ms_words,swda_words,ms_start_times,
 def timings_for_MS_SWDAwords_from_MSwords(current_MSwords,
                                           current_MS_SWDAwords,
                                           current_MS_start_times,
-                                          current_MS_end_times):
+                                          current_MS_end_times,
+                                          data=None):
     #use the alignments in current_MSwords to get to current_MS_SWDAwords, 
     #return the (estimated if needs be) start and end times of the SWDA words, 
     #and the SWDAwords themselves to be used
@@ -202,7 +203,8 @@ def timings_for_MS_SWDAwords_from_MSwords(current_MSwords,
                     current_time = final_time 
                 current_MS_start_times[j]  = current_time 
                 # adjust the word whose time was shared
-                assert(current_MS_end_times[j]-current_MS_start_times[j]>0.0)
+                if current_MS_end_times[j]-current_MS_start_times[j]>0.0:
+                    print "TIMING ERROR", data, "prev time", current_MS_end_times[j]
             else:
                 #print "INS case 3"
                 final_insert = inserted_words
@@ -521,7 +523,8 @@ def map_MS_to_SWDA(MSfilename,SWDAindices,SWDAwords,laughter=False,
                                                     current_MSwords, \
                                                     current_MS_SWDAwords,\
                                                     current_start_times,\
-                                                    current_end_times)
+                                                    current_end_times,
+                                                    data=data)
                 if debug: 
                     print "*"* 8, "current after first adjust"
                     print len(current_MSwords), len(current_MS_SWDAwords)
@@ -559,7 +562,8 @@ def map_MS_to_SWDA(MSfilename,SWDAindices,SWDAwords,laughter=False,
                                                 temp_current_MS_SWDAwords,
                                                 temp_current_SWDAwords,
                                                 current_start_times,
-                                                current_end_times)
+                                                current_end_times,
+                                                data=data)
                     if debug: 
                         print "*"* 8, "after re-adjust"
                         print temp_current_SWDAwords
@@ -686,7 +690,8 @@ def map_MS_to_SWDA(MSfilename,SWDAindices,SWDAwords,laughter=False,
                                                 temp_current_MS_SWDAwords,
                                                 temp_current_SWDAwords,
                                                 current_start_times,
-                                                current_end_times)
+                                                current_end_times,
+                                                data=data)
         #print "*"* 8, "after re-adjust"
         #print temp_current_SWDAwords
         #print current_start_times
@@ -782,10 +787,11 @@ if __name__ == '__main__':
     #for disf_file in disfluency_files:
     IDs, mappings, utts, pos_tags, labels = \
             load_data_from_disfluency_corpus_file(disf_file)
-    dialogue_speakers.extend(sort_into_dialogue_speakers(IDs,mappings,utts,
-                                                         pos_tags,labels,
-                                                 convert_to_dnn_tags=True))
-    
+    # print labels
+    dialogue_speakers.extend(sort_into_dialogue_speakers(IDs, mappings, utts,
+                                                         pos_tags, labels,
+                                                 convert_to_dnn_tags=False))
+    print len(dialogue_speakers), "dialogue speakers"
     #The main loop- has every word in both formats, needs to map from MS file
     # timings to the SWDA ones
     #Given the original SWDA transcripts are IN the MSaligned files, it's safer 
@@ -802,6 +808,10 @@ if __name__ == '__main__':
         origSWDAwords = deepcopy(SWDAwords)
     
         #print dialogue_speakerID
+        #print SWDAindices
+        #print SWDAwords
+        #print SWDApos
+        #print SWDAlabels
         #if not dialogue_speakerID in tests:
         #    continue
         #if int(dialogue_speakerID[:4]) < int(tests[0][:4]):

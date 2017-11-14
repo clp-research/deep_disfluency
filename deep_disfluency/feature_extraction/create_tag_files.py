@@ -128,6 +128,11 @@ def create_tag_representations(tag_rep_filepath, tags,
             tag_dict[tag] += 1
             if ("uttseg" not in representation) and "<speaker" in a_tag:
                 continue  # i.e. if interactive treat as a single tag
+            if ("uttseg" not in representation):
+                m = re.search(r'<[ct]*/>', a_tag)
+                if m and "t/>" in m.group(0):
+                    tag_corpus = tag_corpus.strip(",") + "\n"
+                    continue
             tag_corpus += tag + ","
         tag_corpus = tag_corpus.strip(",") + "\n"
         # new line separated dialogue/speakers
@@ -181,8 +186,13 @@ if __name__ == '__main__':
 
     if "timings" in args.corpusFile:
         dialogues = load_data_from_corpus_file(corpus_file,
-                                               convert_to_dnn_format=True)
-        _, words, pos, _, labels = concat_all_data_all_speakers(dialogues)
+                                               convert_to_dnn_format=False)
+        _, words, pos, _, labels = concat_all_data_all_speakers(dialogues,
+                                                        divide_into_utts=
+                                                        not args.uttSeg,
+                                                        convert_to_dnn_format=
+                                                        True)
+            
     else:
         IDs, timings, seq, pos_seq, targets = \
                 load_data_from_disfluency_corpus_file(

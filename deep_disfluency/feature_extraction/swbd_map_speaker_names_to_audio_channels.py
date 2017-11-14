@@ -124,9 +124,9 @@ for audio in sorted(audio_feature_files):
         speaker = winner[p[0]]
         for filename in p:
             if not filename: continue
-            command = "mv {} {}".format(filename,filename.replace(leftright,speaker))
-            print command
-            os.system(command)
+            c = "mv {} {}".format(filename,filename.replace(leftright,speaker))
+            print c
+            os.system(c)
     pair= [] #reset
     #h = raw_input()
     #if h == "q": break

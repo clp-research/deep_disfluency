@@ -1,8 +1,10 @@
 """
 Evaluation script for disfluency detection and utterance segmentation.
-Takes as input a gold standard file of tab separated format:
+Takes as input a ground truth file of tab separated format:
 interval_ID, start_time, end_time, word, POS_tag, ground_truth_tag.
 E.g.
+
+Speaker: KB3_1
 
 KB3_1:1    0.00    1.12    $unc$yes    NNP    <rms id="1"/><tc/>
 KB3_1:2    1.12    2.00     $because    IN    <rps id="1"/><cc/>
@@ -11,8 +13,35 @@ KB3_1:4    3.00    4.00    theres    EXVBZ    <f/><cc/>
 KB3_1:6    4.00    5.00    a    DT    <f/><cc/>
 KB3_1:7    6.00    7.10    pause    NN    <f/><cc/>
 
+or
+
+Speaker: 4519A
+
+(1:0:1)    2.557375    2.722875    your    PRP$    <f/><tc/>
+(1:0:2)    2.722875    3.011125    turn    NN    <f/><ct/>
+(3:7:1)    25.596    26.178875    well    UH    <e/><tc/>
+(3:7:3)    26.178875    26.59325    i    PRP    <f/><cc/>
+(3:7:4)    27.256125    27.460125    have    VBP    <f/><cc/>
+(3:7:5)    27.50525    27.591625    to    TO    <f/><cc/>
+(3:7:6)    27.591625    27.771625    say    VB    <f/><cc/>
+(3:7:7)    27.771625    27.941625    i    PRP    <f/><cc/>
+(3:7:8)    27.941625    28.201625    really    RB    <f/><cc/>
+(3:7:9)    28.201625    28.431625    dont    VBPRB    <f/><cc/>
+
 Second input either a file in a similar format with the final output
-from the system being evaluated, or the increco-style tagger output for
+from the system being evaluated, modulo the reference column, e.g.:
+
+Speaker: 4519A
+
+2.557375    2.722875    your    PRP$    <f/><tc/>
+2.722875    3.011125    turn    NN    <f/><ct/>
+25.596    26.178875    well    UH    <e/><tc/>
+26.178875    26.59325    i    PRP    <f/><cc/>
+27.256125    27.460125    have    VBP    <f/><cc/>
+
+
+Or, if you want incremental evaluation as well,
+provide the increco-style tagger output for
 each dialogue's speaker.
 The increco-style outputs are in the following format for each output
 time:
@@ -21,6 +50,7 @@ Time: time_of_update
 interval_ID, start_time, end_time, word_hyp, POS_tag_hyp, predicted_tag
 
 E.g.
+Speaker: KB3_1
 
 Time: 1.50
 KB3_1:1    0.00    1.12    $unc$yes    NNP    <f/><tc/>
@@ -48,12 +78,18 @@ KB3_1:7    6.00    7.10    pause    NN    <f/><ct/>
 The full evaluation method returns the non-incremental (final) and
 incremental  disfluency evaluation as in Hough & Purver 2014 and
 Hough & Schlangen 2015.
-Also returns the eval on turn taking opportunities in terms of the
-accuracy of incremental utterance segmentation.
+Also returns the eval on utterance semgmentation for Hough & Schlangen
+2017 EACL
+.
 Both these evals can be done on the word-level (assuming transcripts)
-or, in terms of time, as described in Hough and Schlangen 2017 EACL.
+or, in terms of time, as described in Hough & Schlangen 2017 EACL.
 
 There is also a speaker rate output and error analysis output.
+
+Note, for now, if you don't have word timings in your hypothesis
+or ground truth files, there are methods in
+eval_utils.py to transform the file first into a fake format.
+for both the incremental and non-incremental versions.
 """
 from __future__ import division
 
@@ -69,15 +105,17 @@ from eval_utils import p_r_f, NIST_SU, DSER
 from eval_utils import final_output_accuracy_interval_level
 from eval_utils import final_output_accuracy_word_level
 from eval_utils import final_hyp_from_increco_and_incremental_metrics
+from eval_utils import rename_all_repairs_in_line_with_index
 
 # individual tags of interest
 acc_tags = ["<rms", "<rm", "<i", "<e", "<rps", "<rp", "<rpn",
-            "<rpnrep", "<rpnsub", "<rpndel", "t>"]
+            "<rpnrep", "<rpnsub", "<rpndel", "t/>"]
 # combined tags of interest
 combined_acc_tags = ["<rm.<i.<rp"]
 # time to detection tags of interest
-ttd_tags = ["<rms", "<rps", "<e", "t>"]
-relaxed_tags = ["<rps", "<e", "t>"]
+ttd_tags = ["<rms", "<rps", "<e", "t/>"]
+relaxed_tags = ["<rps", "<e", "t/>"]
+error_analysis_tags = ["<rps", "<e", "t/>", "<rms"]
 
 MODEL_INFO_HEADER = "eval_corpus,model,context_win,\
 ed_num,rp_num,rm_num,rpn_num,\
@@ -108,11 +146,11 @@ t_t_detection_<rms_{0},t_t_detection_<rps_{0},\
 t_t_detection_<e_{0},\
 processing_overhead_{0},edit_overhead_rel_<rm"
 
-FINAL_OUTPUT_TTO_ACCURACY_HEADER = "p_t>_{0},r_t>_{0},f1_t>_{0},\
-p_t>_{0},\ r_t>_relaxed_{0},f1_t>_relaxed_{0},NIST_SU,DSER,SegER"
+FINAL_OUTPUT_TTO_ACCURACY_HEADER = "p_t/>_{0},r_t/>_{0},f1_t/>_{0},\
+p_t/>_{0},\ r_t/>_relaxed_{0},f1_t/>_relaxed_{0},NIST_SU,DSER,SegER"
 
-INCREMENTAL_OUTPUT_TTO_ACCURACY_HEADER = "t_t_detection_t>_{0},\
-t_t_detection_final_t>_{0},\
+INCREMENTAL_OUTPUT_TTO_ACCURACY_HEADER = "t_t_detection_t/>_{0},\
+t_t_detection_final_t/>_{0},\
 edit_overhead_rel_tto"
 
 ACCURACY_HEADER = ",".join([FINAL_OUTPUT_DISFLUENCY_ACCURACY_HEADER,
@@ -196,6 +234,13 @@ def final_output_disfluency_eval(prediction_speakers_dict,
     """
     print "final output disfluency evaluation"
     print "word=", word, "interval=", interval, "utt_eval=", utt_eval
+    if not utt_eval:
+        if "t/>" in ttd_tags:
+            ttd_tags.remove("t/>")
+        if "t/>" in acc_tags:
+            acc_tags.remove("t/>")
+        if "t/>" in relaxed_tags:
+            relaxed_tags.remove("t/>")
     if not results:
         results = {}
 
@@ -233,7 +278,7 @@ def final_output_disfluency_eval(prediction_speakers_dict,
         # error_analysis simply collects all the repairs with t
         # heir words and a small context window
         error_analysis = {}
-        for tag in relaxed_tags:
+        for tag in error_analysis_tags:
             error_analysis[tag] = {
                 "TP": [],
                 "FP": [],
@@ -245,42 +290,45 @@ def final_output_disfluency_eval(prediction_speakers_dict,
     if outputfilename:
         outputfile = open(outputfilename, "w")
     for s in sorted(prediction_speakers_dict.keys()):
-        # print s
+
+        print s
         if gold_speakers_dict.get(s) == None:
             print s, "not in gold"
             continue
 
         if outputfilename:
-            outputfile.write("File: " + s + "\n")
+            outputfile.write("Speaker: " + s + "\n")
         hyp = prediction_speakers_dict[s]
         gold = gold_speakers_dict[s]
 
         hypwords = hyp[1]
         goldwords = gold[1]
         if word:  # assumes number of words == no of intervals
+            prediction_tags = rename_all_repairs_in_line_with_index(
+                [x[0] for x in hyp[2]])
             repairs_hyp,\
                 repairs_gold,\
                 number_of_utts_hyp,\
                 number_of_utts_gold = \
                 final_output_accuracy_word_level(goldwords,
-                                                 [x[0]
-                                                     for x in hyp[2]], gold[3],
+                                                 prediction_tags,
+                                                 gold[3],
                                                  tag_dict=tag_dict,
                                                  utt_eval=utt_eval,
                                                  error_analysis=error_analysis)
             if outputfilename:
                 final_words = []
                 for g_word, h_word in zip(goldwords, hypwords):
-                    word = g_word
+                    joint_w = g_word
                     if not h_word[0] == g_word:
-                        word += "@" + h_word[0]
-                    final_words.append((h_word[1], h_word[2], word))
-                for word, g_tag, h_tag in zip(final_words,
-                                              gold[3],
-                                              [x[0] for x in hyp[2]]):
-                    outputfile.write("\t".join([str(word[0]),
-                                                str(word[1]),
-                                                str(word[2]),
+                        joint_w = joint_w + "@" + h_word[0]
+                    final_words.append((h_word[1], h_word[2], joint_w))
+                for w, g_tag, h_tag in zip(final_words,
+                                           gold[3],
+                                           [x[0] for x in hyp[2]]):
+                    outputfile.write("\t".join([str(w[0]),
+                                                str(w[1]),
+                                                str(w[2]),
                                                 "{0}@{1}"
                                                 .format(g_tag, h_tag)]) + "\n")
                 outputfile.write("\n")
@@ -447,6 +495,13 @@ def incremental_output_disfluency_eval(prediction_speakers_dict,
     """
     print "incremental output disfluency evaluation"
     print "word=", word, "interval=", interval, "utt_eval=", utt_eval
+    if not utt_eval:
+        if "t/>" in ttd_tags:
+            ttd_tags.remove("t/>")
+        if "t/>" in acc_tags:
+            acc_tags.remove("t/>")
+        if "t/>" in relaxed_tags:
+            relaxed_tags.remove("t/>")
     results = {}
     tag_dict = {}
     if word:
@@ -476,9 +531,11 @@ def incremental_output_disfluency_eval(prediction_speakers_dict,
     tag_dict.update({"edit_overhead": [0, 0]})
     # started = False
     for s in sorted(prediction_speakers_dict.keys()):
-        # if s == "4928A":
-        #    carry_on = True
-        # if not carry_on: continue
+        carry_on = True  # False
+        if s == "4611A":
+            carry_on = True
+        if not carry_on:
+            continue
         if gold_speakers_dict.get(s) == None:
             print s, "not in gold"
             continue
@@ -495,9 +552,17 @@ def incremental_output_disfluency_eval(prediction_speakers_dict,
                                 ttd_tags=ttd_tags,
                                 word=word,
                                 interval=interval,
-                                tag_dict=tag_dict)
+                                tag_dict=tag_dict,
+                                speaker_ID=s)
         # replace the incremental results with the final one only
         prediction_speakers_dict[s] = final_hyp
+        #print gold_speakers_dict[s][1]
+        #final_gold_words = [x[0] for x in gold_speakers_dict[s][1]]
+        #print final_gold_words
+        #gold_speakers_dict[s] = (gold_speakers_dict[s][0],
+        #                         final_gold_words,
+        #                         gold_speakers_dict[s][2],
+        #                         gold_speakers_dict[s][3])
         # break #todo remove
     # do the final output eval too
     for eval_mode in ["word", "interval"]:
@@ -514,16 +579,48 @@ def incremental_output_disfluency_eval(prediction_speakers_dict,
                 np.average(
                 tag_dict["t_t_detection_{0}_{1}".format(t_tag, eval_mode)]
                 )
-    results, speaker_rate_dict, error_analysis = final_output_disfluency_eval(
-        prediction_speakers_dict,
-        gold_speakers_dict,
-        utt_eval=utt_eval,
-        error_analysis=error_analysis,
-        word=word,
-        interval=interval,
-        results=results,
-        outputfilename=outputfilename)
-    return results, speaker_rate_dict, error_analysis
+#     results, speaker_rate_dict, error_analysis = final_output_disfluency_eval(
+#         prediction_speakers_dict,
+#         gold_speakers_dict,
+#         utt_eval=utt_eval,
+#         error_analysis=error_analysis,
+#         word=word,
+#         interval=interval,
+#         results=results,
+#         outputfilename=outputfilename)
+    if outputfilename:
+        print "writing final output to file", outputfilename
+        outputfile = open(outputfilename, "w")
+        for s in sorted(prediction_speakers_dict.keys()):
+
+            # print s
+            if gold_speakers_dict.get(s) == None:
+                print s, "not in gold"
+                continue
+            if outputfilename:
+                outputfile.write("Speaker: " + s + "\n")
+            hyp = prediction_speakers_dict[s]
+            gold = gold_speakers_dict[s]
+            hypwords = hyp[1]
+            goldwords = gold[1]
+            final_words = []
+            for g_word, h_word in zip(goldwords, hypwords):
+                joint_w = g_word
+                if not h_word[0] == g_word:
+                    joint_w = joint_w + "@" + h_word[0]
+                final_words.append((h_word[1], h_word[2], joint_w))
+            for w, g_tag, h_tag in zip(final_words,
+                                       gold[3],
+                                       [x[0] for x in hyp[2]]):
+                outputfile.write("\t".join([str(w[0]),
+                                            str(w[1]),
+                                            str(w[2]),
+                                            "{0}@{1}"
+                                            .format(g_tag, h_tag)]) + "\n")
+                outputfile.write("\n")
+            outputfile.write("\n")
+        outputfile.close()
+    return results, error_analysis
 
 
 def incremental_output_disfluency_eval_from_file(prediction_filename,
@@ -591,7 +688,8 @@ if __name__ == '__main__':
 
     # doesn't apply to the rnn/lstm
     ed_num, rps_num, rms_num, rpn_num = None, None, None, None
-    eval_corpus = "swda_test_partial"
+    partial_string = "_partial"
+    eval_corpus = "swda_test" + partial_string
     training_corpus = "swda_train"
     model = 'stir'
     context_win = 3
@@ -601,12 +699,13 @@ if __name__ == '__main__':
     hyp_dir = top_dir + "/experiments/035/"
     disf_dir = top_dir + "/data/disfluency_detection/switchboard"
     disfluency_files = [
-        disf_dir + "/swbd_heldout_partial_timings_data.csv",
-        disf_dir + "/swbd_test_partial_timings_data.csv",
+        disf_dir + "/swbd_heldout{0}_timings_data.csv".format(partial_string),
+        disf_dir + "/swbd_test{0}_timings_data.csv".format(partial_string),
     ]
 
     dialogue_speakers = []
-    for key, disf_file in zip(["heldout", "test"], disfluency_files):
+    for key, disf_file in zip(["swbd_disf_heldout",
+                               "swbd_disf_test"], disfluency_files):
         # if not key == "heldout": continue
         IDs, mappings, utts, pos_tags, labels = \
             get_tag_data_from_corpus_file(disf_file)
@@ -620,14 +719,15 @@ if __name__ == '__main__':
 
         e = 9
         results = incremental_output_disfluency_eval_from_file(
-                hyp_dir + "epoch_{0}/predictions_inc_{1}.increco".format(
-                        e, key),
+                hyp_dir + "epoch_{0}/{1}{2}_output_increco.text".format(
+                        e, key, partial_string),
                 gold_data,
                 utt_eval=True,
                 error_analysis=False,
                 word=True,
                 interval=False,
                 outputfilename=hyp_dir +
-                "epoch_{0}/predictions_inc_{1}.final".format(e, key))
+                "epoch_{0}/{1}{2}_output_final.text".format(e, key,
+                                                            partial_string))
         for k, v in results.items():
             print k, v

@@ -25,7 +25,9 @@ from deep_disfluency.decoder.hmm import FirstOrderHMM
 from deep_disfluency.decoder.noisy_channel import SourceModel
 from deep_disfluency.embeddings.load_embeddings import populate_embeddings
 from deep_disfluency.feature_extraction.feature_utils import \
-    load_data_from_corpus_file, load_data_from_disfluency_corpus_file
+    load_data_from_disfluency_corpus_file
+from deep_disfluency.evaluation.disf_evaluation import \
+    get_tag_data_from_corpus_file
 from utils import process_arguments, get_last_n_features
 from deep_disfluency.feature_extraction.feature_utils import \
     sort_into_dialogue_speakers
@@ -530,10 +532,10 @@ class DeepDisfluencyTagger(IncrementalTagger):
         self.reset()  # always starts in initial state
         if not self.args.pos:  # no pos tag model
             utterance = [(w, None, t) for w, p, t in utterance]
-            print "Warning: not using pos tags as not pos tag model"
+            # print "Warning: not using pos tags as not pos tag model"
         if not self.args.use_timing_data:
             utterance = [(w, p, None) for w, p, t in utterance]
-            print "Warning: not using timing durations as no timing model"
+            # print "Warning: not using timing durations as no timing model"
         for w, p, t in utterance:
             if self.args.pos:
                 self.tag_new_word(w, pos=p, timing=t)
@@ -599,8 +601,7 @@ class DeepDisfluencyTagger(IncrementalTagger):
         })
         return results
 
-    def train_net(self,
-                  train_dialogues_filepath=None,
+    def train_net(self, train_dialogues_filepath=None,
                   validation_dialogues_filepath=None,
                   model_dir=None,
                   tag_accuracy_file_path=None):
@@ -630,17 +631,17 @@ class DeepDisfluencyTagger(IncrementalTagger):
                                for fp in os.listdir(
                                 validation_dialogues_filepath)]
         validation_matrices = [dialogue_data_and_indices_from_matrix(
-                                          d_matrix,
-                                          n_extra,
-                                          pre_seg=self.args.utts_presegmented,
-                                          window_size=self.window_size,
-                                          bs=self.args.bs,
-                                          tag_rep=self.args.tags,
-                                          tag_to_idx_map=self.tag_to_index_map,
-                                    in_utterances=self.args.utts_presegmented)
+                                  d_matrix,
+                                  n_extra,
+                                  pre_seg=self.args.utts_presegmented,
+                                  window_size=self.window_size,
+                                  bs=self.args.bs,
+                                  tag_rep=self.args.tags,
+                                  tag_to_idx_map=self.tag_to_index_map,
+                                  in_utterances=self.args.utts_presegmented)
                                for d_matrix in validation_matrices
                                ]
-        idx_2_label_dict = {v : k for k,v in self.tag_to_index_map.items()}
+        idx_2_label_dict = {v: k for k, v in self.tag_to_index_map.items()}
         if not os.path.exists(model_dir):
             os.mkdir(model_dir)
         start = 1  # by default start from the first epoch
@@ -732,59 +733,109 @@ class DeepDisfluencyTagger(IncrementalTagger):
         tag_accuracy_file.close()
         return best_epoch
 
-    def get_incremental_output_from_file(self, source_file, target_file,
-                                         asr_results_file=False):
+    def incremental_output_from_file(self, source_file_path,
+                                     target_file_path=None,
+                                     is_asr_results_file=False):
+        """Return the incremental output in an increco style
+        given the incoming words + POS. E.g.:
+
+        Speaker: KB3_1
+
+        Time: 1.50
+        KB3_1:1    0.00    1.12    $unc$yes    NNP    <f/><tc/>
+
+        Time: 2.10
+        KB3_1:1    0.00    1.12    $unc$yes    NNP    <rms id="1"/><tc/>
+        KB3_1:2    1.12    2.00     because    IN    <rps id="1"/><cc/>
+
+        Time: 2.5
+        KB3_1:2    1.12    2.00     because    IN    <rps id="1"/><rpndel id="1"/><cc/>
+
+        from an ASR increco style input without the POStags:
+
+        or a normal style disfluency dectection ground truth corpus:
+
+        Speaker: KB3_1
+        KB3_1:1    0.00    1.12    $unc$yes    NNP    <rms id="1"/><tc/>
+        KB3_1:2    1.12    2.00     $because    IN    <rps id="1"/><cc/>
+        KB3_1:3    2.00    3.00    because    IN    <f/><cc/>
+        KB3_1:4    3.00    4.00    theres    EXVBZ    <f/><cc/>
+        KB3_1:6    4.00    5.00    a    DT    <f/><cc/>
+        KB3_1:7    6.00    7.10    pause    NN    <f/><cc/>
+
+
+        :param source_file_path: str, file path to the input file
+        :param target_file_path: str, file path to output in the above format
+        :param is_asr_results_file: bool, whether the input is increco style
+        """
+        if target_file_path:
+            target_file = open(target_file_path, "w")
         if not self.args.do_utt_segmentation:
             print "not doing utt seg, using pre-segmented file"
-        if asr_results_file:
+        if is_asr_results_file:
             return NotImplementedError
-        if "timings" in source_file:
-            dialogues = load_data_from_corpus_file(source_file)
+        if 'timings' in source_file_path:
+            print "input file has timings"
+            if not is_asr_results_file:
+                dialogues = []
+                IDs, timings, words, pos_tags, labels = \
+                    get_tag_data_from_corpus_file(source_file_path)
+                for dialogue, a, b, c, d in zip(IDs,
+                                                timings,
+                                                words,
+                                                pos_tags,
+                                                labels):
+                    dialogues.append((dialogue, (a, b, c, d)))
         else:
-            print "no timings"
-            IDs, timings, seq, pos_seq, targets = \
-                load_data_from_disfluency_corpus_file(
-                    source_file, convert_to_dnn_format=True)
-            raw_dialogues = sort_into_dialogue_speakers(IDs,
-                                                        timings,
-                                                        seq,
-                                                        pos_seq,
-                                                        targets,
-                add_uttseg=self.args.do_utt_segmentation,
-                add_dialogue_acts="dact" in self.args.tags)
-            dialogues = []
-            for conv_no, indices, lex_data, pos_data, labels in raw_dialogues:
-                frames = indices
-                dialogues.append((conv_no, (frames, lex_data, pos_data,
-                                            indices,
-                                            labels)))
-        for dialogue_name, dialogue_data in dialogues:
-            self.reset()  # reset at the beginning of each dialogue
-            target_file.write("\nFile: " + str(dialogue_name) + "\n")
-            frames, lex_data, pos_data, indices, labels = dialogue_data
-            # iterate through the utterances
-            utt_idx = -1
-            current_time = 0
-            for i in range(0, len(frames)):
-                if (not self.args.do_utt_segmentation) \
-                        and utt_idx != frames[i]:
-                    self.reset()  # reset after each utt if non pre-seg
-                utt_idx = frames[i]
-                timing = None
-                if "timings" in source_file and self.args.use_timing_data:
-                    timing = lex_data[i] - current_time
-                word = lex_data[i][0]
-                pos = lex_data[i][1]
-                diff = self.tag_new_word(word, pos, timing, diff_only=True,
-                                         rollback=0)
-                current_time = lex_data[i][2]
-                target_file.write(str(current_time) + "\n")
-                for tag in diff:
-                    target_file.write(tag + "\n")
+            print "no timings in input file, creating fake timings"
+            raise NotImplementedError
 
+        for speaker, speaker_data in dialogues:
+            # if "4565" in speaker: quit()
+            print speaker
+            self.reset()  # reset at the beginning of each dialogue
+            if target_file_path:
+                target_file.write("Speaker: " + str(speaker) + "\n\n")
+            timing_data, lex_data, pos_data, labels = speaker_data
+            # iterate through the utterances
+            # utt_idx = -1
+            current_time = 0
+            for i in range(0, len(timing_data)):
+                # print i, timing_data[i]
+                _, end = timing_data[i]
+                if (not self.args.do_utt_segmentation) \
+                        and "<t" in labels[i]:
+                    self.reset()  # reset after each utt if non pre-seg
+                # utt_idx = frames[i]
+                timing = None
+                if 'timings' in source_file_path and self.args.use_timing_data:
+                    timing = end - current_time
+                word = lex_data[i]
+                pos = pos_data[i]
+                diff = self.tag_new_word(word, pos, timing,
+                                         diff_only=True,
+                                         rollback=0)
+                current_time = end
+                if target_file_path:
+                    target_file.write("Time: " + str(current_time) + "\n")
+                    new_words = lex_data[i-(len(diff)-1):i+1]
+                    new_pos = pos_data[i-(len(diff)-1):i+1]
+                    new_timings = timing_data[i-(len(diff)-1):i+1]
+                    for t, w, p, tag in zip(new_timings,
+                                            new_words,
+                                            new_pos,
+                                            diff):
+                        target_file.write("\t".join([str(t[0]),
+                                                     str(t[1]),
+                                                     w,
+                                                     p,
+                                                     tag]))
+                        target_file.write("\n")
+                    target_file.write("\n")
+            target_file.write("\n")
 
     def train_decoder(self, tag_file):
-        return NotImplementedError
+        raise NotImplementedError
 
     def save_decoder_model(self, dir_path):
-        return NotImplementedError
+        raise NotImplementedError

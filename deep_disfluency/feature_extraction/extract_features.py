@@ -27,26 +27,27 @@ def extract_features(args):
     if args.wordAlignmentFolder:
         corpus_filename += "_timings"
     corpus_filename += ".csv"
-
-    if args.wordAlignmentFolder:
+    do = False
+    if args.wordAlignmentFolder and do:
         # link the word alignments to the disfluency detection corpora
         # also adds laughter
-        command = [
+        c = [
             sys.executable,
             os.path.dirname(os.path.realpath(__file__)) +
             '/swbd_map_word_alignments_to_SWDA_words.py',
-            '-i', args.corpusLocation + "/" + corpus_filename,
+            '-i', args.corpusLocation + "/" + corpus_filename.
+                                                    replace("_timings", ""),
             '-d', args.divisionFile,
             '-a', args.wordAlignmentFolder
             ]
         if args.laughter:
-            command.append('-l')
-        subprocess.call(command)
+            c.append('-l')
+        subprocess.call(c)
 
     if args.newTags:
         # create the tag representations (normally from the training data
         # not allowed to look into unseen tags in the test/dev set
-        command = [
+        c = [
             sys.executable,
             os.path.dirname(os.path.realpath(__file__)) +
             '/create_tag_files.py',
@@ -54,14 +55,14 @@ def extract_features(args):
             '-tag', args.tagFolder,
             ]
         if args.laughter:
-            command.append('-l')
+            c.append('-l')
         if args.uttSeg:
-            command.append('-u')
+            c.append('-u')
         if args.dialogueActs:
-            command.append('-d')
+            c.append('-d')
         if args.joint:
-            command.append('-joint')
-        subprocess.call(command)
+            c.append('-joint')
+        subprocess.call(c)
 
     if args.ASR:
         raise NotImplementedError("ASR results getting script TODO.")
@@ -72,7 +73,7 @@ def extract_features(args):
         raise NotImplementedError("POS tagger extraction needs doing")
 
     if args.languageModelFolder:
-        command = [
+        c = [
             sys.executable,
             os.path.dirname(os.path.realpath(__file__)) +
             '/add_language_model_features.py',
@@ -84,12 +85,12 @@ def extract_features(args):
             # '-tag', args.tagFolder,
             ]
         if args.partial_words:
-            command.append("-p")
-        command.append('-e')
+            c.append("-p")
+        c.append('-e')
         if args.uttSeg:
-            command.append('-u')
-        print command
-        subprocess.call(command)
+            c.append('-u')
+        print c
+        subprocess.call(c)
 
     if args.audioFolder:
         raise NotImplementedError("ASR scripts TODO.")
@@ -99,7 +100,7 @@ def extract_features(args):
     # add these together into single vectors for DNN training format
     # TODO for now this should only run for training and heldout data.
     # test features change based on ASR results.
-    command = [
+    c = [
         sys.executable,
         os.path.dirname(os.path.realpath(__file__)) +
         '/save_feature_matrices.py',
@@ -110,12 +111,12 @@ def extract_features(args):
         '-tag', args.tagFolder + "/swbd_disf1_tags.csv"
         ]
     if args.languageModelFolder:
-        command.append('-lm')
-        command.append(args.matrixFolder + "/lm_matrices")
+        c.append('-lm')
+        c.append(args.matrixFolder + "/lm_matrices")
     if args.audioFolder:
-        command.append('-a')
-        command.append(args.matrixFolder + + "/audio_matrices")
-    subprocess.call(command)
+        c.append('-a')
+        c.append(args.matrixFolder + + "/audio_matrices")
+    subprocess.call(c)
 
     extraction_results = {"POS_accuracy": None, "asr_WER": None}
     return extraction_results

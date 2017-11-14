@@ -1,5 +1,4 @@
 import logging
-import os
 import gensim
 
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s',

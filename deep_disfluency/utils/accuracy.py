@@ -1,3 +1,4 @@
+# Legacy:
 def save_to_disfeval_file(p, g, w, f, filename, incremental=False):
     '''
     INPUT:
@@ -44,6 +45,3 @@ def save_to_disfeval_file(p, g, w, f, filename, incremental=False):
     f.writelines(out)
     f.close()
     return filename
-
-if __name__ == '__main__':
-    pass

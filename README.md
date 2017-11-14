@@ -4,7 +4,7 @@ Code for Deep Learning driven incremental disfluency detection and related dialo
 
 ## Set up ##
 
-To run the code here you need to have Python 2.7 installed, and also `pip` for installing the dependencies. (Also Ipython should be installed, preferrably, if you want to run notebooks).
+To run the code here you need to have `Python 2.7` installed, and also `pip` for installing the dependencies. (Also `IPython` should be installed, preferrably, if you want to run notebooks).
 
 Firstly, install Cython, then h5py, by running the below on the command line:
 
@@ -40,6 +40,7 @@ train_models = False
 test_models = True
 ```
  
+If that level of reproducibility does not satisfy you, you can set all those boolean values to `True`. The below set-up of the data must then be done before running the appropriate script.
 
 **Data**
 

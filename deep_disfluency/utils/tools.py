@@ -362,7 +362,7 @@ def convert_from_eval_tags_to_inc_disfluency_tags(tags, words,
             rps = re.findall("<rps id\=\"[0-9]+\"\/>", tags[t], re.S)
             for r in rps:
                 repairID = r[r.find("=")+2:-3]
-                assert repair_dict.get(repairID), str(tags)+str(words)
+                assert repair_dict.get(repairID), str(repairID)+str(tags)+str(words)
                 repair_dict[repairID][1] = t
                 dist = min(t-repair_dict[repairID][0], limit)
                 # adjust in case the reparandum is shortened due to the limit
@@ -471,8 +471,11 @@ def convert_from_inc_disfluency_tags_to_eval_tags(
                     dist = int(r[r.find("-")+1:-2])
                     repair_dict[str(t)] = [max([0, t-dist]), t, False]
                     # backwards looking search if full set
-                    new_tags[max([0, t-dist])] = '<rms id="{}"/>'\
-                        .format(t) + new_tags[max([0, t-dist])]\
+                    # print new_tags, t, dist, t-dist, max([0, t-dist])
+                    # print tags[:t+1]
+                    rms_start_idx = max([0, t-dist])
+                    new_tags[rms_start_idx] = '<rms id="{}"/>'\
+                        .format(t) + new_tags[rms_start_idx]\
                         .replace("<f/>", "")
                     reparandum = False  # interregnum if edit term
                     for b in range(t-1, max([0, t-dist]), -1):
