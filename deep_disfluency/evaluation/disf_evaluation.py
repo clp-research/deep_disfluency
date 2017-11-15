@@ -289,30 +289,40 @@ def final_output_disfluency_eval(prediction_speakers_dict,
     # print output
     if outputfilename:
         outputfile = open(outputfilename, "w")
+    # testfile = open("../test.text", "w")
     for s in sorted(prediction_speakers_dict.keys()):
 
         print s
         if gold_speakers_dict.get(s) == None:
-            print s, "not in gold"
-            continue
+            s_test = s.replace("-", "")
+            if gold_speakers_dict.get(s_test) == None:
+                print s, "not in gold"
+                continue
+            else:
+                gold = gold_speakers_dict[s_test]
+        else:
+            gold = gold = gold_speakers_dict[s]
 
         if outputfilename:
             outputfile.write("Speaker: " + s + "\n")
+        # testfile.write("\nSpeaker: " + s + "\n")
         hyp = prediction_speakers_dict[s]
-        gold = gold_speakers_dict[s]
 
         hypwords = hyp[1]
         goldwords = gold[1]
         if word:  # assumes number of words == no of intervals
             prediction_tags = rename_all_repairs_in_line_with_index(
                 [x[0] for x in hyp[2]])
+            gold_tags = rename_all_repairs_in_line_with_index(list(gold[3]))
+            # for w, g, p in zip(goldwords, gold_tags, prediction_tags):
+            #     testfile.write("\t".join([w, g, p]) + "\n")
             repairs_hyp,\
                 repairs_gold,\
                 number_of_utts_hyp,\
                 number_of_utts_gold = \
                 final_output_accuracy_word_level(goldwords,
                                                  prediction_tags,
-                                                 gold[3],
+                                                 gold_tags,
                                                  tag_dict=tag_dict,
                                                  utt_eval=utt_eval,
                                                  error_analysis=error_analysis)
@@ -442,6 +452,7 @@ def final_output_disfluency_eval(prediction_speakers_dict,
         pearsonr(hyp_rate_turn_all, gold_rate_turn_all)
     # return the results, speaker disfluency rates per speaker
     # and error analysis
+    # testfile.close()
     return results, speaker_rate_dict, error_analysis
 
 

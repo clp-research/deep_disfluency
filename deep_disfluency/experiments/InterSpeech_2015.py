@@ -41,7 +41,7 @@ file_divisions_transcripts = [
 # 23 POS length 3 RNN
 # 41 POS length 2 LSTM  # not in paper, for comparison
 # experiments = [18, 21, 23, 41]
-experiments = [21, 41]  # reduced version for speed for now
+experiments = [21]  # reduced version for speed for now
 
 # 1. Create the base disfluency tagged corpora in a standard format
 """
@@ -173,7 +173,7 @@ if train_models:
 else:
     # Take our word for it that the saved models are the best ones:
     systems_best_epoch[21] = 40
-    systems_best_epoch[41] = 16
+    # systems_best_epoch[41] = 16
 
 # 4. Test the models on the test transcripts according to the best epochs
 # from training.
@@ -205,5 +205,5 @@ if test_models:
                     .format(div, partial_string))
 
 # 5. To get the numbers run the notebook:
-# experiments/analysis/Interspeech_2015_EMNLP_2015/Interspeech_2015.ipynb
+# experiments/analysis/Interspeech_2015_EMNLP_2015/Interspeech_2015_eval.ipynb
 # The results should be consistent with that in the Interspeech 2015 paper.
