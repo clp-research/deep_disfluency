@@ -2,6 +2,27 @@
 import re
 from collections import defaultdict
 
+
+def add_word_continuation_tags(tags):
+    """Returns list with continuation tags for each word:
+    <cc/> continues current dialogue act and the next word will also continue
+    <ct/> continues current dialogue act and is the last word of it
+    <tc/> starts this dialogue act tag and the next word continues it
+    <tt/> starts and ends dialogue act (single word dialogue act)
+    """
+    tags = list(tags)
+    for i in range(0, len(tags)):
+        if i == 0:
+            tags[i] = tags[i] + "<t"
+        else:
+            tags[i] = tags[i] + "<c"
+        if i == len(tags)-1:
+            tags[i] = tags[i] + "t/>"
+        else:
+            tags[i] = tags[i] + "c/>"
+    return tags
+
+
 def get_tags(s, open_delim='<',
              close_delim='/>'):
     """Iterator to spit out the xml style disfluency tags in a given string.

@@ -1204,7 +1204,8 @@ def rename_all_repairs_in_line_with_index(tags):
     return tags
 
 
-def rename_repair_with_repair_onset_idx(orig_tags, rp_start_index, new_id):
+def rename_repair_with_repair_onset_idx(orig_tags, rp_start_index, new_id,
+                                        verbose=False):
     """Returns tags with the repair with a repair onset beginning\
     at position repair_start_idx renamed to string new_id"""
     tags = deepcopy(orig_tags)
@@ -1273,11 +1274,13 @@ def rename_repair_with_repair_onset_idx(orig_tags, rp_start_index, new_id):
         if repair_end_found or same_name_repair_found:
             break
     if not repair_end_found:
-        print("No end found for repair beginning at " +
-              str(rp_start_index) + " in: \n" +
-              "\n".join(["\t".join([str(x), str(y)]) for
-                         x, y in zip(range(0, len(orig_tags)), orig_tags)]))
-        print "correcting end"
+        if verbose:
+            print("No end found for repair beginning at " +
+                  str(rp_start_index) + " in: \n" +
+                  "\n".join(["\t".join([str(x), str(y)]) for
+                             x, y in zip(range(0, len(orig_tags)),
+                                         orig_tags)]))
+            print "correcting end"
         tags[furthest_point] = tags[furthest_point].replace(
             '<rp id="{}"/>'.format(old_id), "") + \
             '<rpn id="{}"/>'.format(new_id)

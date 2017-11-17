@@ -15,16 +15,23 @@ final_result_to_latex_dict = OrderedDict((key, val) for key, val in [
              ("f1_<e_word", """$F_{e}$ (per word)"""),
              ("f1_t>_word",  """$F_{TTO}$ (per word)"""),
              ("f1_<rps_relaxed_interval", """$F_{rps}$ (per 10s window)"""),
+             ("p_<rps_relaxed_interval", """$P_{rps}$ (per 10s window)"""),
+             ("r_<rps_relaxed_interval", """$R_{rps}$ (per 10s window)"""),
+             ("f1_<rps_relaxed_word", """$F_{rps}$ (per utterance)"""),
+             ("p_<rps_relaxed_word", """$P_{rps}$ (per utterance)"""),
+             ("r_<rps_relaxed_word", """$R_{rps}$ (per utterance)"""),
              ("f1_<e_relaxed_interval", """$F_{e}$ (per 10s window)"""),
              ("f1_t>_relaxed_interval", """$F_{TTO}$ (per 10s window)"""),
              ("pearson_r_correl_rps_rate_per_utt",
-              "$rps$ per utterance per speaker correlation"),
+              "$rps$ per utterance per speaker Pearson R correlation"),
+             ("spearman_rank_correl_rps_rate_per_utt",
+              "$rps$ per utterance per speaker Spearman's Rank correlation"),
              ("NIST_SU_word", "NIST SU (word)"),
              ("DSER_word", "DSER (word)")]
 )
 
-
 incremental_result_to_latex_dict = OrderedDict((key, val) for key, val in [
+    ("t_t_detection_<rms_word", """TTD$_{rms}$ (word)"""),
     ("t_t_detection_<rps_word", """TTD$_{rps}$ (word)"""),
     ("t_t_detection_<e_word", """TTD$_{e}$ (word)"""),
     ("t_t_detection_t>_word", """TTD$_{tto}$ (word)"""),
@@ -37,7 +44,8 @@ incremental_result_to_latex_dict = OrderedDict((key, val) for key, val in [
 
 
 def convert_to_latex(results, eval_level=["word", "interval"],
-                     inc=False, utt_seg=False):
+                     inc=False, utt_seg=False,
+                     only_include=None):
     """Returns a latex style tabular from results dict.
     Also displays the pandas data frame.
     """
@@ -45,36 +53,39 @@ def convert_to_latex(results, eval_level=["word", "interval"],
         result_to_latex_dict = final_result_to_latex_dict
     else:
         result_to_latex_dict = incremental_result_to_latex_dict
-    header = []
     system_results = {sys: [] for sys in results.keys()}
     utt_seg_measures = FINAL_OUTPUT_TTO_ACCURACY_HEADER.split(',') + \
-                            INCREMENTAL_OUTPUT_TTO_ACCURACY_HEADER.split(',')
+        INCREMENTAL_OUTPUT_TTO_ACCURACY_HEADER.split(',')
+    raw_header = []
     for raw in ACCURACY_HEADER.split(","):
         if not utt_seg and raw in utt_seg_measures:
+            # print "skipping 1", raw
             continue
-        if "NIST_SU" in raw or "DSER" in raw or "edit_overhead" in raw:
-            raw += "_{0}"
-        for t in eval_level:
-            # if "rps_rate_per_utt" in raw and t == "word":
-            #    continue
-            r = raw.format(t)
-            if r in result_to_latex_dict.keys():
-                conversion = result_to_latex_dict[r]
-                if "EO" in conversion:
-                    conversion = "EO"
-                    if t == "word":
-                        continue  # only one interval level eval
-                header.append(conversion)
-                for sys in results.keys():
-                    if "asr" in sys and t == "word":
-                        result = "-"
-                    else:
-                        result = results[sys][r]
-                        if "f1" in raw or "t_t_d" in raw or 'correl' in raw:
-                            result = '{0:.3f}'.format(result)
-                        else:
-                            result = '{0:.2f}'.format(result)
-                    system_results[sys].append(result)
+        for e in eval_level:
+            raw = raw.format(e)
+            if raw not in result_to_latex_dict.keys():
+                # print "skipping 2", raw
+                continue
+            raw_header.append(raw)
+    if only_include:
+        raw_header = only_include
+    # print raw_header
+    header = []
+    for h in raw_header:
+        # print h, "*"
+        conversion = result_to_latex_dict[h]
+        header.append(conversion)
+        for sys in results.keys():
+            if "asr" in sys and "_word" in h:
+                result = "-"
+            else:
+                result = results[sys][h]
+                three_deci = ["f1_<", "t_t_d", 'correl', "r_<", "p_<"]
+                if any([x in h for x in three_deci]):
+                    result = '{0:.3f}'.format(result)
+                else:
+                    result = '{0:.3f}'.format(result)
+            system_results[sys].append(result)
     rows = []
     for sys in sorted(system_results.keys()):
         corpus = "transcript"

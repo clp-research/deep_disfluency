@@ -95,7 +95,7 @@ from __future__ import division
 
 import os.path
 from copy import deepcopy
-from scipy.stats.stats import pearsonr
+from scipy.stats.stats import pearsonr, spearmanr
 import numpy as np
 
 from eval_utils import get_tag_data_from_corpus_file
@@ -135,7 +135,13 @@ pearson_r_p_value_rps_number,\
 pearson_r_correl_rps_rate_per_word,\
 pearson_r_p_value_rps_rate_per_word,\
 pearson_r_correl_rps_rate_per_utt,\
-pearson_r_p_value_rps_rate_per_utt"
+pearson_r_p_value_rps_rate_per_utt,\
+spearman_rank_correl_rps_number,\
+spearman_rank_p_value_rps_number,\
+spearman_rank_correl_rps_rate_per_word,\
+spearman_rank_p_value_rps_rate_per_word,\
+spearman_rank_correl_rps_rate_per_utt,\
+spearman_rank_p_value_rps_rate_per_utt"
 
 INCREMENTAL_OUTPUT_DISFLUENCY_ACCURACY_HEADER = "delayed_acc_<rm_1_{0},\
 delayed_acc_<rm_2_{0},delayed_acc_<rm_3_{0},\
@@ -292,7 +298,7 @@ def final_output_disfluency_eval(prediction_speakers_dict,
     # testfile = open("../test.text", "w")
     for s in sorted(prediction_speakers_dict.keys()):
 
-        print s
+        # print s
         if gold_speakers_dict.get(s) == None:
             s_test = s.replace("-", "")
             if gold_speakers_dict.get(s_test) == None:
@@ -313,7 +319,7 @@ def final_output_disfluency_eval(prediction_speakers_dict,
         if word:  # assumes number of words == no of intervals
             prediction_tags = rename_all_repairs_in_line_with_index(
                 [x[0] for x in hyp[2]])
-            gold_tags = rename_all_repairs_in_line_with_index(list(gold[3]))
+            gold_tags = list(gold[3])
             # for w, g, p in zip(goldwords, gold_tags, prediction_tags):
             #     testfile.write("\t".join([w, g, p]) + "\n")
             repairs_hyp,\
@@ -450,6 +456,15 @@ def final_output_disfluency_eval(prediction_speakers_dict,
     results["pearson_r_correl_rps_rate_per_utt"], \
         results["pearson_r_p_value_rps_rate_per_utt"] = \
         pearsonr(hyp_rate_turn_all, gold_rate_turn_all)
+    results["spearman_rank_correl_rps_number"], \
+        results["spearman_rank_p_value_rps_number"] = \
+        spearmanr(hyp_number_all, gold_number_all)
+    results["spearman_rank_correl_rps_rate_per_word"], \
+        results["spearman_rank_p_value_rps_rate_per_word"] = \
+        spearmanr(hyp_rate_word_all, gold_rate_word_all)
+    results["spearman_rank_correl_rps_rate_per_utt"], \
+        results["spearman_rank_p_value_rps_rate_per_utt"] = \
+        spearmanr(hyp_rate_turn_all, gold_rate_turn_all)
     # return the results, speaker disfluency rates per speaker
     # and error analysis
     # testfile.close()
