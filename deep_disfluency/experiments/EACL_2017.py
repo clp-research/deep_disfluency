@@ -36,8 +36,8 @@ file_divisions_transcripts = [
 ]
 
 # the experiments in the EACL paper
-# experiments = [33, 34, 35, 36, 37, 38]
-experiments = [35]
+experiments = [33, 34, 35, 36, 37, 38]
+# experiments = [35]
 
 # 1. Create the base disfluency tagged corpora in a standard format
 """
@@ -146,23 +146,40 @@ if extract_features:
 # NB each of these experiments can take up to 24 hours
 systems_best_epoch = {}
 if train_models:
-    feature_matrices_filepath = None
-    validation_filepath = None
+    feature_matrices_filepath = THIS_DIR + '/../data/disfluency_detection/' + \
+        'feature_matrices/train'
+    validation_filepath = THIS_DIR + '/../data/disfluency_detection/' + \
+        'feature_matrices/heldout'
     # train until convergence
     # on the settings according to the numbered experiments in
     # experiments/config.csv file
     for exp in experiments:
-        raise NotImplementedError
+        disf = DeepDisfluencyTagger(
+            config_file=THIS_DIR + "/experiment_configs.csv",
+            config_number=exp
+            )
+        exp_str = '%03d' % exp
+        e = disf.train_net(
+                    train_dialogues_filepath=feature_matrices_filepath,
+                    validation_dialogues_filepath=validation_filepath,
+                    model_dir=THIS_DIR + '/' + exp_str,
+                    tag_accuracy_file_path=THIS_DIR +
+                    '/results/tag_accuracies/{}.text'.format(exp_str))
+        systems_best_epoch[exp] = e
 else:
     # Take our word for it that the saved models are the best ones:
+    systems_best_epoch[33] = 45  # RNN
     systems_best_epoch[35] = 6  # LSTM
+    # systems_best_epoch[36] = 15  # LSTM (complex tags)
+    # systems_best_epoch[37] = 6  # LSTM (disf only)
+    # systems_best_epoch[38] = 8  # LSTM (TTO only)
     # (33, 45, 'RNN'),
     # (34, 37, 'RNN (complex tags)'),
     # (35, 6, 'LSTM'),
     # (36, 15, 'LSTM (complex tags)'),
     # (37, 6, 'LSTM (disf only)'),
     # (38, 8, 'LSTM (TTO only)'),
-    # (39, 2, 'LSTM (complex tags)')
+    # (39, 2, 'LSTM (disf only, complex tags)')
 
 # 4. Test the models on the test transcripts according to the best epochs
 # from training.
@@ -171,7 +188,8 @@ else:
 
 if test_models:
     print "testing models..."
-    for exp, best_epoch in sorted(systems_best_epoch.items(), lambda x: x[0]):
+    for exp, best_epoch in sorted(systems_best_epoch.items(),
+                                  key=lambda x: x[0]):
         exp_str = '%03d' % exp
         # load the model
         disf = DeepDisfluencyTagger(
@@ -184,13 +202,15 @@ if test_models:
         # for now just saving these in the same folder as the best epoch
         # also outputs the speed
         partial_string = '_partial' if partial else ''
-        disf.incremental_output_from_file(
-                THIS_DIR + '/../data/disfluency_detection/switchboard/' +
-                'swbd_disf_heldout{}_data_timings.csv'
-                .format(partial_string),
-                target_file_path=THIS_DIR + '/{0}/epoch_{1}/'.format(
-                    exp_str, best_epoch) +
-                'heldout_output_increco.text')
+        for div in ["heldout", "test"]:
+            disf.incremental_output_from_file(
+                    THIS_DIR + '/../data/disfluency_detection/switchboard/' +
+                    'swbd_disf_{0}{1}_data_timings.csv'
+                    .format(div, partial_string),
+                    target_file_path=THIS_DIR + '/{0}/epoch_{1}/'.format(
+                        exp_str, best_epoch) +
+                    'swbd_disf_{0}{1}_data_output_increco.text'
+                    .format(div, partial_string))
 
 
 # 5. To get the numbers run the notebook:

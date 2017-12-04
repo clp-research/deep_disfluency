@@ -173,7 +173,7 @@ if train_models:
 else:
     # Take our word for it that the saved models are the best ones:
     systems_best_epoch[21] = 40
-    # systems_best_epoch[41] = 16
+    systems_best_epoch[41] = 16
 
 # 4. Test the models on the test transcripts according to the best epochs
 # from training.
@@ -181,7 +181,8 @@ else:
 # For now all use timing data
 if test_models:
     print "testing models..."
-    for exp, best_epoch in sorted(systems_best_epoch.items(), lambda x: x[0]):
+    for exp, best_epoch in sorted(systems_best_epoch.items(),
+                                  key=lambda x: x[0]):
         exp_str = '%03d' % exp
         # load the model
         disf = DeepDisfluencyTagger(

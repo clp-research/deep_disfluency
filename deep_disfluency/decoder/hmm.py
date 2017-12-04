@@ -227,6 +227,36 @@ class FirstOrderHMM():
                            [y for x in all_outcomes for y in x])
         self.viterbi_init()  # initialize viterbi
 
+    def train_markov_model_from_constraint_matrix(self, csv_path, mm_path):
+        delim = '\t'
+        table = [line.split(delim) for line in open(csv_path)]
+        tags = []
+        range_states = table.pop(0)[1:]
+        for row in table:
+            domain = row[0]
+            for i, range in enumerate(row[1:]):
+                if "1" in range:
+                    tags.append((domain, range_states[i])) 
+        self.cfd_tags = nltk.ConditionalFreqDist(tags)
+        print "cfd trained, counts:"
+        self.cfd_tags.tabulate()
+        print "test:"
+        print tabulate_cfd(self.cfd_tags)
+        # save this new cfd for later use
+        pickle.dump(self.cfd_tags, open(mm_path, "wb"))
+        # initialize the cpd
+        self.cpd_tags = nltk.ConditionalProbDist(self.cfd_tags,
+                                                 nltk.MLEProbDist)
+        # print "cpd summary:"
+        # print self.cpd_tags.viewitems()
+        print tabulate_cfd(self.cpd_tags)
+        all_outcomes = [v.keys() for v in self.cfd_tags.values()]
+        self.tag_set = set(self.cfd_tags.keys() +
+                           [y for x in all_outcomes for y in x])
+        self.viterbi_init()  # initialize viterbi
+        
+        
+
     def viterbi_init(self):
         self.best_tagsequence = []  # presume this is for a new sequence
         self.viterbi = []
@@ -389,7 +419,7 @@ class FirstOrderHMM():
                         tag_prob = 1.0
                     test = converted_tag.lower()
                     if "rps" in test:  # boost for start tags
-                        tag_prob = tag_prob * 3  # boost for rps
+                        tag_prob = tag_prob * 1  # boost for rps
                     elif "rpe" in test:
                         tag_prob = tag_prob  # * 2  # boost for end tags
                     if timing_data and self.timing_model:
@@ -405,7 +435,7 @@ class FirstOrderHMM():
                         # array over the different classes
                         timing_prob = softmax_timing[0][timing_tag]
                         if "<t" in tag:
-                            sparse_weight = 7.0
+                            sparse_weight = 1.0
                             # results on unweighted timing classifier:
                             # 1 0.757 2 0.770 3 0.778  4. 0.781 5.0.783
                             # 6. 0.785 7. 0.784
@@ -713,8 +743,6 @@ class FirstOrderHMM():
     #    for each new tag?
     #    """
 
-
-
 if __name__ == '__main__':
     def load_tags(filepath):
         """Returns a tag dictionary from word to a n int indicating index
@@ -728,7 +756,7 @@ if __name__ == '__main__':
         f.close()
         return tag_dictionary
 
-    tags_name = "swbd_disf1_021"
+    tags_name = "swbd_disf1_uttseg_simple_033"
     tags = load_tags(
         "../data/tag_representations/{}_tags.csv".format(tags_name))
     if "disf" in tags_name:
@@ -741,7 +769,9 @@ if __name__ == '__main__':
     corpus_path = "../data/tag_representations/{}_tag_corpus.csv".format(
         tags_name).replace("_021", "")
     mm_path = "models/{}_tags.pkl".format(tags_name)
-    h.train_markov_model_from_file(corpus_path, mm_path, non_sparse=True)
+    # h.train_markov_model_from_file(corpus_path, mm_path, non_sparse=True)
+    csv_file = "models/swbd_disf1_uttseg_simple.csv"
+    h.train_markov_model_from_constraint_matrix(csv_file, mm_path)
     table = tabulate_cfd(h.cpd_tags)
     test_f = open("models/{}_tags_table.csv".format(tags_name), "w")
     test_f.write(table)

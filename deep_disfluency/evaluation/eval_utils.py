@@ -647,10 +647,36 @@ def final_output_accuracy_word_level(words, prediction_tags, gold_tags,
         if "t/>" in label:
             number_of_utts_gold += 1
         for tag in tag_dict.keys():
+            if tag in label and tag == "<rms":
+                # special case for rms as possibly multiple
+                gold_internal_tags = get_tags(label)
+                gold_IDs = []
+                for t in gold_internal_tags:
+                    if "<rms" in t:
+                        gold_ID = t[t.find("=")+2:-3]
+                        gold_IDs.append(gold_ID)
+                # print "goldID", gold_ID
+                # print "in", gold_tags
+                gold_repairs = []
+                gold_ID_dict = {k: False for k in gold_IDs}
+                for i in range(count, len(gold_tags)):
+                    for gold_ID in gold_IDs:
+                        if '<rps id="{0}"/>'.format(gold_ID) in\
+                                gold_tags[i]:
+                            rps_gold_idx = i
+                            gold_repairs.extend(
+                                get_repairs_with_start_word_index(
+                                    list(gold_tags), list(words),
+                                    rps_gold_idx,
+                                    gold_tags=list(gold_tags),
+                                    save_context=True))
+                            gold_ID_dict[gold_ID] = True
+                    if all(gold_ID_dict.values()):
+                        break
+
             if tag in prediction:
                 correct_tag = False
-                if tag in label and tag == "<rms":
-                    # Search for the corresponding rps
+                if tag == "<rms":  # special case for rms, possibly multiple
                     pred_internal_tags = get_tags(prediction)
                     pred_IDs = []
                     for t in pred_internal_tags:
@@ -659,54 +685,56 @@ def final_output_accuracy_word_level(words, prediction_tags, gold_tags,
                             pred_IDs.append(pred_ID)
                     # print "predID", pred_ID
                     # print "in", prediction_tags
-                    found = False
+                    # get all the repairs predicted which have the rms
+                    # matching
+                    pred_repairs = []
+                    pred_ID_dict = {k: False for k in pred_IDs}
                     for i in range(count, len(prediction_tags)):
                         for pred_ID in pred_IDs:
                             if '<rps id="{0}"/>'.format(pred_ID) in\
                                     prediction_tags[i]:
                                 rps_predicted_idx = i
-                                found = True
-                                break
-                        if found:
-                            break
-                    pred_repairs = get_repairs_with_start_word_index(
+                                pred_repairs.extend(
+                                    get_repairs_with_start_word_index(
                                         list(prediction_tags), list(words),
                                         rps_predicted_idx,
                                         gold_tags=list(gold_tags),
-                                        save_context=True)
+                                        save_context=True))
+                                pred_ID_dict[pred_ID] = True
+                        if all(pred_ID_dict.values()):
+                            break
+                # see if there's a match for rms start
+                if tag in label and tag == "<rms":
+                    # Search for the corresponding rps tags
+                    # rms is the one tag where multiple predictions
+                    # and labels can be made for the same word
+                    # at least one has to be correct
+                    correct_rms_repairs = []
+                    fp_rms_repairs = deepcopy(pred_repairs)
 
-                    gold_internal_tags = get_tags(label)
-                    gold_IDs = []
-                    for t in gold_internal_tags:
-                        if "<rms" in t:
-                            gold_ID = t[t.find("=")+2:-3]
-                            gold_IDs.append(gold_ID)
-                    # print "goldID", gold_ID
-                    # print "in", gold_tags
-                    found = False
-                    for i in range(count, len(gold_tags)):
-                        for gold_ID in gold_IDs:
-                            if '<rps id="{0}"/>'.format(gold_ID) in\
-                                    gold_tags[i]:
-                                rps_gold_idx = i
+                    # generous match
+                    # add all the correct and incorrect tags
+                    for gr in gold_repairs:
+                        # see if matching repair found for this gold repair
+                        found = False
+                        rps_found_indices = []
+                        for pr_idx, pr in enumerate(fp_rms_repairs):
+                            if gr.reparandumWords == pr.reparandumWords:
+                                correct_rms_repairs.append(deepcopy(pr))
+                                correct_tag = True
+                                rps_found_indices.append(pr_idx)
                                 found = True
                                 break
-                        if found:
-                            break
-                    gold_repairs = get_repairs_with_start_word_index(
-                                        list(gold_tags), list(words),
-                                        rps_gold_idx,
-                                        gold_tags=list(gold_tags),
-                                        save_context=True)
-                    # generous match
-                    for gr in gold_repairs:
-                        for pr in pred_repairs:
-                            if gr.reparandumWords == pr.reparandumWords:
-                                correct_reparandum_repair = pr
-                                correct_tag = True
-                                break
-                        if correct_tag:
-                            break
+                        for found_idx in rps_found_indices:
+                            del fp_rms_repairs[found_idx]
+                        if not found:
+                            error_analysis[tag]["FN"].append(gr)
+                            tag_dict[tag][2] += 1
+                    if correct_tag and len(fp_rms_repairs) > 0:
+                        # may have gotten one correct prediction for
+                        # rms, but others wrong/FPs
+                        error_analysis[tag]["FP"].extend(fp_rms_repairs)
+                        tag_dict[tag][1] += (len(fp_rms_repairs))
                 elif tag in label:
                     # any other tag, good if just matching label
                     correct_tag = True
@@ -722,8 +750,10 @@ def final_output_accuracy_word_level(words, prediction_tags, gold_tags,
                                         save_context=True)[0]
                                                                  )
                             elif tag == "<rms":
-                                error_analysis[tag]["TP"].append(
-                                    correct_reparandum_repair
+                                tag_dict[tag][0] += \
+                                    (len(correct_rms_repairs)-1)
+                                error_analysis[tag]["TP"].extend(
+                                    correct_rms_repairs
                                                                  )
                             else:
                                 error_analysis[tag]["TP"].extend(
@@ -753,23 +783,10 @@ def final_output_accuracy_word_level(words, prediction_tags, gold_tags,
                                         count, gold_tags=None,
                                         save_context=True)[0])
                             elif tag == "<rms":
-                                pred_internal_tags = get_tags(prediction)
-                                for t in pred_internal_tags:
-                                    if "<rms" in t:
-                                        pred_ID = t[t.find("=")+2:-3]
-                                        break
-                                # print "predID", pred_ID
-                                # print "in", prediction_tags
-                                for i in range(count, len(prediction_tags)):
-                                    if '<rps id="{0}"/>'.format(pred_ID) in\
-                                            prediction_tags[i]:
-                                        rps_predicted_idx = i
-                                        break
-                                error_analysis[tag]["FP"].append(
-                                    get_repairs_with_start_word_index(
-                                        list(prediction_tags), list(words),
-                                        rps_predicted_idx, gold_tags=None,
-                                        save_context=True)[0])
+                                # either predicted incorrectly
+                                # or no matching rps found
+                                tag_dict[tag][1] += (len(pred_repairs)-1)
+                                error_analysis[tag]["FP"].extend(pred_repairs)
                             else:
                                 error_analysis[tag]["FP"].extend(
                                     get_contexts_with_start_word_index(
@@ -793,24 +810,8 @@ def final_output_accuracy_word_level(words, prediction_tags, gold_tags,
                                     gold_tags=list(gold_tags),
                                     save_context=True)[0])
                         elif tag == "<rms":
-                            gold_internal_tags = get_tags(label)
-                            for t in gold_internal_tags:
-                                if "<rms" in t:
-                                    gold_ID = t[t.find("=")+2:-3]
-                                    break
-                            # print "goldID", gold_ID
-                            # print "in", gold_tags
-                            for i in range(count, len(gold_tags)):
-                                if '<rps id="{0}"/>'.format(gold_ID) in\
-                                        gold_tags[i]:
-                                    rps_gold_idx = i
-                                    break
-                            error_analysis[tag]["FN"].append(
-                                get_repairs_with_start_word_index(
-                                    list(gold_tags), list(words),
-                                    rps_gold_idx,
-                                    gold_tags=list(gold_tags),
-                                    save_context=True)[0])
+                            tag_dict[tag][2] += (len(gold_repairs)-1)
+                            error_analysis[tag]["FN"].extend(gold_repairs)
                         else:
                             error_analysis[tag]["FN"].extend(
                                 get_contexts_with_start_word_index(
@@ -1172,8 +1173,21 @@ def get_repairs_with_start_word_index(a_tags, a_words, rp_start_index,
                     if not wordAdded:
                         repairDict[repair_id].repairWords.append(a_words[c])
                     wordAdded = True
+                    # sometimes there is a rpn and rpndel, take the del
+                    if ("<rpn " in tag) and (not \
+                        repairDict[repair_id].repairComplete) and \
+                            '<rpndel id="{}"/>'.format(repair_id) in a_tags[c]:
+                        continue
                     repairDict[repair_id].repairComplete = True
-                    repairDict[repair_id].type = tag[4:7]
+                    if "<rpn " in tag:
+                        # may miss off official repair categorization
+                        if repairDict[repair_id].reparandumWords == \
+                                repairDict[repair_id].repairWords:
+                            repairDict[repair_id].type = "rep"
+                        else:
+                            repairDict[repair_id].type = "sub"
+                    else:
+                        repairDict[repair_id].type = tag[4:7]
         if allComplete:
             break
     if len(repairDict.values()) == 0:
