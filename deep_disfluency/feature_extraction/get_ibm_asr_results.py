@@ -1,39 +1,13 @@
-#This is a modified copy of https://github.com/watson-developer-cloud/speech-to-text-websockets-python (Daniel Bolanos)
-#Please follow the top of the original README for the installation
-
-README = """
-
-## Synopsis
-
-This project consists of a python client that interacts with the IBM Watson Speech To Text service through its WebSockets interface. The client streams audio to the STT service and receives recognition hypotheses in real time. It can run N simultaneous recognition sessions
-
-## Installation
-
-There are some dependencies that need to be installed for this script to work. It is advisable to install the required packages in a separate virtual environment. Certain packages have been observed to conflict with the package requirements for this script; in particular the package nose conflicts with these required packages. In order to interact with the STT service via WebSockets, it is necessary to install [pip](https://pip.readthedocs.org/en/1.1/installing.html), then write the following commands:
-
-`
-pip install -r requirements.txt
-`
-
-You also may need to write this command
-
-`
-$ apt-get install build-essential python-dev
-`
-
-If you are creating an environment using anaconda, proceed with the above pip command to install the packages--do not use conda to install the requirements as conda will install nose as a dependency.
-`
-
-## Motivation
-
-This script has been created by Daniel Bolanos in order to facilitate and promote the utilization of the IBM Watson Speech To Text service.
-"""
-
+# This is a modified copy of
+# https://github.com/watson-developer-cloud/speech-to-text-websockets-python
+# (Daniel Bolanos)
+# Please follow the top of the original README for the installation
 
 # coding: utf-8
 
 # In[ ]:
 
+"""
 #
 # Copyright IBM Corp. 2014
 #
@@ -52,21 +26,67 @@ This script has been created by Daniel Bolanos in order to facilitate and promot
 
 # Author: Daniel Bolanos
 # Date:   2015
-
+"""
 # coding=utf-8
-import json                                      # json 
-import threading                                 # multi threading
-import os                                        # for listing directories
-import Queue                                     # queue used for thread syncronization
-import sys                                       # system calls
-import argparse                                  # for parsing arguments
-import base64                                    # necessary to encode in base64 according to the RFC2045 standard 
-import requests                                  # python HTTP requests library
+import json  # json
+import threading  # multi threading
+import os  # for listing directories
+import Queue  # queue used for thread syncronization
+import sys  # system calls
+import argparse  # for parsing arguments
+import base64  # to encode in base64 according to the RFC2045 standard 
+import requests  # python HTTP requests library
 
 # WebSockets 
 from autobahn.twisted.websocket import WebSocketClientProtocol, WebSocketClientFactory, connectWS
 from twisted.python import log
 from twisted.internet import ssl, reactor
+
+README = """
+
+## Synopsis
+
+This project consists of a python client that interacts with the
+IBM Watson Speech To Text service through its WebSockets interface.
+The client streams audio to the STT service and receives recognition
+hypotheses in real time. It can run N simultaneous recognition sessions.
+
+## Installation
+
+There are some dependencies that need to be installed for this
+script to work.
+It is advisable to install the required packages in a separate
+virtual environment.
+Certain packages have been observed to conflict with the package
+requirements for this script; in particular the package nose conflicts
+with these required packages. In order to interact with the STT
+service via WebSockets,
+it is necessary to 
+install [pip](https://pip.readthedocs.org/en/1.1/installing.html),
+then write the following commands:
+
+`
+pip install -r requirements.txt
+`
+
+You also may need to write this command:
+
+`
+$ apt-get install build-essential python-dev
+`
+
+If you are creating an environment using anaconda, proceed with the above
+pip command to install the packages--do not use conda to install
+the requirements as conda will install nose as a dependency.
+`
+
+## Motivation
+
+This script has been created by Daniel Bolanos in order to facilitate
+and promote the utilization of the IBM Watson Speech To Text service.
+"""
+
+
 
 class Utils:   
 

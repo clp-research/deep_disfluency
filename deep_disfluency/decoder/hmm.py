@@ -26,17 +26,26 @@ import tag_conversion
 from hmm_utils import tabulate_cfd
 from hmm_utils import log
 
-# the weights for the source language model and the timing duration
-# classifier
-source_weight = 0.1
-timing_weight = 1.0  # 10 gives 0.756, no great gains with higher weight
+# boosts for rare classes
+SPARSE_WEIGHT_T_ = 6.0  # for <t  # with timings this naturally gets boost
+SPARSE_WEIGHT_T = 6.0  # for t/>
+# results on un-weighted timing classifier for <t boosts:
+# 1 0.757 2 0.770 3 0.778  4. 0.781 5.0.783
+# 6. 0.785 7. 0.784
+SPARSE_WEIGHT_RPS = 1.0
+SPARSE_WEIGHT_RPE = 1.0
+
+# the weights for the source language model and the timing duration classifier
+TIMING_WEIGHT = 2.0  # 10 gives 0.756, no great gains with higher weight
 #  NB on 30.04 this is just a weight on the <t class as timer not working
 # Given this can improve things from 0.70 -> 0.76 weighting worth looking at
+# if using noisy channel model:
+SOURCE_WEIGHT = 0.1
 
 
 class FirstOrderHMM():
     """A standard hmm model which interfaces with any sequential channel model
-    that outputs the softmax over all labels at each time step.
+    that outputs the input_distribution over all labels at each time step.
     A first order model where the internal state probabilities only depend
     on the previous state.
     """
@@ -68,9 +77,11 @@ class FirstOrderHMM():
             elif any(["<speaker" in x for x in self.observation_tags]):
                 self.convert_tag = tag_conversion.\
                         convert_to_diact_uttseg_interactive_tag
-            else:
+            elif any(["<speaker" in x for x in self.observation_tags]):
                 # if only dialogue acts
                 self.convert_tag = tag_conversion.convert_to_diact_uttseg_tag
+            else:
+                self.convert_tag = tag_conversion.convert_to_uttseg_tag
         else:
             # no segmentation in this task
             self.observation_tags.add('se')  # add end tag in pre-seg mode
@@ -133,6 +144,11 @@ class FirstOrderHMM():
             self.simple_trp_idx2label = {0: "<c", 1: "<t"}
         else:
             print "No timing model given"
+        print "Markov Model ready mode:"
+        if self.constraint_only:
+            print "constraint only"
+        else:
+            print "conditional probability"
 
     def train_markov_model_from_file(self, corpus_path, mm_path, update=False,
                                      non_sparse=False):
@@ -159,7 +175,7 @@ class FirstOrderHMM():
                 continue
             labels_data = line.strip("\n").split(",")
             if "<r" in labels_data[0]:
-                continue # TODO error with corpus creation
+                continue  # TODO error with corpus creation
             previous = "s"
             # print "length sequence", len(labels_data)
             for i in range(len(labels_data)):
@@ -227,16 +243,20 @@ class FirstOrderHMM():
                            [y for x in all_outcomes for y in x])
         self.viterbi_init()  # initialize viterbi
 
-    def train_markov_model_from_constraint_matrix(self, csv_path, mm_path):
-        delim = '\t'
+    def train_markov_model_from_constraint_matrix(self, csv_path, mm_path,
+                                                  delim="\t"):
         table = [line.split(delim) for line in open(csv_path)]
         tags = []
         range_states = table.pop(0)[1:]
         for row in table:
             domain = row[0]
-            for i, range in enumerate(row[1:]):
-                if "1" in range:
-                    tags.append((domain, range_states[i])) 
+            for i, r in enumerate(row[1:]):
+                s = r.replace(" ", "").strip("\n")
+                if (s == ''):
+                    continue
+                if int(s) > 0:
+                    for _ in range(0, int(s)):
+                        tags.append((domain, range_states[i]))
         self.cfd_tags = nltk.ConditionalFreqDist(tags)
         print "cfd trained, counts:"
         self.cfd_tags.tabulate()
@@ -254,8 +274,6 @@ class FirstOrderHMM():
         self.tag_set = set(self.cfd_tags.keys() +
                            [y for x in all_outcomes for y in x])
         self.viterbi_init()  # initialize viterbi
-        
-        
 
     def viterbi_init(self):
         self.best_tagsequence = []  # presume this is for a new sequence
@@ -265,7 +283,7 @@ class FirstOrderHMM():
         self.history = []
         if self.noisy_channel_source_model:
             self.noisy_channel_source_model.reset()
-            self.noisy_channel = [] # history
+            self.noisy_channel = []  # history
 
     def add_to_history(self, viterbi, backpointer, converted):
         """We store a history of n_history steps back in case we need to
@@ -288,11 +306,11 @@ class FirstOrderHMM():
         self.best_tagsequence = self.best_tagsequence[
             :len(self.best_tagsequence)-n]
         if self.noisy_channel_source_model:
-            self.noisy_channel = self.noisy_channel[
-            :len(self.best_tagsequence)-n] # history
+            end_idx = len(self.best_tagsequence) - n
+            self.noisy_channel = self.noisy_channel[: end_idx]  # history
 
-    def viterbi_step(self, softmax, word_index, sequence_initial=False,
-                     timing_data=None):
+    def viterbi_step(self, input_distribution, word_index,
+                     sequence_initial=False, timing_data=None):
         """The principal viterbi calculation for an extension to the
         input prefix, i.e. not reseting.
         """
@@ -310,11 +328,11 @@ class FirstOrderHMM():
                 if tag == "s" or tag == 'se':
                     continue
                 # print word_index
-                # print softmax.shape
+                # print input_distribution.shape
                 # print self.tagToIndexDict[tag]
-                # print softmax[word_index][self.tagToIndexDict[tag]]
+                # print input_distribution[word_index][self.tagToIndexDict[tag]]
                 tag_prob = self.cpd_tags["s"].prob(self.convert_tag("s", tag))
-                if tag_prob >= 0.001:  #allowing for margin
+                if tag_prob >= 0.00001:  # allowing for margin of error
                     if self.constraint_only:
                         # TODO for now treating this like a {0,1} constraint
                         tag_prob = 1.0
@@ -322,7 +340,7 @@ class FirstOrderHMM():
                     tag_prob = 0.0
 
                 prob = log(tag_prob) + \
-                    log(softmax[word_index][self.tagToIndexDict[tag]])
+                    log(input_distribution[word_index][self.tagToIndexDict[tag]])
                 # no timing bias to start
                 if self.noisy_channel_source_model:
                     # noisy channel eliminate the missing tags
@@ -330,17 +348,17 @@ class FirstOrderHMM():
                                     convert_to_source_model_tags([tag],
                                                                  uttseg=True)
                     source_prob, node = self.noisy_channel_source_model.\
-                                        get_log_diff_of_tag_suffix(source_tags,
-                                                                   n=1)
+                        get_log_diff_of_tag_suffix(source_tags,
+                                                   n=1)
                     first_noisy_channel[tag] = node
-                    #prob = (source_weight * source_prob) + \
+                    # prob = (source_weight * source_prob) + \
                     #        ((1 - source_weight) * prob)
-                    prob+=(source_weight * source_prob)
+                    prob += (SOURCE_WEIGHT * source_prob)
                 first_viterbi[tag] = prob
                 first_backpointer[tag] = "s"
                 first_converted[tag] = self.convert_tag("s", tag)
                 assert first_converted[tag] in self.tag_set,\
-                    first_converted[tag] + "not in: " + str(self.tag_set)
+                    first_converted[tag] + " not in: " + str(self.tag_set)
             # store first_viterbi (the dictionary for the first word)
             # in the viterbi list, and record that the best previous tag
             # for any first tag is "s" (start of sequence tag)
@@ -384,8 +402,8 @@ class FirstOrderHMM():
             # print "calculating timing"
             # print timing_data
             X = self.timing_model_scaler.transform(np.asarray([timing_data]))
-            softmax_timing = self.timing_model.predict_proba(X)
-            # print softmax_timing
+            input_distribution_timing = self.timing_model.predict_proba(X)
+            # print input_distribution_timing
             # raw_input()
         for tag in self.observation_tags:
             # don't record anything for the START/END tag
@@ -413,15 +431,23 @@ class FirstOrderHMM():
                     converted_tag + " prev:" + str(prev_converted_tag)
                 tag_prob = self.cpd_tags[prev_converted_tag].prob(
                     converted_tag)
-                if tag_prob >= 0.00001:  # allowing for margin of error
+                if tag_prob >= 0.000001:  # allowing for margin of error
                     if self.constraint_only:
                         # TODO for now treating this like a {0,1} constraint
                         tag_prob = 1.0
                     test = converted_tag.lower()
+                    # check for different boosts for different tags
                     if "rps" in test:  # boost for start tags
-                        tag_prob = tag_prob * 1  # boost for rps
-                    elif "rpe" in test:
-                        tag_prob = tag_prob  # * 2  # boost for end tags
+                        # boost for rps
+                        tag_prob = tag_prob * SPARSE_WEIGHT_RPS
+                    if "rpe" in test:
+                        # boost for rp end tags
+                        tag_prob = tag_prob * SPARSE_WEIGHT_RPE
+                    if "t_" in test[:2]:
+                        # boost for t tags
+                        tag_prob = tag_prob * SPARSE_WEIGHT_T_
+                    if "_t" in test:
+                        tag_prob = tag_prob * SPARSE_WEIGHT_T
                     if timing_data and self.timing_model:
                         found = False
                         for k, v in self.simple_trp_idx2label.items():
@@ -433,27 +459,23 @@ class FirstOrderHMM():
                             raw_input("warning")
                         # using the prob from the timing classifier
                         # array over the different classes
-                        timing_prob = softmax_timing[0][timing_tag]
-                        if "<t" in tag:
-                            sparse_weight = 1.0
-                            # results on unweighted timing classifier:
-                            # 1 0.757 2 0.770 3 0.778  4. 0.781 5.0.783
-                            # 6. 0.785 7. 0.784
-                            timing_prob = timing_prob * sparse_weight
+                        timing_prob = input_distribution_timing[0][timing_tag]
                         if self.constraint_only:
                             # just adapt the prob of the timing tag
                             # tag_prob = timing_prob
                             # the higher the timing weight the more influence
                             # the timing classifier has
-                            tag_prob = (timing_weight * timing_prob) + tag_prob
+                            tag_prob = (TIMING_WEIGHT * timing_prob) + tag_prob
                             # print tag, timing_tag, timing_prob
                         else:
-                            tag_prob = (timing_weight * timing_prob) + tag_prob
+                            tag_prob = (TIMING_WEIGHT * timing_prob) + tag_prob
                 else:
                     tag_prob = 0.0
                 # the principal joint log prob
                 prob = prev_viterbi[prevtag] + log(tag_prob) + \
-                    log(softmax[word_index][self.tagToIndexDict[tag]])
+                    log(input_distribution[word_index][self.tagToIndexDict[tag]])
+
+                # gets updated by noisy channel if in this mode
                 if self.noisy_channel_source_model:
                     prev_n_ch_node = prev_noisy_channel[prevtag]
                     # The noisy channel model adds the score
@@ -474,46 +496,48 @@ class FirstOrderHMM():
                         # backpointer list)
                         inc_current_best_tag = prevtag
                         for b_count, bp in enumerate(inc_backpointer):
-                            inc_best_tag_sequence.append(bp[inc_current_best_tag])
+                            inc_best_tag_sequence.append(
+                                bp[inc_current_best_tag])
                             inc_current_best_tag = bp[inc_current_best_tag]
                             if b_count > 9:
                                 break
                         inc_best_tag_sequence.reverse()
                         inc_best_tag_sequence.append(tag)  # add tag
                         source_tags = tag_conversion.\
-                                            convert_to_source_model_tags(
+                            convert_to_source_model_tags(
                                                 inc_best_tag_sequence[1:],
                                                 uttseg=True)
-                        source_prob, nc_node = self.noisy_channel_source_model.\
-                                          get_log_diff_of_tag_suffix(source_tags,
-                                                                   n=1)
+                        source_prob, nc_node = \
+                            self.noisy_channel_source_model.\
+                            get_log_diff_of_tag_suffix(
+                                source_tags,
+                                n=1)
                     else:
                         # NB these only change if there is a backward
                         # looking tag
                         if "<rm-" in tag:
                             m = re.search("<rm-([0-9]+)\/>", tag)
                             if m:
-                                back = min([int(m.group(1)), len(self.backpointer)])
+                                back = min([int(m.group(1)),
+                                            len(self.backpointer)])
                                 suffix = ["<e/>"] * back + ["<f/>"]
                             # to get the change in probability due to this
                             # we need to backtrack further
                             n = len(suffix)
-                        
                         else:
                             suffix = tag_conversion.\
                                         convert_to_source_model_tags([tag])
-                            n = 1 # just monotonic extention
-                            
-                                # print back, i, source_tags
-                        source_prob, nc_node = self.noisy_channel_source_model.\
-                                          get_log_diff_of_tag_suffix(suffix,
-                                                            start_node_ID=prev_n_ch_node,
-                                                                   n=n)
-                         
-                    
-                    
-                    prob+=(source_weight * source_prob)
-                
+                            n = 1  # just monotonic extention
+                            # print back, i, source_tags
+                        source_prob, nc_node = \
+                            self.noisy_channel_source_model.\
+                            get_log_diff_of_tag_suffix(
+                                        suffix,
+                                        start_node_ID=prev_n_ch_node,
+                                        n=n)
+
+                    prob += (SOURCE_WEIGHT * source_prob)
+
                 if prob >= best_prob:
                     best_converted = converted_tag
                     best_previous = prevtag
@@ -522,7 +546,6 @@ class FirstOrderHMM():
                         best_n_c_node = nc_node
             # if best result is 0 do not add, pruning, could set this higher
             if best_prob > log(0.0):
-            # if True:  # TODO still a mystery
                 this_converted[tag] = best_converted
                 this_viterbi[tag] = best_prob
                 # the most likely preceding tag for this current tag
@@ -581,7 +604,7 @@ class FirstOrderHMM():
                 # print "backpointer..."
                 d = 0
                 for bp in inc_backpointer:
-                    d+=1
+                    d += 1
                     # print "depth", d, "find bp for", inc_current_best_tag
                     inc_best_tag_sequence.append(bp[inc_current_best_tag])
                     inc_current_best_tag = bp[inc_current_best_tag]
@@ -612,9 +635,11 @@ class FirstOrderHMM():
                                    convert_to_source_model_tags(x[0]),
                                    x[1]) for x in best_n]
         best_seqs = noisy_channel_source_model.\
-                    interpolate_probs_with_n_best(channel_beam,
-                                                  source_beam_width=1000,
-                                                  output_beam_width=n)
+            interpolate_probs_with_n_best(
+                channel_beam,
+                source_beam_width=1000,
+                output_beam_width=n)
+        return best_seqs
 
 #     def get_best_tag_sequence(self):
 #         """Returns the best tag sequence from the input so far.
@@ -634,32 +659,29 @@ class FirstOrderHMM():
 #         for bp in inc_backpointer:
 #             inc_best_tag_sequence.append(bp[inc_current_best_tag])
 #             inc_current_best_tag = bp[inc_current_best_tag]
-# 
 #         inc_best_tag_sequence.reverse()
 #         return inc_best_tag_sequence
-
 
     def get_best_tag_sequence(self, noisy_channel_source_model=None):
         l = self.get_best_n_tag_sequences(1, noisy_channel_source_model)
 
         return l[0]
 
-
-    def viterbi(self, softmax, incremental_best=False):
-        """Standard non incremental (sequence-level) viterbi over softmax input
+    def viterbi(self, input_distribution, incremental_best=False):
+        """Standard non incremental (sequence-level) viterbi over input_distribution input
 
         Keyword arguments:
-        softmax -- the emmision probabilities of each step in the sequence,
+        input_distribution -- the emmision probabilities of each step in the sequence,
         array of width n_classes
         incremental_best -- whether the tag sequence prefix is stored for
         each step in the sequence (slightly 'hack-remental'
         """
         incrementalBest = []
-        sentlen = len(softmax)
+        sentlen = len(input_distribution)
         self.viterbi_init()
 
         for word_index in range(0, sentlen):
-            self.viterbi_step(softmax, word_index, word_index == 0)
+            self.viterbi_step(input_distribution, word_index, word_index == 0)
             # INCREMENTAL RESULTS (hack-remental. doing it post-hoc)
             # the best result we have so far, not given the next one
             if incremental_best:
@@ -696,7 +718,7 @@ class FirstOrderHMM():
     def viterbi_incremental(self, soft_max, a_range=None,
                             changed_suffix_only=False, timing_data=None,
                             words=None):
-        """Given a new softmax input, output the latest labels.
+        """Given a new input_distribution input, output the latest labels.
         Effectively incrementing/editing self.best_tagsequence.
 
         Keyword arguments:
@@ -758,7 +780,9 @@ if __name__ == '__main__':
 
     tags_name = "swbd_disf1_uttseg_simple_033"
     tags = load_tags(
-        "../data/tag_representations/{}_tags.csv".format(tags_name))
+        "../data/tag_representations/{}_tags.csv".format(
+            tags_name)
+                     )
     if "disf" in tags_name:
         intereg_ind = len(tags.keys())
         interreg_tag = "<i/><cc/>" if "uttseg" in tags_name else "<i/>"
@@ -766,12 +790,14 @@ if __name__ == '__main__':
     print tags
 
     h = FirstOrderHMM(tags, markov_model_file=None)
-    corpus_path = "../data/tag_representations/{}_tag_corpus.csv".format(
-        tags_name).replace("_021", "")
     mm_path = "models/{}_tags.pkl".format(tags_name)
+    # corpus_path = "../data/tag_representations/{}_tag_corpus.csv".format(
+    #    tags_name).replace("_021", "")
     # h.train_markov_model_from_file(corpus_path, mm_path, non_sparse=True)
-    csv_file = "models/swbd_disf1_uttseg_simple.csv"
-    h.train_markov_model_from_constraint_matrix(csv_file, mm_path)
+    csv_file = "models/{}.csv".format(tags_name)
+    h.train_markov_model_from_constraint_matrix(csv_file,
+                                                mm_path,
+                                                delim=",")
     table = tabulate_cfd(h.cpd_tags)
     test_f = open("models/{}_tags_table.csv".format(tags_name), "w")
     test_f.write(table)

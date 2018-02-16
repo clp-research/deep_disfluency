@@ -152,7 +152,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Creates tag sets for \
                                      labels.')
     data_file = '../data/disfluency_detection/switchboard/' +\
-        'swbd_disf_train_1_2_partial_data_timings.csv'
+        'swbd_disf_train_1_partial_data_timings.csv'
     parser.add_argument('-i', action='store', dest='corpusFile',
                         default=data_file,
                         help='location of the corpus from which to\
@@ -162,7 +162,7 @@ if __name__ == '__main__':
                         help='location to store the tag files to\
                         tag index mapping')
     parser.add_argument('-u', action='store_true', dest='uttSeg',
-                        default=False,
+                        default=True,
                         help='Whether to annotate with utterance segmentation\
                         tags.')
     parser.add_argument('-d', action='store_true', dest='dialogueActs',

@@ -46,6 +46,11 @@ def convert_to_disfluency_tag(previous, tag):
     print "NO TAG for" + tag
 
 
+def convert_to_uttseg_tag(previous, tag):
+    """Returns plain uttseg tags."""
+    return uttseg_pattern(tag).format("w")
+
+
 def convert_to_disfluency_uttseg_tag(previous, tag):
     """Returns joint a list of (dis)fluency and trp tag which is dealt with
     in a uniform way by the Markov model.
@@ -68,7 +73,7 @@ def convert_to_disfluency_uttseg_tag(previous, tag):
                 return trp_tag.format("e")
         return trp_tag.format("e")
     elif "<i" in tag:
-        return trp_tag.format("i")  # This should always be t_i_t
+        return trp_tag.format("i")  # This should always be c_i_c
     elif "<rm-" in tag:
         if "<rpEnd" in tag:
             return trp_tag.format("rpSE")
@@ -86,7 +91,7 @@ def convert_to_disfluency_tag_simple(previous, tag):
     if "<f" in tag:
         return "f"
     elif "<i" in tag:
-        return "i"  # This should always be t_i_t
+        return "i"  # This should always be c_i_c when in uttseg
     elif "<e" in tag:
         return "e"
     elif "<rm-" in tag:

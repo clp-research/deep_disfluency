@@ -9,6 +9,9 @@ INTERSPEECH 2015.
 import sys
 import subprocess
 import os
+import tarfile
+import zipfile
+import urllib
 THIS_DIR = os.path.dirname(os.path.realpath(__file__))
 sys.path.append(THIS_DIR + "/../../")
 from deep_disfluency.tagger.deep_tagger import DeepDisfluencyTagger
@@ -18,6 +21,7 @@ from deep_disfluency.tagger.deep_tagger import DeepDisfluencyTagger
 # and put in place according to the top-level README
 # each of the parts of the below can be turned off
 # though they must be run in order so the latter stages work
+download_raw_data = False
 create_disf_corpus = False
 extract_features = False
 train_models = False
@@ -35,13 +39,46 @@ file_divisions_transcripts = [
     ('test', range_dir + '/swbd_disf_test_ranges.text'),
 ]
 
+SWBD_TIMINGS_URL = 'http://www.isip.piconepress.com/' + \
+    'projects/switchboard/releases/ptree_word_alignments.tar.gz'
+
+SWDA_CORPUS_URL = 'https://github.com/julianhough/' + \
+    'swda/blob/master/swda.zip?raw=true'
+
+SWBD_TIMINGS_DIR = THIS_DIR + '/../data/raw_data/' + \
+    SWBD_TIMINGS_URL.split('/')[-1].replace(".tar.gz", "")
+
+SWDA_CORPUS_DIR = THIS_DIR + '/../data/raw_data/' + \
+    SWDA_CORPUS_URL.split('/')[-1].replace(".zip?raw=true", "")
+
 # the experiments in the Interspeech paper
 # 18 non-POS window length 2
 # 21 POS length 2 RNN
 # 23 POS length 3 RNN
 # 41 POS length 2 LSTM  # not in paper, for comparison
 # experiments = [18, 21, 23, 41]
-experiments = [21]  # reduced version for speed for now
+experiments = [21, 41]  # reduced version for speed for now
+
+# 1. download the data
+if download_raw_data:
+    name = THIS_DIR + '/../data/raw_data/' + SWDA_CORPUS_URL.split('/')[-1]
+    if not os.path.isfile(name):
+        print 'downloading', name
+        urllib.urlretrieve(SWDA_CORPUS_URL, name)
+        zipf = zipfile.ZipFile(name)
+        zipf.extractall(path=SWDA_CORPUS_DIR)
+        zipf.close()
+        print 'extracted at', SWDA_CORPUS_DIR
+
+    name = THIS_DIR + '/../data/raw_data/' + SWBD_TIMINGS_URL.split('/')[-1]
+    if not os.path.isfile(name):
+        print 'downloading', name
+        urllib.urlretrieve(SWBD_TIMINGS_URL, name)
+        tar = tarfile.open(name)
+        tar.extractall(path=SWBD_TIMINGS_DIR)
+        tar.close()
+        print 'extracted at', SWBD_TIMINGS_DIR
+
 
 # 1. Create the base disfluency tagged corpora in a standard format
 """

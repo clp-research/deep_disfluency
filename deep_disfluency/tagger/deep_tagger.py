@@ -156,11 +156,13 @@ class DeepDisfluencyTagger(IncrementalTagger):
                                       pos_language_model,
                                       edit_language_model)
 
+        self.timing_model = None
+        self.timing_model_scaler = None
         if timer:
             print "loading timer..."
             self.timing_model = timer
             self.timing_model_scaler = timer_scaler
-        else:
+        elif self.args.use_timing_data:
             # self.timing_model = None
             # self.timing_model_scaler = None
             print "No timer specified, using default switchboard one"
@@ -177,6 +179,8 @@ class DeepDisfluencyTagger(IncrementalTagger):
                 # TODO a hack
                 # self.timing_model_scaler.scale_ = \
                 #    self.timing_model_scaler.std_.copy()
+        else:
+            print "Not using timing data"
 
         print "Loading decoder..."
         hmm_dict = deepcopy(self.tag_to_index_map)
@@ -194,12 +198,12 @@ class DeepDisfluencyTagger(IncrementalTagger):
             noisy_channel = SourceModel(self.lm, self.pos_lm,
                                         uttseg=self.args.do_utt_segmentation)
         self.decoder = FirstOrderHMM(
-            hmm_dict,
-            markov_model_file=self.args.tags,
-            timing_model=self.timing_model,
-            timing_model_scaler=self.timing_model_scaler,
-            constraint_only=True,
-            noisy_channel=noisy_channel
+                                hmm_dict,
+                                markov_model_file=self.args.tags,
+                                timing_model=self.timing_model,
+                                timing_model_scaler=self.timing_model_scaler,
+                                constraint_only=True,
+                                noisy_channel=noisy_channel
             )
 
         # getting the states in the right shape
@@ -459,7 +463,7 @@ class DeepDisfluencyTagger(IncrementalTagger):
 
         # 3. do the decoding on the softmax
         if "disf" in self.args.tags:
-            edit_tag = "<e/><cc>" if "uttseg" in self.args.tags else "<e/>"
+            edit_tag = "<e/><cc/>" if "uttseg" in self.args.tags else "<e/>"
             # print self.tag_to_index_map[edit_tag]
             adjustsoftmax = np.concatenate((
                     softmax,
@@ -804,6 +808,7 @@ class DeepDisfluencyTagger(IncrementalTagger):
                 # print i, timing_data[i]
                 _, end = timing_data[i]
                 if (not self.args.do_utt_segmentation) \
+                    and self.args.utts_presegmented \
                         and "<t" in labels[i]:
                     self.reset()  # reset after each utt if non pre-seg
                 # utt_idx = frames[i]

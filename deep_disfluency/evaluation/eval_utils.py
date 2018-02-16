@@ -189,6 +189,8 @@ def load_incremental_outputs_from_increco_file(increco_filename):
         spl = line.strip("\n").split("\t")
         start = float(spl[0])
         end = float(spl[1])
+        assert len(spl) >= 3, "short line!" + "%".join(spl)
+        # assert len(spl[2].split('@'))==2, "short 3rd idx!" + "%".join(spl)
         word = spl[2].split("@")[-1]
         tag = spl[-1].split("@")[-1]  # covers the POS cases
         latest_increco.append((word, start, end))
@@ -1109,7 +1111,7 @@ def get_repairs_with_start_word_index(a_tags, a_words, rp_start_index,
     word structure.
     Only repairs with onset at index rp_start.
     """
-    repairOnsets = re.findall('<rps id="[FP]*[0-9]*"/>',
+    repairOnsets = re.findall('<rps id="[FP]*-?[0-9]*"/>',
                               a_tags[rp_start_index])
     repairDict = {rps[rps.find("=")+2:-3]: None
                   for rps in repairOnsets}
@@ -1197,14 +1199,14 @@ def get_repairs_with_start_word_index(a_tags, a_words, rp_start_index,
     return deepcopy([val for val in repairDict.values()])
 
 
-def rename_all_repairs_in_line_with_index(tags):
+def rename_all_repairs_in_line_with_index(tags, simple=False):
     """Ensure all repairs are renamed according to the index
     their repair onset word starts at.
     """
     for i in range(0, len(tags)):
         for tag in get_tags(tags[i]):
             if "<rps" in tag:
-                repairOnsets = re.findall('<rps id="[FP]*[0-9]*"/>', tags[i])
+                repairOnsets = re.findall('<rps id="[FP]*-?[0-9]*"/>', tags[i])
                 assert len(repairOnsets) == 1, "too many/few repairs at" + \
                     str(i) + " in \n " + \
                     "\n".join(["\t".join([str(x), str(y)]) for
@@ -1214,16 +1216,18 @@ def rename_all_repairs_in_line_with_index(tags):
                 if old_id != str(i):
                     tags = rename_repair_with_repair_onset_idx(tags,
                                                                i,
-                                                               str(i))
+                                                               str(i),
+                                                               simple=simple)
     return tags
 
 
 def rename_repair_with_repair_onset_idx(orig_tags, rp_start_index, new_id,
+                                        simple=False,
                                         verbose=False):
     """Returns tags with the repair with a repair onset beginning\
     at position repair_start_idx renamed to string new_id"""
     tags = deepcopy(orig_tags)
-    repairOnsets = re.findall('<rps id="[FP]*[0-9]*"/>',
+    repairOnsets = re.findall('<rps id="[FP]*-?[0-9]*"/>',
                               tags[rp_start_index])
     repairDict = {rps[rps.find("=")+2:-3]: None
                   for rps in repairOnsets}
@@ -1248,7 +1252,7 @@ def rename_repair_with_repair_onset_idx(orig_tags, rp_start_index, new_id,
         tags[i] = new_tag
         if repair_start_found:
             break
-    if not repair_start_found:
+    if (not simple) and (not repair_start_found):
         raise Exception("No start found for repair beginning at " +
                         str(rp_start_index) + " in: \n" +
                         "\n".join(["\t".join([str(x), str(y)]) for
@@ -1287,7 +1291,7 @@ def rename_repair_with_repair_onset_idx(orig_tags, rp_start_index, new_id,
         tags[i] = new_tag
         if repair_end_found or same_name_repair_found:
             break
-    if not repair_end_found:
+    if (not simple) and (not repair_end_found):
         if verbose:
             print("No end found for repair beginning at " +
                   str(rp_start_index) + " in: \n" +
@@ -1304,11 +1308,16 @@ def rename_repair_with_repair_onset_idx(orig_tags, rp_start_index, new_id,
 # Methods for error analysis on incremental results
 def test():
     print "testing repair extraction"
-    tags = '<f/>,<rms id="FP3"/>,<i id="FP3"/><e/>,<rps id="FP3"/>\
-    <rpn id="FP3"/>,<rms id="6"/>,<i id="6"/><e/>,<rps id="6"/>\
-    <rpn id="6"/>,<f/>'.split(',')
-    print rename_repair_with_repair_onset_idx(tags, 3, "FP0")
+    #tags = '<f/>,<rms id="FP3"/>,<i id="FP3"/><e/>,<rps id="FP3"/>\
+    #<rpn id="FP3"/>,<rms id="6"/>,<i id="6"/><e/>,<rps id="6"/>\
+    #<rpn id="6"/>,<f/>'.split(',')
+    tags = '<f/>,<f/>,<i id="FP3"/><e/>,<rps id="FP3"/>,<f/>,<i id="6"/><e/>,<rps id="6"/>\
+    <f/>,<f/>'.split(',')
+    print rename_repair_with_repair_onset_idx(tags, 3, "FP0",
+                                              simple=True)
 
+    print re.findall('<rps id="[FP]*-?[0-9]*"/>', '<rps id="-1"/>')
+    
     words = "i,like,uh,love,like,uh,love,alot".split(",")
     repairs = get_repairs_with_start_word_index(tags, words, 3)
     for r in repairs:
@@ -1317,6 +1326,8 @@ def test():
     for r in repairs2:
         print r
     print repairs2[0] == repairs[0]
+    
+    
 
 
 if __name__ == '__main__':

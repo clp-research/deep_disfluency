@@ -108,14 +108,14 @@ from eval_utils import final_hyp_from_increco_and_incremental_metrics
 from eval_utils import rename_all_repairs_in_line_with_index
 
 # individual tags of interest
-acc_tags = ["<rms", "<rm", "<i", "<e", "<rps", "<rp", "<rpn",
+ACC_TAGS = ["<rms", "<rm", "<i", "<e", "<rps", "<rp", "<rpn",
             "<rpnrep", "<rpnsub", "<rpndel", "t/>"]
 # combined tags of interest
-combined_acc_tags = ["<rm.<i.<rp"]
+COMBINED_ACC_TAGS = ["<rm.<i.<rp"]
 # time to detection tags of interest
-ttd_tags = ["<rms", "<rps", "<e", "t/>"]
-relaxed_tags = ["<rps", "<e", "t/>"]
-error_analysis_tags = ["<rps", "<e", "t/>", "<rms"]
+TTD_TAGS = ["<rms", "<rps", "<e", "t/>"]
+RELAXED_TAGS = ["<rps", "<e", "t/>"]
+ERROR_ANALYSIS_TAGS = ["<rps", "<e", "t/>", "<rms"]
 
 MODEL_INFO_HEADER = "eval_corpus,model,context_win,\
 ed_num,rp_num,rm_num,rpn_num,\
@@ -240,6 +240,11 @@ def final_output_disfluency_eval(prediction_speakers_dict,
     """
     print "final output disfluency evaluation"
     print "word=", word, "interval=", interval, "utt_eval=", utt_eval
+    ttd_tags = deepcopy(TTD_TAGS)
+    acc_tags = deepcopy(ACC_TAGS)
+    relaxed_tags = deepcopy(RELAXED_TAGS)
+    combined_acc_tags = deepcopy(COMBINED_ACC_TAGS)
+    error_analysis_tags = deepcopy(ERROR_ANALYSIS_TAGS)
     if not utt_eval:
         if "t/>" in ttd_tags:
             ttd_tags.remove("t/>")
@@ -318,7 +323,8 @@ def final_output_disfluency_eval(prediction_speakers_dict,
         goldwords = gold[1]
         if word:  # assumes number of words == no of intervals
             prediction_tags = rename_all_repairs_in_line_with_index(
-                [x[0] for x in hyp[2]])
+                [x[0] for x in hyp[2]],
+                simple=not any(["<rm" in x[0] for x in hyp[2]]))
             gold_tags = list(gold[3])
             # for w, g, p in zip(goldwords, gold_tags, prediction_tags):
             #     testfile.write("\t".join([w, g, p]) + "\n")
@@ -521,6 +527,9 @@ def incremental_output_disfluency_eval(prediction_speakers_dict,
     """
     print "incremental output disfluency evaluation"
     print "word=", word, "interval=", interval, "utt_eval=", utt_eval
+    ttd_tags = deepcopy(TTD_TAGS)
+    acc_tags = deepcopy(ACC_TAGS)
+    relaxed_tags = deepcopy(RELAXED_TAGS)
     if not utt_eval:
         if "t/>" in ttd_tags:
             ttd_tags.remove("t/>")

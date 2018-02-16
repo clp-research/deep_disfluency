@@ -2,116 +2,73 @@
 
 Code for Deep Learning driven incremental disfluency detection and related dialogue processing tasks.
 
-## Set up ##
+## Set up and basic use ##
 
-To run the code here you need to have `Python 2.7` installed, and also `pip` for installing the dependencies. (Also `IPython` should be installed, preferrably, if you want to run notebooks).
+To run the code here you need to have `Python 2.7` installed, and also [`pip`](https://pip.readthedocs.org/en/1.1/installing.html) for installing the dependencies. (Also `IPython` should be installed, preferrably, if you want to run notebooks).
 
-Firstly, install Cython, then h5py, by running the below on the command line:
+Firstly, install Cython, then h5py, by running the below on the command line (depending on your user status, you may need to prefix the belo with `sudo `):
 
-`sudo pip install Cython`
+`pip install Cython`
 
-`sudo pip install h5py`
+`pip install h5py`
 
 You then need to run the below from the command line from inside this folder:
 
-`sudo pip install -r requirements.txt`
+`pip install -r requirements.txt`
 
 If you just want to use the tagger off-the-shelf see the usage in `demo.py` or the notebook `demo.ipynb`.
 Make sure this repository is on your system path if you want to use it in python more generally.
 
 ## Running experiments ##
 
-The code can be used to run the experiments on Recurrent Neural Networks in the Interspeech 2015 paper:
+The code can be used to run the experiments on Recurrent Neural Networks (RNNs) and LSTMs from:
 
-Julian Hough and David Schlangen. Recurrent Neural Networks for Incremental Disfluency Detection. INTERSPEECH 2015. Dresden, Germany, September 2015.
-
-The code can also be used to run the experiments on Recurrent Neural Networks and LSTMs from:
-
+```
 Julian Hough and David Schlangen. Joint, Incremental Disfluency Detection and Utterance Segmentation from Speech. Proceedings of EACL 2017. Valencia, Spain, April 2017.
+```
 
-Please cite the appropriate paper if you use this code.
+Please cite the paper if you use this code.
 
-If you are using a pretrained model as in the usage in `demo.py` you can run `experiments/EACL_2017.py` or `experiments/Interspeech_2015.py` but adjusting the parameters at the top of the file to:
+If you are using our pretrained models as in the usage in `demo.py` you can simply run `deep_disfluency/experiments/EACL_2017.py`, ensuring the boolean variables at the top of the file to:
 
 ```python
+download_raw_data = False
 create_disf_corpus = False
 extract_features = False
 train_models = False
 test_models = True
 ```
- 
-If that level of reproducibility does not satisfy you, you can set all those boolean values to `True`. The below set-up of the data must then be done before running the appropriate script.
 
-**Data**
+If that level of reproducibility does not satisfy you, you can set all those boolean values to `True` (NB: be wary that training the models for each experiment in the script can take 24hrs+ even with a decent GPU).
 
-Training is done through creating dialogue matrices (one per speaker in each dialogue), whereby the format of these for each row in the matrix is:
+Once the script has been run, running the Ipython notebook at `deep_disfluency/experiments/analysis/EACL_2017/EACL_2017.ipynb` should process the outputs and give similar results to those recorded in the paper.
 
-`word_idx, pos_idx, word_duration, acoustic_features..., lm_features...., label`
+*Acknowledgments*
 
+This basis of these models is the disfluency and dialogue act annotated Switchboard corpus, based on that provided by Christopher Potts's 2011 Computational Pragmatics course ([[at http://compprag.christopherpotts.net/swda.html]]) or at [[https://github.com/cgpotts/swda]]. Here we use Julian Hough's fork which corrects some of the POS-tags and disfluency annotation:
 
-To generate the data for these experiments, for using text alone (without speech data) you need access to two publicly available versions of the Switchboard corpus transcripts.
+[[https://github.com/julianhough/swda.git]]
 
-The first is the disfluency and dialogue act annotated Switchboard corpus, based on that provided by Christopher Potts's 2011 Computational Pragmatics course (at http://compprag.christopherpotts.net/swda.html) or at https://github.com/cgpotts/swda. Clone Julian Hough's fork:
+The second basis is the word timings data for switchboard, which is a corrected version with word timing information to the Penn Treebank version of the MS alignments, which can be downloaded at:
 
-https://github.com/julianhough/swda.git
+[[http://www.isip.piconepress.com/projects/switchboard/releases/ptree_word_alignments.tar.gz]]
 
-Extract the swda.zip folder from that repo as into the data/raw_data/ folder.
-
-The second is to get the word timings, which is a corrected version with word timing information to the Penn Treebank version of the MS alignments, which can be downloaded at:
-
-http://www.isip.piconepress.com/projects/switchboard/releases/ptree_word_alignments.tar.gz
-
-Extract the folder into the data/raw_data/ directory and rename the root of the extracted folder from 'data' to 'swbd_alignments'. 
+## Extra: using the Switchboard audio data ##
 
 If you are satisfied just using lexical/POS/Dialogue Acts and word timing data alone, the above are sufficient, however if you want to use other acoustic data and use ASR results, you must have access to the Switchboard corpus audio release. This is available for purchase from:
 
-https://catalog.ldc.upenn.edu/ldc97s62
+[[https://catalog.ldc.upenn.edu/ldc97s62]]
 
-From the switchboard audio release, copy or move the folder which contains the .sph files (swbd1) to within the data/raw_data folder. Note this is very large at around 14GB.
+From the switchboard audio release, copy or move the folder which contains the .sph files (called `swbd1`) to within the `deep_disfluency/data/raw_data/` folder. Note this is very large at around 14GB.
 
-By now the raw_data folder will have the following structure (with the possible omission of the swbd1 folder with the audio data if that is not required):
+#Future: Creating your own data#
 
-```bash
-deep_disfluency$ tree --filelimit 15 deep_disf/data/raw_data/
-deep_disf/data/raw_data/
-├── README.txt
-├── swbd_alignments
-│   ├── AAREADME.text
-│   ├── alignments
-│   │   ├── 2 [910 entries exceeds filelimit, not opening dir]
-│   │   ├── 3 [954 entries exceeds filelimit, not opening dir]
-│   │   └── 4 [388 entries exceeds filelimit, not opening dir]
-│   └── manual.text
-└── swda
-    ├── sw00utt [99 entries exceeds filelimit, not opening dir]
-    ├── sw01utt [100 entries exceeds filelimit, not opening dir]
-    ├── sw02utt [100 entries exceeds filelimit, not opening dir]
-    ├── sw03utt [100 entries exceeds filelimit, not opening dir]
-    ├── sw04utt [100 entries exceeds filelimit, not opening dir]
-    ├── sw05utt [100 entries exceeds filelimit, not opening dir]
-    ├── sw06utt [100 entries exceeds filelimit, not opening dir]
-    ├── sw07utt [100 entries exceeds filelimit, not opening dir]
-    ├── sw08utt [100 entries exceeds filelimit, not opening dir]
-    ├── sw09utt [100 entries exceeds filelimit, not opening dir]
-    ├── sw10utt [100 entries exceeds filelimit, not opening dir]
-    ├── sw11utt [16 entries exceeds filelimit, not opening dir]
-    ├── sw12utt
-    │   ├── sw_1200_2121.utt.csv
-    │   ├── sw_1201_2131.utt.csv
-    │   ├── sw_1202_2151.utt.csv
-    │   ├── sw_1203_2229.utt.csv
-    │   ├── sw_1204_2434.utt.csv
-    │   ├── sw_1205_2441.utt.csv
-    │   ├── sw_1206_2461.utt.csv
-    │   ├── sw_1207_2503.utt.csv
-    │   ├── sw_1208_2724.utt.csv
-    │   ├── sw_1209_2836.utt.csv
-    │   └── sw_1210_3756.utt.csv
-    ├── sw13utt [29 entries exceeds filelimit, not opening dir]
-    └── swda-metadata.csv
-```
+Training data is created through creating dialogue matrices (one per speaker in each dialogue), whereby the format of these for each row in the matrix is as follows, where `,` indicates a new column, and `...` means there are potentially multiple columns:
 
-If the above is in place (even without acoustic features), the script at `deep_disfluency/experiments/EACL_2017.py` should work out of the box and return the results from the paper.
+`word index, pos index, word duration, acoustic features..., lm features..., label`
+
+There are methods for creating these in the `deep_disfluency/corpus` and `deep_disfluency/feature_extraction` modules.
+
 
 
 

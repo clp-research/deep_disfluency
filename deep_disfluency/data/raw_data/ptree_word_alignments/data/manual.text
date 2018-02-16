@@ -1,0 +1,246 @@
+  Field #                Explanation
+  ----------------------------------
+  0                      MS'98 transcription id
+  1                      LDC Penn Treebank id
+  2                      MS'98 start time of word
+  3                      MS'98 end time of word
+  4                      alignment tag. Is empty for matching words.
+			 <SUB> = substitution
+			 <INS> = insertion
+			 <DEL> = deletion
+			 <CONT> = continuation
+  5                      LDC Penn Treebank word transcription, "---" if deleted
+  6                      MS'98 word transcription, "---" if insertion
+
+
+Situation: Correct deletion alignment
+Fix: No change
+
+sw2005A-ms98-a-0001	A.1	3.460000	3.710000		uh	uh
+sw2005A-ms98-a-0001	A.1	3.840000	3.940000	<DEL>	---	h[ow]-
+sw2005A-ms98-a-0001	A.1	3.990000	4.230000		how	how
+
+
+Situation: Correct substitution alignment
+Fix: No change
+
+sw2005A-ms98-a-0003	A.3	22.350875	22.570875		Yeah	yeah
+sw2005A-ms98-a-0005	A.5	31.926750	32.426750	<SUB>	Uh-huh	um-hum
+sw2005A-ms98-a-0007	A.7	45.271250	45.821250	<SUB>	Yeah	yes
+
+
+Situation: Correct insertion alignment
+Fix: No change
+
+sw2005A-ms98-a-0011	A.15	86.554375	86.864375		Yeah	yeah
+sw2005A-ms98-a-0013	A.17	99.281250	99.441250	<SUB>	Uh-huh	um-hum
+sw2005A-ms98-a-0013	A.19	99.441250	99.441250	<INS>	Uh-huh	---
+sw2005A-ms98-a-0013	A.19	99.441250	99.571250		Yeah	yeah
+
+
+Situation: MS98 word spans two (or more) LDC words
+Fix: change --- to +++. No change to the time marks. Change the error tags to <CONT>
+     for "continuation"
+
+sw2005A-ms98-a-0013	A.19	108.241250	108.831250	<SUB>	some	sometime
+sw2005A-ms98-a-0013	A.19	108.831250	108.831250	<INS>	time	---
+
+sw2005A-ms98-a-0013	A.19	108.241250	108.831250	<CONT>	some	sometime
+sw2005A-ms98-a-0013	A.19	108.831250	108.831250	<CONT>	time	+++
+
+
+
+Situation: Convention difference: partial words
+Fix: Remove error tag
+
+sw2005A-ms98-a-0016	A.29	137.696500	137.846500	<SUB>	tr-	tr[aveled]-
+sw2005A-ms98-a-0016	A.29	137.966500	138.126500		she	she
+
+sw2005A-ms98-a-0016	A.29	137.696500	137.846500		tr-	tr[aveled]-
+sw2005A-ms98-a-0016	A.29	137.966500	138.126500		she	she
+
+
+
+Situation: Convention difference: spelling
+Fix: Remove error tag
+
+sw2005A-ms98-a-0017	A.33	147.623375	148.083375	<SUB>	heart-rending	heartrending
+sw2005A-ms98-a-0017	A.33	148.083375	148.253375		for	for
+
+sw2005A-ms98-a-0017	A.33	147.623375	148.083375		heart-rending	heartrending
+sw2005A-ms98-a-0017	A.33	148.083375	148.253375		for	for
+
+
+
+Situation: Partial "I"
+Fix: No change
+
+sw2005A-ms98-a-0038	A.89	309.192625	309.222625	<SUB>	I	i-
+sw2005A-ms98-a-0038	A.89	309.222625	309.262625	<SUB>	I	i-
+
+sw2005A-ms98-a-0038	A.89	309.192625	309.222625	<SUB>	I	i-
+sw2005A-ms98-a-0038	A.89	309.222625	309.262625	<SUB>	I	i-
+
+
+Situation: Misalignment
+Fix: Realign correctly - fix error tags, fix time marks.
+
+sw2005A-ms98-a-0039	A.93	317.210875	317.350875		I	i
+sw2005A-ms98-a-0039	A.93	317.350875	317.490875	<SUB>	I	di[dn't]-
+sw2005A-ms98-a-0039	A.93	317.650875	317.650875	<INS>	di-	---
+sw2005A-ms98-a-0039	A.93	317.650875	317.740875		I	i
+
+sw2005A-ms98-a-0039	A.93	317.210875	317.350875		I	i
+sw2005A-ms98-a-0039	A.93	317.350875	317.350875	<INS>	I	---
+sw2005A-ms98-a-0039	A.93	317.350875	317.490875		di-	di[dn't]-
+sw2005A-ms98-a-0039	A.93	317.650875	317.740875		I	i
+
+
+
+Situation: Convention difference: Laughter words
+Fix: Remove error tag 
+
+sw2005A-ms98-a-0057	A.141	419.070750	419.270750	<SUB>	whether	[laughter-would]
+sw2005A-ms98-a-0057	A.141	419.440750	419.540750	<SUB>	we	[laughter-we]
+sw2005A-ms98-a-0057	A.141	419.640750	419.840750	<SUB>	feel	[laughter-feel]
+sw2005A-ms98-a-0057	A.141	419.840750	420.090750	<SUB>	like	[laughter-they're]
+sw2005A-ms98-a-0057	A.141	420.090750	420.360750	<SUB>	are	[laughter-gonna]
+sw2005A-ms98-a-0057	A.141	420.400750	420.590750	<SUB>	going	[laughter-be]
+sw2005A-ms98-a-0057	A.141	420.590750	420.680750	<SUB>	to	[laughter-a]
+sw2005A-ms98-a-0057	A.141	420.730750	421.080750	<SUB>	be	[laughter-good]
+sw2005A-ms98-a-0057	A.141	421.230750	421.230750	<INS>	a	---
+sw2005A-ms98-a-0057	A.141	421.230750	421.230750	<INS>	good	---
+sw2005A-ms98-a-0057	A.141	421.230750	421.480750		they're	they're
+
+sw2005A-ms98-a-0057	A.141	419.070750	419.270750	<SUB>	whether	[laughter-would]
+sw2005A-ms98-a-0057	A.141	419.440750	419.540750		we	[laughter-we]
+sw2005A-ms98-a-0057	A.141	419.640750	419.840750		feel	[laughter-feel]
+sw2005A-ms98-a-0057	A.141	419.840750	419.840750	<SUB>	like	---
+sw2005A-ms98-a-0057	A.141	419.840750	420.090750	<SUB>	are	[laughter-they're]
+sw2005A-ms98-a-0057	A.141	420.090750	420.360750	<SUB>	going	[laughter-gonna]
+sw2005A-ms98-a-0057	A.141	420.360750	420.360750	<SUB>	to	---
+sw2005A-ms98-a-0057	A.141	420.400750	420.590750	<SUB>	be	[laughter-be]
+sw2005A-ms98-a-0057	A.141	420.590750	420.680750	<INS>	a	[laughter-a]
+sw2005A-ms98-a-0057	A.141	420.730750	421.080750	<INS>	good	[laughter-good]
+sw2005A-ms98-a-0057	A.141	421.230750	421.480750		they're	they're
+
+
+
+Situation: Convention difference: "gonna" vs. "going to"
+Fix: none
+
+sw2005A-ms98-a-0057	A.141	421.660750	421.870750	<SUB>	going	gonna
+sw2005A-ms98-a-0057	A.141	421.870750	421.870750	<INS>	to	---
+
+
+
+Situation: LDC word spans two (or more) MS98 words
+Fix: change --- to +++. No change to the time marks. Change the error tags to <CONT>
+     for "continuation".
+
+sw2005B-ms98-a-0064	B.76	261.528500	261.718500	<CONT>	eighty-three	eighty
+sw2005B-ms98-a-0064	B.76	261.718500	262.208500	<CONT>	+++	three
+
+
+
+Situation: Contraction difference 
+
+Fix: Fix improper alignment in this case so that the contraction matches to the root 
+     word.  Change the error tags to <CONT> for "continuation".
+
+sw2005B-ms98-a-0076	B.94	316.926750	317.206750	<SUB>	Uh-huh	um-hum
+sw2005B-ms98-a-0078	B.96	322.185500	322.535500	<SUB>	That	um-hum
+sw2005B-ms98-a-0078	B.96	322.685500	322.835500	<SUB>	would	that'd
+
+sw2005B-ms98-a-0076	B.94	316.926750	317.206750	<SUB>	Uh-huh	um-hum
+sw2005B-ms98-a-0078	B.96	322.185500	322.535500	<DEL>	---	um-hum
+sw2005B-ms98-a-0078	B.96	322.685500	322.835500	<CONT>	That	that'd
+sw2005B-ms98-a-0078	B.96	322.835500	322.835500	<CONT>	would	+++
+
+
+
+Situation: Improper alignment
+Fix: Correct alignments and time marks
+
+sw2005B-ms98-a-0092	B.120	369.373000	369.643000		older	older
+sw2005B-ms98-a-0092	B.122	369.913000	369.973000	<SUB>	Uh-huh	you
+sw2005B-ms98-a-0092	B.124	369.973000	370.073000	<SUB>	Uh-huh	know
+sw2005B-ms98-a-0094	B.126	381.306625	381.806625	<SUB>	true	um-hum
+sw2005B-ms98-a-0096	B.128	384.750750	385.010750	<DEL>	---	um-hum
+sw2005B-ms98-a-0096	B.128	385.290750	385.390750	<DEL>	---	-[tha]t's
+
+sw2005B-ms98-a-0092	B.120	369.373000	369.643000		older	older
+sw2005B-ms98-a-0092	B.122	369.913000	369.973000	<DEL>	---	you
+sw2005B-ms98-a-0092	B.124	369.973000	370.073000	<DEL>	---	know
+sw2005B-ms98-a-0094	B.126	381.306625	381.806625	<SUB>	Uh-huh	um-hum
+sw2005B-ms98-a-0096	B.128	384.750750	385.010750	<SUB>	Uh-huh	um-hum
+sw2005B-ms98-a-0096	B.128	385.290750	385.390750	<SUB>	true	-[tha]t's
+
+
+Situation: Improper alignment
+Fix: Correct alignments and time marks
+
+sw2005B-ms98-a-0100	B.128	395.004250	395.384250	<SUB>	um	um-hum
+sw2005B-ms98-a-0100	B.130	395.494250	395.824250	<SUB>	Uh-huh	um-hum
+sw2005B-ms98-a-0102	B.132	397.364875	397.364875	<INS>	Uh-huh	---
+sw2005B-ms98-a-0102	B.134	397.364875	397.534875		That's	that's
+
+sw2005B-ms98-a-0100	B.128	395.494250	395.494250	<INS>	um	---
+sw2005B-ms98-a-0100	B.130	395.494250	395.824250	<SUB>	Uh-huh	um-hum
+sw2005B-ms98-a-0102	B.132	397.364875	397.364875	<SUB>	Uh-huh	um-hum
+sw2005B-ms98-a-0102	B.134	397.364875	397.534875		That's	that's
+
+
+
+Situation: convention difference: _1 words
+Fix: remove error tag
+
+sw2005B-ms98-a-0108	B.146	428.903750	428.983750	<SUB>	them	them_1
+sw2005B-ms98-a-0108	B.146	428.983750	429.033750		a	a
+
+sw2005B-ms98-a-0108	B.146	428.903750	428.983750		them	them_1
+sw2005B-ms98-a-0108	B.146	428.983750	429.033750		a	a
+
+
+
+Situation: Convention difference: "wanna" vs. "want to"
+Fix: Same as "gonna" vs. "going to"
+
+sw2008A-ms98-a-0008	A.13	34.610500	34.840500	<SUB>	want	wanna
+sw2008A-ms98-a-0008	A.13	34.860500	34.860500	<INS>	to	---
+
+
+
+Situation: Convention difference: partial words without same roots
+fix: Should we count this as a substitution or not?
+
+sw2008A-ms98-a-0046	A.75	198.005125	198.255125	<SUB>	un-	uns[easonal]-
+sw2008A-ms98-a-0046	A.75	198.335125	199.115125		unseasonal	unseasonal
+
+
+
+Situation: Convention difference: Acronyms
+Fix: Count as continuations. Fix labels
+
+sw2012A-ms98-a-0030	A.25	180.951500	181.341500	<SUB>	C	CIA
+sw2012A-ms98-a-0030	A.25	181.341500	181.341500	<INS>	I	---
+sw2012A-ms98-a-0030	A.25	181.341500	181.341500	<INS>	A	---
+
+sw2012A-ms98-a-0030	A.25	180.951500	181.341500	<CONT>	C	CIA
+sw2012A-ms98-a-0030	A.25	181.341500	181.341500	<CONT>	I	+++
+sw2012A-ms98-a-0030	A.25	181.341500	181.341500	<CONT>	A	+++
+
+
+
+Situation: Mislabeled partial words
+Fix: no change
+
+sw2012A-ms98-a-0079	A.87	465.298500	465.738500	<SUB>	social	socia[l]-
+sw2012A-ms98-a-0080	A.87	472.515625	472.875625	<SUB>	invite-	invite
+
+Situation: Spelling difference of proper names.
+Fix: remove error tag
+
+sw2012A-ms98-a-0079	A.87	44.298500	44.738500	<SUB>	Hagerty	Haggerty
+
+sw2012A-ms98-a-0079	A.87	44.298500	44.738500		Hagerty	Haggerty
