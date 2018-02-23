@@ -362,7 +362,7 @@ class DeepDisfluencyTagger(IncrementalTagger):
                                  proper_name_pos_tags=["NNP", "NNPS",
                                                        "CD", "LS",
                                                        "SYM", "FW"]):
-        word = word.lower()
+        word = word.lower().replace("'", "")  # no punctuation
         if not pos and self.pos_tagger:
             pos = self.pos_tagger.tag([])  # TODO
         if pos:
@@ -736,6 +736,12 @@ class DeepDisfluencyTagger(IncrementalTagger):
         print 'BEST RESULT: epoch', best_epoch, 'valid score', best_score
         tag_accuracy_file.close()
         return best_epoch
+
+    def get_output_tags(self, with_words=False):
+        if with_words:
+            return zip(self.output_tags,
+                       self.word_graph[self.window_size-1:])
+        return self.output_tags
 
     def incremental_output_from_file(self, source_file_path,
                                      target_file_path=None,
