@@ -83,7 +83,7 @@ If you would like to run a live ASR version using the IBM Watson speech-to-text 
 2. Prepare your credentials from IBM Watson (free trials are available):
        * Visit the `IBM Watson projects`_ page.
        * Choose your project.
-       * Copy the credentials to ``credentials.json`` somewhere on your computer.
+       * Copy the credentials to ``credentials.json`` into this directory.
 3. ``pip install watson-streaming`` and you are ready to go!
 
 .. _PortAudio: http://www.portaudio.com/
