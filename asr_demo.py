@@ -35,8 +35,10 @@ def new_word_hypotheses_handler(word_diff, rollback, word_graph):
         last_end_time = end_time
     # print out all the output tags from the new word diff onwards
     print "\nnew tags:"
-    for h in disf.get_output_tags(with_words=True)[new_output_start:]:
-        print h
+    for w, h in zip(
+            word_graph[new_output_start:],
+            disf.get_output_tags(with_words=False)[new_output_start:]):
+        print w, h
 
 # NB! Put your Watson credentials as credentials.json in this directory
 asr = IBMWatsonASR("credentials.json", new_word_hypotheses_handler)

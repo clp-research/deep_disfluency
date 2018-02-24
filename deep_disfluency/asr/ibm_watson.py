@@ -34,8 +34,8 @@ class IBMWatsonASR(ASR):
                           h[1], h[2])
                          for h in word_diff]
             # print "ASR input", word_diff, rollback
-            for h in self.word_graph:
-                print h
+            # for h in self.word_graph:
+            #    print h
             if self.new_hypothesis_callback:
                 self.new_hypothesis_callback(word_diff, rollback,
                                              self.word_graph)
