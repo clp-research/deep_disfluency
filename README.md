@@ -94,7 +94,7 @@ The code can be used to run the experiments on Recurrent Neural Networks (RNNs) 
 Julian Hough and David Schlangen. Joint, Incremental Disfluency Detection and Utterance Segmentation from Speech. Proceedings of EACL 2017. Valencia, Spain, April 2017.
 ```
 
-Please cite the paper if you use this code.
+Please cite [the paper](http://aclweb.org/anthology/E17-1031) if you use this code.
 
 If you are using our pretrained models as in the usage in `demo.py` you can simply run `deep_disfluency/experiments/EACL_2017.py`, ensuring the boolean variables at the top of the file to:
 
