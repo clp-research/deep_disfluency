@@ -295,14 +295,10 @@ def check_credentials(credentials):
 
 
 if __name__ == '__main__':
-    #1841487c-30f4-4450-90bd-38d1271df295:EcqA8yIP7HBZ
-    #f48cb7ab-9df6-4b05-bc70-82894f05a794:MywRjRzhKkuU
-    username_password = "1841487c-30f4-4450-90bd-38d1271df295:EcqA8yIP7HBZ"
-    
     # parse command line parameters
     parser = argparse.ArgumentParser(description='client to do speech recognition using the WebSocket interface to the Watson STT service')
     parser.add_argument('-credentials', action='store', dest='credentials', help='Basic Authentication credentials in the form \'username:password\'',
-                         default=username_password,required=False, type=check_credentials)
+                         default=None,required=True, type=check_credentials)
     parser.add_argument('-in', action='store', dest='fileInput', default='./recordings2.txt', help='text file containing audio files')
     parser.add_argument('-out', action='store', dest='dirOutput', default='./asr_2', help='output directory')
     parser.add_argument('-type', action='store', dest='contentType', default='audio/wav', help='audio content type, for example: \'audio/l16; rate=44100\'')
