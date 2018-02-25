@@ -73,15 +73,11 @@ Make sure this repository is on your system path if you want to use it in python
 
 If you would like to run a live ASR version using the IBM Watson speech-to-text recognizer, you need to also do the following: 
 
-1. Install PortAudio_ - a free, cross-platform, open-source, audio I/O library. Install it first.
+1. Install [PortAudio](http://www.portaudio.com/) - a free, cross-platform, open-source, audio I/O library. Install it first.
 2. Prepare your credentials from IBM Watson (free trials are available):
-       * Visit the `IBM Watson projects`_ page.
-       * Choose your project.
-       * Copy the credentials to ``credentials.json`` into this directory.
-3. ``pip install watson-streaming`` and you are ready to go!
-
-.. _PortAudio: http://www.portaudio.com/
-.. _`IBM Watson projects`: https://console.bluemix.net/developer/watson/projects
+   * Visit the [IBM Watson projects](https://console.bluemix.net/developer/watson/projects) page.
+   * Choose your project.
+   * Copy the credentials to `credentials.json` into this directory.
 
 The ASR live streaming demo at `asr_demo.py` can then be run and you should be able to see the recognized words, timings, POS tags, and disfluency tags appearing in real time as you speak into your microphone.
 
