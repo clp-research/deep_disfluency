@@ -60,15 +60,9 @@ Some example output on Switchboard utterances is as below, where `<f/>` is the d
 
 ## Set up and basic use ##
 
-To run the code here you need to have `Python 2.7` installed, and also [`pip`](https://pip.readthedocs.org/en/1.1/installing.html) for installing the dependencies. (Also `IPython` should be installed, preferrably, if you want to run notebooks).
+To run the code here you need to have `Python 2.7` installed, and also [`pip`](https://pip.readthedocs.org/en/1.1/installing.html) for installing the dependencies.
 
-Firstly, install Cython, then h5py, by running the below on the command line (depending on your user status, you may need to prefix the belo with `sudo `):
-
-`pip install Cython`
-
-`pip install h5py`
-
-You then need to run the below from the command line from inside this folder:
+You need to run the below from the command line from inside this folder (depending on your user status, you may need to prefix the below with `sudo` or use a virtual environment):
 
 `pip install -r requirements.txt`
 
