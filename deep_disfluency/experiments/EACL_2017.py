@@ -63,7 +63,7 @@ experiments = [33, 34, 35, 36, 37, 38]
 # experiments = [35]  # short version for testing
 # 1. Download the SWDA and word timings
 if download_raw_data:
-    name = THIS_DIR + '/../data/raw_data/' + SWDA_CORPUS_URL.split('/')[-1]
+    name = THIS_DIR + '/../data/raw_data/swda.zip'
     if not os.path.isfile(name):
         print 'downloading', name
         urllib.urlretrieve(SWDA_CORPUS_URL, name)
