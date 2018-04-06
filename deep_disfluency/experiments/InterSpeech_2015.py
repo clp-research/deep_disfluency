@@ -61,7 +61,7 @@ experiments = [21, 41]  # reduced version for speed for now
 
 # 1. download the data
 if download_raw_data:
-    name = THIS_DIR + '/../data/raw_data/' + SWDA_CORPUS_URL.split('/')[-1]
+    name = THIS_DIR + '/../data/raw_data/swda.zip'
     if not os.path.isfile(name):
         print 'downloading', name
         urllib.urlretrieve(SWDA_CORPUS_URL, name)
