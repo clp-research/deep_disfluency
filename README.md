@@ -27,35 +27,35 @@ Every repair detected or in the gold standard will have at least the `rms`, `rps
 Some example output on Switchboard utterances is as below, where `<f/>` is the default tag for a fluent word:
 
 ```
-	4617:A:15:h		1	uh          UH	        <e/>
-    				2	i	        PRP	        <f/>
-    				3	dont	    VBPRB	    <f/>
-    				4	know	    VB	        <f/>
+	4617:A:15:h		1	uh          	UH	    <e/>
+    				2	i	        PRP	    <f/>
+    				3	dont	    	VBPRB	    <f/>
+    				4	know	    	VB	    <f/>
     				
-	4617:A:16:sd	1	the         DT          <rms id="1"/>
-    				2	the	        DT	        <rps id="1"/><rpn id="1"/>
-    				3	things	    NNS	        <f/>
-    				4	they	    PRP	        <f/>
-    				5	asked	    VBD         <f/>
-    				6	to	        TO	        <f/>
-    				7	talk	    VB	        <f/>
-    				8	about	    IN	        <f/>
-    				9	were	    VBD	        <f/>
-    				10	whether	    IN	        <rms id="12"/>
-    				11	the	        DT	        <rm id="12"/>
-    				12	uh	        UH	        <i id="12"/><e/>
-    				13	whether	    IN	        <rps id="12"/>
-    				14	the	        DT	        <rpn id="12"/>
-    				15	judge	    NN	        <f/>
-    				16	should	    MD	        <f/>
-    				17	be	        VB	        <f/>
-    				18	the	        DT	        <f/>
-    				19	one	        NN	        <f/>
-    				20	that	    WDT	        <f/>
-    				21	does	    VBZ	        <f/>
-    				22	the	        DT	        <f/>
-    				23	uh	        UH	        <e/>
-				    24	sentencing	NN	        <f/>
+	4617:A:16:sd		1	the         	DT          <rms id="1"/>
+    				2	the	        DT	    <rps id="1"/><rpn id="1"/>
+    				3	things	    	NNS	    <f/>
+    				4	they	    	PRP	    <f/>
+    				5	asked	    	VBD         <f/>
+    				6	to	        TO	    <f/>
+    				7	talk	    	VB	    <f/>
+    				8	about	    	IN          <f/>
+    				9	were	    	VBD	    <f/>
+    				10	whether	    	IN	    <rms id="12"/>
+    				11	the	        DT	    <rm id="12"/>
+    				12	uh	        UH	    <i id="12"/><e/>
+    				13	whether	    	IN	    <rps id="12"/>
+    				14	the	        DT	    <rpn id="12"/>
+    				15	judge	    	NN	    <f/>
+    				16	should	    	MD	    <f/>
+    				17	be	        VB	    <f/>
+    				18	the	        DT	    <f/>
+    				19	one	        NN	    <f/>
+    				20	that	    	WDT	    <f/>
+    				21	does	    	VBZ	    <f/>
+    				22	the	        DT	    <f/>
+    				23	uh	        UH	    <e/>
+				24	sentencing	NN	    <f/>
 ```
 
 ## Set up and basic use ##
@@ -124,7 +124,7 @@ If you are satisfied just using lexical/POS/Dialogue Acts and word timing data a
 
 From the switchboard audio release, copy or move the folder which contains the .sph files (called `swbd1`) to within the `deep_disfluency/data/raw_data/` folder. Note this is very large at around 14GB.
 
-#Future: Creating your own data#
+## Future: Creating your own data ##
 
 Training data is created through creating dialogue matrices (one per speaker in each dialogue), whereby the format of these for each row in the matrix is as follows, where `,` indicates a new column, and `...` means there are potentially multiple columns:
 
