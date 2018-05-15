@@ -49,7 +49,7 @@ SWBD_TIMINGS_DIR = THIS_DIR + '/../data/raw_data/' + \
     SWBD_TIMINGS_URL.split('/')[-1].replace(".tar.gz", "")
 
 SWDA_CORPUS_DIR = THIS_DIR + '/../data/raw_data/' + \
-    SWDA_CORPUS_URL.split('/')[-1].replace(".zip?raw=true", "")
+    SWDA_CORPUS_URL.split('/')[-1].replace(".zip", "")
 
 # the experiments in the EACL paper
 # 33 RNN simple tags, disf + utt joint

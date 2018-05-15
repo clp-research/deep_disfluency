@@ -32,8 +32,8 @@ SPARSE_WEIGHT_T = 6.0  # for t/>
 # results on un-weighted timing classifier for <t boosts:
 # 1 0.757 2 0.770 3 0.778  4. 0.781 5.0.783
 # 6. 0.785 7. 0.784
-SPARSE_WEIGHT_RPS = 1.0
-SPARSE_WEIGHT_RPE = 1.0
+SPARSE_WEIGHT_RPS = 3.0
+SPARSE_WEIGHT_RPE = 2.0
 
 # the weights for the source language model and the timing duration classifier
 TIMING_WEIGHT = 2.0  # 10 gives 0.756, no great gains with higher weight

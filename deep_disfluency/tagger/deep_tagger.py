@@ -8,6 +8,7 @@ from sklearn.metrics import precision_recall_fscore_support
 from sklearn.metrics import classification_report
 import gensim
 from nltk.tag import CRFTagger
+import re
 
 from deep_disfluency.language_model.ngram_language_model \
     import KneserNeySmoothingModel
@@ -108,7 +109,8 @@ class DeepDisfluencyTagger(IncrementalTagger):
                  edit_language_model=None,
                  timer=None,
                  timer_scaler=None,
-                 use_timing_data=False):
+                 use_timing_data=False,
+                 use_decoder=True):
 
         if not config_file:
             config_file = os.path.dirname(os.path.realpath(__file__)) +\
@@ -183,13 +185,13 @@ class DeepDisfluencyTagger(IncrementalTagger):
             print "Not using timing data"
 
         print "Loading decoder..."
-        hmm_dict = deepcopy(self.tag_to_index_map)
+        self.hmm_dict = deepcopy(self.tag_to_index_map)
         # add the interegnum tag
         if "disf" in self.args.tags:
-            intereg_ind = len(hmm_dict.keys())
+            intereg_ind = len(self.hmm_dict.keys())
             interreg_tag = \
                 "<i/><cc/>" if "uttseg" in self.args.tags else "<i/>"
-            hmm_dict[interreg_tag] = intereg_ind  # add the interregnum tag
+            self.hmm_dict[interreg_tag] = intereg_ind  # add the interregnum tag
 
         # decoder_file = os.path.dirname(os.path.realpath(__file__)) + \
         #     "/../decoder/model/{}_tags".format(self.args.tags)
@@ -197,14 +199,16 @@ class DeepDisfluencyTagger(IncrementalTagger):
         if 'noisy_channel' in self.args.decoder_type:
             noisy_channel = SourceModel(self.lm, self.pos_lm,
                                         uttseg=self.args.do_utt_segmentation)
-        self.decoder = FirstOrderHMM(
-                                hmm_dict,
+        self.decoder = None
+        if use_decoder:
+            self.decoder = FirstOrderHMM(
+                                self.hmm_dict,
                                 markov_model_file=self.args.tags,
                                 timing_model=self.timing_model,
                                 timing_model_scaler=self.timing_model_scaler,
                                 constraint_only=True,
                                 noisy_channel=noisy_channel
-            )
+                                )
 
         # getting the states in the right shape
         self.state_history = []
@@ -479,12 +483,20 @@ class DeepDisfluencyTagger(IncrementalTagger):
             else get_last_n_features("timings", self.word_graph,
                                      len(self.word_graph)-1,
                                      n=3)
-        new_tags = self.decoder.viterbi_incremental(
-            adjustsoftmax, a_range=(len(adjustsoftmax)-1,
-                                    len(adjustsoftmax)),
-            changed_suffix_only=True,
-            timing_data=last_n_timings,
-            words=[word])
+        if not self.decoder:
+            # no decoder, just get the arg max
+            max_idx = np.argmax(adjustsoftmax[-1])
+            # print max_idx
+            max_tag = self.hmm_dict.keys()[
+                self.hmm_dict.values().index(max_idx)]
+            new_tags = [max_tag]
+        else:
+            new_tags = self.decoder.viterbi_incremental(
+                adjustsoftmax, a_range=(len(adjustsoftmax)-1,
+                                        len(adjustsoftmax)),
+                changed_suffix_only=True,
+                timing_data=last_n_timings,
+                words=[word])
         # print "new tags", new_tags
         prev_output_tags = deepcopy(self.output_tags)
         self.output_tags = self.output_tags[:len(self.output_tags) -
@@ -510,7 +522,27 @@ class DeepDisfluencyTagger(IncrementalTagger):
                                         len(self.word_graph)-1,
                                         n=len(self.word_graph) -
                                         (self.window_size-1))
-            self.output_tags = convert_from_inc_disfluency_tags_to_eval_tags(
+            simple_conversion = False
+            if simple_conversion:
+                if "<e" in new_tags[-1]:
+                    self.output_tags[-1] = "<e"
+                elif "rm-" in new_tags[-1]:
+                    self.output_tags[-1] = "<rps"
+                else:
+                    self.output_tags[-1] = "<f"
+                if "rm-" in new_tags[-1]:
+                    rps = re.findall("<rm-[0-9]+\/>", new_tags[-1], re.S)
+                    for r in rps:  # should only be one
+                        dist = int(r[r.find("-")+1:-2])
+                        for o in range(len(self.output_tags)-2, -1, -1):
+                            dist -= 1
+                            if dist < 0:
+                                break
+                            if "<e" not in self.output_tags[o]:
+                                self.output_tags[o] += "<rm"
+            else:
+                self.output_tags = \
+                    convert_from_inc_disfluency_tags_to_eval_tags(
                         self.output_tags,
                         words,
                         start=len(self.output_tags) -
@@ -552,7 +584,8 @@ class DeepDisfluencyTagger(IncrementalTagger):
         self.softmax_history = self.softmax_history[:
                                                     len(self.softmax_history) -
                                                     backwards]
-        self.decoder.rollback(backwards)
+        if self.decoder:
+            self.decoder.rollback(backwards)
 
     def init_deep_model_internal_state(self):
         if self.model_type == "lstm":
@@ -567,7 +600,8 @@ class DeepDisfluencyTagger(IncrementalTagger):
             (self.window_size - 1)
         self.state_history = []
         self.softmax_history = []
-        self.decoder.viterbi_init()
+        if self.decoder:
+            self.decoder.viterbi_init()
         self.init_deep_model_internal_state()
 
     def evaluate_fast_from_matrices(self, validation_matrices, tag_file,
