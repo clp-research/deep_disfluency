@@ -3,7 +3,7 @@ from copy import deepcopy
 from deep_disfluency.tagger.deep_tagger import DeepDisfluencyTagger
 import subprocess
 from itertools import count
-from tkinter import Tk, Label, Button
+from Tkinter import Tk, Label, Button
 
 
 class DisfluencyGUI:
@@ -19,11 +19,9 @@ class DisfluencyGUI:
         # self.label.pack()
 
         self.label = Label(self.master, text="0", fg="red")
+        self.label.config(font=("Courier", 44))
         self.label.pack()
 
-        self.close_button = Button(self.master,
-                                   text="Close", command=self.master.quit)
-        self.close_button.pack()
         self.counter = count(0)
         self.words_with_disfluency = []
 
@@ -72,6 +70,13 @@ class DisfluencyGUI:
             except:
                 print "FAILED TO UPDATE"
 
+
+        def quit1():
+     	    self.master.destroy()
+            quit()
+        self.close_button = Button(self.master,
+                                   text="Close", command=quit1)
+        self.close_button.pack()
         self.master.update()
         self.asr = IBMWatsonASR("credentials.json",
                                 new_word_hypotheses_handler)
