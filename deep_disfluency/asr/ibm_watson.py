@@ -1,47 +1,64 @@
-from watson_streaming import transcribe
-from incremental_asr import ASR
-from copy import deepcopy
+import itertools
+
+import fluteline
+import watson_streaming
 
 
-class IBMWatsonASR(ASR):
+class IBMWatsonAdapter(fluteline.Consumer):
+    '''
+    A fluteline consumer-producer that receives transcription from
+    :class:`watson_streaming.Transcriber` and prepare them to work
+    with the deep_disfluency tagger.
+    '''
+    def enter(self):
+        self.running_id = itertools.count()
+        # Messages that went down the pipeline, indexed by start_time.
+        self.memory = {}
+        # Track when Watson commits changes to clear the memory.
+        self.result_index = 0
 
-    def __init__(self, credentials_file, new_hypothesis_callback=None,
-                 settings=None):
-        ASR.__init__(self, credentials_file,  new_hypothesis_callback,
-                     settings)
-        # Provide a dictionary of Watson input and output features.
-        # For example
-        if not settings:
-            self.settings = {
-                'inactivity_timeout': -1,  # Don't kill me after 30 seconds
-                'interim_results': True,
-                'timestamps': True
-            }
+    def consume(self, data):
+        if 'results' in data:
+            self.clear_memory_if_necessary(data)
+            for t in data['results'][0]['alternatives'][0]['timestamps']:
+                self.process_timestamp(t)
+
+    def clear_memory_if_necessary(self, data):
+        if data['result_index'] > self.result_index:
+            self.memory = {}
+            self.result_index = data['result_index']
+
+    def process_timestamp(self, timestamp):
+        word, start_time, end_time = timestamp
+        word = self.clean_word(word)
+
+        if self.is_new(start_time):
+            id_ = next(self.running_id)
+        elif self.is_update(start_time, word):
+            id_ = self.memory[start_time]['id']
         else:
-            self.settings = settings
+            id_ = None
+
+        if id_ is not None:
+            msg = {
+                'start_time': start_time,
+                'end_time': end_time,
+                'word': word,
+                'id': id_
+            }
+            self.memory[start_time] = msg
+            self.put(msg)
+
 
     def clean_word(self, word):
-        return 'uh-huh' if word in ['mmhm', 'aha', 'uhhuh'] else \
-            'uh' if word in ["%HESITATION"] else word
+        if word in ['mmhm', 'aha', 'uhhuh']:
+            return 'uh-huh'
+        if word == '%HESITATION':
+            return 'uh'
+        return word
 
-    # Write whatever you want in your callback function (expecting a dict)
-    def callback(self, data):
-        if 'results' in data:
-            transcript = data['results'][0]['alternatives'][0]['transcript']
-            top_diff = data['results'][0]['alternatives'][0]['timestamps']
-            word_diff, rollback = self.get_diff_and_update_word_graph(top_diff)
-            word_diff = [(self.clean_word(h[0]),
-                          h[1], h[2])
-                         for h in word_diff]
-            # print "ASR input", word_diff, rollback
-            # for h in self.word_graph:
-            #    print h
-            if self.new_hypothesis_callback:
-                self.new_hypothesis_callback(word_diff, rollback,
-                                             self.word_graph)
+    def is_new(self, start_time):
+        return start_time not in self.memory
 
-    def listen(self):
-        ASR.listen(self)
-        # You can't ask for a simpler API than this!
-        # nb will it continuously output the new diffs?
-        transcribe(self.callback, self.settings, self.credentials_file)
+    def is_update(self, start_time, word):
+        return self.memory[start_time]['word'] != word
