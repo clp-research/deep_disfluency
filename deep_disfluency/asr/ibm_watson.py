@@ -1,7 +1,29 @@
 import itertools
 
 import fluteline
+import time
 import watson_streaming
+
+
+class FakeIBMWatsonStreamer(fluteline.Producer):
+    '''A fake streamer to simulate for testing, whilst offline
+    '''
+
+    def __init__(self, fake_stream):
+        super(fluteline.Producer, self).__init__()
+        self.fake_stream = fake_stream  # a list of updates to be fired
+
+    def enter(self):
+        print "starting fake streaming"
+
+    def exit(self):
+        print "finished fake streaming"
+
+    def produce(self):
+        if len(self.fake_stream) > 0:
+            update = self.fake_stream.pop(0)
+            self.put(update)
+
 
 
 class IBMWatsonAdapter(fluteline.Consumer):
@@ -34,10 +56,8 @@ class IBMWatsonAdapter(fluteline.Consumer):
 
         if self.is_new(start_time):
             id_ = next(self.running_id)
-        elif self.is_update(start_time, word):
-            id_ = self.memory[start_time]['id']
         else:
-            id_ = None
+            id_ = self.get_id_if_update(start_time, word)
 
         if id_ is not None:
             msg = {
@@ -58,7 +78,67 @@ class IBMWatsonAdapter(fluteline.Consumer):
         return word
 
     def is_new(self, start_time):
-        return start_time not in self.memory
+        if len(self.memory.keys()) == 0:
+            return True
+        last_update = sorted(self.memory.keys(), reverse=True)[0]
+        return start_time >= self.memory[last_update]['end_time']
 
-    def is_update(self, start_time, word):
-        return self.memory[start_time]['word'] != word
+    def get_id_if_update(self, start_time, word):
+        """Returns the first id being updated.
+        Removes/revokes the ids also implicitly being removed
+        (i.e. the words chronologically after the update.
+        If no update return None."""
+        update_id = None
+        update_start_times_to_revoke = []
+        for old_id in sorted(self.memory.keys(), reverse=True):
+            if start_time >= self.memory[old_id]['end_time']:
+                # we've found the update
+                break
+            update_start_times_to_revoke.append(old_id)
+            update_id = self.memory[old_id]['id']
+        for start_time in update_start_times_to_revoke:
+            self.memory.pop(start_time, None)
+        self.running_id = itertools.count(update_id+1)  # set the counter
+        return update_id
+
+if __name__ == '__main__':
+    fake_updates_raw = [
+        [('hello', 0, 1),
+         ('my', 1, 2),
+         ('name', 2, 3)
+         ],
+
+        [('hello', 0.5, 1),
+         ('my', 1, 2),
+         ('bame', 2, 3)
+         ],
+
+        [('once', 3.4, 4),
+         ('upon', 4.2, 4.6),
+         ('on', 4.3, 4.8)
+         ]
+    ]
+    # create a fake list of incoming transcription result dicts from watson
+    fake_updates_data = []
+    result_index = 0
+    for update in fake_updates_raw:
+        data = {
+            'result_index': result_index,
+            'results': [{'alternatives': [{'timestamps': update}]}]
+        }
+        fake_updates_data.append(data)
+
+    nodes = [
+       FakeIBMWatsonStreamer(fake_updates_data),
+       IBMWatsonAdapter()
+    ]
+
+    tic = time.clock()
+
+    fluteline.connect(nodes)
+    fluteline.start(nodes)
+
+    print time.clock() - tic, "seconds"
+
+    time.sleep(1)
+    fluteline.stop(nodes)
