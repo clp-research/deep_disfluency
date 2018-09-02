@@ -53,7 +53,7 @@ class DeepTaggerModule(fluteline.Consumer):
         Add it to the tagger's word graph either at the end, or
         rolling back first and then add it.
         """
-        if True:
+        try:
             # print "RECEIVING", word_update
             if word_update['id'] <= self.latest_word_ID:
                 # rollback needed
@@ -70,14 +70,16 @@ class DeepTaggerModule(fluteline.Consumer):
             new_tags = self.disf_tagger.tag_new_word(word, timing=timing)
             start_id = self.latest_word_ID - (len(new_tags) - 1)
             word_update_indices = range(start_id, self.latest_word_ID+1)
-            print "\nnew tags:"
+            # print "\nnew tags:"
             for idx, new_tag in zip(word_update_indices, new_tags):
-                # update the tags
+                # update the disf tag and pos tag for new tag updates
                 self.word_graph[idx]['disf_tag'] = new_tag
-                self.word_graph[idx]['pos_tag'] = self.disf_tagger.word_graph[idx][1]
-                print self.word_graph[idx]
+                pos_idx = idx + (self.disf_tagger.window_size-1)
+                self.word_graph[idx]['pos_tag'] = \
+                    self.disf_tagger.word_graph[pos_idx][1]
+                # print self.word_graph[idx]
                 # output the new tags for the updated word
                 self.put(self.word_graph[idx])
-        # except:
-        #    print "Disfluency tagger failed to update with new word"
+        except:
+            print "Disfluency tagger failed to update with new word"
 
