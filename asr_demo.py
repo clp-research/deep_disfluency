@@ -21,6 +21,11 @@ def parse_arguments():
     return parser.parse_args()
 
 
+class Printer(fluteline.Consumer):
+    def consume(self, msg):
+        print(msg)
+
+
 def main():
     args = parse_arguments()
     settings = {
@@ -34,7 +39,8 @@ def main():
         watson_streaming.Transcriber(settings, args.credentials),
         # watson_streaming.utilities.Printer(),
         IBMWatsonAdapter(),
-        DeepTaggerModule()
+        DeepTaggerModule(),
+        Printer()
 
     ]
 
