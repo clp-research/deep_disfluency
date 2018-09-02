@@ -25,6 +25,10 @@ class FakeIBMWatsonStreamer(fluteline.Producer):
             self.put(update)
 
 
+class Printer(fluteline.Consumer):
+    def consume(self, msg):
+        print(msg)
+
 
 class IBMWatsonAdapter(fluteline.Consumer):
     '''
@@ -57,7 +61,7 @@ class IBMWatsonAdapter(fluteline.Consumer):
         if self.is_new(start_time):
             id_ = next(self.running_id)
         else:
-            id_ = self.get_id_if_update(start_time, word)
+            id_ = self.get_id_if_update(start_time, end_time, word)
 
         if id_ is not None:
             msg = {
@@ -83,11 +87,18 @@ class IBMWatsonAdapter(fluteline.Consumer):
         last_update = sorted(self.memory.keys(), reverse=True)[0]
         return start_time >= self.memory[last_update]['end_time']
 
-    def get_id_if_update(self, start_time, word):
+    def get_id_if_update(self, start_time, end_time, word):
         """Returns the first id being updated.
         Removes/revokes the ids also implicitly being removed
         (i.e. the words chronologically after the update.
         If no update return None."""
+        if self.memory.get(start_time):
+            old_start_time = self.memory[start_time]['start_time']
+            old_end_time = self.memory[start_time]['end_time']
+            old_word = self.memory[start_time]['word']
+            if (start_time, end_time, word) == (old_start_time,
+                                                old_end_time, old_word):
+                return None  # a repeated word
         update_id = None
         update_start_times_to_revoke = []
         for old_id in sorted(self.memory.keys(), reverse=True):
@@ -102,7 +113,7 @@ class IBMWatsonAdapter(fluteline.Consumer):
         return update_id
 
 if __name__ == '__main__':
-    fake_updates_raw = [
+    fake_updates_raw_1 = [
         [('hello', 0, 1),
          ('my', 1, 2),
          ('name', 2, 3)
@@ -118,10 +129,40 @@ if __name__ == '__main__':
          ('on', 4.3, 4.8)
          ]
     ]
+
+    fake_updates_raw_2 = [
+            # First new
+            [
+                ('hello', 0, 1),
+            ],
+            # Old and add new
+            [
+                ('hello', 0, 1),
+                ('my', 1, 2),
+            ],
+            # Updating old timestamp and add new
+            [
+                ('hello', 0.5, 1),
+                ('my', 1, 2),
+                ('name', 3, 4),
+            ],
+            # Updating old word
+            [
+                ('hello', 0.5, 1),
+                ('your', 1, 2),
+                ('name', 3, 4),
+            ],
+            # Multiple old and new ones with timestamp overlap
+            [
+                ('once', 3.4, 4),
+                ('upon', 4.2, 4.6),
+                ('on', 4.3, 4.8),
+            ]
+        ]
     # create a fake list of incoming transcription result dicts from watson
     fake_updates_data = []
     result_index = 0
-    for update in fake_updates_raw:
+    for update in fake_updates_raw_2:
         data = {
             'result_index': result_index,
             'results': [{'alternatives': [{'timestamps': update}]}]
@@ -130,7 +171,8 @@ if __name__ == '__main__':
 
     nodes = [
        FakeIBMWatsonStreamer(fake_updates_data),
-       IBMWatsonAdapter()
+       IBMWatsonAdapter(),
+       Printer()
     ]
 
     tic = time.clock()
