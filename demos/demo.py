@@ -9,9 +9,9 @@ tags repair structure incrementally and other edit terms <e/>
 """
 print MESSAGE
 disf = DeepDisfluencyTagger(
-    config_file="deep_disfluency/experiments/experiment_configs.csv",
+    config_file="experiments/experiment_configs.csv",
     config_number=21,
-    saved_model_dir="deep_disfluency/experiments/021/epoch_40"
+    saved_model_dir="experiments/021/epoch_40"
     )
 
 # Tag each word incrementally
@@ -45,9 +45,9 @@ Simple disf tags <e/>, <i/> and repair onsets <rps
 LSTM simple from Hough and Schlangen EACL 2017"""
 print MESSAGE
 disf = DeepDisfluencyTagger(
-        config_file="deep_disfluency/experiments/experiment_configs.csv",
+        config_file="experiments/experiment_configs.csv",
         config_number=35,
-        saved_model_dir="deep_disfluency/experiments/035/epoch_6",
+        saved_model_dir="experiments/035/epoch_6",
         use_timing_data=True
         )
 
@@ -71,9 +71,9 @@ Full complex tag set with disfluency structure"
 LSTM complex from Hough and Schlangen EACL 2017"""
 print MESSAGE
 disf = DeepDisfluencyTagger(
-    config_file="deep_disfluency/experiments/experiment_configs.csv",
+    config_file="experiments/experiment_configs.csv",
     config_number=36,
-    saved_model_dir="deep_disfluency/experiments/036/epoch_15",
+    saved_model_dir="experiments/036/epoch_15",
     use_timing_data=True
     )
 
