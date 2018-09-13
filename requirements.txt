@@ -16,7 +16,7 @@ decorator==4.2.1
 docutils==0.14
 entrypoints==0.2.3
 enum34==1.1.6
-fluteline==0.0.3
+fluteline==0.0.7
 functools32==3.2.3.post2
 futures==3.2.0
 gensim==3.3.0
@@ -78,7 +78,7 @@ Theano==0.9.0
 tornado==4.5.3
 traitlets==4.3.2
 urllib3==1.22
-watson-streaming==0.0.6
+watson-streaming==0.0.7
 wcwidth==0.1.7
 webencodings==0.5.1
 websocket-client==0.47.0

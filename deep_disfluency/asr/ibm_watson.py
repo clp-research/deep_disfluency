@@ -22,7 +22,7 @@ class FakeIBMWatsonStreamer(fluteline.Producer):
     def produce(self):
         if len(self.fake_stream) > 0:
             update = self.fake_stream.pop(0)
-            self.put(update)
+            self.output.put(update)
 
 
 class Printer(fluteline.Consumer):
@@ -71,7 +71,7 @@ class IBMWatsonAdapter(fluteline.Consumer):
                 'id': id_
             }
             self.memory[start_time] = msg
-            self.put(msg)
+            self.output.put(msg)
 
 
     def clean_word(self, word):
