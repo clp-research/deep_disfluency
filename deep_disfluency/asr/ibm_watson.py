@@ -10,7 +10,7 @@ class FakeIBMWatsonStreamer(fluteline.Producer):
     '''
 
     def __init__(self, fake_stream):
-        super(fluteline.Producer, self).__init__()
+        super(FakeIBMWatsonStreamer, self).__init__()
         self.fake_stream = fake_stream  # a list of updates to be fired
 
     def enter(self):
