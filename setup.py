@@ -93,11 +93,11 @@ setup(
 
     # This should be your name or the name of the organization which owns the
     # project.
-    author='TODO',  # Optional
+    author='Julian Hough, Tom Gurion, David Schlangen',  # Optional
 
     # This should be a valid email address corresponding to the author listed
     # above.
-    author_email='TODO',  # Optional
+    author_email='julianchough@gmail.com',  # Optional
 
     # Classifiers help users find your project by categorizing it.
     #
