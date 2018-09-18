@@ -182,7 +182,8 @@ setup(
     package_data={  # Optional
         'deep_disfluency':
             recurse('deep_disfluency', 'experiments') +
-            recurse('deep_disfluency', 'data') +
+            recurse('deep_disfluency', os.path.join('data', 'lm_corpora')) +
+            recurse('deep_disfluency', os.path.join('data', 'tag_representations')) +
             recurse('deep_disfluency', os.path.join('decoder', 'models')) +
             recurse('deep_disfluency', os.path.join('decoder', 'timing_models')) +
             [os.path.join('feature_extraction', 'crfpostagger')]
