@@ -151,7 +151,6 @@ setup(
     install_requires=[
         'numpy',
         'scipy',
-        'matplotlib',  # TODO why?
         'pandas',
         'theano',
         'scikit-learn',
