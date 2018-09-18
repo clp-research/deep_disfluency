@@ -29,7 +29,7 @@ class DeepTaggerModule(fluteline.Consumer):
                  config_number=35,
                  saved_model_dir="deep_disfluency/experiments/035/epoch_6",
                  use_timing_data=True):
-        super(fluteline.Consumer, self).__init__()
+        super(DeepTaggerModule, self).__init__()
         self.disf_tagger = DeepDisfluencyTagger(
             config_file=config_file,
             config_number=config_number,
@@ -79,7 +79,7 @@ class DeepTaggerModule(fluteline.Consumer):
                     self.disf_tagger.word_graph[pos_idx][1]
                 # print self.word_graph[idx]
                 # output the new tags for the updated word
-                self.put(self.word_graph[idx])
+                self.output.put(self.word_graph[idx])
         except:
             print "Disfluency tagger failed to update with new word"
 
