@@ -60,26 +60,28 @@ Some example output on Switchboard utterances is as below, where `<f/>` is the d
 
 ## Set up and basic use ##
 
-To run the code here you need to have `Python 2.7` installed, and also [`pip`](https://pip.readthedocs.org/en/1.1/installing.html) for installing the dependencies.
+To run the code here you need to have `Python 2.7` installed, and also [`pip`](https://pip.readthedocs.org/en/1.1/installing.html). If you install from here, first install `setuptools` (depending on your user status, you may need to prefix the below with `sudo` or use a virtual environment):
 
-You need to run the below from the command line from inside this folder (depending on your user status, you may need to prefix the below with `sudo` or use a virtual environment):
+`pip install setuptools`
 
-`pip install -r requirements.txt`
+Then need to run the below from the command line from inside this folder (again, depending on your user status, you may need to prefix the below with `sudo` or use a virtual environment):
 
-If you just want to use the tagger off-the-shelf see the usage in `demo.py` or the notebook `demo.ipynb`.
-Make sure this repository is on your system path if you want to use it in python more generally.
+`python setup.py install`
+
+This should now have installed deep_disfluency into the python distribution. Then, if you just want to use the tagger off-the-shelf see the usage in `demos/demo.py` or the notebook `demos/demo.ipynb`.
+
 
 ### Use with live ASR ###
 
 If you would like to run a live ASR version using the IBM Watson speech-to-text recognizer, you need to also do the following: 
 
-1. Install [PortAudio](http://www.portaudio.com/) - a free, cross-platform, open-source, audio I/O library. Install it first.
+1. First install [PortAudio](http://www.portaudio.com/) - a free, cross-platform, open-source, audio I/O library.
 2. Prepare your credentials from IBM Watson (free trials are available):
    * Visit the [IBM Watson projects](https://console.bluemix.net/developer/watson/projects) page.
    * Choose your project.
    * Copy the credentials to `credentials.json` into this directory.
 
-The ASR live streaming demo at `asr_demo.py` can then be run and you should be able to see the recognized words, timings, POS tags, and disfluency tags appearing in real time as you speak into your microphone.
+The ASR live streaming demo at `pip/asr_demo.py` can then be run and you should be able to see the recognized words, timings, POS tags, and disfluency tags appearing in real time as you speak into your microphone.
 
 
 ## Running experiments ##
@@ -92,7 +94,11 @@ Julian Hough and David Schlangen. Joint, Incremental Disfluency Detection and Ut
 
 Please cite [the paper](http://aclweb.org/anthology/E17-1031) if you use this code.
 
-If you are using our pretrained models as in the usage in `demo.py` you can simply run `deep_disfluency/experiments/EACL_2017.py`, ensuring the boolean variables at the top of the file to:
+If you are using our pretrained models as in the usage in `demo/demo.py` you can simply first install the experimental requirements for the experiments by running:
+
+`pip install -r deep_disfluency/experiments/requirements.txt`
+
+Then run `python deep_disfluency/experiments/EACL_2017.py`- but first ensuring the boolean variables at the top of the file to:
 
 ```python
 download_raw_data = False
