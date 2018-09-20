@@ -5,7 +5,6 @@ from copy import deepcopy
 import argparse
 from deep_disfluency.utils.tools import \
     convert_from_eval_tags_to_inc_disfluency_tags
-from theano.sandbox.cuda.dnn import local_dnn_convgi_inplace
 
 
 def wer(r, h, macro=False):

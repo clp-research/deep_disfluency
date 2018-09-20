@@ -27,4 +27,6 @@ deep_disfluency/data/raw_data/swda_tree_pos_maps/*
 deep_disfluency/data/audio/*
 deep_disfluency/data/disfluency_detection/feature_matrices/*
 credentials.json
-
+build
+*.egg-info
+dist

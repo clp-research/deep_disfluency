@@ -10,7 +10,6 @@ import datetime
 import multiprocessing
 import itertools
 import logging
-import matplotlib.pyplot as plt
 
 logger_formatting = '%(asctime)s %(filename)s @ %(funcName)s - \
 %(levelname)s - %(message)s'
@@ -77,6 +76,7 @@ def safe_open_with_encoding(filename,mode,encoding='utf-8'):
 def plot_LM_values_for_utterance(lm,lm_function,function_name,words):
     """plots the local LM value of interest (e.g. entropy of continuation/WML) 
     of words by the language model, missing first n-1 tokens as context"""
+    import matplotlib.pyplot as plt
     delta = lm.order -1
     newwords = []
     j = 0

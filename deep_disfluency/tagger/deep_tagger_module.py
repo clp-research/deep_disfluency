@@ -25,9 +25,9 @@ class DeepTaggerModule(fluteline.Consumer):
     These will be updated as diffs.
     """
     def __init__(self,
-                 config_file="deep_disfluency/experiments/experiment_configs.csv",
+                 config_file="experiments/experiment_configs.csv",
                  config_number=35,
-                 saved_model_dir="deep_disfluency/experiments/035/epoch_6",
+                 saved_model_dir="experiments/035/epoch_6",
                  use_timing_data=True):
         super(DeepTaggerModule, self).__init__()
         self.disf_tagger = DeepDisfluencyTagger(
