@@ -81,7 +81,7 @@ If you would like to run a live ASR version using the IBM Watson speech-to-text 
    * Choose your project.
    * Copy the credentials to `credentials.json` into this directory.
 
-The ASR live streaming demo at `pip/asr_demo.py` can then be run and you should be able to see the recognized words, timings, POS tags, and disfluency tags appearing in real time as you speak into your microphone.
+The ASR live streaming demo at `demos/asr_demo.py` can then be run and you should be able to see the recognized words, timings, POS tags, and disfluency tags appearing in real time as you speak into your microphone.
 
 
 ## Running experiments ##
