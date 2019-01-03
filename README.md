@@ -87,7 +87,7 @@ If you want to develop but not installing deep_disfluency as a package, and just
 If you use this option, in any code you use make sure this folder is on your python path.
 
 
-After you have done the following you should now have installed deep_disfluency into the python distribution. Then, if you just want to use the tagger off-the-shelf see the usage in `demos/demo.py` or the notebook `demos/demo.ipynb`.
+After you have done the above you should now have installed deep_disfluency into the python distribution, or be able to path to this folder. Then, if you just want to use the tagger off-the-shelf see the usage in `demos/demo.py` or the notebook `demos/demo.ipynb`.
 
 
 ### Use with live ASR ###
@@ -135,16 +135,6 @@ If that level of reproducibility does not satisfy you, you can set all those boo
 
 Once the script has been run, running the Ipython notebook at `deep_disfluency/experiments/analysis/EACL_2017/EACL_2017.ipynb` should process the outputs and give similar results to those recorded in the paper.
 
-*Acknowledgments*
-
-This basis of these models is the disfluency and dialogue act annotated Switchboard corpus, based on that provided by Christopher Potts's 2011 Computational Pragmatics course ([[at http://compprag.christopherpotts.net/swda.html]]) or at [[https://github.com/cgpotts/swda]]. Here we use Julian Hough's fork which corrects some of the POS-tags and disfluency annotation:
-
-[[https://github.com/julianhough/swda.git]]
-
-The second basis is the word timings data for switchboard, which is a corrected version with word timing information to the Penn Treebank version of the MS alignments, which can be downloaded at:
-
-[[http://www.isip.piconepress.com/projects/switchboard/releases/ptree_word_alignments.tar.gz]]
-
 ## Extra: using the Switchboard audio data ##
 
 If you are satisfied just using lexical/POS/Dialogue Acts and word timing data alone, the above are sufficient, however if you want to use other acoustic data or generate ASR results from scratch, you must have access to the Switchboard corpus audio release. This is available for purchase from:
@@ -161,7 +151,15 @@ Training data is created through creating dialogue matrices (one per speaker in 
 
 There are methods for creating these in the `deep_disfluency/corpus` and `deep_disfluency/feature_extraction` modules.
 
+### Resource Acknowledgments ###
 
+This basis of these models is the disfluency and dialogue act annotated Switchboard corpus, based on that provided by Christopher Potts's 2011 Computational Pragmatics course ([[at http://compprag.christopherpotts.net/swda.html]]) or at [[https://github.com/cgpotts/swda]]. Here we use Julian Hough's fork which corrects some of the POS-tags and disfluency annotation:
+
+[[https://github.com/julianhough/swda.git]]
+
+The second basis is the word timings data for switchboard, which is a corrected version with word timing information to the Penn Treebank version of the MS alignments, which can be downloaded at:
+
+[[http://www.isip.piconepress.com/projects/switchboard/releases/ptree_word_alignments.tar.gz]]
 
 
 
