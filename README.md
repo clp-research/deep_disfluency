@@ -135,7 +135,7 @@ If that level of reproducibility does not satisfy you, you can set all those boo
 
 Once the script has been run, running the Ipython notebook at `deep_disfluency/experiments/analysis/EACL_2017/EACL_2017.ipynb` should process the outputs and give similar results to those recorded in the paper.
 
-## Extra: using the Switchboard audio data ##
+### Extra: using the Switchboard audio data ###
 
 If you are satisfied just using lexical/POS/Dialogue Acts and word timing data alone, the above are sufficient, however if you want to use other acoustic data or generate ASR results from scratch, you must have access to the Switchboard corpus audio release. This is available for purchase from:
 
@@ -151,7 +151,7 @@ Training data is created through creating dialogue matrices (one per speaker in 
 
 There are methods for creating these in the `deep_disfluency/corpus` and `deep_disfluency/feature_extraction` modules.
 
-### Resource Acknowledgments ###
+## Resource Acknowledgments ##
 
 This basis of these models is the disfluency and dialogue act annotated Switchboard corpus, based on that provided by Christopher Potts's 2011 Computational Pragmatics course ([[at http://compprag.christopherpotts.net/swda.html]]) or at [[https://github.com/cgpotts/swda]]. Here we use Julian Hough's fork which corrects some of the POS-tags and disfluency annotation:
 
