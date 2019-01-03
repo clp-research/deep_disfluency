@@ -1,5 +1,5 @@
 import csv
-from util import add_word_continuation_tags
+from corpus_util import add_word_continuation_tags
 
 
 def get_tag_data_from_corpus_file(f):

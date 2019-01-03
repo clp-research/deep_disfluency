@@ -39,7 +39,7 @@ INC_ASR_FILES = [ASR_DIR + "SWDisfTest_increco.text",
 PROPER_NAMES = ["NNP", "NNPS", "CD", "LS", "SYM", "FW"]
 
 if TRAIN:
-    tagger = ct = CRFTagger()  # initialize tagger
+    ct = CRFTagger()  # initialize tagger
     dialogue_speakers = []
     for disf_file in DISFLUENCY_TRAIN_FILES:
         IDs, mappings, utts, pos_tags, labels = \
@@ -66,12 +66,12 @@ if TRAIN:
                             unicode(pos.encode("utf8"))))
         training_data.append(deepcopy(sp_data))
     print "training tagger..."
-    tagger.train(training_data, TAGGER_PATH)
+    ct.train(training_data, TAGGER_PATH)
 
 
 if TEST:
     print "testing tagger..."
-    tagger = ct = CRFTagger()  # initialize tagger
+    ct = CRFTagger()  # initialize tagger
     ct.set_model_file(TAGGER_PATH)
     dialogue_speakers = []
     for disf_file in DISFLUENCY_TEST_FILES:
@@ -174,7 +174,7 @@ if TAG_ASR_RESULTS:
         return (current, newprefix, rollback)
 
     print "tagging ASR results..."
-    tagger = ct = CRFTagger()  # initialize tagger
+    ct = CRFTagger()  # initialize tagger
     ct.set_model_file(TAGGER_PATH)
     # now tag the incremental ASR result files of interest
     for filename in INC_ASR_FILES:

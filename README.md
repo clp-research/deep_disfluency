@@ -60,7 +60,17 @@ Some example output on Switchboard utterances is as below, where `<f/>` is the d
 
 ## Set up and basic use ##
 
-To run the code here you need to have `Python 2.7` installed, and also [`pip`](https://pip.readthedocs.org/en/1.1/installing.html). If you install from here, first install `setuptools` (depending on your user status, you may need to prefix the below with `sudo` or use a virtual environment):
+To run the code here you need to have `Python 2.7` installed, and also [`pip`](https://pip.readthedocs.org/en/1.1/installing.html).
+
+### Option 1: using pip install ###
+
+If you want to simply install the current PyPi library version, simply run the following(depending on your user status, you may need to prefix the below with `sudo` or use a virtual environment):
+
+`pip install deep_disfluency`
+
+### Option 2: using setuptools ###
+
+If you want to manually install using `setuptools` (depending on your user status, you may need to prefix the below with `sudo` or use a virtual environment):
 
 `pip install setuptools`
 
@@ -68,7 +78,16 @@ Then need to run the below from the command line from inside this folder (again,
 
 `python setup.py install`
 
-This should now have installed deep_disfluency into the python distribution. Then, if you just want to use the tagger off-the-shelf see the usage in `demos/demo.py` or the notebook `demos/demo.ipynb`.
+### Option 3: (for development) getting requirements only ###
+
+If you want to develop but not installing deep_disfluency as a package, and just want to path to it as you'd like to develop it yourself, then simply run the below from inside this folder to install the current requirements (again, depending on your user status, you may need to prefix the below with `sudo` or use a virtual environment):
+
+`pip install -r requirements.txt`
+
+If you use this option, in any code you use make sure this folder is on your python path.
+
+
+After you have done the following you should now have installed deep_disfluency into the python distribution. Then, if you just want to use the tagger off-the-shelf see the usage in `demos/demo.py` or the notebook `demos/demo.ipynb`.
 
 
 ### Use with live ASR ###

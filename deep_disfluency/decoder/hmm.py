@@ -27,12 +27,12 @@ from hmm_utils import tabulate_cfd
 from hmm_utils import log
 
 # boosts for rare classes
-SPARSE_WEIGHT_T_ = 6.0  # for <t  # with timings this naturally gets boost
-SPARSE_WEIGHT_T = 6.0  # for t/>
+SPARSE_WEIGHT_T_ = 3.0  # for <t  # with timings this naturally gets boost
+SPARSE_WEIGHT_T = 3.0  # for t/>
 # results on un-weighted timing classifier for <t boosts:
 # 1 0.757 2 0.770 3 0.778  4. 0.781 5.0.783
 # 6. 0.785 7. 0.784
-SPARSE_WEIGHT_RPS = 3.0
+SPARSE_WEIGHT_RPS = 4.0
 SPARSE_WEIGHT_RPE = 2.0
 
 # the weights for the source language model and the timing duration classifier

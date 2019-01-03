@@ -4,7 +4,7 @@ from operator import itemgetter
 
 from swda import CorpusReader
 from tree_pos_map import TreeMapCorpus, POSMapCorpus
-from util import clean, parse_list
+from corpus_util import clean, parse_list
 
 
 class SelfRepair:

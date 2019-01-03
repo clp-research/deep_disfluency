@@ -37,22 +37,22 @@ from swda import CorpusReader
 from tree_pos_map import TreeMapCorpus, POSMapCorpus
 from tree_pos_map_writer import POSMapWriter, TreeMapWriter
 from repair import Repair
-from util import classify_repair, graph_viz_repair
-from util import disf_tags_from_easy_read
-from util import strip_disf_tags_from_easy_read
-from util import easy_read_disf_format
-from util import get_edit_terms_from_easy_read
-from util import detection_corpus_format
-from util import detection_corpus_format_from_easy_read
-from util import easy_read_format_from_detection_corpus
-from util import verify_disfluency_tags
-from util import orthography_normalization
-from util import find_repair_end, find_repair_end_in_previous_utts
-from util import find_delete_interregna_and_repair_onsets
-from util import remove_non_edit_interregna
-from util import find_repair_ends_and_reclassify
-from util import find_interregna_and_repair_onsets
-from util import remove_repairs, remove_partial_words
+from corpus_util import classify_repair, graph_viz_repair
+from corpus_util import disf_tags_from_easy_read
+from corpus_util import strip_disf_tags_from_easy_read
+from corpus_util import easy_read_disf_format
+from corpus_util import get_edit_terms_from_easy_read
+from corpus_util import detection_corpus_format
+from corpus_util import detection_corpus_format_from_easy_read
+from corpus_util import easy_read_format_from_detection_corpus
+from corpus_util import verify_disfluency_tags
+from corpus_util import orthography_normalization
+from corpus_util import find_repair_end, find_repair_end_in_previous_utts
+from corpus_util import find_delete_interregna_and_repair_onsets
+from corpus_util import remove_non_edit_interregna
+from corpus_util import find_repair_ends_and_reclassify
+from corpus_util import find_interregna_and_repair_onsets
+from corpus_util import remove_repairs, remove_partial_words
 from spelling_dictionary import SpellingDict
 
 

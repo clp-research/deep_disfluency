@@ -117,9 +117,6 @@ class DeepDisfluencyTagger(IncrementalTagger):
             config_number = 35
             print "No config file, using default", config_file, config_number
 
-        config_file = os.path.join(os.path.dirname(__file__), '..', config_file)
-        saved_model_dir = os.path.join(os.path.dirname(__file__), '..', saved_model_dir)
-
         super(DeepDisfluencyTagger, self).__init__(config_file,
                                                    config_number,
                                                    saved_model_dir)
