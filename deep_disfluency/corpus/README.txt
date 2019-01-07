@@ -13,3 +13,8 @@ and the Mississippi word timings specifically,
 though with effort, other versions of Switchboard
 - DUEL project data (Hough et al, 2016, LREC), converting from textgrids, 
 though any textgrids with the DUEL-style annotations could work with effort.
+
+
+## For using textgrid conversion, run "sudo pip install -r requirements.txt" from the command line from this folder.
+
+You then need to clone the Mumodo repository from https://github.com/dsg-bielefeld/mumodo.git and follow the installation instructions there.

@@ -58,17 +58,17 @@ Some example output on Switchboard utterances is as below, where `<f/>` is the d
 				24	sentencing	NN	    <f/>
 ```
 
-## Set up and basic use ##
+## Setup and basic use ##
 
 To run the code here you need to have `Python 2.7` installed, and also [`pip`](https://pip.readthedocs.org/en/1.1/installing.html).
 
-### Option 1: using pip install ###
+### Install option 1: using pip install ###
 
 If you want to simply install the current PyPi library version, simply run the following(depending on your user status, you may need to prefix the below with `sudo` or use a virtual environment):
 
 `pip install deep_disfluency`
 
-### Option 2: using setuptools ###
+### Install option 2: using setuptools ###
 
 If you want to manually install using `setuptools` (depending on your user status, you may need to prefix the below with `sudo` or use a virtual environment):
 
@@ -78,16 +78,17 @@ Then need to run the below from the command line from inside this folder (again,
 
 `python setup.py install`
 
-### Option 3: (for development) getting requirements only ###
+### Install option 3: (for development) getting requirements only ###
 
-If you want to develop but not installing deep_disfluency as a package, and just want to path to it as you'd like to develop it yourself, then simply run the below from inside this folder to install the current requirements (again, depending on your user status, you may need to prefix the below with `sudo` or use a virtual environment):
+If you want to develop but do not want to install deep_disfluency as a package, then simply run the below from inside this folder to install the current requirements (again, depending on your user status, you may need to prefix the below with `sudo` or use a virtual environment):
 
 `pip install -r requirements.txt`
 
 If you use this option, in any code you use make sure this folder is on your python path.
 
+### Demo ###
 
-After you have done the above you should now have installed deep_disfluency into the python distribution, or be able to path to this folder. Then, if you just want to use the tagger off-the-shelf see the usage in `demos/demo.py` or the notebook `demos/demo.ipynb`.
+After you have completed any of the above three options you should now have installed deep_disfluency into the python distribution, or be able to path to this folder with the requirements installed. If you just want to use the tagger off-the-shelf see the usage in `demos/demo.py` or the notebook `demos/demo.ipynb`.
 
 
 ### Use with live ASR ###
@@ -119,7 +120,7 @@ Please cite [the paper](http://aclweb.org/anthology/E17-1031) if you use this co
 
 If you are using our pretrained models as in the usage in `demo/demo.py` you can simply first install the experimental requirements for the experiments by running:
 
-`pip install -r deep_disfluency/experiments/requirements.txt`
+`pip install -r requirements.txt`
 
 Then run `python deep_disfluency/experiments/EACL_2017.py`- but first ensuring the boolean variables at the top of the file to:
 
