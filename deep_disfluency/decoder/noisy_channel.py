@@ -391,8 +391,8 @@ class LMTester(object):
             heldout_lm_corpus = "\n".join(lines[split:])
             lm_corpus_file.close()
             self.lm = KneserNeySmoothingModel(
-                                        order=3,
-                                        discount=0.7,
+                                        order=4,
+                                        discount=0.9,
                                         partial_words=True,
                                         train_corpus=lm_corpus,
                                         heldout_corpus=heldout_lm_corpus,
@@ -411,8 +411,8 @@ class LMTester(object):
             heldout_lm_corpus = "\n".join(lines[split:])
             lm_corpus_file.close()
             self.pos_lm = KneserNeySmoothingModel(
-                                        order=3,
-                                        discount=0.7,
+                                        order=4,
+                                        discount=0.9,
                                         partial_words=True,
                                         train_corpus=lm_corpus,
                                         heldout_corpus=heldout_lm_corpus,
