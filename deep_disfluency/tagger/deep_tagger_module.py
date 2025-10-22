@@ -36,7 +36,7 @@ class DeepTaggerModule(fluteline.Consumer):
             saved_model_dir=saved_model_dir,
             use_timing_data=use_timing_data
         )
-        print "Deep Tagger Module ready"
+        print("Deep Tagger Module ready")
         self.latest_word_ID = -1
         self.word_graph = []
 
@@ -58,28 +58,33 @@ class DeepTaggerModule(fluteline.Consumer):
             if word_update['id'] <= self.latest_word_ID:
                 # rollback needed
                 # TODO should be consistent
-                backwards = (self.latest_word_ID - word_update['id']) + 1
+                # backwards = (self.latest_word_ID - word_update['id']) + 1
+                backwards = 0
+            for i in range(len(self.word_graph)-1, -1, -1):
+                if word_graph[i]['id'] < word_update['id']:
+                    break
+                backwards += 1
                 self.disf_tagger.rollback(backwards)
                 self.word_graph = self.word_graph[:
-                                                  len(self.word_graph) -
-                                                  backwards]
-            self.latest_word_ID = word_update['id']
-            self.word_graph.append(word_update)
-            timing = word_update['end_time'] - word_update['start_time']
-            word = word_update['word']
-            new_tags = self.disf_tagger.tag_new_word(word, timing=timing)
-            start_id = self.latest_word_ID - (len(new_tags) - 1)
-            word_update_indices = range(start_id, self.latest_word_ID+1)
-            # print "\nnew tags:"
-            for idx, new_tag in zip(word_update_indices, new_tags):
-                # update the disf tag and pos tag for new tag updates
-                self.word_graph[idx]['disf_tag'] = new_tag
-                pos_idx = idx + (self.disf_tagger.window_size-1)
-                self.word_graph[idx]['pos_tag'] = \
-                    self.disf_tagger.word_graph[pos_idx][1]
-                # print self.word_graph[idx]
-                # output the new tags for the updated word
-                self.output.put(self.word_graph[idx])
+                                                    len(self.word_graph) -
+                                                    backwards]
+                self.latest_word_ID = word_update['id']
+                self.word_graph.append(word_update)
+                timing = word_update['end_time'] - word_update['start_time']
+                word = word_update['word']
+                new_tags = self.disf_tagger.tag_new_word(word, timing=timing)
+                start_id = self.latest_word_ID - (len(new_tags) - 1)
+                word_update_indices = range(start_id, self.latest_word_ID+1)
+                # print "\nnew tags:"
+                for idx, new_tag in zip(word_update_indices, new_tags):
+                    # update the disf tag and pos tag for new tag updates
+                    self.word_graph[idx]['disf_tag'] = new_tag
+                    pos_idx = idx + (self.disf_tagger.window_size-1)
+                    self.word_graph[idx]['pos_tag'] = \
+                        self.disf_tagger.word_graph[pos_idx][1]
+                    # print self.word_graph[idx]
+                    # output the new tags for the updated word
+                    self.output.put(self.word_graph[idx])
         except:
-            print "Disfluency tagger failed to update with new word"
+            print("Disfluency tagger failed to update with new word")
 

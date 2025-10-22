@@ -119,8 +119,8 @@ if __name__ == '__main__':
          ('name', 2, 3)
          ],
 
-        [('hello', 0.5, 1),
-         ('my', 1, 2),
+        [('hello', 0, 1.01),
+         ('my', 1.01, 2),
          ('bame', 2, 3)
          ],
 
@@ -162,7 +162,7 @@ if __name__ == '__main__':
     # create a fake list of incoming transcription result dicts from watson
     fake_updates_data = []
     result_index = 0
-    for update in fake_updates_raw_2:
+    for update in fake_updates_raw_1:
         data = {
             'result_index': result_index,
             'results': [{'alternatives': [{'timestamps': update}]}]

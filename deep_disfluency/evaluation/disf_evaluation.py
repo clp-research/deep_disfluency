@@ -303,7 +303,7 @@ def final_output_disfluency_eval(prediction_speakers_dict,
     # testfile = open("../test.text", "w")
     for s in sorted(prediction_speakers_dict.keys()):
 
-        # print s
+        print s
         if gold_speakers_dict.get(s) == None:
             s_test = s.replace("-", "")
             if gold_speakers_dict.get(s_test) == None:

@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import random
 import numpy as np
 import itertools
@@ -650,6 +652,11 @@ if __name__ == '__main__':
     words = "i,like,uh,love,to,uh,love,alot".split(",")
     print tags
     print len(tags), len(words)
+    words = ['然后', '就', '每', '每\u3000在\u3000＋\u3000坐\u3000在\u3000', '那个', '车', '的', '那个', '座子', '上', '然后', '\u3000每\u3000骑\u3000一\u3000步\u3000然后\u3000', '那个', '臀部', '那', '个', '位置', '就', '就', '火烧火燎', '的', '一样']
+
+    tags = ['<rps id="0"/><rps id="0"/>', '<rp id="0"/><rp id="0"/>', '<rpndel id="0"/><rpndel id="0"/>', '<e/>', '<e/>', '<f/>', '<f/>', '<e/>', '<f/>', '<f/>', '<e/>', '<e/>', '<e/>', '<f/>', '<f/>', '<f/>', '<f/>', '<e/>', '<e/>', '<f/>', '<f/>', '<f/>']
+
+
     new_tags = convert_from_eval_tags_to_inc_disfluency_tags(
                                                     tags,
                                                     words,

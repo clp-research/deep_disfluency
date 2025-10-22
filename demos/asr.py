@@ -34,7 +34,7 @@ class Printer(fluteline.Consumer):
 
 
 def main():
-    args = parse_arguments()
+    #args = parse_arguments()
     settings = {
         'inactivity_timeout': -1,  # Don't kill me after 30 seconds
         'interim_results': True,
@@ -43,7 +43,9 @@ def main():
 
     nodes = [
         watson_streaming.utilities.MicAudioGen(),
-        watson_streaming.Transcriber(settings, args.credentials),
+        watson_streaming.Transcriber(settings, None,
+                                     apikey="-dBgf9p9XegtLWCCsYg-UlME4SOAI5dMNvuoYPT_2u9v",
+                                     hostname="https://api.eu-gb.speech-to-text.watson.cloud.ibm.com/instances/4d4a7d23-4530-45fd-8565-5daf2010a922"),
         # watson_streaming.utilities.Printer(),
         IBMWatsonAdapter(),
         DeepTaggerModule(),

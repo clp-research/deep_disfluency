@@ -1,9 +1,6 @@
 """
-Script to run the experiments described in:
-
-Julian Hough and David Schlangen.
-Recurrent Neural Networks for Incremental Disfluency Detection.
-INTERSPEECH 2015.
+Script to convert DUEL data to the same format as 
+in previous deep disfluency experiments.
 
 """
 import sys
@@ -28,28 +25,20 @@ train_models = False
 test_models = False
 
 asr = False  # extract and test on ASR results too
-partial = False  # whether to include partial words or not
+partial = True  # whether to include partial words or not
 
-range_dir = THIS_DIR + \
-    '/../data/disfluency_detection/swda_divisions_disfluency_detection'
-file_divisions_transcripts = [
-    ('train', range_dir + '/swbd_disf_train_1_ranges.text'),
-    # range_dir + '/swbd_disf_train_audio_ranges.text',
-    ('heldout', range_dir + '/swbd_disf_heldout_ranges.text'),
-    ('test', range_dir + '/swbd_disf_test_ranges.text'),
-]
+#range_dir = THIS_DIR + \
+#    '/../data/disfluency_detection/swda_divisions_disfluency_detection'
+#file_divisions_transcripts = [
+#    ('train', range_dir + '/swbd_disf_train_1_ranges.text'),
+#    # range_dir + '/swbd_disf_train_audio_ranges.text',
+#    ('heldout', range_dir + '/swbd_disf_heldout_ranges.text'),
+#    ('test', range_dir + '/swbd_disf_test_ranges.text'),
+#]
 
-SWBD_TIMINGS_URL = 'http://www.isip.piconepress.com/' + \
-    'projects/switchboard/releases/ptree_word_alignments.tar.gz'
 
-SWDA_CORPUS_URL = 'https://github.com/julianhough/' + \
-    'swda/blob/master/swda.zip?raw=true'
-
-SWBD_TIMINGS_DIR = THIS_DIR + '/../data/raw_data/' + \
-    SWBD_TIMINGS_URL.split('/')[-1].replace(".tar.gz", "")
-
-SWDA_CORPUS_DIR = THIS_DIR + '/../data/raw_data/' + \
-    SWDA_CORPUS_URL.split('/')[-1].replace(".zip", "")
+DUEL_CORPUS_URL = 'https://github.com/clp-research/DUEL/tree/master/de?raw=true'
+DUEL_CORPUS_DIR = THIS_DIR + '/../data/raw_data/duel/de'
 
 # the experiments in the Interspeech paper
 # 18 non-POS window length 2
@@ -57,27 +46,18 @@ SWDA_CORPUS_DIR = THIS_DIR + '/../data/raw_data/' + \
 # 23 POS length 3 RNN
 # 41 POS length 2 LSTM  # not in paper, for comparison
 # experiments = [18, 21, 23, 41]
-experiments = [21, 41]  # reduced version for speed for now
 
 # 1. download the data
 if download_raw_data:
-    name = THIS_DIR + '/../data/raw_data/swda.zip'
-    if not os.path.isfile(name):
+    name = THIS_DIR + '/../data/raw_data/de'
+    if not os.path.isdir(name):
         print 'downloading', name
-        urllib.urlretrieve(SWDA_CORPUS_URL, name)
-        zipf = zipfile.ZipFile(name)
-        zipf.extractall(path=SWDA_CORPUS_DIR)
-        zipf.close()
-        print 'extracted at', SWDA_CORPUS_DIR
+        urllib.urlretrieve(DUEL_CORPUS_URL, name)
+        #zipf = zipfile.ZipFile(name)
+        #zipf.extractall(path=SWDA_CORPUS_DIR)
+        #zipf.close()
+        print 'extracted at', DUEL_CORPUS_DIR
 
-    name = THIS_DIR + '/../data/raw_data/' + SWBD_TIMINGS_URL.split('/')[-1]
-    if not os.path.isfile(name):
-        print 'downloading', name
-        urllib.urlretrieve(SWBD_TIMINGS_URL, name)
-        tar = tarfile.open(name)
-        tar.extractall(path=SWBD_TIMINGS_DIR)
-        tar.close()
-        print 'extracted at', SWBD_TIMINGS_DIR
 
 
 # 1. Create the base disfluency tagged corpora in a standard format
@@ -100,22 +80,22 @@ in the sister directory to the corpusLocation, else assume it is there
 if create_disf_corpus:
     print "Creating corpus..."
     write_pos_map = True
-    for div, divfile in file_divisions_transcripts:
-        c = [sys.executable,
-             THIS_DIR + '/../corpus/disfluency_corpus_creator.py',
-             '-i', THIS_DIR + '/../data/raw_data/swda',
-             '-t', THIS_DIR + '/../data/disfluency_detection/switchboard',
-             '-f', divfile,
-             '-a', THIS_DIR +
-             '/../data/disfluency_detection/swda_disfluency_annotations',
-             # '-lm', "data/lm_corpora",
-             '-d'
-             ]
-        if partial:
-            c.append('-p')
-        if write_pos_map:
-            c.append('-pos')
-            write_pos_map = False  # just call it once
+    #for div, divfile in file_divisions_transcripts:
+    c = [sys.executable,
+         THIS_DIR + '/../corpus/disfluency_corpus_creator.py',
+         '-i', THIS_DIR + '/../data/raw_data/swda',
+         '-t', THIS_DIR + '/../data/disfluency_detection/switchboard',
+         #'-f', divfile,
+         '-a', THIS_DIR +
+         '/../data/disfluency_detection/swda_disfluency_annotations',
+         # '-lm', "data/lm_corpora",
+         '-d'
+         ]
+    if partial:
+        c.append('-p')
+    if write_pos_map:
+        c.append('-pos')
+        write_pos_map = False  # just call it once
         subprocess.call(c)
     print "Finished creating corpus."
 
@@ -156,31 +136,31 @@ if extract_features:
     MATRIX_DIR = THIS_DIR + '/../data/disfluency_detection/feature_matrices'
     if not os.path.exists(MATRIX_DIR):
         os.mkdir(MATRIX_DIR)
-    for div, div_file in file_divisions_transcripts:
-        c = [sys.executable,
-             THIS_DIR + '/../feature_extraction/extract_features.py',
-             '-i', THIS_DIR + '/../data/disfluency_detection/switchboard',
-             '-m', MATRIX_DIR + '/' + div,
-             '-f', div_file,
-             '-a', THIS_DIR + '/../data/raw_data/swbd_alignments/alignments',
-             '-tag', THIS_DIR + '/../data/tag_representations'
-             # '-lm', 'data/lm_corpora'
-             ]
-        if partial:
-            c.append('-p')
-        if 'train' in div and '-lm' in c:
-            c.append('-xlm')
-        if not tags_created:
-            c.append('-new_tag')
-            tags_created = True
-            if asr and 'ASR' in div:
-                c.extend(['-pos', 'data/crfpostagger'])
-                if not tagger_trained:
-                    c.append('-train_pos')
-                credentials = \
-                    '1841487c-30f4-4450-90bd-38d1271df295:EcqA8yIP7HBZ'
-                c.extend(['-asr', '-credentials', credentials])
-        subprocess.call(c)
+#     for div, div_file in file_divisions_transcripts:
+#         c = [sys.executable,
+#              THIS_DIR + '/../feature_extraction/extract_features.py',
+#              '-i', THIS_DIR + '/../data/disfluency_detection/switchboard',
+#              '-m', MATRIX_DIR + '/' + div,
+#              '-f', div_file,
+#              '-a', THIS_DIR + '/../data/raw_data/swbd_alignments/alignments',
+#              '-tag', THIS_DIR + '/../data/tag_representations'
+#              # '-lm', 'data/lm_corpora'
+#              ]
+#         if partial:
+#             c.append('-p')
+#         if 'train' in div and '-lm' in c:
+#             c.append('-xlm')
+#         if not tags_created:
+#             c.append('-new_tag')
+#             tags_created = True
+#             if asr and 'ASR' in div:
+#                 c.extend(['-pos', 'data/crfpostagger'])
+#                 if not tagger_trained:
+#                     c.append('-train_pos')
+#                 credentials = \
+#                     '1841487c-30f4-4450-90bd-38d1271df295:EcqA8yIP7HBZ'
+#                 c.extend(['-asr', '-credentials', credentials])
+#         subprocess.call(c)
     print "Finished extracting features."
 
 # 3. Train the model on the transcripts (and audio data if available)
@@ -194,19 +174,19 @@ if train_models:
     # train until convergence
     # on the settings according to the numbered experiments in
     # experiments/config.csv file
-    for exp in experiments:
-        disf = DeepDisfluencyTagger(
-            config_file=THIS_DIR + "/experiment_configs.csv",
-            config_number=exp
-            )
-        exp_str = '%03d' % exp
-        e = disf.train_net(
-                    train_dialogues_filepath=feature_matrices_filepath,
-                    validation_dialogues_filepath=validation_filepath,
-                    model_dir=THIS_DIR + '/' + exp_str,
-                    tag_accuracy_file_path=THIS_DIR +
-                    '/results/tag_accuracies/{}.text'.format(exp_str))
-        systems_best_epoch[exp] = e
+#     for exp in experiments:
+#         disf = DeepDisfluencyTagger(
+#             config_file=THIS_DIR + "/experiment_configs.csv",
+#             config_number=exp
+#             )
+#         exp_str = '%03d' % exp
+#         e = disf.train_net(
+#                     train_dialogues_filepath=feature_matrices_filepath,
+#                     validation_dialogues_filepath=validation_filepath,
+#                     model_dir=THIS_DIR + '/' + exp_str,
+#                     tag_accuracy_file_path=THIS_DIR +
+#                     '/results/tag_accuracies/{}.text'.format(exp_str))
+#         systems_best_epoch[exp] = e
 else:
     # Take our word for it that the saved models are the best ones:
     systems_best_epoch[21] = 40
