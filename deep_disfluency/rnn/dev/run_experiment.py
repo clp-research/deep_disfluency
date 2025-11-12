@@ -11,7 +11,10 @@ import theano
 import theano.tensor as T
 import gensim
 from collections import defaultdict
-import cPickle
+try:
+    import cPickle as pickle
+except Exception:
+    import pickle
 # sys.path.append('../') #path to the src files
 
 from rnn.elman import Elman
@@ -30,7 +33,7 @@ from experiment_util import save_predictions_and_quick_eval
 theano.config.optimizer='None' #speeds things up marginally
 
 full_label2idx = load_tags("../data/tag_representations/swbd1_trp_tags.csv") #NB mainly for experiments
-full_idx2label = dict((k,v) for v,k in full_label2idx.iteritems()) # fir
+full_idx2label = dict((k,v) for v,k in full_label2idx.items()) # fir
 
 def run_experiment(args):
     #make the args into a dict
@@ -39,7 +42,7 @@ def run_experiment(args):
         s[feat] = val
         #print feat,val
     print s
-    #raw_input()
+    #input()
     
     if s['acoustic']:
         s['acoustic']  = 350 #dimension of acoustic features vector (essentially 7 * 50)
@@ -51,10 +54,10 @@ def run_experiment(args):
                                                 tags=s['tags'])
     
     #get relevant dictionaries
-    idx2label = dict((k,v) for v,k in train_dict['labels2idx'].iteritems()) # first half (28) the same as the test
-    idx2word  = dict((k,v) for v,k in train_dict['words2idx'].iteritems())
+    idx2label = dict((k,v) for v,k in train_dict['labels2idx'].items()) # first half (28) the same as the test
+    idx2word  = dict((k,v) for v,k in train_dict['words2idx'].items())
     if not train_dict.get('pos2idx') == None:
-        idx2pos = dict((k,v) for v,k in train_dict['pos2idx'].iteritems())
+        idx2pos = dict((k,v) for v,k in train_dict['pos2idx'].items())
 
     range_dir = "../data/disfluency_detection/swda_divisions_disfluency_detection/"
     range_files = [
@@ -183,8 +186,9 @@ def run_experiment(args):
     #folder  = "/home/dsg-labuser/Desktop/rnn_experiments/"+ s['exp_id']
     if os.path.exists(folder): 
         if not s['use_saved_model']:
-            quit = raw_input('Overwrite contents of folder for experiment {}? [y][n]'.format(s['exp_id']))
-            if quit != "y": return
+            overwrite = input('Overwrite contents of folder for experiment {}? [y][n]'.format(s['exp_id']))
+            if overwrite.strip().lower() != 'y':
+                return
     else:
         os.mkdir(folder)
     

@@ -2,7 +2,10 @@ from __future__ import division
 import argparse
 import numpy as np
 from math import log
-import cPickle
+try:
+    import cPickle as pickle
+except Exception:
+    import pickle
 import os
 from copy import deepcopy
 from collections import defaultdict
@@ -343,8 +346,8 @@ def save_predictions_and_quick_eval(predictions_filename=None,
                                                  average='weighted')
     tag_summary = classification_report(
         raw_tag_labels, raw_tag_predictions,
-        labels=[i for i in xrange(len(classes))],
-        target_names=[idx_to_label_dict[i] for i in xrange(len(classes))])
+        labels=[i for i in range(len(classes))],
+        target_names=[idx_to_label_dict[i] for i in range(len(classes))])
     print tag_summary
     results = {"f1_rmtto": p_r_f_tags[2], "f1_rm": p_r_f_tags[2],
                "f1_tto1": p_r_f_tags[2], "f1_tto2": p_r_f_tags[2]}

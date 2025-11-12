@@ -62,7 +62,7 @@ for wav in sorted(wavfiles):
     #print commandr
     os.system(commandr)
     #print commanddel
-    #h = raw_input()
+    #h = input()
     #if h == "q": break
 
 
@@ -94,7 +94,7 @@ for wav in sorted(wavfiles):
     #print c
     print wavfile
     os.system(c)
-    #h = raw_input()
+    #h = input()
     #if h == "q": break
 
 

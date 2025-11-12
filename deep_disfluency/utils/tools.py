@@ -220,8 +220,8 @@ def minibatch(l, bs):
 
     l :: list of word idxs
     """
-    out = [l[:i] for i in xrange(1, min(bs, len(l)+1))]
-    out += [l[i-bs:i] for i in xrange(bs, len(l)+1)]
+    out = [l[:i] for i in range(1, min(bs, len(l)+1))]
+    out += [l[i-bs:i] for i in range(bs, len(l)+1)]
     assert len(l) == len(out)
     return out
 
@@ -234,11 +234,11 @@ def indices_from_length(sentence_length, bs, start_index=0):
     will output:
     [[0,0],[0,1],[0,2],[1,3]]
     """
-    l = map(lambda x: start_index+x, xrange(sentence_length))
+    l = map(lambda x: start_index+x, range(sentence_length))
     out = []
-    for i in xrange(0, min(bs, len(l))):
+    for i in range(0, min(bs, len(l))):
         out.append([l[0], l[i]])
-    for i in xrange(bs+1, len(l)+1):
+    for i in range(bs+1, len(l)+1):
         out.append([l[i-bs], l[i-1]])
     assert len(l) == sentence_length
     return out

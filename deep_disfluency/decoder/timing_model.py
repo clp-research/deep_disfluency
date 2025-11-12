@@ -12,7 +12,11 @@ from sklearn.linear_model import LogisticRegression
 # from sklearn.tree import DecisionTreeClassifier
 # from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import StandardScaler
-import cPickle
+try:
+    import cPickle as pickle
+except Exception:
+    import pickle
+import logging
 
 # import sys
 # sys.path.append("../")
@@ -61,7 +65,7 @@ def load_timing_data(dialogues, labels2idx, simple=False):
                 if not found:
                     if "<laughter" in complex_tag:
                         continue
-                    raw_input("warning: " + complex_tag + " " + tag)
+                    logging.warning("warning: complex_tag=%s tag=%s", complex_tag, tag)
             if t < 0:
                 print "below zero"
                 t = np.average([x[0] for x in timing_dict[tag]])

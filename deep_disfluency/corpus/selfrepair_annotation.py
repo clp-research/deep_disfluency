@@ -172,7 +172,7 @@ class SelfRepair:
                     # file4.write(trans.swda_filename+"\n")
                 else:  # fine for our bigger training set
                     if trans.conversation_no == 4330:
-                        raw_input()
+                        input()
                     otherNumber += 1
                     otherUtterances += len(trans.utterances)
                     # file22.write(trans.swda_filename+"\n")
@@ -198,7 +198,7 @@ class SelfRepair:
         print "sw_1_sw_2"
         print trainingNumber + otherNumber
         print trainingUtterances + otherUtterances
-        raw_input()
+        input()
         # for pair in missed:
         #    print pair
 
@@ -647,7 +647,7 @@ class SelfRepair:
                             normaliser = (
                                 (float(pathlength[2]) * float(10)) / float(9))
                             break
-                    # raw_input(normaliser)
+                    # input(normaliser)
                     for pathlength in pathlengths:
                         if pathlength[2] == "<S>":
                             # i.e. the <S> is given the biggest
@@ -663,7 +663,7 @@ class SelfRepair:
                         if (pathlengths[i][0] == reparandumOnsetAddress and found == False):
                             relativePathLength = float(myRelativePL)
 
-                            # raw_input(relativePathLength)
+                            # input(relativePathLength)
                             found = True
                             break
                         # print(pathlengths[i])
@@ -1049,7 +1049,7 @@ class SelfRepair:
                     if nextWordFound == False:  # still haven't found it
                         print(
                             "UNRESOLVED possible thirdPos REPAIR BEGINNING UTT" + str(startNum))
-                        # raw_input()
+                        # input()
                         break  # just crack on and treat it as a normal DEL
 
                 endUtt = utt
@@ -1104,7 +1104,7 @@ class SelfRepair:
                         self.errorlog.write("NO TREE FOUND FOR repair in  " + startUtt.swda_filename + " utt no." + str(
                             startUtt.transcript_index) + str(startUtt.text_words()))
                         # print(str(startUttTreeMap))
-                        # raw_input()
+                        # input()
                     # myTreeMaps = list(startUttTreeMap) # this will be added to through concat in 2ps/3ps
                     # gets all the tree lengths in the startUtt
                     #print("startnum " + str(startNum))
@@ -1127,7 +1127,7 @@ class SelfRepair:
                             self.errorlog.write("NO TREE FOUND FOR repair in interregUtt  " + interregUtt.swda_filename + " utt no." + str(
                                 interregUtt.transcript_index) + str(interregUtt.text_words()))
                             # print(str(interregUttTreeMap))
-                            # raw_input()
+                            # input()
                         else:
                             mytree = interregUtt.trees[
                                 interregUttTreeMap.get_first_TreeNumber()]
@@ -1145,7 +1145,7 @@ class SelfRepair:
                             self.errorlog.write("NO TREE FOUND FOR repair in repairUtt " + repairUtt.swda_filename + " utt no." + str(
                                 repairUtt.transcript_index) + str(repairUtt.text_words()))
                             # print(str(repairUttTreeMap))
-                            # raw_input()
+                            # input()
                         else:
                             mytree = repairUtt.trees[
                                 repairUttTreeMap.get_first_TreeNumber()]
@@ -1164,7 +1164,7 @@ class SelfRepair:
                             self.errorlog.write("NO TREE FOUND FOR repair in endUtt " + endUtt.swda_filename + " utt no." + str(
                                 endUtt.transcript_index) + str(endUtt.text_words()))
                             # print(str(endUttTreeMap))
-                            # raw_input()
+                            # input()
                         else:
                             mytree = endUtt.trees[
                                 endUttTreeMap.get_first_TreeNumber()]
@@ -1233,7 +1233,7 @@ class SelfRepair:
                     # of the repair-element bins
                     for n in range(len(depths)):
                         # print(depths[n])
-                        # raw_input()
+                        # input()
                         if (depths[n][0] < startNum):
                             origUttDepths.append(depths[n])
                         elif (depths[n][0] < interregNum):
@@ -1252,7 +1252,7 @@ class SelfRepair:
                     # one of the repair-element bins
                     for n in range(len(pathlengths)):
                         # print(pathlengths[n])
-                        # raw_input()
+                        # input()
                         if (pathlengths[n][0] < startNum):
                             origUttPathlengths.append(pathlengths[n])
                         elif (pathlengths[n][0] < interregNum):
@@ -1296,7 +1296,7 @@ class SelfRepair:
                     # print("new3p!")
                     # for element in self.__3plist__[-1]:
                     #    print element
-                    # raw_input()
+                    # input()
 
                     # last two Trues in 3p struture says whether it's a split utterance or not, always true here, and whether it's a complete reparandum or not, always false here..
                     # return len(startUtt.text_words()) # risk of duplication, doesn't matter too much as can clean the list afterwords
@@ -1343,7 +1343,7 @@ class SelfRepair:
                         print("NO TREE FOUND FOR 1p repair in  " + startUtt.swda_filename + " utt no." + str(
                             startUtt.transcript_index) + "from startNum" + str(startNum) + str(startUtt.text_words()))
                         # print(str(startUttTreeMap))
-                        # raw_input()
+                        # input()
 
                     treeNumber = 0
                     depths = []  # overall
@@ -1378,7 +1378,7 @@ class SelfRepair:
                     # one of the repair-element bins
                     for n in range(len(pathlengths)):
                         # print(pathlengths[n])
-                        # raw_input()
+                        # input()
                         if pathlengths[n][0] < startNum:
                             origUttPathlengths.append(pathlengths[n])
                         elif pathlengths[n][0] < interregNum:
@@ -1398,7 +1398,7 @@ class SelfRepair:
                     #print("new 1p!")
                     # for element in self.__1plist__[-1]:
                     #    print element
-                    # raw_input()
+                    # input()
                     # return endNum[1]
                     return endNum
             elif string == '+':
@@ -1475,7 +1475,7 @@ class SelfRepair:
                         uttTreeMap = self.__treeMapList__.get_treemap(
                             trans, utt)
                         print("my utt= " + str(utt.text_words()))
-                        # raw_input()
+                        # input()
                         words = utt.text_words()
                         pos = 0
                         # i.e. we haven't got to repair point (still in
@@ -1517,7 +1517,7 @@ class SelfRepair:
                         uttTreeMap = self.__treeMapList__.get_treemap(
                             trans, utt)
                         #print("interleaved utt= " + str(utt.text_words()))
-                        # raw_input()
+                        # input()
                         interleavedUtts.append(utt)
                     elif (trans.next_utt(utt) != None and trans.next_utt(utt).caller == startUtt.caller and trans.next_utt(utt).damsl_act_tag() == "+"):
                         # get the next utt after the interleaved turns same
@@ -1554,7 +1554,7 @@ class SelfRepair:
                         endUtt = utt
                         endUttTreeMap = uttTreeMap
                         # print("BREAKING!")
-                        # raw_input()
+                        # input()
                         break
                     else:
                         errormessage = "WARNING: (MAYBE SPLIT UTT) UNRESOLVED 3P REPAIR AT FILE " + str(
@@ -1570,7 +1570,7 @@ class SelfRepair:
                                 pass
                                 #print("interleaved:" + str(interutt.text_words()))
                                 #print("next utt" + str(trans.next_utt(endUtt).text_words()))
-                        # if raw_input("Repair from other y?") == "y":
+                        # if input("Repair from other y?") == "y":
                         #    repairFromOther == True
 
                         #
@@ -1578,7 +1578,7 @@ class SelfRepair:
             #print("\n Repair number " + REPNUM)
             #if len(self.__1plist__)>0: print(self.__1plist__[-1])
             #if len(self.__3plist__)>0: print(self.__3plist__[-1])
-            #if utt.transcript_index == 129: raw_input()
+            #if utt.transcript_index == 129: input()
             #print("\n current utt = " + str(utt.transcript_index))
             #print("START " + str(startUtt.text_words()) + str(reparandumBool))
             #print("INTERREG  " + str(interregUtt.text_words()) + str(interregnumBool))
@@ -1656,7 +1656,7 @@ class SelfRepair:
             if ("{" in string and string[0] == "{" and string[1] != "C"):
                 editterm = True
             # decide whether to continue here or not
-            # if "Reparandum." in embeddedIn: print "embeddedIn";print pos; print words[pos]; raw_input()
+            # if "Reparandum." in embeddedIn: print "embeddedIn";print pos; print words[pos]; input()
             # look for embedded edited words (chaining/within
             # reparandum/interreg)
             if check == False and ((interregnumBool == True) or (reparandumBool == True)
@@ -1782,7 +1782,7 @@ class SelfRepair:
                     print startNum
                     repairUtt = utt
                     repairNum = [utt.transcript_index, pos]
-                    # raw_input()
+                    # input()
 
                 endUtt = utt
                 endNum = [utt.transcript_index, pos]
@@ -1905,7 +1905,7 @@ class SelfRepair:
         #self.__3plist__ = []
         swapHappened = True
         print("total no of repairs = " + str(len(lists)))
-        raw_input()
+        input()
         while swapHappened == True:
             swapHappened = False
             for i in range(len(lists) - 1):
@@ -1957,7 +1957,7 @@ class SelfRepair:
                 self.print_3p(repair, file3p)
             i += 1
             print("Repair number " + str(i) + " of" + str(len(lists)))
-            raw_input()
+            input()
             # if i == 1: break
 
         file1p.close()
@@ -2066,7 +2066,7 @@ class SelfRepair:
                         #now editTypes and depths should have same length
                         if not len(yourEditTypes) == len(yourdepths):
                             print("WARNING EDIT TYPES AND DEPTHS NOT SAME LENGTH for utt" + str(yourRepair[1]) + " file: " + yourRepair[0] +  " error LINE 764 python")
-                            raw_input()
+                            input()
                         editpos = 0
                         youreditpos = 0
                         origBin = True
@@ -2222,7 +2222,7 @@ class SelfRepair:
                   "[ " + reparandumString + "+ { " + interregString + "} " + repairString + "] " + endString)
             print("\n EMBEDDED IN= " + thisRepair[12])
             #print("\n editString so far = " + str(myOrig) + "[" + str(myReparandum) + ".{" + str(myInterreg) + "} " + str(myRepair) + " \n words so far = " + str(origWords) + ": [ :" + str(reparandum) + ":+: {" + str(interregWords) + "}" + str(repair) + ":]" + str(endWords))
-            myquit = raw_input(
+            myquit = input(
                 "For each one: alter or press y to agree then y again to confirm.")
             if myquit == "quit":
                 return ["quit", []]
@@ -2250,16 +2250,16 @@ class SelfRepair:
 
                 print("words so far : " + str(allwordssofar))
                 print("edits so far : " + str(alleditssofar))
-                inputString = raw_input(theType + " WORDS: " + str(words) + ". EDIT STRING: " + (
+                inputString = input(theType + " WORDS: " + str(words) + ". EDIT STRING: " + (
                     str(alledits[k])) + ". length = " + str(len(alledits[k])) + "\n")
                 if inputString == "y":
-                    inputString = raw_input(
+                    inputString = input(
                         "Edit string = " + str(alledits[k]) + "  y?: ")
                     # gives a confirm check,two "Y"s and skips over next bit
                 if inputString != "y":   # get new values for editstring
                     while True:
                         print("Edit string = " + inputString)
-                        happy = raw_input("happy? y or alter: ")
+                        happy = input("happy? y or alter: ")
                         if happy == "y":
                             break
                         else:
@@ -2287,13 +2287,13 @@ class SelfRepair:
                 "reparandum =" + reparandumString + "  repair = " + repairString)
             print(
                 "Rep, RepPartial, RepDel, RepSub, Sub, SubDel, Insert, InsertSub, Other")
-            inputString = raw_input("Edit type = " + editType + "  y?")
+            inputString = input("Edit type = " + editType + "  y?")
             if inputString == "y":
-                inputString = raw_input("Edit type = " + editType + "  y?")
+                inputString = input("Edit type = " + editType + "  y?")
             if inputString != "y":
                 while True:
                     print("edit type = " + inputString)
-                    happy = raw_input("happy? y or alter")
+                    happy = input("happy? y or alter")
                     if happy == "y":
                         break
                     else:
@@ -2479,32 +2479,32 @@ class SelfRepair:
                                     print "seen this!!"
                                     break
 
-                                skipCheck = raw_input("go on?")
+                                skipCheck = input("go on?")
                                 if skipCheck == "n":
                                     break
                                 elif skipCheck == "d":
-                                    utt.trees[treeIndex].draw()  # raw_input()
-                                    skipCheck = raw_input("go on?")
+                                    utt.trees[treeIndex].draw()  # input()
+                                    skipCheck = input("go on?")
                                     if skipCheck == "n":
                                         break
                                 # need a way of scrolling forwards after seeing the
                                 # first EDITed word in a sequence
-                                startCheck = raw_input(
+                                startCheck = input(
                                     str(startNum) + " startNum OK?")
                                 if startCheck == "n":
                                     startNum = [
-                                        utt.transcript_index, int(raw_input("startNum (inc)?"))]
+                                        utt.transcript_index, int(input("startNum (inc)?"))]
                                 # should give use the right thing..
                                 interregNum = [
-                                    utt.transcript_index, int(raw_input("interreg (inc)?"))]
+                                    utt.transcript_index, int(input("interreg (inc)?"))]
                                 repairNum = [
-                                    utt.transcript_index, int(raw_input("repair(inc)?"))]
+                                    utt.transcript_index, int(input("repair(inc)?"))]
                                 endNum = [
-                                    utt.transcript_index, int(raw_input("end(exc)?"))]
+                                    utt.transcript_index, int(input("end(exc)?"))]
                                 nextUtt = trans.next_utt_same_speaker(utt)
                                 if nextUtt != None:
                                     print "\n" + str(nextUtt.text_words())
-                                    thirdPos = raw_input("3RD?")
+                                    thirdPos = input("3RD?")
                                 else:
                                     thirdPos = ""
                                 if thirdPos == "y":
@@ -2516,12 +2516,12 @@ class SelfRepair:
                                     #    nextUttTreeMap = self.__treeMapList__.get_treemap(trans, nextUtt)
                                     for l in range(0, len(nextUttTreeMap)):
                                         print str(l) + ": " + str(nextUttTreeMap[l])
-                                    interregNum = parse_list(raw_input(
+                                    interregNum = parse_list(input(
                                         "interreg (inc) [m,n] (either " + str(nextUtt.transcript_index)or str(utt.transcript_index) + "?"))
                                     repairNum = parse_list(
-                                        raw_input("repair(inc)?"))
-                                    endNum = parse_list(raw_input("end(exc)?"))
-                                    confirm = raw_input("confirm?")
+                                        input("repair(inc)?"))
+                                    endNum = parse_list(input("end(exc)?"))
+                                    confirm = input("confirm?")
                                     if confirm == "n":
                                         continue
                                     #nextUtt = trans.next_utt_same_speaker(utt)
@@ -2529,7 +2529,7 @@ class SelfRepair:
                                     self.print_1p_NoTreeStuff(
                                         [trans.swda_filename, startNum, interregNum, repairNum, endNum, "", utt.damsl_act_tag()], self.file3p)
                                 else:
-                                    confirm = raw_input("confirm?")
+                                    confirm = input("confirm?")
                                     if confirm == "n":
                                         continue
                                     # might miss nested ones here..
@@ -2561,7 +2561,7 @@ class SelfRepair:
                                     endUtt = trans.next_utt_same_speaker(utt)
                                     if endUtt == None:
                                         "no continuation"
-                                        raw_input()
+                                        input()
                                         break
                                     endPos = 0
                                 endNum = [endUtt.transcript_index,endPos]
@@ -2575,7 +2575,7 @@ class SelfRepair:
                                 self.unannotated += 1
                                 break
                                 # self.print_1p_NoTreeStuff([trans.swda_filename, startNum, interregNum, repairNum, endNum, "", utt.damsl_act_tag()],file1p)continue #keep going
-                                # raw_input()
+                                # input()
 
                     pos += 1
                 count += 1
@@ -2587,7 +2587,7 @@ class SelfRepair:
                     check = True
                 """
         print str(self.unannotated) + " unannotated"
-        # raw_input()
+        # input()
         # file1p.close()
         # file3p.close()
 
@@ -2790,7 +2790,7 @@ class SelfRepair:
                     check = True
                 """
         print str(self.unannotated) + " unannotated"
-        # raw_input()
+        # input()
         # file1p.close()
         # file3p.close()
 

@@ -54,7 +54,7 @@ def load_data_from_array(data, n_acoust, cs=2, bs=9,
     acoustic_data = np.swapaxes(acoustic_data, 0, 1)
     #print 'acoustic_data', acoustic_data.shape
     
-    #raw_input()
+    #input()
     
     #these need to be created
     #indices = data[:, -3:-1] #anti-penult = start, penult = stop; columns show how the slicing of context should be done in training
@@ -73,7 +73,7 @@ def load_data_from_array(data, n_acoust, cs=2, bs=9,
     indices = np.asarray(indices_from_length(len(lex_data),bs,0)).astype('int32')
     #print 'indices', indices.shape, indices[0:10]
     
-    #raw_input()
+    #input()
     return frames, acoustic_data, lex_data, pos_data, indices, labels
 
 def switchboard_data(train_data=None, tags=None):

@@ -191,7 +191,7 @@ class Transcript:
         # The dictionary of metadata for this transcript:
         if not self.metadata == None:
             transcript_metadata = self.metadata[self.conversation_no]
-            for key, _ in transcript_metadata.iteritems():
+            for key, _ in transcript_metadata.items():
                 setattr(self, key, transcript_metadata[key])
         else:
             transcript_metadata = None
@@ -309,7 +309,7 @@ class Utterance:
         """        
         ##################################################
         # Utterance data:
-        for i in xrange(len(Utterance.header)):
+        for i in range(len(Utterance.header)):
             att_name = Utterance.header[i]
             row_value = None
             if i < len(row):

@@ -221,7 +221,7 @@ def matchBlock(ss):
     #print best
     bestset = set()
     bestset.add(tuple(best))
-    remainder = set(xrange(len(ss)))  #step 3 align the remaining sequence to the sequence it matches best to to that sequence
+    remainder = set(range(len(ss)))  #step 3 align the remaining sequence to the sequence it matches best to to that sequence
     remainder.remove(best[0])
     remainder.remove(best[1])
     for i in remainder: # should only be one

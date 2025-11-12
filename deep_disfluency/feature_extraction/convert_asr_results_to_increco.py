@@ -90,7 +90,7 @@ for filename in sorted(os.listdir(asr_dir)):
         results_string+="Time: " + str(time_stamp) + "\n"
         results_string+="\n".join(["\t".join([str(mya) for mya in abc]) for abc in diff])
         results_string+="\n\n"
-        #raw_input()
+        #input()
     #break
     pair.append({conv_no : [ results_string, deepcopy(current)]})
     if len(pair)==2:
@@ -120,7 +120,7 @@ for filename in sorted(os.listdir(asr_dir)):
                         else:
                             first100results.append(word.lower().replace("'","").encode('utf8'))
                         #print first100results
-                        #raw_input()
+                        #input()
                     
                     print len(first100)
                     print len(first100results)
@@ -145,7 +145,7 @@ for filename in sorted(os.listdir(asr_dir)):
         print pair[1][pair[1].keys()[0]][-1]
         if pair[0][pair[0].keys()[0]][-1] == pair[1][pair[1].keys()[0]][-1]:
             print "no winner!!!"
-            raw_input()
+            input()
             leftout.append(conv_no.replace("_r","").replace("_l",""))
         else:
             for single in pair:

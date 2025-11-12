@@ -432,7 +432,7 @@ if __name__ == '__main__':
         # top_n = s.get_top_n_sequences(5)
         # print top_n
         # print top_n[:10]
-        #raw_input()
+        #input()
     # check all 
         print s.get_log_diff_of_tag_suffix(tags[:i], n=1)
     

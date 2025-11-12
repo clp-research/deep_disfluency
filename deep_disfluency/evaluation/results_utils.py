@@ -203,7 +203,7 @@ def accuracyCurvePlot(my_accuracies, limit, filename, upperlimit=None):
     plt.gca().set_color_cycle(['red', 'green', 'blue'])
     plt.clf()
     legendlist = []
-    for i in xrange(1, limit+1):
+    for i in range(1, limit+1):
         epoch_numbers.append(i)
     plt.figure(figsize=(8, 4))
     plt.subplot(1, 1, 1)

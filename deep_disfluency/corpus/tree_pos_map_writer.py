@@ -116,7 +116,7 @@ class TreeMapWriter:
                     #print(errormessage)
                     count+=1
                     continue
-                    #raw_input()
+                    #input()
                 
                 #indices for which tree and leaf we're at:
                 i = 0  # tree
@@ -201,7 +201,7 @@ class TreeMapWriter:
                             #print utt.transcript_index
                             #print words
                             #print trees
-                            #raw_input()
+                            #input()
                         #alternately, this utt's tree may be further back 
                         #than its antecdent's, rare mistake
                         elif utt.ptb_treenumbers[0] < lastTrees[-1][0]:
@@ -213,7 +213,7 @@ class TreeMapWriter:
                             #print "\n(2)replacing first one to lasttreemap's:"
                             #print words
                             #print trees
-                            #raw_input()
+                            #input()
                                                         
                     if backtrack != 1: #we should have no match    
                         found_treemap = False
@@ -232,7 +232,7 @@ class TreeMapWriter:
                                 j = lastTreeMap[t][1][-1][1] + 1
                                 found_treemap = True
                                 #print "found last mapping, j -1 = " + str(j-1)
-                                #raw_input()
+                                #input()
                                 break
                         if not found_treemap:
                             pass
@@ -244,7 +244,7 @@ class TreeMapWriter:
                             #for tmap in wordTreeMapList.keys():
                             #    print tmap
                             #    print wordTreeMapList[tmap]
-                            #raw_input()
+                            #input()
                         
                     
                 possibleComment = False # can have comments, flag
@@ -273,7 +273,7 @@ class TreeMapWriter:
                             possibleComment = True
                         if possibleComment:
                             #print("match COMMENT!:" + word)
-                            #raw_input()
+                            #input()
                             LeafIndices = []
                             match = True
                             #wordTreeMap.append((word, LeafIndices))
@@ -333,7 +333,7 @@ class TreeMapWriter:
                                     j +=1  # increment loop to next leaf
                                     match = True
                                     breaker = True
-                                    #raw_input()
+                                    #input()
                                     break
                                 elif leaf in wordtest or \
                                 leaf in word and not leaf == ",":      
@@ -380,7 +380,7 @@ class TreeMapWriter:
                                                 j = k+1
                                                 match = True
                                                 breaker = True
-                                                #raw_input()
+                                                #input()
                                                 break
                                 else: 
                                     #otherwise go on
@@ -425,7 +425,7 @@ class TreeMapWriter:
                             #print errormessage
                             if not errorLog==None:
                                 errorLog.write(errormessage+"\n")
-                            #raw_input()
+                            #input()
                             if backtrack==1:
                                 backtrack+=1
                             elif backtrack == 2: 
@@ -459,7 +459,7 @@ class TreeMapWriter:
                                         foundTreemap = True
                                         #print "found last mapping, j = " \
                                         #+ str(j)
-                                        #raw_input()
+                                        #input()
                                         # break when last tree 
                                         #mapped word from this caller is found
                                         break
@@ -474,7 +474,7 @@ class TreeMapWriter:
                                         #for tmap in wordTreeMapList.keys():
                                         #    print tmap
                                         #    print wordTreeMapList[tmap]
-                                        #raw_input()
+                                        #input()
                                 i = 0 #go back to first tree
                                 continue
                             elif forwardtrack==1:
@@ -496,7 +496,7 @@ class TreeMapWriter:
                                 forwardtrack+=1
                                 #mistranscribe = False #TODO maybe needed
                                 wordTreeMap = []
-                                #raw_input()
+                                #input()
                             elif forwardtrack == 3 or backtrack == 3:
                                 #if this hasn't worked reset to old trees
                                 #print "trying final reset"
@@ -509,11 +509,11 @@ class TreeMapWriter:
                                 backtrack = 0
                                 #mistranscribe = False #TODO maybe needed
                                 wordTreeMap = []
-                                #raw_input()
+                                #input()
                             else:
                                 pass
                                 #print "resetting search"
-                                #raw_input()
+                                #input()
                             #unless forward tracking now, 
                             #just go back to beginning
                             i = 0 # go back to beginning of tree search
@@ -542,7 +542,7 @@ class TreeMapWriter:
                             if errorLog:
                                 errorLog.write("possible wrong tree mapping:"\
                                                 + errormessage + "\n")
-                            raw_input()
+                            input()
                 #end of while loop (words)
                 mytreenumbers = []
                 for treemap in trees:
@@ -554,7 +554,7 @@ class TreeMapWriter:
                     print wordTreeMap
                     print trans.swda_filename
                     print utt.transcript_index
-                    raw_input()
+                    input()
                     count+=1
                     continue
                 #add the treemap
@@ -663,7 +663,7 @@ class POSMapWriter:
                       str(utt.utterance_index) + "." + \
                       str(utt.subutterance_index) + " " + utt.text
                     #print errormessage
-                    #raw_input()
+                    #input()
                 else:
                     #indices for which POS we're at
                     j = 0
@@ -697,7 +697,7 @@ class POSMapWriter:
                                 possibleComment = True
                             if possibleComment:
                                 #print "match COMMENT!:" + word
-                                #raw_input()
+                                #input()
                                 POSIndices = []
                                 match = True
                                 if (any([x in word for x in [">>","]]","))",
@@ -733,7 +733,7 @@ class POSMapWriter:
                                 #print "j loop word : " + word
                                 #print "j loop wordtest : " + wordtest
                                 #print "j pos : " + str(j) + " " + str(pos)
-                                #raw_input()
+                                #input()
                                 breaker = False
                                 if wordtest == pos or word == pos: #exact match
                                     POSIndices.append(j) 
@@ -753,7 +753,7 @@ class POSMapWriter:
                                     j +=1  # increment lead number
                                     match = True
                                     breaker = True
-                                    #raw_input()
+                                    #input()
                                     break
                                 elif (pos in wordtest or pos in word) \
                                         and not pos in [ "," ,"."]:  
@@ -868,7 +868,7 @@ class POSMapWriter:
                                 if errorLog:
                                     errorLog.write("possible wrong POS : " + \
                                                    errormessage + "\n")
-                                #raw_input()
+                                #input()
                                     
                     #end of while loop (words)
                     if not len(wordPOSMap) == len(utt.text_words()):
@@ -877,7 +877,7 @@ class POSMapWriter:
                         str(utt.swda_filename) + str(utt.transcript_index)
                         print utt.text_words()
                         print wordPOSMap
-                        raw_input()
+                        input()
                     
                     wordPOSMapList.append(trans.conversation_no, 
                                           str(utt.transcript_index), 

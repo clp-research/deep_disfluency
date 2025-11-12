@@ -33,7 +33,7 @@ def get_best_word_alignment(ms_words,swda_words,ms_start_times,
         if any(["<laughter>" in x for x in ms_words]):
             print "laughter before mapping"
             print ms_words, swda_words
-            #raw_input()
+            #input()
     alignment = align(ms_words,swda_words) #gets best alignment
     if debug:
         if any(["<laughter>" in x for x in ms_words]):
@@ -41,7 +41,7 @@ def get_best_word_alignment(ms_words,swda_words,ms_start_times,
             print ms_words, swda_words
             print alignment
             print swda_mappings
-            #raw_input()
+            #input()
     #final_alignment = [[word] for word in ms_words]
     
     #print final_alignment
@@ -493,7 +493,7 @@ def map_MS_to_SWDA(MSfilename,SWDAindices,SWDAwords,laughter=False,
             MSword = "<laughter>" + MSword + "</laughter>"
             if debug:
                 print "MSword", MSword
-                #raw_input()
+                #input()
         #if utterance changes, add the last one
         if data[1].split(".")[1] != currentUttIndex and \
                 not ( MSSWDAalignment == "<CONT>" and \
@@ -877,7 +877,7 @@ if __name__ == '__main__':
                 #                   "\n")
                 #if laughter_bouts and laughter_bouts[0][0]<start:
                 #    print laughter_bouts[0], start, stop, last_time_stamp
-                #    raw_input()
+                #    input()
                 if laughter_bouts and laughter_bouts[0][0]<start and\
                         laughter_bouts[0][0]>=last_time_stamp:
                     bout = laughter_bouts.pop(0)

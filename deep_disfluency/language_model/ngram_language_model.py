@@ -2,7 +2,10 @@
 from __future__ import division
 import math
 from collections import defaultdict
-import cPickle
+try:
+    import cPickle as pickle
+except Exception:
+    import pickle
 from operator import itemgetter
 import numpy
 
@@ -121,7 +124,7 @@ class LanguageModel(object):
         tokens = self.tokenize_sentence(text,order)
         s = 0.
         delta = self.order - 1
-        for i in xrange(delta, len(tokens)):
+        for i in range(delta, len(tokens)):
             ng = tokens[i - delta : i + 1]
             p = self.ngram_prob(ng,order) #got a partial word factor
             s += (p * -log(p))
@@ -398,16 +401,16 @@ class KneserNeySmoothingModel(LanguageModel):
         smoothing,
         taken from Goodman 2001 and generalized to arbitrary orders"""
         l = len(tokens)
-        for i in xrange(order-1,l): # tokens should have a prefix of order - 1
+        for i in range(order-1,l): # tokens should have a prefix of order - 1
             #print i
-            for d in xrange(order,0,-1): #go through all the different 'n's
+            for d in range(order,0,-1): #go through all the different 'n's
                 if d == 1:
                     self.unigram_denominator += 1
                     #print "unigram_denom" + str(self.unigram_denominator)
                     self.ngram_numerator_map[self.glue_tokens(tokens[i],d)]\
                      += 1
                     #print self.ngram_numerator_map
-                    #raw_input()
+                    #input()
                 else:
                     den_key = self.glue_tokens(tokens[i-(d-1) : i],d)
                     num_key = self.glue_tokens(tokens[i-(d-1) : i+1],d)
@@ -527,7 +530,7 @@ class KneserNeySmoothingModel(LanguageModel):
                 #print "partial"
                 #print order
                 #print ngram[-2]
-                #raw_input()
+                #input()
                 partialWord = 0.00001
         for token in ngram: 
             #put unknown token in for unknown words, only form of held 
@@ -555,10 +558,10 @@ class KneserNeySmoothingModel(LanguageModel):
             print ngram
             print self.ngram_numerator_map.get(self.glue_tokens(ngram[-1],1))
             print self.unigram_denominator
-            raw_input()
+            input()
             
         # now we compute the higher order probs and interpolate
-        for d in xrange(2,order+1):
+        for d in range(2,order+1):
             ngram_den = self.ngram_denominator_map.get(
                                         self.glue_tokens(ngram[-(d):-1],d))
             if ngram_den == None: ngram_den = 0
@@ -763,7 +766,7 @@ class KneserNeySmoothingModel(LanguageModel):
             totalMass2+=p2
             if p1 == 0:
                 newKL = 0
-                #raw_input("KL prob = 0!! " + str(contexttokens1) +\
+                #input("KL prob = 0!! " + str(contexttokens1) +\
                 # str(target))
             elif p2 == 0:
                 print "INFINITE KL DIVERGENCE!" #todo should we 
@@ -833,7 +836,7 @@ class KneserNeySmoothingModel(LanguageModel):
             totalMass2+=p2
             if p1 == 0:
                 newKL = 0
-                #raw_input("KL prob = 0!! " + str(contexttokens1) +\
+                #input("KL prob = 0!! " + str(contexttokens1) +\
                 # str(target))
             elif p2 == 0:
                 print "INFINITE KL DIVERGENCE!" #TODO prob dist?
@@ -1259,55 +1262,55 @@ class KneserNeySmoothingModel(LanguageModel):
 #         
 #     
 #         db = open(num_db,'w')
-#         for k,v in self.ngram_numerator_map.iteritems():
+#         for k,v in self.ngram_numerator_map.items():
 #             cPickle.dump(k,db,-1)
 #             cPickle.dump(v,db,-1)
 #         db.close()
 #  
 #         db = open(den_db,'w')
-#         for k,v in self.ngram_denominator_map.iteritems():
+#         for k,v in self.ngram_denominator_map.items():
 #             cPickle.dump(k,db,-1)
 #             cPickle.dump(v,db,-1)
 #         db.close()
 #  
 #         db = open(nz_db,'w')
-#         for k,v in self.ngram_non_zero_map.iteritems():
+#         for k,v in self.ngram_non_zero_map.items():
 #             cPickle.dump(k,db,-1)
 #             cPickle.dump(v,db,-1)
 #         db.close()
 #          
 #         db = open(unigram_contexts_db,'w')
-#         for k,v in self.unigram_contexts.iteritems():
+#         for k,v in self.unigram_contexts.items():
 #             cPickle.dump(k,db,-1)
 #             cPickle.dump(v,db,-1)
 #         db.close()
 #          
 #         db = open(bigram_contexts_db,'w')
-#         for k,v in self.bigram_contexts.iteritems():
+#         for k,v in self.bigram_contexts.items():
 #             cPickle.dump(k,db,-1)
 #             cPickle.dump(v,db,-1)
 #         db.close()
 #          
 #         db = open(unigram_counts_db,'w')
-#         for k,v in self.unigram_counts.iteritems():
+#         for k,v in self.unigram_counts.items():
 #             cPickle.dump(k,db,-1)
 #             cPickle.dump(v,db,-1)
 #         db.close()
 #          
 #         db = open(bigram_counts_db,'w')
-#         for k,v in self.bigram_counts.iteritems():
+#         for k,v in self.bigram_counts.items():
 #             cPickle.dump(k,db,-1)
 #             cPickle.dump(v,db,-1)
 #         db.close()
 #          
 #         db = open(bigram_history_entropies_db,'w')
-#         for k,v in self.bigram_history_entropies.iteritems():
+#         for k,v in self.bigram_history_entropies.items():
 #             cPickle.dump(k,db,-1)
 #             cPickle.dump(v,db,-1)
 #         db.close()
 #          
 #         db = open(trigram_history_entropies_db,'w')
-#         for k,v in self.trigram_history_entropies.iteritems():
+#         for k,v in self.trigram_history_entropies.items():
 #             cPickle.dump(k,db,-1)
 #             cPickle.dump(v,db,-1)
 #         db.close()

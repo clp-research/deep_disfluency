@@ -1004,7 +1004,7 @@ def graph_viz_repair(maps, reparandum, repair, continuation):
     reparandumSequence = ""
     if len(repair) == 0:
         if len(continuation) == 0:
-            raw_input("no continuation for rep in classify")
+            input("no continuation for rep in classify")
         repair = [continuation[0]]  # add the first one
     for i in range(len(reparandum)):
         reparandumSequence += str(i)

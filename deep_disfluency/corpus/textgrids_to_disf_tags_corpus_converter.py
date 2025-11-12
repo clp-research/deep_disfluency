@@ -64,7 +64,7 @@ def disfluency_tags(utt, corpus, start_time):
                        
     #if inLS == True:
     #    print "WARNING NO LS END", corpus, start_time
-        #raw_input()
+        #input()
     return labels
 
 def convert_to_disfluency_word_tag_tuples_from_raw(text, start='(', end=')'):

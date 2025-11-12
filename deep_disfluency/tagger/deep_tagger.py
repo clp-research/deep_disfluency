@@ -1,6 +1,9 @@
 from __future__ import division
 import numpy as np
-import cPickle
+try:
+    import cPickle as pickle
+except Exception:
+    import pickle
 import os
 from copy import deepcopy
 import time
@@ -622,10 +625,10 @@ class DeepDisfluencyTagger(IncrementalTagger):
                                                      average='macro')
         tag_summary = classification_report(
                     true_y, output,
-                    labels=[i for i in xrange(len(idx_to_label_dict.items()))],
+                    labels=[i for i in range(len(idx_to_label_dict.items()))],
                     target_names=[
                         idx_to_label_dict[i]
-                        for i in xrange(len(idx_to_label_dict.items()))
+                        for i in range(len(idx_to_label_dict.items()))
                                   ]
                                             )
         print tag_summary

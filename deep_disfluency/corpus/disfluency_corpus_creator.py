@@ -24,6 +24,7 @@ edit terms found in the corpus
 tree contexts for each word.
 """
 import argparse
+import logging
 import os
 import re
 import csv
@@ -324,7 +325,7 @@ class DisfluencyCorpusCreator:
                         print "(2) repair points after POP at word", i
                         print [repair.to_string() for repair in repairStack]
                         if test_dodgy == my_test_dodgy:
-                            raw_input()
+                            logging.debug("interactive debug pause skipped (test_dodgy)")
 
                     if (trans.has_trees() == True and mytreemap[i][1] == [])\
                             or (trans.has_trees() == False and
@@ -349,7 +350,7 @@ class DisfluencyCorpusCreator:
                         print "repair stack", [repair.to_string()
                                                for repair in repairStack]
                         if test_dodgy == my_test_dodgy:
-                            raw_input()
+                            logging.debug("interactive debug pause skipped (test_dodgy)")
                     for rs in range(0, len(repairStack)):
                         repair = repairStack[rs]
                         if debug:
@@ -433,7 +434,7 @@ class DisfluencyCorpusCreator:
                             disfluency_tag += '<{} id="{}"/>'.format(
                                 tag, repair.repairID)
                         if test_dodgy == my_test_dodgy and debug:
-                            raw_input()
+                            input()
 
                     # in edit term but not in interregnum (forward looking
                     # disf)
@@ -539,7 +540,7 @@ class DisfluencyCorpusCreator:
                     errors += 1
                     if self.errorlog:
                         self.errorlog.write(warning + "\n")
-                    raw_input()
+                    input()
                     i += 1
             else:
                 i += 1
@@ -894,7 +895,7 @@ class DisfluencyCorpusCreator:
                                             overallTagList[i])
 
             if test_dodgy == my_test_dodgy and debug:
-                raw_input()
+                input()
 
             # now check for possibly missed filled pause edit terms or
             # interregna
@@ -966,7 +967,7 @@ class DisfluencyCorpusCreator:
                 print "dialogue act bad"
                 print uttref
                 print uttList[i]
-                raw_input()
+                input()
             wordstring = easy_read_disf_format(
                 overallWordsList[i], overallTagList[i])
             posstring = easy_read_disf_format(
@@ -1234,7 +1235,7 @@ class DisfluencyCorpusCreator:
                         print repair.reparandumWords
                         print repair.repairWords
                         print repair.continuationWords
-                        raw_input("third one")
+                        input("third one")
         # Do the interregnum and edit term analysis
         interregDict = defaultdict(int)
         for edit in editingTermList:

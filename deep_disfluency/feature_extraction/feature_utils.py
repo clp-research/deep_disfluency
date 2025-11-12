@@ -484,7 +484,7 @@ def load_data_from_corpus_file(filename, limit=8,
             continue
         spl = line.strip("\n").split("\t")
         # print "@@@@" + line + "@@@@"
-        # raw_input()
+        # input()
         idx = spl[0]
         start = float(spl[1])
         end = float(spl[2])

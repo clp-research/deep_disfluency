@@ -207,7 +207,7 @@ def load_data_from_corpus_file(filename):
             continue
         spl = line.strip("\n").split("\t")
         # print "@@@@" + line + "@@@@"
-        # raw_input()
+        # input()
         start = float(spl[1])
         end = float(spl[2])
         word = spl[3]

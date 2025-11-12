@@ -310,7 +310,7 @@ if __name__ == '__main__':
     # create output directory if necessary
     if (os.path.isdir(args.dirOutput)):
         while True:
-            answer = raw_input("the output directory \"" + args.dirOutput + "\" already exists, overwrite? (y/n)? ")
+            answer = input("the output directory \"" + args.dirOutput + "\" already exists, overwrite? (y/n)? ")
             if (answer == "n"):
                 sys.stderr.write("exiting...")
                 sys.exit()

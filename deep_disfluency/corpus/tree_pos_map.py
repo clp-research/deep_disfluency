@@ -57,8 +57,8 @@ class TreeMap(list):
                     print "ERROR can't get tree from index"
                     print "TreeMap.get_POS(utt)"
                     print utt.swda_filename
-                    print utt.transcript_index
-                    raw_input()
+                    print(utt.transcript_index)
+                    raise RuntimeError("Cannot get tree from index in TreeMap.get_POS")
                 pos = ""
                 #concatenating now
                 for n in wordMap[1]:
@@ -70,9 +70,9 @@ class TreeMap(list):
                 POS.append("null")
         if not len(POS) == len(utt.text_words()):
             print "ERROR: uneven lengths: TreeMap.get_POS"
-            print utt.swda_filename
-            print utt.transcript_index
-            raw_input()
+            print(utt.swda_filename)
+            print(utt.transcript_index)
+            raise RuntimeError("Uneven lengths in TreeMap.get_POS")
         return POS
             
     def get_last_TreeNumber(self):
@@ -409,7 +409,7 @@ class TreeMapCorpus(dict):
                 print treemap
                 if not self.errorlog == None:
                     self.errorlog.write(warning)
-                raw_input()
+                input()
                 return None
             return treemap
         except:
@@ -552,14 +552,14 @@ class POSMap(list):
                     print "can't get POS from index: POSMap.get_POS(utt)"
                     print utt.swda_filename
                     print utt.transcript_index
-                    raw_input()
+                    input()
             else:
                 POS.append("null")
         if not len(POS) == len(utt.text_words()):
             print "uneven lengths: POSMap.get_POS mytree.py"
             print utt.swda_filename
             print utt.transcript_index
-            raw_input()
+            input()
         return POS
     
 class POSMapCorpus(dict):
@@ -589,7 +589,7 @@ class POSMapCorpus(dict):
                 print sorted(self.keys())
                 if not self.errorlog == None:
                     self.errorlog.write(warning)
-                raw_input()
+                input()
                 return None
             return posmap
         else:
@@ -602,7 +602,7 @@ class POSMapCorpus(dict):
                 print "map key", map_key
                 if not self.errorlog == None:
                     self.errorlog.write(warning)
-                raw_input()
+                input()
             return None
       
     def append(self, transFilename, uttTransNumber, wordPOSMap):
