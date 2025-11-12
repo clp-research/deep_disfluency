@@ -8,7 +8,7 @@ import subprocess
 import os
 import tarfile
 import zipfile
-import urllib
+import urllib.request
 THIS_DIR = os.path.dirname(os.path.realpath(__file__))
 sys.path.append(THIS_DIR + "/../../")
 from deep_disfluency.tagger.deep_tagger import DeepDisfluencyTagger
@@ -51,12 +51,12 @@ DUEL_CORPUS_DIR = THIS_DIR + '/../data/raw_data/duel/de'
 if download_raw_data:
     name = THIS_DIR + '/../data/raw_data/de'
     if not os.path.isdir(name):
-        print 'downloading', name
-        urllib.urlretrieve(DUEL_CORPUS_URL, name)
+        print('downloading', name)
+        urllib.request.urlretrieve(DUEL_CORPUS_URL, name)
         #zipf = zipfile.ZipFile(name)
         #zipf.extractall(path=SWDA_CORPUS_DIR)
         #zipf.close()
-        print 'extracted at', DUEL_CORPUS_DIR
+        print('extracted at', DUEL_CORPUS_DIR)
 
 
 
@@ -78,7 +78,7 @@ in the sister directory to the corpusLocation, else assume it is there
 -d boolean, include dialogue act tags in the info
 """
 if create_disf_corpus:
-    print "Creating corpus..."
+    print("Creating corpus...")
     write_pos_map = True
     #for div, divfile in file_divisions_transcripts:
     c = [sys.executable,
@@ -97,7 +97,7 @@ if create_disf_corpus:
         c.append('-pos')
         write_pos_map = False  # just call it once
         subprocess.call(c)
-    print "Finished creating corpus."
+    print("Finished creating corpus.")
 
 # 2. Run the preprocessing and extraction of features for all files
 """
@@ -130,7 +130,7 @@ data or not
 no audio extraction"""
 
 if extract_features:
-    print "Extracting features..."
+    print("Extracting features...")
     tags_created = False
     tagger_trained = False
     MATRIX_DIR = THIS_DIR + '/../data/disfluency_detection/feature_matrices'
@@ -161,7 +161,7 @@ if extract_features:
 #                     '1841487c-30f4-4450-90bd-38d1271df295:EcqA8yIP7HBZ'
 #                 c.extend(['-asr', '-credentials', credentials])
 #         subprocess.call(c)
-    print "Finished extracting features."
+    print("Finished extracting features.")
 
 # 3. Train the model on the transcripts (and audio data if available)
 # NB each of these experiments can take up to 24 hours
@@ -197,7 +197,7 @@ else:
 # The output from the models is made in the folders
 # For now all use timing data
 if test_models:
-    print "testing models..."
+    print("testing models...")
     for exp, best_epoch in sorted(systems_best_epoch.items(),
                                   key=lambda x: x[0]):
         exp_str = '%03d' % exp
