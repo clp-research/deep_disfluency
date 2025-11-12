@@ -141,9 +141,9 @@ class LanguageModel(object):
         tokens = text.split()
         s = 0
         for i in range(order-1,len(tokens)):
-            print tokens[i-order+1:i+1]
+            print(tokens[i-order+1:i+1])
             p = self.surprisal(tokens[i-order+1:i+1],order)
-            print p
+            print(p)
             s+=p
         return s * (1.0/float(len(tokens)))
 
@@ -355,10 +355,10 @@ class KneserNeySmoothingModel(LanguageModel):
         if train_corpus != None:
             self.train(train_corpus)
         if second_corpus !=None:
-            print "using second corpus"
+            print("using second corpus")
             self.train(second_corpus)
         if heldout_corpus != None:
-            print "using heldout corpus"
+            print("using heldout corpus")
             self.train(heldout_corpus,heldout=True)
         
         if train_corpus !=None: #this is required to 
@@ -458,19 +458,19 @@ class KneserNeySmoothingModel(LanguageModel):
         of the given order"""
         #if special mode, i.e. string, split on new line character \n
         if isinstance(train_corpus,str):
-            print "training corpus is a string"
+            print("training corpus is a string")
             train_corpus = train_corpus.split("\n") #split string by new line
             is_file = False
         else:
-            print "training corpus is a file"
+            print("training corpus is a file")
             train_corpus.seek(0) # we reset the corpus reading position
             is_file = True
         
         if heldout == True:
             totalunk = 0
-            print "Training language model on heldout data..."
+            print("Training language model on heldout data...")
         else:
-            print "Training language model on standard data..."
+            print("Training language model on standard data...")
             
         for line in train_corpus:
             if is_file: #assuming a REF file here
@@ -503,12 +503,12 @@ class KneserNeySmoothingModel(LanguageModel):
         self.vocab_size = len(self.unigram_counts.keys()) 
         #always updates after any training
         if heldout == True: 
-            print "unknown words in heldout data",totalunk
+            print("unknown words in heldout data",totalunk)
             if totalunk == 0: #have to add the dummy <unk> if no unknown ones
                 text = "<unk>"
                 tokens = self.tokenize_sentence(text, self.order)
                 self.ngrams_interpolated_kneser_ney(tokens, self.order)
-        print "TOTAL WORDS TRAINED ON =",self.train_length
+        print("TOTAL WORDS TRAINED ON =",self.train_length)
     
     def raw_ngram_prob(self,ngram,discount,order,partialWordFactor=False):
         """The internal implementation of ngram_prob.
@@ -553,11 +553,11 @@ class KneserNeySmoothingModel(LanguageModel):
         probability = previous_prob = float(uni_num) / \
         float(self.unigram_denominator)
         if probability == 0.0:
-            print "0 prob!"
+            print("0 prob!")
             print self.glue_tokens(ngram[-1],1)
-            print ngram
+            print(ngram)
             print self.ngram_numerator_map.get(self.glue_tokens(ngram[-1],1))
-            print self.unigram_denominator
+            print(self.unigram_denominator)
             input()
             
         # now we compute the higher order probs and interpolate
@@ -769,7 +769,7 @@ class KneserNeySmoothingModel(LanguageModel):
                 #input("KL prob = 0!! " + str(contexttokens1) +\
                 # str(target))
             elif p2 == 0:
-                print "INFINITE KL DIVERGENCE!" #todo should we 
+                print("INFINITE KL DIVERGENCE!")#todo should we 
                 #still check they're proper prob dists?
                 return infinity
             else:
@@ -839,7 +839,7 @@ class KneserNeySmoothingModel(LanguageModel):
                 #input("KL prob = 0!! " + str(contexttokens1) +\
                 # str(target))
             elif p2 == 0:
-                print "INFINITE KL DIVERGENCE!" #TODO prob dist?
+                print("INFINITE KL DIVERGENCE!")#TODO prob dist?
                 return infinity
             else:
                 newKL = log(p1/p2) * p1
@@ -923,7 +923,7 @@ class KneserNeySmoothingModel(LanguageModel):
             Z+= prob
             probdist[key] = prob
             #total+=1
-        print prefix + ":___\n"
+        print(prefix + ":___\n")
         totalMass = 0
         for key,val in sorted(probdist.items(), key=itemgetter(1),\
                               reverse=True): #can get entropy on line for this?
@@ -974,7 +974,7 @@ class KneserNeySmoothingModel(LanguageModel):
             if prob>highest:
                 highest=prob
                 best = unigram
-        print best
+        print(best)
         return Z / float(count)
     
     def prob_fluent_simple(self,ngram,order):

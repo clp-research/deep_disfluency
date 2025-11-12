@@ -41,7 +41,7 @@ def run_experiment(args):
     for feat,val in args._get_kwargs():
         s[feat] = val
         #print feat,val
-    print s
+    print(s)
     #input()
     
     if s['acoustic']:
@@ -49,7 +49,7 @@ def run_experiment(args):
         
     pre_load_training = True # TODO if not on Bender this is quite big so can't load training- switch to true on Bender
     
-    print "loading data and tag sets" #NB Don't get the tag sets here directly anymore
+    print("loading data and tag sets")#NB Don't get the tag sets here directly anymore
     _, _, _, train_dict = switchboard_data(train_data=s['train_data'],
                                                 tags=s['tags'])
     
@@ -98,7 +98,7 @@ def run_experiment(args):
                 #if we're pre-loading up data, which we do anyway for the test/heldout
                 #but also for training when using a big machine
                 if key != "train" or pre_load_training:
-                    print "loading",dialogue_speaker_data
+                    print("loading",dialogue_speaker_data)
                     dialogue_speaker_data = np.load(dialogue_speaker_data)
                     dialogue_speaker_data = load_data_from_array(dialogue_speaker_data,
                                                                  n_acoust=s['acoustic'],
@@ -123,10 +123,10 @@ def run_experiment(args):
     #print str(nsentences) + " training sequences"
     na = 0
     if s['acoustic']:
-        print "with acoustic data..."
+        print("with acoustic data...")
         na = s['acoustic']
     
-    print "instantiating model " + s['model'] + "..."
+    print("instantiating model " + s['model'] + "...")
     np.random.seed(s['seed'])
     rnn = None
     random.seed(s['seed'])
@@ -155,12 +155,12 @@ def run_experiment(args):
                    cost_function='nll')
         
     if s['decoder_file']:
-        print "instantiating hmm decoder..."
+        print("instantiating hmm decoder...")
         #add the interregnum tag (not predicted by the rnn, derived from context)
         hmm_dict = deepcopy(train_dict['labels2idx'])
         intereg_ind = len(hmm_dict.keys())
         hmm_dict["<i/><cc>"] = intereg_ind #add the interregnum tag
-        print "loading timing model"
+        print("loading timing model")
         with open('../decoder/LogReg_balanced_timing_classifier.pkl',
                   'rb') as fid:
             timing_model = cPickle.load(fid)
@@ -174,9 +174,9 @@ def run_experiment(args):
         hmm=None
     
     if s['embeddings']:
-        print "loading embeddings..."
+        print("loading embeddings...")
         pretrained = gensim.models.Word2Vec.load("../embeddings/"+s['embeddings']) # load pre-trained embeddings
-        print pretrained[pretrained.index2word[0]].shape
+        print(pretrained[pretrained.index2word[0]].shape)
         #print pretrained[0].shape
         emb = populate_embeddings(s['emb_dimension'], vocsize, train_dict['words2idx'], pretrained) #assign and fill in the gaps
         rnn.load_weights(emb)
@@ -203,7 +203,7 @@ def run_experiment(args):
     s['best_epoch'] = 0 
     best_f1 = -np.inf #lowest f-score possible
     
-    print "training..."
+    print("training...")
     start = 1
     end = s['nepochs']
     if s['use_saved_model']:
@@ -220,7 +220,7 @@ def run_experiment(args):
         
         
         if s['use_saved_model']:
-            print "loading stored model and weights- not actually training from " + epochfolder
+            print("loading stored model and weights- not actually training from " + epochfolder)
             rnn.load_weights_from_folder(epochfolder)
             #if s['model'] == "lstm":
             #    rnn.load_weights_from_folder(epochfolder)
@@ -236,12 +236,12 @@ def run_experiment(args):
         if s['verbose']: # output final learning time
             print '[learning] epoch %i >>'%(e),'completed in %.2f (sec) <<\r'%(time.time()-tic),
         
-        print "saving predictions and evaluating tags..."
+        print("saving predictions and evaluating tags...")
         
         results = {}
         for corpus in ['heldout','test']: #nb for training just test and heldout
             #if not corpus == 'heldout': continue
-            print corpus
+            print(corpus)
             predictions_file = epochfolder + '/predictions_{}.csv'.format(corpus)
             incremental_eval = False
             if s['use_saved_model']:
@@ -268,7 +268,7 @@ def run_experiment(args):
         #results['heldout_loss'] = 100.0
         #results['test_loss'] = 100.0
         
-        print "saving epoch folder and writing results to file"
+        print("saving epoch folder and writing results to file")
         rnn.save(epochfolder) #Epoch file dump
 
         coi = 'rmtto' #class of interest
@@ -298,8 +298,8 @@ def run_experiment(args):
             rnn.save(folder)
             best_f1 = results['heldout_f1_'+coi]
             if s['verbose']:
-                print 'NEW BEST raw labels at epoch ', e, 'best valid', best_f1 
-                print 'NEW BEST: epoch', e, 'heldout F1', results['heldout_f1_'+coi], 'best test F1', results['test_f1_'+coi], ' '*20
+                print('NEW BEST raw labels at epoch ', e, 'best valid', best_f1)
+                print('NEW BEST: epoch', e, 'heldout F1', results['heldout_f1_'+coi], 'best test F1', results['test_f1_'+coi], ' '*20)
             s['vf1']  = results['heldout_f1_'+coi]
             s['tf1'] = results['test_f1_'+coi]
             s['best_epoch'] = e
@@ -309,19 +309,19 @@ def run_experiment(args):
         
         # stopping criteria = if no improvement in 10 epochs
         if s['current_epoch'] - s['best_epoch'] >= 10: 
-            print "stopping, no improvement in 10 epochs"
+            print("stopping, no improvement in 10 epochs")
             break
         #decay
         if s['decay'] and abs(s['best_epoch']-s['current_epoch']) >= 2: 
             s['clr'] *= 0.85 #just a steady decay if things aren't improving for 2 epochs, more a hyper param?
-            print "learning rate decayed, now ", s['clr']
+            print("learning rate decayed, now ", s['clr'])
         if s['clr'] < 1e-5:
-            print "stopping, below learning rate threshold" 
+            print("stopping, below learning rate threshold")
             break
         if s['verbose']: # output final testing time
             print '[learning] epoch %i >>'%(e),'testing in %.2f (sec) <<\r'%(time.time()-tic),
 
-    print 'BEST RESULT: epoch', s['best_epoch'], 'valid F1', s['vf1'], 'best test F1', s['tf1'], 'with the model', folder
+    print('BEST RESULT: epoch', s['best_epoch'], 'valid F1', s['vf1'], 'best test F1', s['tf1'], 'with the model', folder)
     resultsFile.close()
     summariesFile.close()
     

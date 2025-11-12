@@ -98,14 +98,14 @@ from copy import deepcopy
 from scipy import stats
 import numpy as np
 
-from eval_utils import get_tag_data_from_corpus_file
-from eval_utils import load_incremental_outputs_from_increco_file
-from eval_utils import load_final_output_from_file
-from eval_utils import p_r_f, NIST_SU, DSER
-from eval_utils import final_output_accuracy_interval_level
-from eval_utils import final_output_accuracy_word_level
-from eval_utils import final_hyp_from_increco_and_incremental_metrics
-from eval_utils import rename_all_repairs_in_line_with_index
+from .eval_utils import get_tag_data_from_corpus_file
+from .eval_utils import load_incremental_outputs_from_increco_file
+from .eval_utils import load_final_output_from_file
+from .eval_utils import p_r_f, NIST_SU, DSER
+from .eval_utils import final_output_accuracy_interval_level
+from .eval_utils import final_output_accuracy_word_level
+from .eval_utils import final_hyp_from_increco_and_incremental_metrics
+from .eval_utils import rename_all_repairs_in_line_with_index
 
 # individual tags of interest
 ACC_TAGS = ["<rms", "<rm", "<i", "<e", "<rps", "<rp", "<rpn",

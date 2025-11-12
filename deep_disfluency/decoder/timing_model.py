@@ -67,7 +67,7 @@ def load_timing_data(dialogues, labels2idx, simple=False):
                         continue
                     logging.warning("warning: complex_tag=%s tag=%s", complex_tag, tag)
             if t < 0:
-                print "below zero"
+                print("below zero")
                 t = np.average([x[0] for x in timing_dict[tag]])
                 timings[i-1] = timings[i] - t
             # turn to milliseconds
@@ -82,7 +82,7 @@ def load_timing_data(dialogues, labels2idx, simple=False):
     X = []
     y = []
     for i in sorted(timing_dict.keys()):
-        print simple_trp_label2idx[i]
+        print(simple_trp_label2idx[i])
         print np.average([time[0] for time in timing_dict[i]]),
         print np.std([time[0] for time in timing_dict[i]])
         for tup in timing_dict[i]:
@@ -90,8 +90,8 @@ def load_timing_data(dialogues, labels2idx, simple=False):
             y.append(i)
     X = np.asarray(X)
     y = np.asarray(y)
-    print X.shape
-    print y.shape
+    print(X.shape)
+    print(y.shape)
     return X, y
 
 
@@ -111,7 +111,7 @@ def test_simple(model, scaler, data, y):
     # make predictions
     X = scaler.transform(data)
     expected = y
-    print expected
+    print(expected)
     predicted = model.predict(X)
     print model.predict_proba(X)
     print metrics.classification_report(expected, predicted)
@@ -131,7 +131,7 @@ def test(model, scaler, X, y):
                 return 2
             elif b == 1:
                 return 3
-        print a, b, "wrong!"
+        print(a, b, "wrong!")
         return None
 
     def convert_to_two_singles(a):
