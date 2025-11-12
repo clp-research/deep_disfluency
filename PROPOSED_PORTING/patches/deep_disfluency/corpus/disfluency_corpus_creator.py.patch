@@ -1,0 +1,86 @@
+--- deep_disfluency/corpus/disfluency_corpus_creator.py
++++ deep_disfluency/corpus/disfluency_corpus_creator.py
+@@ -434,7 +434,7 @@
+                             disfluency_tag += '<{} id="{}"/>'.format(
+
+                                 tag, repair.repairID)
+
+                         if test_dodgy == my_test_dodgy and debug:
+
+-                            raw_input()
+
++                            input()
+
+ 
+
+                     # in edit term but not in interregnum (forward looking
+
+                     # disf)
+
+@@ -540,7 +540,7 @@
+                     errors += 1
+
+                     if self.errorlog:
+
+                         self.errorlog.write(warning + "\n")
+
+-                    raw_input()
+
++                    input()
+
+                     i += 1
+
+             else:
+
+                 i += 1
+
+@@ -895,7 +895,7 @@
+                                             overallTagList[i])
+
+ 
+
+             if test_dodgy == my_test_dodgy and debug:
+
+-                raw_input()
+
++                input()
+
+ 
+
+             # now check for possibly missed filled pause edit terms or
+
+             # interregna
+
+@@ -967,7 +967,7 @@
+                 print "dialogue act bad"
+
+                 print uttref
+
+                 print uttList[i]
+
+-                raw_input()
+
++                input()
+
+             wordstring = easy_read_disf_format(
+
+                 overallWordsList[i], overallTagList[i])
+
+             posstring = easy_read_disf_format(
+
+@@ -1235,7 +1235,7 @@
+                         print repair.reparandumWords
+
+                         print repair.repairWords
+
+                         print repair.continuationWords
+
+-                        raw_input("third one")
+
++                        input("third one")
+
+         # Do the interregnum and edit term analysis
+
+         interregDict = defaultdict(int)
+
+         for edit in editingTermList:

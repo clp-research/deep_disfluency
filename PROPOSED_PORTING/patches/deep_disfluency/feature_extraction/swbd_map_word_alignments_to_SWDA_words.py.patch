@@ -1,0 +1,69 @@
+--- deep_disfluency/feature_extraction/swbd_map_word_alignments_to_SWDA_words.py
++++ deep_disfluency/feature_extraction/swbd_map_word_alignments_to_SWDA_words.py
+@@ -33,7 +33,7 @@
+         if any(["<laughter>" in x for x in ms_words]):
+
+             print "laughter before mapping"
+
+             print ms_words, swda_words
+
+-            #raw_input()
+
++            #input()
+
+     alignment = align(ms_words,swda_words) #gets best alignment
+
+     if debug:
+
+         if any(["<laughter>" in x for x in ms_words]):
+
+@@ -41,7 +41,7 @@
+             print ms_words, swda_words
+
+             print alignment
+
+             print swda_mappings
+
+-            #raw_input()
+
++            #input()
+
+     #final_alignment = [[word] for word in ms_words]
+
+     
+
+     #print final_alignment
+
+@@ -493,7 +493,7 @@
+             MSword = "<laughter>" + MSword + "</laughter>"
+
+             if debug:
+
+                 print "MSword", MSword
+
+-                #raw_input()
+
++                #input()
+
+         #if utterance changes, add the last one
+
+         if data[1].split(".")[1] != currentUttIndex and \
+
+                 not ( MSSWDAalignment == "<CONT>" and \
+
+@@ -877,7 +877,7 @@
+                 #                   "\n")
+
+                 #if laughter_bouts and laughter_bouts[0][0]<start:
+
+                 #    print laughter_bouts[0], start, stop, last_time_stamp
+
+-                #    raw_input()
+
++                #    input()
+
+                 if laughter_bouts and laughter_bouts[0][0]<start and\
+
+                         laughter_bouts[0][0]>=last_time_stamp:
+
+                     bout = laughter_bouts.pop(0)

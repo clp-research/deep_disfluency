@@ -1,0 +1,35 @@
+--- deep_disfluency/feature_extraction/convert_audio_files_extract_audio_features.py
++++ deep_disfluency/feature_extraction/convert_audio_files_extract_audio_features.py
+@@ -62,7 +62,7 @@
+     #print commandr
+
+     os.system(commandr)
+
+     #print commanddel
+
+-    #h = raw_input()
+
++    #h = input()
+
+     #if h == "q": break
+
+ 
+
+ 
+
+@@ -94,7 +94,7 @@
+     #print c
+
+     print wavfile
+
+     os.system(c)
+
+-    #h = raw_input()
+
++    #h = input()
+
+     #if h == "q": break
+
+ 
+
+ 

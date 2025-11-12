@@ -1,0 +1,18 @@
+--- deep_disfluency/corpus/textgrids_to_disf_tags_corpus_converter.py
++++ deep_disfluency/corpus/textgrids_to_disf_tags_corpus_converter.py
+@@ -64,7 +64,7 @@
+                        
+
+     #if inLS == True:
+
+     #    print "WARNING NO LS END", corpus, start_time
+
+-        #raw_input()
+
++        #input()
+
+     return labels
+
+ 
+
+ def convert_to_disfluency_word_tag_tuples_from_raw(text, start='(', end=')'):

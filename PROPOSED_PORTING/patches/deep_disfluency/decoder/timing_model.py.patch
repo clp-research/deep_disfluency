@@ -1,0 +1,24 @@
+--- deep_disfluency/decoder/timing_model.py
++++ deep_disfluency/decoder/timing_model.py
+@@ -12,7 +12,10 @@
+ # from sklearn.tree import DecisionTreeClassifier
+
+ # from sklearn.ensemble import RandomForestClassifier
+
+ from sklearn.preprocessing import StandardScaler
+
+-import cPickle
+
++try:
+
++    import cPickle as pickle
+
++except Exception:
+
++    import pickle
+
+ import logging
+
+ 
+
+ # import sys

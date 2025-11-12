@@ -1,0 +1,18 @@
+--- deep_disfluency/feature_extraction/swbd_map_speaker_names_to_audio_channels.py
++++ deep_disfluency/feature_extraction/swbd_map_speaker_names_to_audio_channels.py
+@@ -128,7 +128,7 @@
+             print c
+
+             os.system(c)
+
+     pair= [] #reset
+
+-    #h = raw_input()
+
++    #h = input()
+
+     #if h == "q": break
+
+ 
+
+ 

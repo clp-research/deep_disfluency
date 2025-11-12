@@ -1,0 +1,85 @@
+--- deep_disfluency/rnn/dev/run_experiment.py
++++ deep_disfluency/rnn/dev/run_experiment.py
+@@ -11,7 +11,10 @@
+ import theano.tensor as T
+
+ import gensim
+
+ from collections import defaultdict
+
+-import cPickle
+
++try:
+
++    import cPickle as pickle
+
++except Exception:
+
++    import pickle
+
+ # sys.path.append('../') #path to the src files
+
+ 
+
+ from rnn.elman import Elman
+
+@@ -30,7 +33,7 @@
+ theano.config.optimizer='None' #speeds things up marginally
+
+ 
+
+ full_label2idx = load_tags("../data/tag_representations/swbd1_trp_tags.csv") #NB mainly for experiments
+
+-full_idx2label = dict((k,v) for v,k in full_label2idx.iteritems()) # fir
+
++full_idx2label = dict((k,v) for v,k in full_label2idx.items()) # fir
+
+ 
+
+ def run_experiment(args):
+
+     #make the args into a dict
+
+@@ -39,7 +42,7 @@
+         s[feat] = val
+
+         #print feat,val
+
+     print s
+
+-    #raw_input()
+
++    #input()
+
+     
+
+     if s['acoustic']:
+
+         s['acoustic']  = 350 #dimension of acoustic features vector (essentially 7 * 50)
+
+@@ -51,10 +54,10 @@
+                                                 tags=s['tags'])
+
+     
+
+     #get relevant dictionaries
+
+-    idx2label = dict((k,v) for v,k in train_dict['labels2idx'].iteritems()) # first half (28) the same as the test
+
+-    idx2word  = dict((k,v) for v,k in train_dict['words2idx'].iteritems())
+
++    idx2label = dict((k,v) for v,k in train_dict['labels2idx'].items()) # first half (28) the same as the test
+
++    idx2word  = dict((k,v) for v,k in train_dict['words2idx'].items())
+
+     if not train_dict.get('pos2idx') == None:
+
+-        idx2pos = dict((k,v) for v,k in train_dict['pos2idx'].iteritems())
+
++        idx2pos = dict((k,v) for v,k in train_dict['pos2idx'].items())
+
+ 
+
+     range_dir = "../data/disfluency_detection/swda_divisions_disfluency_detection/"
+
+     range_files = [

@@ -1,4 +1,5 @@
 import csv
+import sys
 from corpus_util import add_word_continuation_tags
 
 
@@ -122,9 +123,9 @@ def write_corpus_file_add_fake_timings_and_utt_tags(f, target_path,
             print utt
             print pos
             print label
-            y = raw_input()
-            if y == "y":
-                quit()
+            y = input()
+            if y.strip().lower() == "y":
+                sys.exit(0)
         target_file.write("Speaker: " + speaker_name + "\n")
         starts = range(0, len(label))
         ends = range(1, len(label)+1)

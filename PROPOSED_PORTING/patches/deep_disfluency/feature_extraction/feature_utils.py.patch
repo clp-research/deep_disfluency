@@ -1,0 +1,18 @@
+--- deep_disfluency/feature_extraction/feature_utils.py
++++ deep_disfluency/feature_extraction/feature_utils.py
+@@ -484,7 +484,7 @@
+             continue
+
+         spl = line.strip("\n").split("\t")
+
+         # print "@@@@" + line + "@@@@"
+
+-        # raw_input()
+
++        # input()
+
+         idx = spl[0]
+
+         start = float(spl[1])
+
+         end = float(spl[2])

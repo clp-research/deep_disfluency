@@ -33,15 +33,15 @@ def intervalframe_overlaps(frame1, frame2, concatdelimiter='/'):
     if len(frame2) < len(frame1):
         frame1, frame2 = frame2, frame1
     for intrv1 in frame1.index:
-        st1 = frame1['start_time'].ix[intrv1]
-        en1 = frame1['end_time'].ix[intrv1]
+        st1 = frame1.at[intrv1, 'start_time']
+        en1 = frame1.at[intrv1, 'end_time']
         fr2 = frame2[frame2['end_time'] > st1]
         fr2 = fr2[fr2['start_time'] < en1]
         for intrv2 in fr2.index:
             overlap = {}
-            if type(concatdelimiter) == str and len(concatdelimiter) > 0:
-                overlap['text'] = fr2.ix[intrv2]['text'] + concatdelimiter + \
-                                  frame1.ix[intrv1]['text']
+            if isinstance(concatdelimiter, str) and len(concatdelimiter) > 0:
+                overlap['text'] = fr2.at[intrv2, 'text'] + concatdelimiter + \
+                                  frame1.at[intrv1, 'text']
 
             else:
                 overlap['text'] = 'overlap'
@@ -206,7 +206,7 @@ def load_incremental_outputs_from_increco_file(increco_filename):
         "wrong lengths! {0} {1} {2}".format(len(frames),
                                             len(lex_data),
                                             len(tag_data))
-    print len(all_speakers.keys()), "speakers"
+    print(len(list(all_speakers.keys())), "speakers")
     return all_speakers
 
 
@@ -262,16 +262,16 @@ def get_diff_and_new_prefix(current, newprefix, verbose=False):
     and change the current hypotheses.
     """
     if verbose:
-        print "current", current
-        print "newprefix", newprefix
+        print("current", current)
+        print("newprefix", newprefix)
     rollback = 0
     original_length = len(current)
     original_current = deepcopy(current)
     for i in range(len(current)-1, -2, -1):
         if verbose:
-            print "oooo", newprefix[0]
+            print("oooo", newprefix[0])
             if not current == []:
-                print current[i]
+                print(current[i])
         if i == -1 or (float(newprefix[0][1]) >= float(current[i][2])):
             if i == len(current)-1:
                 current = current + newprefix
@@ -282,12 +282,12 @@ def get_diff_and_new_prefix(current, newprefix, verbose=False):
                 if k == len(newprefix):
                     break
                 if verbose:
-                    print "...", j, k, current[j], newprefix[k], len(newprefix)
+                    print("...", j, k, current[j], newprefix[k], len(newprefix))
                 if not current[j] == newprefix[k]:
                     break
                 else:
                     if verbose:
-                        print "repeat", current[j], newprefix[k]
+                        print("repeat", current[j], newprefix[k])
                     k += 1
                     marker = j+1
             rollback = original_length - marker
@@ -299,9 +299,9 @@ def get_diff_and_new_prefix(current, newprefix, verbose=False):
         current = original_current  # reset the current
     rollback = min([original_length, rollback])
     if verbose:
-        print "current after call", current
-        print "newprefix after call", newprefix
-        print "rollback after call", rollback
+        print("current after call", current)
+        print("newprefix after call", newprefix)
+        print("rollback after call", rollback)
     return (current, newprefix, rollback)
 
 
@@ -323,8 +323,9 @@ def final_hyp_from_increco_and_incremental_metrics(increco,
     increco = deepcopy(increco)
     lengths = [len(increco[0]), len(increco[1]), len(increco[2])]
     if any([x != lengths[0] for x in lengths]):
-        print len(increco[0]), len(increco[1]), len(increco[2])
-        raw_input("problem0!")
+        # lengths mismatch -- raise an error rather than blocking
+        raise ValueError("Increco structure lengths mismatch: {},{},{}".format(
+            len(increco[0]), len(increco[1]), len(increco[2])))
     rollback = 0
     no_edits = 0  # for edit overhead (relative to final hyp)
     for _, n_words, n_tags in zip(increco[0], increco[1], increco[2]):
@@ -336,7 +337,7 @@ def final_hyp_from_increco_and_incremental_metrics(increco,
             get_diff_and_new_prefix(deepcopy(final_hypothesis), new_tags,
                                     verbose=False)
         if len(new_prefix) < len(n_words):
-            print "correcting length of words"
+            print("correcting length of words")
             n_words = n_words[(len(n_words)-len(new_prefix)):]
         assert len(n_words) == len(new_prefix)
         no_edits += len(new_prefix)
@@ -345,8 +346,8 @@ def final_hyp_from_increco_and_incremental_metrics(increco,
         # calculating incremental metrics
         for n in range(orig_length-rollback, len(final_hypothesis)):
             if not len(final_hypothesis[n]) == 3:
-                print "uneven at number n!", n
-                print final_hypothesis
+                print("uneven at number n!", n)
+                print(final_hypothesis)
             start_time = final_hypothesis[n][1]
             end_time = final_hypothesis[n][2]
             overlapped_intervals = [val for val in gold
@@ -357,17 +358,17 @@ def final_hyp_from_increco_and_incremental_metrics(increco,
                     if word:
                         if not goldwords[n] == final_words[n][0] and \
                                 not final_words[n][0] == "<unk>":
-                            print "WARNING: different word hyp at index", n
+                            print("WARNING: different word hyp at index", n)
                             count = 0
                             for x, y, w, z in zip(goldwords,
                                                   gold,
                                                   final_words,
                                                   final_hypothesis):
-                                print count
+                                print(count)
                                 count += 1
-                                print x, y, w, z
-                            print speaker_ID
-                            raw_input()
+                                print(x, y, w, z)
+                            # signal a mismatch clearly in an exception
+                            raise ValueError("WARNING: different word hyp at index {} (speaker {})".format(n, speaker_ID))
                         if ttd_tag in gold[n][0]:
                             ttd_word = len(final_hypothesis) - n - 1
                             if "<r" in ttd_tag:
@@ -386,17 +387,17 @@ def final_hyp_from_increco_and_incremental_metrics(increco,
                             tag_dict["t_t_detection_{0}_interval"
                                      .format(ttd_tag)].append(ttd)
         if not len(final_words) == len(final_hypothesis):
-            print len(final_timings), len(final_words), len(final_hypothesis)
-            print final_words[-10:]
-            print final_hypothesis[-10:]
+            print(len(final_timings), len(final_words), len(final_hypothesis))
+            print(final_words[-10:])
+            print(final_hypothesis[-10:])
             for w, h in zip(final_words, final_hypothesis):
-                print w, h
-            raw_input("problem1!")
+                print(w, h)
+            raise ValueError("Length mismatch between final_words and final_hypothesis")
     final_timings = [x[2] for x in final_words]
     if not len(final_timings) == len(final_words) == len(final_hypothesis):
         for t, w, h in zip(final_timings, final_words, final_hypothesis):
-            print t, w, h
-        raw_input("problem2 !")
+            print(t, w, h)
+        raise ValueError("final_timings/final_words/final_hypothesis length mismatch")
     # incremental metrics update
     tag_dict["edit_overhead"][0] += no_edits
     tag_dict["edit_overhead"][1] += len(final_hypothesis)
@@ -456,7 +457,7 @@ def get_tag_data_from_corpus_file(f, representation="1", limit=8):
     NB this does not convert them into one-hot arrays,
     just outputs lists of string labels.
     """
-    print "loading data", f
+    print("loading data", f)
     f = open(f)
     count_seq = 0
     IDs = []
@@ -528,7 +529,7 @@ def get_tag_data_from_corpus_file(f, representation="1", limit=8):
                                                             len(pos_seq)
                                                                     )
                                                       )
-    print "loaded " + str(len(seq)) + " sequences"
+    print("loaded " + str(len(seq)) + " sequences")
     f.close()
     return (IDs, timings, seq, pos_seq, targets)
 
@@ -765,7 +766,7 @@ def final_output_accuracy_word_level(words, prediction_tags, gold_tags,
                                                                  )
                         else:
                             pass
-                            print "No error analysis at interval level"
+                            print("No error analysis at interval level")
                     if utt_eval and tag == "t/>":
                         end_of_utt_align["hyp"][count] = "1"
                         end_of_utt_align["ref"][count] = "1"
@@ -796,7 +797,7 @@ def final_output_accuracy_word_level(words, prediction_tags, gold_tags,
                                         count, gold_tags=None))
                         else:
                             pass
-                            print "No error analysis at interval level"
+                            print("No error analysis at interval level")
                     if utt_eval and tag == "t/>":
                         end_of_utt_align["hyp"][count] = "1"
                         tag_dict["NIST_SU"][1] += 1
@@ -957,13 +958,13 @@ def final_output_accuracy_interval_level(hyp, reference, tag_dict,
             repairs_gold += len(gold_intervals)
         if overlap_duration > gold_duration:
             for x in gold_intervals.index:
-                print gold_intervals['start_time'][x] + " " +\
+                print(gold_intervals['start_time'][x] + " " +\
                     gold_intervals['end_time'][x] + " " +\
-                    gold_intervals['text'][x]
+                    gold_intervals['text'][x])
                 assert gold_intervals['start_time'][x]\
                     <= gold_intervals['end_time'][x]
-            print hyp_intervals
-            print overlap_duration, gold_duration, hyp_duration
+            print(hyp_intervals)
+            print(overlap_duration, gold_duration, hyp_duration)
             return False
         # TPs
         tag_dict[tag][0] += overlap_duration
@@ -1193,9 +1194,9 @@ def get_repairs_with_start_word_index(a_tags, a_words, rp_start_index,
         if allComplete:
             break
     if len(repairDict.values()) == 0:
-        print "warning, no repairs found at ", rp_start_index
+        print("warning, no repairs found at ", rp_start_index)
         for i, tag in enumerate(a_tags):
-            print i, tag
+            print(i, tag)
     return deepcopy([val for val in repairDict.values()])
 
 
@@ -1298,7 +1299,7 @@ def rename_repair_with_repair_onset_idx(orig_tags, rp_start_index, new_id,
                   "\n".join(["\t".join([str(x), str(y)]) for
                              x, y in zip(range(0, len(orig_tags)),
                                          orig_tags)]))
-            print "correcting end"
+            print("correcting end")
         tags[furthest_point] = tags[furthest_point].replace(
             '<rp id="{}"/>'.format(old_id), "") + \
             '<rpn id="{}"/>'.format(new_id)
@@ -1307,25 +1308,25 @@ def rename_repair_with_repair_onset_idx(orig_tags, rp_start_index, new_id,
 
 # Methods for error analysis on incremental results
 def test():
-    print "testing repair extraction"
+    print("testing repair extraction")
     #tags = '<f/>,<rms id="FP3"/>,<i id="FP3"/><e/>,<rps id="FP3"/>\
     #<rpn id="FP3"/>,<rms id="6"/>,<i id="6"/><e/>,<rps id="6"/>\
     #<rpn id="6"/>,<f/>'.split(',')
     tags = '<f/>,<f/>,<i id="FP3"/><e/>,<rps id="FP3"/>,<f/>,<i id="6"/><e/>,<rps id="6"/>\
     <f/>,<f/>'.split(',')
-    print rename_repair_with_repair_onset_idx(tags, 3, "FP0",
-                                              simple=True)
+    print(rename_repair_with_repair_onset_idx(tags, 3, "FP0",
+                                              simple=True))
 
-    print re.findall('<rps id="[FP]*-?[0-9]*"/>', '<rps id="-1"/>')
+    print(re.findall('<rps id="[FP]*-?[0-9]*"/>', '<rps id="-1"/>'))
     
     words = "i,like,uh,love,like,uh,love,alot".split(",")
     repairs = get_repairs_with_start_word_index(tags, words, 3)
     for r in repairs:
-        print r, len(r.reparandumWords)
+        print(r, len(r.reparandumWords))
     repairs2 = get_repairs_with_start_word_index(tags, words, 6)
     for r in repairs2:
-        print r
-    print repairs2[0] == repairs[0]
+        print(r)
+    print(repairs2[0] == repairs[0])
     
     
 

@@ -1,0 +1,18 @@
+--- deep_disfluency/__init__.py
++++ deep_disfluency/__init__.py
+@@ -2,7 +2,7 @@
+ 
+
+ Compatibility shim: provide Python-2-style raw_input in Python 3.
+
+ 
+
+-Some modules in this repo still call raw_input(...) (a Python 2 built-in).
+
++Some modules in this repo still call input(...) (a Python 2 built-in).
+
+ Under Python 3 raw_input was removed; `input(...)` has the same behavior.
+
+ This small shim defines `raw_input` as an alias to `input` when running
+
+ under Python 3 so legacy calls continue to work.

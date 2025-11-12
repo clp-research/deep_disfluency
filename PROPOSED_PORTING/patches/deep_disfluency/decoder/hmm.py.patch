@@ -1,0 +1,35 @@
+--- deep_disfluency/decoder/hmm.py
++++ deep_disfluency/decoder/hmm.py
+@@ -21,7 +21,7 @@
+ from collections import defaultdict
+
+ try:
+
+     # Python 2 fallback import compatibility: prefer cPickle if available
+
+-    import cPickle as pickle
+
++    import pickle as pickle
+
+ except Exception:
+
+     import pickle
+
+ import logging
+
+@@ -409,7 +409,7 @@
+             X = self.timing_model_scaler.transform(np.asarray([timing_data]))
+
+             input_distribution_timing = self.timing_model.predict_proba(X)
+
+             # print input_distribution_timing
+
+-            # raw_input()
+
++            # input()
+
+         for tag in self.observation_tags:
+
+             # don't record anything for the START/END tag
+
+             if tag in ["s", "se"]:

@@ -95,7 +95,7 @@ from __future__ import division
 
 import os.path
 from copy import deepcopy
-from scipy.stats.stats import pearsonr, spearmanr
+from scipy import stats
 import numpy as np
 
 from eval_utils import get_tag_data_from_corpus_file
@@ -238,8 +238,8 @@ def final_output_disfluency_eval(prediction_speakers_dict,
      outputfilename -- path to file where final outputs are saved as
      text
     """
-    print "final output disfluency evaluation"
-    print "word=", word, "interval=", interval, "utt_eval=", utt_eval
+    print("final output disfluency evaluation")
+    print("word=", word, "interval=", interval, "utt_eval=", utt_eval)
     ttd_tags = deepcopy(TTD_TAGS)
     acc_tags = deepcopy(ACC_TAGS)
     relaxed_tags = deepcopy(RELAXED_TAGS)
@@ -303,11 +303,11 @@ def final_output_disfluency_eval(prediction_speakers_dict,
     # testfile = open("../test.text", "w")
     for s in sorted(prediction_speakers_dict.keys()):
 
-        print s
+        print(s)
         if gold_speakers_dict.get(s) == None:
             s_test = s.replace("-", "")
             if gold_speakers_dict.get(s_test) == None:
-                print s, "not in gold"
+                print(s, "not in gold")
                 continue
             else:
                 gold = gold_speakers_dict[s_test]
@@ -387,7 +387,7 @@ def final_output_disfluency_eval(prediction_speakers_dict,
             this_tag_dict = tag_dict_interval
         else:
             this_tag_dict = tag_dict
-        print eval_mode
+        print(eval_mode)
         for tag in acc_tags:
             p, r, f1 = p_r_f(this_tag_dict[tag][0],
                              this_tag_dict[tag][1],
@@ -455,22 +455,22 @@ def final_output_disfluency_eval(prediction_speakers_dict,
     # Now we can get the relevant Pearson correlations
     results["pearson_r_correl_rps_number"], \
         results["pearson_r_p_value_rps_number"] = \
-        pearsonr(hyp_number_all, gold_number_all)
+        stats.pearsonr(hyp_number_all, gold_number_all)
     results["pearson_r_correl_rps_rate_per_word"], \
         results["pearson_r_p_value_rps_rate_per_word"] = \
-        pearsonr(hyp_rate_word_all, gold_rate_word_all)
+        stats.pearsonr(hyp_rate_word_all, gold_rate_word_all)
     results["pearson_r_correl_rps_rate_per_utt"], \
         results["pearson_r_p_value_rps_rate_per_utt"] = \
-        pearsonr(hyp_rate_turn_all, gold_rate_turn_all)
+        stats.pearsonr(hyp_rate_turn_all, gold_rate_turn_all)
     results["spearman_rank_correl_rps_number"], \
         results["spearman_rank_p_value_rps_number"] = \
-        spearmanr(hyp_number_all, gold_number_all)
+        stats.spearmanr(hyp_number_all, gold_number_all)
     results["spearman_rank_correl_rps_rate_per_word"], \
         results["spearman_rank_p_value_rps_rate_per_word"] = \
-        spearmanr(hyp_rate_word_all, gold_rate_word_all)
+        stats.spearmanr(hyp_rate_word_all, gold_rate_word_all)
     results["spearman_rank_correl_rps_rate_per_utt"], \
         results["spearman_rank_p_value_rps_rate_per_utt"] = \
-        spearmanr(hyp_rate_turn_all, gold_rate_turn_all)
+        stats.spearmanr(hyp_rate_turn_all, gold_rate_turn_all)
     # return the results, speaker disfluency rates per speaker
     # and error analysis
     # testfile.close()
@@ -525,8 +525,8 @@ def incremental_output_disfluency_eval(prediction_speakers_dict,
      outputfilename -- path to file where final outputs are saved as
      text
     """
-    print "incremental output disfluency evaluation"
-    print "word=", word, "interval=", interval, "utt_eval=", utt_eval
+    print("incremental output disfluency evaluation")
+    print("word=", word, "interval=", interval, "utt_eval=", utt_eval)
     ttd_tags = deepcopy(TTD_TAGS)
     acc_tags = deepcopy(ACC_TAGS)
     relaxed_tags = deepcopy(RELAXED_TAGS)
@@ -572,7 +572,7 @@ def incremental_output_disfluency_eval(prediction_speakers_dict,
         if not carry_on:
             continue
         if gold_speakers_dict.get(s) == None:
-            print s, "not in gold"
+            print(s, "not in gold")
             continue
         hyp = prediction_speakers_dict[s]
         gold = [(x, y[0], y[1])
@@ -624,13 +624,13 @@ def incremental_output_disfluency_eval(prediction_speakers_dict,
 #         results=results,
 #         outputfilename=outputfilename)
     if outputfilename:
-        print "writing final output to file", outputfilename
+        print("writing final output to file", outputfilename)
         outputfile = open(outputfilename, "w")
         for s in sorted(prediction_speakers_dict.keys()):
 
             # print s
             if gold_speakers_dict.get(s) == None:
-                print s, "not in gold"
+                print(s, "not in gold")
                 continue
             if outputfilename:
                 outputfile.write("Speaker: " + s + "\n")
@@ -765,4 +765,4 @@ if __name__ == '__main__':
                 "epoch_{0}/{1}{2}_output_final.text".format(e, key,
                                                             partial_string))
         for k, v in results.items():
-            print k, v
+            print(k, v)

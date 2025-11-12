@@ -1,0 +1,18 @@
+--- deep_disfluency/decoder/hmm_utils.py
++++ deep_disfluency/decoder/hmm_utils.py
+@@ -207,7 +207,7 @@
+             continue
+
+         spl = line.strip("\n").split("\t")
+
+         # print "@@@@" + line + "@@@@"
+
+-        # raw_input()
+
++        # input()
+
+         start = float(spl[1])
+
+         end = float(spl[2])
+
+         word = spl[3]
