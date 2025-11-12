@@ -59,20 +59,20 @@ def convert_to_latex(results, eval_level=["word", "interval"],
     raw_header = []
     for raw in ACCURACY_HEADER.split(","):
         if not utt_seg and raw in utt_seg_measures:
-            # print "skipping 1", raw
+            # print("skipping 1", raw)
             continue
         for e in eval_level:
             raw = raw.format(e)
             if raw not in result_to_latex_dict.keys():
-                # print "skipping 2", raw
+                # print("skipping 2", raw)
                 continue
             raw_header.append(raw)
     if only_include:
         raw_header = only_include
-    # print raw_header
+    # print(raw_header)
     header = []
     for h in raw_header:
-        # print h, "*"
+        # print(h, "*")
         conversion = result_to_latex_dict[h]
         header.append(conversion)
         for sys in results.keys():
@@ -109,12 +109,12 @@ def extract_accuracies_from_file(accuracyFile, learningCurveDict):
         if len(data) > 0 and ">" in data[0]:
             e += 1
             # continue #get the even one
-            # print e/2
-            # print data
+            # print(e/2)
+            # print(data)
             # get the first one
             if e % 2 != 0:
                 tag = data[0]
-                # print tag
+                # print(tag)
                 if not learningCurveDict.get(tag) == None:
                     learningCurveDict[tag].append(float(data[3]))
             # now the rest
@@ -138,7 +138,7 @@ def my_legend(axis=None):
 
     N = 32
     Nlines = len(axis.lines)
-    print Nlines
+    print(Nlines)
 
     xmin, xmax = axis.get_xlim()
     ymin, ymax = axis.get_ylim()
@@ -199,7 +199,7 @@ def accuracyCurvePlot(my_accuracies, limit, filename, upperlimit=None):
     """Plots the learning curve against the number of epochs.
     """
     epoch_numbers = []
-    print "plotting learning curve"
+    print("plotting learning curve")
     plt.gca().set_color_cycle(['red', 'green', 'blue'])
     plt.clf()
     legendlist = []
