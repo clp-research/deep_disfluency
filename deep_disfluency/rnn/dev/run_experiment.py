@@ -12,7 +12,7 @@ import theano.tensor as T
 import gensim
 from collections import defaultdict
 try:
-    import cPickle as pickle
+    import pickle as pickle
 except Exception:
     import pickle
 # sys.path.append('../') #path to the src files

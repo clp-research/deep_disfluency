@@ -3,7 +3,7 @@ from __future__ import division
 import math
 from collections import defaultdict
 try:
-    import cPickle as pickle
+    import pickle as pickle
 except Exception:
     import pickle
 from operator import itemgetter

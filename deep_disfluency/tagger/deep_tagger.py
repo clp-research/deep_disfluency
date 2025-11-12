@@ -1,7 +1,7 @@
 from __future__ import division
 import numpy as np
 try:
-    import cPickle as pickle
+    import pickle as pickle
 except Exception:
     import pickle
 import os

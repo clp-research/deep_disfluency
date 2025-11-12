@@ -3,7 +3,7 @@ import argparse
 import numpy as np
 from math import log
 try:
-    import cPickle as pickle
+    import pickle as pickle
 except Exception:
     import pickle
 import os

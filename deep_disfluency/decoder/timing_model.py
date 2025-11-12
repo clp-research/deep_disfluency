@@ -13,7 +13,7 @@ from sklearn.linear_model import LogisticRegression
 # from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import StandardScaler
 try:
-    import cPickle as pickle
+    import pickle as pickle
 except Exception:
     import pickle
 import logging
