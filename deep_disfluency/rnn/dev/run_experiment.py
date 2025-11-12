@@ -116,10 +116,10 @@ def run_experiment(args):
         possize = len(idx2pos.items())
     #nwords = len(list(itertools.chain(*train_y)))
     
-    print str(len(train_dict['labels2idx'].items())) + " training classes"
-    print str(len(train_dict['words2idx'].items())) + " words in vocab"
+    print(str(len(train_dict['labels2idx'].items())) + " training classes")
+    print(str(len(train_dict['words2idx'].items())) + " words in vocab")
     if not train_dict.get('pos2idx') == None:
-        print str(len(train_dict['pos2idx'].items())) + " pos tags in vocab"
+        print(str(len(train_dict['pos2idx'].items())) + " pos tags in vocab")
     #print str(nsentences) + " training sequences"
     na = 0
     if s['acoustic']:
@@ -234,7 +234,7 @@ def run_experiment(args):
                 pass
         
         if s['verbose']: # output final learning time
-            print '[learning] epoch %i >>'%(e),'completed in %.2f (sec) <<\r'%(time.time()-tic),
+            print('[learning] epoch %i >>'%(e),'completed in %.2f (sec) <<\r'%(time.time()-tic),)
         
         print("saving predictions and evaluating tags...")
         
@@ -319,7 +319,7 @@ def run_experiment(args):
             print("stopping, below learning rate threshold")
             break
         if s['verbose']: # output final testing time
-            print '[learning] epoch %i >>'%(e),'testing in %.2f (sec) <<\r'%(time.time()-tic),
+            print('[learning] epoch %i >>'%(e),'testing in %.2f (sec) <<\r'%(time.time()-tic),)
 
     print('BEST RESULT: epoch', s['best_epoch'], 'valid F1', s['vf1'], 'best test F1', s['tf1'], 'with the model', folder)
     resultsFile.close()

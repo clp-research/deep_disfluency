@@ -135,7 +135,7 @@ def load_data_from_file(f, word_rep, pos_rep, tag_rep, representation="1", limit
     
     Converts them into arrays of one-hot representations."""
      
-    print "loading data", f.name
+    print("loading data", f.name)
     count_seq = 0
     #count_step = 0
     IDs = []
@@ -187,7 +187,7 @@ def load_data_from_file(f, word_rep, pos_rep, tag_rep, representation="1", limit
                         pos = pos_rep.get("<unk>")
                     if tag == None:
                         logging.info("No tag rep for:" + currentTags[i])
-                        print utt_reference, currentTags, words
+                        print(utt_reference, currentTags, words)
                         raise Exception("No tag rep for:" + currentTags[i])
                     words.append(w)
                     pos_tags.append(pos)
@@ -241,7 +241,7 @@ def load_data_from_file(f, word_rep, pos_rep, tag_rep, representation="1", limit
                 pos = pos_rep.get("<unk>")
             if tag == None:
                 logging.info("No tag rep for:" + currentTags[i])
-                print utt_reference, currentTags, words
+                print(utt_reference, currentTags, words)
                 raise Exception("No tag rep for:" + currentTags[i])
             words.append(w)
             pos_tags.append(pos)
@@ -256,7 +256,7 @@ def load_data_from_file(f, word_rep, pos_rep, tag_rep, representation="1", limit
         timings.append(tuple(currentTimings))
         
     assert len(seq) == len(targets) == len(pos_seq)
-    print "loaded " + str(len(seq)) + " sequences"
+    print("loaded " + str(len(seq)) + " sequences")
     f.close()
     return (IDs,timings,seq,pos_seq,targets)
 
@@ -334,7 +334,7 @@ def load_increco_data_from_file(increco_filename,word_2_ind,pos_2_ind):
     indices = [0,] * len(lex_data)
     labels = [0,] * len(lex_data)
     all_speakers.append((conv_no, (frames, acoustic_data, lex_data, pos_data, indices, labels)))
-    print len(all_speakers), "speakers with increco input"
+    print(len(all_speakers), "speakers with increco input")
     return all_speakers
 
 def load_data_from_timings_file(filename,word_2_ind,pos_2_ind):
@@ -434,7 +434,7 @@ def load_data_from_timings_file(filename,word_2_ind,pos_2_ind):
     acoustic_data = [0,] * len(lex_data) #fakes..
     indices = [0,] * len(lex_data)
     all_speakers.append((conv_no, (frames, acoustic_data, lex_data, pos_data, indices, labels)))
-    print len(all_speakers), "speakers with timings input"
+    print(len(all_speakers), "speakers with timings input")
     return all_speakers
     
 def get_tag_data_from_corpus_file(f, representation="1", limit=8):
@@ -448,7 +448,7 @@ def get_tag_data_from_corpus_file(f, representation="1", limit=8):
     NB this does not convert them into one-hot arrays, just outputs lists of string tags in GOLD form."""
      
     f = open(f)
-    print "loading data", f.name
+    print("loading data", f.name)
     count_seq = 0
     IDs = []
     seq = []
@@ -515,7 +515,7 @@ def get_tag_data_from_corpus_file(f, representation="1", limit=8):
         timings.append(currentTimings)
         
     assert len(seq) == len(targets) == len(pos_seq)
-    print "loaded " + str(len(seq)) + " sequences"
+    print("loaded " + str(len(seq)) + " sequences")
     f.close()
     return (IDs,timings,seq,pos_seq,targets)
 
@@ -523,9 +523,9 @@ def get_tag_data_from_corpus_file(f, representation="1", limit=8):
 def download(origin):
     '''download the corresponding file from origin
     '''
-    print 'Downloading data from %s' % origin
+    print('Downloading data from %s' % origin)
     name = origin.split('/')[-1]
     urllib.urlretrieve(origin, name)
 
 if __name__ == '__main__':
-    print load_word_rep("../data/tag_representations/swbd_pos_rep.csv")
+    print(load_word_rep("../data/tag_representations/swbd_pos_rep.csv"))

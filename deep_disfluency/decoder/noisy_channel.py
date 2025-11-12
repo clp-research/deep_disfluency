@@ -180,16 +180,16 @@ class SourceModel(object):
         assert(node_value)
         if depth > (len(self.word_tree)-len(suffix)-1):
             if debug:
-                print "start node in front of suffix start, chain back", depth, len(suffix)
+                print("start node in front of suffix start, chain back", depth, len(suffix))
             # should be a fairly straightforward chain back
             last_node = (node_address, node_value)
             # print 'last node', last_node
             for d in range(depth-1, (len(self.word_tree)-len(suffix)-1), -1):
                 # get the father
                 if debug:
-                    print 'last node int', last_node
-                    print d
-                    print self.word_tree[d]
+                    print('last node int', last_node)
+                    print(d)
+                    print(self.word_tree[d])
                 last_node = filter(lambda x: x[0] == last_node[1][-1],
                                    self.word_tree[d].items())[0]
                 depth = d
@@ -307,7 +307,7 @@ class SourceModel(object):
         assert len(suffix) <= len(self.word_tree)
         # print "suffix", suffix
         if not suffix:
-            print "WARNING empty suffix queried"
+            print("WARNING empty suffix queried")
             return 0, None
         if len(self.word_tree) == 2 and suffix[0] == "<f/>":  # i.e. first word
             return log(0.0), None  # the only illegal sequence
@@ -362,7 +362,7 @@ class SourceModel(object):
             top_n.append(deepcopy(sequence))
         for seq, x in zip(top_n, final_nodes):
             wml = log(0) if x[1][2] == 0 else x[1][1]/-x[1][2]
-            print seq, wml
+            print(seq, wml)
         return top_n
 
 
@@ -374,14 +374,14 @@ class LMTester(object):
     def init_language_models(self, language_model=None,
                              pos_language_model=None,
                              edit_language_model=None):
-        print "Init language models ..."
+        print("Init language models ...")
         pos = True
         clean_model_dir = os.path.dirname(os.path.realpath(__file__)) +\
             "/../data/lm_corpora"
         if language_model:
             self.lm = language_model
         else:
-            print "No language model specified, using default switchboard one"
+            print("No language model specified, using default switchboard one")
             lm_corpus_file = open(clean_model_dir +
                                   "/swbd_disf_train_1_clean.text")
             lines = [line.strip("\n").split(",")[1] for line in lm_corpus_file
@@ -400,8 +400,7 @@ class LMTester(object):
         if pos_language_model:
             self.pos_lm = pos_language_model
         elif pos:
-            print "No pos language model specified, \
-            using default switchboard one"
+            print("No pos language model specified,  using default switchboard one")
             lm_corpus_file = open(clean_model_dir +
                                   "/swbd_disf_train_1_clean.text")
             lines = [line.strip("\n").split(",")[1] for line in lm_corpus_file
@@ -427,15 +426,15 @@ if __name__ == '__main__':
             '<f/>', '<s/>', '<s/>']
     for w, p, i in zip(words, pos, range(0, len(words))):
         s.consume_word(w)
-        print "dimen of word tree,", len(s.word_tree), len(s.word_tree[-1])
+        print("dimen of word tree,", len(s.word_tree), len(s.word_tree[-1]))
         # print s.word_tree[-1]
         # top_n = s.get_top_n_sequences(5)
         # print top_n
         # print top_n[:10]
         #input()
     # check all 
-        print s.get_log_diff_of_tag_suffix(tags[:i], n=1)
+        print(s.get_log_diff_of_tag_suffix(tags[:i], n=1))
     
-    print s.get_log_diff_of_tag_suffix([
+    print(s.get_log_diff_of_tag_suffix([)
         "<s/>", "<s/>", "<s/>"], n=1, start_node_ID=(10,0))
     

@@ -9,7 +9,7 @@ except Exception:
 from operator import itemgetter
 import numpy
 
-from util import safe_open,flush_and_close
+from .util import safe_open,flush_and_close
 
 infinity = float('inf')
 minus_infinity = - infinity
@@ -158,7 +158,7 @@ class LanguageModel(object):
         Returns the sum of the n-grams logprobs divided by the inverse of 
         the sum of the unigram probabilities"""
         test = sum(self.tokens_logprob(tokens,1,special=special))
-        if test == 0: print tokens
+        if test == 0: print(tokens)
         return sum(self.tokens_logprob(tokens,self.order,special)) / \
             (-1. * test)
 
@@ -364,7 +364,7 @@ class KneserNeySmoothingModel(LanguageModel):
         if train_corpus !=None: #this is required to 
             #order the unigrams and bigrams for entropies, 
             #can probably discard after entropy cacheing,
-            print str(self.train_length), "total words of training data"    
+            print(str(self.train_length), "total words of training data")    
             for ngram,val in sorted(self.unigram_counts.items(), \
                                     key=itemgetter(1),reverse=True): \
                                     self.unigrams.append(ngram)
@@ -380,9 +380,9 @@ class KneserNeySmoothingModel(LanguageModel):
             self.load(saved_file)
         
         #self.init_cache() #TODO we could look at cacheing
-        print "1-grams =", str(self.vocab_size)
-        print "2-grams =", str(self.bigram_types)
-        print "3-grams =", str(self.trigram_types)
+        print("1-grams =", str(self.vocab_size))
+        print("2-grams =", str(self.bigram_types))
+        print("3-grams =", str(self.trigram_types))
         # print self.unigrams
         
     def glue_tokens(self,tokens,order):
@@ -554,9 +554,9 @@ class KneserNeySmoothingModel(LanguageModel):
         float(self.unigram_denominator)
         if probability == 0.0:
             print("0 prob!")
-            print self.glue_tokens(ngram[-1],1)
+            print(self.glue_tokens(ngram[-1],1))
             print(ngram)
-            print self.ngram_numerator_map.get(self.glue_tokens(ngram[-1],1))
+            print(self.ngram_numerator_map.get(self.glue_tokens(ngram[-1],1)))
             print(self.unigram_denominator)
             input()
             
@@ -780,8 +780,7 @@ class KneserNeySmoothingModel(LanguageModel):
         "NOT SUMMING TO 1. total mass 1 = " + str(totalMass1) +\
          " total mass 2 = " \
         + str(totalMass2) + str(contexttokens1) + str(contexttokens2)
-        print "KL div" + str(contexttokens1) + str(contexttokens2) + \
-        " = " +  str(KL) + "\n"
+        print("KL div" + str(contexttokens1) + str(contexttokens2) +  " = " +  str(KL) + "\n")
         return KL
     
     def KL_divergence_continuation_fast(self,contexttokens1,contexttokens2):

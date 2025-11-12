@@ -55,7 +55,7 @@ def convert_to_simple_label(tag, rep="disf1_uttseg"):
         if m:
             return disftag + m.group(0)
         else:
-            print "WARNING NO TAG", tag
+            print("WARNING NO TAG", tag)
             return ""
     return disftag  # if not TT0
 
@@ -126,7 +126,7 @@ def verify_disfluency_tags(tags, normalize_ID=False):
     repairs = defaultdict(list)
     for r in id_map.keys():
         repairs[r] = [None, None, None]  # three valued None<False<True
-    print repairs
+    print(repairs)
     # second pass verify the validity of the tags
     # and (optionally) modify the IDs
     for i in range(0, len(tags)):  # iterate over all tag strings
@@ -137,7 +137,7 @@ def verify_disfluency_tags(tags, normalize_ID=False):
                         for ID in repairs.keys()])),\
                         "Unresolved repairs at fluent tag\n\t" + str(repairs)
         for tag in get_tags(tags[i]):  # iterate over all tags
-            print i, tag
+            print(i, tag)
             if tag == "<e/>":
                 new_tags.append(tag)
                 continue
@@ -311,7 +311,7 @@ def corpus_to_indexed_matrix(my_array_list, win, bs, sentence=False):
             totalSize += len(cwords)
     for s in sentences:
         if any([x is None for x in s]):
-            print s
+            print(s)
     return np.matrix(sentences, dtype='int32'), indices
 
 
@@ -551,7 +551,7 @@ def verify_dialogue_data_matrix(dialogue_data_matrix, word_dict=None,
             assert tag_dict[row[-1]] is not None,\
                 "row[-1][{}] {} not in tag dict".format(i, row[-1])
     except AssertionError as a:
-        print a
+        print(a)
         return False
     return True
 
@@ -573,7 +573,7 @@ def verify_dialogue_data_matrices_from_folder(matrices_folder_filepath,
                                            tag_dict=tag_dict,
                                            n_lm=n_lm,
                                            n_acoustic=n_acoustic):
-            print "{} failed test".format(dialogue_file)
+            print("{} failed test".format(dialogue_file))
             return False
     return True
 
@@ -650,8 +650,8 @@ if __name__ == '__main__':
         '<f/>'
     tags = tags.split(",")
     words = "i,like,uh,love,to,uh,love,alot".split(",")
-    print tags
-    print len(tags), len(words)
+    print(tags)
+    print(len(tags), len(words))
     words = ['然后', '就', '每', '每\u3000在\u3000＋\u3000坐\u3000在\u3000', '那个', '车', '的', '那个', '座子', '上', '然后', '\u3000每\u3000骑\u3000一\u3000步\u3000然后\u3000', '那个', '臀部', '那', '个', '位置', '就', '就', '火烧火燎', '的', '一样']
 
     tags = ['<rps id="0"/><rps id="0"/>', '<rp id="0"/><rp id="0"/>', '<rpndel id="0"/><rpndel id="0"/>', '<e/>', '<e/>', '<f/>', '<f/>', '<e/>', '<f/>', '<f/>', '<e/>', '<e/>', '<e/>', '<f/>', '<f/>', '<f/>', '<f/>', '<e/>', '<e/>', '<f/>', '<f/>', '<f/>']
@@ -661,12 +661,12 @@ if __name__ == '__main__':
                                                     tags,
                                                     words,
                                                     representation="disf1")
-    print new_tags
+    print(new_tags)
     old_tags = convert_from_inc_disfluency_tags_to_eval_tags(
                                                     new_tags,
                                                     words,
                                                     representation="disf1")
     assert old_tags == tags, "\n " + str(old_tags) + "\n" + str(tags)
     x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-    print context_win_backwards(x, 2)
-    print "indices", indices_from_length(11, 9)
+    print(context_win_backwards(x, 2))
+    print("indices", indices_from_length(11, 9))

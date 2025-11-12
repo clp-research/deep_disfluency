@@ -43,7 +43,7 @@ class IncrementalTagger(object):
     """
 
     def __init__(self, config_file, config_number, saved_model_folder=None):
-        print "Initializing Tagger"
+        print("Initializing Tagger")
         # initialize (word, pos) tuple graph
         self.window_size = 0
         self.word_graph = []
@@ -118,36 +118,36 @@ class DeepDisfluencyTagger(IncrementalTagger):
         if not config_file:
             config_file = "experiments/experiment_configs.csv"
             config_number = 35
-            print "No config file, using default", config_file, config_number
+            print("No config file, using default", config_file, config_number)
 
         super(DeepDisfluencyTagger, self).__init__(config_file,
                                                    config_number,
                                                    saved_model_dir)
-        print "Processing args from config number {} ...".format(config_number)
+        print("Processing args from config number {} ...".format(config_number))
         self.args = process_arguments(config_file,
                                       config_number,
                                       use_saved=False,
                                       hmm=True)
         #  separate manual setting
         setattr(self.args, "use_timing_data", use_timing_data)
-        print "Intializing model from args..."
+        print("Intializing model from args...")
         self.model = self.init_model_from_config(self.args)
 
         # load a model from a folder if specified
         if saved_model_dir:
-            print "Loading saved weights from", saved_model_dir
+            print("Loading saved weights from", saved_model_dir)
             self.load_model_params_from_folder(saved_model_dir,
                                                self.args.model_type)
         else:
-            print "WARNING no saved model params, needs training."
-            print "Loading original embeddings"
+            print("WARNING no saved model params, needs training.")
+            print("Loading original embeddings")
             self.load_embeddings(self.args.embeddings)
 
         if pos_tagger:
-            print "Loading POS tagger..."
+            print("Loading POS tagger...")
             self.pos_tagger = pos_tagger
         elif self.args.pos:
-            print "No POS tagger specified,loading default CRF switchboard one"
+            print("No POS tagger specified,loading default CRF switchboard one")
             self.pos_tagger = CRFTagger()
             tagger_path = os.path.dirname(os.path.realpath(__file__)) +\
                 "/../feature_extraction/crfpostagger"
@@ -155,7 +155,7 @@ class DeepDisfluencyTagger(IncrementalTagger):
 
         if self.args.n_language_model_features > 0 or \
                 'noisy_channel' in self.args.decoder_type:
-            print "training language model..."
+            print("training language model...")
             self.init_language_models(language_model,
                                       pos_language_model,
                                       edit_language_model)
@@ -163,13 +163,13 @@ class DeepDisfluencyTagger(IncrementalTagger):
         self.timing_model = None
         self.timing_model_scaler = None
         if timer:
-            print "loading timer..."
+            print("loading timer...")
             self.timing_model = timer
             self.timing_model_scaler = timer_scaler
         elif self.args.use_timing_data:
             # self.timing_model = None
             # self.timing_model_scaler = None
-            print "No timer specified, using default switchboard one"
+            print("No timer specified, using default switchboard one")
             timer_path = os.path.dirname(os.path.realpath(__file__)) +\
                 '/../decoder/timing_models/' + \
                 'LogReg_balanced_timing_classifier.pkl'
@@ -184,9 +184,9 @@ class DeepDisfluencyTagger(IncrementalTagger):
                 # self.timing_model_scaler.scale_ = \
                 #    self.timing_model_scaler.std_.copy()
         else:
-            print "Not using timing data"
+            print("Not using timing data")
 
-        print "Loading decoder..."
+        print("Loading decoder...")
         self.hmm_dict = deepcopy(self.tag_to_index_map)
         # add the interegnum tag
         if "disf" in self.args.tags:
@@ -226,7 +226,7 @@ class DeepDisfluencyTagger(IncrementalTagger):
         if language_model:
             self.lm = language_model
         else:
-            print "No language model specified, using default switchboard one"
+            print("No language model specified, using default switchboard one")
             lm_corpus_file = open(clean_model_dir +
                                   "/swbd_disf_train_1_clean.text")
             lines = [line.strip("\n").split(",")[1] for line in lm_corpus_file
@@ -245,8 +245,7 @@ class DeepDisfluencyTagger(IncrementalTagger):
         if pos_language_model:
             self.pos_lm = pos_language_model
         elif self.args.pos:
-            print "No pos language model specified, \
-            using default switchboard one"
+            print("No pos language model specified,  using default switchboard one")
             lm_corpus_file = open(clean_model_dir +
                                   "/swbd_disf_train_1_clean.text")
             lines = [line.strip("\n").split(",")[1] for line in lm_corpus_file
@@ -286,9 +285,9 @@ class DeepDisfluencyTagger(IncrementalTagger):
         # for feat, val in args._get_kwargs():
         #     print feat, val, type(val)
         if not test_if_using_GPU():
-            print "Warning: not using GPU, might be a bit slow"
-            print "\tAdjust Theano config file ($HOME/.theanorc)"
-        print "loading tag to index maps..."
+            print("Warning: not using GPU, might be a bit slow")
+            print("\tAdjust Theano config file ($HOME/.theanorc)")
+        print("loading tag to index maps...")
         label_path = os.path.dirname(os.path.realpath(__file__)) +\
             "/../data/tag_representations/{}_tags.csv".format(args.tags)
         word_path = os.path.dirname(os.path.realpath(__file__)) +\
@@ -308,7 +307,7 @@ class DeepDisfluencyTagger(IncrementalTagger):
         n_pos = len(self.pos_to_index_map.keys())
         update_embeddings = args.update_embeddings
         lr = args.lr
-        print "Initializing model of type", self.model_type, "..."
+        print("Initializing model of type", self.model_type, "...")
         if self.model_type == 'elman':
             model = Elman(ne=vocab_size,
                           de=emb_dimension,
@@ -355,7 +354,7 @@ class DeepDisfluencyTagger(IncrementalTagger):
                                 "/../embeddings/"
         pretrained = gensim.models.Word2Vec.load(embeddings_dir +
                                                  embeddings_name)
-        print "emb shape", pretrained[pretrained.index2word[0]].shape
+        print("emb shape", pretrained[pretrained.index2word[0]].shape)
         # print pretrained[0].shape
         # assign and fill in the gaps
         emb = populate_embeddings(self.args.emb_dimension,
@@ -631,7 +630,7 @@ class DeepDisfluencyTagger(IncrementalTagger):
                         for i in range(len(idx_to_label_dict.items()))
                                   ]
                                             )
-        print tag_summary
+        print(tag_summary)
         results = {"f1_rmtto": p_r_f_tags[2], "f1_rm": p_r_f_tags[2],
                    "f1_tto1": p_r_f_tags[2], "f1_tto2": p_r_f_tags[2]}
 
@@ -649,7 +648,7 @@ class DeepDisfluencyTagger(IncrementalTagger):
         from a list of dialogue matrices.
         """
         tag_accuracy_file = open(tag_accuracy_file_path, "a")
-        print "Verifying files..."
+        print("Verifying files...")
         for filepath in [train_dialogues_filepath,
                          validation_dialogues_filepath]:
             if not verify_dialogue_data_matrices_from_folder(
@@ -687,7 +686,7 @@ class DeepDisfluencyTagger(IncrementalTagger):
         start = 1  # by default start from the first epoch
         best_score = 0
         best_epoch = 0
-        print "Net training started..."
+        print("Net training started...")
         for e in range(start, self.args.n_epochs + 1):
             tic = time.time()
             epoch_folder = model_dir + "/epoch_{}".format(e)
@@ -702,7 +701,7 @@ class DeepDisfluencyTagger(IncrementalTagger):
                                         os.listdir(train_dialogues_filepath)):
                     if test and i > 3:
                         break
-                    print dialogue_f
+                    print(dialogue_f)
                     d_matrix = np.load(train_dialogues_filepath + "/" +
                                        dialogue_f)
                     word_idx, pos_idx, extra, y, indices = \
@@ -722,8 +721,7 @@ class DeepDisfluencyTagger(IncrementalTagger):
                                                  indices,
                                                  pos_idx=pos_idx,
                                                  extra_features=extra)
-                    print '[learning] file %i >>' % (i+1),\
-                        'completed in %.2f (sec) <<\r' % (time.time() - tic)
+                    print('[learning] file %i >>' % (i+1), 'completed in %.2f (sec) <<\r' % (time.time() - tic))
             # save the initial states we've learned to override the random
             self.initial_h0_state = self.model.h0.get_value()
             if self.args.model_type == "lstm":
@@ -736,40 +734,37 @@ class DeepDisfluencyTagger(IncrementalTagger):
                                         idx_to_label_dict=idx_2_label_dict
                                         )
             val_score = results['f1_tags']  #TODO get best score type
-            print "epoch training loss", train_loss
-            print '[learning] epoch %i >>' % (e),\
-                'completed in %.2f (sec) <<\r' % (time.time() - tic)
-            print "validation score", val_score
+            print("epoch training loss", train_loss)
+            print('[learning] epoch %i >>' % (e), 'completed in %.2f (sec) <<\r' % (time.time() - tic))
+            print("validation score", val_score)
             tag_accuracy_file.write(str(e) + "\n" + results['tag_summary'] +
                                     "\n%%%%%%%%%%\n")
             tag_accuracy_file.flush()
-            print "saving model..."
+            print("saving model...")
             self.model.save(epoch_folder)  # Epoch file dump
             # checking patience and decay, if applicable
             # stopping criterion
             if val_score > best_score:
                 self.model.save(model_dir)
                 best_score = val_score
-                print 'NEW BEST raw labels at epoch ', e, 'best valid',\
-                    best_score
+                print('NEW BEST raw labels at epoch ', e, 'best valid', best_score)
                 best_epoch = e
             # stopping criteria = if no improvement in 10 epochs
             if e - best_epoch >= 10:
-                print "stopping, no improvement in 10 epochs"
+                print("stopping, no improvement in 10 epochs")
                 break
             if self.args.decay and (e - best_epoch) > 1:
                 # just a steady decay if things aren't improving for 2 epochs
                 # a hidden hyperparameter
                 decay_rate = 0.85
                 lr *= decay_rate
-                print "learning rate decayed, now ", lr
+                print("learning rate decayed, now ", lr)
             if lr < 1e-5:
-                print "stopping, below learning rate threshold"
+                print("stopping, below learning rate threshold")
                 break
-            print '[learning and testing] epoch %i >>' % (e),\
-                'completed in %.2f (sec) <<\r' % (time.time()-tic)
+            print('[learning and testing] epoch %i >>' % (e), 'completed in %.2f (sec) <<\r' % (time.time()-tic))
 
-        print 'BEST RESULT: epoch', best_epoch, 'valid score', best_score
+        print('BEST RESULT: epoch', best_epoch, 'valid score', best_score)
         tag_accuracy_file.close()
         return best_epoch
 
@@ -817,11 +812,11 @@ class DeepDisfluencyTagger(IncrementalTagger):
         if target_file_path:
             target_file = open(target_file_path, "w")
         if not self.args.do_utt_segmentation:
-            print "not doing utt seg, using pre-segmented file"
+            print("not doing utt seg, using pre-segmented file")
         if is_asr_results_file:
             return NotImplementedError
         if 'timings' in source_file_path:
-            print "input file has timings"
+            print("input file has timings")
             if not is_asr_results_file:
                 dialogues = []
                 IDs, timings, words, pos_tags, labels = \
@@ -833,12 +828,12 @@ class DeepDisfluencyTagger(IncrementalTagger):
                                                 labels):
                     dialogues.append((dialogue, (a, b, c, d)))
         else:
-            print "no timings in input file, creating fake timings"
+            print("no timings in input file, creating fake timings")
             raise NotImplementedError
 
         for speaker, speaker_data in dialogues:
             # if "4565" in speaker: quit()
-            print speaker
+            print(speaker)
             self.reset()  # reset at the beginning of each dialogue
             if target_file_path:
                 target_file.write("Speaker: " + str(speaker) + "\n\n")

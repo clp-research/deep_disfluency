@@ -83,8 +83,8 @@ def load_timing_data(dialogues, labels2idx, simple=False):
     y = []
     for i in sorted(timing_dict.keys()):
         print(simple_trp_label2idx[i])
-        print np.average([time[0] for time in timing_dict[i]]),
-        print np.std([time[0] for time in timing_dict[i]])
+        print(np.average([time[0] for time in timing_dict[i]]),)
+        print(np.std([time[0] for time in timing_dict[i]]))
         for tup in timing_dict[i]:
             X.append(list(tup))
             y.append(i)
@@ -113,9 +113,9 @@ def test_simple(model, scaler, data, y):
     expected = y
     print(expected)
     predicted = model.predict(X)
-    print model.predict_proba(X)
-    print metrics.classification_report(expected, predicted)
-    print metrics.confusion_matrix(expected, predicted)
+    print(model.predict_proba(X))
+    print(metrics.classification_report(expected, predicted))
+    print(metrics.confusion_matrix(expected, predicted))
 
 
 def test(model, scaler, X, y):
@@ -151,8 +151,8 @@ def test(model, scaler, X, y):
     X1 = scaler.transform(X)
 
     predicted = model.predict(X1)
-    print metrics.classification_report(np.asarray(test1), predicted)
-    print metrics.confusion_matrix(np.asarray(test1), predicted)
+    print(metrics.classification_report(np.asarray(test1), predicted))
+    print(metrics.confusion_matrix(np.asarray(test1), predicted))
 
 if __name__ == '__main__':
     disf_dir = "../data/disfluency_detection/switchboard"

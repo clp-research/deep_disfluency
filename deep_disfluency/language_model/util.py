@@ -4,6 +4,7 @@ import os.path
 import argparse
 import sys
 import collections
+import collections.abc
 import codecs
 import time
 import datetime
@@ -110,7 +111,7 @@ def process_args_for_consumer_producer(*args,**kwargs):
        (for instance the description of the script)
     """
     parser = argparse.ArgumentParser(*args,**kwargs)
-    parser.add_argument('-i', '--input', type=file, metavar='INPUT',
+    parser.add_argument('-i', '--input', type=argparse.FileType('r'), metavar='INPUT',
             help='read input from INPUT (must be a file) instead of stdin')
     parser.add_argument('-o', '--output', type=str, metavar='OUTPUT',
         help='write output from OUTPUT (must be a file) instead of stdout')
@@ -123,7 +124,7 @@ def process_args_for_consumer_producer(*args,**kwargs):
     else:
         args.output = safe_open(args.output,'w')
     if not args.logger is None:
-	    args.logger = safe_open(args.logger,'a')
+        args.logger = safe_open(args.logger,'a')
     return args
 
 
@@ -190,19 +191,19 @@ class FrequencyDistribution(collections.defaultdict):
             output_stream.write('{0} {1}\n'.format(i,self[i]))
 
 
-class CountingList(collections.MutableSequence):
-	def __init__(self):
-            self.count = 0
-            self.list = list()
-            
-        def __len__(self):
-            return len(self.list)
+class CountingList(collections.abc.MutableSequence):
+    def __init__(self):
+        self.count = 0
+        self.list = list()
+        
+    def __len__(self):
+        return len(self.list)
 
-        def __getitem__(self,i):
-            return self.list[i]
+    def __getitem__(self,i):
+        return self.list[i]
 
-        def __setitem__(self,i,v):
-            self.list[i] = v
+    def __setitem__(self,i,v):
+        self.list[i] = v
 
         def __delitem__(self,i):
             self.count -= 1
@@ -216,27 +217,27 @@ class CountingList(collections.MutableSequence):
             self.list.append(x)
 
 def is_the_corpus_tagged(stream):
-	"""Checks whether a corpus is tagged.
+    """Checks whether a corpus is tagged.
 
-	   To do so, we check if at least one word is
-	    tagged in the first sentence. 
-	    After that we reset the stream position to the beginning"""
-	line = stream.readline()
-	# we skip empty lines
-	while (line == ''):
+       To do so, we check if at least one word is
+        tagged in the first sentence. 
+        After that we reset the stream position to the beginning"""
+    line = stream.readline()
+    # we skip empty lines
+    while (line == ''):
             line = stream.readline()
-	stream.seek(0)
-	tokens = line.split()
-	if any(map(lambda x : tag_separator in x,tokens)):
-		return True
-	else:
-		return False
+    stream.seek(0)
+    tokens = line.split()
+    if any(map(lambda x : tag_separator in x,tokens)):
+        return True
+    else:
+        return False
 
 def add_seed_argument(parser):
-    parser.add_argument('-s','--seed', type=long,metavar='SEED',
-			    help='the seed used to initialize the number generator. \
-			    Define it for reproducibility of results \
-			    (it defaults to 5489 in any case)',default=5489L)
+    parser.add_argument('-s','--seed', type=int,metavar='SEED',
+                help='the seed used to initialize the number generator. \
+                Define it for reproducibility of results \
+                (it defaults to 5489 in any case)',default=5489)
 
 # statistical stuff
 
@@ -256,11 +257,11 @@ def percentile(values,p):
     k = int(rank)
     d = rank - k
     if k == 0:
-	    return sorted_values[0]
+        return sorted_values[0]
     elif k == N:
-	    return sorted_values[-1]
+        return sorted_values[-1]
     else:
-	    return sorted_values[k-1] + d * (sorted_values[k] - sorted_values[k-1])
+        return sorted_values[k-1] + d * (sorted_values[k] - sorted_values[k-1])
 
 def read_property_file(f):
     """Reads a properties file"""
