@@ -113,7 +113,8 @@ class DeepDisfluencyTagger(IncrementalTagger):
                  timer=None,
                  timer_scaler=None,
                  use_timing_data=False,
-                 use_decoder=True):
+                 use_decoder=True,
+                 transformer_tagger=None):
 
         if not config_file:
             config_file = "experiments/experiment_configs.csv"
@@ -131,7 +132,14 @@ class DeepDisfluencyTagger(IncrementalTagger):
         #  separate manual setting
         setattr(self.args, "use_timing_data", use_timing_data)
         print("Intializing model from args...")
-        self.model = self.init_model_from_config(self.args)
+        
+        # if a transformer tagger is provided, use it instead of loading from config
+        if transformer_tagger:
+            print("Using provided transformer tagger as model backend...")
+            self.model = transformer_tagger
+            self.model_type = "transformer"
+        else:
+            self.model = self.init_model_from_config(self.args)
 
         # load a model from a folder if specified
         if saved_model_dir:
@@ -395,6 +403,20 @@ class DeepDisfluencyTagger(IncrementalTagger):
         in the case of changed word hypotheses from an ASR
         """
         self.rollback(rollback)
+        
+        # Special handling for Transformer tagger backend
+        if self.model_type == "transformer":
+            # Transformer tagger handles tagging directly and incrementally
+            tag = self.model.tag_new_word(word, pos=pos, timing=timing, rollback=rollback)
+            # Store the tag (may be a string or list; coerce to string)
+            if isinstance(tag, list):
+                tag = tag[-1] if tag else '<f/>'
+            self.word_graph.append((word, pos, timing))
+            self.output_tags.append(tag)
+            if diff_only:
+                return [tag]  # return as list for compatibility
+            return self.output_tags
+        
         if pos is None and self.args.pos:
             # if no pos tag provided but there is a pos-tagger, tag word
             test_words = [unicode(x) for x in
