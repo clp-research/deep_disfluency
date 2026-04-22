@@ -1,3 +1,5 @@
+**2026-04-22: This repository has been archived. Thank you for your interest over all these years!**
+
 # Deep Learning Driven Incremental Disfluency Detection
 
 Code for Deep Learning driven incremental disfluency detection and related dialogue processing tasks.
